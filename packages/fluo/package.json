@@ -1,6 +1,6 @@
 {
   "name": "@palett/fluo",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A color converter",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -13,11 +13,10 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@palett/fluo-vector": "^0.0.0",
-    "@palett/fluo-matrix": "^0.0.0",
-    "@palett/fluo-entries": "^0.0.0"
+    "@palett/fluo-entries": "^0.0.1",
+    "@palett/fluo-matrix": "^0.0.1",
+    "@palett/fluo-vector": "^0.0.1"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hoyeungw/palett/fluo.git"

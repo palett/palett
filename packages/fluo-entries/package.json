@@ -1,6 +1,6 @@
 {
   "name": "@palett/fluo-entries",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A colorant to string",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -13,11 +13,11 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@palett/presets": "^0.0.0",
-    "@palett/fluo-vector": "^0.0.0",
-    "@vect/vector": "^0.0.11",
+    "@palett/fluo-vector": "^0.0.1",
+    "@palett/presets": "^0.0.1",
     "@vect/entries-unwind": "^0.0.11",
-    "@vect/entries-zipper": "^0.0.11"
+    "@vect/entries-zipper": "^0.0.11",
+    "@vect/vector": "^0.0.11"
   },
   "repository": {
     "type": "git",

@@ -1,6 +1,6 @@
 {
   "name": "@palett/cards",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A color converter",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -11,7 +11,6 @@
     "pub": "npm publish",
     "test": "node -r @babel/register test/test.index.js"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hoyeungw/@palett.git"

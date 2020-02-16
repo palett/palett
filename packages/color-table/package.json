@@ -1,6 +1,6 @@
 {
   "name": "@palett/table",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A color converter",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -12,8 +12,8 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@palett/convert": "^0.0.0",
-    "@palett/hatsu": "^0.0.0",
+    "@palett/convert": "^0.0.1",
+    "@palett/hatsu": "^0.0.1",
     "borel": "^0.1.39",
     "crostab": "^0.3.8",
     "palett": "^0.0.21",

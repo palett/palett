@@ -1,6 +1,6 @@
 {
   "name": "@palett/convert",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A color converter among RGB, HEX and HSL.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -14,7 +14,6 @@
   "dependencies": {
     "aryth": "^0.0.5"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hoyeungw/palett"
