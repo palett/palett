@@ -1,0 +1,40 @@
+{
+  "name": "@palett/cards",
+  "version": "0.0.0",
+  "description": "A color converter",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "pub": "npm publish",
+    "test": "node -r @babel/register test/test.index.js"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoyeungw/@palett.git"
+  },
+  "keywords": [
+    "table",
+    "cross table",
+    "bi",
+    "insight",
+    "analytic"
+  ],
+  "author": {
+    "name": "Hoyeung Wong",
+    "email": "hoyeungw@outlook.com",
+    "url": "https://github.com/hoyeungw"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hoyeungw/@palett"
+  },
+  "homepage": "https://github.com/hoyeungw/@palett#readme",
+  "gitHead": "83ecf391bbd64c8979e08e8ba32f988aaf0d4633",
+  "dependencies": {
+    "palett-presets": "^0.0.21"
+  }
+}

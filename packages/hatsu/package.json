@@ -1,0 +1,37 @@
+{
+  "name": "@palett/hatsu",
+  "version": "0.0.0",
+  "description": "A color converter",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "pub": "npm publish",
+    "test": "node -r @babel/register test/test.index.js",
+    "test-jest": "jest"
+  },
+  "dependencies": {
+    "@palett/convert": "^0.0.0",
+    "@palett/util-ansi": "^0.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoyeungw/palett/hatsu.git"
+  },
+  "keywords": [
+    "chalk",
+    "color"
+  ],
+  "author": {
+    "name": "Hoyeung Wong",
+    "email": "hoyeungw@outlook.com",
+    "url": "https://github.com/hoyeungw"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hoyeungw/palett/hatsu"
+  },
+  "homepage": "https://github.com/hoyeungw/palett/hatsu#readme"
+}

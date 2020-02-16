@@ -1,0 +1,38 @@
+{
+  "name": "@palett/util-fluo",
+  "version": "0.0.0",
+  "description": "A colorant to string",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "pub": "npm publish",
+    "test": "node -r @babel/register test/test.index.js",
+    "test-jest": "jest"
+  },
+  "dependencies": {
+    "@palett/convert": "^0.0.0",
+    "@palett/dye": "^0.0.0",
+    "typen": "^0.1.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoyeungw/palett/util-fluo.git"
+  },
+  "keywords": [
+    "chalk",
+    "color"
+  ],
+  "author": {
+    "name": "Hoyeung Wong",
+    "email": "hoyeungw@outlook.com",
+    "url": "https://github.com/hoyeungw"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hoyeungw/palett/util-fluo"
+  },
+  "homepage": "https://github.com/hoyeungw/palett/util-fluo#readme"
+}

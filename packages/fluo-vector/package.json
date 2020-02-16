@@ -1,0 +1,40 @@
+{
+  "name": "@palett/fluo-vector",
+  "version": "0.0.0",
+  "description": "A colorant to string",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "pub": "npm publish",
+    "test": "node -r @babel/register test/test.index.js",
+    "test-jest": "jest"
+  },
+  "dependencies": {
+    "@palett/presets": "^0.0.0",
+    "@palett/util-fluo": "^0.0.0",
+    "@aryth/bound-vector": "^0.0.7",
+    "@aryth/rank": "^0.0.7",
+    "@vect/vector": "^0.0.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoyeungw/palett/fluo-vector.git"
+  },
+  "keywords": [
+    "chalk",
+    "color"
+  ],
+  "author": {
+    "name": "Hoyeung Wong",
+    "email": "hoyeungw@outlook.com",
+    "url": "https://github.com/hoyeungw"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hoyeungw/palett/fluo-vector"
+  },
+  "homepage": "https://github.com/hoyeungw/palett/fluo-vector#readme"
+}

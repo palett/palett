@@ -1,0 +1,40 @@
+{
+  "name": "@palett/fluo-entries",
+  "version": "0.0.0",
+  "description": "A colorant to string",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "pub": "npm publish",
+    "test": "node -r @babel/register test/test.index.js",
+    "test-jest": "jest"
+  },
+  "dependencies": {
+    "@palett/presets": "^0.0.0",
+    "@palett/fluo-vector": "^0.0.0",
+    "@vect/vector": "^0.0.11",
+    "@vect/entries-unwind": "^0.0.11",
+    "@vect/entries-zipper": "^0.0.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoyeungw/palett/fluo-entries.git"
+  },
+  "keywords": [
+    "chalk",
+    "color"
+  ],
+  "author": {
+    "name": "Hoyeung Wong",
+    "email": "hoyeungw@outlook.com",
+    "url": "https://github.com/hoyeungw"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hoyeungw/palett/fluo-entries"
+  },
+  "homepage": "https://github.com/hoyeungw/palett/fluo-entries#readme"
+}
