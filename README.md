@@ -1,6 +1,6 @@
-@palett
+##@palett
 
-##### :dart: Colorify in console, utilize ansi.
+##### :kimono: Colorify in console, utilize ansi.
 
 [![github commit last][badge-github-last-commit]][url-github]
 [![github commit total][badge-github-commit-count]][url-github]
