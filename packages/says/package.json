@@ -7,6 +7,9 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "pub": "npm publish",
     "test": "babel-node test/test.index.js"
@@ -35,5 +38,6 @@
   "bugs": {
     "url": "https://github.com/hoyeungw/palett/says"
   },
-  "homepage": "https://github.com/hoyeungw/palett/says#readme"
+  "homepage": "https://github.com/hoyeungw/palett/says#readme",
+  "gitHead": "56bad68ee80136a5a3a52c40e623d9d16622544e"
 }

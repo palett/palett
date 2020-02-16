@@ -7,6 +7,9 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "pub": "npm publish",
     "test": "node -r @babel/register test/test.index.js",
@@ -33,5 +36,6 @@
   "bugs": {
     "url": "https://github.com/hoyeungw/palett/dye"
   },
-  "homepage": "https://github.com/hoyeungw/palett/dye#readme"
+  "homepage": "https://github.com/hoyeungw/palett/dye#readme",
+  "gitHead": "56bad68ee80136a5a3a52c40e623d9d16622544e"
 }

@@ -7,6 +7,9 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "pub": "npm publish",
     "test": "node -r @babel/register test/test.index.js"
@@ -32,7 +35,7 @@
     "url": "https://github.com/hoyeungw/@palett"
   },
   "homepage": "https://github.com/hoyeungw/@palett#readme",
-  "gitHead": "83ecf391bbd64c8979e08e8ba32f988aaf0d4633",
+  "gitHead": "56bad68ee80136a5a3a52c40e623d9d16622544e",
   "dependencies": {
     "palett-presets": "^0.0.21"
   }
