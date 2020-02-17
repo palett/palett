@@ -7,6 +7,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "prewatch": "npm run bootstrap",
+    "prepublish": "npm run build",
     "build": "lerna exec --parallel -- rollup -c ../../rollup.config.js",
     "build-specific": "lerna exec --scope=@palett/fluo-matrix -- rollup -c ../../rollup.config.js",
     "watch": "lerna exec --parallel -- rollup -c ../../rollup.config.js -w",

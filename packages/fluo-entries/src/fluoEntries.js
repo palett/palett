@@ -20,7 +20,7 @@ export const fluoEntries = (entries, {
   } = {}
 ) => {
   let [keys, items] = entries |> unwind
-  fluoVector(keys, { preset: preset, stringPreset, mutate: true, colorant })
+  fluoVector(keys, { preset, stringPreset, mutate: true, colorant })
   fluoVector(items, { preset, stringPreset, mutate: true, colorant })
   const rendered = mutazip(keys, items, (k, v) => [k, v])
   return mutate

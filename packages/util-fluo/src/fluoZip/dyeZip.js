@@ -26,13 +26,14 @@ export const dyeZip = (keys, {
 }) => {
   if (!values) return dyeMap(keys, { mapper, primeDye, valueLeap, colorLeap, colorant })
   let blendDye
-  return valueLeap.dif && colorLeap.dif.some(n => !!n)
+  const fn = valueLeap.dif && colorLeap.dif.some(n => !!n)
     ? (blendDye = BlendDye(valueLeap, colorLeap),
       colorant
-        ? mapper(keys, (x, v) => isNumeric(v) ? blendDye(v) : primeDye)
-        : zipper(keys, values, (x, v) => isNumeric(v) ? x |> blendDye(v) : x |> primeDye))
+        ? (x, v) => isNumeric(v) ? blendDye(v) : primeDye
+        : (x, v) => isNumeric(v) ? x |> blendDye(v) : x |> primeDye)
     : (blendDye = colorLeap.min |> hslToDye,
       colorant
-        ? mapper(keys, (x, v) => isNumeric(v) ? blendDye : primeDye)
-        : zipper(keys, values, (x, v) => isNumeric(v) ? x |> blendDye : x |> primeDye))
+        ? (x, v) => isNumeric(v) ? blendDye : primeDye
+        : (x, v) => isNumeric(v) ? x |> blendDye : x |> primeDye)
+  return zipper(keys, values, fn)
 }

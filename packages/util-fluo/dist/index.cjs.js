@@ -154,15 +154,16 @@ const dyeZip = (keys, {
     colorant
   });
   let blendDye;
-  return valueLeap.dif && colorLeap.dif.some(n => !!n) ? (blendDye = BlendDye(valueLeap, colorLeap), colorant ? mapper(keys, (x, v) => isNumeric(v) ? blendDye(v) : primeDye) : zipper(keys, values, (x, v) => {
+  const fn = valueLeap.dif && colorLeap.dif.some(n => !!n) ? (blendDye = BlendDye(valueLeap, colorLeap), colorant ? (x, v) => isNumeric(v) ? blendDye(v) : primeDye : (x, v) => {
     var _x, _x2;
 
     return isNumeric(v) ? (_x = x, blendDye(v)(_x)) : (_x2 = x, primeDye(_x2));
-  })) : (blendDye = (_colorLeap$min = colorLeap.min, hslToDye(_colorLeap$min)), colorant ? mapper(keys, (x, v) => isNumeric(v) ? blendDye : primeDye) : zipper(keys, values, (x, v) => {
+  }) : (blendDye = (_colorLeap$min = colorLeap.min, hslToDye(_colorLeap$min)), colorant ? (x, v) => isNumeric(v) ? blendDye : primeDye : (x, v) => {
     var _x3, _x4;
 
     return isNumeric(v) ? (_x3 = x, blendDye(_x3)) : (_x4 = x, primeDye(_x4));
-  }));
+  });
+  return zipper(keys, values, fn);
 };
 
 /**
