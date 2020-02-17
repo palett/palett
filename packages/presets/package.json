@@ -1,6 +1,6 @@
 {
   "name": "@palett/presets",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A color converter",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -16,7 +16,7 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@palett/cards": "^0.0.4"
+    "@palett/cards": "^0.0.5"
   },
   "repository": {
     "type": "git",
