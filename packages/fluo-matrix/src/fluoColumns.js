@@ -1,11 +1,10 @@
 import { FRESH, JUNGLE } from '@palett/presets'
 import { fluoVector } from '@palett/fluo-vector'
-import { transpose } from '@vect/matrix'
-import { mapper as mapColumns } from '@vect/columns-mapper'
+import { transpose, columnsMapper } from '@vect/matrix'
 
 /**
  *
- * @param {*[]} mx
+ * @param {*[][]} mx
  * @param {{max:string|number[],min:string|number[],na:string|number[]}} [preset]
  * @param {{max:string|number[],min:string|number[],na:string|number[]}} [stringPreset]
  * @param {boolean} [mutate=true]
@@ -16,5 +15,5 @@ export const fluoColumns = (mx, {
   stringPreset = JUNGLE,
   colorant = false
 } = {}) =>
-  mapColumns(mx, col => fluoVector(col, { preset, stringPreset, colorant }))
+  columnsMapper(mx, col => fluoVector(col, { preset, stringPreset, colorant }))
     |> transpose
