@@ -1,7 +1,8 @@
-import { Hatsu } from '@palett/hatsu'
-import { PalettSelector as PalSel } from '@palett/table'
+import { PalettSelector } from '@palett/table'
+import { hexToRgb } from '@palett/convert'
+import { Dye } from '@palett/dye'
+import { mapper } from '@vect/object-mapper'
 import { Pal } from './Pal'
-import { Ob } from 'veho'
 
 export class Says {
   /** @type {Object<string,Pal|function>} */ #roster = {}
@@ -18,21 +19,21 @@ export class Says {
         if (p in target.#roster) return target.#roster[p]
         let hex, n = 0
         do {
-          ({ hex } = PalSel.random())
-        } while (++n <= PalSel.pool && target.#colorPool.has(hex))
+          ({ hex } = PalettSelector.random())
+        } while (++n <= PalettSelector.pool && target.#colorPool.has(hex))
         target.#colorPool.add(hex)
-        return target.#roster[p] = Pal.build(p |> Hatsu.hex(hex), { keywords: target.#keywords })
+        return target.#roster[p] = Pal.build(p |> Dye(hex |> hexToRgb), { keywords: target.#keywords })
       }
     })
   }
 
   aboard (name, hex) {
     this.#colorPool.add(hex)
-    return this.#roster[name] = Pal.build(name |> Hatsu.hex(hex), { keywords: this.#keywords })
+    return this.#roster[name] = Pal.build(name |> Dye(hex |> hexToRgb), { keywords: this.#keywords })
   }
 
   get roster () {
-    return Ob.mapValues(this.#roster, pal => pal.title)
+    return mapper(this.#roster, ({ title }) => title)
   }
 
   get colorPool () {

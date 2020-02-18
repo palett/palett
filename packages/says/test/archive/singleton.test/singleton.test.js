@@ -1,7 +1,7 @@
 import { alpha } from './alpha'
 import { beta } from './beta'
 import { gamma } from './gamma'
-import { says } from '../../index'
+import { says } from '../../../index'
 import { deca, logNeL } from 'xbrief'
 import { Palett } from 'palett'
 

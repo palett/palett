@@ -12,14 +12,14 @@
   },
   "scripts": {
     "pub": "npm publish",
-    "test": "babel-node test/test.index.js"
+    "test": "babel-node test/archive/test.index.js"
   },
   "dependencies": {
-    "@palett/hatsu": "^0.0.8",
     "@palett/table": "^0.0.8",
-    "kalorie": "^0.0.3",
-    "roulett": "^0.0.5",
-    "veho": "^0.2.22"
+    "@palett/convert": "^0.0.8",
+    "@palett/dye": "^0.0.8",
+    "@vect/callable": "^0.0.16",
+    "@vect/object-mapper": "^0.0.16"
   },
   "repository": {
     "type": "git",

@@ -1,8 +1,7 @@
 import { hexToRgb, hslToRgb, rgbToLong } from '@palett/convert'
 import { ConsoleColors, Effects } from '@palett/util-ansi'
-import { render } from './render'
 import { Callable } from '../util/Callable'
-import { logger } from '@spare/logger'
+import { render } from './render'
 
 export class Hatsu extends Callable {
   /** @property {{color:([*,*,*]), head:{}, tail:{}}} */ config

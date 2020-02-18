@@ -1,6 +1,7 @@
 import { Hatsu } from '../index'
 import { logger } from '@spare/logger'
 import { Palett } from 'palett'
+import { CarPlants } from '@foba/object-string'
 
 const ConsoleColors = {
   black: '30',
@@ -19,9 +20,9 @@ const hatsu = Hatsu.rgb([44, 181, 233])
 hatsu |> logger
 hatsu('BMW Z5') |> console.log
 hatsu.bold('BMW M3') |> console.log
-hatsu.yellow.italic.inverse('Lamborghini Urus') |> console.log
-hatsu.red.ext.bold('Ferrari Tributo') |> logger
-hatsu.black.inverse.bold('Audi A10') |> logger
-hatsu.red.ext('Porsche 911') |> logger
-hatsu.hex(Palett.indigo.accent_2, 'Maserati GranTurismo') |> logger
+hatsu.yellow.italic.inverse(CarPlants.SantAgata) |> console.log
+hatsu.red.ext.bold(CarPlants.Angelholm) |> logger
+hatsu.black.inverse.bold(CarPlants.Gaydon) |> logger
+hatsu.red.ext(CarPlants.Stuttgart) |> logger
+hatsu.hex(Palett.indigo.accent_2, CarPlants.Maranello) |> logger
 

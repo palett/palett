@@ -20,7 +20,7 @@
     "@aryth/rank": "^0.0.7",
     "@palett/presets": "^0.0.8",
     "@palett/util-fluo": "^0.0.8",
-    "@vect/vector": "^0.0.13"
+    "@vect/vector": "^0.0.16"
   },
   "repository": {
     "type": "git",

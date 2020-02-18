@@ -1,4 +1,4 @@
-import { Says } from '../index'
+import { Says } from '../../index'
 import { castList } from './assets/Bistro'
 
 export const ooTest = () => {

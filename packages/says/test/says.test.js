@@ -1,5 +1,6 @@
 import { Says } from '../src/Says'
-import { deca, decoLog, logNeL } from 'xbrief'
+import { deca } from '@spare/deco'
+import { logNeL } from '@spare/logger'
 
 const { logger } = require('xbrief')
 
