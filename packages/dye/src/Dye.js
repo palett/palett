@@ -5,7 +5,7 @@ import { FORE, CLR_FORE, Effects, br } from '@palett/util-ansi'
  * @param {string} tx
  * @returns {string}
  */
-export function impart (tx) {
+export function blaze (tx) {
   return br(this[0]) + tx + br(this[1])
 }
 
@@ -15,7 +15,7 @@ export function impart (tx) {
  * @param {number} g
  * @param {number} b
  * @param {...string} [effects]
- * @returns {function<string,string>}
+ * @returns {function(string):string}
  */
 export const Dye = ([r, g, b], ...effects) => {
   const h = [FORE, r, g, b], t = [CLR_FORE]
@@ -25,5 +25,5 @@ export const Dye = ([r, g, b], ...effects) => {
       if (e in Effects && ([l, r] = Effects[e]))
         (h.push(l), t.push(r))
   }
-  return impart.bind([h, t])
+  return blaze.bind([h, t])
 }
