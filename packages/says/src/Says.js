@@ -2,6 +2,7 @@ import { PalettSelector } from '@palett/table'
 import { hexToRgb } from '@palett/convert'
 import { Dye } from '@palett/dye'
 import { mapper } from '@vect/object-mapper'
+import { FUN } from '@typen/enums'
 import { Pal } from './Pal'
 
 export class Says {
@@ -15,7 +16,7 @@ export class Says {
     return new Proxy(this, {
       /** @returns {Pal|function} */
       get (target, p, receiver) {
-        if (p in target) return typeof (p = target[p]) === 'function' ? p.bind(target) : p
+        if (p in target) return typeof (p = target[p]) === FUN ? p.bind(target) : p
         if (p in target.#roster) return target.#roster[p]
         let hex, n = 0
         do {
@@ -32,13 +33,8 @@ export class Says {
     return this.#roster[name] = Pal.build(name |> Dye(hex |> hexToRgb), { keywords: this.#keywords })
   }
 
-  get roster () {
-    return mapper(this.#roster, ({ title }) => title)
-  }
-
-  get colorPool () {
-    return this.#colorPool
-  }
+  get roster () { return mapper(this.#roster, ({ title }) => title) }
+  get colorPool () { return this.#colorPool }
 
   /**
    *
@@ -46,7 +42,5 @@ export class Says {
    * @param keywords
    * @returns {Says|Object<string,function>}
    */
-  static build ({ roster, keywords }) {
-    return new Says(roster, keywords)
-  }
+  static build ({ roster, keywords }) { return new Says(roster, keywords) }
 }

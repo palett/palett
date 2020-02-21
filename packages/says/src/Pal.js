@@ -8,7 +8,7 @@ export class Pal extends Callable {
   /** @type {Object<string,string>} */ keywords = {}
 
   constructor (title, { indent = 0, keywords } = {}) {
-    super(tx => logger(tx, this))
+    super(text => logger(text, this))
     if (title) this.title = title
     if (indent) this.indent = indent
     if (keywords) this.keywords = keywords

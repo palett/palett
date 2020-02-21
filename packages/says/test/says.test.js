@@ -6,6 +6,8 @@ import { flop, rand } from '@aryth/rand'
 import { says } from '../index'
 import { SimpleMatrices } from '@foba/foo'
 import { AQUA, AURORA, FRESH, JUNGLE, LAVA, METRO, OCEAN, PLANET, Presets, SUBTLE } from '@palett/presets'
+import { xr } from '@spare/xr'
+import { RN } from '@spare/util'
 
 export class CallableTest {
   static test () {
@@ -28,9 +30,9 @@ export class CallableTest {
     for (let i = 0, film, quote; i < 24; i++) {
       [film, quote] = movieQuotesEntries |> flop
       quote = quote
-        .replace(/\. /g, '.\n')
-        .replace(/! /g, '!\n')
-        .replace(/: /g, ':\n')
+        .replace(/\. /g, '.' + RN)
+        .replace(/! /g, '!' + RN)
+        .replace(/: /g, ':' + RN)
         .split(' ') |> DecoVector({ indexed: false, delimiter: ' ', stringPreset: SUBTLE })
       const sayer = rand(2)
         ? (rand(2) ? says[film] : says[film].asc)
@@ -40,6 +42,11 @@ export class CallableTest {
     for (const [key, matrix] of Object.entries(SimpleMatrices)) {
       matrix |> decoMatrix |> says[key]
     }
+    const stb = function (y) {
+      xr()['y % 4'](y % 4)['y % 100'](y % 4)['y % 400'](y % 400)['result'](!(y % 4) && (y % 100) || !(y % 400)) |>  says[y]
+      return !(y % 4) && (y % 100) || !(y % 400)
+    }
+    stb(1024) |> says[1024]
   }
 }
 

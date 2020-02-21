@@ -1,11 +1,13 @@
-export const toTab = ind => ' '.repeat(ind << 1)
+import { STR } from '@typen/enums'
+import { RN } from '@spare/util'
 
-export const logger = (message, { title, indent, keywords }) => {
-  if (message.includes('\n')) {
-    // if (message[0] === '[' || message[0] === '{')
-    message = '\n' + message
-    return `${indent |> toTab}[${title}] ${message.replace(/\n/g, '\n' + (++indent |> toTab))}` |> console.log
-  }
-  return `${indent |> toTab}[${title}] ${message}` |> console.log
+export const tab = ind => ' '.repeat(ind << 1)
+
+export const logger = (text, { title, indent, keywords }) => {
+  if (typeof text !== STR) text += ''
+  return void console.log(`${tab(indent)}[${title}]`,
+    text.includes(RN)
+      ? (RN + text).replace(/\r\n/g, RN + tab(++indent))
+      : text)
 }
 
