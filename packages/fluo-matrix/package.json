@@ -16,13 +16,13 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@aryth/bound-matrix": "^0.0.7",
-    "@aryth/rank": "^0.0.7",
+    "@aryth/bound-matrix": "^0.0.8",
+    "@aryth/rank": "^0.0.8",
     "@palett/fluo-vector": "^0.0.9",
     "@palett/presets": "^0.0.9",
     "@palett/util-fluo": "^0.0.9",
-    "@vect/matrix": "^0.0.16",
-    "@vect/vector": "^0.0.16"
+    "@vect/matrix": "^0.0.18",
+    "@vect/vector": "^0.0.18"
   },
   "repository": {
     "type": "git",

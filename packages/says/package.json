@@ -18,8 +18,8 @@
     "@palett/convert": "^0.0.9",
     "@palett/dye": "^0.0.9",
     "@palett/table": "^0.0.9",
-    "@vect/callable": "^0.0.16",
-    "@vect/object-mapper": "^0.0.16"
+    "@vect/callable": "^0.0.18",
+    "@vect/object-mapper": "^0.0.18"
   },
   "repository": {
     "type": "git",

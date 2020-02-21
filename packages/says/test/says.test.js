@@ -1,8 +1,11 @@
 import { Says } from '../src/Says'
 import { deca } from '@spare/deco'
-import { logNeL } from '@spare/logger'
-
-const { logger } = require('xbrief')
+import { decoMatrix, DecoVector, logger, logNeL } from '@spare/logger'
+import { movieQuotesEntries } from './movie.lines'
+import { flop, rand } from '@aryth/rand'
+import { says } from '../index'
+import { SimpleMatrices } from '@foba/foo'
+import { AQUA, AURORA, FRESH, JUNGLE, LAVA, METRO, OCEAN, PLANET, Presets, SUBTLE } from '@palett/presets'
 
 export class CallableTest {
   static test () {
@@ -11,14 +14,33 @@ export class CallableTest {
     'how would i know' |> says.worker.asc
     'i\'ll be there tmr' |> says.worker
     'anything i can do for you' |> says.tournant.asc.asc
-    'no, but you just stand by' |> says.aboyeur
+    'no,\n but you just stand by, \nand wait for order' |> says.aboyeur
     'yes' |> says.tournant
 
     '\nregistered roster' |> logger
-    says.roster |> deca({ vu: 1 }) |> logNeL
+    says.roster |> deca({ vo: 1 }) |> logNeL
     'registered color' |> logger
-    says.colorPool |> deca({ vu: 1 })|> logNeL
+    says.colorPool |> deca({ vo: 1 })|> logNeL
+  }
+
+  static test2 () {
+    const presets = [AQUA, OCEAN, LAVA, SUBTLE]
+    for (let i = 0, film, quote; i < 24; i++) {
+      [film, quote] = movieQuotesEntries |> flop
+      quote = quote
+        .replace(/\. /g, '.\n')
+        .replace(/! /g, '!\n')
+        .replace(/: /g, ':\n')
+        .split(' ') |> DecoVector({ indexed: false, delimiter: ' ', stringPreset: SUBTLE })
+      const sayer = rand(2)
+        ? (rand(2) ? says[film] : says[film].asc)
+        : (rand(2) ? says[film] : says[film].desc)
+      quote |> sayer
+    }
+    for (const [key, matrix] of Object.entries(SimpleMatrices)) {
+      matrix |> decoMatrix |> says[key]
+    }
   }
 }
 
-CallableTest.test()
+CallableTest.test2()

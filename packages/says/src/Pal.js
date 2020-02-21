@@ -1,16 +1,14 @@
-import { render } from './helpers'
+import { logger } from './helpers'
 import { Callable } from '../util/Callable'
 
-/**
- * @type {class|function}
- */
+/** @type {function} */
 export class Pal extends Callable {
   /** @type {string} */ title = ''
   /** @type {number} */ indent = 0
   /** @type {Object<string,string>} */ keywords = {}
 
   constructor (title, { indent = 0, keywords } = {}) {
-    super(tx => render(tx, this))
+    super(tx => logger(tx, this))
     if (title) this.title = title
     if (indent) this.indent = indent
     if (keywords) this.keywords = keywords
@@ -33,7 +31,7 @@ export class Pal extends Callable {
   }
 
   get desc () {
-    this.indent--
+    if (this.indent) this.indent--
     return this
   }
 }
