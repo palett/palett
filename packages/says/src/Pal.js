@@ -1,4 +1,4 @@
-import { logger } from './helpers'
+import { logger } from './logger'
 import { Callable } from '../util/Callable'
 
 /** @type {function} */

@@ -18,10 +18,10 @@
     "@palett/convert": "^0.0.11",
     "@palett/dye": "^0.0.11",
     "@palett/table": "^0.0.11",
-    "@spare/util": "^0.1.2",
+    "@spare/util": "^0.1.5",
     "@typen/enums": "^0.0.1",
-    "@vect/callable": "^0.0.18",
-    "@vect/object-mapper": "^0.0.18"
+    "@vect/callable": "^0.0.27",
+    "@vect/object-mapper": "^0.0.27"
   },
   "repository": {
     "type": "git",
