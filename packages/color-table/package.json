@@ -1,6 +1,6 @@
 {
   "name": "@palett/table",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "A color converter",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -17,9 +17,9 @@
   "dependencies": {
     "@analys/crostab": "0.0.10",
     "@aryth/math": "0.0.11",
-    "@palett/convert": "^0.0.14",
-    "@palett/enum-color-space": "^0.0.14",
-    "@palett/hatsu": "^0.0.14",
+    "@palett/convert": "^0.0.15",
+    "@palett/enum-color-space": "^0.0.15",
+    "@palett/hatsu": "^0.0.15",
     "@spare/string": "^0.1.8",
     "@vect/matrix-mapper": "^0.1.2",
     "@vect/vector-mapper": "^0.1.2",
