@@ -1,8 +1,8 @@
 import { hexToHsl, hexToRgb, rgbToHex } from '@palett/convert'
-import { Zu } from 'borel'
 import { Hatsu } from '@palett/hatsu'
-import { Ar } from 'veho'
+import { mapper } from '@vect/vector-mapper'
 import { HEX, HSL, RGB } from '@palett/enum-color-space'
+import { round } from '@aryth/math'
 
 export const toDataPicker = colorSpace => {
   switch (colorSpace) {
@@ -21,9 +21,9 @@ export function toStatistic (space, cellColor = false) {
     case RGB:
     case HSL:
       return arr => {
-        let [a, b, c] = [0, 0, 0], len = arr.length
-        Ar.map(arr, ([x, y, z]) => [a, b, c] = [a + x, b + y, c + z], len)
-        return [Zu.round(a / len), Zu.round(b / len), Zu.round(c / len)]
+        let [a, b, c] = [0, 0, 0], l = arr.length
+        mapper(arr, ([x, y, z]) => [a, b, c] = [a + x, b + y, c + z], l)
+        return [round(a / l), round(b / l), round(c / l)]
       }
     case HEX:
       return arr => arr.map(hexToRgb) |> toStatistic(RGB) |> rgbToHex
@@ -34,7 +34,7 @@ export function toStatistic (space, cellColor = false) {
 
 export const toFormatter = (space, colorify = false) => {
   let formatter = space === RGB || space === HSL
-    ? vec => vec.map(x => String(Zu.round(x)).padStart(3))
+    ? vec => vec.map(x => String(round(x)).padStart(3))
     : null
   let hatsu = colorify
     ? space |> toHatsu

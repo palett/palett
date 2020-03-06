@@ -1,4 +1,4 @@
-export const brown = {
+export const Brown = {
   base: '#795548',
   lighten_5: '#EFEBE9',
   lighten_4: '#D7CCC8',

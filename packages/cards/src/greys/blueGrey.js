@@ -1,4 +1,4 @@
-export const blueGrey = {
+export const BlueGrey = {
   base: '#607D8B',
   lighten_5: '#ECEFF1',
   lighten_4: '#CFD8DC',

@@ -1,4 +1,4 @@
-export const lime = {
+export const Lime = {
   base: '#CDDC39',
   lighten_5: '#F9FBE7',
   lighten_4: '#F0F4C3',

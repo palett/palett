@@ -60,8 +60,8 @@ export class VisualTest {
         //   [9, 10, NaN, null, 13, 14],
         //   [13, 14, 15, 16, 17, 18]
         // ], {
-        //   max: teal.accent_3,
-        //   min: deepOrange.lighten_1
+        //   max: Teal.accent_3,
+        //   min: DeepOrange.lighten_1
         // }],
         // many_NaNs: [[
         //   [undefined, 2, NaN, 4, 5, NaN],
@@ -69,8 +69,8 @@ export class VisualTest {
         //   [9, 10, NaN, null, 13, NaN],
         //   [13, 14, 15, 16, 17, NaN]
         // ], {
-        //   max: Cards.lightGreen.accent_3,
-        //   min: Cards.red.accent_2
+        //   max: Cards.LightGreen.accent_3,
+        //   min: Cards.Red.accent_2
         // }],
         // samples: [
         //   boxOffice

@@ -1,4 +1,4 @@
-export const lightGreen = {
+export const LightGreen = {
   base: '#8BC34A',
   lighten_5: '#F1F8E9',
   lighten_4: '#DCEDC8',

@@ -1,4 +1,4 @@
-export const pink = {
+export const Pink = {
   base: '#E91E63',
   lighten_5: '#FCE4EC',
   lighten_4: '#F8BBD0',

@@ -23,12 +23,12 @@ export const ConsoleColors = {
 
 // export const colors = {
 //   black: 30,
-//   red: 31,
-//   green: 32,
-//   yellow: 33,
-//   blue: 34,
+//   Red: 31,
+//   Green: 32,
+//   Yellow: 33,
+//   Blue: 34,
 //   magenta: 35,
-//   cyan: 36,
+//   Cyan: 36,
 //   white: 37,
-//   grey: 90,
+//   Grey: 90,
 // }

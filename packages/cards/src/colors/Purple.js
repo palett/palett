@@ -1,4 +1,4 @@
-export const purple = {
+export const Purple = {
   base: '#9C27B0',
   lighten_5: '#F3E5F5',
   lighten_4: '#E1BEE7',

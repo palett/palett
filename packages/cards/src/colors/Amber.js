@@ -1,4 +1,4 @@
-export const amber = {
+export const Amber = {
   base: '#FFC107',
   lighten_5: '#FFF8E1',
   lighten_4: '#FFECB3',

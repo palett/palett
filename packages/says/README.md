@@ -25,9 +25,9 @@ import { Says } from '@palett/says'
 import { greys, palette } from 'spettro'
 
 const castList = {
-  client: palette.red.base,
-  server: palette.purple.base,
-  stranger: greys.grey.base
+  client: palette.Red.base,
+  server: palette.Purple.base,
+  stranger: greys.Grey.base
 }
 
 const debug = Says.build(castList)
@@ -42,9 +42,9 @@ import { Says } from '@palett/says'
 import { greys, palette } from 'spettro'
 
 const castList = {
-  client: palette.red.base,
-  server: palette.purple.base,
-  stranger: greys.grey.base
+  client: palette.Red.base,
+  server: palette.Purple.base,
+  stranger: greys.Grey.base
 }
 
 const debug = Says.build(castList)

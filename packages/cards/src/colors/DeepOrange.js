@@ -1,4 +1,4 @@
-export const deepOrange = {
+export const DeepOrange = {
   base: '#FF5722',
   lighten_5: '#FBE9E7',
   lighten_4: '#FFCCBC',

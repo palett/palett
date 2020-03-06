@@ -1,4 +1,4 @@
-export const teal = {
+export const Teal = {
   base: '#009688',
   lighten_5: '#E0F2F1',
   lighten_4: '#B2DFDB',

@@ -34,6 +34,6 @@ check(BlueGreyAccents)
 check(BrownAccents)
 check(GreyAccents)
 // 4,3,2,1: 42,52,62,77
-// brown:  16, 18
-// blueGrey: 200, 15
-// grey: 0, 0
+// Brown:  16, 18
+// BlueGrey: 200, 15
+// Grey: 0, 0

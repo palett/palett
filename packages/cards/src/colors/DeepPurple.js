@@ -1,4 +1,4 @@
-export const deepPurple = {
+export const DeepPurple = {
   base: '#673AB7',
   lighten_5: '#EDE7F6',
   lighten_4: '#D1C4E9',

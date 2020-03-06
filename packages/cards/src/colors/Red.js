@@ -1,4 +1,4 @@
-export const red = {
+export const Red = {
   base: '#F44336',
   lighten_5: '#FFEBEE',
   lighten_4: '#FFCDD2',

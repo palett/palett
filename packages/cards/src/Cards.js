@@ -1,22 +1,22 @@
-import { red } from './colors/red'
-import { pink } from './colors/pink'
-import { purple } from './colors/purple'
-import { deepPurple } from './colors/deepPurple'
-import { indigo } from './colors/indigo'
-import { blue } from './colors/blue'
-import { lightBlue } from './colors/lightBlue'
-import { cyan } from './colors/cyan'
-import { teal } from './colors/teal'
-import { green } from './colors/green'
-import { lightGreen } from './colors/lightGreen'
-import { lime } from './colors/lime'
-import { yellow } from './colors/yellow'
-import { amber } from './colors/amber'
-import { orange } from './colors/orange'
-import { deepOrange } from './colors/deepOrange'
-import { brown } from './greys/brown'
-import { blueGrey } from './greys/blueGrey'
-import { grey } from './greys/grey'
+import { Red } from './colors/Red'
+import { Pink } from './colors/Pink'
+import { Purple } from './colors/Purple'
+import { DeepPurple } from './colors/DeepPurple'
+import { Indigo } from './colors/Indigo'
+import { Blue } from './colors/Blue'
+import { LightBlue } from './colors/LightBlue'
+import { Cyan } from './colors/Cyan'
+import { Teal } from './colors/Teal'
+import { Green } from './colors/Green'
+import { LightGreen } from './colors/LightGreen'
+import { Lime } from './colors/Lime'
+import { Yellow } from './colors/Yellow'
+import { Amber } from './colors/Amber'
+import { Orange } from './colors/Orange'
+import { DeepOrange } from './colors/DeepOrange'
+import { Brown } from './greys/brown'
+import { BlueGrey } from './greys/blueGrey'
+import { Grey } from './greys/grey'
 
 /**
  * @type {Object.<string,Object<string,Object>>}
@@ -24,25 +24,25 @@ import { grey } from './greys/grey'
  * @property {string[]} degrees
  */
 export const Cards = {
-  red,
-  pink,
-  purple,
-  deepPurple,
-  indigo,
-  blue,
-  lightBlue,
-  cyan,
-  teal,
-  green,
-  lightGreen,
-  lime,
-  yellow,
-  amber,
-  orange,
-  deepOrange,
-  brown,
-  blueGrey,
-  grey
+  red: Red,
+  pink: Pink,
+  purple: Purple,
+  deepPurple: DeepPurple,
+  indigo: Indigo,
+  blue: Blue,
+  lightBlue: LightBlue,
+  cyan: Cyan,
+  teal: Teal,
+  green: Green,
+  lightGreen: LightGreen,
+  lime: Lime,
+  yellow: Yellow,
+  amber: Amber,
+  orange: Orange,
+  deepOrange: DeepOrange,
+  brown: Brown,
+  blueGrey: BlueGrey,
+  grey: Grey
 }
 
 Reflect.defineProperty(Cards, 'colors', {

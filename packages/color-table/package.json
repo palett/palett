@@ -15,9 +15,11 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
+    "@aryth/math": "0.0.11",
     "@palett/convert": "^0.0.13",
     "@palett/enum-color-space": "^0.0.13",
     "@palett/hatsu": "^0.0.13",
+    "@vect/vector-mapper": "^0.1.2",
     "borel": "^0.1.39",
     "crostab": "^0.3.8",
     "palett": "^0.0.23",

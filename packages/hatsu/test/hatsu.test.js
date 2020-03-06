@@ -16,7 +16,7 @@ const ConsoleColors = {
 }
 
 const hatsu = Hatsu.rgb([44, 181, 233])
-// hatsu.yellow.italic.inverse |> console.log
+// hatsu.Yellow.italic.inverse |> console.log
 hatsu |> logger
 hatsu('BMW Z5') |> console.log
 hatsu.bold('BMW M3') |> console.log

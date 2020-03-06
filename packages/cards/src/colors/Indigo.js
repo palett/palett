@@ -1,4 +1,4 @@
-export const indigo = {
+export const Indigo = {
   base: '#3F51B5',
   lighten_5: '#E8EAF6',
   lighten_4: '#C5CAE9',
