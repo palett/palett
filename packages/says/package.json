@@ -16,12 +16,12 @@
   },
   "dependencies": {
     "@palett/convert": "^0.0.15",
+    "@palett/flopper": "^0.0.15",
+    "@palett/enum-font-effects": "^0.0.15",
     "@palett/dye": "^0.0.15",
-    "@palett/table": "^0.0.15",
-    "@spare/util": "^0.1.5",
+    "@spare/util": "^0.1.8",
     "@typen/enums": "^0.0.1",
-    "@vect/callable": "^0.1.2",
-    "@vect/object-mapper": "^0.1.2"
+    "@vect/object-mapper": "^0.1.8"
   },
   "repository": {
     "type": "git",

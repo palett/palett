@@ -1,4 +1,4 @@
-export const dilhex = (hex, hi) => {
+export const diluteHex = (hex, hi) => {
   hi = hi || hex.length
   let x = ''
   for (let i = 0, el; i < hi; i++) {

@@ -1,15 +1,15 @@
-import { ESC } from '../resources/controlCodes'
+import { L, R, SC } from '../resources/controlCodes'
 
 /**
  *
- * @param {string[]} config
+ * @param {string[]} codes
  * @returns {string}
  */
-export const br = config => `${ESC}[${config.join(';')}m`
+export const br = codes => L + codes.join(SC) + R
 
 /**
  *
- * @param {string} config
+ * @param {string} code
  * @returns {string}
  */
-export const brt = config => `${ESC}[${config}m`
+export const brt = code => L + code + R

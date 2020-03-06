@@ -1,6 +1,6 @@
 import { STR } from '@typen/enums'
+import { LF } from '@spare/util'
 
-const LF = '\n'
 export const tab = ind => ' '.repeat(ind << 1)
 
 export const logger = (text, { title, indent, keywords }) => {

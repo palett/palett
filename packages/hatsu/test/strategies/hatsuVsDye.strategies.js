@@ -1,13 +1,14 @@
-import { Chrono } from 'elprimero'
-import { CrosTabX } from 'xbrief'
 import { PalettTable, Degrees, ColorGroups } from '@palett/table'
+import { delogger } from '@spare/deco'
+import { Dye } from '@palett/dye'
+import { strategies } from '@valjoux/strategies'
+import { decoCrostab, logger, says } from '@spare/logger'
 import { Hatsu } from '../../index'
 import { render } from '../../src/render'
-import { decoLog } from '@spare/deco'
-import { dye } from '@palett/dye/src/dye'
-import { Dye } from '@palett/dye/src/dyeFab'
+import { PreDye } from '@palett/dye/src/PreEffect'
+import { BOLD } from '@palett/enum-font-effects'
 
-const cxt = PalettTable.crosTab({ space: 'rgb', degrees: Degrees.entire, colors: ColorGroups.rainbow })
+const cxt = PalettTable.degreesByColors({ space: 'rgb', degrees: Degrees.entire, colors: ColorGroups.rainbow })
 
 const numify = ([r, g, b]) => [+r, +g, +b]
 
@@ -17,14 +18,15 @@ let dyeList = {}
 
 class HatsuVsDyeStrategies {
   static testBind () {
-    const { lapse, result } = Chrono.strategies({
+    const preEffect = PreDye(BOLD)
+    const { lapse, result } = strategies({
       repeat: 1E+5,
-      paramsList: {
+      candidates: {
         lighten: [cxt.row('lighten_3').map(numify)],
         base: [cxt.row('base').map(numify)],
         darken: [cxt.row('darken_3').map(numify)],
       },
-      funcList: {
+      methods: {
         bench: arr => arr.map(x => x),
         benchOb: arr => arr.map(x => ({ x })),
         benchRGB: arr => arr.map(x => ([128, 128, 128])),
@@ -32,38 +34,35 @@ class HatsuVsDyeStrategies {
         hatsu: arr => arr.map(rgb => Hatsu.rgb(rgb).bold),
         render: arr => arr.map(rgb => (_ => render(_, { color: rgb, head: [1], tail: [22] }))),
         binder: arr => arr.map(rgb => Dye.bind({ rgb, effect: 'bold' })),
+        preEffect: arr => arr.map(preEffect),
         blend: arr => arr.map(rgb => Dye(rgb, 'bold')),
       }
     })
-    'lapse' |> console.log
-    lapse |> CrosTabX.brief |> console.log
-    '' |> console.log
+    lapse |> decoCrostab |> logger
     'result' |> console.log
-    // result |> CrosTabX.brief |> console.log
-    result.queryCell('lighten', 'render').map(it => 'urus'|> it)|> decoLog
+    // result |> decoCrostab |> says['result']
+    result.cell('lighten', 'preEffect').map(it => 'urus'|> it)|> delogger
     dyeList = {
-      hatsu: x => result.queryCell('lighten', 'hatsu').map(dye => dye(x)),
-      render: x => result.queryCell('lighten', 'render').map(dye => dye(x)),
-      binder: x => result.queryCell('lighten', 'binder').map(dye => dye(x)),
-      blend: x => result.queryCell('lighten', 'blend').map(dye => dye(x)),
+      hatsu: x => result.cell('lighten', 'hatsu').map(dye => dye(x)),
+      render: x => result.cell('lighten', 'render').map(dye => dye(x)),
+      binder: x => result.cell('lighten', 'binder').map(dye => dye(x)),
+      blend: x => result.cell('lighten', 'blend').map(dye => dye(x)),
     }
   }
 
   static testRender () {
-    const { lapse, result } = Chrono.strategies({
+    const { lapse, result } = strategies({
       repeat: 1E+5,
-      paramsList: {
+      candidates: {
         urus: ['urus'],
         zagato: ['zagato'],
         leo: ['leo']
       },
-      funcList: dyeList
+      methods: dyeList
     })
-    'lapse' |> console.log
-    lapse |> CrosTabX.brief |> console.log
-    '' |> console.log
-    'result' |> console.log
-    result |> CrosTabX.brief |> console.log
+    lapse |> decoCrostab |> says['lapse']
+    '' |> logger
+    result |> decoCrostab |> says['result']
   }
 }
 

@@ -1,6 +1,6 @@
 import { FRESH } from '@palett/presets'
 import {  presetToFlatDye, presetToLeap, STAT_BOUND_CONFIG } from '@palett/util-fluo'
-import {dyeMap} from '@palett/util-dye-map'
+import {dyeMap} from '@table/util-dye-map'
 import { Stat, StatMx } from 'borel'
 import { Ar, Mx } from 'veho'
 

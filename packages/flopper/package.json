@@ -1,5 +1,5 @@
 {
-  "name": "@palett/table",
+  "name": "@palett/flopper",
   "version": "0.0.15",
   "description": "A color converter",
   "main": "dist/index.cjs.js",
@@ -15,27 +15,21 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@analys/crostab": "0.0.10",
-    "@aryth/math": "0.0.11",
-    "@palett/convert": "^0.0.15",
+    "@palett/table": "^0.0.15",
+    "@palett/cards": "^0.0.15",
     "@palett/enum-color-space": "^0.0.15",
-    "@palett/hatsu": "^0.0.15",
-    "@spare/string": "^0.1.8",
-    "@vect/matrix-mapper": "^0.1.2",
-    "@vect/vector-mapper": "^0.1.2",
-    "borel": "^0.1.39",
-    "crostab": "^0.3.8",
-    "palett": "^0.0.23",
-    "roulett": "^0.0.6",
-    "veho": "^0.2.22"
+    "@aryth/rand": "^0.0.11",
+    "@aryth/rank": "^0.0.11",
+    "@vect/swap": "^0.1.8",
+    "@vect/vector-mapper": "^0.1.8"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hoyeungw/palett/table.git"
+    "url": "git+https://github.com/hoyeungw/palett/flopper.git"
   },
   "keywords": [
-    "table",
-    "cross table",
+    "flopper",
+    "cross flopper",
     "bi",
     "insight",
     "analytic"
@@ -47,8 +41,8 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hoyeungw/palett/table"
+    "url": "https://github.com/hoyeungw/palett/flopper"
   },
-  "homepage": "https://github.com/hoyeungw/palett/table#readme",
+  "homepage": "https://github.com/hoyeungw/palett/flopper#readme",
   "gitHead": "7497057b2a2e6dd14fca73d42f5f3460839a0fec"
 }

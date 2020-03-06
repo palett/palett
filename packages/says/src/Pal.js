@@ -5,33 +5,22 @@ import { Callable } from '../util/Callable'
 export class Pal extends Callable {
   /** @type {string} */ title = ''
   /** @type {number} */ indent = 0
-  /** @type {Object<string,string>} */ keywords = {}
 
-  constructor (title, { indent = 0, keywords } = {}) {
+  constructor (title, { indent = 0 } = {}) {
     super(text => logger(text, this))
     if (title) this.title = title
     if (indent) this.indent = indent
-    if (keywords) this.keywords = keywords
   }
+
+  get asc () { return this.indent++, this }
+  get desc () { return (this.indent && this.indent--), this }
 
   /**
-   *
    * @param title
    * @param indent
-   * @param keywords
    * @returns {Pal|function}
    */
-  static build (title, { indent = 0, keywords } = {}) {
-    return new Pal(title, { indent, keywords })
-  }
-
-  get asc () {
-    this.indent++
-    return this
-  }
-
-  get desc () {
-    if (this.indent) this.indent--
-    return this
+  static build (title, { indent = 0 } = {}) {
+    return new Pal(title, { indent })
   }
 }

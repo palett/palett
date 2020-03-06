@@ -1,4 +1,4 @@
-import { dilhex } from '../utils/hex/dilhex'
+import { hexToInt } from './hexToInt'
 
 /**
  *
@@ -6,8 +6,6 @@ import { dilhex } from '../utils/hex/dilhex'
  * @returns {number[]}
  */
 export function hexToRgb (hex) {
-  if (hex.charAt(0) === '#') hex = hex.substring(1)
-  if (!hex[3]) hex = dilhex(hex)
-  const n = parseInt(hex, 16)
-  return [n >> 16 & 0xFF, n >> 8 & 0xFF, n & 0xFF]
+  const int = hexToInt(hex)
+  return [int >> 16 & 0xFF, int >> 8 & 0xFF, int & 0xFF]
 }

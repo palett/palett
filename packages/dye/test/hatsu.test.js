@@ -3,6 +3,6 @@ import { logger } from '@spare/logger'
 
 const rgb = [44, 181, 233]
 const dye = Dye(rgb, 'bold', 'italic')
-// blaze.Yellow.italic.inverse |> console.log
+// dyer.Yellow.italic.inverse |> console.log
 dye |> logger
 'foo' |> dye |> logger

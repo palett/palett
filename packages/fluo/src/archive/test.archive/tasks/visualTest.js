@@ -32,10 +32,10 @@ export class VisualTest {
       }
     })
     'lapse' |> console.log
-    lapse |> CrosTabX.brief |> console.log
+    lapse |> decoCrostab |> says['lapse']
     '' |> console.log
     'result' |> console.log
-    result |> CrosTabX.brief |> console.log
+    result |> decoCrostab |> says['result']
   }
 
   static testMatrix () {
@@ -83,10 +83,10 @@ export class VisualTest {
       }
     })
     'lapse' |> console.log
-    lapse |> CrosTabX.brief |> console.log
+    lapse |> decoCrostab |> says['lapse']
     '' |> console.log
     'result' |> console.log
-    // result |> CrosTabX.brief |> console.log
+    // result |> decoCrostab |> says['result']
     // Samples.fromCrosTab(result, { sideLabel: 'parameter' }) |> deco |> console.log
     const { side, banner } = result
     for (let head of banner) {
@@ -140,10 +140,10 @@ export class VisualTest {
       }
     })
     'lapse' |> console.log
-    lapse |> CrosTabX.brief |> console.log
+    lapse |> decoCrostab |> says['lapse']
     '' |> console.log
     'result' |> console.log
-    // result |> CrosTabX.brief |> console.log
+    // result |> decoCrostab |> says['result']
     // Samples.fromCrosTab(result, { sideLabel: 'parameter' }) |> deco |> console.log
     const { side, banner } = result
     for (let head of banner) {

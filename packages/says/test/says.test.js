@@ -1,17 +1,18 @@
 import { Says } from '../src/Says'
 import { deca } from '@spare/deco'
-import { decoMatrix, DecoVector, logger, logNeL } from '@spare/logger'
+import { decoMatrix, DecoVector, delogger, logger, logNeL } from '@spare/logger'
 import { movieQuotesEntries } from './movie.lines'
 import { flop, rand } from '@aryth/rand'
-import { says } from '../index'
 import { SimpleMatrices } from '@foba/foo'
 import { AQUA, AURORA, FRESH, JUNGLE, LAVA, METRO, OCEAN, PLANET, Presets, SUBTLE } from '@palett/presets'
 import { xr } from '@spare/xr'
 import { RN } from '@spare/util'
+import { BOLD } from '@palett/enum-font-effects'
+import { says } from '../index'
 
 export class CallableTest {
   static test () {
-    const says = Says.build({ keywords: { tmr: 1 } })
+    const says = Says.build({ effects: [BOLD] })
     'what to do' |> says.chef
     'how would i know' |> says.worker.asc
     'i\'ll be there tmr' |> says.worker
@@ -23,6 +24,7 @@ export class CallableTest {
     says.roster |> deca({ vo: 1 }) |> logNeL
     'registered color' |> logger
     says.colorPool |> deca({ vo: 1 })|> logNeL
+    says.roster() |> delogger
   }
 
   static test2 () {
@@ -47,6 +49,7 @@ export class CallableTest {
       return !(y % 4) && (y % 100) || !(y % 400)
     }
     stb(1024) |> says[1024]
+    says.roster(1024) |> delogger
   }
 }
 

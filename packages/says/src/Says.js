@@ -1,46 +1,45 @@
-import { PalettSelector } from '@palett/table'
 import { hexToRgb } from '@palett/convert'
-import { Dye } from '@palett/dye'
+import { PrepDye } from '@palett/dye'
+import { palettFlopper } from '@palett/flopper'
+import { ITALIC } from '@palett/enum-font-effects'
 import { mapper } from '@vect/object-mapper'
 import { FUN } from '@typen/enums'
 import { Pal } from './Pal'
 
 export class Says {
   /** @type {Object<string,Pal|function>} */ #roster = {}
-  /** @type {Set<string>} */ #colorPool = new Set()
-  /** @type {Object<string,string>} */ #keywords = {}
+  /** @type {Generator<{color:*}>} */ #pool = palettFlopper({ exhausted: false })
+  /** @type {Function} */ #Dye
 
-  constructor (roster, keywords) {
+  constructor (roster, effects) {
     if (roster) this.#roster = roster
-    if (keywords) this.#keywords = keywords
+    this.#Dye = PrepDye.apply(null, effects || [])
     return new Proxy(this, {
       /** @returns {Pal|function} */
-      get (target, p, receiver) {
-        if (p in target) return typeof (p = target[p]) === FUN ? p.bind(target) : p
-        if (p in target.#roster) return target.#roster[p]
-        let hex, n = 0
-        do {
-          ({ hex } = PalettSelector.random())
-        } while (++n <= PalettSelector.pool && target.#colorPool.has(hex))
-        target.#colorPool.add(hex)
-        return target.#roster[p] = Pal.build(p |> Dye(hex |> hexToRgb), { keywords: target.#keywords })
+      get (tar, p) {
+        if (p in tar) return typeof (p = tar[p]) === FUN ? p.bind(tar) : p
+        if (p in tar.#roster) return tar.#roster[p]
+        const { value: { color } } = tar.#pool.next()
+        return tar.#roster[p] = Pal.build(p |> tar.#Dye(color|> hexToRgb))
       }
     })
   }
 
-  aboard (name, hex) {
-    this.#colorPool.add(hex)
-    return this.#roster[name] = Pal.build(name |> Dye(hex |> hexToRgb), { keywords: this.#keywords })
+  aboard (name, color) {
+    if (!color) ({ value: { color } } = this.#pool.next())
+    return this.#roster[name] = Pal.build(name |> this.#Dye(color|> hexToRgb))
   }
 
-  get roster () { return mapper(this.#roster, ({ title }) => title) }
-  get colorPool () { return this.#colorPool }
+  roster (name) {
+    if (name) return this.#roster[name]?.title
+    return mapper(this.#roster, ({ title }) => title)
+  }
 
   /**
    *
    * @param roster
-   * @param keywords
+   * @param effects
    * @returns {Says|Object<string,function>}
    */
-  static build ({ roster, keywords }) { return new Says(roster, keywords) }
+  static build ({ roster, effects = [ITALIC] } = {}) { return new Says(roster, effects) }
 }

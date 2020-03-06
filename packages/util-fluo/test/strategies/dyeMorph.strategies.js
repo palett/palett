@@ -39,7 +39,7 @@ const { lapse, result } = Chrono.strategies({
   }
 })
 'lapse' |> console.log
-lapse |> CrosTabX.brief |> console.log
+lapse |> decoCrostab |> says['lapse']
 '' |> console.log
 'result' |> console.log
-result |> CrosTabX.brief |> console.log
+result |> decoCrostab |> says['result']

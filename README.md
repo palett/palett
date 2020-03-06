@@ -35,7 +35,7 @@ $ npm install @palett/<tool-name>
 | [**convert**](packages/convert)              | Convert RGB, HEX or HSL            | util       |
 | [**cards**](packages/cards)                  | Palett color cards                 | constants  |
 | [**presets**](packages/presets)              | Color presets for 'fluo'           | constants  |
-| [**color-table**](packages/color-table)      | Demo palett color table in console | constants  |
+| [**table**](packages/table)                  | Demo palett color table in console | constants  |
 | [**dye**](packages/dye)                      | Colorify string (by ANSI rule)     | colorant   |
 | [**says**](packages/says)                    | Colored logger creator             | colorant   |
 | [**hatsu**](packages/hatsu)                  | Chalk-style color string           | colorant   |
