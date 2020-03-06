@@ -1,13 +1,10 @@
-export const expReg = /[A-Z]+|[0-9]+/g
-
-export const sepWords = (jvExp) =>
-  jvExp.replace(expReg, it => ' ' + it.toLowerCase()).trim()
+import { camelToLowerDashed } from '@spare/string'
 
 /**
  *
  * @param {string} name
  * @returns {string}
  */
-export const readify = name => (name |> sepWords)
-  .replace('light ', 'l.')
-  .replace('deep ', 'd.')
+export const readify = name => (camelToLowerDashed(name, '.'))
+  .replace('light', 'l')
+  .replace('deep', 'd')

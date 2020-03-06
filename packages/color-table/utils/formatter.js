@@ -4,7 +4,7 @@ import { mapper } from '@vect/vector-mapper'
 import { HEX, HSL, RGB } from '@palett/enum-color-space'
 import { round } from '@aryth/math'
 
-export const toDataPicker = colorSpace => {
+export const ColorPick = colorSpace => {
   switch (colorSpace) {
     case RGB:
       return x => x |> hexToRgb
@@ -32,11 +32,11 @@ export function toStatistic (space, cellColor = false) {
   }
 }
 
-export const toFormatter = (space, colorify = false) => {
+export const Formatter = (space, color = false) => {
   let formatter = space === RGB || space === HSL
     ? vec => vec.map(x => String(round(x)).padStart(3))
     : null
-  let hatsu = colorify
+  let hatsu = color
     ? space |> toHatsu
     : null
   return formatter

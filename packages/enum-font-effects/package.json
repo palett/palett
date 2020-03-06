@@ -1,0 +1,36 @@
+{
+  "name": "@palett/enum-font-effects",
+  "version": "0.0.14",
+  "description": "A colorant to string",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "pub": "npm publish",
+    "test": "node -r @babel/register test/test.index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoyeungw/palett/enum-font-effects.git"
+  },
+  "keywords": [
+    "chalk",
+    "color"
+  ],
+  "author": {
+    "name": "Hoyeung Wong",
+    "email": "hoyeungw@outlook.com",
+    "url": "https://github.com/hoyeungw"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hoyeungw/palett/enum-font-effects"
+  },
+  "homepage": "https://github.com/hoyeungw/palett/enum-font-effects#readme",
+  "gitHead": "7497057b2a2e6dd14fca73d42f5f3460839a0fec"
+}
