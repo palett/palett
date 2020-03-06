@@ -1,11 +1,11 @@
-import { Mx } from 'veho'
+import { Ob, Ar, Mx } from 'veho'
+import { CrosTab } from 'crostab'
 import { Palett } from 'palett'
 import { readify } from '../utils/readify'
 import { toDataPicker, toFormatter, toStatistic } from '../utils/toFormatter'
 import { Degrees } from './Degrees'
 import { ColorGroups } from './ColorGroups'
-import { Ob, Ar } from 'veho'
-import { CrosTab } from 'crostab'
+import { transpose } from '@vect/matrix-transpose'
 
 export class PalettTable {
   static meta () {
@@ -40,7 +40,7 @@ export class PalettTable {
         .map(tube =>
           Ob.selectValues(tube, degrees)
             .map(dataPicker)
-        )|> Mx.transpose
+        )|> transpose
     const crosTab = new CrosTab(degrees, colors.map(readify), Mx.map(matrix, formatter))
     if (average) {
       const statistic = space |> toStatistic

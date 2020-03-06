@@ -37,6 +37,6 @@
   "homepage": "https://github.com/hoyeungw/@palett#readme",
   "gitHead": "7497057b2a2e6dd14fca73d42f5f3460839a0fec",
   "dependencies": {
-    "palett-presets": "^0.0.21"
+    "palett-presets": "^0.0.23"
   }
 }

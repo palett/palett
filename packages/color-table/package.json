@@ -17,10 +17,11 @@
   "dependencies": {
     "@palett/convert": "^0.0.12",
     "@palett/hatsu": "^0.0.12",
+    "@palett/enum-color-space": "^0.0.12",
     "borel": "^0.1.39",
     "crostab": "^0.3.8",
-    "palett": "^0.0.21",
-    "roulett": "^0.0.5",
+    "palett": "^0.0.23",
+    "roulett": "^0.0.6",
     "veho": "^0.2.22"
   },
   "repository": {

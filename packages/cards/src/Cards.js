@@ -46,15 +46,11 @@ export const Cards = {
 }
 
 Reflect.defineProperty(Cards, 'colors', {
-  get () {
-    return Object.keys(Cards)
-  },
+  get () { return Object.keys(Cards) },
   enumerable: false
 })
 Reflect.defineProperty(Cards, 'degrees', {
-  get () {
-    for (let color in Cards) return Object.keys(Cards[color])
-  },
+  get () { for (let color in Cards) return Object.keys(Cards[color]) },
   enumerable: false
 })
 

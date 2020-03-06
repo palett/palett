@@ -20,8 +20,8 @@
     "@palett/table": "^0.0.12",
     "@spare/util": "^0.1.5",
     "@typen/enums": "^0.0.1",
-    "@vect/callable": "^0.0.27",
-    "@vect/object-mapper": "^0.0.27"
+    "@vect/callable": "^0.1.2",
+    "@vect/object-mapper": "^0.1.2"
   },
   "repository": {
     "type": "git",
