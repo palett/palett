@@ -8,14 +8,14 @@ import { sortBy } from '../utils/sortDegrees'
 import { degreeToIndice } from '../utils/degreeToIndice'
 
 export function * palettFlopper ({
-  degrees = Degrees.readable,
+  degrees = Degrees.entire,
   colors = ColorGroups.rainbow,
   space = HEX,
   defaultColor = Grey.lighten_1,
   exhausted = true
 } = {}) {
   const palett = degreesByColors({ degrees, colors, space })
-  degrees = sortBy.call(degrees, degreeToIndice, NUM_DESC)
+  degrees = sortBy.call(degrees.slice(), degreeToIndice, NUM_DESC)
   let h = degrees.length, w = colors.length
   for (let i = 0; i < h; i++) {
     for (let j = w - 1, side = degrees[i], head = palett.head.slice(), banner; j >= 0; j--) {

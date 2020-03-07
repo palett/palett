@@ -1,5 +1,8 @@
 .idea
+.yarn
 temp
 node_modules
 packages/*/dist
 yarn.lock
+yarn-error.log
+.yarnrc

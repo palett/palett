@@ -12,7 +12,7 @@
   },
   "scripts": {
     "pub": "npm publish",
-    "test": "node -r @babel/register test/test.index.js"
+    "test": "node -r @babel/register test/table.test.js"
   },
   "dependencies": {
     "@analys/crostab": "0.0.10",
