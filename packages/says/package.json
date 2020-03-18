@@ -19,9 +19,11 @@
     "@palett/dye": "^0.0.17",
     "@palett/enum-font-effects": "^0.0.17",
     "@palett/flopper": "^0.0.17",
-    "@spare/util": "^0.1.8",
-    "@typen/enums": "^0.0.1",
-    "@vect/object-mapper": "^0.1.8"
+    "@spare/enum-chars": "^0.1.18",
+    "@spare/util": "^0.1.21",
+    "@typen/enum-data-types": "^0.0.3",
+    "@typen/enums": "^0.0.3",
+    "@vect/object-mapper": "^0.1.15"
   },
   "repository": {
     "type": "git",
@@ -41,5 +43,5 @@
     "url": "https://github.com/hoyeungw/palett/says"
   },
   "homepage": "https://github.com/hoyeungw/palett/says#readme",
-  "gitHead": "7497057b2a2e6dd14fca73d42f5f3460839a0fec"
+  "gitHead": "6da7746058d4e9712e9687bd45e38406999d88bf"
 }

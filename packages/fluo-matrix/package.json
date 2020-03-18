@@ -16,13 +16,13 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@aryth/bound-matrix": "^0.0.11",
-    "@aryth/rank": "^0.0.11",
+    "@aryth/bound-matrix": "^0.0.13",
+    "@aryth/rank": "^0.0.13",
     "@palett/fluo-vector": "^0.0.17",
     "@palett/presets": "^0.0.17",
     "@palett/util-fluo": "^0.0.17",
-    "@vect/matrix": "^0.1.8",
-    "@vect/vector": "^0.1.8"
+    "@vect/matrix": "^0.1.17",
+    "@vect/vector": "^0.1.17"
   },
   "repository": {
     "type": "git",
@@ -42,5 +42,5 @@
     "url": "https://github.com/hoyeungw/palett/fluo-matrix"
   },
   "homepage": "https://github.com/hoyeungw/palett/fluo-matrix#readme",
-  "gitHead": "7497057b2a2e6dd14fca73d42f5f3460839a0fec"
+  "gitHead": "6da7746058d4e9712e9687bd45e38406999d88bf"
 }

@@ -17,9 +17,9 @@
   "dependencies": {
     "@palett/fluo-vector": "^0.0.17",
     "@palett/presets": "^0.0.17",
-    "@vect/entries-unwind": "^0.1.8",
-    "@vect/entries-zipper": "^0.1.8",
-    "@vect/vector": "^0.1.8"
+    "@vect/entries-unwind": "^0.1.15",
+    "@vect/entries-zipper": "^0.1.15",
+    "@vect/vector": "^0.1.17"
   },
   "repository": {
     "type": "git",
@@ -39,5 +39,5 @@
     "url": "https://github.com/hoyeungw/palett/fluo-entries"
   },
   "homepage": "https://github.com/hoyeungw/palett/fluo-entries#readme",
-  "gitHead": "7497057b2a2e6dd14fca73d42f5f3460839a0fec"
+  "gitHead": "6da7746058d4e9712e9687bd45e38406999d88bf"
 }

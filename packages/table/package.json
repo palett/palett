@@ -15,22 +15,22 @@
     "test": "node -r @babel/register test/table.test.js"
   },
   "dependencies": {
-    "@analys/crostab": "0.0.10",
-    "@aryth/math": "0.0.11",
+    "@analys/crostab": "0.1.3",
+    "@aryth/math": "0.0.13",
     "@palett/cards": "^0.0.17",
     "@palett/convert": "^0.0.17",
     "@palett/dye": "^0.0.17",
     "@palett/enum-color-cards": "^0.0.17",
     "@palett/enum-color-space": "^0.0.17",
     "@palett/enum-font-effects": "^0.0.17",
-    "@spare/string": "^0.1.8",
-    "@vect/columns-mapper": "^0.1.8",
-    "@vect/matrix-mapper": "^0.1.8",
-    "@vect/matrix-transpose": "^0.1.8",
-    "@vect/object-select": "^0.1.8",
-    "@vect/vector-indicator": "^0.1.8",
-    "@vect/vector-init": "^0.1.8",
-    "@vect/vector-mapper": "^0.1.8"
+    "@spare/string": "^0.1.21",
+    "@vect/columns-mapper": "^0.1.16",
+    "@vect/matrix-mapper": "^0.1.15",
+    "@vect/matrix-transpose": "^0.1.16",
+    "@vect/object-select": "^0.1.17",
+    "@vect/vector-indicator": "^0.1.17",
+    "@vect/vector-init": "^0.1.17",
+    "@vect/vector-mapper": "^0.1.16"
   },
   "repository": {
     "type": "git",
@@ -53,5 +53,5 @@
     "url": "https://github.com/hoyeungw/palett/table"
   },
   "homepage": "https://github.com/hoyeungw/palett/table#readme",
-  "gitHead": "7497057b2a2e6dd14fca73d42f5f3460839a0fec"
+  "gitHead": "6da7746058d4e9712e9687bd45e38406999d88bf"
 }

@@ -11,6 +11,6 @@ for (let i = 0; i < 32; i++) {
   ({ hue, degree, color: color|> prepDye(color|> hexToRgb) }) |> deca({ wo: 128 }) |> logger
 }
 
-// [...flp] |> deca({ wo: 128 }) |> logger
+// [...flp] |> deca({ wo: 128 }) |> narrate
 // for (let o of flp) { o |> delogger }
 

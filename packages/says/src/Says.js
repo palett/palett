@@ -1,9 +1,9 @@
 import { hexToRgb } from '@palett/convert'
 import { PrepDye } from '@palett/dye'
-import { palettFlopper } from '@palett/flopper'
 import { ITALIC } from '@palett/enum-font-effects'
+import { FUN } from '@typen/enum-data-types'
+import { palettFlopper } from '@palett/flopper'
 import { mapper } from '@vect/object-mapper'
-import { FUN } from '@typen/enums'
 import { Pal } from './Pal'
 
 export class Says {
@@ -31,7 +31,7 @@ export class Says {
   }
 
   roster (name) {
-    if (name) return this.#roster[name]?.title
+    if (name) return (this.#roster[name] ?? this.aboard(name)).title
     return mapper(this.#roster, ({ title }) => title)
   }
 

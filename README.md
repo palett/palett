@@ -19,7 +19,7 @@
 - Color presets to visualize numeric or string array.(@palett/presets)
 - Colored debug loggers, functional declaring & use out-of-box. (@palett/says).
 - Palett color cards (@palett/cards).
-- Chalk-styled color logger.(@palett/hatsu)
+- Chalk-styled color narrate.(@palett/hatsu)
 - ES-module support.
 
 ## Install
@@ -37,7 +37,7 @@ $ npm install @palett/<tool-name>
 | [**presets**](packages/presets)              | Color presets for 'fluo'           | constants  |
 | [**table**](packages/table)                  | Demo palett color table in console | constants  |
 | [**dye**](packages/dye)                      | Colorify string (by ANSI rule)     | colorant   |
-| [**says**](packages/says)                    | Colored logger creator             | colorant   |
+| [**says**](packages/says)                    | Colored narrate creator             | colorant   |
 | [**hatsu**](packages/hatsu)                  | Chalk-style color string           | colorant   |
 | [**fluo**](packages/fluo)                    | Index for submodules of 'fluo'     | colorant   |
 | [**fluo-vector**](packages/fluo-vector)      | Color array                        | colorant   |
