@@ -12,13 +12,13 @@
   },
   "scripts": {
     "pub": "npm publish",
-    "test": "node -r @babel/register test/test.index.js",
-    "test-jest": "jest"
+    "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@palett/convert": "^0.1.0",
     "@palett/dye": "^0.1.0",
-    "typen": "^0.1.9"
+    "@palett/convert": "^0.1.0",
+    "@typen/num-strict": "^0.0.4",
+    "@aryth/comparer": "^0.1.0"
   },
   "repository": {
     "type": "git",

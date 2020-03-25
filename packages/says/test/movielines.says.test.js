@@ -16,7 +16,7 @@ const presets = [AQUA, OCEAN, LAVA, SUBTLE]
 for (let i = 0, film, quote; i < 24; i++) {
   [film, quote] = movieQuotesEntries |> flop
   quote = quote.replace(dict, x => x.split(' '))
-    |> DecoVector({ indexed: false, delimiter: ' ', stringPreset: SUBTLE })
+    |> DecoVector({ indexed: false, delim: ' ', stringPreset: SUBTLE })
   const sayer = rand(2)
     ? (rand(2) ? says[film] : says[film].asc)
     : (rand(2) ? says[film] : says[film].desc)

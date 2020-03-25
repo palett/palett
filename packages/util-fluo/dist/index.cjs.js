@@ -2,18 +2,15 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var typen = require('typen');
+var comparer = require('@aryth/comparer');
 var convert = require('@palett/convert');
 var dye = require('@palett/dye');
+var numStrict = require('@typen/num-strict');
 
 const STAT_BOUND_CONFIG = {
   dif: true,
   level: 2
 };
-
-const {
-  isNumeric
-} = typen.Num;
 
 /**
  * Create a dye from a hsl array
@@ -29,7 +26,7 @@ const hslToDye = hsl => {
 
 const leverage = ([h, s, l], base) => [h / base, s / base, l / base];
 
-const amp = (x, min, lever, base) => (x - min) * lever + base;
+const scale = (x, min, lever, base, ceil) => comparer.min((comparer.max(x, min) - min) * lever + base, ceil);
 const dyeBlender = function (x) {
   var _ref;
 
@@ -38,7 +35,7 @@ const dyeBlender = function (x) {
     lever: [rH, rS, rL],
     base: [mH, mS, mL]
   } = this;
-  return _ref = [amp(x, m, rH, mH), amp(x, m, rS, mS), amp(x, m, rL, mL)], hslToDye(_ref);
+  return _ref = [scale(x, m, rH, mH, 360), scale(x, m, rS, mS, 100), scale(x, m, rL, mL, 100)], hslToDye(_ref);
 };
 /**
  *
@@ -54,10 +51,13 @@ const BlendDye = (valueLeap, colorLeap) => dyeBlender.bind({
   base: colorLeap.min
 });
 
+// let protoType = function (it) {
+const STRING = 'string';
+
 const parseHsl = color => {
   var _color;
 
-  return typeof color === typen.STRING ? (_color = color, convert.hexToHsl(_color)) : color;
+  return typeof color === STRING ? (_color = color, convert.hexToHsl(_color)) : color;
 };
 
 /**
@@ -111,14 +111,14 @@ const dyeMap = (vec, {
   var _colorLeap$min;
 
   let blendDye;
-  return valueLeap.dif && colorLeap.dif.some(n => !!n) ? (blendDye = BlendDye(valueLeap, colorLeap), colorant ? mapper(vec, x => isNumeric(x) ? blendDye(x) : primeDye) : mapper(vec, x => {
+  return valueLeap.dif && colorLeap.dif.some(n => !!n) ? (blendDye = BlendDye(valueLeap, colorLeap), colorant ? mapper(vec, x => numStrict.isNumeric(x) ? blendDye(x) : primeDye) : mapper(vec, x => {
     var _x, _x2;
 
-    return isNumeric(x) ? (_x = x, blendDye(x)(_x)) : (_x2 = x, primeDye(_x2));
-  })) : (blendDye = (_colorLeap$min = colorLeap.min, hslToDye(_colorLeap$min)), colorant ? mapper(vec, x => isNumeric(x) ? blendDye : primeDye) : mapper(vec, x => {
+    return numStrict.isNumeric(x) ? (_x = x, blendDye(x)(_x)) : (_x2 = x, primeDye(_x2));
+  })) : (blendDye = (_colorLeap$min = colorLeap.min, hslToDye(_colorLeap$min)), colorant ? mapper(vec, x => numStrict.isNumeric(x) ? blendDye : primeDye) : mapper(vec, x => {
     var _x3, _x4;
 
-    return isNumeric(x) ? (_x3 = x, blendDye(_x3)) : (_x4 = x, primeDye(_x4));
+    return numStrict.isNumeric(x) ? (_x3 = x, blendDye(_x3)) : (_x4 = x, primeDye(_x4));
   }));
 };
 
@@ -154,14 +154,14 @@ const dyeZip = (keys, {
     colorant
   });
   let blendDye;
-  const fn = valueLeap.dif && colorLeap.dif.some(n => !!n) ? (blendDye = BlendDye(valueLeap, colorLeap), colorant ? (x, v) => isNumeric(v) ? blendDye(v) : primeDye : (x, v) => {
+  const fn = valueLeap.dif && colorLeap.dif.some(n => !!n) ? (blendDye = BlendDye(valueLeap, colorLeap), colorant ? (x, v) => numStrict.isNumeric(v) ? blendDye(v) : primeDye : (x, v) => {
     var _x, _x2;
 
-    return isNumeric(v) ? (_x = x, blendDye(v)(_x)) : (_x2 = x, primeDye(_x2));
-  }) : (blendDye = (_colorLeap$min = colorLeap.min, hslToDye(_colorLeap$min)), colorant ? (x, v) => isNumeric(v) ? blendDye : primeDye : (x, v) => {
+    return numStrict.isNumeric(v) ? (_x = x, blendDye(v)(_x)) : (_x2 = x, primeDye(_x2));
+  }) : (blendDye = (_colorLeap$min = colorLeap.min, hslToDye(_colorLeap$min)), colorant ? (x, v) => numStrict.isNumeric(v) ? blendDye : primeDye : (x, v) => {
     var _x3, _x4;
 
-    return isNumeric(v) ? (_x3 = x, blendDye(_x3)) : (_x4 = x, primeDye(_x4));
+    return numStrict.isNumeric(v) ? (_x3 = x, blendDye(_x3)) : (_x4 = x, primeDye(_x4));
   });
   return zipper(keys, values, fn);
 };
@@ -205,7 +205,6 @@ exports.dyeMap = dyeMap;
 exports.dyeZip = dyeZip;
 exports.fluoZip = fluoZip;
 exports.hslToDye = hslToDye;
-exports.isNumeric = isNumeric;
 exports.leverage = leverage;
 exports.presetToFlatDye = presetToFlatDye;
 exports.presetToLeap = presetToLeap;

@@ -1,5 +1,5 @@
+import { isNumeric } from '@typen/num-strict'
 import { dyeMap } from '../fluoMap/dyeMap'
-import { isNumeric } from '../typeCheckers/isNumeric'
 import { BlendDye } from '../dyeBlenders/blendDye'
 import { hslToDye } from '../dyeBlenders/hslToDye'
 

@@ -1,4 +1,4 @@
-import { isNumeric } from '../typeCheckers/isNumeric'
+import { isNumeric } from '@typen/num-strict'
 import { BlendDye } from '../dyeBlenders/blendDye'
 import { hslToDye } from '../dyeBlenders/hslToDye'
 

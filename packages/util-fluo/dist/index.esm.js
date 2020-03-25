@@ -1,15 +1,12 @@
-import { Num, STRING } from 'typen';
+import { min, max } from '@aryth/comparer';
 import { hslToRgb, hexToHsl } from '@palett/convert';
 import { Dye } from '@palett/dye';
+import { isNumeric } from '@typen/num-strict';
 
 const STAT_BOUND_CONFIG = {
   dif: true,
   level: 2
 };
-
-const {
-  isNumeric
-} = Num;
 
 /**
  * Create a dye from a hsl array
@@ -25,7 +22,7 @@ const hslToDye = hsl => {
 
 const leverage = ([h, s, l], base) => [h / base, s / base, l / base];
 
-const amp = (x, min, lever, base) => (x - min) * lever + base;
+const scale = (x, min$1, lever, base, ceil) => min((max(x, min$1) - min$1) * lever + base, ceil);
 const dyeBlender = function (x) {
   var _ref;
 
@@ -34,7 +31,7 @@ const dyeBlender = function (x) {
     lever: [rH, rS, rL],
     base: [mH, mS, mL]
   } = this;
-  return _ref = [amp(x, m, rH, mH), amp(x, m, rS, mS), amp(x, m, rL, mL)], hslToDye(_ref);
+  return _ref = [scale(x, m, rH, mH, 360), scale(x, m, rS, mS, 100), scale(x, m, rL, mL, 100)], hslToDye(_ref);
 };
 /**
  *
@@ -49,6 +46,9 @@ const BlendDye = (valueLeap, colorLeap) => dyeBlender.bind({
   lever: leverage(colorLeap.dif, valueLeap.dif),
   base: colorLeap.min
 });
+
+// let protoType = function (it) {
+const STRING = 'string';
 
 const parseHsl = color => {
   var _color;
@@ -195,4 +195,4 @@ const fluoZip = (keys, {
   });
 };
 
-export { BlendDye, STAT_BOUND_CONFIG, dyeMap, dyeZip, fluoZip, hslToDye, isNumeric, leverage, presetToFlatDye, presetToLeap };
+export { BlendDye, STAT_BOUND_CONFIG, dyeMap, dyeZip, fluoZip, hslToDye, leverage, presetToFlatDye, presetToLeap };

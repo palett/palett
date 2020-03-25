@@ -1,4 +1,4 @@
-import { isNumeric } from '@palett/util-fluo'
+import { isNumeric } from '@typen/num-strict'
 
 export const someNumeric = ar => ar.some(isNumeric)
 

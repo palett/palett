@@ -12,13 +12,17 @@
   },
   "scripts": {
     "pub": "npm publish",
-    "test": "node -r @babel/register src/archive/test.archive/test.index.js",
+    "test": "node -r @babel/register test/archive/test.archive/test.index.js",
     "test-jest": "jest"
   },
   "dependencies": {
     "@palett/fluo-entries": "^0.1.0",
     "@palett/fluo-matrix": "^0.1.0",
-    "@palett/fluo-vector": "^0.1.0"
+    "@palett/fluo-vector": "^0.1.0",
+    "@palett/util-fluo": "^0.1.0",
+    "@palett/presets": "^0.1.0",
+    "@vect/enum-matrix-directions": "^0.2.0",
+    "@typen/num-strict": "^0.0.4"
   },
   "repository": {
     "type": "git",

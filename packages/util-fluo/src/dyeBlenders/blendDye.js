@@ -1,11 +1,14 @@
+import { max as keepFloor, min as keepCeil } from '@aryth/comparer'
 import { hslToDye } from './hslToDye'
 import { leverage } from './leverage'
 
-export const amp = (x, min, lever, base) => (x - min) * lever + base
+export const scale = (x, min, lever, base, ceil) =>
+  keepCeil((keepFloor(x, min) - min) * lever + base, ceil)
 
 export const dyeBlender = function (x) {
   const { min: m, lever: [rH, rS, rL], base: [mH, mS, mL] } = this
-  return [amp(x, m, rH, mH), amp(x, m, rS, mS), amp(x, m, rL, mL)]|> hslToDye
+  return [scale(x, m, rH, mH, 360), scale(x, m, rS, mS, 100), scale(x, m, rL, mL, 100)]
+    |> hslToDye
 }
 /**
  *
@@ -14,10 +17,9 @@ export const dyeBlender = function (x) {
  * @returns {function(*):function}
  * @constructor
  */
-export const BlendDye =
-  (valueLeap, colorLeap) =>
-    dyeBlender.bind({
-      min: valueLeap.min,
-      lever: leverage(colorLeap.dif, valueLeap.dif),
-      base: colorLeap.min
-    })
+export const BlendDye = (valueLeap, colorLeap) =>
+  dyeBlender.bind({
+    min: valueLeap.min,
+    lever: leverage(colorLeap.dif, valueLeap.dif),
+    base: colorLeap.min
+  })
