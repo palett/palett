@@ -1,7 +1,7 @@
 import { STR } from '@typen/enum-data-types'
-import { LF } from '@spare/enum-chars'
+import { LF, SP } from '@spare/enum-chars'
 
-export const tab = ind => ' '.repeat(ind << 1)
+export const tab = ind => SP.repeat(ind << 1)
 
 export const narrate = (text, options) => {
   let { title, des, indent } = options

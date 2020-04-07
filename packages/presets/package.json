@@ -12,8 +12,7 @@
   },
   "scripts": {
     "pub": "npm publish",
-    "test": "node -r @babel/register test/test.index.js",
-    "test-jest": "jest"
+    "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
     "@palett/cards": "^0.1.1"

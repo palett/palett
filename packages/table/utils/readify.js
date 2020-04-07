@@ -1,10 +1,9 @@
-import { camelToLowerDashed } from '@spare/string'
+import { camelToSnake } from '@spare/phrasing'
+import { makeReplaceable } from '@spare/translator'
 
-/**
- *
- * @param {string} name
- * @returns {string}
- */
-export const readify = name => (camelToLowerDashed(name, '.'))
-  .replace('light', 'l')
-  .replace('deep', 'd')
+const lexicon = [
+  [/light/gi, 'l'],
+  [/deep/gi, 'd']
+] |> makeReplaceable
+
+export const readify = name => name.replace(lexicon, x => camelToSnake(x, '.'))

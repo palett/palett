@@ -1,5 +1,7 @@
 import { narrate } from './narrate'
 import { Callable } from '../util/Callable'
+import { SP } from '@spare/enum-chars'
+import { parenth } from '@spare/bracket'
 
 /** @type {function} */
 export class Pal extends Callable {
@@ -13,8 +15,8 @@ export class Pal extends Callable {
     if (indent) this.indent = indent
   }
 
-  p (words) { return this.des += ' ' + words, this }
-  br (words) { return this.des += ' (' + words + ')', this }
+  p (words) { return this.des += SP + words, this }
+  br (words) { return this.des += SP + parenth(words), this }
   get asc () { return this.indent++, this }
   get desc () { return (this.indent && this.indent--), this }
 

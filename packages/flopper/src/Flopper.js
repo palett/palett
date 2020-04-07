@@ -1,12 +1,8 @@
-import { degreesByColors } from '@palett/table'
-import { Degrees } from '../resources/Degrees'
-import { ColorGroups } from '../resources/ColorGroups'
-import { flop, rand } from '@aryth/rand'
+import { ColorGroups, Degrees, degreesByColors } from '@palett/table'
 import { HEX } from '@palett/enum-color-space'
 import { sortBy } from '../utils/sortDegrees'
 import { degreeToIndice } from '../utils/degreeToIndice'
 import { NUM_DESC } from '@aryth/rank'
-import { swap } from '@vect/swap'
 
 export class Flopper {
   constructor (degrees, colors, space) {

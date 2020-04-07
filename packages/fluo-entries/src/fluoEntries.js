@@ -7,8 +7,8 @@ import { mutazip as mutazipEntries } from '@vect/entries-zipper'
 /**
  *
  * @param {*[]} entries
- * @param {{max:string,min:string,na:string}} [preset]
- * @param {{max:string,min:string,na:string}} [stringPreset]
+ * @param {Object|{max:string,min:string,na:string}} [preset]
+ * @param {Object|{max:string,min:string,na:string}} [stringPreset]
  * @param {boolean} [mutate=true]
  * @param {boolean} [colorant=false]
  */

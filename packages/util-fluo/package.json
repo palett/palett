@@ -18,7 +18,7 @@
     "@aryth/comparer": "^0.1.0",
     "@palett/convert": "^0.1.1",
     "@palett/dye": "^0.1.1",
-    "@typen/num-strict": "^0.0.4"
+    "@typen/num-strict": "^0.0.7"
   },
   "repository": {
     "type": "git",

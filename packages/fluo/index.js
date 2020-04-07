@@ -8,4 +8,3 @@ export {
   ROWWISE,
   COLUMNWISE
 } from '@vect/enum-matrix-directions'
-

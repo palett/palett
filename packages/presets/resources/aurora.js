@@ -1,7 +1,7 @@
 import { Palett } from '@palett/cards'
 
 export const AURORA = {
-  max: Palett.green.accent_4,
-  min: Palett.deepPurple.darken_2,
-  na: Palett.grey.darken_2
+  max: Palett.green.accent_3,
+  min: Palett.deepPurple.accent_1,
+  na: Palett.teal.accent_1
 }

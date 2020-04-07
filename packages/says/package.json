@@ -19,10 +19,11 @@
     "@palett/dye": "^0.1.1",
     "@palett/enum-font-effects": "^0.1.1",
     "@palett/flopper": "^0.1.1",
-    "@spare/enum-chars": "^0.3.12",
-    "@spare/util": "^0.3.12",
-    "@typen/enum-data-types": "^0.0.4",
-    "@typen/enums": "^0.0.4",
+    "@spare/bracket": "^0.4.11",
+    "@spare/enum-chars": "^0.4.11",
+    "@spare/util": "^0.4.11",
+    "@typen/enum-data-types": "^0.0.7",
+    "@typen/enums": "^0.0.7",
     "@vect/object-mapper": "^0.2.0"
   },
   "repository": {
