@@ -1,8 +1,8 @@
-import { FRESH, JUNGLE } from '@palett/presets'
-import { fluoVector } from '@palett/fluo-vector'
-import { mutazip } from '@vect/vector'
-import { unwind } from '@vect/entries-unwind'
+import { fluoVector }                from '@palett/fluo-vector'
+import { FRESH, JUNGLE }             from '@palett/presets'
+import { unwind }                    from '@vect/entries-unwind'
 import { mutazip as mutazipEntries } from '@vect/entries-zipper'
+import { mutazip }                   from '@vect/vector'
 
 /**
  *
@@ -11,17 +11,19 @@ import { mutazip as mutazipEntries } from '@vect/entries-zipper'
  * @param {Object|{max:string,min:string,na:string}} [stringPreset]
  * @param {boolean} [mutate=true]
  * @param {boolean} [colorant=false]
+ * @param {Function} [filter]
  */
 export const fluoEntries = (entries, {
     preset = FRESH,
     stringPreset = JUNGLE,
     mutate = false,
-    colorant = false
+    colorant = false,
+    filter
   } = {}
 ) => {
   let [keys, items] = entries |> unwind
-  fluoVector(keys, { preset, stringPreset, mutate: true, colorant })
-  fluoVector(items, { preset, stringPreset, mutate: true, colorant })
+  fluoVector(keys, { preset, stringPreset, mutate: true, colorant, filter })
+  fluoVector(items, { preset, stringPreset, mutate: true, colorant, filter })
   const rendered = mutazip(keys, items, (k, v) => [k, v])
   return mutate
     ? mutazipEntries(entries, rendered, (a, b) => b, (a, b) => b)

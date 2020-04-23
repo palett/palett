@@ -1,5 +1,5 @@
-import { FRESH, JUNGLE } from '@palett/presets'
-import { fluoVector } from '@palett/fluo-vector'
+import { fluoVector }                          from '@palett/fluo-vector'
+import { FRESH, JUNGLE }                       from '@palett/presets'
 import { mapper as mapVec, mutate as mutaVec } from '@vect/vector'
 
 /**
@@ -9,13 +9,15 @@ import { mapper as mapVec, mutate as mutaVec } from '@vect/vector'
  * @param {{max:string|number[],min:string|number[],na:string|number[]}} [stringPreset]
  * @param {boolean} [mutate=true]
  * @param {boolean} [colorant=false]
+ * @param {Function} {filter}
  */
 export const fluoRows = (mx, {
   preset = FRESH,
   stringPreset = JUNGLE,
   mutate = false,
-  colorant = false
+  colorant = false,
+  filter,
 } = {}) => {
   const mapper = mutate ? mutaVec : mapVec
-  return mapper(mx, row => fluoVector(row, { preset, stringPreset, mutate, colorant }))
+  return mapper(mx, row => fluoVector(row, { preset, stringPreset, mutate, colorant, filter }))
 }
