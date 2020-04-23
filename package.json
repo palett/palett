@@ -9,6 +9,7 @@
     "bootstrap": "lerna bootstrap",
     "prewatch": "npm run bootstrap",
     "upint": "yarn upgrade-interactive --latest",
+    "pub": "lerna publish --force-publish",
     "build": "lerna exec --parallel -- rollup -c ../../rollup.config.js",
     "build-specific": "lerna exec --scope=@palett/flopper -- rollup -c ../../rollup.config.js",
     "watch": "lerna exec --parallel -- rollup -c ../../rollup.config.js -w",
