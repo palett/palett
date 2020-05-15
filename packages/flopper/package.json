@@ -12,17 +12,19 @@
   },
   "scripts": {
     "pub": "npm publish",
+    "build": "rollup -c ../../rollup.config.js",
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/rand": "^0.1.4",
-    "@aryth/rank": "^0.1.4",
+    "@aryth/rand": "^0.1.7",
+    "@aryth/rank": "^0.1.7",
     "@palett/cards": "^0.1.5",
     "@palett/enum-color-space": "^0.1.5",
     "@palett/table": "^0.1.5",
     "@vect/swap": "^0.2.3",
     "@vect/vector-mapper": "^0.2.3"
   },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hoyeungw/palett/flopper.git"

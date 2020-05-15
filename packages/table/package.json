@@ -15,8 +15,8 @@
     "test": "node -r @babel/register test/table.test.js"
   },
   "dependencies": {
-    "@analys/crostab": "0.3.0",
-    "@aryth/math": "0.1.4",
+    "@analys/crostab": "0.3.3",
+    "@aryth/math": "0.1.7",
     "@palett/cards": "^0.1.5",
     "@palett/convert": "^0.1.5",
     "@palett/dye": "^0.1.5",

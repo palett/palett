@@ -1,7 +1,7 @@
-import { narrate } from './narrate'
+import { narrate }  from './narrate'
 import { Callable } from '../util/Callable'
-import { SP } from '@spare/enum-chars'
-import { parenth } from '@spare/bracket'
+import { SP }       from '@spare/enum-chars'
+import { parenth }  from '@spare/bracket'
 
 /** @type {function} */
 export class Pal extends Callable {
@@ -16,8 +16,11 @@ export class Pal extends Callable {
   }
 
   p (words) { return this.des += SP + words, this }
+
   br (words) { return this.des += SP + parenth(words), this }
+
   get asc () { return this.indent++, this }
+
   get desc () { return (this.indent && this.indent--), this }
 
   /**
@@ -25,7 +28,5 @@ export class Pal extends Callable {
    * @param indent
    * @returns {Pal|function}
    */
-  static build (title, { indent = 0 } = {}) {
-    return new Pal(title, { indent })
-  }
+  static build (title, { indent = 0 } = {}) { return new Pal(title, { indent }) }
 }
