@@ -5,8 +5,8 @@ import { columnsMapper, transpose } from '@vect/matrix'
 /**
  *
  * @param {*[][]} mx
- * @param {{max:string|number[],min:string|number[],na:string|number[]}} [preset]
- * @param {{max:string|number[],min:string|number[],na:string|number[]}} [stringPreset]
+ * @param {Object|Preset} [preset]
+ * @param {Object|Preset} [stringPreset]
  * @param {boolean} [mutate=true]
  * @param {boolean} [colorant=false]
  * @param {Function} [filter]

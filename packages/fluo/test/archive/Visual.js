@@ -8,7 +8,7 @@ export class Visual {
   /**
    *
    * @param {*[]} arr
-   * @param {{max:string|number[],min:string|number[],na:string|number[]}} [mark]
+   * @param {Object|Preset} [mark]
    * @param {boolean} [mutate=true]
    * @param {boolean} [retFn=false]
    */
@@ -29,7 +29,7 @@ export class Visual {
   /**
    *
    * @param {*[][]} mx
-   * @param {{max:string|number[],min:string|number[],na:string|number[]}} [mark]
+   * @param {Object|Preset} [mark]
    * @param {number} [direct=1] - 0:p-wise, 1:r-wise, 2:c-wise
    * @param {boolean} [mutate=true]
    * @param {boolean} [retFn=false]
@@ -66,7 +66,7 @@ export class Visual {
    *
    * @param {*[][]} mx
    * @param {number} y
-   * @param {{max:string|number[],min:string|number[],na:string|number[]}} [mark]
+   * @param {Object|Preset} [mark]
    * @param {boolean} [mutate=true]
    * @param {boolean} [retFn=false]
    */

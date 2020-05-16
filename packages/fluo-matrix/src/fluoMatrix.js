@@ -13,8 +13,8 @@ import { fluoRows }                                                             
  *
  * @param {*[][]} mx
  * @param {number} direct - pointwise: 0, rowwise: 1, columnwise: 2
- * @param {{max:string|number[],min:string|number[],na:string|number[]}} [preset]
- * @param {{max:string|number[],min:string|number[],na:string|number[]}} [stringPreset]
+ * @param {Object|Preset} [preset]
+ * @param {Object|Preset} [stringPreset]
  * @param {boolean} [mutate=true]
  * @param {boolean} [colorant=false]
  * @param {Function} [filter]
@@ -35,10 +35,7 @@ export const fluoMatrix = (mx, {
     case POINTWISE:
     default:
       let values
-      if (allNAString(mx)) (
-        values = map(rank(mx, STR_ASC, filter), x => x === -1 ? NaN : x),
-          preset = stringPreset || preset
-      )
+      if (allNAString(mx)) (values = rank(mx, STR_ASC, filter), preset = stringPreset || preset)
       const [mapper, zipper] = mutate ? [mutamap, mutazip] : [map, zip]
       return fluoZip(mx, { values, mapper, zipper, bound, preset, colorant })
   }

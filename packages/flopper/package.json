@@ -12,7 +12,7 @@
   },
   "scripts": {
     "pub": "npm publish",
-    "build": "rollup -c ../../rollup.config.js",
+    "localBuild": "rollup -c ../../rollup.config.js",
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {

@@ -166,10 +166,10 @@ const dyeZip = (keys, {
  *
  * @param {*[]} keys
  * @param {*[]} values
- * @param {function(*[],function(*)):*[]} mapper
- * @param {function(*[],*[],function(*,*)):*[]} zipper
- * @param {function(*[],{dif:boolean,level:number}):{min:number,dif:number}} bound
- * @param {{max:string,min:string,na:string}} preset
+ * @param {Function|function(*[],function(*)):*[]} mapper
+ * @param {Function|function(*[],*[],function(*,*)):*[]} zipper
+ * @param {Function|function(*[],{dif:boolean,level:number}):{min:number,dif:number}} bound
+ * @param {Object} preset
  * @param {boolean} colorant
  * @returns {function[]|*[]}
  */

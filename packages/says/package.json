@@ -19,9 +19,9 @@
     "@palett/dye": "^0.1.5",
     "@palett/enum-font-effects": "^0.1.5",
     "@palett/flopper": "^0.1.5",
-    "@spare/bracket": "^0.6.1",
-    "@spare/enum-chars": "^0.6.1",
-    "@spare/util": "^0.6.1",
+    "@spare/bracket": "^0.6.5",
+    "@spare/enum-chars": "^0.6.5",
+    "@spare/util": "^0.6.5",
     "@typen/enum-data-types": "^0.1.0",
     "@typen/enums": "^0.1.0",
     "@vect/object-mapper": "^0.2.3"
