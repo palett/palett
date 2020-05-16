@@ -1,6 +1,6 @@
 {
   "name": "@palett/fluo-matrix",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A colorant to string",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -19,9 +19,9 @@
     "@aryth/bound-matrix": "^0.1.7",
     "@aryth/comparer": "^0.1.7",
     "@aryth/rank-matrix": "^0.1.7",
-    "@palett/fluo-vector": "^0.1.5",
-    "@palett/presets": "^0.1.5",
-    "@palett/util-fluo": "^0.1.5",
+    "@palett/fluo-vector": "^0.1.6",
+    "@palett/presets": "^0.1.6",
+    "@palett/util-fluo": "^0.1.6",
     "@typen/num-strict": "^0.1.0",
     "@vect/matrix": "^0.2.3",
     "@vect/vector": "^0.2.3"
