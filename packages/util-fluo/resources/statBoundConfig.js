@@ -1,1 +1,1 @@
-export const STAT_BOUND_CONFIG = { dif: true, level: 2 }
+export const BOUND_CONF = { dif: true, level: 2 }

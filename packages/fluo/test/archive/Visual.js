@@ -1,5 +1,5 @@
 import { FRESH } from '@palett/presets'
-import {  presetToFlatDye, presetToLeap, STAT_BOUND_CONFIG } from '@palett/util-fluo'
+import {  presetToFlat, presetToLeap, STAT_BOUND_CONFIG } from '@palett/util-fluo'
 import {dyeMap} from '@table/util-dye-map'
 import { Stat, StatMx } from 'borel'
 import { Ar, Mx } from 'veho'
@@ -21,7 +21,7 @@ export class Visual {
       map: mutate ? Ar.mutateMap : Ar.map,
       valueLeap: Stat.bound(arr, STAT_BOUND_CONFIG),
       colorLeap: presetToLeap(mark),
-      dye: presetToFlatDye(mark),
+      dye: presetToFlat(mark),
       colorant: retFn
     })
   }
@@ -56,7 +56,7 @@ export class Visual {
           map: mapMatrix,
           valueLeap: StatMx.bound(mx, STAT_BOUND_CONFIG),
           colorLeap: presetToLeap(mark),
-          dye: presetToFlatDye(mark),
+          dye: presetToFlat(mark),
           colorant: retFn
         })
     }
@@ -79,7 +79,7 @@ export class Visual {
       map: mutate ? (mx, fn) => Mx.mutateCol(mx, y, fn) : (mx, fn) => Mx.mapCol(mx, y, fn),
       valueLeap: StatMx.boundCol(mx, y, STAT_BOUND_CONFIG),
       colorLeap: presetToLeap(mark),
-      dye: presetToFlatDye(mark),
+      dye: presetToFlat(mark),
       colorant: retFn
     })
   }

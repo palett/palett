@@ -3,7 +3,7 @@ import { hslToRgb, hexToHsl } from '@palett/convert';
 import { Dye } from '@palett/dye';
 import { isNumeric } from '@typen/num-strict';
 
-const STAT_BOUND_CONFIG = {
+const BOUND_CONF = {
   dif: true,
   level: 2
 };
@@ -77,7 +77,7 @@ const presetToLeap = ({
   return colorBound((_max = max, parseHsl(_max)), (_min = min, parseHsl(_min)));
 };
 
-const presetToFlatDye = ({
+const presetToFlat = ({
   na
 }) => {
   var _ref, _na;
@@ -87,19 +87,19 @@ const presetToFlatDye = ({
 
 /**
  *
- * @param {*[]} vec
+ * @param {*[]} items
  * @param {*[]} values
  * @param {function(*[],function(*):*):*[]} mapper
- * @param {function} primeDye
+ * @param {function} dye
  * @param {{dif:number,min:number}} valueLeap
  * @param {{dif:number[],min:number[]}} colorLeap
  * @param {boolean} colorant
  * @returns {function[]|*[]}
  */
 
-const dyeMap = (vec, {
+const dyeMap = (items, {
   mapper,
-  primeDye,
+  dye,
   valueLeap,
   colorLeap,
   colorant
@@ -107,64 +107,56 @@ const dyeMap = (vec, {
   var _colorLeap$min;
 
   let blendDye;
-  return valueLeap.dif && colorLeap.dif.some(n => !!n) ? (blendDye = BlendDye(valueLeap, colorLeap), colorant ? mapper(vec, x => isNumeric(x) ? blendDye(x) : primeDye) : mapper(vec, x => {
+  return valueLeap.dif && colorLeap.dif.some(n => !!n) ? (blendDye = BlendDye(valueLeap, colorLeap), colorant ? mapper(items, x => isNumeric(x) ? blendDye(x) : dye) : mapper(items, x => {
     var _x, _x2;
 
-    return isNumeric(x) ? (_x = x, blendDye(x)(_x)) : (_x2 = x, primeDye(_x2));
-  })) : (blendDye = (_colorLeap$min = colorLeap.min, hslToDye(_colorLeap$min)), colorant ? mapper(vec, x => isNumeric(x) ? blendDye : primeDye) : mapper(vec, x => {
+    return isNumeric(x) ? (_x = x, blendDye(x)(_x)) : (_x2 = x, dye(_x2));
+  })) : (blendDye = (_colorLeap$min = colorLeap.min, hslToDye(_colorLeap$min)), colorant ? mapper(items, x => isNumeric(x) ? blendDye : dye) : mapper(items, x => {
     var _x3, _x4;
 
-    return isNumeric(x) ? (_x3 = x, blendDye(_x3)) : (_x4 = x, primeDye(_x4));
+    return isNumeric(x) ? (_x3 = x, blendDye(_x3)) : (_x4 = x, dye(_x4));
   }));
 };
 
 /**
  *
- * @param {*[]} keys
+ * @param {*[]} items
  * @param {*[]} values
  * @param {function(*[],function(*)):*[]} mapper
  * @param {function(*[],*[],function(*,*)):*[]} zipper
- * @param {function(*):string} primeDye
+ * @param {function(*):string} dye
  * @param {{dif:number,min:number}} valueLeap
  * @param {{dif:number[],min:number[]}} colorLeap
  * @param {boolean} colorant
  * @returns {function[]|*[]}
  */
 
-const dyeZip = (keys, {
+const dyeZip = (items, {
   values,
-  mapper,
   zipper,
-  primeDye,
+  dye,
   valueLeap,
   colorLeap,
   colorant
 }) => {
   var _colorLeap$min;
 
-  if (!values) return dyeMap(keys, {
-    mapper,
-    primeDye,
-    valueLeap,
-    colorLeap,
-    colorant
-  });
   let blendDye;
-  const fn = valueLeap.dif && colorLeap.dif.some(n => !!n) ? (blendDye = BlendDye(valueLeap, colorLeap), colorant ? (x, v) => isNumeric(v) ? blendDye(v) : primeDye : (x, v) => {
+  const fn = valueLeap.dif && colorLeap.dif.some(n => !!n) ? (blendDye = BlendDye(valueLeap, colorLeap), colorant ? (x, v) => isNumeric(v) ? blendDye(v) : dye : (x, v) => {
     var _x, _x2;
 
-    return isNumeric(v) ? (_x = x, blendDye(v)(_x)) : (_x2 = x, primeDye(_x2));
-  }) : (blendDye = (_colorLeap$min = colorLeap.min, hslToDye(_colorLeap$min)), colorant ? (x, v) => isNumeric(v) ? blendDye : primeDye : (x, v) => {
+    return isNumeric(v) ? (_x = x, blendDye(v)(_x)) : (_x2 = x, dye(_x2));
+  }) : (blendDye = (_colorLeap$min = colorLeap.min, hslToDye(_colorLeap$min)), colorant ? (x, v) => isNumeric(v) ? blendDye : dye : (x, v) => {
     var _x3, _x4;
 
-    return isNumeric(v) ? (_x3 = x, blendDye(_x3)) : (_x4 = x, primeDye(_x4));
+    return isNumeric(v) ? (_x3 = x, blendDye(_x3)) : (_x4 = x, dye(_x4));
   });
-  return zipper(keys, values, fn);
+  return zipper(items, values, fn);
 };
 
 /**
  *
- * @param {*[]} keys
+ * @param {*[]} items
  * @param {*[]} values
  * @param {Function|function(*[],function(*)):*[]} mapper
  * @param {Function|function(*[],*[],function(*,*)):*[]} zipper
@@ -174,7 +166,7 @@ const dyeZip = (keys, {
  * @returns {function[]|*[]}
  */
 
-const fluoZip = (keys, {
+const fluo = (items, {
   values,
   mapper,
   zipper,
@@ -182,17 +174,24 @@ const fluoZip = (keys, {
   preset,
   colorant = false
 } = {}) => {
-  var _preset, _preset2;
+  var _preset, _preset2, _preset3, _preset4;
 
-  return dyeZip(keys, {
+  if (!values) return dyeMap(items, {
+    mapper,
+    dye: (_preset = preset, presetToFlat(_preset)),
+    colorLeap: (_preset2 = preset, presetToLeap(_preset2)),
+    valueLeap: bound(items, BOUND_CONF),
+    colorant
+  });
+  return dyeZip(items, {
     values,
     mapper,
     zipper,
-    primeDye: (_preset = preset, presetToFlatDye(_preset)),
-    colorLeap: (_preset2 = preset, presetToLeap(_preset2)),
-    valueLeap: bound(values || keys, STAT_BOUND_CONFIG),
+    dye: (_preset3 = preset, presetToFlat(_preset3)),
+    colorLeap: (_preset4 = preset, presetToLeap(_preset4)),
+    valueLeap: bound(values, BOUND_CONF),
     colorant
   });
 };
 
-export { BlendDye, STAT_BOUND_CONFIG, dyeMap, dyeZip, fluoZip, hslToDye, leverage, presetToFlatDye, presetToLeap };
+export { BOUND_CONF, BlendDye, dyeMap, dyeZip, fluo, fluo as fluoZip, hslToDye, leverage, presetToFlat, presetToLeap };

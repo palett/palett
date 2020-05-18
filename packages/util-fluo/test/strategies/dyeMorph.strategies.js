@@ -1,4 +1,4 @@
-import { blendDye, isNum, leverage, presetToFlatDye } from '../..'
+import { blendDye, isNum, leverage, presetToFlat } from '../..'
 import { BlendDye } from '../../src/dyeBlenders/blendDye'
 import { CrosTabX } from 'xbrief'
 import { Chrono } from 'elprimero'
@@ -25,7 +25,7 @@ export const dyeMorphDev = (ar, { map, valueLeap, colorLeap, dye, colorant }) =>
 
 const valueLeap = { min: 1, dif: 9 }
 const colorLeap = JUNGLE |> presetToLeap
-const dye = JUNGLE |> presetToFlatDye
+const dye = JUNGLE |> presetToFlat
 const { lapse, result } = Chrono.strategies({
   repeat: 1E+5,
   paramsList: {

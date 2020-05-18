@@ -1,21 +1,21 @@
 import { isNumeric } from '@typen/num-strict'
-import { BlendDye } from '../dyeBlenders/blendDye'
-import { hslToDye } from '../dyeBlenders/hslToDye'
+import { BlendDye }  from '../dyeBlenders/blendDye'
+import { hslToDye }  from '../dyeBlenders/hslToDye'
 
 /**
  *
- * @param {*[]} vec
+ * @param {*[]} items
  * @param {*[]} values
  * @param {function(*[],function(*):*):*[]} mapper
- * @param {function} primeDye
+ * @param {function} dye
  * @param {{dif:number,min:number}} valueLeap
  * @param {{dif:number[],min:number[]}} colorLeap
  * @param {boolean} colorant
  * @returns {function[]|*[]}
  */
-export const dyeMap = (vec, {
+export const dyeMap = (items, {
   mapper,
-  primeDye,
+  dye,
   valueLeap,
   colorLeap,
   colorant
@@ -24,12 +24,12 @@ export const dyeMap = (vec, {
   return valueLeap.dif && colorLeap.dif.some(n => !!n)
     ? (blendDye = BlendDye(valueLeap, colorLeap),
       colorant
-        ? mapper(vec, x => isNumeric(x) ? blendDye(x) : primeDye)
-        : mapper(vec, x => isNumeric(x) ? x |> blendDye(x) : x |> primeDye))
+        ? mapper(items, x => isNumeric(x) ? blendDye(x) : dye)
+        : mapper(items, x => isNumeric(x) ? x |> blendDye(x) : x |> dye))
     : (blendDye = colorLeap.min |> hslToDye,
       colorant
-        ? mapper(vec, x => isNumeric(x) ? blendDye : primeDye)
-        : mapper(vec, x => isNumeric(x) ? x |> blendDye : x |> primeDye))
+        ? mapper(items, x => isNumeric(x) ? blendDye : dye)
+        : mapper(items, x => isNumeric(x) ? x |> blendDye : x |> dye))
 }
 
 
