@@ -16,13 +16,13 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/rand": "^0.1.9",
-    "@aryth/rank": "^0.1.9",
+    "@aryth/rand": "^0.1.12",
+    "@aryth/rank": "^0.1.12",
     "@palett/cards": "^0.1.7",
     "@palett/enum-color-space": "^0.1.7",
     "@palett/table": "^0.1.7",
-    "@vect/swap": "^0.2.3",
-    "@vect/vector-mapper": "^0.2.3"
+    "@vect/swap": "^0.2.4",
+    "@vect/vector-mapper": "^0.2.4"
   },
   "repository": {
     "type": "git",

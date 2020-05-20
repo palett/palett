@@ -5,8 +5,8 @@ import { mapper as mapVec, mutate as mutaVec } from '@vect/vector'
 /**
  *
  * @param {*[][]} mx
- * @param {Object} [preset]
- * @param {Object} [stringPreset]
+ * @param {Object|Preset} [preset]
+ * @param {Object|Preset} [stringPreset]
  * @param {boolean} [mutate=true]
  * @param {boolean} [colorant=false]
  * @param {Function} {filter}

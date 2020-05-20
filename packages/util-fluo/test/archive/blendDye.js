@@ -1,5 +1,5 @@
-import { hslToDye } from '../../src/dyeBlenders/hslToDye'
-import { leverage } from '../../src/dyeBlenders/leverage'
+import { hslToDye } from '../../src/prepDye/utils/hslToDye'
+import { leverage } from '../../src/prepDye/utils/leverage'
 
 export const amp = (x, min, lever, base) => (x - min) * lever + base
 

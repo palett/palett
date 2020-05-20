@@ -3,11 +3,12 @@ import { STR_ASC }       from '@aryth/comparer'
 import { rank }          from '@aryth/rank-matrix'
 import { FRESH, JUNGLE } from '@palett/presets'
 
-import { fluoZip }                                                                                  from '@palett/util-fluo'
-import { COLUMNWISE, mapper as map, mutate as mutamap, mutazip, POINTWISE, ROWWISE, zipper as zip } from '@vect/matrix'
-import { allNAString }                                                                              from '../utils/allString'
-import { fluoColumns }                                                                              from './fluoColumns'
-import { fluoRows }                                                                                 from './fluoRows'
+import { fluoZip }                                                  from '@palett/util-fluo'
+import { COLUMNWISE, POINTWISE, ROWWISE }                           from '@vect/enum-matrix-directions'
+import { mapper as map, mutate as mutamap, mutazip, zipper as zip } from '@vect/matrix'
+import { allNAString }                                              from '../utils/allString'
+import { fluoColumns }                                              from './fluoColumns'
+import { fluoRows }                                                 from './fluoRows'
 
 /**
  *

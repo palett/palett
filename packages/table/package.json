@@ -15,8 +15,8 @@
     "test": "node -r @babel/register test/table.test.js"
   },
   "dependencies": {
-    "@analys/crostab": "0.3.3",
-    "@aryth/math": "0.1.9",
+    "@analys/crostab": "^0.3.3",
+    "@aryth/math": "^0.1.12",
     "@palett/cards": "^0.1.7",
     "@palett/convert": "^0.1.7",
     "@palett/dye": "^0.1.7",
@@ -26,13 +26,13 @@
     "@spare/phrasing": "^0.6.7",
     "@spare/string": "^0.6.7",
     "@spare/translator": "^0.6.7",
-    "@vect/columns-mapper": "^0.2.3",
-    "@vect/matrix-mapper": "^0.2.3",
-    "@vect/matrix-transpose": "^0.2.3",
-    "@vect/object-select": "^0.2.3",
-    "@vect/vector-indicator": "^0.2.3",
-    "@vect/vector-init": "^0.2.3",
-    "@vect/vector-mapper": "^0.2.3"
+    "@vect/columns-mapper": "^0.2.4",
+    "@vect/matrix-mapper": "^0.2.4",
+    "@vect/matrix-transpose": "^0.2.4",
+    "@vect/object-select": "^0.2.4",
+    "@vect/vector-indicator": "^0.2.4",
+    "@vect/vector-init": "^0.2.4",
+    "@vect/vector-mapper": "^0.2.4"
   },
   "repository": {
     "type": "git",

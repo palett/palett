@@ -1,6 +1,6 @@
 import { max as keepFloor, min as keepCeil } from '@aryth/comparer'
-import { hslToDye } from './hslToDye'
-import { leverage } from './leverage'
+import { hslToDye }                          from './hslToDye'
+import { leverage }                          from './leverage'
 
 export const scale = (x, min, lever, base, ceil) =>
   keepCeil((keepFloor(x, min) - min) * lever + base, ceil)

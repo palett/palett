@@ -1,8 +1,8 @@
-import { hue } from '../utils/rgb/hue'
-import { bound } from '../utils/rgb/bound'
 import { round } from 'aryth'
+import { bound } from '../utils/rgb/bound'
+import { hue }   from '../utils/rgb/hue'
 
-const THSD = 1000
+const THOUSAND = 1000
 
 /**
  * !dif: dif===0
@@ -24,5 +24,5 @@ export function rgbToHsl ([r, g, b]) {
         ? dif / (2 - sum)
         : dif / sum,
     l = sum / 2
-  return [round(h), round(s * THSD) / 10, round(l * THSD) / 10]
+  return [round(h), round(s * THOUSAND) / 10, round(l * THOUSAND) / 10]
 }

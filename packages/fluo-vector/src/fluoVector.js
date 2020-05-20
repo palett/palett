@@ -1,14 +1,15 @@
 import { bound }                                                    from '@aryth/bound-vector'
-import { STR_ASC }                                                  from '@aryth/comparer'
-import { rank }                                                     from '@aryth/rank-vector'
-import { FRESH, JUNGLE }                                            from '@palett/presets'
+import { NUM_ASC, STR_ASC }                                         from '@aryth/comparer'
+import { duorank }                                                  from '@aryth/rank-vector'
+import { FRESH, JUNGLE, PLANET }                                    from '@palett/presets'
 import { fluo }                                                     from '@palett/util-fluo'
+import { isLiteral }                                                from '@typen/literal'
+import { isNumeric }                                                from '@typen/num-strict'
 import { mapper as map, mutate as mutamap, mutazip, zipper as zip } from '@vect/vector'
-import { allNAString }                                              from '../utils/allNAString'
 
 /**
  * @typedef {{max:string,min:string,na:string}} Preset
- * @param {*[]} arr
+ * @param {*[]} vector
  * @param {number[]} values
  * @param {Object|Preset} [preset]
  * @param {Object|Preset} [stringPreset]
@@ -16,15 +17,19 @@ import { allNAString }                                              from '../uti
  * @param {boolean} [colorant=false]
  * @param {Function} filter
  */
-export const fluoVector = (arr, {
+export const fluoVector = (vector, {
   values,
   preset = FRESH,
   stringPreset = JUNGLE,
   mutate = false,
   colorant = false,
-  filter
+  filter = isLiteral,
 } = {}) => {
-  if (!values && allNAString(arr)) (values = rank(arr, STR_ASC, filter), preset = stringPreset || preset)
+  if (!values)
+    values = duorank(vector,
+      { preset: FRESH, filter: isNumeric, comparer: NUM_ASC },
+      { preset: PLANET, filter: filter, comparer: STR_ASC }
+    )
   const [mapper, zipper] = mutate ? [mutamap, mutazip] : [map, zip]
-  return fluo(arr, { values, mapper, zipper, bound, preset, colorant })
+  return fluo.call({ mapper, zipper, bound, colorant }, vector, values, preset, stringPreset)
 }

@@ -1,6 +1,6 @@
 import { blendDye, isNum, leverage, presetToFlat } from '../..'
-import { BlendDye } from '../../src/dyeBlenders/blendDye'
-import { CrosTabX } from 'xbrief'
+import { BlendDye }                                from '../../src/prepDye/utils/blendDye'
+import { CrosTabX }                                from 'xbrief'
 import { Chrono } from 'elprimero'
 import { mapper } from '@vect/vector-mapper'
 import { JUNGLE } from '@palett/presets'

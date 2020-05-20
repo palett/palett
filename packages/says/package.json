@@ -22,9 +22,9 @@
     "@spare/bracket": "^0.6.7",
     "@spare/enum-chars": "^0.6.7",
     "@spare/util": "^0.6.7",
-    "@typen/enum-data-types": "^0.1.0",
-    "@typen/enums": "^0.1.0",
-    "@vect/object-mapper": "^0.2.3"
+    "@typen/enum-data-types": "^0.1.3",
+    "@typen/enums": "^0.1.3",
+    "@vect/object-mapper": "^0.2.4"
   },
   "repository": {
     "type": "git",

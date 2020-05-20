@@ -1,5 +1,5 @@
 import { hslToRgb } from '@palett/convert'
-import { Dye } from '@palett/dye'
+import { Dye }      from '@palett/dye'
 
 /**
  * Create a dye from a hsl array

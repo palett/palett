@@ -1,32 +1,28 @@
-import { bound }                                                    from '@aryth/bound-vector'
-import { STR_ASC }                                                  from '@aryth/comparer'
-import { rank }                                                     from '@aryth/rank-vector'
-import { FRESH, JUNGLE }                                            from '@palett/presets'
-import { fluoZip }                                                  from '@palett/util-fluo'
-import { mapper as map, mutate as mutamap, mutazip, zipper as zip } from '@vect/vector'
-import { allNAString }                                              from '../utils/allNAString'
+import { bound }                  from '@aryth/bound-vector'
+import { NUM_ASC, STR_ASC }       from '@aryth/comparer'
+import { duorank }                from '@aryth/rank-vector'
+import { FRESH, PLANET }          from '@palett/presets'
+import { dyezip }                 from '@palett/util-fluo'
+import { decoPale }               from '@spare/deco-pale'
+import { logger }                 from '@spare/logger'
+import { isLiteral }              from '@typen/literal'
+import { isNumeric }              from '@typen/num-strict'
+import { mutazip, zipper as zip } from '@vect/vector'
 
-/**
- * @typedef {{max:string,min:string,na:string}} Preset
- * @typedef {{preset:Preset,}}
- * @param {*[]} arr
- * @param {number[]} values
- * @param {Object} x
- * @param {Object} y
- * @param {Object} config
- * @param {boolean} [mutate=true]
- * @param {boolean} [colorant=false]
- */
-export const fluoVec = (arr,
-  x,
-  y,
-  config,
-  {
-  mutate = false,
-  colorant = false
-} = {}) => {
-  const words = splitLiteral(text)
-  const ranks = duoRank(words)
-  const [mapper, zipper] = mutate ? [mutamap, mutazip] : [map, zip]
-  return fluoZip(arr, { values, mapper, zipper, bound, preset, colorant })
+export const fluoVec = function (vector,
+  x = { preset: FRESH, filter: isNumeric, comparer: NUM_ASC },
+  y = { preset: PLANET, filter: isLiteral, comparer: STR_ASC },
+) {
+  const {
+    mutate = false,
+    colorant = false,
+  } = this
+  const values = duorank(vector, x, y)
+  vector |> decoPale |> logger
+  values |> decoPale |> logger
+  // ([vector, values]) |> decoMatrix |> logger
+  const zipper = mutate ? mutazip : zip
+  return dyezip.call({ colorant, zipper, bound }, vector, values, x.preset, y.preset)
 }
+
+

@@ -1,8 +1,8 @@
-import { FRESH, JUNGLE } from '@palett/presets'
-import { POINTWISE, ROWWISE, COLUMNWISE } from '@vect/matrix'
-import { fluoMatrix } from './fluoMatrix'
-import { fluoRows } from './fluoRows'
-import { fluoColumns } from './fluoColumns'
+import { FRESH, JUNGLE }                  from '@palett/presets'
+import { COLUMNWISE, POINTWISE, ROWWISE } from '@vect/enum-matrix-directions'
+import { fluoColumns }                    from './fluoColumns'
+import { fluoMatrix }                     from './fluoMatrix'
+import { fluoRows }                       from './fluoRows'
 
 /**
  *
@@ -21,12 +21,11 @@ export const fluo = (mx, {
   colorant = false
 } = {}) => {
   switch (direct) {
-    case POINTWISE:
-      return fluoMatrix(mx, { preset, stringPreset, mutate, colorant })
     case ROWWISE:
       return fluoRows(mx, { preset, stringPreset, mutate, colorant })
     case COLUMNWISE:
       return fluoColumns(mx, { preset, stringPreset, mutate, colorant })
+    case POINTWISE:
     default:
       return fluoMatrix(mx, { preset, stringPreset, mutate, colorant })
   }
