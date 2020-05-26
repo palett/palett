@@ -15,12 +15,12 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/bound-vector": "^0.1.12",
-    "@aryth/comparer": "^0.1.12",
+    "@aryth/bound-vector": "^0.2.2",
+    "@aryth/comparer": "^0.2.2",
     "@palett/convert": "^0.2.0",
     "@palett/dye": "^0.2.0",
-    "@typen/enum-check-levels": "^0.1.3",
-    "@typen/num-strict": "^0.1.3",
+    "@typen/enum-check-levels": "^0.1.4",
+    "@typen/num-strict": "^0.1.4",
     "@vect/vector-mapper": "^0.2.4",
     "@vect/vector-zipper": "^0.2.4"
   },

@@ -1,9 +1,9 @@
 import { isNumeric }    from '@typen/num-strict'
 import { presetParser } from '../presetReader/presetParser'
-import { BlendDye }     from './utils/blendDye'
+import { Projector }    from './utils/projector'
 import { hslToDye }     from './utils/hslToDye'
 
-export function prepDye (valueBound, positivePreset, negativePreset) {
+export function Dyer (valueBound, positivePreset, negativePreset) {
   const { colorant, zipper } = this
   const
     { max, min } = valueBound,
@@ -27,8 +27,8 @@ export function prepDye (valueBound, positivePreset, negativePreset) {
         : v => isNumeric(v) ? v |> dye : v |> prim.dye
   }
   else {
-    const xdye = BlendDye({ dif: max, min: 0 }, x.leap)
-    const ydye = BlendDye({ dif: 0 - min, min: min }, y.leap)
+    const xdye = Projector({ dif: max, min: 0 }, x.leap)
+    const ydye = Projector({ dif: 0 - min, min: min }, y.leap)
     return zipper
       ? colorant
         ? (v, n) => isNumeric(n) ? n >= 0 ? xdye(n) : ydye(n) : x.dye

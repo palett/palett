@@ -6,6 +6,7 @@ import { fluoVector }    from '../src/fluoVector'
 
 const SimpleVectors = simpleVectors({ h: 16 })
 SimpleVectors.another = ['A', 'B', 'C', 'x', 'y', 'z', ' ']
+SimpleVectors.countries = ['GBR', 'KOR', 'JPN', 'IND', 'DEU', 'CHN', 'USA']
 
 for (let [k, vector] of Object.entries(SimpleVectors)) {
   k |> logger
@@ -14,6 +15,6 @@ for (let [k, vector] of Object.entries(SimpleVectors)) {
     mutate: false,
     colorant: false,
     stringPreset: ATLAS,
-    filter: x => x.trim().length > 0
+    // filter: x => x.trim().length > 0
   }) |> delogger
 }

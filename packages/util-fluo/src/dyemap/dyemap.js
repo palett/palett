@@ -1,7 +1,7 @@
 import { bound as vectorBound }   from '@aryth/bound-vector'
 import { mapper as vectorMapper } from '@vect/vector-mapper'
-import { NL }                     from '../../resources/BOUND_CONF'
-import { prepDye }                from '../prepDye/prepDye'
+import { NL }   from '../../resources/BOUND_CONF'
+import { Dyer } from '../dyer/dyer'
 
 /**
  *
@@ -21,7 +21,7 @@ export const dyemap = function (
     bound = vectorBound
   } = this
   const valueBound = bound.call(NL, items)
-  const dye = prepDye.call({ colorant }, valueBound, positivePreset, negativePreset)
+  const dye = Dyer.call({ colorant }, valueBound, positivePreset, negativePreset)
   return mapper(items, dye)
 }
 

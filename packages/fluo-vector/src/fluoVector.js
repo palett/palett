@@ -1,11 +1,25 @@
-import { bound }                                                    from '@aryth/bound-vector'
-import { NUM_ASC, STR_ASC }                                         from '@aryth/comparer'
-import { duorank }                                                  from '@aryth/rank-vector'
-import { FRESH, JUNGLE, PLANET }                                    from '@palett/presets'
-import { fluo }                                                     from '@palett/util-fluo'
-import { isLiteral }                                                from '@typen/literal'
-import { isNumeric }                                                from '@typen/num-strict'
-import { mapper as map, mutate as mutamap, mutazip, zipper as zip } from '@vect/vector'
+import { bound, duobound }       from '@aryth/bound-vector'
+import { NUM_ASC, STR_ASC }      from '@aryth/comparer'
+import { duorank }               from '@aryth/rank-vector'
+import { FRESH, JUNGLE, PLANET } from '@palett/presets'
+import { dyezip }                from '@palett/util-fluo'
+import { isLiteral }             from '@typen/literal'
+import { isNumeric }             from '@typen/num-strict'
+import { mutazip, zipper }       from '@vect/vector'
+
+const fluoZip = function (vector, values, xPreset, yPreset) {
+  const {
+    mutate = false,
+    colorant = false
+  } = this
+  const [x, y] = duobound(vector)
+  const zipper$1 = mutate ? mutazip : zipper
+  return dyezip.call({
+    colorant,
+    zipper: zipper$1,
+    bound
+  }, vector, values, xPreset, yPreset)
+}
 
 /**
  * @typedef {{max:string,min:string,na:string}} Preset
@@ -23,13 +37,21 @@ export const fluoVector = (vector, {
   stringPreset = JUNGLE,
   mutate = false,
   colorant = false,
-  filter = isLiteral,
+  filter = isLiteral
 } = {}) => {
-  if (!values)
-    values = duorank(vector,
-      { preset: FRESH, filter: isNumeric, comparer: NUM_ASC },
-      { preset: PLANET, filter: filter, comparer: STR_ASC }
-    )
-  const [mapper, zipper] = mutate ? [mutamap, mutazip] : [map, zip]
-  return fluo.call({ mapper, zipper, bound, colorant }, vector, values, preset, stringPreset)
+  if (!values) values = duorank(vector, {
+    preset: FRESH,
+    filter: isNumeric,
+    comparer: NUM_ASC
+  }, {
+    preset: PLANET,
+    filter,
+    comparer: STR_ASC
+  })
+  const zipper$1 = mutate ? mutazip : zipper
+  return fluoZip.call({
+    colorant,
+    zipper: zipper$1,
+    bound
+  }, vector, values, preset, stringPreset)
 }

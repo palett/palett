@@ -1,5 +1,5 @@
 import { blendDye, isNum, leverage, presetToFlat } from '../..'
-import { BlendDye }                                from '../../src/prepDye/utils/blendDye'
+import { Projector }                               from '../../src/dyer/utils/projector'
 import { CrosTabX }                                from 'xbrief'
 import { Chrono } from 'elprimero'
 import { mapper } from '@vect/vector-mapper'
@@ -17,7 +17,7 @@ export const dyeMorph = (ar, { map, valueLeap, colorLeap, dye, colorant }) => {
 }
 
 export const dyeMorphDev = (ar, { map, valueLeap, colorLeap, dye, colorant }) => {
-  const toDye = BlendDye(valueLeap, colorLeap)
+  const toDye = Projector(valueLeap, colorLeap)
   return colorant
     ? map(ar, x => isNum(x) ? toDye(x) : dye)
     : map(ar, x => isNum(x) ? x |> toDye(x) : x |> dye)

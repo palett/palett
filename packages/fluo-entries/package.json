@@ -17,6 +17,7 @@
   "dependencies": {
     "@palett/fluo-vector": "^0.2.0",
     "@palett/presets": "^0.2.0",
+    "@vect/entries-init": "^0.2.4",
     "@vect/entries-unwind": "^0.2.4",
     "@vect/entries-zipper": "^0.2.4",
     "@vect/vector": "^0.2.4"

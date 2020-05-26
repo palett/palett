@@ -19,11 +19,11 @@
     "@palett/dye": "^0.2.0",
     "@palett/enum-font-effects": "^0.2.0",
     "@palett/flopper": "^0.2.0",
-    "@spare/bracket": "^0.6.7",
-    "@spare/enum-chars": "^0.6.7",
-    "@spare/util": "^0.6.7",
-    "@typen/enum-data-types": "^0.1.3",
-    "@typen/enums": "^0.1.3",
+    "@spare/bracket": "^0.6.10",
+    "@spare/enum-chars": "^0.6.10",
+    "@spare/util": "^0.6.10",
+    "@typen/enum-data-types": "^0.1.4",
+    "@typen/enums": "^0.1.4",
     "@vect/object-mapper": "^0.2.4"
   },
   "repository": {

@@ -1,5 +1,5 @@
-export { fluo } from './src/fluo'
-export { fluoMatrix } from './src/fluoMatrix'
-export { fluoRows } from './src/fluoRows'
-export { fluoColumns } from './src/fluoColumns'
-
+export { fluo }        from './src/beta/fluo'
+export { fluoMatrix }  from './src/alpha/fluoMatrix'
+export { fluoRows }    from './src/alpha/fluoRows'
+export { fluoColumns } from './src/alpha/fluoColumns'
+export { fluoMat }     from './src/beta/fluoMat'

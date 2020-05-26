@@ -1,9 +1,10 @@
-import { simpleMatrices } from '@foba/foo'
+import { simpleMatrices }                    from '@foba/foo'
+import { delogger }                          from '@spare/deco'
+import { logger }                            from '@spare/logger'
+import { COLUMNWISE, POINTWISE, ROWWISE }    from '@vect/enum-matrix-directions'
+import { ini }                               from '@vect/matrix'
 import { fluoColumns, fluoMatrix, fluoRows } from '../index'
-import { logger } from '@spare/logger'
-import { delogger } from '@spare/deco'
-import { POINTWISE, COLUMNWISE, ROWWISE, ini } from '@vect/matrix'
-import { fluo } from '../src/fluo'
+import { fluo }                              from '../src/beta/fluo'
 
 const SimpleMatrices = simpleMatrices({ h: 6, w: 12 })
 SimpleMatrices.alphabetical = ini(4, 7, (x, y) => String.fromCharCode(63 + (x * 7) + y))

@@ -3,10 +3,10 @@ import { STR_ASC }       from '@aryth/comparer'
 import { rank }          from '@aryth/rank-matrix'
 import { FRESH, JUNGLE } from '@palett/presets'
 
-import { fluoZip }                                                  from '@palett/util-fluo'
-import { COLUMNWISE, POINTWISE, ROWWISE }                           from '@vect/enum-matrix-directions'
+import { fluo, fluoZip }                  from '@palett/util-fluo'
+import { COLUMNWISE, POINTWISE, ROWWISE } from '@vect/enum-matrix-directions'
 import { mapper as map, mutate as mutamap, mutazip, zipper as zip } from '@vect/matrix'
-import { allNAString }                                              from '../utils/allString'
+import { allNAString }                                              from '../../utils/allString'
 import { fluoColumns }                                              from './fluoColumns'
 import { fluoRows }                                                 from './fluoRows'
 
@@ -38,7 +38,7 @@ export const fluoMatrix = (mx, {
       let values
       if (allNAString(mx)) (values = rank(mx, STR_ASC, filter), preset = stringPreset || preset)
       const [mapper, zipper] = mutate ? [mutamap, mutazip] : [map, zip]
-      return fluoZip(mx, { values, mapper, zipper, bound, preset, colorant })
+      return fluo.call({mapper,zipper,},mx, { values, mapper, zipper, bound, preset, colorant })
   }
 }
 

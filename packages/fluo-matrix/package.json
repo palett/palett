@@ -16,13 +16,14 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@aryth/bound-matrix": "^0.1.12",
-    "@aryth/comparer": "^0.1.12",
-    "@aryth/rank-matrix": "^0.1.12",
+    "@aryth/bound-matrix": "^0.2.2",
+    "@aryth/comparer": "^0.2.2",
+    "@aryth/rank-matrix": "^0.2.2",
     "@palett/fluo-vector": "^0.2.0",
     "@palett/presets": "^0.2.0",
+    "@palett/projector": "^0.2.0",
     "@palett/util-fluo": "^0.2.0",
-    "@typen/num-strict": "^0.1.3",
+    "@typen/num-strict": "^0.1.4",
     "@vect/enum-matrix-directions": "^0.2.4",
     "@vect/matrix": "^0.2.4",
     "@vect/vector": "^0.2.4"
