@@ -1,6 +1,6 @@
 {
   "name": "@palett/fluo-vector",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A colorant to string",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -19,8 +19,8 @@
     "@aryth/bound-vector": "^0.2.2",
     "@aryth/comparer": "^0.2.2",
     "@aryth/rank-vector": "^0.2.2",
-    "@palett/presets": "^0.2.0",
-    "@palett/util-fluo": "^0.2.0",
+    "@palett/presets": "^0.2.1",
+    "@palett/util-fluo": "^0.2.1",
     "@typen/enum-data-types": "^0.1.4",
     "@typen/literal": "^0.1.4",
     "@typen/num-strict": "^0.1.4",
