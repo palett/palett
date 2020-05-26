@@ -1,6 +1,6 @@
 import { CLR_FORE, rgbToAnsi, SC } from '@palett/util-ansi'
-import { codedDyer } from '../dyer/codedDyer'
-import { parseEffects } from '../parseEffects/parseEffects'
+import { codedDyer }               from '../dyer/codedDyer'
+import { parseEffects }            from '../parseEffects/parseEffects'
 
 /***
  *

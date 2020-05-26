@@ -1,6 +1,6 @@
-import { fluoVector }           from '@palett/fluo-vector'
-import { FRESH, OCEAN, PLANET } from '@palett/presets'
-import { unwind }               from '@vect/entries-unwind'
+import { fluoVector }                from '@palett/fluo-vector'
+import { FRESH, PLANET }             from '@palett/presets'
+import { unwind }                    from '@vect/entries-unwind'
 import { mutazip as mutazipEntries } from '@vect/entries-zipper'
 import { mutazip }                   from '@vect/vector'
 

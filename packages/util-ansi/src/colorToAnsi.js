@@ -1,6 +1,6 @@
-import { FORE } from '../resources/colorModes'
-import { SC } from '../resources/controlCodes'
 import { hexToInt } from '@palett/convert'
+import { FORE }     from '../resources/colorModes'
+import { SC }       from '../resources/controlCodes'
 
 /**
  *

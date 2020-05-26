@@ -1,7 +1,7 @@
-import { Says } from '../src/Says'
-import { BOLD } from '@palett/enum-font-effects'
+import { BOLD }           from '@palett/enum-font-effects'
+import { deca }           from '@spare/deco'
 import { logger, logNeL } from '@spare/logger'
-import { deca } from '@spare/deco'
+import { Says }           from '../src/Says'
 
 const says = Says.build({ effects: [BOLD] })
 'what to do' |> says.chef

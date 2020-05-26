@@ -1,5 +1,4 @@
 import { Chrono } from 'elprimero'
-import { CrosTabX } from 'xbrief'
 
 const union = Array.prototype.push
 const { lapse, result } = Chrono.strategies({

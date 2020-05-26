@@ -1,5 +1,5 @@
-import { STR }    from '@typen/enum-data-types'
 import { LF, SP } from '@spare/enum-chars'
+import { STR }    from '@typen/enum-data-types'
 
 export const tab = ind => SP.repeat(ind << 1)
 

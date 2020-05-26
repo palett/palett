@@ -2,7 +2,6 @@ import { VectorCollection }  from '@foba/vector-string'
 import { hexToRgb }          from '@palett/convert'
 import { PrepDye }           from '@palett/dye'
 import { BOLD }              from '@palett/enum-font-effects'
-import { delogger }          from '@spare/deco'
 import { logger }            from '@spare/logger'
 import { palettFlopperLite } from '..'
 

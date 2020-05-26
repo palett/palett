@@ -1,6 +1,6 @@
 import { CLR_FORE, hexToAnsi, SC } from '@palett/util-ansi'
-import { codedDyer } from '../dyer/codedDyer'
-import { parseEffects } from '../parseEffects/parseEffects'
+import { codedDyer }               from '../dyer/codedDyer'
+import { parseEffects }            from '../parseEffects/parseEffects'
 
 export const PrepHexDye = function (...effects) {
   const config = parseEffects(effects)

@@ -1,7 +1,7 @@
-import { narrate }  from './narrate'
-import { Callable } from '../util/Callable'
-import { SP }       from '@spare/enum-chars'
 import { parenth }  from '@spare/bracket'
+import { SP }       from '@spare/enum-chars'
+import { Callable } from '../util/Callable'
+import { narrate }  from './narrate'
 
 /** @type {function} */
 export class Pal extends Callable {

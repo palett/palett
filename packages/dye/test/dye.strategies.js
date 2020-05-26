@@ -1,12 +1,12 @@
-import { decoCrostab, says, logger } from '@spare/logger'
-import { strategies } from '@valjoux/strategies'
-import { Cyan, Lime } from '@palett/cards'
-import { BOLD, ITALIC } from '@palett/enum-font-effects'
-import { hexToRgb } from '@palett/convert'
-import { Dye } from '../src/Dye/Dye'
-import { PrepDye } from '../src/PrepDye/PrepDye'
-import { HexDye } from '../src/Dye/HexDye'
-import { PrepHexDye } from '../src/PrepDye/PrepHexDye'
+import { Cyan, Lime }        from '@palett/cards'
+import { hexToRgb }          from '@palett/convert'
+import { BOLD, ITALIC }      from '@palett/enum-font-effects'
+import { decoCrostab, says } from '@spare/logger'
+import { strategies }        from '@valjoux/strategies'
+import { Dye }               from '../src/Dye/Dye'
+import { HexDye }            from '../src/Dye/HexDye'
+import { PrepDye }           from '../src/PrepDye/PrepDye'
+import { PrepHexDye }        from '../src/PrepDye/PrepHexDye'
 
 const prepDye = PrepDye(BOLD, ITALIC)
 const prepHexDye = PrepHexDye(BOLD, ITALIC)

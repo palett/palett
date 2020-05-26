@@ -1,7 +1,7 @@
-import { Hatsu } from '../index'
-import { logger } from '@spare/logger'
-import { Palett } from 'palett'
 import { CarPlants } from '@foba/object-string'
+import { logger }    from '@spare/logger'
+import { Palett }    from 'palett'
+import { Hatsu }     from '../index'
 
 const ConsoleColors = {
   black: '30',

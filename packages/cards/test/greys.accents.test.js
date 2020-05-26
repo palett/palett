@@ -1,6 +1,6 @@
-import { Xr } from 'xbrief'
-import { Hatsu } from '@palett/hatsu'
 import { Hsl, Rgb } from '@palett/convert'
+import { Hatsu }    from '@palett/hatsu'
+import { Xr }       from 'xbrief'
 
 export const BlueGreyAccents = {
   accent_1: [200, 22, 77],

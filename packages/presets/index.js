@@ -12,4 +12,4 @@ export {
   PLANET,
   POME,
   SUBTLE,
-} from './src/presetCollection'
+}                  from './src/presetCollection'

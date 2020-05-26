@@ -1,7 +1,7 @@
+import { NUM_DESC }       from '@aryth/rank'
+import { delogger }       from '@spare/logger'
 import { degreeToIndice } from '../utils/degreeToIndice'
-import { NUM_DESC } from '@aryth/rank'
-import { delogger } from '@spare/logger'
-import { sortBy } from '../utils/sortDegrees'
+import { sortBy }         from '../utils/sortDegrees'
 
 export const sortDegreesTest = () => {
   const degrees = [

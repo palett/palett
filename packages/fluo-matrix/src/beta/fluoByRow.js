@@ -12,7 +12,7 @@ import { mapper as mapVector, mutate as mutVector } from '@vect/vector'
  * @param {PalettProjectConfig} x
  * @param {PalettProjectConfig} y
  */
-export const fluoByRow = (mx, x = {}, y = {}) => {
+export function fluoByRow (mx, x = {}, y = {}) {
   const config = this ?? {}
   const { mutate } = config
   const mapper = mutate ? mutVector : mapVector

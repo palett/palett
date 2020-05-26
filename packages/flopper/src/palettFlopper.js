@@ -1,11 +1,11 @@
-import { ColorGroups, Degrees, degreesByColors } from '@palett/table'
-import { Grey }                                  from '@palett/cards'
-import { HEX }                                   from '@palett/enum-color-space'
 import { flop, rand }                            from '@aryth/rand'
 import { NUM_DESC }                              from '@aryth/rank'
+import { Grey }                                  from '@palett/cards'
+import { HEX }                                   from '@palett/enum-color-space'
+import { ColorGroups, Degrees, degreesByColors } from '@palett/table'
 import { swap }                                  from '@vect/swap'
-import { sortBy }                                from '../utils/sortDegrees'
 import { degreeToIndice }                        from '../utils/degreeToIndice'
+import { sortBy }                                from '../utils/sortDegrees'
 
 export function * palettFlopper ({
   degrees = Degrees.entire,

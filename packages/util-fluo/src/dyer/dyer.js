@@ -1,7 +1,7 @@
 import { isNumeric }    from '@typen/num-strict'
 import { presetParser } from '../presetReader/presetParser'
-import { Projector }    from './utils/projector'
 import { hslToDye }     from './utils/hslToDye'
+import { Projector }    from './utils/projector'
 
 export function Dyer (valueBound, positivePreset, negativePreset) {
   const { colorant, zipper } = this
@@ -25,8 +25,7 @@ export function Dyer (valueBound, positivePreset, negativePreset) {
       : colorant
         ? v => isNumeric(v) ? dye : prim.dye
         : v => isNumeric(v) ? v |> dye : v |> prim.dye
-  }
-  else {
+  } else {
     const xdye = Projector({ dif: max, min: 0 }, x.leap)
     const ydye = Projector({ dif: 0 - min, min: min }, y.leap)
     return zipper

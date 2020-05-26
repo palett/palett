@@ -1,11 +1,11 @@
-import { zip } from '@vect/vector'
-import { Visual } from '@palett/visual/src/Visual'
-import { deca } from '@spare/deco'
-import { Presets } from '@palett/presets'
-import { logger } from '@spare/logger'
-import { flop } from '@aryth/rand'
-import { Foba } from '@foba/vector-string'
+import { flop }          from '@aryth/rand'
 import { rank, STR_ASC } from '@aryth/rank'
+import { Foba }          from '@foba/vector-string'
+import { Presets }       from '@palett/presets'
+import { Visual }        from '@palett/visual/src/Visual'
+import { deca }          from '@spare/deco'
+import { logger }        from '@spare/logger'
+import { zip }           from '@vect/vector'
 
 export class DyeComparerTest {
   static test (arr, preset) {

@@ -1,4 +1,4 @@
-import { ConsoleColors, FORE, CLR_FORE, br } from '@palett/util-ansi'
+import { br, CLR_FORE, ConsoleColors, FORE } from '@palett/util-ansi'
 
 export const render = (tx, { color, head, tail } = {}) => {
   let h = Array.isArray(color)

@@ -1,4 +1,4 @@
-import { isNumeric } from '@typen/num-strict'
+import { isNumeric }   from '@typen/num-strict'
 import { every, some } from '@vect/matrix'
 
 const allString = mx => every(mx, x => typeof x === 'string')

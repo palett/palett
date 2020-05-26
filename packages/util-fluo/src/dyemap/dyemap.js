@@ -1,7 +1,7 @@
 import { bound as vectorBound }   from '@aryth/bound-vector'
 import { mapper as vectorMapper } from '@vect/vector-mapper'
-import { NL }   from '../../resources/BOUND_CONF'
-import { Dyer } from '../dyer/dyer'
+import { NL }                     from '../../resources/BOUND_CONF'
+import { Dyer }                   from '../dyer/dyer'
 
 /**
  *

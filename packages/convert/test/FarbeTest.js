@@ -1,8 +1,8 @@
-import { normal } from './resources/nord'
-import { TableX } from 'xbrief'
-import { Samples } from 'veho'
-import { Hatsu } from '@palett/hatsu'
+import { Hatsu }         from '@palett/hatsu'
+import { Samples }       from 'veho'
+import { TableX }        from 'xbrief'
 import { HexToRgb, Hsl } from '..'
+import { normal }        from './resources/nord'
 
 export class FarbeTest {
   static cycleTransform () {

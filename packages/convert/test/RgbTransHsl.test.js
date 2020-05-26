@@ -1,8 +1,8 @@
-import { Hatsu } from '@palett/hatsu'
-import { ArrX } from 'xbrief'
-import { normal } from './resources/nord'
-import { Rgb, Hsl } from '@palett/convert'
+import { Hsl, Rgb }  from '@palett/convert'
+import { Hatsu }     from '@palett/hatsu'
 import { trimColor } from 'spettro/testBind/util/colorValueHelper'
+import { ArrX }      from 'xbrief'
+import { normal }    from './resources/nord'
 
 const len = ArrX.maxLength(Object.keys(normal))
 

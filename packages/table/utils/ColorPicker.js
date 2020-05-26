@@ -1,5 +1,5 @@
-import { HEX, HSL, RGB } from '@palett/enum-color-space'
 import { hexToHsl, hexToRgb } from '@palett/convert'
+import { HEX, HSL, RGB }      from '@palett/enum-color-space'
 
 export const ColorPicker = colorSpace => {
   if (colorSpace === RGB) return x => x |> hexToRgb

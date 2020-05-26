@@ -1,8 +1,8 @@
+import { NUM_DESC }                              from '@aryth/rank'
+import { HEX }                                   from '@palett/enum-color-space'
 import { ColorGroups, Degrees, degreesByColors } from '@palett/table'
-import { HEX } from '@palett/enum-color-space'
-import { sortBy } from '../utils/sortDegrees'
-import { degreeToIndice } from '../utils/degreeToIndice'
-import { NUM_DESC } from '@aryth/rank'
+import { degreeToIndice }                        from '../utils/degreeToIndice'
+import { sortBy }                                from '../utils/sortDegrees'
 
 export class Flopper {
   constructor (degrees, colors, space) {

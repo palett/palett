@@ -1,7 +1,7 @@
 import { SimpleMatrices }       from '@foba/foo'
 import { decoMatrix, delogger } from '@spare/logger'
-import { says }                 from '../index'
 import { xr }                   from '@spare/xr'
+import { says }                 from '../index'
 
 for (const [key, matrix] of Object.entries(SimpleMatrices))
   matrix |> decoMatrix |> says[key]

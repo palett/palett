@@ -1,10 +1,10 @@
-import { Palett, Greys } from 'palett'
-import { Visual } from '../../../..'
-import { Chrono } from 'elprimero'
-import { Mx } from 'veho'
-import { CrosTabX, MatX } from 'xbrief'
-import { boxOffice } from '../asset/movieSamples'
-import { Ziggurat } from 'roulett'
+import { Chrono }        from 'elprimero'
+import { Greys, Palett } from 'palett'
+import { Ziggurat }      from 'roulett'
+import { Mx }            from 'veho'
+import { MatX }          from 'xbrief'
+import { Visual }        from '../../../..'
+import { boxOffice }     from '../asset/movieSamples'
 
 const { teal, deepOrange } = Palett
 

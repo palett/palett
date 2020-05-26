@@ -1,5 +1,5 @@
-import { Visual } from '../../Visual'
 import { logger } from '@spare/logger'
+import { Visual } from '../../Visual'
 
 class VisualFundamentalTest {
   static vector () {

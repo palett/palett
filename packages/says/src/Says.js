@@ -1,10 +1,10 @@
-import { hexToRgb } from '@palett/convert'
-import { PrepDye } from '@palett/dye'
-import { ITALIC } from '@palett/enum-font-effects'
-import { FUN } from '@typen/enum-data-types'
+import { hexToRgb }      from '@palett/convert'
+import { PrepDye }       from '@palett/dye'
+import { ITALIC }        from '@palett/enum-font-effects'
 import { palettFlopper } from '@palett/flopper'
-import { mapper } from '@vect/object-mapper'
-import { Pal } from './Pal'
+import { FUN }           from '@typen/enum-data-types'
+import { mapper }        from '@vect/object-mapper'
+import { Pal }           from './Pal'
 
 export class Says {
   /** @type {Object<string,Pal|function>} */ #roster = {}

@@ -1,6 +1,6 @@
-import { Ob } from 'veho'
-import { Greys } from 'palett'
 import { Hatsu } from '@palett/hatsu'
+import { Greys } from 'palett'
+import { Ob }    from 'veho'
 
 const colorTube = Hatsu.hex
 

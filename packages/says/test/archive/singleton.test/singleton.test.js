@@ -1,9 +1,9 @@
-import { alpha } from './alpha'
-import { beta } from './beta'
-import { gamma } from './gamma'
-import { says } from '../../../index'
+import { Palett }       from 'palett'
 import { deca, logNeL } from 'xbrief'
-import { Palett } from 'palett'
+import { says }         from '../../../index'
+import { alpha }        from './alpha'
+import { beta }         from './beta'
+import { gamma }        from './gamma'
 
 const logger = { alpha, beta, gamma }
 

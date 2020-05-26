@@ -1,5 +1,5 @@
-import { Dye } from '../index'
 import { logger } from '@spare/logger'
+import { Dye }    from '../index'
 
 const rgb = [44, 181, 233]
 const dye = Dye(rgb, 'bold', 'italic')

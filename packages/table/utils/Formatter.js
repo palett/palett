@@ -1,9 +1,9 @@
-import { hexToRgb, hslToRgb} from '@palett/convert'
-import { HEX, HSL, RGB } from '@palett/enum-color-space'
-import { INVERSE } from '@palett/enum-font-effects'
-import { mapper} from '@vect/vector-mapper'
-import { round } from '@aryth/math'
-import { PrepDye } from '@palett/dye'
+import { round }              from '@aryth/math'
+import { hexToRgb, hslToRgb } from '@palett/convert'
+import { PrepDye }            from '@palett/dye'
+import { HEX, HSL, RGB }      from '@palett/enum-color-space'
+import { INVERSE }            from '@palett/enum-font-effects'
+import { mapper }             from '@vect/vector-mapper'
 
 export const Formatter = (space, color = false) => {
   const Dye = SelectDye(space)

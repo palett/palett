@@ -1,12 +1,12 @@
-import { PalettTable, Degrees, ColorGroups } from '@palett/table'
-import { delogger } from '@spare/deco'
-import { Dye } from '@palett/dye'
-import { strategies } from '@valjoux/strategies'
-import { decoCrostab, logger, says } from '@spare/logger'
-import { Hatsu } from '../../index'
-import { render } from '../../src/render'
-import { PreDye } from '@palett/dye/src/PreEffect'
-import { BOLD } from '@palett/enum-font-effects'
+import { Dye }                               from '@palett/dye'
+import { PreDye }                            from '@palett/dye/src/PreEffect'
+import { BOLD }                              from '@palett/enum-font-effects'
+import { ColorGroups, Degrees, PalettTable } from '@palett/table'
+import { delogger }                          from '@spare/deco'
+import { decoCrostab, logger, says }         from '@spare/logger'
+import { strategies }                        from '@valjoux/strategies'
+import { Hatsu }                             from '../../index'
+import { render }                            from '../../src/render'
 
 const cxt = PalettTable.degreesByColors({ space: 'rgb', degrees: Degrees.entire, colors: ColorGroups.rainbow })
 

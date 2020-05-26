@@ -1,7 +1,7 @@
+import { ATLAS }                                                           from '../resources/atlas'
+import { INSTA }                                                           from '../resources/insta'
+import { POME }                                                            from '../resources/pome'
 import { AQUA, AURORA, FRESH, JUNGLE, LAVA, METRO, OCEAN, PLANET, SUBTLE } from './presetCollection'
-import { INSTA } from '../resources/insta'
-import { POME } from '../resources/pome'
-import { ATLAS } from '../resources/atlas'
 
 export const Presets = {
   aqua: AQUA,

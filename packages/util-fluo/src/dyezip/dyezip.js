@@ -1,7 +1,7 @@
 import { bound as vectorBound }   from '@aryth/bound-vector'
 import { zipper as vectorZipper } from '@vect/vector-zipper'
-import { NL }   from '../../resources/BOUND_CONF'
-import { Dyer } from '../dyer/dyer'
+import { NL }                     from '../../resources/BOUND_CONF'
+import { Dyer }                   from '../dyer/dyer'
 
 /**
  *

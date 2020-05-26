@@ -1,10 +1,10 @@
-import { DecoVector }                from '@spare/logger'
-import { movieQuotesEntries }        from './assets/movie.lines'
 import { flop, rand }                from '@aryth/rand'
+import { makeReplaceable }           from '@glossa/translator'
 import { AQUA, LAVA, OCEAN, SUBTLE } from '@palett/presets'
 import { RN }                        from '@spare/enum-chars'
+import { DecoVector }                from '@spare/logger'
 import { says }                      from '../index'
-import { makeReplaceable }           from '@glossa/translator'
+import { movieQuotesEntries }        from './assets/movie.lines'
 
 const dict = [
   [/\. /g, '.' + RN],

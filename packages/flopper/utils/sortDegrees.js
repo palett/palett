@@ -1,6 +1,5 @@
 import { mutate } from '@vect/vector-mapper'
 
-
 export const sortBy = function (indicator, comparer) {
   const
     vec = this,
@@ -10,7 +9,6 @@ export const sortBy = function (indicator, comparer) {
 }
 
 const toKeyComparer = comparer => (a, b) => comparer(a[0], b[0])
-
 
 // accent  15 -3
 // base    14 - 16

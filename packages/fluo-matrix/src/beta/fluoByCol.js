@@ -12,7 +12,7 @@ import { columnsMapper, transpose } from '@vect/matrix'
  * @param {PalettProjectConfig} x
  * @param {PalettProjectConfig} y
  */
-export const fluoByCol = (mx, x = {}, y = {}) => {
+export function fluoByCol (mx, x = {}, y = {}) {
   const config = this ?? {}
   return columnsMapper(mx, col => fluoVector.call(config, col, x, y))
     |> transpose

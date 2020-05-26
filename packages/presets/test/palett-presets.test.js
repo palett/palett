@@ -1,13 +1,13 @@
-import { Presets } from '../index'
-import { Ob } from 'veho'
-import { logger, logNeL } from '@spare/logger'
-import { deco } from '@spare/deco'
-import { xr } from '@spare/xr'
 import { hexToHsl, hexToRgb, hslToHex, hslToRgb } from '@palett/convert'
-import { mapper as columnsMapper } from '@vect/columns-mapper'
-import { transpose } from '@vect/matrix-transpose'
-import { almostEquals, round } from 'aryth'
-import { Dye } from '@palett/dye'
+import { Dye }                                    from '@palett/dye'
+import { deco }                                   from '@spare/deco'
+import { logger, logNeL }                         from '@spare/logger'
+import { xr }                                     from '@spare/xr'
+import { mapper as columnsMapper }                from '@vect/columns-mapper'
+import { transpose }                              from '@vect/matrix-transpose'
+import { almostEquals, round }                    from 'aryth'
+import { Ob }                                     from 'veho'
+import { Presets }                                from '../index'
 
 const range = (min, max, len) => {
   let delta = (max - min) / (len - 1)

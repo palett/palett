@@ -1,5 +1,4 @@
 import { hslToDye } from '../../src/dyer/utils/hslToDye'
-import { leverage } from '../../src/dyer/utils/leverage'
 
 export const amp = (x, min, lever, base) => (x - min) * lever + base
 

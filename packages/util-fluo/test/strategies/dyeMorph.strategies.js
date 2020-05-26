@@ -1,10 +1,9 @@
+import { JUNGLE }                                  from '@palett/presets'
+import { mapper }                                  from '@vect/vector-mapper'
+import { Chrono }                                  from 'elprimero'
 import { blendDye, isNum, leverage, presetToFlat } from '../..'
 import { Projector }                               from '../../src/dyer/utils/projector'
-import { CrosTabX }                                from 'xbrief'
-import { Chrono } from 'elprimero'
-import { mapper } from '@vect/vector-mapper'
-import { JUNGLE } from '@palett/presets'
-import { presetToLeap } from '../../src/presetReader/presetToLeap'
+import { presetToLeap }                            from '../../src/presetReader/presetToLeap'
 
 export const dyeMorph = (ar, { map, valueLeap, colorLeap, dye, colorant }) => {
   const

@@ -1,4 +1,4 @@
-import { camelToSnake } from '@spare/phrasing'
+import { camelToSnake }    from '@spare/phrasing'
 import { makeReplaceable } from '@spare/translator'
 
 const lexicon = [

@@ -1,8 +1,8 @@
-import { HEX, HSL, RGB } from '@palett/enum-color-space'
+import { round }              from '@aryth/math'
 import { hexToRgb, rgbToHex } from '@palett/convert'
-import { Indicator } from '@vect/vector-indicator'
-import { mutate } from '@vect/vector-mapper'
-import { round } from '@aryth/math'
+import { HEX, HSL, RGB }      from '@palett/enum-color-space'
+import { Indicator }          from '@vect/vector-indicator'
+import { mutate }             from '@vect/vector-mapper'
 
 export function VectorAverage (space) {
   if (space === RGB || space === HSL)
