@@ -15,8 +15,8 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/bound-vector": "^0.2.2",
-    "@aryth/comparer": "^0.2.2",
+    "@aryth/bound-vector": "^0.2.3",
+    "@aryth/comparer": "^0.2.3",
     "@palett/convert": "^0.2.2",
     "@palett/dye": "^0.2.2",
     "@typen/enum-check-levels": "^0.1.4",

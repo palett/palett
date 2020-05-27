@@ -16,9 +16,9 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@aryth/bound-matrix": "^0.2.2",
-    "@aryth/comparer": "^0.2.2",
-    "@aryth/rank-matrix": "^0.2.2",
+    "@aryth/bound-matrix": "^0.2.3",
+    "@aryth/comparer": "^0.2.3",
+    "@aryth/rank-matrix": "^0.2.3",
     "@palett/fluo-vector": "^0.2.2",
     "@palett/presets": "^0.2.2",
     "@palett/projector": "^0.2.2",
@@ -26,7 +26,8 @@
     "@typen/num-strict": "^0.1.4",
     "@vect/enum-matrix-directions": "^0.2.4",
     "@vect/matrix": "^0.2.4",
-    "@vect/vector": "^0.2.4"
+    "@vect/vector": "^0.2.4",
+    "@typen/nullish": "^0.1.4"
   },
   "repository": {
     "type": "git",
