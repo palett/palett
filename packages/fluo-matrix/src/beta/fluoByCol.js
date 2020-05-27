@@ -1,4 +1,4 @@
-import { fluoVector }               from '@palett/fluo-vector'
+import { fluoVec }                  from '@palett/fluo-vector'
 import { columnsMapper, transpose } from '@vect/matrix'
 
 /**
@@ -14,6 +14,6 @@ import { columnsMapper, transpose } from '@vect/matrix'
  */
 export function fluoByCol (mx, x = {}, y = {}) {
   const config = this ?? {}
-  return columnsMapper(mx, col => fluoVector.call(config, col, x, y))
+  return columnsMapper(mx, col => fluoVec.call(config, col, x, y))
     |> transpose
 }
