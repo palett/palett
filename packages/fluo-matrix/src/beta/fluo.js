@@ -19,12 +19,12 @@ export const fluo = function (mx, direct = POINTWISE, x = {}, y = {}) {
   const config = this ?? {}
   switch (direct) {
     case ROWWISE:
-      return fluoByRow.call(config, mx, direct, x, y)
+      return fluoByRow.call(config, mx, x, y)
     case COLUMNWISE:
-      return fluoByCol.call(config, mx, direct, x, y)
+      return fluoByCol.call(config, mx, x, y)
     case POINTWISE:
     default:
-      return fluoMat.call(config, mx, direct, x, y)
+      return fluoMat.call(config, mx, x, y)
   }
 }
 

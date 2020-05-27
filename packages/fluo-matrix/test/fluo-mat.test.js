@@ -10,6 +10,11 @@ import { fluo }                           from '../src/beta/fluo'
 const SimpleMatrices = simpleMatrices({ h: 6, w: 12 })
 SimpleMatrices.alphabetical = ini(4, 7, (x, y) => String.fromCharCode(63 + (x * 7) + y))
 
+SimpleMatrices.another = [
+  [1, 2, 3],
+  ['a', 'b', 'c']
+]
+
 'fluoMatrix' |> logger
 for (const [key, matrix] of Object.entries(SimpleMatrices)) {
   fluo.call({ colorant: false }, matrix, POINTWISE) |> deco |> says[key]
