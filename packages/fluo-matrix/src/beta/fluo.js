@@ -15,16 +15,16 @@ import { fluoMat }                        from './fluoMat'
  * @param {PalettProjectConfig} [x]
  * @param {PalettProjectConfig} [y]
  */
-export const fluo = function (mx, direct = POINTWISE, x = {}, y = {}) {
+export const fluo = function (mx, direct = POINTWISE, [x = {}, y = {}] = []) {
   const config = this ?? {}
   switch (direct) {
     case ROWWISE:
-      return fluoByRow.call(config, mx, x, y)
+      return fluoByRow.call(config, mx, [x, y])
     case COLUMNWISE:
-      return fluoByCol.call(config, mx, x, y)
+      return fluoByCol.call(config, mx, [x, y])
     case POINTWISE:
     default:
-      return fluoMat.call(config, mx, x, y)
+      return fluoMat.call(config, mx, [x, y])
   }
 }
 

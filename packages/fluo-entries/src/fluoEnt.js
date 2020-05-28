@@ -14,12 +14,11 @@ import { mutazip as mutazipEntries } from '@vect/entries-zipper'
  * @param {PalettProjectConfig} x
  * @param {PalettProjectConfig} y
  */
-export const fluoEnt = function (entries, x = {}, y = {}
-) {
+export const fluoEnt = function (entries, [x = {}, y = {}] = []) {
   const { colorant = false, mutate = false } = this ?? {}
   let [keys, items] = unwind(entries)
-  fluoVec.call({ colorant, mutate: true }, keys, x, y)
-  fluoVec.call({ colorant, mutate: true }, items, x, y)
+  fluoVec.call({ colorant, mutate: true }, keys, [x, y])
+  fluoVec.call({ colorant, mutate: true }, items, [x, y])
   const rendered = wind(keys, items)
   return mutate
     ? mutazipEntries(entries, rendered, (a, b) => b, (a, b) => b)

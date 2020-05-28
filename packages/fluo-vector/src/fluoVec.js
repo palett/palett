@@ -13,14 +13,13 @@ import { mapper as mapperFunc, mutate as mutateFunc } from '@vect/vector'
  * @typedef {Object} PalettProjectConfig.preset
  *
  * @param vec
- * @param {PalettProjectConfig} x
- * @param {PalettProjectConfig} y
+ * @param {PalettProjectConfig[]} presets
  */
-export const fluoVec = function (vec, x = {}, y = {}) {
+export const fluoVec = function (vec, [x = {}, y = {}] = []) {
   if (!vec?.length) return ''
   const { colorant = false, mutate = false, values } = this ?? {}
   const { preset: prX = FRESH } = x, { preset: prY = PLANET } = y
-  const [bvX, bvY] = values ?? duobound(vec, x, y)
+  const [bvX, bvY] = values ?? duobound(vec, [x, y])
   const [dyeX, dyeY] = [bvX && Projector(bvX, presetToLeap(prX)), bvY && Projector(bvY, presetToLeap(prY))]
   const mapper = mutate ? mutateFunc : mapperFunc
   return colorant

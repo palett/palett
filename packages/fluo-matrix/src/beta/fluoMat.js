@@ -2,6 +2,7 @@ import { duobound }                                         from '@aryth/bound-m
 import { FRESH, PLANET }                                    from '@palett/presets'
 import { Projector }                                        from '@palett/projector'
 import { presetToFlat, presetToLeap }                       from '@palett/util-fluo'
+import { delogger }                                         from '@spare/deco'
 import { nullish }                                          from '@typen/nullish'
 import { mapper as mapperFunc, mutate as mutateFunc, size } from '@vect/matrix'
 
@@ -13,15 +14,16 @@ import { mapper as mapperFunc, mutate as mutateFunc, size } from '@vect/matrix'
  * @typedef {Object} PalettProjectConfig.preset
  *
  * @param mat
- * @param {PalettProjectConfig} x
- * @param {PalettProjectConfig} y
+ * @param {PalettProjectConfig[]} presets
  */
-export const fluoMat = function (mat, x = {}, y = {}) {
+export const fluoMat = function (mat, [x = {}, y = {}] = []) {
   const [h, w] = size(mat)
   if (!h || !w) return ''
   const { colorant = false, mutate = false, values } = this ?? {}
-  const { preset: prX = FRESH } = x, { preset: prY = PLANET } = y
-  const [bvX, bvY] = values ?? duobound(mat, x, y)
+  const { preset: prX = FRESH } = x, { preset: prY = PLANET } = y;
+  ({ x, y })|> delogger
+  const [bvX, bvY] = values ?? duobound(mat, [x, y]);
+  ({ bvX, bvY })|> delogger
   const [dyeX, dyeY] = [bvX && Projector(bvX, presetToLeap(prX)), bvY && Projector(bvY, presetToLeap(prY))]
   const mapper = mutate ? mutateFunc : mapperFunc
   return colorant

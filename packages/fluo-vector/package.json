@@ -16,9 +16,9 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@aryth/bound-vector": "^0.2.3",
-    "@aryth/comparer": "^0.2.3",
-    "@aryth/rank-vector": "^0.2.3",
+    "@aryth/bound-vector": "^0.2.4",
+    "@aryth/comparer": "^0.2.4",
+    "@aryth/rank-vector": "^0.2.4",
     "@palett/presets": "^0.2.5",
     "@palett/projector": "^0.2.5",
     "@palett/util-fluo": "^0.2.5",
