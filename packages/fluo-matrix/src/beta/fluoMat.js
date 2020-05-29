@@ -1,8 +1,7 @@
 import { duobound }                                         from '@aryth/bound-matrix'
 import { FRESH, PLANET }                                    from '@palett/presets'
 import { Projector }                                        from '@palett/projector'
-import { presetToFlat, presetToLeap }                       from '@palett/util-fluo'
-import { delogger }                                         from '@spare/deco'
+import { presetToFlat }                                     from '@palett/util-fluo'
 import { nullish }                                          from '@typen/nullish'
 import { mapper as mapperFunc, mutate as mutateFunc, size } from '@vect/matrix'
 
@@ -13,34 +12,49 @@ import { mapper as mapperFunc, mutate as mutateFunc, size } from '@vect/matrix'
  * @typedef {Function} PalettProjectConfig.mapper
  * @typedef {Object} PalettProjectConfig.preset
  *
- * @param mat
- * @param {PalettProjectConfig[]} presets
+ * @param matrix
+ * @param {PalettProjectConfig[]} [presets]
  */
-export const fluoMat = function (mat, [x = {}, y = {}] = []) {
-  const [h, w] = size(mat)
-  if (!h || !w) return ''
-  const { colorant = false, mutate = false, values } = this ?? {}
-  const { preset: prX = FRESH } = x, { preset: prY = PLANET } = y;
-  ({ x, y })|> delogger
-  const [bvX, bvY] = values ?? duobound(mat, [x, y]);
-  ({ bvX, bvY })|> delogger
-  const [dyeX, dyeY] = [bvX && Projector(bvX, presetToLeap(prX)), bvY && Projector(bvY, presetToLeap(prY))]
+export const fluoMat = function (matrix, presets = []) {
+  const [h, w] = size(matrix)
+  if (!h || !w) return [[]]
+  const
+    colorant = this?.colorant,
+    mutate = this?.mutate
+  const [x, y] = presets
+  const
+    pX = x?.preset ?? FRESH,
+    pY = y?.preset ?? PLANET
+  const [bX, bY] = duobound(matrix, [x, y])
+  const
+    dX = Projector(bX, pX),
+    dY = Projector(bY, pY)
   const mapper = mutate ? mutateFunc : mapperFunc
   return colorant
-    ? mapper(mat, Colorant({ mat: bvX, dye: dyeX }, { mat: bvY, dye: dyeY }, prX |> presetToFlat))
-    : mapper(mat, Pigment({ mat: bvX, dye: dyeX }, { mat: bvY, dye: dyeY }, prY |> presetToFlat))
+    ? mapper(matrix, Colorant(bX, dX, bY, dY, presetToFlat(pX)))
+    : mapper(matrix, Pigment(bX, dX, bY, dY, presetToFlat(pY)))
 }
 
-export const Colorant = function ({ mat: vx, dye: dx }, { mat: vy, dye: dy }, dye) {
+export const Colorant = function (bX, dX, bY, dY, dye) {
   return (_, i, j) => {
-    const x = vx && vx[i][j], y = vy && vy[i][j]
-    return !nullish(x) ? dx(x) : !nullish(y) ? dy(y) : dye
+    const x = bX && bX[i][j], y = bY && bY[i][j]
+    return !nullish(x) ? dX(x) : !nullish(y) ? dY(y) : dye
   }
 }
 
-export const Pigment = function ({ mat: vx, dye: dx }, { mat: vy, dye: dy }, dye) {
+export const Pigment = function (bX, dX, bY, dY, dye) {
   return (n, i, j) => {
-    const x = vx && vx[i][j], y = vy && vy[i][j]
-    return !nullish(x) ? (n |> dx(x)) : !nullish(y) ? (n |> dy(y)) : (n |> dye)
+    const x = bX && bX[i][j], y = bY && bY[i][j]
+    return !nullish(x) ? (n |> dX(x)) : !nullish(y) ? (n |> dY(y)) : (n |> dye)
   }
 }
+
+// export const BodiedProjector = (bound, preset) => {
+//   return { body: bound, dye: Projector(bound, preset) }
+// }
+//
+// export const DuoProjector = (bounds, presets) => {
+//   const [bX, bY] = bounds
+//   const [prX, prY] = presets
+//   return [Projector(bX, prX), Projector(bY, prY)]
+// }

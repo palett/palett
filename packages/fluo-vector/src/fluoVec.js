@@ -1,7 +1,7 @@
 import { duobound }                                   from '@aryth/bound-vector'
 import { FRESH, PLANET }                              from '@palett/presets'
 import { Projector }                                  from '@palett/projector/src/projector'
-import { presetToFlat, presetToLeap }                 from '@palett/util-fluo'
+import { presetToFlat }                               from '@palett/util-fluo'
 import { nullish }                                    from '@typen/nullish'
 import { mapper as mapperFunc, mutate as mutateFunc } from '@vect/vector'
 
@@ -15,28 +15,35 @@ import { mapper as mapperFunc, mutate as mutateFunc } from '@vect/vector'
  * @param vec
  * @param {PalettProjectConfig[]} presets
  */
-export const fluoVec = function (vec, [x = {}, y = {}] = []) {
-  if (!vec?.length) return ''
-  const { colorant = false, mutate = false, values } = this ?? {}
-  const { preset: prX = FRESH } = x, { preset: prY = PLANET } = y
-  const [bvX, bvY] = values ?? duobound(vec, [x, y])
-  const [dyeX, dyeY] = [bvX && Projector(bvX, presetToLeap(prX)), bvY && Projector(bvY, presetToLeap(prY))]
+export const fluoVec = function (vec, presets = []) {
+  if (!vec?.length) return []
+  const
+    colorant = this?.colorant,
+    mutate = this?.mutate
+  const [x, y] = presets
+  const
+    pX = x?.preset ?? FRESH,
+    pY = y?.preset ?? PLANET
+  const [bX, bY] = duobound(vec, presets)
+  const
+    dX = Projector(bX, pX),
+    dY = Projector(bY, pY)
   const mapper = mutate ? mutateFunc : mapperFunc
   return colorant
-    ? mapper(vec, Colorant({ vec: bvX, dye: dyeX }, { vec: bvY, dye: dyeY }, prX |> presetToFlat))
-    : mapper(vec, Pigment({ vec: bvX, dye: dyeX }, { vec: bvY, dye: dyeY }, prY |> presetToFlat))
+    ? mapper(vec, Colorant(bX, dX, bY, dY, presetToFlat(pX)))
+    : mapper(vec, Pigment(bX, dX, bY, dY, presetToFlat(pY)))
 }
 
-export const Colorant = function ({ vec: vx, dye: dx }, { vec: vy, dye: dy }, dye) {
+export const Colorant = function (bX, dX, bY, dY, dye) {
   return (_, i) => {
-    const x = vx && vx[i], y = vy && vy[i]
-    return !nullish(x) ? (dx(x)) : !nullish(y) ? (dy(y)) : (dye)
+    const x = bX && bX[i], y = bY && bY[i]
+    return !nullish(x) ? dX(x) : !nullish(y) ? dY(y) : dye
   }
 }
 
-export const Pigment = function ({ vec: vx, dye: dx }, { vec: vy, dye: dy }, dye) {
+export const Pigment = function (bX, dX, bY, dY, dye) {
   return (n, i) => {
-    const x = vx && vx[i], y = vy && vy[i]
-    return !nullish(x) ? (n |> dx(x)) : !nullish(y) ? (n |> dy(y)) : (n |> dye)
+    const x = bX && bX[i], y = bY && bY[i]
+    return !nullish(x) ? (n |> dX(x)) : !nullish(y) ? (n |> dY(y)) : (n |> dye)
   }
 }
