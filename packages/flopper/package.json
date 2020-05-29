@@ -16,8 +16,8 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/rand": "^0.2.4",
-    "@aryth/rank": "^0.2.4",
+    "@aryth/rand": "^0.2.5",
+    "@aryth/rank": "^0.2.5",
     "@palett/cards": "^0.2.7",
     "@palett/enum-color-space": "^0.2.7",
     "@palett/table": "^0.2.7",

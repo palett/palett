@@ -1,5 +1,6 @@
 import { max as keepFloor, min as keepCeil } from '@aryth/comparer'
 import { presetToLeap }                      from '@palett/util-fluo'
+import { boundToLeap }                       from './boundToLeap'
 import { hslToDye }                          from './hslToDye'
 import { leverage }                          from './leverage'
 
@@ -13,15 +14,15 @@ export const projector = function (x) {
 }
 /**
  *
- * @param {{min:number,max:number,[dif]:number}} bound
+ * @param {{[min]:number,[max]:number,[dif]:number}} bound
  * @param {{max:*,min:*}} preset
  * @returns {function(*):function}
  * @constructor
  */
 export const Projector = (bound, preset) => {
   if (!bound) return void 0
+  bound = bound |> boundToLeap
   /** @type {{min:number[],dif:number[]}} */ const leap = preset |> presetToLeap
-  bound.dif = bound.dif ?? (bound.max - bound.min)
   if (!bound.dif) {
     const dye = hslToDye(leap.min)
     return () => dye

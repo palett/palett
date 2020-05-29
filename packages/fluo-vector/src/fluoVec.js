@@ -1,6 +1,6 @@
 import { duobound }                                   from '@aryth/bound-vector'
 import { FRESH, PLANET }                              from '@palett/presets'
-import { Projector }                                  from '@palett/projector/src/projector'
+import { Projector }                                  from '@palett/projector'
 import { presetToFlat }                               from '@palett/util-fluo'
 import { nullish }                                    from '@typen/nullish'
 import { mapper as mapperFunc, mutate as mutateFunc } from '@vect/vector'

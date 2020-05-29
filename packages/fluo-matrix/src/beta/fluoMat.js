@@ -5,6 +5,7 @@ import { presetToFlat }                                     from '@palett/util-f
 import { nullish }                                          from '@typen/nullish'
 import { mapper as mapperFunc, mutate as mutateFunc, size } from '@vect/matrix'
 
+
 /**
  *
  * @typedef {Object} PalettProjectConfig

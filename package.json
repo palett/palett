@@ -12,13 +12,13 @@
     "upint": "yarn upgrade-interactive --latest",
     "pub": "lerna publish --force-publish",
     "build": "lerna exec --parallel -- rollup -c ../../rollup.config.js",
-    "build-specific": "lerna exec --scope=@palett/util-fluo -- rollup -c ../../rollup.config.js",
+    "build-specific": "lerna exec --scope=@palett/projector -- rollup -c ../../rollup.config.js",
     "watch": "lerna exec --parallel -- rollup -c ../../rollup.config.js -w",
     "watch-specific": "lerna exec --scope=kalorie -- rollup -c ../../rollup.config.js -w"
   },
   "devDependencies": {
-    "@aryth/rand": "^0.2.4",
-    "@aryth/rank": "^0.2.4",
+    "@aryth/rand": "^0.2.5",
+    "@aryth/rank": "^0.2.5",
     "@babel/core": "^7.10.1",
     "@babel/plugin-external-helpers": "^7.10.1",
     "@babel/plugin-proposal-class-properties": "^7.10.1",
