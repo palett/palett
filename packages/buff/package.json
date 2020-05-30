@@ -1,5 +1,5 @@
 {
-  "name": "@palett/enum-colorant-modes",
+  "name": "@palett/buff",
   "version": "0.2.12",
   "description": "A colorant to string",
   "main": "dist/index.cjs.js",
@@ -11,13 +11,17 @@
     "access": "public"
   },
   "scripts": {
-    "build": "rollup -c ../../rollup.config.js",
     "pub": "npm publish",
-    "test": "node -r @babel/register test/test.index.js"
+    "test": "node -r @babel/register test/test.index.js",
+    "test-jest": "jest"
+  },
+  "dependencies": {
+    "@palett/convert": "^0.2.12",
+    "@palett/util-ansi": "^0.2.12"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hoyeungw/palett/enum-colorant-modes.git"
+    "url": "git+https://github.com/hoyeungw/palett/dye.git"
   },
   "keywords": [
     "chalk",
@@ -30,8 +34,8 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hoyeungw/palett/enum-colorant-modes"
+    "url": "https://github.com/hoyeungw/palett/dye"
   },
-  "homepage": "https://github.com/hoyeungw/palett/enum-colorant-modes#readme",
+  "homepage": "https://github.com/hoyeungw/palett/dye#readme",
   "gitHead": "6da7746058d4e9712e9687bd45e38406999d88bf"
 }
