@@ -1,14 +1,14 @@
-import { hexToRgb }      from '@palett/convert'
-import { PrepDye }       from '@palett/dye'
-import { ITALIC }        from '@palett/enum-font-effects'
-import { palettFlopper } from '@palett/flopper'
-import { FUN }           from '@typen/enum-data-types'
-import { mapper }        from '@vect/object-mapper'
-import { Pal }           from './Pal'
+import { hexToRgb }          from '@palett/convert'
+import { PrepDye }           from '@palett/dye'
+import { ITALIC }            from '@palett/enum-font-effects'
+import { palettFlopperLite } from '@palett/flopper'
+import { FUN }               from '@typen/enum-data-types'
+import { mapper }            from '@vect/object-mapper'
+import { Pal }               from './Pal'
 
 export class Says {
   /** @type {Object<string,Pal|function>} */ #roster = {}
-  /** @type {Generator<{color:*}>} */ #pool = palettFlopper({ exhausted: false })
+  /** @type {Generator<{color:*}>} */ #pool = palettFlopperLite({ exhausted: false })
   /** @type {Function} */ #Dye
 
   constructor (roster, effects) {
@@ -16,17 +16,17 @@ export class Says {
     this.#Dye = PrepDye.apply(null, effects || [])
     return new Proxy(this, {
       /** @returns {Pal|function} */
-      get (tar, p) {
-        if (p in tar) return typeof (p = tar[p]) === FUN ? p.bind(tar) : p
-        if (p in tar.#roster) return tar.#roster[p]
-        const { value: { color } } = tar.#pool.next()
-        return tar.#roster[p] = Pal.build(p |> tar.#Dye(color|> hexToRgb))
+      get (t, p) {
+        if (p in t) return typeof (p = t[p]) === FUN ? p.bind(t) : p
+        if (p in t.#roster) return t.#roster[p]
+        const { value: color } = t.#pool.next()
+        return t.#roster[p] = Pal.build(p |> t.#Dye(color|> hexToRgb))
       }
     })
   }
 
   aboard (name, color) {
-    if (!color) ({ value: { color } } = this.#pool.next())
+    if (!color) ({ value: color } = this.#pool.next())
     return this.#roster[name] = Pal.build(name |> this.#Dye(color|> hexToRgb))
   }
 

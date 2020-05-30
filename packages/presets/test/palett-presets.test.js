@@ -1,5 +1,6 @@
 import { hexToHsl, hexToRgb, hslToHex, hslToRgb } from '@palett/convert'
 import { Dye }                                    from '@palett/dye'
+import { BOLD, ITALIC }                           from '@palett/enum-font-effects'
 import { deco }                                   from '@spare/deco'
 import { logger, logNeL }                         from '@spare/logger'
 import { xr }                                     from '@spare/xr'
@@ -18,6 +19,7 @@ const range = (min, max, len) => {
 }
 
 const formatHsl = ([h, s, l]) => `${round(h)}-${round(s)}-${round(l)}`
+
 for (let theme in Presets) {
   const effects = Ob.mapValues(Presets[theme], hex => hex|> hexToHsl |> formatHsl |> Dye(hex |> hexToRgb))
   const { max, min } = Presets[theme]
@@ -27,5 +29,5 @@ for (let theme in Presets) {
     ([min, max]) => range(min, max, 7)
   ) |> transpose
   ranges.unshift(Presets[theme].na |> hexToHsl)
-  ranges.map((hsl, i) => hsl |> hslToHex |> Dye(hsl |> hslToRgb)) |> logNeL
+  ranges.map((hsl, i) => hsl |> hslToHex |> Dye(hsl |> hslToRgb, BOLD, ITALIC)) |> logNeL
 }
