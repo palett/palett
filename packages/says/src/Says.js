@@ -1,5 +1,3 @@
-import { hexToRgb }           from '@palett/convert'
-import { PrepDye }            from '@palett/dye'
 import { ITALIC }             from '@palett/enum-font-effects'
 import { presetFlopper }      from '@palett/flopper'
 import { Deco as DecoString } from '@spare/deco-string'
@@ -7,15 +5,21 @@ import { FUN }                from '@typen/enum-data-types'
 import { mapper }             from '@vect/object-mapper'
 import { Pal }                from './Pal'
 
+const pal = (name, preset, effects) => {
+  return Pal.build(name |> DecoString({ presets: [, { preset }], effects }))
+}
+
 export class Says {
   /** @type {Object<string,Pal|function>} */ #roster = {}
-  // /** @type {Generator<{color:*}>} */ #pool = palettFlopperLite({ exhausted: false })
   /** @type {Generator<{max:*,min:*,na:*}>} */ #pool = presetFlopper({ exhausted: false })
-  /** @type {Function} */ #Dye
+  /** @type {string[]!} */ #effects = undefined
+  // /** @type {Generator<{color:*}>} */ #pool = palettFlopperLite({ exhausted: false })
+  // /** @type {Function} */ #Dye
 
   constructor (roster, effects) {
     if (roster) this.#roster = roster
-    this.#Dye = PrepDye.apply(null, effects || [])
+    this.#effects = effects
+    // this.#Dye = PrepDye.apply(null, effects || [])
     return new Proxy(this, {
       /** @returns {Pal|function} */
       get (t, p) {
@@ -23,15 +27,15 @@ export class Says {
         if (p in t.#roster) return t.#roster[p]
         // const { value: color } = t.#pool.next()
         // return t.#roster[p] = Pal.build(p |> t.#Dye(color|> hexToRgb))
-        const preset = t.#pool.next().value
-        return t.#roster[p] = Pal.build(p |> DecoString({ presets: [, { preset }] }))
+        const { value: preset } = t.#pool.next()
+        return t.#roster[p] = pal(p, preset, t.#effects)
       }
     })
   }
 
-  aboard (name, color) {
-    if (!color) ({ value: color } = this.#pool.next())
-    return this.#roster[name] = Pal.build(name |> this.#Dye(color|> hexToRgb))
+  aboard (name, preset) {
+    if (!preset) ({ value: preset } = this.#pool.next())
+    return this.#roster[name] = pal(name, preset, this.#effects)
   }
 
   roster (name) {

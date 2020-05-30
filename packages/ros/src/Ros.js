@@ -1,26 +1,34 @@
-import { hexToRgb }          from '@palett/convert'
-import { Dye }               from '@palett/dye'
-import { palettFlopperLite } from '@palett/flopper'
-import { Callable }          from '../util/Callable'
+import { presetFlopper }      from '@palett/flopper'
+import { Pal }                from '@palett/says/src/Pal'
+import { Deco as DecoString } from '@spare/deco-string'
+import { Callable }           from '../util/Callable'
 
 export class Ros extends Callable {
   /** @type {Object<string,Pal|function>} */ #pool = {}
+  /** @type {string[]} */ #effects = undefined
 
-  /** @return {Function|Ros} */
-  constructor () {
+  /**
+   * @param {string[]} [effects]
+   * @return {Function|Ros}
+   */
+  constructor (effects) {
     super(text => this.aboard(text))
-    this.flopper = palettFlopperLite({ exhausted: false })
+    this.#effects = effects
+    this.flopper = presetFlopper({ exhausted: false })
   }
 
   get pool () { return this.#pool }
 
-  aboard (name, color) {
+  aboard (name, preset) {
     if (name in this.pool) { return this.pool[name] }
-    color = color ?? this.flopper.next().value
-    return this.pool[name] = name|> Dye(color|> hexToRgb)
+    ({ value: preset } = preset ?? this.flopper.next())
+    return this.pool[name] = name |> DecoString({ presets: [{ preset }, { preset }], effects: this.#effects })
   }
 
-  /** @return {Function|Ros} */
-  static build () { return new Ros() }
+  /**
+   * @param {string[]} [effects]
+   * @return {Function|Ros}
+   */
+  static build (effects) { return new Ros(effects) }
 }
 
