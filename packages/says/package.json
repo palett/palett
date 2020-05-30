@@ -23,8 +23,8 @@
     "@spare/deco-string": "^0.7.7",
     "@spare/enum-chars": "^0.7.7",
     "@spare/util": "^0.7.7",
-    "@typen/enum-data-types": "^0.1.4",
-    "@typen/enums": "^0.1.4",
+    "@typen/enum-data-types": "^0.1.5",
+    "@typen/enums": "^0.1.5",
     "@vect/object-mapper": "^0.2.4"
   },
   "repository": {

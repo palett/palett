@@ -15,13 +15,13 @@
     "test": "babel-node test/archive/test.index.js"
   },
   "dependencies": {
-    "@aryth/comparer": "^0.2.5",
+    "@aryth/comparer": "^0.2.6",
     "@palett/convert": "^0.2.13",
     "@palett/dye": "^0.2.13",
     "@palett/presets": "^0.2.13",
     "@palett/util-fluo": "^0.2.13",
-    "@typen/nullish": "^0.1.4",
-    "@typen/num-strict": "^0.1.4"
+    "@typen/nullish": "^0.1.5",
+    "@typen/num-strict": "^0.1.5"
   },
   "repository": {
     "type": "git",
