@@ -1,7 +1,7 @@
 import { Palett } from '@palett/cards'
 
 export const JUNGLE = {
-  max: Palett.lime.accent_4,
-  min: Palett.green.darken_1,
-  na: Palett.lightBlue.accent_1
+  max: Palett.lime.accent_3,
+  min: Palett.lightGreen.accent_3,
+  na: Palett.blueGrey.accent_1
 }

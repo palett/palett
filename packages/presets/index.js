@@ -3,7 +3,9 @@ export {
   AQUA,
   ATLAS,
   AURORA,
+  AZURE,
   FRESH,
+  MOSS,
   INSTA,
   JUNGLE,
   LAVA,
@@ -12,5 +14,6 @@ export {
   PLANET,
   POME,
   SUBTLE,
+  VIOLA,
 }                     from './src/presetCollection'
 export { randPreset } from './src/randPreset'
