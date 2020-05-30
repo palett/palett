@@ -14,8 +14,9 @@ import { mapper as mapperFunc, mutate as mutateFunc } from '@vect/vector'
  *
  * @param vec
  * @param {PalettProjectConfig[]} presets
+ * @param {string[]} effects
  */
-export const fluoVec = function (vec, presets = []) {
+export const fluoVec = function (vec, presets = [], effects) {
   if (!vec?.length) return []
   const
     colorant = this?.colorant,
@@ -26,8 +27,8 @@ export const fluoVec = function (vec, presets = []) {
     pY = y?.preset ?? PLANET
   const [bX, bY] = duobound(vec, presets)
   const
-    dX = Projector(bX, pX),
-    dY = Projector(bY, pY)
+    dX = Projector(bX, pX, effects),
+    dY = Projector(bY, pY, effects)
   const mapper = mutate ? mutateFunc : mapperFunc
   return colorant
     ? mapper(vec, Colorant(bX, dX, bY, dY, presetToFlat(pX)))

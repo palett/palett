@@ -1,4 +1,4 @@
-import { round } from 'aryth'
+import { round } from '@aryth/math'
 import { hf }    from '../utils/hsl/hf'
 
 /**

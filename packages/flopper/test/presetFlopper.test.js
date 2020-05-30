@@ -7,8 +7,12 @@ import { presetFlopper } from '../src/presetFlopper'
 const prepDye = PrepDye(BOLD)
 const flopper = presetFlopper()
 for (let i = 0; i < 32; i++) {
-  const { value: { hue, degree, color } } = flopper.next();
-  ({ hue, degree, color: color |> prepDye(color|> hexToRgb) }) |> deca({ wo: 128 }) |> logger
+  const { value: { min, max, na } } = flopper.next();
+  ({
+    min: min |> prepDye(min|> hexToRgb),
+    max: max |> prepDye(max |> hexToRgb),
+    na: na |> prepDye(na |> hexToRgb)
+  }) |> deca({ wo: 128 }) |> logger
 }
 
 // [...flp] |> deca({ wo: 128 }) |> narrate

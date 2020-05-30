@@ -2,6 +2,7 @@ import { flop, rand }                            from '@aryth/rand'
 import { NUM_DESC }                              from '@aryth/rank'
 import { Grey }                                  from '@palett/cards'
 import { HEX }                                   from '@palett/enum-color-space'
+import { randPreset }                            from '@palett/presets'
 import { ColorGroups, Degrees, degreesByColors } from '@palett/table'
 import { swap }                                  from '@vect/swap'
 import { degreeToIndice }                        from '../utils/degreeToIndice'
@@ -20,11 +21,14 @@ export function * presetFlopper ({
   for (let i = 0; i < h; i++) {
     for (let j = w - 1, side = degrees[i], head = palett.head.slice(); j >= 0; j--) {
       const banner = swap.call(head, rand(j), j)
-      yield { hue: banner, degree: side, color: palett.cell(side, banner) }
+      const hex = palett.cell(side, banner)
+      yield randPreset(hex)
     }
   }
   defaultColor = defaultColor ?? (palett.cell(degrees[0], palett.head|> flop))
-  while (!exhausted) yield { color: defaultColor }
-  return { color: defaultColor }
+  const defaultPreset = randPreset(defaultColor)
+  while (!exhausted) yield defaultPreset
+  return defaultPreset
 }
+
 

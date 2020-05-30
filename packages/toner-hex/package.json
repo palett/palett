@@ -1,7 +1,7 @@
 {
-  "name": "@palett/presets",
+  "name": "@palett/toner-hex",
   "version": "0.2.11",
-  "description": "A color converter",
+  "description": "A color converter among RGB, HEX and HSL.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "files": [
@@ -15,21 +15,19 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@palett/cards": "^0.2.11",
-    "@aryth/rand": "^0.2.5",
-    "@palett/convert": "^0.2.11",
-    "@palett/toner-hsl": "^0.2.11"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hoyeungw/palett/presets.git"
+    "url": "git+https://github.com/hoyeungw/palett"
   },
   "keywords": [
-    "table",
-    "cross table",
-    "bi",
-    "insight",
-    "analytic"
+    "color",
+    "palett",
+    "toner-hex",
+    "rgb",
+    "hex",
+    "rgb",
+    "hsl"
   ],
   "author": {
     "name": "Hoyeung Wong",
@@ -38,8 +36,8 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hoyeungw/palett/presets"
+    "url": "https://github.com/hoyeungw/palett"
   },
-  "homepage": "https://github.com/hoyeungw/palett/presets#readme",
+  "homepage": "https://github.com/hoyeungw/palett/rgb#readme",
   "gitHead": "6da7746058d4e9712e9687bd45e38406999d88bf"
 }

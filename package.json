@@ -42,6 +42,7 @@
     "@spare/deco": "^0.7.4",
     "@spare/deco-pale": "^0.7.4",
     "@spare/deco-string": "^0.7.4",
+    "@spare/deco-func": "^0.7.4",
     "@spare/logger": "^0.7.4",
     "@spare/string": "^0.7.4",
     "@spare/xr": "^0.7.4",

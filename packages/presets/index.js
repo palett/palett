@@ -1,4 +1,4 @@
-export { Presets } from './src/Presets'
+export { Presets }    from './src/Presets'
 export {
   AQUA,
   ATLAS,
@@ -12,4 +12,5 @@ export {
   PLANET,
   POME,
   SUBTLE,
-}                  from './src/presetCollection'
+}                     from './src/presetCollection'
+export { randPreset } from './src/randPreset'

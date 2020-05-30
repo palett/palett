@@ -10,11 +10,12 @@ import { mapper as mapVector, mutate as mutVector } from '@vect/vector'
  *
  * @param {*[][]} mx
  * @param {PalettProjectConfig[]} [presets]
+ * @param {string[]} [effects]
  */
-export function fluoByRow (mx, presets = []) {
+export function fluoByRow (mx, presets = [], effects) {
   const
     config = this,
     { mutate } = config,
     mapper = mutate ? mutVector : mapVector
-  return mapper(mx, row => fluoVec.call(config, row, presets))
+  return mapper(mx, row => fluoVec.call(config, row, presets, effects))
 }

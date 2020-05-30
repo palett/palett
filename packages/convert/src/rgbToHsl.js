@@ -1,4 +1,4 @@
-import { round } from 'aryth'
+import { round } from '@aryth/math'
 import { bound } from '../utils/rgb/bound'
 import { hue }   from '../utils/rgb/hue'
 

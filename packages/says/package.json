@@ -24,7 +24,8 @@
     "@spare/util": "^0.7.4",
     "@typen/enum-data-types": "^0.1.4",
     "@typen/enums": "^0.1.4",
-    "@vect/object-mapper": "^0.2.4"
+    "@vect/object-mapper": "^0.2.4",
+    "@spare/deco-string": "^0.7.4"
   },
   "repository": {
     "type": "git",

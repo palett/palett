@@ -20,6 +20,7 @@
     "@aryth/rank": "^0.2.5",
     "@palett/cards": "^0.2.11",
     "@palett/enum-color-space": "^0.2.11",
+    "@palett/presets": "^0.2.11",
     "@palett/table": "^0.2.11",
     "@vect/swap": "^0.2.4",
     "@vect/vector-mapper": "^0.2.4"

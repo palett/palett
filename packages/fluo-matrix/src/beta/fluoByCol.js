@@ -10,10 +10,11 @@ import { columnsMapper, transpose } from '@vect/matrix'
  *
  * @param {*[][]} mx
  * @param {PalettProjectConfig[]} [presets]
+ * @param {string[]} [effects]
  */
-export function fluoByCol (mx, presets = []) {
+export function fluoByCol (mx, presets = [], effects) {
   const config = this
   return columnsMapper(mx,
-    col => fluoVec.call(config, col, presets)
+    col => fluoVec.call(config, col, presets, effects)
   )|> transpose
 }

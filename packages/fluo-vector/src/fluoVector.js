@@ -12,7 +12,6 @@ const fluoZip = function (vector, values, xPreset, yPreset) {
     mutate = false,
     colorant = false
   } = this
-  const [x, y] = duobound(vector)
   const zipper$1 = mutate ? mutazip : zipper
   return dyezip.call({
     colorant,

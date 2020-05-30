@@ -4,14 +4,14 @@ import { isNumeric }    from '@typen/num-strict'
 import { boundToLeap }  from './boundToLeap'
 import { Projector }    from './projector'
 
-export const Colorant = (bound, preset = PLANET) => {
+export const Colorant = (bound, preset = PLANET, effects) => {
   const vleap = boundToLeap(bound), prime = presetToFlat(preset)
-  let dye = Projector(vleap, preset)
+  let dye = Projector(vleap, preset, effects)
   return x => isNumeric(x) ? dye(x) : prime
 }
 
-export const Pigment = (bound, preset = PLANET) => {
+export const Pigment = (bound, preset = PLANET, effects) => {
   const vleap = boundToLeap(bound), prime = presetToFlat(preset)
-  let dye = Projector(vleap, preset)
+  let dye = Projector(vleap, preset, effects)
   return x => isNumeric(x) ? x |> dye(x) : x |> prime
 }

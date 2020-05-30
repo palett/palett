@@ -1,4 +1,5 @@
 import { simpleMatrices }                 from '@foba/foo'
+import { BOLD, ITALIC, UNDERLINE }        from '@palett/enum-font-effects'
 import { says }                           from '@palett/says'
 import { deco }                           from '@spare/deco'
 import { logger }                         from '@spare/logger'
@@ -17,18 +18,18 @@ SimpleMatrices.another = [
 
 'fluoMatrix' |> logger
 for (const [key, matrix] of Object.entries(SimpleMatrices)) {
-  fluo.call({ colorant: false }, matrix, POINTWISE) |> deco |> says[key]
+  fluo.call({ colorant: false }, matrix, POINTWISE, [], [BOLD]) |> deco |> says[key]
   '' |> logger
 }
 
 'fluoRows' |> logger
 for (const [key, matrix] of Object.entries(SimpleMatrices)) {
-  fluo.call({ colorant: false }, matrix, ROWWISE) |> deco |> says[key]
+  fluo.call({ colorant: false }, matrix, ROWWISE, [], [ITALIC]) |> deco |> says[key]
   '' |> logger
 }
 
 'fluoColumns' |> logger
 for (const [key, matrix] of Object.entries(SimpleMatrices)) {
-  fluo.call({ colorant: false }, matrix, COLUMNWISE) |> deco |> says[key]
+  fluo.call({ colorant: false }, matrix, COLUMNWISE, [], [UNDERLINE]) |> deco |> says[key]
   '' |> logger
 }

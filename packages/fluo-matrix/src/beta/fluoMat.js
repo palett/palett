@@ -5,7 +5,6 @@ import { presetToFlat }                                     from '@palett/util-f
 import { nullish }                                          from '@typen/nullish'
 import { mapper as mapperFunc, mutate as mutateFunc, size } from '@vect/matrix'
 
-
 /**
  *
  * @typedef {Object} PalettProjectConfig
@@ -15,8 +14,9 @@ import { mapper as mapperFunc, mutate as mutateFunc, size } from '@vect/matrix'
  *
  * @param matrix
  * @param {PalettProjectConfig[]} [presets]
+ * @param {string[]} [effects]
  */
-export const fluoMat = function (matrix, presets = []) {
+export const fluoMat = function (matrix, presets = [], effects) {
   const [h, w] = size(matrix)
   if (!h || !w) return [[]]
   const
@@ -28,8 +28,8 @@ export const fluoMat = function (matrix, presets = []) {
     pY = y?.preset ?? PLANET
   const [bX, bY] = duobound(matrix, [x, y])
   const
-    dX = Projector(bX, pX),
-    dY = Projector(bY, pY)
+    dX = Projector(bX, pX, effects),
+    dY = Projector(bY, pY, effects)
   const mapper = mutate ? mutateFunc : mapperFunc
   return colorant
     ? mapper(matrix, Colorant(bX, dX, bY, dY, presetToFlat(pX)))
