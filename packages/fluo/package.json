@@ -22,7 +22,7 @@
     "@palett/presets": "^0.2.15",
     "@palett/util-fluo": "^0.2.15",
     "@typen/num-strict": "^0.1.5",
-    "@vect/enum-matrix-directions": "^0.2.4"
+    "@vect/enum-matrix-directions": "^0.2.5"
   },
   "repository": {
     "type": "git",

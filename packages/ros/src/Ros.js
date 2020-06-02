@@ -1,10 +1,10 @@
 import { presetFlopper }      from '@palett/flopper'
-import { Pal }                from '@palett/says/src/Pal'
+import { tapPresets }         from '@palett/presets'
 import { Deco as DecoString } from '@spare/deco-string'
 import { Callable }           from '../util/Callable'
 
 export class Ros extends Callable {
-  /** @type {Object<string,Pal|function>} */ #pool = {}
+  /** @type {Object<string,string>} */ #pool = {}
   /** @type {string[]} */ #effects = undefined
 
   /**
@@ -22,7 +22,7 @@ export class Ros extends Callable {
   aboard (name, preset) {
     if (name in this.pool) { return this.pool[name] }
     ({ value: preset } = preset ?? this.flopper.next())
-    return this.pool[name] = name |> DecoString({ presets: [{ preset }, { preset }], effects: this.#effects })
+    return this.pool[name] = name |> DecoString({ presets: tapPresets(preset, preset), effects: this.#effects })
   }
 
   /**

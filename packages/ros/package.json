@@ -15,9 +15,9 @@
     "test": "babel-node test/archive/test.index.js"
   },
   "dependencies": {
-    "@palett/convert": "^0.2.15",
-    "@palett/dye": "^0.2.15",
-    "@palett/flopper": "^0.2.15"
+    "@palett/flopper": "^0.2.15",
+    "@palett/presets": "^0.2.15",
+    "@spare/deco-string": "^0.7.9"
   },
   "repository": {
     "type": "git",

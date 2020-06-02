@@ -17,3 +17,4 @@ export {
   VIOLA,
 }                     from './src/presetCollection'
 export { randPreset } from './src/randPreset'
+export { tapPresets } from './src/tapPresets'
