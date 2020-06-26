@@ -1,7 +1,7 @@
-import { parenth }  from '@spare/bracket'
-import { SP }       from '@spare/enum-chars'
-import { Callable } from '../util/Callable'
-import { narrate }  from './narrate'
+import { bracket, parenth } from '@spare/bracket'
+import { SP }               from '@spare/enum-chars'
+import { Callable }         from '../util/Callable'
+import { narrate }          from './narrate'
 
 /** @type {function} */
 export class Pal extends Callable {
@@ -18,6 +18,12 @@ export class Pal extends Callable {
   p(words) { return this.des += SP + words, this }
 
   br(words) { return this.des += SP + parenth(words), this }
+
+  to(someone) {
+    if (someone instanceof Pal) someone = someone.title
+    this.des += ' -> ' + bracket(someone)
+    return this
+  }
 
   get asc() { return this.indent++, this }
 
