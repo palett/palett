@@ -1,7 +1,7 @@
-import { SimpleMatrices }       from '@foba/foo'
-import { decoMatrix, delogger } from '@spare/logger'
-import { xr }                   from '@spare/xr'
-import { says }                 from '../index'
+import { SimpleMatrices }               from '@foba/foo'
+import { decoMatrix, delogger, logger } from '@spare/logger'
+import { xr }                           from '@spare/xr'
+import { ros, says }                    from '../index'
 
 for (const [key, matrix] of Object.entries(SimpleMatrices))
   matrix |> decoMatrix |> says[key]
@@ -16,5 +16,8 @@ const stb = function (y) {
 
 stb(1024) |> says[1024].p('pure result:')
 says.roster(1024) |> delogger
-says.roster('shake') |> delogger
-says.roster('shack') |> delogger
+ros('shake') |> delogger
+ros('shack') |> delogger
+
+for (const key of Object.keys(SimpleMatrices))
+  ros(key) |> logger
