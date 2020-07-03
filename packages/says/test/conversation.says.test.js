@@ -5,6 +5,7 @@ import { logger, logNeL } from '@spare/logger'
 import { Says }           from '../src/Says'
 
 const says = Says.build({ effects: [BOLD] })
+
 'what to do' |> says.chef.to(says.aboyeur).to(says.worker)
 'how would i know' |> says.worker.asc.to(says.chef)
 'i\'ll be there tmr' |> says.worker
