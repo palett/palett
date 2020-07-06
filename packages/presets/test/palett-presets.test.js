@@ -1,3 +1,4 @@
+import { almostEquals, round }                    from '@aryth/math'
 import { hexToHsl, hexToRgb, hslToHex, hslToRgb } from '@palett/convert'
 import { Dye }                                    from '@palett/dye'
 import { BOLD, ITALIC }                           from '@palett/enum-font-effects'
@@ -6,7 +7,6 @@ import { logger, logNeL }                         from '@spare/logger'
 import { xr }                                     from '@spare/xr'
 import { mapper as columnsMapper }                from '@vect/columns-mapper'
 import { transpose }                              from '@vect/matrix-transpose'
-import { almostEquals, round }                    from 'aryth'
 import { Ob }                                     from 'veho'
 import { Presets }                                from '../index'
 
@@ -18,7 +18,7 @@ const range = (min, max, len) => {
   return ar
 }
 
-const formatHsl = ([h, s, l]) => `${round(h)}-${round(s)}-${round(l)}`
+const formatHsl = ([h, s, l]) => `${ round(h) }-${ round(s) }-${ round(l) }`
 
 for (let theme in Presets) {
   const effects = Ob.mapValues(Presets[theme], hex => hex|> hexToHsl |> formatHsl |> Dye(hex |> hexToRgb))

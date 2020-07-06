@@ -27,9 +27,9 @@ export class Pal extends Callable {
     return this
   }
 
-  setLogger(newLogger) {
-    if (typeof newLogger === STR && newLogger in console) { return this.logger = console[newLogger], this }
-    if (typeof newLogger === FUN) { return this.logger = newLogger, this }
+  level(logger) {
+    if (typeof logger === STR && logger in console) { return this.logger = console[logger], this }
+    if (typeof logger === FUN) { return this.logger = logger, this }
     return this
   }
 

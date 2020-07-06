@@ -5,11 +5,11 @@ export const tab = ind => SP.repeat(ind << 1)
 
 export const narrate = (text, context) => {
   let { title, des, indent, logger } = context
-  let designation = `${ tab(indent) }[${ title }]`
-  if (des?.length) designation += des, context.des = ''
+  let signature = `${ tab(indent) }[${ title }]`
+  if (des?.length) signature += des, context.des = ''
   if (typeof text !== STR) text += ''
   return void logger(
-    designation,
+    signature,
     text.includes(LF)
       ? (LF + text).replace(/\n/g, LF + tab(++indent))
       : text
