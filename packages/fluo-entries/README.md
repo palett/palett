@@ -1,4 +1,4 @@
-## @palett/fluo-entries
+## @palett/fluoMatrix-entries
 A colorant to string
 
 [![npm version][npm-image]][npm-url]
@@ -30,12 +30,12 @@ A colorant to string
 
 ## Install
 ```console
-$ npm install @palett/fluo-entries
+$ npm install @palett/fluoMatrix-entries
 ```
 
 ## Usage
 ```js
-import { Temp } from '@palett/fluo-entries'
+import { Temp } from '@palett/fluoMatrix-entries'
 ```
 
 ## Meta

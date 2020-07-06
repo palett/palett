@@ -1,56 +1,47 @@
-import { bound, duobound }       from '@aryth/bound-vector'
-import { NUM_ASC, STR_ASC }      from '@aryth/comparer'
-import { duorank }               from '@aryth/rank-vector'
-import { FRESH, JUNGLE, PLANET } from '@palett/presets'
-import { dyezip }                from '@palett/util-fluo'
-import { isLiteral }             from '@typen/literal'
-import { isNumeric }             from '@typen/num-strict'
-import { mutazip, zipper }       from '@vect/vector'
-
-const fluoZip = function (vector, values, xPreset, yPreset) {
-  const {
-    mutate = false,
-    colorant = false
-  } = this
-  const zipper$1 = mutate ? mutazip : zipper
-  return dyezip.call({
-    colorant,
-    zipper: zipper$1,
-    bound
-  }, vector, values, xPreset, yPreset)
-}
+import { duobound }                                   from '@aryth/bound-vector'
+import { Oneself, oneself }                           from '@ject/oneself'
+import { Projector }                                  from '@palett/projector'
+import { extractBound, presetToFlat }                 from '@palett/util-fluo'
+import { nullish }                                    from '@typen/nullish'
+import { mapper as mapperFunc, mutate as mutateFunc } from '@vect/vector'
 
 /**
- * @typedef {{max:string,min:string,na:string}} Preset
- * @param {*[]} vector
- * @param {number[]} values
- * @param {Object|Preset} [preset]
- * @param {Object|Preset} [stringPreset]
- * @param {boolean} [mutate=true]
- * @param {boolean} [colorant=false]
- * @param {Function} filter
+ *
+ * @typedef {Object} PresetAndConfig
+ * @typedef {string} PresetAndConfig.max
+ * @typedef {string} PresetAndConfig.min
+ * @typedef {string} PresetAndConfig.na
+ * @typedef {Function} PresetAndConfig.mapper
+ * @typedef {Function} PresetAndConfig.filter
+ *
+ * @param vec
+ * @param {PresetAndConfig[]} configs
+ * @param {string[]} effects
  */
-export const fluoVector = (vector, {
-  values,
-  preset = FRESH,
-  stringPreset = JUNGLE,
-  mutate = false,
-  colorant = false,
-  filter = isLiteral
-} = {}) => {
-  if (!values) values = duorank(vector, {
-    preset: FRESH,
-    filter: isNumeric,
-    comparer: NUM_ASC
-  }, {
-    preset: PLANET,
-    filter,
-    comparer: STR_ASC
-  })
-  const zipper$1 = mutate ? mutazip : zipper
-  return fluoZip.call({
-    colorant,
-    zipper: zipper$1,
-    bound
-  }, vector, values, preset, stringPreset)
+export const fluoVector = function (vec, configs = [], effects) {
+  if (!vec?.length) return []
+  const colorant = this?.colorant, mutate = this?.mutate
+  const [presetX, presetY] = configs
+  const [vectorWithBoundX, vectorWithBoundY] = duobound(vec, configs)
+  const
+    dyeX = presetX ? Projector(extractBound(vectorWithBoundX), presetX, effects) : Oneself,
+    dyeY = presetY ? Projector(extractBound(vectorWithBoundY), presetY, effects) : Oneself
+  const mapper = mutate ? mutateFunc : mapperFunc
+  return colorant
+    ? mapper(vec, Colorant(vectorWithBoundX, dyeX, vectorWithBoundY, dyeY, presetX ? presetToFlat(presetX) : oneself))
+    : mapper(vec, Pigment(vectorWithBoundX, dyeX, vectorWithBoundY, dyeY, presetY ? presetToFlat(presetY) : oneself))
+}
+
+export const Colorant = function (bX, dX, bY, dY, dye) {
+  return (_, i) => {
+    let x, y
+    return !nullish(x = bX && bX[i]) ? dX(x) : !nullish(y = bY && bY[i]) ? dY(y) : dye
+  }
+}
+
+export const Pigment = function (bX, dX, bY, dY, dye) {
+  return (n, i) => {
+    let x, y
+    return !nullish(x = bX && bX[i]) ? (n |> dX(x)) : !nullish(y = bY && bY[i]) ? (n |> dY(y)) : (n |> dye)
+  }
 }

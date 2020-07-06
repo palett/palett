@@ -1,20 +1,17 @@
-import { simpleVectors } from '@foba/foo'
-import { ATLAS }         from '@palett/presets'
-import { delogger }      from '@spare/deco'
-import { logger }        from '@spare/logger'
-import { fluoVector }    from '../src/fluoVector'
+import { BOLD, ITALIC } from '@palett/enum-font-effects'
+import { PLANET }       from '@palett/presets'
+import { says }         from '@palett/says'
+import { fluoVector }   from '../src/fluoVector'
+import { candidates }   from './alpha/candidates'
 
-const SimpleVectors = simpleVectors({ h: 16 })
-SimpleVectors.another = ['A', 'B', 'C', 'x', 'y', 'z', ' ']
-SimpleVectors.countries = ['GBR', 'KOR', 'JPN', 'IND', 'DEU', 'CHN', 'USA']
-
-for (let [k, vector] of Object.entries(SimpleVectors)) {
-  k |> logger
-  vector = vector.slice()
-  fluoVector(vector, {
-    mutate: false,
-    colorant: false,
-    stringPreset: ATLAS,
-    // filter: x => x.trim().length > 0
-  }) |> delogger
+for (let [k, vector] of Object.entries(candidates)) {
+  fluoVector.call({ mutate: false, colorant: false },
+    vector,
+    [undefined, PLANET],
+    [BOLD, ITALIC]
+    // [
+    //   { preset: FRESH, filter: isNumeric, mapper: x => x },
+    //   { preset: PLANET, filter: isLiteral, mapper: stringValue }
+    // ]
+  ) |> says[k]
 }

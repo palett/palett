@@ -15,7 +15,7 @@
 ## Features
 
 - Lightweight and fast color convert among RGB, HEX and HSL (@palett/convert).
-- Colorant to array, 2d-array, entries for console output(@palett/fluo).
+- Colorant to array, 2d-array, entries for console output(@palett/fluoMatrix).
 - Color presets to visualize numeric or string array.(@palett/presets)
 - Colored debug loggers, functional declaring & use out-of-box. (@palett/says).
 - Palett color cards (@palett/cards).
@@ -34,15 +34,15 @@ $ npm install @palett/<tool-name>
 | -------------------------------------------- | ---------------------------------- | ---------- |
 | [**convert**](packages/convert)              | Convert RGB, HEX or HSL            | util       |
 | [**cards**](packages/cards)                  | Palett color cards                 | constants  |
-| [**presets**](packages/presets)              | Color presets for 'fluo'           | constants  |
+| [**presets**](packages/presets)              | Color presets for 'fluoMatrix'           | constants  |
 | [**table**](packages/table)                  | Demo palett color table in console | constants  |
 | [**dye**](packages/dye)                      | Colorify string (by ANSI rule)     | colorant   |
 | [**says**](packages/says)                    | Colored narrate creator             | colorant   |
 | [**hatsu**](packages/hatsu)                  | Chalk-style color string           | colorant   |
-| [**fluo**](packages/fluo)                    | Index for submodules of 'fluo'     | colorant   |
-| [**fluo-vector**](packages/fluo-vector)      | Color array                        | colorant   |
-| [**fluo-matrix**](packages/fluo-matrix)      | Color 2d-array                     | colorant   |
-| [**fluo-entries**](packages/fluo-entries)    | Color entries                      | colorant   |
+| [**fluoMatrix**](packages/fluo)                    | Index for submodules of 'fluoMatrix'     | colorant   |
+| [**fluoMatrix-vector**](packages/fluo-vector)      | Color array                        | colorant   |
+| [**fluoMatrix-matrix**](packages/fluo-matrix)      | Color 2d-array                     | colorant   |
+| [**fluoMatrix-entries**](packages/fluo-entries)    | Color entries                      | colorant   |
 |                                              |                                    |            |
 
 ## Meta

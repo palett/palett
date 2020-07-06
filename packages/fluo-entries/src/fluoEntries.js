@@ -1,31 +1,31 @@
 import { fluoVector }                from '@palett/fluo-vector'
-import { FRESH, PLANET }             from '@palett/presets'
+import { wind }                      from '@vect/entries-init'
 import { unwind }                    from '@vect/entries-unwind'
 import { mutazip as mutazipEntries } from '@vect/entries-zipper'
-import { mutazip }                   from '@vect/vector'
 
 /**
  *
- * @param {*[]} entries
- * @param {Object|{max:string,min:string,na:string}} [preset]
- * @param {Object|{max:string,min:string,na:string}} [stringPreset]
- * @param {boolean} [mutate=true]
- * @param {boolean} [colorant=false]
- * @param {Function} [filter]
+ * @typedef {Object} PresetAndConfig
+ * @typedef {string} PresetAndConfig.max
+ * @typedef {string} PresetAndConfig.min
+ * @typedef {string} PresetAndConfig.na
+ * @typedef {Function} PresetAndConfig.mapper
+ * @typedef {Function} PresetAndConfig.filter
+ *
+ * @param entries
+ * @param {PresetAndConfig[]} [presetAndConfigs]
+ * @param {string[]} [effects]
  */
-export const fluoEntries = (entries, {
-    preset = FRESH,
-    stringPreset = PLANET,
-    mutate = false,
-    colorant = false,
-    filter
-  } = {}
-) => {
-  let [keys, items] = entries |> unwind
-  fluoVector(keys, { preset, stringPreset, mutate: true, colorant, filter })
-  fluoVector(items, { preset, stringPreset, mutate: true, colorant, filter })
-  const rendered = mutazip(keys, items, (k, v) => [k, v])
+export const fluoEntries = function (entries, presetAndConfigs, effects) {
+  const
+    colorant = this?.colorant,
+    mutate = this?.mutate
+  let [keys, items] = unwind(entries)
+  const context = { colorant, mutate: true }
+  fluoVector.call(context, keys, presetAndConfigs, effects)
+  fluoVector.call(context, items, presetAndConfigs, effects)
+  const rendered = wind(keys, items)
   return mutate
-    ? mutazipEntries(entries, rendered, (a, b) => b, (a, b) => b)
+    ? mutazipEntries(entries, rendered, (a, b) => b)
     : rendered
 }

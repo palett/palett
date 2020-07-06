@@ -1,4 +1,4 @@
-import { fluoVec }                                  from '@palett/fluo-vector'
+import { fluoVector }                               from '@palett/fluo-vector'
 import { mapper as mapVector, mutate as mutVector } from '@vect/vector'
 
 /**
@@ -14,9 +14,9 @@ import { mapper as mapVector, mutate as mutVector } from '@vect/vector'
  * @param {PresetAndConfig[]} [presetAndConfigs]
  * @param {string[]} [effects]
  */
-export function fluoByRow(mx, presetAndConfigs = [], effects) {
+export function fluoByRows(mx, presetAndConfigs = [], effects) {
   const
     context = this,
     mapper = context?.mutate ? mutVector : mapVector
-  return mapper(mx, row => fluoVec.call(context, row, presetAndConfigs, effects))
+  return mapper(mx, row => fluoVector.call(context, row, presetAndConfigs, effects))
 }

@@ -18,7 +18,7 @@ import { mapper as mapperFunc, mutate as mutateFunc, size } from '@vect/matrix'
  * @param {PresetAndConfig[]} [configs]
  * @param {string[]} [effects]
  */
-export const fluoMat = function (matrix, configs = [], effects) {
+export const fluoPointwise = function (matrix, configs = [], effects) {
   const [h, w] = size(matrix)
   if (!h || !w) return [[]]
   const colorant = this?.colorant, mutate = this?.mutate
@@ -30,7 +30,7 @@ export const fluoMat = function (matrix, configs = [], effects) {
   const mapper = mutate ? mutateFunc : mapperFunc
   return colorant
     ? mapper(matrix, Colorant(matrixWithBoundX, dyeX, matrixWithBoundY, dyeY, presetX ? presetToFlat(presetX) : oneself))
-    : mapper(matrix, Pigment(matrixWithBoundX, dyeX, matrixWithBoundY, dyeY, presetToFlat(presetY)))
+    : mapper(matrix, Pigment(matrixWithBoundX, dyeX, matrixWithBoundY, dyeY, presetX ? presetToFlat(presetY) : oneself))
 }
 
 export const Colorant = function (bX, dX, bY, dY, dye) {

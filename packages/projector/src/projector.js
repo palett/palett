@@ -4,27 +4,17 @@ import { boundToLeap }                       from './boundToLeap'
 import { hslToDye }                          from './hslToDye'
 import { leverage }                          from './leverage'
 
-export const scale = (x, min, lever, base, ceil) =>
-  keepCeil((keepFloor(x, min) - min) * lever + base, ceil)
-
-export const projector = function (x) {
-  const { min: m, lever: [rH, rS, rL], base: [mH, mS, mL], effects } = this
-  return hslToDye.call(
-    effects,
-    [scale(x, m, rH, mH, 360), scale(x, m, rS, mS, 100), scale(x, m, rL, mL, 100)]
-  )
-}
 /**
  *
  * @param {{[min]:number,[max]:number,[dif]:number}} bound
  * @param {{max:*,min:*}} preset
  * @param {string[]} [effects]
- * @returns {function(*):function}
+ * @returns {function(*):Function}
  */
 export const Projector = (bound, preset, effects) => {
   if (!bound) return void 0
-  bound = bound |> boundToLeap
-  /** @type {{min:number[],dif:number[]}} */ const leap = preset |> presetToLeap
+  bound = boundToLeap(bound)
+  /** @type {{min:number[],dif:number[]}} */ const leap = presetToLeap(preset)
   if (!bound.dif) {
     const dye = hslToDye.call(effects, leap.min)
     return () => dye
@@ -36,3 +26,15 @@ export const Projector = (bound, preset, effects) => {
     effects: effects
   })
 }
+
+export const scale = (x, min, lever, base, ceil) =>
+  keepCeil((keepFloor(x, min) - min) * lever + base, ceil)
+
+export const projector = function (x) {
+  const { min: m, lever: [rH, rS, rL], base: [mH, mS, mL], effects } = this
+  return hslToDye.call(
+    effects,
+    [scale(x, m, rH, mH, 360), scale(x, m, rS, mS, 100), scale(x, m, rL, mL, 100)]
+  )
+}
+

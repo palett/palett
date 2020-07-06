@@ -6,7 +6,7 @@ import { FRESH, JUNGLE } from '@palett/presets'
 import { fluo }                                                     from '@palett/util-fluo'
 import { COLUMNWISE, POINTWISE, ROWWISE }                           from '@vect/enum-matrix-directions'
 import { mapper as map, mutate as mutamap, mutazip, zipper as zip } from '@vect/matrix'
-import { allNAString }                                              from '../../utils/allString'
+import { allNAString }                                              from './utils/allString'
 import { fluoColumns }                                              from './fluoColumns'
 import { fluoRows }                                                 from './fluoRows'
 
