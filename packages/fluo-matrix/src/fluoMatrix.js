@@ -1,7 +1,7 @@
 import { COLUMNWISE, POINTWISE, ROWWISE } from '@vect/enum-matrix-directions'
-import { fluoByColumns } from './fluoByColumns'
-import { fluoByRows }    from './fluoByRows'
-import { fluoPointwise } from './fluoPointwise'
+import { fluoByColumns }                  from './fluoByColumns'
+import { fluoByRows }                     from './fluoByRows'
+import { fluoPointwise }                  from './fluoPointwise'
 
 /**
  *
@@ -14,18 +14,18 @@ import { fluoPointwise } from './fluoPointwise'
  *
  * @param {*[][]} mx
  * @param {number} [direct=POINTWISE]
- * @param {PresetAndConfig[]} [presetAndConfigs]
+ * @param {PresetAndConfig|PresetAndConfig[]} [opts]
  * @param {string[]} [effects]
  */
-export const fluoMatrix = function (mx, direct = POINTWISE, presetAndConfigs = [], effects) {
+export const fluoMatrix = function (mx, direct = POINTWISE, opts = [], effects) {
   switch (direct) {
     case ROWWISE:
-      return fluoByRows.call(this, mx, presetAndConfigs, effects)
+      return fluoByRows.call(this, mx, opts, effects)
     case COLUMNWISE:
-      return fluoByColumns.call(this, mx, presetAndConfigs, effects)
+      return fluoByColumns.call(this, mx, opts, effects)
     case POINTWISE:
     default:
-      return fluoPointwise.call(this, mx, presetAndConfigs, effects)
+      return fluoPointwise.call(this, mx, opts, effects)
   }
 }
 

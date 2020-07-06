@@ -6,7 +6,7 @@ import { mapper }             from '@vect/object-mapper'
 import { Pal }                from './Pal'
 
 const pal = (name, preset, effects) => {
-  return Pal.build(name |> DecoString({ presets: [undefined, { preset }], effects }))
+  return Pal.build(name |> DecoString({ presets: [undefined, preset], effects }))
 }
 
 export class Says {

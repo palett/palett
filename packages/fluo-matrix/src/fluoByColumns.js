@@ -11,12 +11,12 @@ import { columnsMapper, transpose } from '@vect/matrix'
  * @typedef {Function} PresetAndConfig.mapper
  *
  * @param {*[][]} mx
- * @param {PresetAndConfig[]} [presetAndConfigs]
+ * @param {PresetAndConfig|PresetAndConfig[]} [opts]
  * @param {string[]} [effects]
  */
-export function fluoByColumns(mx, presetAndConfigs = [], effects) {
+export function fluoByColumns(mx, opts = [], effects) {
   const context = this
   return columnsMapper(mx,
-    col => fluoVector.call(context, col, presetAndConfigs, effects)
+    col => fluoVector.call(context, col, opts, effects)
   )|> transpose
 }

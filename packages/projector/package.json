@@ -15,7 +15,7 @@
     "test": "babel-node test/archive/test.index.js"
   },
   "dependencies": {
-    "@aryth/comparer": "^0.2.9",
+    "@aryth/comparer": "^0.2.10",
     "@ject/oneself": "^0.0.5",
     "@palett/convert": "^0.4.0-alpha.0",
     "@palett/dye": "^0.4.0-alpha.0",

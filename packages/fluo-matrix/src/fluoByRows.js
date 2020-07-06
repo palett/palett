@@ -11,12 +11,12 @@ import { mapper as mapVector, mutate as mutVector } from '@vect/vector'
  * @typedef {Function} PresetAndConfig.mapper
  *
  * @param {*[][]} mx
- * @param {PresetAndConfig[]} [presetAndConfigs]
+ * @param {PresetAndConfig|PresetAndConfig[]} [opts]
  * @param {string[]} [effects]
  */
-export function fluoByRows(mx, presetAndConfigs = [], effects) {
+export function fluoByRows(mx, opts = [], effects) {
   const
     context = this,
     mapper = context?.mutate ? mutVector : mapVector
-  return mapper(mx, row => fluoVector.call(context, row, presetAndConfigs, effects))
+  return mapper(mx, row => fluoVector.call(context, row, opts, effects))
 }

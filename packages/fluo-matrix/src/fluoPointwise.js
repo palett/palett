@@ -1,4 +1,4 @@
-import { duobound }                                         from '@aryth/bound-matrix'
+import { duobound, solebound }                              from '@aryth/bound-matrix'
 import { presetToFlat }                                     from '@palett/presets'
 import { Projector }                                        from '@palett/projector'
 import { nullish }                                          from '@typen/nullish'
@@ -14,22 +14,33 @@ import { mapper as mapperFunc, mutate as mutateFunc, size } from '@vect/matrix'
  * @typedef {Function} PresetAndConfig.mapper
  *
  * @param matrix
- * @param {PresetAndConfig[]} [configs]
+ * @param {PresetAndConfig|PresetAndConfig[]} [opts]
  * @param {string[]} [effects]
  */
-export const fluoPointwise = function (matrix, configs = [], effects) {
+export const fluoPointwise = function (matrix, opts = [], effects) {
   const [h, w] = size(matrix)
   if (!h || !w) return [[]]
   const colorant = this?.colorant, mutate = this?.mutate
-  const [presetX, presetY] = configs
-  const [matrixWithBoundX, matrixWithBoundY] = duobound(matrix, configs)
-  const
-    dyeX = Projector(extractBound(matrixWithBoundX), presetX, effects),
-    dyeY = Projector(extractBound(matrixWithBoundY), presetY, effects)
-  const mapper = mutate ? mutateFunc : mapperFunc
-  return colorant
-    ? mapper(matrix, Colorant(matrixWithBoundX, dyeX, matrixWithBoundY, dyeY, presetToFlat(presetX)))
-    : mapper(matrix, Pigment(matrixWithBoundX, dyeX, matrixWithBoundY, dyeY, presetToFlat(presetY)))
+  if (Array.isArray(opts)) {
+    const [presetX, presetY] = opts
+    const [matrixWithBoundX, matrixWithBoundY] = duobound(matrix, opts)
+    const
+      dyeX = Projector(extractBound(matrixWithBoundX), presetX, effects),
+      dyeY = Projector(extractBound(matrixWithBoundY), presetY, effects)
+    const mapper = mutate ? mutateFunc : mapperFunc
+    return colorant
+      ? mapper(matrix, Colorant(matrixWithBoundX, dyeX, matrixWithBoundY, dyeY, presetToFlat(presetX)))
+      : mapper(matrix, Pigment(matrixWithBoundX, dyeX, matrixWithBoundY, dyeY, presetToFlat(presetY)))
+  } else {
+    /** @type {PresetAndConfig} */ const preset = opts
+    const matrixWithBound = solebound(matrix, opts)
+    const
+      dye = Projector(extractBound(matrixWithBound), preset, effects)
+    const mapper = mutate ? mutateFunc : mapperFunc
+    return colorant
+      ? mapper(matrix, Colorant(matrixWithBound, dye, undefined, undefined, presetToFlat(preset)))
+      : mapper(matrix, Pigment(matrixWithBound, dye, undefined, undefined, presetToFlat(preset)))
+  }
 }
 
 export const Colorant = function (bX, dX, bY, dY, dye) {
