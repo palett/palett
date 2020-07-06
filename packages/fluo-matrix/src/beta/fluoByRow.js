@@ -3,19 +3,20 @@ import { mapper as mapVector, mutate as mutVector } from '@vect/vector'
 
 /**
  *
- * @typedef {Object} PalettProjectConfig
- * @typedef {Function} PalettProjectConfig.filter
- * @typedef {Function} PalettProjectConfig.mapper
- * @typedef {Object} PalettProjectConfig.preset
+ * @typedef {Object} PresetAndConfig
+ * @typedef {string} PresetAndConfig.max
+ * @typedef {string} PresetAndConfig.min
+ * @typedef {string} PresetAndConfig.na
+ * @typedef {Function} PresetAndConfig.filter
+ * @typedef {Function} PresetAndConfig.mapper
  *
  * @param {*[][]} mx
- * @param {PalettProjectConfig[]} [presets]
+ * @param {PresetAndConfig[]} [presetAndConfigs]
  * @param {string[]} [effects]
  */
-export function fluoByRow (mx, presets = [], effects) {
+export function fluoByRow(mx, presetAndConfigs = [], effects) {
   const
-    config = this,
-    { mutate } = config,
-    mapper = mutate ? mutVector : mapVector
-  return mapper(mx, row => fluoVec.call(config, row, presets, effects))
+    context = this,
+    mapper = context?.mutate ? mutVector : mapVector
+  return mapper(mx, row => fluoVec.call(context, row, presetAndConfigs, effects))
 }

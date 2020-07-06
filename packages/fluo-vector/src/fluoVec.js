@@ -1,50 +1,47 @@
 import { duobound }                                   from '@aryth/bound-vector'
-import { FRESH, PLANET }                              from '@palett/presets'
+import { Oneself, oneself }                           from '@ject/oneself'
 import { Projector }                                  from '@palett/projector'
-import { presetToFlat }                               from '@palett/util-fluo'
+import { extractBound, presetToFlat }                 from '@palett/util-fluo'
 import { nullish }                                    from '@typen/nullish'
 import { mapper as mapperFunc, mutate as mutateFunc } from '@vect/vector'
 
 /**
  *
- * @typedef {Object} PalettProjectConfig
- * @typedef {Function} PalettProjectConfig.filter
- * @typedef {Function} PalettProjectConfig.mapper
- * @typedef {Object} PalettProjectConfig.preset
+ * @typedef {Object} PresetAndConfig
+ * @typedef {string} PresetAndConfig.max
+ * @typedef {string} PresetAndConfig.min
+ * @typedef {string} PresetAndConfig.na
+ * @typedef {Function} PresetAndConfig.mapper
+ * @typedef {Function} PresetAndConfig.filter
  *
  * @param vec
- * @param {PalettProjectConfig[]} presets
+ * @param {PresetAndConfig[]} configs
  * @param {string[]} effects
  */
-export const fluoVec = function (vec, presets = [], effects) {
+export const fluoVec = function (vec, configs = [], effects) {
   if (!vec?.length) return []
+  const colorant = this?.colorant, mutate = this?.mutate
+  const [presetX, presetY] = configs
+  const [vecWithBoundX, vecWithBoundY] = duobound(vec, configs)
   const
-    colorant = this?.colorant,
-    mutate = this?.mutate
-  const [x, y] = presets
-  const
-    pX = x?.preset ?? FRESH,
-    pY = y?.preset ?? PLANET
-  const [bX, bY] = duobound(vec, presets)
-  const
-    dX = Projector(bX, pX, effects),
-    dY = Projector(bY, pY, effects)
+    dyeX = presetX ? Projector(extractBound(vecWithBoundX), presetX, effects) : Oneself,
+    dyeY = presetY ? Projector(extractBound(vecWithBoundY), presetY, effects) : Oneself
   const mapper = mutate ? mutateFunc : mapperFunc
   return colorant
-    ? mapper(vec, Colorant(bX, dX, bY, dY, presetToFlat(pX)))
-    : mapper(vec, Pigment(bX, dX, bY, dY, presetToFlat(pY)))
+    ? mapper(vec, Colorant(vecWithBoundX, dyeX, vecWithBoundY, dyeY, presetX ? presetToFlat(presetX) : oneself))
+    : mapper(vec, Pigment(vecWithBoundX, dyeX, vecWithBoundY, dyeY, presetY ? presetToFlat(presetY) : oneself))
 }
 
 export const Colorant = function (bX, dX, bY, dY, dye) {
   return (_, i) => {
-    const x = bX && bX[i], y = bY && bY[i]
-    return !nullish(x) ? dX(x) : !nullish(y) ? dY(y) : dye
+    let x, y
+    return !nullish(x = bX && bX[i]) ? dX(x) : !nullish(y = bY && bY[i]) ? dY(y) : dye
   }
 }
 
 export const Pigment = function (bX, dX, bY, dY, dye) {
   return (n, i) => {
-    const x = bX && bX[i], y = bY && bY[i]
-    return !nullish(x) ? (n |> dX(x)) : !nullish(y) ? (n |> dY(y)) : (n |> dye)
+    let x, y
+    return !nullish(x = bX && bX[i]) ? (n |> dX(x)) : !nullish(y = bY && bY[i]) ? (n |> dY(y)) : (n |> dye)
   }
 }

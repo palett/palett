@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@analys/crostab": "^0.3.4",
-    "@aryth/math": "^0.2.7",
+    "@aryth/math": "^0.2.9",
     "@palett/cards": "^0.3.5",
     "@palett/convert": "^0.3.5",
     "@palett/dye": "^0.3.5",

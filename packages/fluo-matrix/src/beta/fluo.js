@@ -5,25 +5,27 @@ import { fluoMat }                        from './fluoMat'
 
 /**
  *
- * @typedef {Object} PalettProjectConfig
- * @typedef {Function} PalettProjectConfig.filter
- * @typedef {Function} PalettProjectConfig.mapper
- * @typedef {Object} PalettProjectConfig.preset
+ * @typedef {Object} PresetAndConfig
+ * @typedef {string} PresetAndConfig.max
+ * @typedef {string} PresetAndConfig.min
+ * @typedef {string} PresetAndConfig.na
+ * @typedef {Function} PresetAndConfig.filter
+ * @typedef {Function} PresetAndConfig.mapper
  *
  * @param {*[][]} mx
  * @param {number} [direct=POINTWISE]
- * @param {PalettProjectConfig[]} [presets]
+ * @param {PresetAndConfig[]} [presetAndConfigs]
  * @param {string[]} [effects]
  */
-export const fluo = function (mx, direct = POINTWISE, presets = [], effects) {
+export const fluo = function (mx, direct = POINTWISE, presetAndConfigs = [], effects) {
   switch (direct) {
     case ROWWISE:
-      return fluoByRow.call(this, mx, presets, effects)
+      return fluoByRow.call(this, mx, presetAndConfigs, effects)
     case COLUMNWISE:
-      return fluoByCol.call(this, mx, presets, effects)
+      return fluoByCol.call(this, mx, presetAndConfigs, effects)
     case POINTWISE:
     default:
-      return fluoMat.call(this, mx, presets, effects)
+      return fluoMat.call(this, mx, presetAndConfigs, effects)
   }
 }
 

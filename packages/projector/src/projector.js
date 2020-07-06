@@ -20,7 +20,6 @@ export const projector = function (x) {
  * @param {{max:*,min:*}} preset
  * @param {string[]} [effects]
  * @returns {function(*):function}
- * @constructor
  */
 export const Projector = (bound, preset, effects) => {
   if (!bound) return void 0
