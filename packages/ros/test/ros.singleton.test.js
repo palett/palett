@@ -1,3 +1,4 @@
+import { rand }                    from '@aryth/rand'
 import { VectorCollection }        from '@foba/vector-string'
 import { BOLD, ITALIC, UNDERLINE } from '@palett/enum-font-effects'
 import { delogger }                from '@spare/deco'
@@ -7,7 +8,7 @@ export const test = () => {
   /** @type {Function} */  const ros = Ros.build([BOLD, ITALIC, UNDERLINE])
   const vec = VectorCollection.flopShuffle({ size: 10 })
   for (let word of vec) {
-    ros(word) |> delogger
+    ros(word + ':' + rand(1000)) |> delogger
   }
 }
 

@@ -21,7 +21,7 @@ export class Ros extends Callable {
   aboard(name, preset) {
     if (name in this.pool) { return this.pool[name] }
     ({ value: preset } = preset ?? this.flopper.next())
-    return this.pool[name] = name |> DecoString({ presets: [preset, preset], effects: this.#effects })
+    return this.pool[name] = name |> DecoString({ presets: preset, effects: this.#effects })
   }
 
   /**
