@@ -1,6 +1,6 @@
 {
   "name": "@palett/cards",
-  "version": "0.3.7",
+  "version": "0.4.0-alpha.0",
   "description": "A color converter",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",

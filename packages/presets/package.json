@@ -1,6 +1,6 @@
 {
   "name": "@palett/presets",
-  "version": "0.3.7",
+  "version": "0.4.0-alpha.0",
   "description": "A color converter",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -17,9 +17,9 @@
   "dependencies": {
     "@aryth/rand": "^0.2.9",
     "@ject/oneself": "^0.0.5",
-    "@palett/cards": "^0.3.7",
-    "@palett/convert": "^0.3.7",
-    "@palett/toner-hsl": "^0.3.7"
+    "@palett/cards": "^0.4.0-alpha.0",
+    "@palett/convert": "^0.4.0-alpha.0",
+    "@palett/toner-hsl": "^0.4.0-alpha.0"
   },
   "repository": {
     "type": "git",
