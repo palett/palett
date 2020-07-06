@@ -3,8 +3,8 @@ import { delogger }                          from '@spare/deco'
 import { logger }                            from '@spare/logger'
 import { COLUMNWISE, POINTWISE, ROWWISE }    from '@vect/enum-matrix-directions'
 import { ini }                                  from '@vect/matrix'
-import { fluoColumns, fluoPointwise, fluoRows } from '../../index'
-import { fluoMatrix }                           from '../../src/fluoMatrix'
+import { fluoColumns, fluoPointwise, fluoRows } from '@palett/fluo-matrix/index'
+import { fluoMatrix }                           from '@palett/fluo-matrix/src/fluoMatrix'
 
 const SimpleMatrices = simpleMatrices({ h: 6, w: 12 })
 SimpleMatrices.alphabetical = ini(4, 7, (x, y) => String.fromCharCode(63 + (x * 7) + y))

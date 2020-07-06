@@ -1,11 +1,9 @@
 import { makeEmbedded }   from '@foba/util'
 import { says }           from '@palett/says'
 import { deco, delogger } from '@spare/deco'
-import { strategies } from '@valjoux/strategies'
-import { fluoVector } from '../../src/fluoVector'
-import { fluoVector } from '../archive/fluoVector'
-import { candidates } from './candidates'
-import { fluoVecDev }     from './fluoVecDev'
+import { strategies }     from '@valjoux/strategies'
+import { fluoVector }     from '../../src/fluoVector'
+import { candidates }     from './candidates'
 import { fluoVecEdge }    from './fluoVecEdge'
 import { fluoVecFut }     from './fluoVecFut'
 
@@ -17,7 +15,6 @@ const { lapse, result } = strategies({
     bench: x => x,
     arc: fluoVector,
     cla: fluoVector,
-    dev: fluoVecDev, //.bind({ mutate: false, colorant: false }),
     fut: fluoVecFut,
     edge: fluoVecEdge,
   }

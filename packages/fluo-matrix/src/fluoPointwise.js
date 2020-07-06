@@ -1,7 +1,6 @@
 import { duobound }                                         from '@aryth/bound-matrix'
-import { Oneself, oneself }                                 from '@ject/oneself'
+import { presetToFlat }                                     from '@palett/presets'
 import { Projector }                                        from '@palett/projector'
-import { extractBound, presetToFlat }                       from '@palett/util-fluo'
 import { nullish }                                          from '@typen/nullish'
 import { mapper as mapperFunc, mutate as mutateFunc, size } from '@vect/matrix'
 
@@ -25,12 +24,12 @@ export const fluoPointwise = function (matrix, configs = [], effects) {
   const [presetX, presetY] = configs
   const [matrixWithBoundX, matrixWithBoundY] = duobound(matrix, configs)
   const
-    dyeX = presetX ? Projector(extractBound(matrixWithBoundX), presetX, effects) : Oneself,
-    dyeY = presetX ? Projector(extractBound(matrixWithBoundY), presetY, effects) : Oneself
+    dyeX = Projector(extractBound(matrixWithBoundX), presetX, effects),
+    dyeY = Projector(extractBound(matrixWithBoundY), presetY, effects)
   const mapper = mutate ? mutateFunc : mapperFunc
   return colorant
-    ? mapper(matrix, Colorant(matrixWithBoundX, dyeX, matrixWithBoundY, dyeY, presetX ? presetToFlat(presetX) : oneself))
-    : mapper(matrix, Pigment(matrixWithBoundX, dyeX, matrixWithBoundY, dyeY, presetX ? presetToFlat(presetY) : oneself))
+    ? mapper(matrix, Colorant(matrixWithBoundX, dyeX, matrixWithBoundY, dyeY, presetToFlat(presetX)))
+    : mapper(matrix, Pigment(matrixWithBoundX, dyeX, matrixWithBoundY, dyeY, presetToFlat(presetY)))
 }
 
 export const Colorant = function (bX, dX, bY, dY, dye) {
@@ -45,4 +44,11 @@ export const Pigment = function (bX, dX, bY, dY, dye) {
     let x, y
     return !nullish(x = bX && bX[i][j]) ? (n |> dX(x)) : !nullish(y = bY && bY[i][j]) ? (n |> dY(y)) : (n |> dye)
   }
+}
+
+const extractBound = objectWithBound => {
+  return objectWithBound ? {
+    max: objectWithBound.max,
+    min: objectWithBound.min
+  } : null
 }

@@ -1,7 +1,7 @@
 {
-  "name": "@palett/presets",
+  "name": "@palett/util-fluo",
   "version": "0.3.7",
-  "description": "A color converter",
+  "description": "A colorant to string",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "files": [
@@ -15,22 +15,22 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/rand": "^0.2.9",
-    "@ject/oneself": "^0.0.5",
-    "@palett/cards": "^0.3.7",
+    "@aryth/bound-vector": "^0.2.9",
+    "@aryth/comparer": "^0.2.9",
     "@palett/convert": "^0.3.7",
-    "@palett/toner-hsl": "^0.3.7"
+    "@palett/dye": "^0.3.7",
+    "@typen/enum-check-levels": "^0.1.5",
+    "@typen/num-strict": "^0.1.5",
+    "@vect/vector-mapper": "^0.2.5",
+    "@vect/vector-zipper": "^0.2.5"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hoyeungw/palett/presets.git"
+    "url": "git+https://github.com/hoyeungw/palett/util-fluo.git"
   },
   "keywords": [
-    "table",
-    "cross table",
-    "bi",
-    "insight",
-    "analytic"
+    "chalk",
+    "color"
   ],
   "author": {
     "name": "Hoyeung Wong",
@@ -39,8 +39,8 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hoyeungw/palett/presets"
+    "url": "https://github.com/hoyeungw/palett/util-fluo"
   },
-  "homepage": "https://github.com/hoyeungw/palett/presets#readme",
+  "homepage": "https://github.com/hoyeungw/palett/util-fluo#readme",
   "gitHead": "6da7746058d4e9712e9687bd45e38406999d88bf"
 }

@@ -1,2 +1,3 @@
-export { Projector }         from './src/projector'
-export { Colorant, Pigment } from './src/colorant'
+export { Projector } from './src/Projector'
+export { Colorant }  from './src/Colorant'
+export { Pigment }   from './src/Pigment'

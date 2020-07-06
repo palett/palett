@@ -8,6 +8,7 @@ const reverseHue = (hue) => {
 }
 
 const constraint = (x, min, max) => x > max ? max : x < min ? min : x
+
 export const randPreset = (hex) => {
   const min = hex
   const hsl = min |> hexToHsl

@@ -2,7 +2,7 @@ import { OCEAN }      from '@palett/presets'
 import { says }       from '@palett/says'
 import { delogger }   from '@spare/deco'
 import { seq }        from '@vect/vector'
-import { FluoNumber } from '../src/fluo-number'
+import { FluoNumber } from './fluo-number'
 
 const fluo = FluoNumber({ min: 0, dif: 10 }, OCEAN, false)
 

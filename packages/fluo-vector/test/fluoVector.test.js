@@ -2,7 +2,7 @@ import { BOLD, ITALIC } from '@palett/enum-font-effects'
 import { PLANET }       from '@palett/presets'
 import { says }         from '@palett/says'
 import { fluoVector }   from '../src/fluoVector'
-import { candidates }   from './alpha/candidates'
+import { candidates }   from './strategies/candidates'
 
 for (let [k, vector] of Object.entries(candidates)) {
   fluoVector.call({ mutate: false, colorant: false },

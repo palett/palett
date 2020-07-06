@@ -1,7 +1,6 @@
 import { duobound }                                   from '@aryth/bound-vector'
-import { Oneself, oneself }                           from '@ject/oneself'
 import { Projector }                                  from '@palett/projector'
-import { extractBound, presetToFlat }                 from '@palett/util-fluo'
+import { presetToFlat }                               from '@palett/presets'
 import { nullish }                                    from '@typen/nullish'
 import { mapper as mapperFunc, mutate as mutateFunc } from '@vect/vector'
 
@@ -24,12 +23,12 @@ export const fluoVector = function (vec, configs = [], effects) {
   const [presetX, presetY] = configs
   const [vectorWithBoundX, vectorWithBoundY] = duobound(vec, configs)
   const
-    dyeX = presetX ? Projector(extractBound(vectorWithBoundX), presetX, effects) : Oneself,
-    dyeY = presetY ? Projector(extractBound(vectorWithBoundY), presetY, effects) : Oneself
+    dyeX = Projector(extractBound(vectorWithBoundX), presetX, effects),
+    dyeY = Projector(extractBound(vectorWithBoundY), presetY, effects)
   const mapper = mutate ? mutateFunc : mapperFunc
   return colorant
-    ? mapper(vec, Colorant(vectorWithBoundX, dyeX, vectorWithBoundY, dyeY, presetX ? presetToFlat(presetX) : oneself))
-    : mapper(vec, Pigment(vectorWithBoundX, dyeX, vectorWithBoundY, dyeY, presetY ? presetToFlat(presetY) : oneself))
+    ? mapper(vec, Colorant(vectorWithBoundX, dyeX, vectorWithBoundY, dyeY, presetToFlat(presetX)))
+    : mapper(vec, Pigment(vectorWithBoundX, dyeX, vectorWithBoundY, dyeY, presetToFlat(presetY)))
 }
 
 export const Colorant = function (bX, dX, bY, dY, dye) {
@@ -44,4 +43,11 @@ export const Pigment = function (bX, dX, bY, dY, dye) {
     let x, y
     return !nullish(x = bX && bX[i]) ? (n |> dX(x)) : !nullish(y = bY && bY[i]) ? (n |> dY(y)) : (n |> dye)
   }
+}
+
+const extractBound = objectWithBound => {
+  return objectWithBound ? {
+    max: objectWithBound.max,
+    min: objectWithBound.min
+  } : null
 }

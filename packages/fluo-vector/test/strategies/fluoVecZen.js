@@ -1,12 +1,11 @@
-import { duobound }                   from '@aryth/bound-vector'
-import { FRESH, PLANET }              from '@palett/presets'
-import { Projector }                  from '@palett/projector/src/projector'
-import { presetToFlat, presetToLeap } from '@palett/util-fluo'
-import { stringValue }                from '@spare/string'
-import { isString }                   from '@typen/literal'
-import { nullish }                    from '@typen/nullish'
-import { isNumeric }                  from '@typen/num-strict'
-import { mapper, zipper }             from '@vect/vector'
+import { duobound }                                  from '@aryth/bound-vector'
+import { FRESH, PLANET, presetToFlat, presetToLeap } from '@palett/presets'
+import { Projector }                                 from '@palett/projector'
+import { stringValue }                               from '@spare/string'
+import { isString }                                  from '@typen/literal'
+import { nullish }                                   from '@typen/nullish'
+import { isNumeric }                                 from '@typen/num-strict'
+import { mapper, zipper }                            from '@vect/vector'
 
 const oneself = x => x
 
@@ -23,8 +22,8 @@ const configY = { filter: isString, mapper: stringValue, preset: PLANET }
  * @param {PalettProjectConfig} y
  */
 export const fluoVecEdge = function (vec,
-  x = configX,
-  y = configY
+                                     x = configX,
+                                     y = configY
 ) {
   if (!vec?.length) return ''
   const config = Object.assign(this ?? {}, { dye: x.preset |> presetToFlat }), { colorant } = config

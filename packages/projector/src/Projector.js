@@ -1,8 +1,9 @@
 import { max as keepFloor, min as keepCeil } from '@aryth/comparer'
-import { presetToLeap }                      from '@palett/util-fluo'
-import { boundToLeap }                       from './boundToLeap'
-import { hslToDye }                          from './hslToDye'
-import { leverage }                          from './leverage'
+import { Oneself }                           from '@ject/oneself'
+import { presetToLeap }                      from '@palett/presets'
+import { boundToLeap }                       from './helpers/boundToLeap'
+import { hslToDye }                          from './helpers/hslToDye'
+import { leverage }                          from './helpers/leverage'
 
 /**
  *
@@ -13,6 +14,7 @@ import { leverage }                          from './leverage'
  */
 export const Projector = (bound, preset, effects) => {
   if (!bound) return void 0
+  if (!preset) return Oneself
   bound = boundToLeap(bound)
   /** @type {{min:number[],dif:number[]}} */ const leap = presetToLeap(preset)
   if (!bound.dif) {
@@ -27,10 +29,7 @@ export const Projector = (bound, preset, effects) => {
   })
 }
 
-export const scale = (x, min, lever, base, ceil) =>
-  keepCeil((keepFloor(x, min) - min) * lever + base, ceil)
-
-export const projector = function (x) {
+const projector = function (x) {
   const { min: m, lever: [rH, rS, rL], base: [mH, mS, mL], effects } = this
   return hslToDye.call(
     effects,
@@ -38,3 +37,4 @@ export const projector = function (x) {
   )
 }
 
+const scale = (x, min, lever, base, ceil) => keepCeil((keepFloor(x, min) - min) * lever + base, ceil)
