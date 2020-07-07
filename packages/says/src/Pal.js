@@ -6,36 +6,42 @@ import { narrate }          from './narrate'
 
 /** @type {function} */
 export class Pal extends Callable {
-  /** @type {string} */ title = ''
-  /** @type {string} */ des = ''
-  /** @type {number} */ indent = 0
-  /** @type {Function} */ logger = console.log
-  constructor(title, { indent = 0, logger } = {}) {
+  /** @type {string}   */ name = ''
+  /** @type {string}   */ des = ''
+  /** @type {number}   */ ind = 0
+  /** @type {Function} */ log = console.log
+  /** @type {Function} */ att = void 0
+  constructor(name, { indent = 0, logger, attach } = {}) {
     super(text => narrate(text, this))
-    if (title) this.title = title
-    if (indent) this.indent = indent
-    if (logger) this.logger = logger
+    if (name) this.name = name
+    if (indent) this.ind = indent
+    if (logger) this.log = logger
+    if (attach) this.attach(attach)
   }
 
   p(words) { return this.des += SP + words, this }
-
   br(words) { return this.des += SP + parenth(words), this }
-
   to(someone) {
-    if (someone instanceof Pal) someone = someone.title
+    if (someone instanceof Pal) someone = someone.name
     this.des += ' -> ' + bracket(someone)
     return this
   }
 
+  attach(func) {
+    if (typeof func === FUN) { this.att = func }
+    return this
+  }
+  detach() { return this.att = null, this }
+
   level(logger) {
-    if (typeof logger === STR && logger in console) { return this.logger = console[logger], this }
-    if (typeof logger === FUN) { return this.logger = logger, this }
+    if (typeof logger === STR && logger in console) { return this.log = console[logger], this }
+    if (typeof logger === FUN) { return this.log = logger, this }
     return this
   }
 
-  get asc() { return this.indent++, this }
+  get asc() { return this.ind++, this }
 
-  get desc() { return (this.indent && this.indent--), this }
+  get desc() { return (this.ind && this.ind--), this }
 
   /**
    * @param {string} title

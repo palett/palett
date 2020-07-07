@@ -33,7 +33,7 @@ export class Says {
   }
 
   roster(name) {
-    if (name) return (this.#roster[name] ?? this.aboard(name)).title
+    if (name) return (this.#roster[name] ?? this.aboard(name)).name
     return mapper(this.#roster, ({ title }) => title)
   }
 

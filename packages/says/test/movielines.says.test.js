@@ -12,7 +12,6 @@ const dict = [
   [/: /g, ':' + RN],
 ] |> makeReplaceable
 
-
 const presets = [AQUA, OCEAN, LAVA, SUBTLE]
 for (let i = 0, film, quote; i < 24; i++) {
   [film, quote] = ObjectCollection.MovieQuotes |> flopEntry
