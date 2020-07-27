@@ -14,15 +14,15 @@ import { mapper as mapperFunc, mutate as mutateFunc } from '@vect/vector'
  * @typedef {Function} PresetAndConfig.filter
  *
  * @param vec
- * @param {PresetAndConfig|PresetAndConfig[]} opts
+ * @param {PresetAndConfig|PresetAndConfig[]} presets
  * @param {string[]} effects
  */
-export const fluoVector = function (vec, opts = [], effects) {
+export const fluoVector = function (vec, presets, effects) {
   if (!vec?.length) return []
   const colorant = this?.colorant, mutate = this?.mutate
-  if (Array.isArray(opts)) {
-    const [presetX, presetY] = opts
-    const [vectorWithBoundX, vectorWithBoundY] = duobound(vec, opts)
+  if (Array.isArray(presets)) {
+    const [presetX, presetY] = presets
+    const [vectorWithBoundX, vectorWithBoundY] = duobound(vec, presets)
     const
       dyeX = Projector(extractBound(vectorWithBoundX), presetX, effects),
       dyeY = Projector(extractBound(vectorWithBoundY), presetY, effects)
@@ -31,8 +31,8 @@ export const fluoVector = function (vec, opts = [], effects) {
       ? mapper(vec, Colorant(vectorWithBoundX, dyeX, vectorWithBoundY, dyeY, presetToFlat(presetX)))
       : mapper(vec, Pigment(vectorWithBoundX, dyeX, vectorWithBoundY, dyeY, presetToFlat(presetY)))
   } else {
-    /** @type {PresetAndConfig} */ const preset = opts
-    const vectorWithBound = solebound(vec, opts)
+    /** @type {PresetAndConfig} */ const preset = presets
+    const vectorWithBound = solebound(vec, presets)
     const dye = Projector(extractBound(vectorWithBound), preset, effects)
     const mapper = mutate ? mutateFunc : mapperFunc
     return colorant

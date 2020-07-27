@@ -29,7 +29,7 @@ export class Says {
 
   aboard(name, preset) {
     if (!preset) ({ value: preset } = this.#pool.next())
-    return this.#roster[name] = pal(name, preset, this.#effects)
+    return this.#roster[name] = pal(String(name), preset, this.#effects)
   }
 
   roster(name) {
