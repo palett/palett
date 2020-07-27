@@ -15,7 +15,7 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/math": "^0.2.10"
+    "@aryth/math": "^0.2.12"
   },
   "repository": {
     "type": "git",

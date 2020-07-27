@@ -19,13 +19,13 @@
     "@palett/dye": "^0.4.2",
     "@palett/enum-font-effects": "^0.4.2",
     "@palett/flopper": "^0.4.2",
-    "@spare/bracket": "^0.8.0",
-    "@spare/deco-string": "^0.8.0",
-    "@spare/enum-chars": "^0.8.0",
-    "@spare/util": "^0.8.0",
+    "@spare/bracket": "^0.8.4",
+    "@spare/deco-string": "^0.8.4",
+    "@spare/enum-chars": "^0.8.4",
+    "@spare/util": "^0.8.4",
     "@typen/enum-data-types": "^0.1.5",
     "@typen/enums": "^0.1.5",
-    "@vect/object-mapper": "^0.2.5"
+    "@vect/object-mapper": "^0.2.8"
   },
   "repository": {
     "type": "git",
