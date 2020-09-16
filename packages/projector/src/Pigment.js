@@ -5,6 +5,6 @@ import { Projector }            from './Projector'
 
 export const Pigment = (bound, preset = PLANET, effects) => {
   const vleap = boundToLeap(bound), prime = presetToFlat(preset)
-  let dye = Projector(vleap, preset, effects)
-  return x => isNumeric(x) ? x |> dye(x) : x |> prime
+  let projector = Projector(vleap, preset, effects)
+  return x => isNumeric(x) ? x |> projector(x) : x |> prime
 }

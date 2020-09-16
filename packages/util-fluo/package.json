@@ -19,10 +19,10 @@
     "@aryth/comparer": "^0.2.14",
     "@palett/convert": "^0.4.5",
     "@palett/dye": "^0.4.5",
-    "@typen/enum-check-levels": "^0.1.5",
-    "@typen/num-strict": "^0.1.5",
-    "@vect/vector-mapper": "^0.2.8",
-    "@vect/vector-zipper": "^0.2.8"
+    "@typen/enum-check-levels": "^0.1.10",
+    "@typen/num-strict": "^0.1.10",
+    "@vect/vector-mapper": "^0.2.10",
+    "@vect/vector-zipper": "^0.2.10"
   },
   "repository": {
     "type": "git",

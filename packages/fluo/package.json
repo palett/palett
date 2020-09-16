@@ -21,7 +21,7 @@
     "@palett/fluo-vector": "^0.4.5",
     "@palett/presets": "^0.4.5",
     "@palett/projector": "^0.4.5",
-    "@typen/nullish": "^0.1.5"
+    "@typen/nullish": "^0.1.10"
   },
   "repository": {
     "type": "git",

@@ -1,5 +1,5 @@
 import { flop, rand }                            from '@aryth/rand'
-import { NUM_DESC }                              from '@aryth/rank'
+import { NUM_DESC }                              from '@aryth/comparer'
 import { Grey }                                  from '@palett/cards'
 import { HEX }                                   from '@palett/enum-color-space'
 import { randPreset }                            from '@palett/presets'
