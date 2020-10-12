@@ -3,6 +3,7 @@ import { fluoByColumns }                  from './fluoByColumns'
 import { fluoByRows }                     from './fluoByRows'
 import { fluoPointwise }                  from './fluoPointwise'
 
+
 /**
  *
  * @typedef {Object} PresetAndConfig
@@ -13,19 +14,20 @@ import { fluoPointwise }                  from './fluoPointwise'
  * @typedef {Function} PresetAndConfig.mapper
  *
  * @param {*[][]} mx
- * @param {number} [direct=POINTWISE]
- * @param {PresetAndConfig|PresetAndConfig[]} [opts]
- * @param {string[]} [effects]
+ * @param {Object} config
+ * @param {number} [config.direct=POINTWISE]
+ * @param {PresetAndConfig|PresetAndConfig[]} [config.presets]
+ * @param {string[]} [config.effects]
  */
-export const fluoMatrix = function (mx, direct = POINTWISE, opts = [], effects) {
-  switch (direct) {
+export const fluoMatrix = function (mx, config) {
+  switch (config.direct) {
     case ROWWISE:
-      return fluoByRows.call(this, mx, opts, effects)
+      return fluoByRows.call(this, mx, config)
     case COLUMNWISE:
-      return fluoByColumns.call(this, mx, opts, effects)
+      return fluoByColumns.call(this, mx, config)
     case POINTWISE:
     default:
-      return fluoPointwise.call(this, mx, opts, effects)
+      return fluoPointwise.call(this, mx, config)
   }
 }
 

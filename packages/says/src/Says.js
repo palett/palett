@@ -5,9 +5,7 @@ import { FUN }                from '@typen/enum-data-types'
 import { mapper }             from '@vect/object-mapper'
 import { Pal }                from './Pal'
 
-const pal = (name, preset, effects) => {
-  return Pal.build(name |> DecoString({ presets: preset, effects }))
-}
+const pal = (name, conf) => Pal.build(name |> DecoString(conf))
 
 export class Says {
   /** @type {Object<string,Pal|function>} */ #roster = {}

@@ -13,17 +13,18 @@ import { mutazip as mutazipEntries } from '@vect/entries-zipper'
  * @typedef {Function} PresetAndConfig.filter
  *
  * @param entries
- * @param {PresetAndConfig|PresetAndConfig[]} [opts]
- * @param {string[]} [effects]
+ * @param {Object} config
+ * @param {PresetAndConfig|PresetAndConfig[]} [config.presets]
+ * @param {string[]} [config.effects]
  */
-export const fluoEntries = function (entries, opts, effects) {
+export const fluoEntries = function (entries, config) {
   const
     colorant = this?.colorant,
     mutate = this?.mutate
   let [keys, items] = unwind(entries)
   const context = { colorant, mutate: true }
-  fluoVector.call(context, keys, opts, effects)
-  fluoVector.call(context, items, opts, effects)
+  fluoVector.call(context, keys, config)
+  fluoVector.call(context, items, config)
   const rendered = wind(keys, items)
   return mutate
     ? mutazipEntries(entries, rendered, (a, b) => b)

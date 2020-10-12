@@ -2,7 +2,7 @@ import { duobound, solebound }                        from '@aryth/bound-vector'
 import { presetToFlat }                               from '@palett/presets'
 import { Projector }                                  from '@palett/projector'
 import { nullish }                                    from '@typen/nullish'
-import { mapper as mapperFunc, mutate as mutateFunc } from '@vect/vector'
+import { mapper as mapperFunc, mutate as mutateFunc } from '@vect/vector-mapper'
 
 /**
  *
@@ -14,10 +14,10 @@ import { mapper as mapperFunc, mutate as mutateFunc } from '@vect/vector'
  * @typedef {Function} PresetAndConfig.filter
  *
  * @param vec
- * @param {PresetAndConfig|PresetAndConfig[]} presets
- * @param {string[]} effects
+ * @param {PresetAndConfig|PresetAndConfig[]} [presets]
+ * @param {string[]} [effects]
  */
-export const fluoVector = function (vec, presets, effects) {
+export const fluoVector = function (vec, { presets, effects } = {}) {
   if (!vec?.length) return []
   const colorant = this?.colorant, mutate = this?.mutate
   if (Array.isArray(presets)) {
@@ -39,7 +39,6 @@ export const fluoVector = function (vec, presets, effects) {
       ? mapper(vec, Colorant(vectorWithBound, dye, undefined, undefined, presetToFlat(preset)))
       : mapper(vec, Pigment(vectorWithBound, dye, undefined, undefined, presetToFlat(preset)))
   }
-
 }
 
 export const Colorant = function (bX, dX, bY, dY, dye) {

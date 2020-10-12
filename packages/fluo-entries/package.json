@@ -16,11 +16,9 @@
   },
   "dependencies": {
     "@palett/fluo-vector": "^0.5.1",
-    "@palett/presets": "^0.5.1",
     "@vect/entries-init": "^0.3.0",
     "@vect/entries-unwind": "^0.3.0",
-    "@vect/entries-zipper": "^0.3.0",
-    "@vect/vector": "^0.3.0"
+    "@vect/entries-zipper": "^0.3.0"
   },
   "repository": {
     "type": "git",
