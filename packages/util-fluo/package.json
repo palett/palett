@@ -1,6 +1,6 @@
 {
   "name": "@palett/util-fluo",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "A colorant to string",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -17,8 +17,8 @@
   "dependencies": {
     "@aryth/bound-vector": "^0.3.0",
     "@aryth/comparer": "^0.3.0",
-    "@palett/convert": "^0.5.1",
-    "@palett/dye": "^0.5.1",
+    "@palett/convert": "^0.5.2",
+    "@palett/dye": "^0.5.2",
     "@typen/enum-check-levels": "^0.1.10",
     "@typen/num-strict": "^0.1.10",
     "@vect/vector-mapper": "^0.3.0",
