@@ -1,9 +1,9 @@
-import { SimpleMatrices }               from '@foba/foo'
+import { SimpleMatrixCollection }       from '@foba/foo'
 import { decoMatrix, delogger, logger } from '@spare/logger'
 import { xr }                           from '@spare/xr'
 import { ros, says }                    from '../index'
 
-for (const [key, matrix] of Object.entries(SimpleMatrices))
+for (const [key, matrix] of Object.entries(SimpleMatrixCollection))
   matrix |> decoMatrix |> says[key]
 
 const stb = function (y) {
@@ -19,5 +19,5 @@ says.roster(1024) |> delogger
 ros('shake') |> delogger
 ros('shack') |> delogger
 
-for (const key of Object.keys(SimpleMatrices))
+for (const key of Object.keys(SimpleMatrixCollection))
   ros(key) |> logger

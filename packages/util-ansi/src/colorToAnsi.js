@@ -1,6 +1,6 @@
-import { hexToInt } from '@palett/convert'
-import { FORE }     from '../resources/colorModes'
-import { SC }       from '../resources/controlCodes'
+import { hexToInt, hslToRgb } from '@palett/convert'
+import { FORE }               from '../resources/colorModes'
+import { SC }                 from '../resources/controlCodes'
 
 /**
  *
@@ -13,3 +13,5 @@ export const hexToAnsi = (hex) => {
   const int = hexToInt(hex)
   return FORE + SC + (int >> 16 & 0xFF) + SC + (int >> 8 & 0xFF) + SC + (int & 0xFF)
 }
+
+export const hslToAnsi = (hsl) => hsl |> hslToRgb|> rgbToAnsi

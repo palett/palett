@@ -3,7 +3,7 @@ import { hexToRgb }          from '@palett/convert'
 import { PrepDye }           from '@palett/dye'
 import { BOLD }              from '@palett/enum-font-effects'
 import { logger }            from '@spare/logger'
-import { palettFlopperLite } from '..'
+import { palettFlopperLite } from '../src/palettFlopperLite'
 
 const vec = VectorCollection.flopShuffle({ size: 10 })
 const flopper = palettFlopperLite()

@@ -20,7 +20,7 @@
     "@palett/presets": "^0.5.4",
     "@palett/projector": "^0.5.4",
     "@typen/nullish": "^0.1.10",
-    "@vect/vector-mapper": "^0.3.0"
+    "@vect/vector-mapper": "^0.3.4"
   },
   "repository": {
     "type": "git",

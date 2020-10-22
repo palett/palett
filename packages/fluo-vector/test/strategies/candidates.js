@@ -1,7 +1,7 @@
-import { simpleVectors }    from '@foba/foo'
-import { VectorCollection } from '@foba/vector-number'
+import { simpleVectorCollection } from '@foba/foo'
+import { VectorCollection }       from '@foba/vector-number'
 
-const SimpleVectors = simpleVectors({ h: 8 })
+const SimpleVectors = simpleVectorCollection({ h: 8 })
 delete SimpleVectors.empty
 SimpleVectors.another = ['A', 'B', 'C', 'x', 'y', 'z', ' ', '1', 2, 3]
 SimpleVectors.absoluteMirror = VectorCollection.absoluteMirror()

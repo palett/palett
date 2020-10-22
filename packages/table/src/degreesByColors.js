@@ -10,10 +10,24 @@ import { ColorGroups }             from '../resources/ColorGroups'
 import { Degrees }                 from '../resources/Degrees'
 import { ColorPicker }             from '../utils/ColorPicker'
 import { Formatter }               from '../utils/Formatter'
-import { readify }                 from '../utils/readify'
 import { VectorAverage }           from '../utils/VectorAverage'
+import { shortenDescription }      from './palettCrostab'
 
 const AVERAGE = 'average'
+
+
+// if (average && space !== HEX) {
+//   const stat = Stat({
+//     init: () => ([0, 0, 0]),
+//     acc: (pr, cu) => mutazip(pr, cu, (p, c) => p + c, 3)
+//   })
+//   const averageSide = crostab.rows.map(row => stat(row).map(x => round(x / row.length)))
+//   const averageHead = crostab.columns.map(row => stat(row).map(x => round(x / row.length)))
+//   averageHead.unshift([0, 0, 0])
+//   crostab.unshiftColumn('average', averageSide)
+//   crostab.unshiftRow('average', averageHead)
+// }
+
 
 /**
  *
@@ -24,13 +38,13 @@ const AVERAGE = 'average'
  * @param {boolean} [cellColor=false]
  * @returns {CrosTab|{side:string,banner:string,matrix:*[][]}}
  */
-export function degreesByColors ({
-  space = HEX,
-  degrees = Degrees.entire,
-  colors = ColorGroups.entire,
-  average = false,
-  cellColor = false,
-} = {}) {
+export function degreesByColors({
+                                  space = HEX,
+                                  degrees = Degrees.entire,
+                                  colors = ColorGroups.entire,
+                                  average = false,
+                                  cellColor = false,
+                                } = {}) {
   const h = degrees.length, w = colors.length
   const
     formatter = Formatter(space, cellColor),
@@ -42,12 +56,12 @@ export function degreesByColors ({
   )
   const
     side = degrees,
-    head = mapper(colors, readify),
+    head = mapper(colors, shortenDescription),
     rows = transpose(columns),
     crostab = new CrosTab(side, head, mapperMatrix(rows, formatter))
   if (average) {
-    const vecAv = VectorAverage(space)
-    const stat_format = row => row |> vecAv |> formatter
+    const vectorAverage = VectorAverage(space)
+    const stat_format = row => row |> vectorAverage |> formatter
     crostab
       .unshiftRow(AVERAGE, mapperColumns(rows, stat_format), w)
       .unshiftColumn(AVERAGE, [''].concat(mapper(rows, stat_format, h)))

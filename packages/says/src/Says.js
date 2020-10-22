@@ -1,11 +1,9 @@
 import { ITALIC }             from '@palett/enum-font-effects'
 import { presetFlopper }      from '@palett/flopper'
-import { Deco as DecoString } from '@spare/deco-string'
+import { deco as decoString } from "@spare/deco-string"
 import { FUN }                from '@typen/enum-data-types'
 import { mapper }             from '@vect/object-mapper'
 import { Pal }                from './Pal'
-
-const pal = (name, conf) => Pal.build(name |> DecoString(conf))
 
 export class Says {
   /** @type {Object<string,Pal|function>} */ #roster = {}
@@ -25,9 +23,10 @@ export class Says {
     })
   }
 
-  aboard(name, preset) {
-    if (!preset) ({ value: preset } = this.#pool.next())
-    return this.#roster[name] = pal(String(name), preset, this.#effects)
+  aboard(name, presets) {
+    const effects = this.#effects
+    if (!presets) ({ value: presets } = this.#pool.next())
+    return this.#roster[name] = Pal.build(decoString(String(name), { presets, effects }))
   }
 
   roster(name) {

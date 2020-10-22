@@ -1,4 +1,4 @@
-import { simpleMatrices }                 from '@foba/foo'
+import { simpleMatrixCollection }         from '@foba/foo'
 import { BOLD, ITALIC, UNDERLINE }        from '@palett/enum-font-effects'
 import { FRESH, LAVA, METRO }             from '@palett/presets'
 import { says }                           from '@palett/says'
@@ -7,7 +7,7 @@ import { COLUMNWISE, POINTWISE, ROWWISE } from '@vect/enum-matrix-directions'
 import { init }                           from '@vect/matrix'
 import { fluoMatrix }                     from '../src/fluoMatrix'
 
-const SimpleMatrices = simpleMatrices({ h: 6, w: 12 })
+const SimpleMatrices = simpleMatrixCollection({ h: 6, w: 12 })
 SimpleMatrices.alphabetical = init(4, 7, (x, y) => String.fromCharCode(63 + (x * 7) + y))
 
 SimpleMatrices.another = [

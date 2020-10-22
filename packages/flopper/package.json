@@ -23,8 +23,8 @@
     "@palett/enum-color-space": "^0.5.4",
     "@palett/presets": "^0.5.4",
     "@palett/table": "^0.5.4",
-    "@vect/swap": "^0.3.0",
-    "@vect/vector-mapper": "^0.3.0"
+    "@vect/swap": "^0.3.4",
+    "@vect/vector-mapper": "^0.3.4"
   },
   "repository": {
     "type": "git",
