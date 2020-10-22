@@ -1,6 +1,6 @@
 {
   "name": "@palett/util-ansi",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "description": "A color converter",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -16,7 +16,7 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@palett/convert": "^0.5.4"
+    "@palett/convert": "^0.5.5"
   },
   "repository": {
     "type": "git",
