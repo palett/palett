@@ -10,6 +10,8 @@ const assignEffects = function (effects) {
   return conf
 }
 
+const spaceToAnsi = space => space === RGB ? rgbToAnsi : space === HEX ? hexToAnsi : space === HSL ? hslToAnsi : rgbToAnsi
+
 
 /**
  *
@@ -53,8 +55,13 @@ export class DyeFactory {
    * @returns {DyeFactory|Function}
    */
   static build(space, effects) {
-    const ansi = space === RGB ? rgbToAnsi : space === HEX ? hexToAnsi : space === HSL ? hslToAnsi : rgbToAnsi
-    const conf = { ansi, head: '', tail: '' }
+    const conf = { ansi: space|> spaceToAnsi, head: '', tail: '' }
+    if (effects?.length) assignEffects.call(conf, effects)
+    return Dye.bind(conf)
+  }
+
+  static prep(space, ...effects) {
+    const conf = { ansi: space|> spaceToAnsi, head: '', tail: '' }
     if (effects?.length) assignEffects.call(conf, effects)
     return Dye.bind(conf)
   }

@@ -13,6 +13,10 @@ export const randPreset = (hex) => {
   const min = hex
   const hsl = min |> hexToHsl
   const max = toner(hsl.slice(), randBetw(-12, 12), randBetw(-5, 10), randBetw(6, 18)) |> hslToHex
-  const na = [reverseHue(hsl[0]), constraint(hsl[1] - 32, 5, 90), constraint(hsl[2] + 24, 40, 96)] |> hslToHex
+  const na = [
+    reverseHue(hsl[0]),
+    constraint(hsl[1] - 32, 5, 90),
+    constraint(hsl[2] + 24, 40, 96)
+  ] |> hslToHex
   return { min, max, na }
 }
