@@ -16,7 +16,7 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@aryth/bound-vector": "^0.3.0",
+    "@aryth/bound-vector": "^0.3.1",
     "@palett/presets": "^0.5.7",
     "@palett/projector": "^0.5.7",
     "@typen/nullish": "^0.1.10",

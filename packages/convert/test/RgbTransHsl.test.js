@@ -1,32 +1,35 @@
-import { Hsl, Rgb }  from '@palett/convert'
-import { Hatsu }     from '@palett/hatsu'
-import { trimColor } from 'spettro/testBind/util/colorValueHelper'
-import { ArrX }      from 'xbrief'
-import { normal }    from './resources/nord'
+import { hexToRgb, hslToRgb, rgbToHsl } from '@palett/convert'
+import { Hatsu }                        from '@palett/hatsu'
 
-const len = ArrX.maxLength(Object.keys(normal))
+import { normal } from './resources/nord'
+
+// const len = maxLen(Object.keys(normal))
 
 export class RgbTransHslTest {
-  static testRgbToHsl () {
-    for (let [name, { hex, rgb, hsl }] of Object.entries(normal)) {
+  static testRgbToHsl() {
+    for (let [name, hex] of Object.entries(normal)) {
+      const rgb = hexToRgb(hex)
+      const hsl = rgbToHsl(rgb);
       // const [r] = rgb
       // if (Math.max(...rgb) !== r) continue
-      `${Hatsu.hex(hex).underline(name.padStart(len))}`
+      `${Hatsu.hex(hex).underline(name)}`
         .tag('rgb').tag(rgb)
         .tag('hsl0').tag(hsl)
-        .tag('hsl').tag(rgb |> Rgb.toHsl |> trimColor)
+        .tag('hsl').tag(rgb |> rgbToHsl)
         |> console.log
     }
   }
 
-  static testHslToRgb () {
+  static testHslToRgb() {
     for (let [name, { hex, rgb, hsl }] of Object.entries(normal)) {
-      `${Hatsu.hex(hex).underline(name.padStart(len))}`
+      `${Hatsu.hex(hex).underline(name)}`
         .tag('hsl').tag(hsl)
         .tag('rgb0').tag(rgb)
-        .tag('rgb').tag(hsl |> Hsl.toRgb |> trimColor) |> console.log
+        .tag('rgb').tag(hsl |> hslToRgb) |> console.log
     }
 
   }
 }
+
+RgbTransHslTest.testRgbToHsl()
 
