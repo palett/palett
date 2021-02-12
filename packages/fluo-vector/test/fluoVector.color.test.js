@@ -8,12 +8,12 @@ for (let [k, vector] of Object.entries(candidates)) {
   fluoVector.call(
     {
       mutate: false,
-      colorant: false
+      colorant: "hex"
     },
     vector,
     {
       presets: FRESH, //[, PLANET],
-      effects: [BOLD, ITALIC]
+      effects: [BOLD, ITALIC],
     }
     // [
     //   { preset: FRESH, filter: isNumeric, mapper: x => x },

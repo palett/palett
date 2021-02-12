@@ -1,6 +1,6 @@
 import { duobound, solebound }                        from '@aryth/bound-vector'
-import { presetToFlat }                               from '@palett/presets'
-import { Projector, ProjectorFactory }                from '@palett/projector'
+import { hslToHex }                                   from '@palett/convert'
+import { ProjectorFactory }                           from '@palett/projector'
 import { nullish }                                    from '@typen/nullish'
 import { mapper as mapperFunc, mutate as mutateFunc } from '@vect/vector-mapper'
 
@@ -22,9 +22,10 @@ export const fluoVector = function (vec, { presets, effects } = {}) {
   const colorant = this?.colorant, mutate = this?.mutate
   const [[bovecX, projX], [bovecY, projY]] = makeProjector(vec, presets, effects)
   const mapper = mutate ? mutateFunc : mapperFunc
+  if (colorant === 'hex') return mapper(vec, PointColorFactory.color(bovecX, projX, bovecY, projY))
   return colorant
     ? mapper(vec, PointColorFactory.maker(bovecX, projX, bovecY, projY))
-    : mapper(vec, PointColorFactory.renderer(bovecX, projX, bovecY, projY))
+    : mapper(vec, PointColorFactory.render(bovecX, projX, bovecY, projY))
 }
 
 const makeProjector = (vec, presets, effects) => {
@@ -45,39 +46,29 @@ const makeProjector = (vec, presets, effects) => {
 }
 
 export class PointColorFactory {
+  static color(bX, pX, bY, pY) {
+    return (_, i) => {
+      let v
+      if (!nullish(v = bX && bX[i])) {return pX.color(v)|> hslToHex}
+      if (!nullish(v = bY && bY[i])) {return pY.color(v)|> hslToHex}
+      return null
+    }
+  }
   static maker(bX, pX, bY, pY) {
     return (_, i) => {
-      let x, y
-      return !nullish(x = bX && bX[i]) ? pX.make(x) :
-        !nullish(y = bY && bY[i]) ? pY.make(y) :
-          pX.make(pX.default)
+      let v
+      if (!nullish(v = bX && bX[i])) {return pX.make(v)}
+      if (!nullish(v = bY && bY[i])) {return pY.make(v)}
+      return pX.make(pX.na)
     }
   }
-  static renderer(bX, pX, bY, pY) {
+  static render(bX, pX, bY, pY) {
     return (n, i) => {
-      let x, y
-      return !nullish(x = bX && bX[i]) ? pX.render(x, n) :
-        !nullish(y = bY && bY[i]) ? pY.render(y, n) :
-          pX.render(pX.default, n)
+      let v
+      if (!nullish(v = bX && bX[i])) {return pX.render(v, n)}
+      if (!nullish(v = bY && bY[i])) {return pY.render(v, n)}
+      return pX.render(pX.na, n)
     }
-  }
-}
-
-export const Colorant = function (bX, pX, bY, pY) {
-  return (_, i) => {
-    let x, y
-    return !nullish(x = bX && bX[i]) ? pX.make(x) :
-      !nullish(y = bY && bY[i]) ? pY.make(y) :
-        pX.make(pX.default)
-  }
-}
-
-export const Pigment = function (bX, pX, bY, pY) {
-  return (n, i) => {
-    let x, y
-    return !nullish(x = bX && bX[i]) ? pX.render(x, n) :
-      !nullish(y = bY && bY[i]) ? pY.render(y, n) :
-        pX.render(pX.default, n)
   }
 }
 
