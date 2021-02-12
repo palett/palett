@@ -1,6 +1,5 @@
 import { max as keepFloor, min as keepCeil } from '@aryth/comparer'
-import { oneself, Oneself }                  from '@ject/oneself'
-import { hexToHsl }                          from '@palett/convert'
+import { oneself }                           from '@ject/oneself'
 import { DyeFactory }                        from '@palett/dye'
 import { HSL }                               from '@palett/enum-color-space'
 import { presetToLeap }                      from '@palett/presets'
@@ -8,7 +7,7 @@ import { nullish }                           from '@typen/nullish'
 import { boundToLeap }                       from './helpers/boundToLeap'
 import { leverage }                          from './helpers/leverage'
 
-const BLANC = { max: '#FFFFFF', min: '#FFFFFF', na: null }
+// const BLANC = { max: '#FFFFFF', min: '#FFFFFF', na: null }
 
 export class ProjectorFactory {
 
@@ -20,17 +19,17 @@ export class ProjectorFactory {
    * @returns {ProjectorFactory}
    */
   constructor(leap, pres, effects) {
-    if (leap.dif === 0) return new BinProjectorFactory(leap, pres, effects)
     if (nullish(pres)) return new VoidProjectorFactory()
+    if (leap.dif === 0) return new BinProjectorFactory(leap, pres, effects)
     this.factory = DyeFactory.build(HSL, effects)
     this.min = leap.min
     this.lever = leverage(pres.dif, leap.dif)
     this.base = pres.min
     this.na = pres.na
   }
-  static build(bound = {}, preset = BLANC, effects) {
+  static build(bound = {}, preset, effects) {
     bound = bound|> boundToLeap
-    preset = preset |> presetToLeap
+    preset = preset ? preset |> presetToLeap : null
     return new ProjectorFactory(bound, preset, effects)
   }
   render(value, text) { return this.factory(this.color(value))(text) }

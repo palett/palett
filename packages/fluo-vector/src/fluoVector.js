@@ -47,10 +47,11 @@ const makeProjector = (vec, presets, effects) => {
 
 export class PointColorFactory {
   static color(bX, pX, bY, pY) {
+    function toColor(some) { return some ? some|> hslToHex : null }
     return (_, i) => {
       let v
-      if (!nullish(v = bX && bX[i])) {return pX.color(v)|> hslToHex}
-      if (!nullish(v = bY && bY[i])) {return pY.color(v)|> hslToHex}
+      if (!nullish(v = bX && bX[i])) {return pX.color(v)|> toColor}
+      if (!nullish(v = bY && bY[i])) {return pY.color(v)|> toColor}
       return null
     }
   }
