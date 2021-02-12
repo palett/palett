@@ -16,7 +16,6 @@
   },
   "dependencies": {
     "@aryth/comparer": "^0.3.1",
-    "@ject/oneself": "^0.0.6",
     "@palett/convert": "^0.5.8",
     "@palett/dye": "^0.5.8",
     "@palett/presets": "^0.5.8",

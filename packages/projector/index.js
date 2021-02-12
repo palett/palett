@@ -4,7 +4,8 @@ import { boundToLeap }          from './src/helpers/boundToLeap'
 import { Projector }            from './src/Projector'
 
 
-export { Projector } from './src/Projector'
+export { Projector }        from './src/Projector'
+export { ProjectorFactory } from './src/Projector'
 
 
 export const Colorant = (bound, preset = PLANET, effects) => {

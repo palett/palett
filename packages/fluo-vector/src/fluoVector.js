@@ -1,6 +1,6 @@
 import { duobound, solebound }                        from '@aryth/bound-vector'
 import { presetToFlat }                               from '@palett/presets'
-import { Projector }                                  from '@palett/projector'
+import { Projector, ProjectorFactory }                from '@palett/projector'
 import { nullish }                                    from '@typen/nullish'
 import { mapper as mapperFunc, mutate as mutateFunc } from '@vect/vector-mapper'
 
@@ -20,40 +20,67 @@ import { mapper as mapperFunc, mutate as mutateFunc } from '@vect/vector-mapper'
 export const fluoVector = function (vec, { presets, effects } = {}) {
   if (!vec?.length) return []
   const colorant = this?.colorant, mutate = this?.mutate
+  const [[bovecX, projX], [bovecY, projY]] = makeProjector(vec, presets, effects)
+  const mapper = mutate ? mutateFunc : mapperFunc
+  return colorant
+    ? mapper(vec, PointColorFactory.maker(bovecX, projX, bovecY, projY))
+    : mapper(vec, PointColorFactory.renderer(bovecX, projX, bovecY, projY))
+}
+
+const makeProjector = (vec, presets, effects) => {
   if (Array.isArray(presets)) {
     const [presetX, presetY] = presets
-    const [vectorWithBoundX, vectorWithBoundY] = duobound(vec, presets)
+    const [bovecX, bovecY] = duobound(vec, presets)
     const
-      dyeX = Projector(extractBound(vectorWithBoundX), presetX, effects),
-      dyeY = Projector(extractBound(vectorWithBoundY), presetY, effects)
-    const mapper = mutate ? mutateFunc : mapperFunc
-    return colorant
-      ? mapper(vec, Colorant(vectorWithBoundX, dyeX, vectorWithBoundY, dyeY, presetToFlat(presetX)))
-      : mapper(vec, Pigment(vectorWithBoundX, dyeX, vectorWithBoundY, dyeY, presetToFlat(presetY)))
+      projX = ProjectorFactory.build(bovecX, presetX, effects),
+      projY = ProjectorFactory.build(bovecY, presetY, effects)
+    return [[bovecX, projX], [bovecY, projY]]
   } else {
-    /** @type {PresetAndConfig} */ const preset = presets
-    const vectorWithBound = solebound(vec, presets)
-    const dye = Projector(extractBound(vectorWithBound), preset, effects)
-    const mapper = mutate ? mutateFunc : mapperFunc
-    return colorant
-      ? mapper(vec, Colorant(vectorWithBound, dye, undefined, undefined, presetToFlat(preset)))
-      : mapper(vec, Pigment(vectorWithBound, dye, undefined, undefined, presetToFlat(preset)))
+    const preset = presets
+    const bovec = solebound(vec, preset)
+    const
+      proj = ProjectorFactory.build(bovec, preset, effects)
+    return [[bovec, proj], [undefined, undefined]]
   }
 }
 
-export const Colorant = function (bX, dX, bY, dY, dye) {
+export class PointColorFactory {
+  static maker(bX, pX, bY, pY) {
+    return (_, i) => {
+      let x, y
+      return !nullish(x = bX && bX[i]) ? pX.make(x) :
+        !nullish(y = bY && bY[i]) ? pY.make(y) :
+          pX.make(pX.default)
+    }
+  }
+  static renderer(bX, pX, bY, pY) {
+    return (n, i) => {
+      let x, y
+      return !nullish(x = bX && bX[i]) ? pX.render(x, n) :
+        !nullish(y = bY && bY[i]) ? pY.render(y, n) :
+          pX.render(pX.default, n)
+    }
+  }
+}
+
+export const Colorant = function (bX, pX, bY, pY) {
   return (_, i) => {
     let x, y
-    return !nullish(x = bX && bX[i]) ? dX(x) : !nullish(y = bY && bY[i]) ? dY(y) : dye
+    return !nullish(x = bX && bX[i]) ? pX.make(x) :
+      !nullish(y = bY && bY[i]) ? pY.make(y) :
+        pX.make(pX.default)
   }
 }
 
-export const Pigment = function (bX, dX, bY, dY, dye) {
+export const Pigment = function (bX, pX, bY, pY) {
   return (n, i) => {
     let x, y
-    return !nullish(x = bX && bX[i]) ? (n |> dX(x)) : !nullish(y = bY && bY[i]) ? (n |> dY(y)) : (n |> dye)
+    return !nullish(x = bX && bX[i]) ? pX.render(x, n) :
+      !nullish(y = bY && bY[i]) ? pY.render(y, n) :
+        pX.render(pX.default, n)
   }
 }
+
 
 const extractBound = objectWithBound => {
   return objectWithBound ? {

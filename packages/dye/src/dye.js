@@ -1,3 +1,4 @@
+import { oneself }                                                         from '@ject/oneself'
 import { HEX, HSL, RGB }                                                   from '@palett/enum-color-space'
 import { CLR_FORE, Effects, enclose, hexToAnsi, hslToAnsi, rgbToAnsi, SC } from '@palett/util-ansi'
 
@@ -10,7 +11,11 @@ const assignEffects = function (effects) {
   return conf
 }
 
-const spaceToAnsi = space => space === RGB ? rgbToAnsi : space === HEX ? hexToAnsi : space === HSL ? hslToAnsi : rgbToAnsi
+const spaceToAnsi = space =>
+  space === RGB ? rgbToAnsi :
+    space === HEX ? hexToAnsi :
+      space === HSL ? hslToAnsi :
+        rgbToAnsi
 
 
 /**
@@ -29,6 +34,7 @@ export function dye(text) {
  * @returns {function(string):string}
  */
 export function Dye(color) {
+  if (!color) return oneself
   const config = this ?? {}
   let { ansi = rgbToAnsi, head = '', tail = '', effects } = config
   if (effects?.length) assignEffects.call(config, effects)
