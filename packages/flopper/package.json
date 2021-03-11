@@ -1,6 +1,6 @@
 {
   "name": "@palett/flopper",
-  "version": "0.5.10",
+  "version": "0.5.11",
   "description": "A color converter",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -16,15 +16,15 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/comparer": "^0.3.3",
-    "@aryth/rand": "^0.3.3",
-    "@aryth/rank": "^0.3.3",
-    "@palett/cards": "^0.5.10",
-    "@palett/enum-color-space": "^0.5.10",
-    "@palett/presets": "^0.5.10",
-    "@palett/table": "^0.5.10",
-    "@vect/swap": "^0.3.5",
-    "@vect/vector-mapper": "^0.3.5"
+    "@aryth/comparer": "^0.3.4",
+    "@aryth/rand": "^0.3.4",
+    "@aryth/rank": "^0.3.4",
+    "@palett/cards": "^0.5.11",
+    "@palett/enum-color-space": "^0.5.11",
+    "@palett/presets": "^0.5.11",
+    "@palett/table": "^0.5.11",
+    "@vect/swap": "^0.3.6",
+    "@vect/vector-mapper": "^0.3.6"
   },
   "repository": {
     "type": "git",

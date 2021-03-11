@@ -1,6 +1,6 @@
 {
   "name": "@palett/fluo-matrix",
-  "version": "0.5.10",
+  "version": "0.5.11",
   "description": "A colorant to string",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -16,14 +16,14 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@aryth/bound-matrix": "^0.3.3",
-    "@palett/fluo-vector": "^0.5.10",
-    "@palett/presets": "^0.5.10",
-    "@palett/projector": "^0.5.10",
+    "@aryth/bound-matrix": "^0.3.4",
+    "@palett/fluo-vector": "^0.5.11",
+    "@palett/presets": "^0.5.11",
+    "@palett/projector": "^0.5.11",
     "@typen/nullish": "^0.1.10",
-    "@vect/enum-matrix-directions": "^0.3.5",
-    "@vect/matrix": "^0.3.5",
-    "@vect/vector-mapper": "^0.3.5"
+    "@vect/enum-matrix-directions": "^0.3.6",
+    "@vect/matrix": "^0.3.6",
+    "@vect/vector-mapper": "^0.3.6"
   },
   "repository": {
     "type": "git",
