@@ -1,8 +1,8 @@
-import { BOLD, ITALIC }  from '@palett/enum-font-effects'
-import { FRESH, PLANET } from '@palett/presets'
-import { says }          from '@palett/says'
-import { fluoVector }    from '../src/fluoVector'
-import { candidates }    from './strategies/candidates'
+import { BOLD, ITALIC, UNDERLINE } from '@palett/enum-font-effects'
+import { FRESH, PLANET }           from '@palett/presets'
+import { says }                    from '@palett/says'
+import { fluoVector }              from '../src/fluoVector'
+import { candidates }              from './strategies/candidates'
 
 for (let [k, vector] of Object.entries(candidates)) {
   fluoVector.call(
@@ -13,7 +13,7 @@ for (let [k, vector] of Object.entries(candidates)) {
     vector,
     {
       presets: FRESH, //[, PLANET],
-      effects: [BOLD, ITALIC]
+      effects: [BOLD, ITALIC, UNDERLINE]
     }
     // [
     //   { preset: FRESH, filter: isNumeric, mapper: x => x },
