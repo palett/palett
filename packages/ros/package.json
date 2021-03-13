@@ -17,7 +17,7 @@
   "dependencies": {
     "@palett/flopper": "^0.5.11",
     "@palett/presets": "^0.5.11",
-    "@spare/deco-string": "^0.10.8"
+    "@spare/deco-string": "^0.10.9"
   },
   "repository": {
     "type": "git",

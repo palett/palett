@@ -15,11 +15,11 @@
     "test": "babel-node test/archive/test.index.js"
   },
   "dependencies": {
-    "@aryth/comparer": "^0.3.4",
+    "@aryth/comparer": "^0.3.6",
     "@palett/dye": "^0.5.11",
     "@palett/presets": "^0.5.11",
-    "@typen/nullish": "^0.1.10",
-    "@typen/num-strict": "^0.1.10"
+    "@typen/nullish": "^0.1.15",
+    "@typen/num-strict": "^0.1.15"
   },
   "repository": {
     "type": "git",

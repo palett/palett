@@ -12,7 +12,7 @@ for (let [k, vector] of Object.entries(candidates)) {
     },
     vector,
     {
-      presets: FRESH, //[, PLANET],
+      presets: [FRESH, PLANET],
       effects: [BOLD, ITALIC, UNDERLINE]
     }
     // [
