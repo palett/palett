@@ -4,17 +4,15 @@ import { columnsMapper, transpose } from '@vect/matrix'
 
 /**
  *
- * @typedef {Object} PresetAndConfig
- * @typedef {string} PresetAndConfig.max
- * @typedef {string} PresetAndConfig.min
- * @typedef {string} PresetAndConfig.na
- * @typedef {Function} PresetAndConfig.filter
- * @typedef {Function} PresetAndConfig.mapper
+ * @typedef {Object} FluoSetting
+ * @typedef {{min:string,max:string,na:string}} FluoSetting.preset
+ * @typedef {string[]} FluoSetting.effects
+ * @typedef {Function} FluoSetting.filter
+ * @typedef {Function} FluoSetting.mapper
  *
  * @param {*[][]} mx
- * @param {Object} config
- * @param {PresetAndConfig|PresetAndConfig[]} [config.presets]
- * @param {string[]} [config.effects]
+ * @param {FluoSetting[]} [config]
+ * @returns {*[][]}
  */
 export function fluoByColumns(mx, config) {
   const context = this
