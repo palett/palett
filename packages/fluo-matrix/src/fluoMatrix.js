@@ -6,17 +6,17 @@ import { fluoPointwise }                  from './fluoPointwise'
 
 /**
  *
- * @typedef {Object} PresetAndConfig
- * @typedef {string} PresetAndConfig.max
- * @typedef {string} PresetAndConfig.min
- * @typedef {string} PresetAndConfig.na
- * @typedef {Function} PresetAndConfig.filter
- * @typedef {Function} PresetAndConfig.mapper
+ * @typedef {Object} Preset
+ * @typedef {string} Preset.max
+ * @typedef {string} Preset.min
+ * @typedef {string} Preset.na
+ * @typedef {Function} Preset.filter
+ * @typedef {Function} Preset.mapper
  *
  * @param {*[][]} mx
  * @param {Object} config
  * @param {number} [config.direct=POINTWISE]
- * @param {PresetAndConfig|PresetAndConfig[]} [config.presets]
+ * @param {Preset|Preset[]} [config.presets]
  * @param {string[]} [config.effects]
  */
 export const fluoMatrix = function (mx, config) {

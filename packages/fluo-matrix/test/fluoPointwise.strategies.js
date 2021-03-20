@@ -19,8 +19,8 @@ const test = () => {
     } |> makeEmbedded,
     methods: {
       arch: x => x,
-      dev: x => fluoPointwise(x, [METRO, FRESH]),
-      edge: x => fluoPointwise(mapper(x, v => String(v).trim()), [METRO, FRESH]),
+      dev: x => fluoPointwise(x, [{ preset: METRO }, { preset: FRESH }]),
+      edge: x => fluoPointwise(mapper(x, v => String(v).trim()), [{ preset: METRO }, { preset: FRESH }]),
     }
   })
   lapse |> decoCrostab |> says['lapse'].p(dateTime())

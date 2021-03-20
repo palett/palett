@@ -15,6 +15,9 @@
     "pub": "npm publish",
     "test": "node -r @babel/register test/test.index.js"
   },
+  "dependencies": {
+    "@palett/enum-color-space": "^0.5.13"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hoyeungw/palett/enum-colorant-modes.git"

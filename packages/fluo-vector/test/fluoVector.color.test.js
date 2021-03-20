@@ -1,3 +1,4 @@
+import { COLOR }         from '@palett/enum-colorant-modes'
 import { BOLD, ITALIC }  from '@palett/enum-font-effects'
 import { FRESH, PLANET } from '@palett/presets'
 import { says }          from '@palett/says'
@@ -8,7 +9,7 @@ for (let [k, vector] of Object.entries(candidates)) {
   fluoVector.call(
     {
       mutate: false,
-      colorant: "hex"
+      colorant: COLOR
     },
     vector,
     {

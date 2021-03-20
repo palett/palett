@@ -14,20 +14,20 @@ export class ProjectorFactory {
   /**
    * @typedef {[number,number,number]} Hsl
    * @param {{min:number,dif:number}} leap
-   * @param {{min:Hsl,dif:Hsl,na:?Hsl}} pres
+   * @param {{min:Hsl,dif:Hsl,na:?Hsl}} preset
    * @param {string[]} effects
    * @returns {ProjectorFactory}
    */
-  constructor(leap, pres, effects) {
-    if (nullish(pres)) return new VoidProjectorFactory()
-    if (leap.dif === 0) return new BinProjectorFactory(leap, pres, effects)
+  constructor(leap, preset, effects) {
+    if (nullish(preset)) return new VoidProjectorFactory()
+    if (leap.dif === 0) return new BinProjectorFactory(leap, preset, effects)
     this.factory = DyeFactory.build(HSL, effects)
     this.min = leap.min
-    this.lever = leverage(pres.dif, leap.dif)
-    this.base = pres.min
-    this.na = pres.na
+    this.lever = leverage(preset.dif, leap.dif)
+    this.base = preset.min
+    this.na = preset.na
   }
-  static build(bound = {}, preset, effects) {
+  static build(bound = {}, { preset, effects } = {}) {
     bound = bound|> boundToLeap
     preset = preset ? preset |> presetToLeap : null
     return new ProjectorFactory(bound, preset, effects)
@@ -72,7 +72,7 @@ export class VoidProjectorFactory {
  * @returns {function(*):Function}
  */
 export const Projector = (bound, preset, effects) =>
-  projector.bind(ProjectorFactory.build(bound, preset, effects))
+  projector.bind(ProjectorFactory.build(bound, { preset, effects }))
 
 const projector = function (value) {
   const { factory, min, lever: [levH, levS, levL], base: [minH, minS, minL], na } = this
