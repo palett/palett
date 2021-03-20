@@ -1,4 +1,5 @@
 import { boundaries }                                 from '@aryth/bound-vector'
+import { oneself }                                    from '@ject/oneself'
 import { hslToHex }                                   from '@palett/convert'
 import { COLOR, MAKER, RENDER }                       from '@palett/enum-colorant-modes'
 import { ProjectorFactory }                           from '@palett/projector'
@@ -53,7 +54,7 @@ export class PointColorFactory {
       let v
       if (!nullish(v = bX && bX[i])) {return pX.make(v)}
       if (!nullish(v = bY && bY[i])) {return pY.make(v)}
-      return pX.make(pX.na)
+      return pX?.make(pX.na) ?? oneself
     }
   }
   static render([[bX, pX], [bY, pY]]) {
@@ -61,7 +62,7 @@ export class PointColorFactory {
       let v
       if (!nullish(v = bX && bX[i])) {return pX.render(v, n)}
       if (!nullish(v = bY && bY[i])) {return pY.render(v, n)}
-      return pX.render(pX.na, n)
+      return pX?.render(pX.na, n) ?? n
     }
   }
 }

@@ -1,4 +1,5 @@
 import { boundaries }                                       from '@aryth/bound-matrix'
+import { oneself }                                          from '@ject/oneself'
 import { hslToHex }                                         from '@palett/convert'
 import { COLOR, MAKER, RENDER }                             from '@palett/enum-colorant-modes'
 import { ProjectorFactory }                                 from '@palett/projector'
@@ -34,13 +35,13 @@ export const fluoPointwise = function (matrix, configs) {
 
 const makeProjector = (matrix, configs) => {
   const [confX, confY] = configs
-  const [vecX, vecY] = boundaries(matrix, configs)
-  const [projX, projY] = [ProjectorFactory.build(vecX, confX), ProjectorFactory.build(vecY, confY)]
-  return [[vecX, projX], [vecY, projY]]
+  const [matX, matY] = boundaries(matrix, configs)
+  const [projX, projY] = [ProjectorFactory.build(matX, confX), ProjectorFactory.build(matY, confY)]
+  return [[matX, projX], [matY, projY]]
 }
 
 export class PointColorFactory {
-  static color(bX, pX, bY, pY) {
+  static color([[bX, pX], [bY, pY]]) {
     function toColor(some) { return some ? some|> hslToHex : null }
     return (_, i, j) => {
       let v
@@ -49,20 +50,20 @@ export class PointColorFactory {
       return null
     }
   }
-  static maker(bX, pX, bY, pY) {
+  static maker([[bX, pX], [bY, pY]]) {
     return (_, i, j) => {
       let v
-      if (!nullish(v = bX && bX[i][j])) {return pX.make(v)}
-      if (!nullish(v = bY && bY[i][j])) {return pY.make(v)}
-      return pX.make(pX.na)
+      if (!nullish(v = bX && bX[i][j])) { return pX.make(v) }
+      if (!nullish(v = bY && bY[i][j])) { return pY.make(v) }
+      return pX?.make(pX.na) ?? oneself
     }
   }
-  static render(bX, pX, bY, pY) {
+  static render([[bX, pX], [bY, pY]]) {
     return (n, i, j) => {
       let v
-      if (!nullish(v = bX && bX[i][j])) {return pX.render(v, n)}
-      if (!nullish(v = bY && bY[i][j])) {return pY.render(v, n)}
-      return pX.render(pX.na, n)
+      if (!nullish(v = bX && bX[i][j])) { return pX.render(v, n) }
+      if (!nullish(v = bY && bY[i][j])) { return pY.render(v, n) }
+      return pX?.render(pX.na, n) ?? n
     }
   }
 }

@@ -3,15 +3,16 @@
 //   PIGM = '',
 //   HEX = ''
 
-export const
-  COLORANT = { colorant: true, mutate: false },
-  PIGMENT = { colorant: false, mutate: false },
-  HEX_COLOR = { colorant: 'hex', mutate: false },
-  MUTATE_COLORANT = { colorant: true, mutate: true },
-  MUTATE_PIGMENT = { colorant: false, mutate: true },
-  MUTATE_HEX_COLOR = { colorant: 'hex', mutate: false }
 
 export const
   MAKER = 'maker',
   RENDER = 'render',
   COLOR = 'color'
+
+export const
+  COLORANT = { colorant: MAKER, mutate: false },
+  PIGMENT = { colorant: RENDER, mutate: false },
+  HEX_COLOR = { colorant: COLOR, mutate: false },
+  MUTATE_COLORANT = { colorant: MAKER, mutate: true },
+  MUTATE_PIGMENT = { colorant: RENDER, mutate: true },
+  MUTATE_HEX_COLOR = { colorant: COLOR, mutate: false }

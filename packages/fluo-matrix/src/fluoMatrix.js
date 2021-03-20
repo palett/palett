@@ -13,19 +13,18 @@ import { fluoPointwise }                  from './fluoPointwise'
  * @typedef {Function} FluoSetting.mapper
  *
  * @param {*[][]} mx
- * @param {Object} config
  * @param {number} [direct=POINTWISE]
- * @param {FluoSetting[]} [config.presets]
+ * @param {FluoSetting[]} [configs]
  */
-export const fluoMatrix = function (mx, direct, config) {
-  switch (config.direct) {
+export const fluoMatrix = function (mx, direct, configs) {
+  switch (direct) {
     case ROWWISE:
-      return fluoByRows.call(this, mx, config)
+      return fluoByRows.call(this, mx, configs)
     case COLUMNWISE:
-      return fluoByColumns.call(this, mx, config)
+      return fluoByColumns.call(this, mx, configs)
     case POINTWISE:
     default:
-      return fluoPointwise.call(this, mx, config)
+      return fluoPointwise.call(this, mx, configs)
   }
 }
 

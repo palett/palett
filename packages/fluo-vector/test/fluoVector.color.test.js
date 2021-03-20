@@ -1,24 +1,26 @@
-import { COLOR }         from '@palett/enum-colorant-modes'
+import { MAKER, RENDER } from '@palett/enum-colorant-modes'
 import { BOLD, ITALIC }  from '@palett/enum-font-effects'
-import { FRESH, PLANET } from '@palett/presets'
-import { says }          from '@palett/says'
-import { fluoVector }    from '../src/fluoVector'
-import { candidates }    from './strategies/candidates'
+import { FRESH }        from '@palett/presets'
+import { logger }       from '@spare/logger'
+import { fluoVector }   from '../src/fluoVector'
+import { candidates }   from './strategies/candidates'
 
 for (let [k, vector] of Object.entries(candidates)) {
   fluoVector.call(
     {
       mutate: false,
-      colorant: COLOR
+      colorant: RENDER
     },
     vector,
-    {
-      presets: FRESH, //[, PLANET],
-      effects: [BOLD, ITALIC],
-    }
+    [
+      { preset: FRESH, effects: [BOLD, ITALIC], },
+      // { preset: PLANET }
+    ]
     // [
     //   { preset: FRESH, filter: isNumeric, mapper: x => x },
     //   { preset: PLANET, filter: isLiteral, mapper: stringValue }
     // ]
-  ) |> says[k]
+  )
+    |> logger
+  // |> says[k]
 }
