@@ -27,7 +27,8 @@ export class ProjectorFactory {
     this.base = preset.min
     this.na = preset.na
   }
-  static build(bound = {}, { preset, effects } = {}) {
+  static build(bound, { preset, effects } = {}) {
+    if (!bound) return null
     bound = bound|> boundToLeap
     preset = preset ? preset |> presetToLeap : null
     return new ProjectorFactory(bound, preset, effects)

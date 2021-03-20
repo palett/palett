@@ -1,4 +1,4 @@
-import { duobound, solebound }                        from '@aryth/bound-vector'
+import { boundaries }                                 from '@aryth/bound-vector'
 import { hslToHex }                                   from '@palett/convert'
 import { COLOR, MAKER, RENDER }                       from '@palett/enum-colorant-modes'
 import { ProjectorFactory }                           from '@palett/projector'
@@ -32,18 +32,10 @@ export const fluoVector = function (vec, configs) {
 }
 
 const makeProjector = (vec, configs) => {
-  if (configs.length >= 2) {
-    const [confX, confY] = configs
-    const [vecX, vecY] = duobound(vec, configs)
-    const [projX, projY] = [ProjectorFactory.build(vecX, confX), ProjectorFactory.build(vecY, confY)]
-    return [[vecX, projX], [vecY, projY]]
-  }
-  if (configs.length === 1) {
-    const [confX] = configs
-    const vecX = solebound(vec, confX)
-    const projX = ProjectorFactory.build(vecX, confX)
-    return [[vecX, projX], [undefined, undefined]]
-  }
+  const [confX, confY] = configs
+  const [vecX, vecY] = boundaries(vec, configs)
+  const [projX, projY] = [ProjectorFactory.build(vecX, confX), ProjectorFactory.build(vecY, confY)]
+  return [[vecX, projX], [vecY, projY]]
 }
 
 export class PointColorFactory {

@@ -1,23 +1,24 @@
 import { BOLD, ITALIC, UNDERLINE } from '@palett/enum-font-effects'
 import { FRESH, PLANET }           from '@palett/presets'
-import { says }                    from '@palett/says'
+import { decoPale }                from '@spare/logger'
 import { fluoVector }              from '../src/fluoVector'
 import { candidates }              from './strategies/candidates'
 
 for (let [k, vector] of Object.entries(candidates)) {
+  k |> console.log
   fluoVector.call(
-    {
-      mutate: false,
-      colorant: false
-    },
+    { mutate: false, colorant: false },
     vector,
-    {
-      presets: [FRESH, PLANET],
-      effects: [BOLD, ITALIC, UNDERLINE]
-    }
+    [
+      { preset: FRESH, effects: [BOLD, ITALIC, UNDERLINE] },
+      { preset: PLANET, effects: [BOLD, ITALIC, UNDERLINE] }
+    ]
     // [
     //   { preset: FRESH, filter: isNumeric, mapper: x => x },
     //   { preset: PLANET, filter: isLiteral, mapper: stringValue }
     // ]
-  ) |> says[k]
+  )
+    |> decoPale |> console.log
+    // |> says[k]
 }
+

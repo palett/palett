@@ -6,20 +6,18 @@ import { fluoPointwise }                  from './fluoPointwise'
 
 /**
  *
- * @typedef {Object} Preset
- * @typedef {string} Preset.max
- * @typedef {string} Preset.min
- * @typedef {string} Preset.na
- * @typedef {Function} Preset.filter
- * @typedef {Function} Preset.mapper
+ * @typedef {Object} FluoSetting
+ * @typedef {{min:string,max:string,na:string}} FluoSetting.preset
+ * @typedef {string[]} FluoSetting.effects
+ * @typedef {Function} FluoSetting.filter
+ * @typedef {Function} FluoSetting.mapper
  *
  * @param {*[][]} mx
  * @param {Object} config
- * @param {number} [config.direct=POINTWISE]
- * @param {Preset|Preset[]} [config.presets]
- * @param {string[]} [config.effects]
+ * @param {number} [direct=POINTWISE]
+ * @param {FluoSetting[]} [config.presets]
  */
-export const fluoMatrix = function (mx, config) {
+export const fluoMatrix = function (mx, direct, config) {
   switch (config.direct) {
     case ROWWISE:
       return fluoByRows.call(this, mx, config)

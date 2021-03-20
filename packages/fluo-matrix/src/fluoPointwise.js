@@ -1,5 +1,6 @@
-import { duobound, solebound }                              from '@aryth/bound-matrix'
+import { boundaries }                                       from '@aryth/bound-matrix'
 import { hslToHex }                                         from '@palett/convert'
+import { COLOR, MAKER, RENDER }                             from '@palett/enum-colorant-modes'
 import { ProjectorFactory }                                 from '@palett/projector'
 import { nullish }                                          from '@typen/nullish'
 import { mapper as mapperFunc, mutate as mutateFunc, size } from '@vect/matrix'
@@ -18,44 +19,24 @@ import { mapper as mapperFunc, mutate as mutateFunc, size } from '@vect/matrix'
 export const fluoPointwise = function (matrix, configs) {
   const [h, w] = size(matrix)
   if (!h || !w) return [[]]
-  const colorant = this?.colorant, mutate = this?.mutate
-  const [[bovecX, projX], [bovecY, projY]] = makeProjector(matrix, configs)
-  const mapper = mutate ? mutateFunc : mapperFunc
-  if (colorant === 'hex') return mapper(matrix, PointColorFactory.color(bovecX, projX, bovecY, projY))
-  return colorant
-    ? mapper(matrix, PointColorFactory.maker(bovecX, projX, bovecY, projY))
-    : mapper(matrix, PointColorFactory.render(bovecX, projX, bovecY, projY))
+  const projectorSet = makeProjector(matrix, configs)
+  const mapper = this?.mutate ? mutateFunc : mapperFunc
+  switch (this?.colorant) {
+    case COLOR:
+      return mapper(matrix, PointColorFactory.color(projectorSet))
+    case MAKER:
+      return mapper(matrix, PointColorFactory.maker(projectorSet))
+    case RENDER:
+    default:
+      return mapper(matrix, PointColorFactory.render(projectorSet))
+  }
 }
 
 const makeProjector = (matrix, configs) => {
-  if (configs.length >= 2) {
-    const [bovecX, bovecY] = duobound(matrix, configs)
-    const [confX, confY] = configs
-    const
-      projX = ProjectorFactory.build(bovecX, confX),
-      projY = ProjectorFactory.build(bovecY, confY)
-    return [[bovecX, projX], [bovecY, projY]]
-  }
-  if (configs.length === 1) {
-    const [conf] = configs
-    const bovec = solebound(matrix, conf)
-    const proj = ProjectorFactory.build(bovec, conf)
-    return [[bovec, proj], [undefined, undefined]]
-  }
-  return [[undefined, undefined], [undefined, undefined]]
-  // if (Array.isArray(presets)) {
-  //   const [presetX, presetY] = presets
-  //   const [bovecX, bovecY] = duobound(matrix, presets)
-  //   const
-  //     projX = ProjectorFactory.build(bovecX, presetX, effects),
-  //     projY = ProjectorFactory.build(bovecY, presetY, effects)
-  //   return [[bovecX, projX], [bovecY, projY]]
-  // } else {
-  //   const preset = presets
-  //   const bovec = solebound(matrix, preset)
-  //   const proj = ProjectorFactory.build(bovec, preset, effects)
-  //   return [[bovec, proj], [undefined, undefined]]
-  // }
+  const [confX, confY] = configs
+  const [vecX, vecY] = boundaries(matrix, configs)
+  const [projX, projY] = [ProjectorFactory.build(vecX, confX), ProjectorFactory.build(vecY, confY)]
+  return [[vecX, projX], [vecY, projY]]
 }
 
 export class PointColorFactory {
