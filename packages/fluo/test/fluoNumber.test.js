@@ -10,6 +10,5 @@ const values = seq(18, x => x * 5 - 10, 0)
 
 values |> delogger
 
-for (let value of values) {
+for (let value of values)
   fluo(value) |> says[value]
-}
