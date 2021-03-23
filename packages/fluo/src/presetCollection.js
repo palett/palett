@@ -3,6 +3,7 @@ import { stringValue }                                          from '@spare/str
 import { isNumeric as isNumericFull, parseNum as parseNumFull } from '@texting/charset-fullwidth'
 import { isNumeric as isNumericHalf, parseNum as parseNumHalf } from '@texting/charset-halfwidth'
 import { isLiteral as isLiteralHalf, isLiteralAny }             from '@typen/literal'
+import { replenish }                                            from '@vect/object-update'
 import { mutate, mutazip }                                      from '@vect/vector'
 
 export const isNumericAny = x => isNumericFull(x) || isNumericHalf(x)
@@ -25,6 +26,10 @@ export class PresetCollection extends Array {
   assignPresets(...presets) {
     // if (this.length < presets.length) {this.length = presets.length}
     return mutazip(this, presets, (conf, preset) => Object.assign(conf ?? {}, preset), presets.length)
+  }
+  replenishPresets(...presets) {
+    // if (this.length < presets.length) {this.length = presets.length}
+    return mutazip(this, presets, (conf, preset) => replenish(conf ?? {}, preset), presets.length)
   }
   assignEffect(...effects) {
     if (effects.length === 0) return this
