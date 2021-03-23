@@ -8,7 +8,7 @@ export {
   COLUMNWISE
 } from '@vect/enum-matrix-directions'
 
-export { FluoConfigs } from './src/fluoConfig'
+export { PresetCollection } from './src/PresetCollection'
 
 
 

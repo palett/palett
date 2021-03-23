@@ -3,7 +3,7 @@ import { stringValue }                                          from '@spare/str
 import { isNumeric as isNumericFull, parseNum as parseNumFull } from '@texting/charset-fullwidth'
 import { isNumeric as isNumericHalf, parseNum as parseNumHalf } from '@texting/charset-halfwidth'
 import { isLiteral as isLiteralHalf, isLiteralAny }             from '@typen/literal'
-import { acquire, mutazip, mutate }                             from '@vect/vector'
+import { mutate, mutazip }                                      from '@vect/vector'
 
 export const isNumericAny = x => isNumericFull(x) || isNumericHalf(x)
 
@@ -16,12 +16,12 @@ export const NUMERIC_PRESET = FRESH
 export const LITERAL_PRESET = PLANET
 export const HEADING_PRESET = SUBTLE
 
-export class FluoConfigs extends Array {
+export class PresetCollection extends Array {
   constructor(presets) {
-    super()
-    if (presets.length) acquire(this, presets.map(preset => ({ preset })))
+    super(presets.length)
+    mutazip(this, presets, (receiver, preset) => Object.assign({}, preset))
   }
-  static build(...presets) { return new FluoConfigs(presets) }
+  static build(...presets) { return new PresetCollection(presets) }
   assignPresets(...presets) {
     if (presets.length === 0) presets = [NUMERIC_PRESET, LITERAL_PRESET]
     return mutazip(
@@ -35,7 +35,7 @@ export class FluoConfigs extends Array {
     if (effects.length === 0) return this
     return mutate(this, conf => (conf.effects = effects, conf))
   }
-  assignBoundConfigs(full) {
+  setBound(full) {
     const boundConfigs = full
       ? [NUM_BOUND_CONF_FULL, STR_BOUND_CONF_FULL, STR_BOUND_CONF_FULL]
       : [NUM_BOUND_CONF_HALF, STR_BOUND_CONF_HALF, STR_BOUND_CONF_HALF]

@@ -7,19 +7,21 @@ import { nullish }                                    from '@typen/nullish'
 import { mapper as mapperFunc, mutate as mutateFunc } from '@vect/vector-mapper'
 
 /**
- * @typedef {Object} FluoSetting
- * @typedef {{min:string,max:string,na:string}} FluoSetting.preset
- * @typedef {string[]} FluoSetting.effects
- * @typedef {Function} FluoSetting.filter
- * @typedef {Function} FluoSetting.mapper
+ * @typedef {Object} Preset
+ * @typedef {string} Preset.max
+ * @typedef {string} Preset.min
+ * @typedef {string} Preset.na
+ * @typedef {string[]} Preset.effects
+ * @typedef {Function} Preset.filter
+ * @typedef {Function} Preset.mapper
  *
  * @param {*[]} vec
- * @param {FluoSetting[]} configs
+ * @param {Preset[]} presets
  * @returns {*[]}
  */
-export const fluoVector = function (vec, configs) {
+export const fluoVector = function (vec, presets) {
   if (!vec?.length) return []
-  const projectorSet = makeProjector(vec, configs)
+  const projectorSet = makeProjector(vec, presets)
   const mapper = this?.mutate ? mutateFunc : mapperFunc
   switch (this?.colorant) {
     case COLOR:
