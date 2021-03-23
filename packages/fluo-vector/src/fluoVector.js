@@ -32,7 +32,7 @@ export const fluoVector = function (vec, configs) {
   }
 }
 
-const makeProjector = (vec, configs) => {
+const makeProjector = (vec, configs = []) => {
   const [confX, confY] = configs
   const [vecX, vecY] = boundaries(vec, configs)
   const [projX, projY] = [ProjectorFactory.build(vecX, confX), ProjectorFactory.build(vecY, confY)]

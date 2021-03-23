@@ -33,7 +33,7 @@ export const fluoPointwise = function (matrix, configs) {
   }
 }
 
-const makeProjector = (matrix, configs) => {
+const makeProjector = (matrix, configs = []) => {
   const [confX, confY] = configs
   const [matX, matY] = boundaries(matrix, configs)
   const [projX, projY] = [ProjectorFactory.build(matX, confX), ProjectorFactory.build(matY, confY)]
