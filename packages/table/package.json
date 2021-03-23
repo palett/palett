@@ -17,7 +17,7 @@
   "dependencies": {
     "@analys/convert": "^0.4.23",
     "@analys/crostab": "^0.4.23",
-    "@aryth/math": "^0.3.11",
+    "@aryth/math": "^0.3.13",
     "@ject/oneself": "^0.0.6",
     "@palett/cards": "^0.6.2",
     "@palett/convert": "^0.6.2",
@@ -28,15 +28,15 @@
     "@spare/phrasing": "^0.11.1",
     "@spare/string": "^0.11.1",
     "@spare/translator": "^0.11.1",
-    "@vect/columns-mapper": "^0.3.6",
-    "@vect/matrix-mapper": "^0.3.6",
-    "@vect/matrix-transpose": "^0.3.6",
-    "@vect/object-select": "^0.3.6",
-    "@vect/vector-indicator": "^0.3.6",
-    "@vect/vector-init": "^0.3.6",
-    "@vect/vector-mapper": "^0.3.6",
-    "@vect/vector-stat": "^0.3.6",
-    "@vect/vector-zipper": "^0.3.6"
+    "@vect/columns-mapper": "^0.3.7",
+    "@vect/matrix-mapper": "^0.3.7",
+    "@vect/matrix-transpose": "^0.3.7",
+    "@vect/object-select": "^0.3.7",
+    "@vect/vector-indicator": "^0.3.7",
+    "@vect/vector-init": "^0.3.7",
+    "@vect/vector-mapper": "^0.3.7",
+    "@vect/vector-stat": "^0.3.7",
+    "@vect/vector-zipper": "^0.3.7"
   },
   "repository": {
     "type": "git",
