@@ -4,14 +4,16 @@ import { unwind }                    from '@vect/entries-unwind'
 import { mutazip as mutazipEntries } from '@vect/entries-zipper'
 
 /**
- * @typedef {Object} FluoSetting
- * @typedef {{min:string,max:string,na:string}} FluoSetting.preset
- * @typedef {string[]} FluoSetting.effects
- * @typedef {Function} FluoSetting.filter
- * @typedef {Function} FluoSetting.mapper
+ * @typedef {Object} Preset
+ * @typedef {string} Preset.min
+ * @typedef {string} Preset.max
+ * @typedef {string} Preset.na
+ * @typedef {string[]} Preset.effects
+ * @typedef {Function} Preset.filter
+ * @typedef {Function} Preset.mapper
  *
  * @param {[*,*][]} entries
- * @param {FluoSetting[]} configs
+ * @param {Preset[]} configs
  * @returns {*[]}
  */
 export const fluoEntries = function (entries, configs) {

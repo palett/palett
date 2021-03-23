@@ -1,6 +1,7 @@
 import { simpleMatrixCollection }         from '@foba/foo'
 import { RENDER }                         from '@palett/enum-colorant-modes'
 import { BOLD, ITALIC, UNDERLINE }        from '@palett/enum-font-effects'
+import { PresetCollection }               from '@palett/fluo'
 import { FRESH, LAVA, METRO }             from '@palett/presets'
 import { decoPale, logger }               from '@spare/logger'
 import { COLUMNWISE, POINTWISE, ROWWISE } from '@vect/enum-matrix-directions'
@@ -23,7 +24,7 @@ for (const [key, matrix] of Object.entries(SimpleMatrices)) {
     environment,
     matrix,
     POINTWISE,
-    [{ preset: FRESH, effects: [BOLD] }]
+    PresetCollection.build(FRESH).assignEffect(BOLD)
   )
     |> decoPale |> logger
   // |> decoMatrix |> says[key]O
@@ -36,7 +37,7 @@ for (const [key, matrix] of Object.entries(SimpleMatrices)) {
     environment,
     matrix,
     ROWWISE,
-    [{ preset: METRO, effects: [ITALIC] }]
+    PresetCollection.build(METRO).assignEffect(ITALIC)
   )
     |> decoPale |> logger
   // |> decoMatrix |> says[key]
@@ -49,7 +50,7 @@ for (const [key, matrix] of Object.entries(SimpleMatrices)) {
     environment,
     matrix,
     COLUMNWISE,
-    [{ preset: LAVA, effects: [UNDERLINE] }]
+    PresetCollection.build(LAVA).assignEffect(UNDERLINE)
   )
     |> decoPale |> logger
   // |> decoMatrix |> says[key]

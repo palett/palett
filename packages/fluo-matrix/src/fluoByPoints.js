@@ -7,17 +7,19 @@ import { nullish }                                          from '@typen/nullish
 import { mapper as mapperFunc, mutate as mutateFunc, size } from '@vect/matrix'
 
 /**
- * @typedef {Object} FluoSetting
- * @typedef {{min:string,max:string,na:string}} FluoSetting.preset
- * @typedef {string[]} FluoSetting.effects
- * @typedef {Function} FluoSetting.filter
- * @typedef {Function} FluoSetting.mapper
+ * @typedef {Object} Preset
+ * @typedef {string} Preset.min
+ * @typedef {string} Preset.max
+ * @typedef {string} Preset.na
+ * @typedef {string[]} Preset.effects
+ * @typedef {Function} Preset.filter
+ * @typedef {Function} Preset.mapper
  *
  * @param {*[][]} matrix
- * @param {FluoSetting[]} configs
+ * @param {Preset[]} configs
  * @returns {*[][]}
  */
-export const fluoPointwise = function (matrix, configs) {
+export const fluoByPoints = function (matrix, configs) {
   const [h, w] = size(matrix)
   if (!h || !w) return [[]]
   const projectorSet = makeProjector(matrix, configs)

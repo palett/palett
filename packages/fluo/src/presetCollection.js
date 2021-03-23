@@ -23,13 +23,8 @@ export class PresetCollection extends Array {
   }
   static build(...presets) { return new PresetCollection(presets) }
   assignPresets(...presets) {
-    if (presets.length === 0) presets = [NUMERIC_PRESET, LITERAL_PRESET]
-    return mutazip(
-      this,
-      presets,
-      (conf, preset) => conf ? (conf.preset = preset, conf) : { preset },
-      presets.length
-    )
+    // if (this.length < presets.length) {this.length = presets.length}
+    return mutazip(this, presets, (conf, preset) => Object.assign(conf ?? {}, preset), presets.length)
   }
   assignEffect(...effects) {
     if (effects.length === 0) return this
@@ -42,3 +37,5 @@ export class PresetCollection extends Array {
     return mutazip(this, boundConfigs, (conf, boundConf) => Object.assign(conf, boundConf))
   }
 }
+
+// if (presets.length === 0) presets = [NUMERIC_PRESET, LITERAL_PRESET]

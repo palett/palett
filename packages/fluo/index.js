@@ -8,7 +8,7 @@ export {
   COLUMNWISE
 } from '@vect/enum-matrix-directions'
 
-export { PresetCollection } from './src/PresetCollection'
+export { PresetCollection } from './src/presetCollection'
 
 
 

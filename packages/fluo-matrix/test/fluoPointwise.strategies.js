@@ -6,8 +6,8 @@ import { Liner }                                          from '@spare/liner'
 import { decoCrostab, logger, says }                      from '@spare/logger'
 import { strategies }                                     from '@valjoux/strategies'
 import { dateTime }                                       from '@valjoux/timestamp-pretty'
-import { mapper }                                         from '@vect/matrix'
-import { fluoPointwise }                                  from '../src/fluoPointwise'
+import { mapper }       from '@vect/matrix'
+import { fluoByPoints } from '../src/fluoByPoints'
 
 const test = () => {
   const { lapse, result } = strategies({
@@ -19,8 +19,8 @@ const test = () => {
     } |> makeEmbedded,
     methods: {
       arch: x => x,
-      dev: x => fluoPointwise(x, [{ preset: METRO }, { preset: FRESH }]),
-      edge: x => fluoPointwise(mapper(x, v => String(v).trim()), [{ preset: METRO }, { preset: FRESH }]),
+      dev: x => fluoByPoints(x, [{ preset: METRO }, { preset: FRESH }]),
+      edge: x => fluoByPoints(mapper(x, v => String(v).trim()), [{ preset: METRO }, { preset: FRESH }]),
     }
   })
   lapse |> decoCrostab |> says['lapse'].p(dateTime())
