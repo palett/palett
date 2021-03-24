@@ -12,4 +12,4 @@ presets.assignPresets(FRESH, PLANET) |> JSON.stringify |> logger
 
 presets.assignEffect(BOLD) |> JSON.stringify |> logger
 
-presets.setBound(false) |> deco |> logger
+presets.setBound(true) |> deco |> logger
