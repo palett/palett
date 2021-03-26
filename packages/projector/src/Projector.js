@@ -3,34 +3,30 @@ import { oneself }                           from '@ject/oneself'
 import { DyeFactory }                        from '@palett/dye'
 import { HSL }                               from '@palett/enum-color-space'
 import { presetToLeap }                      from '@palett/presets'
-import { nullish }                           from '@typen/nullish'
 import { boundToLeap }                       from './helpers/boundToLeap'
 import { leverage }                          from './helpers/leverage'
-
-// const BLANC = { max: '#FFFFFF', min: '#FFFFFF', na: null }
 
 export class ProjectorFactory {
 
   /**
    * @typedef {[number,number,number]} Hsl
-   * @param {{min:number,dif:number}} leap
+   * @param {{min:number,dif:number}} bound
    * @param {{min:Hsl,dif:Hsl,na:?Hsl}} preset
    * @param {string[]} effects
    * @returns {ProjectorFactory}
    */
-  constructor(leap, preset, effects) {
-    if (nullish(preset)) return new VoidProjectorFactory()
-    if (leap.dif === 0) return new BinProjectorFactory(leap, preset, effects)
+  constructor(bound, preset, effects) {
+    if (!bound) return null
+    bound = boundToLeap(bound)
+    if (!preset) { return new VoidProjectorFactory()} else { preset = presetToLeap(preset) }
+    if (!bound.dif) return new SoleProjectorFactory(bound, preset, effects)
     this.factory = DyeFactory.build(HSL, effects)
-    this.min = leap.min
-    this.lever = leverage(preset.dif, leap.dif)
+    this.min = bound.min
+    this.lever = leverage(preset.dif, bound.dif)
     this.base = preset.min
     this.na = preset.na
   }
   static build(bound, preset) {
-    if (!bound) return null
-    bound = bound|> boundToLeap
-    preset = preset ? preset |> presetToLeap : null
     return new ProjectorFactory(bound, preset, preset.effects)
   }
   render(value, text) { return this.factory(this.color(value))(text) }
@@ -46,7 +42,7 @@ export class ProjectorFactory {
   }
 }
 
-export class BinProjectorFactory {
+export class SoleProjectorFactory {
   constructor(bound, { min, na }, effects) {
     this.factory = DyeFactory.build(HSL, effects)
     this.base = min
@@ -73,7 +69,7 @@ export class VoidProjectorFactory {
  * @returns {function(*):Function}
  */
 export const Projector = (bound, preset, effects) =>
-  projector.bind(ProjectorFactory.build(bound, { preset, effects }))
+  projector.bind(ProjectorFactory.build(bound, preset, effects))
 
 const projector = function (value) {
   const { factory, min, lever: [levH, levS, levL], base: [minH, minS, minL], na } = this

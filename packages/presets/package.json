@@ -19,7 +19,9 @@
     "@ject/oneself": "^0.0.6",
     "@palett/cards": "^0.7.3",
     "@palett/convert": "^0.7.3",
-    "@palett/toner-hsl": "^0.7.3"
+    "@palett/toner-hsl": "^0.7.3",
+    "@palett/dye": "^0.7.3",
+    "@typen/enum-data-types": "^0.1.16"
   },
   "repository": {
     "type": "git",

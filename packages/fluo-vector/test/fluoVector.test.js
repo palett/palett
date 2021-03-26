@@ -10,8 +10,8 @@ for (let [k, vector] of Object.entries(candidates)) {
     { mutate: false, colorant: false },
     vector,
     [
-      { preset: FRESH, effects: [BOLD, ITALIC, UNDERLINE] },
-      { preset: PLANET, effects: [BOLD, ITALIC, UNDERLINE] }
+      Object.assign({}, FRESH, { effects: [BOLD, ITALIC, UNDERLINE] }),
+      Object.assign({}, PLANET, { effects: [BOLD, ITALIC, UNDERLINE] })
     ]
     // [
     //   { preset: FRESH, filter: isNumeric, mapper: x => x },
@@ -19,6 +19,6 @@ for (let [k, vector] of Object.entries(candidates)) {
     // ]
   )
     |> decoPale |> console.log
-    // |> says[k]
+  // |> says[k]
 }
 

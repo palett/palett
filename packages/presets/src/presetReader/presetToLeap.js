@@ -9,8 +9,7 @@ import { parseHsl } from './parseHsl'
  */
 export const presetToLeap = (preset) => {
   if (!preset) return null
-  const { max, min } = preset
-  return colorBound(max |> parseHsl, min |> parseHsl)
+  return colorBound(parseHsl(preset.max), parseHsl(preset.min))
 }
 
 /**

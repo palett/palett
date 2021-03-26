@@ -3,7 +3,7 @@ import { VectorCollection } from '@foba/vector-number'
 import { hslToHex }         from '@palett/convert'
 import { BOLD, ITALIC }     from '@palett/enum-font-effects'
 import { FRESH }            from '@palett/presets'
-import { says }             from '@palett/says'
+import { says }             from '@spare/logger'
 import { ProjectorFactory } from '../index'
 
 for (const [key, vecFunc] of Object.entries(VectorCollection)) {
