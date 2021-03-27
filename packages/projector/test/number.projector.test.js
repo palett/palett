@@ -5,17 +5,18 @@ import { FRESH }             from '@palett/presets'
 import { says }              from '@spare/logger'
 import { Colorant, Pigment } from '../index'
 
-const EFFECTS = [BOLD, ITALIC]
+const EFFECTS = { effects: [BOLD, ITALIC] }
+
 for (const [key, vecFunc] of Object.entries(VectorCollection)) {
   const vec = vecFunc(7)
   const { max, min } = bound(vec)
-  const dye = Pigment({ max, min }, FRESH, EFFECTS)
+  const dye = Pigment({ max, min }, Object.assign({}, FRESH, EFFECTS))
   vec.map(dye) |> says[key]
 }
 
 for (const [key, vecFunc] of Object.entries(VectorCollection)) {
   const vec = vecFunc(7)
   const { max, min } = bound(vec)
-  const dye = Colorant({ max, min }, FRESH, EFFECTS)
+  const dye = Colorant({ max, min }, Object.assign({}, FRESH, EFFECTS))
   vec.map(dye) |> says[key]
 }

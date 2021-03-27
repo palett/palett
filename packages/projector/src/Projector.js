@@ -24,23 +24,22 @@ export const Projector = (bound, preset) =>
   projector.bind(ProjectorConfig.fromHEX(bound, preset))
 
 export const projector = function (value) {
-  return isNaN(value)
+  return !isNumeric(value)
     ? this.fab(this.min)
     : this.fab(_project.call(this, value))
 }
 
 
 export const Colorant = (bound, preset = PLANET) => {
-  // const config=ProjectorConfig.fromHEX(bound, preset)
-  const projector = Projector(parseBound(bound), preset)
-  const defaultDye = presetToFlat(preset)
-  return x => isNumeric(x) ? projector(x) : defaultDye
+  const core = ProjectorConfig.fromHEX(bound, preset)
+  const dyeNAp = core.dyeNAp
+  return x => isNumeric(x) ? core.fab(core.project(x)) : dyeNAp
 }
 
 export const Pigment = (bound, preset = PLANET) => {
-  const projector = Projector(parseBound(bound), preset)
-  const defaultDye = presetToFlat(preset)
-  return x => isNumeric(x) ? (x |> projector(x)) : (x |> defaultDye)
+  const core = ProjectorConfig.fromHEX(bound, preset)
+  const dyeNAp = core.dyeNAp
+  return x => isNumeric(x) ? core.fab(core.project(x))(x) : dyeNAp(x)
 }
 
 

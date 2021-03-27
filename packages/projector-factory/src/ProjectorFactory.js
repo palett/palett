@@ -40,7 +40,7 @@ export class ProjectorFactory {
   render(value, text) { return this.fab(this.color(value))(text) }
   make(value) { return this.fab(this.color(value)) }
   color(value) {
-    if (isNaN(value)) return this.na
+    if (isNaN(value)) return this.nap
     const { lo, lev, min } = this
     return [
       scale(value, lo, lev[0], min[0], 360),
