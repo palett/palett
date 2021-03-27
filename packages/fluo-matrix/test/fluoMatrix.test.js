@@ -1,7 +1,7 @@
 import { simpleMatrixCollection }         from '@foba/foo'
 import { BOLD, ITALIC, UNDERLINE }        from '@palett/enum-font-effects'
 import { FRESH, LAVA, METRO }             from '@palett/presets'
-import { says }                           from '@palett/says'
+import { says }                           from '@spare/logger'
 import { decoMatrix, logger }             from '@spare/logger'
 import { COLUMNWISE, POINTWISE, ROWWISE } from '@vect/enum-matrix-directions'
 import { init }                           from '@vect/matrix'

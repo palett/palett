@@ -25,13 +25,13 @@ export class ProjectorFactory {
     Object.assign(this, config)
   }
   static fromHEX(bound, preset) {
-    if (!preset) { return new VoidProjectorFactory() }
+    if (!bound || !preset) { return new VoidProjectorFactory() }
     const config = ProjectorConfig.fromHSL(bound, preset)
     if (!config.lev) return new SoleProjectorFactory(config)
     return new ProjectorFactory(ProjectorConfig.fromHEX(bound, preset))
   }
   static fromHSL(bound, preset) {
-    if (!preset) { return new VoidProjectorFactory() }
+    if (!bound || !preset) { return new VoidProjectorFactory() }
     const config = ProjectorConfig.fromHSL(bound, preset)
     if (!config.lev) return new SoleProjectorFactory(config)
     return new ProjectorFactory(config)

@@ -21,8 +21,8 @@
     "@palett/dye": "^0.7.4",
     "@typen/enum-check-levels": "^0.1.16",
     "@typen/num-strict": "^0.1.16",
-    "@vect/vector-mapper": "^0.3.7",
-    "@vect/vector-zipper": "^0.3.7"
+    "@vect/vector-mapper": "^0.3.8",
+    "@vect/vector-zipper": "^0.3.8"
   },
   "repository": {
     "type": "git",

@@ -1,8 +1,7 @@
-import { min as keepCeil, max as keepFloor } from '@aryth/comparer'
-import { PLANET, presetToFlat }              from '@palett/presets'
+import { max as keepFloor, min as keepCeil } from '@aryth/comparer'
+import { PLANET }                            from '@palett/presets'
 import { ProjectorConfig }                   from '@palett/projector-config'
 import { isNumeric }                         from '@typen/num-strict'
-import { parseBound }                        from './parseBound'
 
 export const leverage = ([h, s, l], min) => [h / min, s / min, l / min]
 export const scale = (x, lo, lev, min, ceil) => keepCeil((keepFloor(x, lo) - lo) * lev + min, ceil)

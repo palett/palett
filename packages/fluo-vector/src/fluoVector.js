@@ -2,8 +2,11 @@ import { boundaries }                                 from '@aryth/bound-vector'
 import { oneself }                                    from '@ject/oneself'
 import { hslToHex }                                   from '@palett/convert'
 import { COLOR, MAKER, RENDER }                       from '@palett/enum-colorant-modes'
-import { ProjectorFactory }                           from '@palett/projector'
+import { ProjectorFactory }                           from '@palett/projector-factory'
+import { AEU }                                        from '@spare/enum-chars'
+import { logger }                                     from '@spare/logger'
 import { nullish }                                    from '@typen/nullish'
+import { select }                                     from '@vect/object-select'
 import { mapper as mapperFunc, mutate as mutateFunc } from '@vect/vector-mapper'
 
 /**
@@ -37,7 +40,10 @@ export const fluoVector = function (vec, presets) {
 const _toProjectorCollection = (vec, presetCollection = []) => {
   const [confX, confY] = presetCollection
   const [vecX, vecY] = boundaries(vec, presetCollection)
-  const [projX, projY] = [ProjectorFactory.build(vecX, confX), ProjectorFactory.build(vecY, confY)]
+  const [projX, projY] = [ProjectorFactory.fromHEX(vecX, confX), ProjectorFactory.fromHEX(vecY, confY)]
+  // ;
+  // (vecX ? (select.call({ keys: ['max', 'min'] }, vecX)) : AEU) |> JSON.stringify |> logger;
+  // (vecY ? (select.call({ keys: ['max', 'min'] }, vecY)) : AEU) |> JSON.stringify |> logger
   return [[vecX, projX], [vecY, projY]]
 }
 

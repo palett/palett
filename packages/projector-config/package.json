@@ -15,12 +15,12 @@
     "test": "babel-node test/archive/test.index.js"
   },
   "dependencies": {
+    "@aryth/comparer": "^0.3.14",
     "@palett/convert": "^0.7.4",
     "@palett/dye": "^0.7.4",
+    "@palett/dye-factory": "^0.7.4",
     "@palett/enum-color-space": "^0.7.4",
-    "@typen/nullish": "^0.1.16",
-    "@aryth/comparer": "^0.3.14",
-    "@palett/dye-factory": "^0.7.4"
+    "@typen/nullish": "^0.1.16"
   },
   "repository": {
     "type": "git",

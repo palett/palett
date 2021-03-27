@@ -9,6 +9,7 @@ import { nullish } from '@typen/nullish'
  * @return {{dif: number, min: number}}
  */
 export const parseBound = bound => {
+  // if (!bound) return { min: 0, dif: 0 }
   let { min, max, dif } = bound
   if (!nullish(min)) {
     if (!nullish(dif)) return { min, dif }
