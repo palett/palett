@@ -56,7 +56,7 @@ export class ColorFactory {
       let v
       if (!nullish(v = bX && bX[i])) { return pX.make(v) }
       if (!nullish(v = bY && bY[i])) { return pY.make(v) }
-      return pX?.make(pX.nap) ?? oneself
+      return (pX || pY)?.make(pX.nap) ?? oneself
     }
   }
   static render([[bX, pX], [bY, pY]]) {
@@ -64,7 +64,7 @@ export class ColorFactory {
       let v
       if (!nullish(v = bX && bX[i])) { return pX.render(v, n) }
       if (!nullish(v = bY && bY[i])) { return pY.render(v, n) }
-      return pX?.render(pX.nap, n) ?? n
+      return (pX || pY)?.render(pX.nap, n) ?? n
     }
   }
 }
