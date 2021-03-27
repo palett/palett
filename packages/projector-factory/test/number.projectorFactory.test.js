@@ -9,13 +9,13 @@ import { ProjectorFactory } from '../index'
 for (const [key, vecFunc] of Object.entries(VectorCollection)) {
   const vec = vecFunc(7)
   const { max, min } = bound(vec)
-  const projector = ProjectorFactory.build({ max, min }, FRESH, [BOLD, ITALIC])
-  vec.map(n => projector.project(n) |> hslToHex) |> says[key]
+  const projector = ProjectorFactory.fromHEX({ max, min }, Object.assign({}, FRESH, [BOLD, ITALIC]))
+  vec.map(n => projector.color(n) |> hslToHex) |> says[key]
 }
 
 for (const [key, vecFunc] of Object.entries(VectorCollection)) {
   const vec = vecFunc(7)
   const { max, min } = bound(vec)
-  const projector = ProjectorFactory.build({ max, min }, FRESH, [BOLD, ITALIC])
+  const projector = ProjectorFactory.fromHEX({ max, min }, Object.assign({}, FRESH, [BOLD, ITALIC]))
   vec.map(n => projector.render(n, n)) |> says[key]
 }

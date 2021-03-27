@@ -1,12 +1,7 @@
+import { BOLD }            from '@palett/enum-font-effects'
 import { ATLAS }           from '@palett/presets'
 import { ProjectorConfig } from '../index'
 
-const params = {
-  bound: { min: 0, max: 5 },
-  preset: ATLAS,
-  effects: []
-}
-
-ProjectorConfig.build(params.bound, params.preset, params.effects)
+ProjectorConfig.fromHEX({ min: 0, max: 5 }, Object.assign({}, ATLAS, { effects: [BOLD] }))
   |> JSON.stringify
   |> console.log

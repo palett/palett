@@ -1,42 +1,44 @@
-import { max as keepFloor, min as keepCeil } from '@aryth/comparer'
+import { min as keepCeil, max as keepFloor } from '@aryth/comparer'
 import { PLANET, presetToFlat }              from '@palett/presets'
+import { ProjectorConfig }                   from '@palett/projector-config'
 import { isNumeric }                         from '@typen/num-strict'
 import { parseBound }                        from './parseBound'
-import { ProjectorFactory }                  from './ProjectorFactory'
 
-export const leverage = ([h, s, l], base) => [h / base, s / base, l / base]
-export const scale = (x, min, lev, base, ceil) => keepCeil((keepFloor(x, min) - min) * lev + base, ceil)
-
+export const leverage = ([h, s, l], min) => [h / min, s / min, l / min]
+export const scale = (x, lo, lev, min, ceil) => keepCeil((keepFloor(x, lo) - lo) * lev + min, ceil)
+export const _project = function (value) {
+  const { lo, lev, min } = this
+  return [
+    scale(value, lo, lev[0], min[0], 360),
+    scale(value, lo, lev[1], min[1], 100),
+    scale(value, lo, lev[2], min[2], 100)
+  ]
+}
 /**
  *
- * @param {{[min]:number,[max]:number,[dif]:number}} bound
- * @param {{max:*,min:*}} preset
- * @param {string[]} [effects]
+ * @param {{[lo]:number,[max]:number,[dif]:number}} bound
+ * @param {{max:string,min:string,na:string,effects?:string[]}} preset
  * @returns {function(*):Function}
  */
-export const Projector = (bound, preset, effects) =>
-  projector.bind(ProjectorFactory.build(bound, preset, effects))
+export const Projector = (bound, preset) =>
+  projector.bind(ProjectorConfig.fromHEX(bound, preset))
 
-const projector = function (value) {
-  const { fab, min, lev, base, na } = this
-  return fab(na
-    ? this.base
-    : [
-      scale(value, min, lev[0], base[0], 360),
-      scale(value, min, lev[1], base[1], 100),
-      scale(value, min, lev[2], base[2], 100)
-    ]
-  )
+export const projector = function (value) {
+  return isNaN(value)
+    ? this.fab(this.min)
+    : this.fab(_project.call(this, value))
 }
 
-export const Colorant = (bound, preset = PLANET, effects) => {
-  const projector = Projector(parseBound(bound), preset, effects)
+
+export const Colorant = (bound, preset = PLANET) => {
+  // const config=ProjectorConfig.fromHEX(bound, preset)
+  const projector = Projector(parseBound(bound), preset)
   const defaultDye = presetToFlat(preset)
   return x => isNumeric(x) ? projector(x) : defaultDye
 }
 
-export const Pigment = (bound, preset = PLANET, effects) => {
-  const projector = Projector(parseBound(bound), preset, effects)
+export const Pigment = (bound, preset = PLANET) => {
+  const projector = Projector(parseBound(bound), preset)
   const defaultDye = presetToFlat(preset)
   return x => isNumeric(x) ? (x |> projector(x)) : (x |> defaultDye)
 }

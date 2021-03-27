@@ -1,1 +1,1 @@
-export { ProjectorConfig } from './src/ProjectorConfig'
+export { scale, ProjectorConfig } from './src/ProjectorConfig'

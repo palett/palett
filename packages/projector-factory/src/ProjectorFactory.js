@@ -1,58 +1,72 @@
-import { oneself }      from '@ject/oneself'
-import { DyeFactory }   from '@palett/dye'
-import { HSL }          from '@palett/enum-color-space'
-import { presetToLeap } from '@palett/presets'
-import { parseBound }   from '@palett/projector/src/parseBound'
-import { leverage }     from '@palett/projector'
+import { oneself }                from '@ject/oneself'
+import { scale, ProjectorConfig } from '@palett/projector-config'
+
+/**
+ * @typedef {[number,number,number]} Triple
+ * @typedef {function(string):string} dye
+ */
 
 export class ProjectorFactory {
+  /** @type {function(Triple):dye} */ fab
+  /** @type {number} */ lo
+  /** @type {Triple} */ lev
+  /** @type {Triple} */ min
+  /** @type {Triple} */ nap
 
   /**
-   * @typedef {[number,number,number]} Hsl
-   * @param {{min:number,dif:number}} bound
-   * @param {{min:Hsl,dif:Hsl,na:?Hsl}} preset
-   * @param {string[]} effects
-   * @returns {ProjectorFactory}
+   * @param {Object} config
+   * @param {function(Triple):dye} config.fab
+   * @param {number}  config.lo
+   * @param {Triple}  config.lev
+   * @param {Triple}  config.min
+   * @param {Triple}  config.nap
    */
-  constructor(bound, preset, effects) {
-    if (!bound) return null
-    bound = parseBound(bound)
-    if (!preset) { return new VoidProjectorFactory() } else { preset = presetToLeap(preset) }
-    if (!bound.dif) return new SoleProjectorFactory(bound, preset, effects)
-    this.fab = DyeFactory.build(HSL, effects)
-    this.min = bound.min
-    this.lev = leverage(preset.dif, bound.dif)
-    this.base = preset.min
-    this.na = preset.na
+  constructor(config) {
+    Object.assign(this, config)
   }
-  static build(bound, preset) { return new ProjectorFactory(bound, preset, preset.effects) }
+  static fromHEX(bound, preset) {
+    if (!preset) { return new VoidProjectorFactory() }
+    const config = ProjectorConfig.fromHSL(bound, preset)
+    if (!config.lev) return new SoleProjectorFactory(config)
+    return new ProjectorFactory(ProjectorConfig.fromHEX(bound, preset))
+  }
+  static fromHSL(bound, preset) {
+    if (!preset) { return new VoidProjectorFactory() }
+    const config = ProjectorConfig.fromHSL(bound, preset)
+    if (!config.lev) return new SoleProjectorFactory(config)
+    return new ProjectorFactory(config)
+  }
+
   render(value, text) { return this.fab(this.color(value))(text) }
   make(value) { return this.fab(this.color(value)) }
   color(value) {
     if (isNaN(value)) return this.na
-    const { min, lev: [levH, levS, levL], base: [minH, minS, minL] } = this
+    const { lo, lev, min } = this
     return [
-      scale(value, min, levH, minH, 360),
-      scale(value, min, levS, minS, 100),
-      scale(value, min, levL, minL, 100),
+      scale(value, lo, lev[0], min[0], 360),
+      scale(value, lo, lev[1], min[1], 100),
+      scale(value, lo, lev[2], min[2], 100),
     ]
   }
 }
 
 export class SoleProjectorFactory {
-  constructor(bound, { min, na }, effects) {
-    this.fab = DyeFactory.build(HSL, effects)
-    this.base = min
-    this.na = na
-  }
+  /** @type {function(*):dye} */ fab
+  /** @type {Triple} */ min
+  /** @type {Triple} */ nap
+
+  constructor(config) { Object.assign(this, config) }
   render(value, text) { return this.fab(this.color(value))(text) }
   make(value) { return this.fab(this.color(value)) }
-  color(value) { return isNaN(value) ? this.na : this.base }
+  color(value) { return isNaN(value) ? this.nap : this.min }
 }
 
 export class VoidProjectorFactory {
-  constructor() {}
+  constructor(config) { Object.assign(this, config) }
   render(value, text) { return text }
   make(value) { return oneself }
   color(value) { return null }
 }
+
+// if (!preset) { return new VoidProjectorFactory() } else { preset = presetToLeap(preset) }
+// if (!bound.dif) return new SoleProjectorFactory(bound, preset, effects)
