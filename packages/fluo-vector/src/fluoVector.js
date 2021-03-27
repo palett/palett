@@ -3,10 +3,7 @@ import { oneself }                                    from '@ject/oneself'
 import { hslToHex }                                   from '@palett/convert'
 import { COLOR, MAKER, RENDER }                       from '@palett/enum-colorant-modes'
 import { ProjectorFactory }                           from '@palett/projector-factory'
-import { AEU }                                        from '@spare/enum-chars'
-import { logger }                                     from '@spare/logger'
 import { nullish }                                    from '@typen/nullish'
-import { select }                                     from '@vect/object-select'
 import { mapper as mapperFunc, mutate as mutateFunc } from '@vect/vector-mapper'
 
 /**
@@ -41,9 +38,6 @@ const _toProjectorCollection = (vec, presetCollection = []) => {
   const [confX, confY] = presetCollection
   const [vecX, vecY] = boundaries(vec, presetCollection)
   const [projX, projY] = [ProjectorFactory.fromHEX(vecX, confX), ProjectorFactory.fromHEX(vecY, confY)]
-  // ;
-  // (vecX ? (select.call({ keys: ['max', 'min'] }, vecX)) : AEU) |> JSON.stringify |> logger;
-  // (vecY ? (select.call({ keys: ['max', 'min'] }, vecY)) : AEU) |> JSON.stringify |> logger
   return [[vecX, projX], [vecY, projY]]
 }
 
@@ -62,7 +56,7 @@ export class ColorFactory {
       let v
       if (!nullish(v = bX && bX[i])) { return pX.make(v) }
       if (!nullish(v = bY && bY[i])) { return pY.make(v) }
-      return pX?.make(pX.na) ?? oneself
+      return pX?.make(pX.nap) ?? oneself
     }
   }
   static render([[bX, pX], [bY, pY]]) {
@@ -70,7 +64,7 @@ export class ColorFactory {
       let v
       if (!nullish(v = bX && bX[i])) { return pX.render(v, n) }
       if (!nullish(v = bY && bY[i])) { return pY.render(v, n) }
-      return pX?.render(pX.na, n) ?? n
+      return pX?.render(pX.nap, n) ?? n
     }
   }
 }

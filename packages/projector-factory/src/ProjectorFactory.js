@@ -1,5 +1,5 @@
 import { oneself }                from '@ject/oneself'
-import { scale, ProjectorConfig } from '@palett/projector-config'
+import { ProjectorConfig, scale } from '@palett/projector-config'
 
 /**
  * @typedef {[number,number,number]} Triple
@@ -26,9 +26,9 @@ export class ProjectorFactory {
   }
   static fromHEX(bound, preset) {
     if (!bound || !preset) { return new VoidProjectorFactory() }
-    const config = ProjectorConfig.fromHSL(bound, preset)
+    const config = ProjectorConfig.fromHEX(bound, preset)
     if (!config.lev) return new SoleProjectorFactory(config)
-    return new ProjectorFactory(ProjectorConfig.fromHEX(bound, preset))
+    return new ProjectorFactory(config)
   }
   static fromHSL(bound, preset) {
     if (!bound || !preset) { return new VoidProjectorFactory() }
@@ -55,7 +55,9 @@ export class SoleProjectorFactory {
   /** @type {Triple} */ min
   /** @type {Triple} */ nap
 
-  constructor(config) { Object.assign(this, config) }
+  constructor(config) {
+    Object.assign(this, config)
+  }
   render(value, text) { return this.fab(this.color(value))(text) }
   make(value) { return this.fab(this.color(value)) }
   color(value) { return isNaN(value) ? this.nap : this.min }

@@ -3,11 +3,8 @@ import { oneself }                                          from '@ject/oneself'
 import { hslToHex }                                         from '@palett/convert'
 import { COLOR, MAKER, RENDER }                             from '@palett/enum-colorant-modes'
 import { ProjectorFactory }                                 from '@palett/projector-factory'
-import { AEU }                                              from '@spare/enum-chars'
-import { logger }                                           from '@spare/logger'
 import { nullish }                                          from '@typen/nullish'
 import { mapper as mapperFunc, mutate as mutateFunc, size } from '@vect/matrix'
-import { select }                                           from '@vect/object-select'
 
 /**
  * @typedef {Object} Preset
@@ -41,9 +38,6 @@ export const fluoByPoints = function (matrix, configs) {
 const makeProjector = (matrix, configs = []) => {
   const [confX, confY] = configs
   const [matX, matY] = boundaries(matrix, configs)
-  // ;
-  // (matX ? (select.call({ keys: ['max', 'min'] }, matX)) : AEU) |> JSON.stringify |> logger;
-  // (matY ? (select.call({ keys: ['max', 'min'] }, matY)) : AEU) |> JSON.stringify |> logger
   const [projX, projY] = [ProjectorFactory.fromHEX(matX, confX), ProjectorFactory.fromHEX(matY, confY)]
   return [[matX, projX], [matY, projY]]
 }
@@ -63,7 +57,7 @@ export class PointColorFactory {
       let v
       if (!nullish(v = bX && bX[i][j])) { return pX.make(v) }
       if (!nullish(v = bY && bY[i][j])) { return pY.make(v) }
-      return pX?.make(pX.na) ?? oneself
+      return pX?.make(pX.nap) ?? oneself
     }
   }
   static render([[bX, pX], [bY, pY]]) {
@@ -71,7 +65,7 @@ export class PointColorFactory {
       let v
       if (!nullish(v = bX && bX[i][j])) { return pX.render(v, n) }
       if (!nullish(v = bY && bY[i][j])) { return pY.render(v, n) }
-      return pX?.render(pX.na, n) ?? n
+      return pX?.render(pX.nap, n) ?? n
     }
   }
 }
