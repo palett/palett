@@ -33,7 +33,7 @@ export class ProjectorConfig {
    * @returns {ProjectorConfig}
    */
   build(bound, preset, effects) {
-    bound = parseBound(bound)a
+    bound = parseBound(bound)
     preset = {
       max: preset.max |> hexToHsl,
       min: preset.min |> hexToHsl,
