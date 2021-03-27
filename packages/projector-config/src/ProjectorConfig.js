@@ -1,17 +1,19 @@
-import { hexToHsl }                                   from '@palett/convert'
-import { DyeFactory }                                 from '@palett/dye'
-import { HSL }                                        from '@palett/enum-color-space'
-import { parseBound }                                 from '@palett/projector/src/parseBound'
-import { SoleProjectorFactory, VoidProjectorFactory } from '@palett/projector/src/ProjectorFactory'
+import { hexToHsl }   from '@palett/convert'
+import { DyeFactory } from '@palett/dye'
+import { HSL }        from '@palett/enum-color-space'
+import { parseBound } from './parseBound'
 
 export const leverage = ([x, y, z], delta) => [x / delta, y / delta, z / delta]
+export const minus = ([x_, y_, z_], [_x, _y, _z]) => [x_ - _x, y_ - _y, z_ - _z]
 
+/**
+ * @typedef {[number,number,number]} HSL
+ * @typedef {{min:number,dif:number}} BoundLeap
+ * @typedef {{min:HSL,dif:HSL,na:HSL}} PresetHSL
+ * @typedef {{max:string,min:string,na:string}} PresetHEX
+ */
 export class ProjectorConfig {
   /**
-   * @typedef {[number,number,number]} HSL
-   * @typedef {{min:number,dif:number}} BoundLeap
-   * @typedef {{max:HSL,min:HSL,na:HSL}} PresetHSL
-   *
    * @param {BoundLeap} boundLeap
    * @param {PresetHSL} presetHsl
    * @param {string[]} effects
@@ -25,21 +27,17 @@ export class ProjectorConfig {
   }
 
   /**
-   * @typedef {{max:string,min:string,na:string}} PresetHEX
-   *
    * @param {Object} bound
    * @param {PresetHEX} preset
    * @param {string[]} effects
    * @returns {ProjectorConfig}
    */
-  build(bound, preset, effects) {
-    bound = parseBound(bound)
-    preset = {
-      max: preset.max |> hexToHsl,
-      min: preset.min |> hexToHsl,
-      na: preset.na |> hexToHsl
-    }
-    return new ProjectorConfig(bound, preset, effects)
+  static build(bound, preset, effects) {
+    const
+      max = preset.max |> hexToHsl,
+      min = preset.min |> hexToHsl,
+      na = preset.na |> hexToHsl
+    return new ProjectorConfig(parseBound(bound), { min, dif: minus(max, min), na }, effects)
   }
 }
 
