@@ -8,7 +8,7 @@ import { nullish } from '@typen/nullish'
  * @param {number} [bound.max] - if max: return {min:0,dif:max}; else return {min:0,dif:0}
  * @return {{dif: number, min: number}}
  */
-export const boundToLeap = bound => {
+export const parseBound = bound => {
   let { min, max, dif } = bound
   if (!nullish(min)) {
     if (!nullish(dif)) return { min, dif }

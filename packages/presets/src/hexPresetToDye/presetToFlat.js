@@ -1,6 +1,6 @@
 import { oneself }  from '@ject/oneself'
-import { hslToDye } from './hslToDye'
-import { parseHsl } from './parseHsl'
+import { hexToRgb } from '@palett/convert'
+import { Dye }      from '@palett/dye'
 
 /**
  * @param {Object} [preset]
@@ -8,7 +8,5 @@ import { parseHsl } from './parseHsl'
  * @return {Function}
  */
 export const presetToFlat = (preset) => {
-  if (!preset) return oneself
-  const na = preset.na
-  return na |> parseHsl |> hslToDye
+  return !preset ? oneself : (preset.na  |> hexToRgb|> Dye)
 }

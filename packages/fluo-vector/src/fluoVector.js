@@ -21,27 +21,27 @@ import { mapper as mapperFunc, mutate as mutateFunc } from '@vect/vector-mapper'
  */
 export const fluoVector = function (vec, presets) {
   if (!vec?.length) return []
-  const projectorSet = makeProjector(vec, presets)
+  const projectorCollection = _toProjectorCollection(vec, presets)
   const mapper = this?.mutate ? mutateFunc : mapperFunc
   switch (this?.colorant) {
     case COLOR:
-      return mapper(vec, PointColorFactory.color(projectorSet))
+      return mapper(vec, ColorFactory.color(projectorCollection))
     case MAKER:
-      return mapper(vec, PointColorFactory.maker(projectorSet))
+      return mapper(vec, ColorFactory.maker(projectorCollection))
     case RENDER:
     default:
-      return mapper(vec, PointColorFactory.render(projectorSet))
+      return mapper(vec, ColorFactory.render(projectorCollection))
   }
 }
 
-const makeProjector = (vec, configs = []) => {
-  const [confX, confY] = configs
-  const [vecX, vecY] = boundaries(vec, configs)
+const _toProjectorCollection = (vec, presetCollection = []) => {
+  const [confX, confY] = presetCollection
+  const [vecX, vecY] = boundaries(vec, presetCollection)
   const [projX, projY] = [ProjectorFactory.build(vecX, confX), ProjectorFactory.build(vecY, confY)]
   return [[vecX, projX], [vecY, projY]]
 }
 
-export class PointColorFactory {
+export class ColorFactory {
   static color([[bX, pX], [bY, pY]]) {
     function toColor(hsl) { return hsl ? hsl|> hslToHex : null }
     return (_, i) => {
@@ -54,16 +54,16 @@ export class PointColorFactory {
   static maker([[bX, pX], [bY, pY]]) {
     return (_, i) => {
       let v
-      if (!nullish(v = bX && bX[i])) {return pX.make(v)}
-      if (!nullish(v = bY && bY[i])) {return pY.make(v)}
+      if (!nullish(v = bX && bX[i])) { return pX.make(v) }
+      if (!nullish(v = bY && bY[i])) { return pY.make(v) }
       return pX?.make(pX.na) ?? oneself
     }
   }
   static render([[bX, pX], [bY, pY]]) {
     return (n, i) => {
       let v
-      if (!nullish(v = bX && bX[i])) {return pX.render(v, n)}
-      if (!nullish(v = bY && bY[i])) {return pY.render(v, n)}
+      if (!nullish(v = bX && bX[i])) { return pX.render(v, n) }
+      if (!nullish(v = bY && bY[i])) { return pY.render(v, n) }
       return pX?.render(pX.na, n) ?? n
     }
   }

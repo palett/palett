@@ -7,4 +7,3 @@ import { Dye }      from '@palett/dye'
  * @returns {function}
  */
 export const hslToDye = hsl => hsl |> hslToRgb |> Dye
-

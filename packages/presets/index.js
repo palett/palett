@@ -36,5 +36,5 @@ export const Presets = {
 
 export { randPreset }   from './src/randPreset'
 export { tapPresets }   from './src/tapPresets'
-export { presetToFlat } from './src/presetReader/presetToFlat'
-export { presetToLeap } from './src/presetReader/presetToLeap'
+export { presetToFlat } from './src/hexPresetToDye/presetToFlat'
+export { presetToLeap } from './src/hexPresetToDye/presetToLeap'

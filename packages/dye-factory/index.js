@@ -1,7 +1,7 @@
 import { DyeFactory } from './src/DyeFactory'
 
-export { dye, Dye, assignEffects } from './src/Dye'
-export { DyeFactory }              from './src/DyeFactory'
+export { DyeFactory } from './src/DyeFactory'
+
 /**
  *
  * @param space

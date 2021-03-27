@@ -2,7 +2,7 @@ import { Cyan }              from '@palett/cards'
 import { HEX }               from '@palett/enum-color-space'
 import { ITALIC, UNDERLINE } from '@palett/enum-font-effects'
 import { decoFunc, logger }  from '@spare/logger'
-import { DyeFactory }        from '../src/dye'
+import { DyeFactory }        from '../src/DyeFactory'
 
 const dyeFactory = DyeFactory.build(HEX, [ITALIC])
 dyeFactory |> decoFunc |> logger

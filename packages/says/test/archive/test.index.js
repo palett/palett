@@ -1,7 +1,7 @@
-import { factoryTest } from './factory.test'
+import { factoryTest } from './fab.test'
 import { ooTest }      from './object.oriented.test'
 
-'factory.testBind' |> console.log
+'fab.testBind' |> console.log
 factoryTest()
 
 'objectOriented.testBind' |> console.log

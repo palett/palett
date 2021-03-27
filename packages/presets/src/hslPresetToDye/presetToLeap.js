@@ -1,4 +1,4 @@
-import { parseHsl } from './parseHsl'
+import { hexToHsl } from '@palett/convert'
 
 /**
  *
@@ -7,10 +7,10 @@ import { parseHsl } from './parseHsl'
  * @param {string} preset.min
  * @return {?{dif: number[], min: number[]}}
  */
-export const presetToLeap = (preset) => {
-  if (!preset) return null
-  return colorBound(parseHsl(preset.max), parseHsl(preset.min))
-}
+export const presetToLeap = (preset) =>
+  preset
+    ? colorBound(hexToHsl(preset.max), hexToHsl(preset.min))
+    : null
 
 /**
  *
