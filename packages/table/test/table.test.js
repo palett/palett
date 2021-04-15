@@ -2,14 +2,15 @@ import { HEX }                 from '@palett/enum-color-space'
 import { decoCrostab, logger } from '@spare/logger'
 import { ColorGroups }         from '../resources/ColorGroups'
 import { Degrees }             from '../resources/Degrees'
-import { degreesByColors }     from '../src/degreesByColors'
+import { palettCrostab }       from '../src/palettCrostab'
 
 // PalettTable.meta() |> deco |> console.log
 
-degreesByColors({
+palettCrostab({
   space: HEX,
   degrees: Degrees.entire,
-  colors: [...ColorGroups.grey, ...ColorGroups.rainbow],
+  colors: [ ...ColorGroups.grey, ...ColorGroups.rainbow ],
   average: false,
-  cellColor: true
+  cellColor: true,
+  dyed: true
 }) |> decoCrostab|> logger

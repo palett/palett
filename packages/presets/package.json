@@ -15,8 +15,8 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/rand": "^0.3.14",
-    "@ject/oneself": "^0.0.6",
+    "@aryth/rand": "^0.3.15",
+    "@ject/oneself": "^0.0.10",
     "@palett/cards": "^0.7.5",
     "@palett/convert": "^0.7.5",
     "@palett/dye": "^0.7.5",

@@ -1,6 +1,6 @@
 import { RGB }                 from '@palett/enum-color-space'
 import { decoCrostab, logger } from '@spare/logger'
-import { palettCrostab }       from '../src/degreesByColors'
+import { palettCrostab }       from '../src/palettCrostab'
 
 const test = () => {
   const crostab = palettCrostab({
