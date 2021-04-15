@@ -5,18 +5,18 @@ import { hexToHsl, hexToRgb } from '@palett/convert'
 import { DyeFactory }         from '@palett/dye'
 import { HEX, HSL, RGB }      from '@palett/enum-color-space'
 import { INVERSE }            from '@palett/enum-font-effects'
-import { camelToSnake }       from '@spare/phrasing'
-import { makeReplaceable }    from '@spare/translator'
+// import { camelToSnake }       from '@spare/phrasing'
+// import { makeReplaceable }    from '@spare/translator'
 import { mapper }             from '@vect/vector-mapper'
 import { ColorGroups }        from '../resources/ColorGroups'
 import { Degrees }            from '../resources/Degrees'
 
-const lexicon = [
-  [/light/gi, 'l'],
-  [/deep/gi, 'd']
-] |> makeReplaceable
+// const lexicon = [
+//   [/light/gi, 'l'],
+//   [/deep/gi, 'd']
+// ] |> makeReplaceable
 
-export const shortenDescription = name => name.replace(lexicon, x => camelToSnake(x, '.'))
+// export const shortenDescription = name => name.replace(lexicon, x => camelToSnake(x, '.'))
 
 export function palettCrostab({
                                 space = HEX,
@@ -34,5 +34,6 @@ export function palettCrostab({
       ? crostab.mutate(hex => hex |> dyeFactory(hex))
       : crostab.mutate(xyz => mapper(xyz, v => v.toFixed(0).padStart(3))  |> dyeFactory(xyz))
   }
-  return crostab.mutateBanner(shortenDescription)
+  return crostab
+    // .mutateBanner(shortenDescription)
 }

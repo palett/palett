@@ -1,4 +1,0 @@
-124 error Error: Command failed with exit code 128: git push --follow-tags --no-verify --atomic origin master
-124 error fatal: unable to access 'https://github.com/palett/palett/': Failed to connect to github.com port 443: Connection timed out
-124 error     at makeError (/home/hazen/banyan/palett/node_modules/execa/lib/error.js:59:11)
-124 error     at handlePromise (/home/hazen/banyan/palett/node_modules/execa/index.js:114:26)

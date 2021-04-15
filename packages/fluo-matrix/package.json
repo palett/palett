@@ -16,15 +16,15 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@aryth/bound-matrix": "^0.3.15",
+    "@aryth/bound-matrix": "^0.3.16",
     "@palett/fluo-vector": "^0.7.6",
     "@palett/presets": "^0.7.6",
     "@palett/projector-factory": "^0.7.6",
     "@typen/nullish": "^0.1.16",
-    "@vect/enum-matrix-directions": "^0.3.8",
-    "@vect/matrix": "^0.3.8",
-    "@vect/object-select": "^0.3.8",
-    "@vect/vector-mapper": "^0.3.8"
+    "@vect/enum-matrix-directions": "^0.3.9",
+    "@vect/matrix": "^0.3.9",
+    "@vect/object-select": "^0.3.9",
+    "@vect/vector-mapper": "^0.3.9"
   },
   "devDependencies": {
     "@texting/charset-fullwidth": "^0.0.6"
