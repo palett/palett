@@ -4,16 +4,22 @@ import { FUN, STR }         from '@typen/enum-data-types'
 import { Callable }         from '../util/Callable'
 import { narrate }          from './narrate'
 
+const NAME = 'name'
+
 /** @type {function} */
 export class Pal extends Callable {
-  /** @type {string}   */ name = ''
+  // /** @type {string}   */ name = ''
   /** @type {string}   */ des = ''
   /** @type {number}   */ ind = 0
   /** @type {Function} */ log = console.log
   /** @type {Function} */ att = void 0
   constructor(name, { indent = 0, logger, attach } = {}) {
     super(text => narrate(text, this))
-    if (name) this.name = name
+    Object.defineProperty(
+      this,
+      NAME,
+      { value: name ?? '', writable: true }
+    )
     if (indent) this.ind = indent
     if (logger) this.log = logger
     if (attach) this.attach(attach)
