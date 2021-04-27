@@ -1,6 +1,6 @@
 import { CarPlants } from '@foba/object-string'
+import { Cards }     from '@palett/cards'
 import { logger }    from '@spare/logger'
-import { Palett }    from 'palett'
 import { Hatsu }     from '../index'
 
 const ConsoleColors = {
@@ -24,5 +24,5 @@ hatsu.yellow.italic.inverse(CarPlants.SantAgata) |> console.log
 hatsu.red.ext.bold(CarPlants.Angelholm) |> logger
 hatsu.black.inverse.bold(CarPlants.Gaydon) |> logger
 hatsu.red.ext(CarPlants.Stuttgart) |> logger
-hatsu.hex(Palett.indigo.accent_2, CarPlants.Maranello) |> logger
+hatsu.hex(Cards.indigo.accent_2, CarPlants.Maranello) |> logger
 
