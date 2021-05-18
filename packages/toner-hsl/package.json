@@ -14,6 +14,9 @@
     "pub": "npm publish",
     "test": "node -r @babel/register test/test.index.js"
   },
+  "dependencies": {
+    "@aryth/math": "^0.3.19"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hoyeungw/palett"

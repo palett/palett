@@ -1,4 +1,4 @@
-const constraint = (x, min, max) => x > max ? max : x < min ? min : x
+import { constraint } from '@aryth/math'
 
 export const toner = (hsl, dh, ds, dl) => {
   hsl[0] = constraint(hsl[0] + dh, 0, 360)

@@ -1,6 +1,5 @@
+import { constraint }         from '@aryth/math'
 import { hexToHsl, hslToHex } from '@palett/convert'
-
-const constraint = (x, min, max) => x > max ? max : x < min ? min : x
 
 export const toner = (hex, dh, ds, dl) => {
   let hsl = hex |> hexToHsl
