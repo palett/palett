@@ -16,7 +16,7 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@ject/oneself": "^0.0.10",
+    "@ject/oneself": "^0.0.12",
     "@palett/enum-color-space": "^0.7.8",
     "@palett/util-ansi": "^0.7.8"
   },
