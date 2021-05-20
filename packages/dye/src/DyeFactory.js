@@ -1,12 +1,7 @@
-import { HEX, HSL, RGB }                   from '@palett/enum-color-space'
-import { hexToAnsi, hslToAnsi, rgbToAnsi } from '@palett/util-ansi'
-import { assignEffects, Dye }              from './Dye'
-
-const spaceToAnsi = space =>
-  space === RGB ? rgbToAnsi :
-    space === HEX ? hexToAnsi :
-      space === HSL ? hslToAnsi :
-        rgbToAnsi
+import { HEX, HSL, INT, RGB }                         from '@palett/enum-color-space'
+import { assignHex, assignHsl, assignInt, assignRgb } from './assignColor'
+import { assignEffects }                              from './assignEffects'
+import { Dye }                                        from './Dye'
 
 
 /** @type {Function} */
@@ -26,14 +21,21 @@ export class DyeFactory {
    * @returns {DyeFactory|Function}
    */
   static build(colorSpace, effects) {
-    const conf = { ansi: colorSpace|> spaceToAnsi, head: '', tail: '' }
+    const conf = { ansi: colorSpace|> assignerSelector, head: '', tail: '' }
     if (effects?.length) assignEffects.call(conf, effects)
     return Dye.bind(conf)
   }
   static prep(colorSpace, ...effects) {
-    const conf = { ansi: colorSpace|> spaceToAnsi, head: '', tail: '' }
+    const conf = { ansi: colorSpace|> assignerSelector, head: '', tail: '' }
     if (effects?.length) assignEffects.call(conf, effects)
     return Dye.bind(conf)
   }
 }
+
+const assignerSelector = space =>
+  space === RGB ? assignRgb :
+    space === HEX ? assignHex :
+      space === HSL ? assignHsl :
+        space === INT ? assignInt :
+          assignRgb
 
