@@ -34,7 +34,5 @@ export const Presets = {
   viola: VIOLA
 }
 
-export { randPreset }   from './src/randPreset'
-export { tapPresets }   from './src/tapPresets'
-export { presetToFlat } from './src/hexPresetToDye/presetToFlat'
-export { presetToLeap } from './src/hexPresetToDye/presetToLeap'
+export { randPreset } from './src/randPreset'
+export { tapPresets } from './src/tapPresets'
