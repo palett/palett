@@ -1,7 +1,9 @@
 export const CLR_ALL = '0'
-export const ESC = '\u001b'
+export const ESC = ''
 
-export const L = '\u001b['
+export const CSI = '['
+export const SGR = 'm'
+export const L = '['
 export const R = 'm'
 export const SC = ';'
 
