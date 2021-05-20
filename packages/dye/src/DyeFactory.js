@@ -38,4 +38,3 @@ const assignerSelector = space =>
       space === HSL ? assignHsl :
         space === INT ? assignInt :
           assignRgb
-

@@ -9,8 +9,9 @@ import { assignRgb } from './assignColor'
  * @returns {function(string):string}
  */
 export function Dye(color) {
-  const conf                              = { head: this.head, tail: this.tail },
-        { ansi: assignColor = assignRgb } = this
+  const self                                                    = this ?? {},
+        { ansi: assignColor = assignRgb, head = '', tail = '' } = self,
+        conf                                                    = { head, tail }
   if (color) assignColor.call(conf, color)
   return dye.bind(conf)
 }
