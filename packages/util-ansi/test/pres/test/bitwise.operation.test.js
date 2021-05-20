@@ -2,7 +2,9 @@ import { logger, xr } from '@spare/logger'
 
 {
   const candidates = [
+    -1,
     0,
+    1,
     31,
     255,
     511,
