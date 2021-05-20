@@ -1,0 +1,36 @@
+{
+  "name": "@palett/enum-ansi-codes",
+  "version": "0.7.9",
+  "description": "A colorant to string",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "pub": "npm publish",
+    "test": "node -r @babel/register test/test.index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoyeungw/palett/enum-ansi-codes.git"
+  },
+  "keywords": [
+    "chalk",
+    "color"
+  ],
+  "author": {
+    "name": "Hoyeung Wong",
+    "email": "hoyeungw@outlook.com",
+    "url": "https://github.com/hoyeungw"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hoyeungw/palett/enum-ansi-codes"
+  },
+  "homepage": "https://github.com/hoyeungw/palett/enum-ansi-codes#readme",
+  "gitHead": "7090eaa06acd7479d1af0450344558ef28a191e7"
+}

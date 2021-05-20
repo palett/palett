@@ -1,1 +1,1 @@
-export { RGB, HSL, HEX } from './resources/colorSpace'
+export { RGB, HSL, HEX, INT } from './resources/colorSpace'
