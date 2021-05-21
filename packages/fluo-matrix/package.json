@@ -21,13 +21,13 @@
     "@palett/presets": "^0.8.1",
     "@palett/projector-factory": "^0.8.1",
     "@typen/nullish": "^0.1.16",
-    "@vect/enum-matrix-directions": "^0.3.9",
-    "@vect/matrix": "^0.3.9",
-    "@vect/object-select": "^0.3.9",
-    "@vect/vector-mapper": "^0.3.9"
+    "@vect/enum-matrix-directions": "^0.3.10",
+    "@vect/matrix": "^0.3.10",
+    "@vect/object-select": "^0.3.10",
+    "@vect/vector-mapper": "^0.3.10"
   },
   "devDependencies": {
-    "@texting/charset-fullwidth": "^0.0.9"
+    "@texting/charset-fullwidth": "^0.0.10"
   },
   "repository": {
     "type": "git",

@@ -21,12 +21,12 @@
     "@palett/fluo-vector": "^0.8.1",
     "@palett/presets": "^0.8.1",
     "@palett/projector-factory": "^0.8.1",
-    "@spare/string-value": "^0.11.15",
-    "@texting/charset-fullwidth": "^0.0.9",
-    "@texting/charset-halfwidth": "^0.0.9",
+    "@spare/string-value": "^0.11.16",
+    "@texting/charset-fullwidth": "^0.0.10",
+    "@texting/charset-halfwidth": "^0.0.10",
     "@typen/literal": "^0.1.16",
     "@typen/nullish": "^0.1.16",
-    "@vect/object-update": "^0.3.9"
+    "@vect/object-update": "^0.3.10"
   },
   "repository": {
     "type": "git",
