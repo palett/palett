@@ -11,13 +11,13 @@ export class DyeFactory extends DyeFab {
   static int(...style) { return DyeFactory.prototype.make.bind(DyeFab.build(INT, style)) }
 
   make(color) {
-    const local = this?.slice() ?? DyeFab.shallow()
+    const local = this?.slice?.call(this) ?? DyeFab.shallow()
     if (color) this.encolor.call(local, color)
     return DyeFab.prototype.render.bind(local)
   }
 
   render(color, text) {
-    const local = this?.slice() ?? DyeFab.shallow()
+    const local = this?.slice?.call(this) ?? DyeFab.shallow()
     if (color) this.encolor.call(local, color)
     return DyeFab.prototype.render.call(local, text)
   }
