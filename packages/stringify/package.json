@@ -1,0 +1,44 @@
+{
+  "name": "@palett/stringify",
+  "version": "0.8.2",
+  "description": "A color converter among RGB, HEX and HSL.",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "pub": "npm publish",
+    "test": "node -r @babel/register test/test.index.js"
+  },
+  "dependencies": {
+    "@palett/fluo": "^0.8.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoyeungw/palett"
+  },
+  "keywords": [
+    "color",
+    "palett",
+    "convert",
+    "rgb",
+    "hex",
+    "rgb",
+    "hsl"
+  ],
+  "author": {
+    "name": "Hoyeung Wong",
+    "email": "hoyeungw@outlook.com",
+    "url": "https://github.com/hoyeungw"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hoyeungw/palett"
+  },
+  "homepage": "https://github.com/hoyeungw/palett/rgb#readme",
+  "gitHead": "7090eaa06acd7479d1af0450344558ef28a191e7"
+}
