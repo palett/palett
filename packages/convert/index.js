@@ -15,4 +15,5 @@ export { intToRgb } from './src/intToRgb'
 export { intToHex } from './src/intToHex'
 export { intToHsl } from './src/intToHsl'
 
+// omni converter
 export { Conv } from './src/Conv'

@@ -1,3 +1,9 @@
-import { Fluo } from '@palett/fluo'
+import { Fluo }     from '@palett/fluo'
+import { xyzToStr } from './xyzToStr'
 
-export function hslToStr(hsl) { return Fluo.hsl.call(this, hsl, hsl) }
+/**
+ *
+ * @param {number[]} hsl
+ * @return {string}
+ */
+export function hslToStr(hsl) { return Fluo.hsl.call(this, hsl|> xyzToStr, hsl) }

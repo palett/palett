@@ -1,3 +1,9 @@
-import { Fluo } from '@palett/fluo'
+import { Fluo }     from '@palett/fluo'
+import { xyzToStr } from './xyzToStr'
 
-export function rgbToStr(rgb) { return Fluo.rgb.call(this, rgb, rgb) }
+/**
+ *
+ * @param {number[]} rgb
+ * @return {string}
+ */
+export function rgbToStr(rgb) { return Fluo.rgb.call(this, rgb|> xyzToStr, rgb) }
