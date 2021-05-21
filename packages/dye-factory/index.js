@@ -1,11 +1,4 @@
-import { DyeFactory } from './src/DyeFactory'
-
-export { DyeFactory } from './src/DyeFactory'
-
-/**
- *
- * @param space
- * @param effects
- * @returns {Function} return a dye, a function which takes color as argument and returns dye function
- */
-export const PrepDye = (space, ...effects) => DyeFactory.build(space, effects)
+export { DyeFactory }                                        from './src/DyeFactory'
+export { enstyle }                                           from './src/enstyle'
+export { selectEncolor, pushHex, pushHsl, pushInt, pushRgb } from './src/encolor'
+export { DyeFab }                                            from './src/DyeFab'

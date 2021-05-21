@@ -1,8 +1,8 @@
 import { Indigo } from '@palett/cards'
 import { logger } from '@spare/logger'
-import { Panel }  from '../util/panel'
+import { DyeFab } from '../util/dyeFab'
 
-const panel = Panel.build()
+const panel = DyeFab.build()
 
 panel.assignHex(Indigo.lighten_1)
 

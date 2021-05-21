@@ -5,7 +5,7 @@ import {
 import { excite } from './excite'
 
 /** @param {string[]} style */
-export function assignStyle(style) {
+export function enstyle(style) {
   if (!style?.length) return this
   excite.call(this)
   for (let t of style)

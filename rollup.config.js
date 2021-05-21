@@ -2,13 +2,13 @@ import babel          from '@rollup/plugin-babel'
 import commonjs       from '@rollup/plugin-commonjs'
 import json           from '@rollup/plugin-json'
 import nodeResolve    from '@rollup/plugin-node-resolve'
-import { decoObject } from '@spare/logger'
-import fileInfo       from 'rollup-plugin-fileinfo'
+// import { decoObject } from '@spare/logger'
+// import fileInfo       from 'rollup-plugin-fileinfo'
 
 const { name, dependencies, main, module } = require(process.cwd() + '/package.json')
 
-console.log('Executing', name, process.cwd())
-console.log('Dependencies', decoObject(dependencies ?? {}))
+// console.log('Executing', name, process.cwd())
+// console.log('Dependencies', decoObject(dependencies ?? {}))
 
 export default [
   {
@@ -40,7 +40,7 @@ export default [
         ]
       }),
       json(),
-      fileInfo(),
+      // fileInfo(),
     ]
   }
 ]

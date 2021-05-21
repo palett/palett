@@ -1,53 +1,29 @@
-import { assignEffects, assignHex, assignHsl, assignInt, assignRgb, Dye } from '@palett/dye'
-import { HEX, HSL, INT, RGB }                                             from '@palett/enum-color-space'
+import { DyeFab }  from './DyeFab'
+import { pushRgb } from './encolor'
 
-
-/** @type {Function} */
-export class DyeFactory {
-  /** @type {Function} */ ansi
-  /** @type {string} */ head
-  /** @type {string} */ tail
-
-  /**
-   *
-   * @param {Function} ansi
-   * @param {string} head
-   * @param {string} tail
-   * @returns {Dye|Function}
-   */
-  constructor(ansi, head, tail) {
-    this.ansi = ansi
-    this.head = head
-    this.tail = tail
-    return Dye.bind(this)
+export class DyeFactory extends DyeFab {
+  constructor(space, style) {
+    super()
+    if (space) this.setEncolor(space)
+    if (style) this.enstyle(style)
   }
 
-  /**
-   * @param {string} colorSpace
-   * @param {string[]} effects
-   * @returns {Dye|Function}
-   */
-  static build(colorSpace, effects) {
-    const conf = { ansi: colorSpace|> assignerSelector, head: '', tail: '' }
-    if (effects?.length) assignEffects.call(conf, effects)
-    // console.log(conf)
-    return Dye.bind(conf)
+  static build(space, styles) {
+    const conf = DyeFab.build().enstyle(styles).setEncolor(space)
+    return DyeFactory.prototype.make.bind(conf)
   }
 
-  /**
-   * @param {string} colorSpace
-   * @param {...string} effects
-   * @returns {Dye|Function}
-   */
-  static prep(colorSpace, ...effects) {
-    return DyeFactory.build(colorSpace, effects)
+  static prep(space, ...styles) {
+    const conf = DyeFab.build().enstyle(styles).setEncolor(space)
+    return DyeFactory.prototype.make.bind(conf)
+  }
+
+  make(color) {
+    const self = this ?? (DyeFab.prototype.init.call({}))
+    const conf = DyeFab.prototype.slice.call(self)
+    const { encolor = pushRgb } = self
+    if (color) encolor.call(conf, color)
+    return DyeFab.prototype.render.bind(conf)
   }
 }
-
-const assignerSelector = space =>
-  space === RGB ? assignRgb :
-    space === HEX ? assignHex :
-      space === HSL ? assignHsl :
-        space === INT ? assignInt :
-          assignRgb
 
