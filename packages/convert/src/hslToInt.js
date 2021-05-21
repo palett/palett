@@ -8,7 +8,7 @@ import { hf }    from '../utils/hsl/hf'
  * @param {number} l
  * @returns {number}
  */
-export function hslToRgb([ h, s, l ]) {
+export function hslToInt([ h, s, l ]) {
   s /= 100
   l /= 100
   const
