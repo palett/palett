@@ -1,4 +1,3 @@
-export const rgbToStr = (rgb) => {
-  const text = rgb.map(x => x.padStart(3))
-  if (this) {  }
-}
+import { Fluo } from '@palett/fluo'
+
+export function rgbToStr(rgb) { return Fluo.rgb.call(this, rgb, rgb) }
