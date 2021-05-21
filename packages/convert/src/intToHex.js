@@ -1,0 +1,1 @@
+export const intToHex = (int) => '#' + int.toString(16).toUpperCase().padStart(6, '0')

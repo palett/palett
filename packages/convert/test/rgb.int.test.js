@@ -5,7 +5,7 @@ import { logger, xr } from '@spare/logger'
 import { intToRgb }   from '../src/intToRgb'
 import {  rgbToInt }  from '../src/rgbToInt'
 
-export const xtermPreset = {
+export const XTERM = {
   noir: [ 0, 0, 0 ],
   rouge: [ 205, 0, 0 ],
   vert: [ 0, 205, 0 ],
@@ -26,7 +26,7 @@ export const xtermPreset = {
 
 const dye = DyeFactory.build(RGB, [ INVERSE ])
 
-for (let [ key, rgb, int ] of Object.entries(xtermPreset)) {
+for (let [ key, rgb, int ] of Object.entries(XTERM)) {
   xr()
     .p(key.padStart(16))
     .rgb(dye(rgb)(rgb.map(x => String(x).padStart(3))))

@@ -1,4 +1,4 @@
-import { hexToRgb } from './hexToRgb'
-import { rgbToHsl } from './rgbToHsl'
+import { hexToInt } from './hexToInt'
+import { intToHsl } from './intToHsl'
 
-export const hexToHsl = hex => hex |> hexToRgb |> rgbToHsl
+export const hexToHsl = hex => hex |> hexToInt |> intToHsl

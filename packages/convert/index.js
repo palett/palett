@@ -9,5 +9,8 @@ export { hexToInt } from './src/hexToInt'
 // HSL to ***
 export { hslToRgb } from './src/hslToRgb'
 export { hslToHex } from './src/hslToHex'
+
 // int to ***
 export { intToRgb } from './src/intToRgb'
+export { intToHex } from './src/intToHex'
+export { intToHsl } from './src/intToHsl'
