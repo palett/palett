@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@ject/oneself": "^0.0.12",
+    "@palett/dye-factory": "^0.7.9",
     "@palett/enum-color-space": "^0.7.9",
     "@palett/enum-font-effects": "^0.7.9",
     "@palett/enum-ansi-codes": "^0.7.9",
