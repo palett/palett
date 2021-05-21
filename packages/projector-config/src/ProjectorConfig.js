@@ -1,11 +1,11 @@
 import { max as keepFloor, min as keepCeil } from '@aryth/comparer'
 import { hexToHsl }                          from '@palett/convert'
-import { DyeFactory }                        from '@palett/dye-factory'
+import { DyeFab, DyeFactory }                from '@palett/dye-factory'
 import { HSL }                               from '@palett/enum-color-space'
 import { parseBound }                        from './parseBound'
 
-export const leverage = ([x, y, z], delta) => [x / delta, y / delta, z / delta]
-export const minus = ([x_, y_, z_], [_x, _y, _z]) => [x_ - _x, y_ - _y, z_ - _z]
+export const leverage = ([ x, y, z ], delta) => [ x / delta, y / delta, z / delta ]
+export const minus = ([ x_, y_, z_ ], [ _x, _y, _z ]) => [ x_ - _x, y_ - _y, z_ - _z ]
 export const scale = (x, lo, lev, min, hi) => keepCeil((keepFloor(x, lo) - lo) * lev + min, hi)
 
 /**
@@ -30,7 +30,8 @@ export class ProjectorConfig {
    * @param {string[]} effects
    */
   constructor(leapNum, leapHSL, napHSL, effects) {
-    this.fab = DyeFactory.build(HSL, effects)
+    // this.fab = DyeFactory.build(HSL, effects)
+    this.fab = DyeFactory.prototype.make.bind(DyeFab.build(HSL, effects))
     this.lo = leapNum.min
     this.lev = !leapNum.dif ? 0 : leverage(leapHSL.dif, leapNum.dif)
     this.min = leapHSL.min
@@ -44,9 +45,9 @@ export class ProjectorConfig {
    */
   static fromHEX(bound, preset) {
     const
-      max = preset.max |> hexToHsl,
-      min = preset.min |> hexToHsl,
-      nap = preset.na |> hexToHsl,
+      max     = preset.max |> hexToHsl,
+      min     = preset.min |> hexToHsl,
+      nap     = preset.na |> hexToHsl,
       effects = preset.effects
     return new ProjectorConfig(parseBound(bound), { min, dif: minus(max, min) }, nap, effects)
   }
