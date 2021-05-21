@@ -1,6 +1,6 @@
 {
   "name": "@palett/projector-config",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "A debug tool",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -16,10 +16,10 @@
   },
   "dependencies": {
     "@aryth/comparer": "^0.3.19",
-    "@palett/convert": "^0.8.0",
-    "@palett/dye": "^0.8.0",
-    "@palett/dye-factory": "^0.8.0",
-    "@palett/enum-color-space": "^0.8.0",
+    "@palett/convert": "^0.8.1",
+    "@palett/dye": "^0.8.1",
+    "@palett/dye-factory": "^0.8.1",
+    "@palett/enum-color-space": "^0.8.1",
     "@typen/nullish": "^0.1.16"
   },
   "repository": {

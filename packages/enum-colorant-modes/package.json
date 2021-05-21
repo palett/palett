@@ -1,6 +1,6 @@
 {
   "name": "@palett/enum-colorant-modes",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "A colorant to string",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -16,7 +16,7 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@palett/enum-color-space": "^0.8.0"
+    "@palett/enum-color-space": "^0.8.1"
   },
   "repository": {
     "type": "git",
