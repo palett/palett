@@ -13,7 +13,7 @@ export class DyeFab {
   static prep(...effects) { return new DyeFab().enstyle(effects) }
   static shallow() { return { head: '', tail: '' } }
   reboot() { return this.head = '', this.tail = '', this }
-  slice() { return { head: this.head, tail: this.tail } }
+  slice() { return { head: this.head ?? '', tail: this.tail ?? '' } }
   copy() { return new DyeFab().assign(this) }
   /**
    * @param {string} head

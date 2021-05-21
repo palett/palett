@@ -15,5 +15,11 @@ export class DyeFactory extends DyeFab {
     if (color) this.encolor.call(local, color)
     return DyeFab.prototype.render.bind(local)
   }
+
+  render(color, text) {
+    const local = this?.slice() ?? DyeFab.shallow()
+    if (color) this.encolor.call(local, color)
+    return DyeFab.prototype.render.call(local, text)
+  }
 }
 
