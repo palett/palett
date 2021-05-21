@@ -1,6 +1,6 @@
 {
   "name": "@palett/convert",
-  "version": "0.8.2",
+  "version": "0.8.3",
   "description": "A color converter among RGB, HEX and HSL.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -15,8 +15,8 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@ject/oneself": "^0.0.12",
-    "@aryth/math": "^0.3.19"
+    "@aryth/math": "^0.3.19",
+    "@ject/oneself": "^0.0.12"
   },
   "repository": {
     "type": "git",
