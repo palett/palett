@@ -1,6 +1,6 @@
 {
   "name": "@palett/stringify",
-  "version": "0.8.4",
+  "version": "0.8.5",
   "description": "A color converter among RGB, HEX and HSL.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -15,7 +15,7 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@palett/fluo": "^0.8.4"
+    "@palett/fluo": "^0.8.5"
   },
   "repository": {
     "type": "git",
