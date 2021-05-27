@@ -16,6 +16,7 @@
     "test-jest": "jest"
   },
   "dependencies": {
+    "@palett/dye-factory": "^0.8.3",
     "@palett/fluo-entries": "^0.8.3",
     "@palett/fluo-matrix": "^0.8.3",
     "@palett/fluo-vector": "^0.8.3",
