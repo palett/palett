@@ -1,6 +1,6 @@
 {
   "name": "@palett/fluo-vector",
-  "version": "0.8.3",
+  "version": "0.8.4",
   "description": "A colorant to string",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -17,8 +17,8 @@
   },
   "dependencies": {
     "@aryth/bound-vector": "^0.3.19",
-    "@palett/presets": "^0.8.3",
-    "@palett/projector-factory": "^0.8.3",
+    "@palett/presets": "^0.8.4",
+    "@palett/projector-factory": "^0.8.4",
     "@typen/nullish": "^0.1.16",
     "@vect/vector-mapper": "^0.3.10"
   },
