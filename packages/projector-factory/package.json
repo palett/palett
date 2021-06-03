@@ -1,6 +1,6 @@
 {
   "name": "@palett/projector-factory",
-  "version": "0.8.6",
+  "version": "0.8.7",
   "description": "A debug tool",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@ject/oneself": "^0.0.12",
-    "@palett/projector-config": "^0.8.6"
+    "@palett/projector-config": "^0.8.7"
   },
   "repository": {
     "type": "git",
