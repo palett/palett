@@ -3,7 +3,7 @@ import { decoCrostab, says } from '@spare/logger'
 import { strategies }        from '@valjoux/strategies'
 import { mapKeys }           from '@vect/object'
 import { hexToInt }          from '../../src/hexToInt'
-import { diluteHex }         from '../../utils/hex/diluteHex'
+import { diluteHex }         from '../../utils/hex'
 import { NameMapper }        from '../resources/NAME_MAPPING'
 import { NORMAL, PRIMARY }   from '../resources/NORD'
 
