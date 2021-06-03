@@ -2,8 +2,7 @@ import { diluteHex } from '../utils/hex/diluteHex'
 
 function hexAt(tx, i) {
   let n = tx.codePointAt(i)
-  const seg = n >> 5
-  return seg <= 1 ? n & 0xf : ( n & 0x7 ) + 9
+  return ( n >> 5 ) <= 1 ? n & 0xf : ( n & 0x7 ) + 9
 }
 const dual = n => n << 4 | n
 
@@ -23,7 +22,7 @@ export function hexToInt(hex) {
   }
   if (hi === 4) lo++, hi--
   if (hi === 3) {
-    return (dual(hexAt(hex, lo++)) << 16) | (dual(hexAt(hex, lo++)) << 8) | ( dual(hexAt(hex, lo++)))
+    return ( dual(hexAt(hex, lo++)) << 16 ) | ( dual(hexAt(hex, lo++)) << 8 ) | ( dual(hexAt(hex, lo++)) )
   }
   return 0
 }
