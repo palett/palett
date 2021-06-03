@@ -1,7 +1,7 @@
 import { hexToRgb, hslToRgb, rgbToHsl } from '@palett/convert'
 import { Hatsu }                        from '@palett/hatsu'
 
-import { normal } from './resources/nord'
+import { normal } from './resources/NORD'
 
 // const len = maxLen(Object.keys(normal))
 

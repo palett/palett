@@ -1,8 +1,8 @@
 import { rgbToInt } from './rgbToInt'
+import { dil6 }     from '../utils/hex/diluteDigits'
 
 /**
  * @param {[number,number,number]} rgb
  * @returns {string}
  */
-export const rgbToHex = (rgb) =>
-  '#' + rgbToInt(rgb).toString(16).toUpperCase().padStart(6, '0')
+export const rgbToHex = (rgb) => '#' + dil6(rgbToInt(rgb).toString(16))
