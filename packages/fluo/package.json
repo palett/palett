@@ -1,6 +1,6 @@
 {
   "name": "@palett/fluo",
-  "version": "0.8.7",
+  "version": "0.8.8",
   "description": "A color converter",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -16,12 +16,12 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@palett/dye-factory": "^0.8.7",
-    "@palett/fluo-entries": "^0.8.7",
-    "@palett/fluo-matrix": "^0.8.7",
-    "@palett/fluo-vector": "^0.8.7",
-    "@palett/presets": "^0.8.7",
-    "@palett/projector-factory": "^0.8.7",
+    "@palett/dye-factory": "^0.8.8",
+    "@palett/fluo-entries": "^0.8.8",
+    "@palett/fluo-matrix": "^0.8.8",
+    "@palett/fluo-vector": "^0.8.8",
+    "@palett/presets": "^0.8.8",
+    "@palett/projector-factory": "^0.8.8",
     "@spare/string-value": "^0.11.16",
     "@texting/charset-fullwidth": "^0.0.10",
     "@texting/charset-halfwidth": "^0.0.10",
