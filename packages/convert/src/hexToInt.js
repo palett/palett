@@ -1,7 +1,7 @@
 import { diluteHex } from '../utils/hex/diluteHex'
 
 function hexAt(tx, i) {
-  let n = tx.codePointAt(i)
+  let n = tx.charCodeAt(i)
   return ( n >> 5 ) <= 1 ? n & 0xf : ( n & 0x7 ) + 9
 }
 const dual = n => n << 4 | n

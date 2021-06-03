@@ -38,36 +38,35 @@ const { lapse, result } = strategies({
       }
       let n
       if (hex.length === 4) {
-        const r = ( n = hexAt(hex, 1) ) << 4 | n
-        const g = ( n = hexAt(hex, 2) ) << 4 | n
-        const b = ( n = hexAt(hex, 3) ) << 4 | n
+        const r = ( ( n = hexAt(hex, 1) ) << 4 ) | n
+        const g = ( ( n = hexAt(hex, 2) ) << 4 ) | n
+        const b = ( ( n = hexAt(hex, 3) ) << 4 ) | n
         return r << 16 | g << 8 | b
       }
       if (hex.length === 7) {
-        const r = hexAt(hex, 1) << 4 | hexAt(hex, 2)
-        const g = hexAt(hex, 3) << 4 | hexAt(hex, 4)
-        const b = hexAt(hex, 5) << 4 | hexAt(hex, 6)
+        const r = ( hexAt(hex, 1) << 4 ) | hexAt(hex, 2)
+        const g = ( hexAt(hex, 3) << 4 ) | hexAt(hex, 4)
+        const b = ( hexAt(hex, 5) << 4 ) | hexAt(hex, 6)
         return r << 16 | g << 8 | b
       }
       return 0
     },
     fut(hex) {
       function hexAt(tx, i) {
-        let n = tx.codePointAt(i)
-        const seg = n >> 5
-        return seg <= 1 ? n & 0xf : ( n & 0x7 ) + 9
+        let n = tx.charCodeAt(i)
+        return ( n >> 5 ) <= 1 ? n & 0xf : ( n & 0x7 ) + 9
       }
       let n
       if (hex.length === 4) {
-        const r = ( n = hexAt(hex, 1) ) << 4 | n
-        const g = ( n = hexAt(hex, 2) ) << 4 | n
-        const b = ( n = hexAt(hex, 3) ) << 4 | n
+        const r = ( ( n = hexAt(hex, 1) ) << 4 ) | n
+        const g = ( ( n = hexAt(hex, 2) ) << 4 ) | n
+        const b = ( ( n = hexAt(hex, 3) ) << 4 ) | n
         return r << 16 | g << 8 | b
       }
       if (hex.length === 7) {
-        const r = hexAt(hex, 1) << 4 | hexAt(hex, 2)
-        const g = hexAt(hex, 3) << 4 | hexAt(hex, 4)
-        const b = hexAt(hex, 5) << 4 | hexAt(hex, 6)
+        const r = ( hexAt(hex, 1) << 4 ) | hexAt(hex, 2)
+        const g = ( hexAt(hex, 3) << 4 ) | hexAt(hex, 4)
+        const b = ( hexAt(hex, 5) << 4 ) | hexAt(hex, 6)
         return r << 16 | g << 8 | b
       }
       return 0
