@@ -1,1 +1,3 @@
-export const intToHex = (int) => '#' + int.toString(16).toUpperCase().padStart(6, '0')
+import { dil6 } from '../utils/hex'
+
+export const intToHex = (int) => '#' + dil6(int.toString(16))

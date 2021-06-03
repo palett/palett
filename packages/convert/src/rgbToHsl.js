@@ -1,6 +1,5 @@
-import { round } from '@aryth/math'
-import { bound } from '../utils/rgb/bound'
-import { hue }   from '../utils/rgb/hue'
+import { round }      from '@aryth/math'
+import { bound, hue } from '../utils/rgb'
 
 const THOUSAND = 1000
 
@@ -11,18 +10,18 @@ const THOUSAND = 1000
  * @param {number} b - [0,255]
  * @returns {[number,number,number]} [Hue([0,360]), Saturation([0,100]), Lightness([0,100])]
  */
-export function rgbToHsl ([r, g, b]) {
+export function rgbToHsl([ r, g, b ]) {
   r /= 255
   g /= 255
   b /= 255
-  const { max, sum, dif } = bound([r, g, b])
+  const { max, sum, dif } = bound([ r, g, b ])
   let
     h = hue(r, g, b, max, dif) * 60,
     s = !dif
       ? 0
       : sum > 1
-        ? dif / (2 - sum)
+        ? dif / ( 2 - sum )
         : dif / sum,
     l = sum / 2
-  return [round(h), round(s * THOUSAND) / 10, round(l * THOUSAND) / 10]
+  return [ round(h), round(s * THOUSAND) / 10, round(l * THOUSAND) / 10 ]
 }

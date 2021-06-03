@@ -1,5 +1,5 @@
 import { round } from '@aryth/math'
-import { hf }    from '../utils/hsl/hf'
+import { hf }    from '../utils/hsl'
 
 /**
  *
@@ -17,9 +17,9 @@ export function hslToInt([ h, s, l ]) {
     g = hf(8, h, a, l),
     b = hf(4, h, a, l)
   return (
-    ((round(r * 0xFF) & 0xFF) << 16) +
-    ((round(g * 0xFF) & 0xFF) << 8) +
-    (round(b * 0xFF) & 0xFF)
+    ( ( round(r * 0xFF) & 0xFF ) << 16 ) +
+    ( ( round(g * 0xFF) & 0xFF ) << 8 ) +
+    ( round(b * 0xFF) & 0xFF )
   )
 }
 

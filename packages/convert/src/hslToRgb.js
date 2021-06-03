@@ -1,5 +1,5 @@
 import { round } from '@aryth/math'
-import { hf }    from '../utils/hsl/hf'
+import { hf }    from '../utils/hsl'
 
 /**
  *

@@ -1,6 +1,5 @@
-import { round } from '@aryth/math'
-import { bound } from '../utils/rgb/bound'
-import { hue }   from '../utils/rgb/hue'
+import { round }      from '@aryth/math'
+import { bound, hue } from '../utils/rgb'
 
 const THOUSAND = 1000
 
@@ -20,7 +19,7 @@ export function intToHsl(int) {
     s = !dif
       ? 0
       : sum > 1
-        ? dif / (2 - sum)
+        ? dif / ( 2 - sum )
         : dif / sum,
     l = sum / 2
   return [ round(h), round(s * THOUSAND) / 10, round(l * THOUSAND) / 10 ]

@@ -1,8 +1,7 @@
-import { decoCrostab, logger, says } from '@spare/logger'
-import { strategies }                from '@valjoux/strategies'
-import { hexToRgb }                  from '../../src/hexToRgb'
-import { rgbToInt }                  from '../../src/rgbToInt'
-import { dil2, dil6 }                from '../../utils/hex/diluteDigits'
+import { decoCrostab, says } from '@spare/logger'
+import { strategies }        from '@valjoux/strategies'
+import { hexToRgb }          from '../../src/hexToRgb'
+import { dil2, dil6 }        from '../../utils/hex'
 
 const { lapse, result } = strategies({
   repeat: 1E+6,
