@@ -12,6 +12,15 @@ export function dil2(hex) {
   if (hi <= 0) return '00'
 }
 
+export function dil3(hex) {
+  const hi = hex.length
+  if (hi >= 3) return hex
+  if (hi === 2) return '0' + hex
+  if (hi === 1) return '00' + hex
+  if (hi <= 0) return '000'
+}
+
+
 export function dil6(hex) {
   const hi = hex.length
   if (hi >= 6) return hex
