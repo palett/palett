@@ -1,6 +1,6 @@
 {
   "name": "@palett/says",
-  "version": "0.8.11",
+  "version": "0.8.12",
   "description": "A debug tool",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -15,10 +15,10 @@
     "test": "babel-node test/archive/test.index.js"
   },
   "dependencies": {
-    "@palett/convert": "^0.8.11",
-    "@palett/dye": "^0.8.11",
-    "@palett/enum-font-effects": "^0.8.11",
-    "@palett/flopper": "^0.8.11",
+    "@palett/convert": "^0.8.12",
+    "@palett/dye": "^0.8.12",
+    "@palett/enum-font-effects": "^0.8.12",
+    "@palett/flopper": "^0.8.12",
     "@spare/bracket": "^0.11.16",
     "@spare/deco-string": "^0.11.16",
     "@spare/enum-chars": "^0.11.16",

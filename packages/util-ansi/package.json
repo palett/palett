@@ -1,6 +1,6 @@
 {
   "name": "@palett/util-ansi",
-  "version": "0.8.11",
+  "version": "0.8.12",
   "description": "A color converter",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -16,7 +16,7 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@palett/convert": "^0.8.11"
+    "@palett/convert": "^0.8.12"
   },
   "devDependencies": {
     "@pres/util-colors": "^0.2.2"
