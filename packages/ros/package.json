@@ -1,6 +1,6 @@
 {
   "name": "@palett/ros",
-  "version": "0.8.8",
+  "version": "0.8.9",
   "description": "A debug tool",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -15,8 +15,8 @@
     "test": "babel-node test/archive/test.index.js"
   },
   "dependencies": {
-    "@palett/flopper": "^0.8.8",
-    "@palett/presets": "^0.8.8",
+    "@palett/flopper": "^0.8.9",
+    "@palett/presets": "^0.8.9",
     "@spare/deco-string": "^0.11.16"
   },
   "repository": {
