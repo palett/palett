@@ -1,4 +1,4 @@
-import { hexAt, prolif } from '../utils/hex'
+import { hexAt } from '../utils/hex'
 
 
 /**
