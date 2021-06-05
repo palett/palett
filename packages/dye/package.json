@@ -1,6 +1,6 @@
 {
   "name": "@palett/dye",
-  "version": "0.8.12",
+  "version": "0.8.13",
   "description": "A colorant to string",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -17,11 +17,11 @@
   },
   "dependencies": {
     "@ject/oneself": "^0.0.12",
-    "@palett/dye-factory": "^0.8.12",
-    "@palett/enum-ansi-codes": "^0.8.12",
-    "@palett/enum-color-space": "^0.8.12",
-    "@palett/enum-font-effects": "^0.8.12",
-    "@palett/util-ansi": "^0.8.12"
+    "@palett/dye-factory": "^0.8.13",
+    "@palett/enum-ansi-codes": "^0.8.13",
+    "@palett/enum-color-space": "^0.8.13",
+    "@palett/enum-font-effects": "^0.8.13",
+    "@palett/util-ansi": "^0.8.13"
   },
   "repository": {
     "type": "git",
