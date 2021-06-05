@@ -6,6 +6,6 @@ export {
   UNDERLINE,
   BLINK,
   INVERSE,
-  HIDE,
+  HIDE, INVISIBLE,
   STRIKE,
 } from './resources/fontEffects'
