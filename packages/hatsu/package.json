@@ -1,6 +1,6 @@
 {
   "name": "@palett/hatsu",
-  "version": "0.8.13",
+  "version": "0.8.14",
   "description": "A color converter",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -16,8 +16,8 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@palett/convert": "^0.8.13",
-    "@palett/util-ansi": "^0.8.13"
+    "@palett/convert": "^0.8.14",
+    "@palett/util-ansi": "^0.8.14"
   },
   "repository": {
     "type": "git",
