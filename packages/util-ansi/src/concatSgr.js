@@ -1,1 +1,3 @@
-export const concatSgr = (tx, el) => tx.length ? tx + ';' + el : el
+export const concatSgr = (tx, el) => tx.length
+  ? el.length ? tx + ';' + el : tx
+  : el
