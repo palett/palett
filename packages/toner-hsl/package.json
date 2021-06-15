@@ -1,6 +1,6 @@
 {
   "name": "@palett/toner-hsl",
-  "version": "0.8.14",
+  "version": "0.8.15",
   "description": "A color converter among RGB, HEX and HSL.",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
