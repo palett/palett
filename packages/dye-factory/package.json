@@ -18,7 +18,9 @@
   "dependencies": {
     "@ject/oneself": "^0.0.12",
     "@palett/enum-color-space": "^0.8.14",
-    "@palett/util-ansi": "^0.8.14"
+    "@palett/util-ansi": "^0.8.14",
+    "@palett/convert": "^0.8.14",
+    "@palett/enum-ansi-codes": "^0.8.14"
   },
   "repository": {
     "type": "git",

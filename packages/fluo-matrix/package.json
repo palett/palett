@@ -24,7 +24,10 @@
     "@vect/enum-matrix-directions": "^0.3.10",
     "@vect/matrix": "^0.3.10",
     "@vect/object-select": "^0.3.10",
-    "@vect/vector-mapper": "^0.3.10"
+    "@vect/vector-mapper": "^0.3.10",
+    "@ject/oneself": "^0.0.12",
+    "@palett/convert": "^0.8.14",
+    "@palett/enum-colorant-modes": "^0.8.14"
   },
   "devDependencies": {
     "@texting/charset-fullwidth": "^0.0.10"

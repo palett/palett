@@ -27,7 +27,8 @@
     "@texting/charset-halfwidth": "^0.0.10",
     "@typen/literal": "^0.1.16",
     "@typen/nullish": "^0.1.16",
-    "@vect/object-update": "^0.3.10"
+    "@vect/object-update": "^0.3.10",
+    "@vect/vector": "^0.3.10"
   },
   "repository": {
     "type": "git",
