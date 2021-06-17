@@ -1,4 +1,4 @@
-import { MAKER, RENDER }    from '@palett/enum-colorant-modes'
+import { RENDER }           from '@palett/enum-colorant-modes'
 import { BOLD, ITALIC }     from '@palett/enum-font-effects'
 import { PresetCollection } from '@palett/fluo'
 import { FRESH }            from '@palett/presets'
