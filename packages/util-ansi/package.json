@@ -19,7 +19,7 @@
     "@palett/convert": "^0.8.15"
   },
   "devDependencies": {
-    "@pres/util-colors": "^0.2.2"
+    "@pres/util-colors": "^0.2.19"
   },
   "repository": {
     "type": "git",

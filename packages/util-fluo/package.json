@@ -15,14 +15,14 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/bound-vector": "^0.3.19",
-    "@aryth/comparer": "^0.3.19",
+    "@aryth/bound-vector": "^0.3.21",
+    "@aryth/comparer": "^0.3.21",
     "@palett/convert": "^0.8.15",
     "@palett/dye": "^0.8.15",
     "@typen/enum-check-levels": "^0.1.16",
     "@typen/num-strict": "^0.1.16",
-    "@vect/vector-mapper": "^0.3.10",
-    "@vect/vector-zipper": "^0.3.10"
+    "@vect/vector-mapper": "^0.4.3",
+    "@vect/vector-zipper": "^0.4.3"
   },
   "repository": {
     "type": "git",

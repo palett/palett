@@ -16,15 +16,15 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/comparer": "^0.3.19",
-    "@aryth/rand": "^0.3.19",
-    "@aryth/rank": "^0.3.19",
+    "@aryth/comparer": "^0.3.21",
+    "@aryth/rand": "^0.3.21",
+    "@aryth/rank": "^0.3.21",
     "@palett/cards": "^0.8.15",
     "@palett/enum-color-space": "^0.8.15",
     "@palett/presets": "^0.8.15",
     "@palett/table": "^0.8.15",
-    "@vect/swap": "^0.3.10",
-    "@vect/vector-mapper": "^0.3.10"
+    "@vect/swap": "^0.4.3",
+    "@vect/vector-mapper": "^0.4.3"
   },
   "repository": {
     "type": "git",

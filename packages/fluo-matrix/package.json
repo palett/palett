@@ -16,7 +16,7 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@aryth/bound-matrix": "^0.3.19",
+    "@aryth/bound-matrix": "^0.3.21",
     "@ject/oneself": "^0.0.12",
     "@palett/convert": "^0.8.15",
     "@palett/enum-colorant-modes": "^0.8.15",
@@ -24,13 +24,13 @@
     "@palett/presets": "^0.8.15",
     "@palett/projector-factory": "^0.8.15",
     "@typen/nullish": "^0.1.16",
-    "@vect/enum-matrix-directions": "^0.3.10",
-    "@vect/matrix": "^0.3.10",
-    "@vect/object-select": "^0.3.10",
-    "@vect/vector-mapper": "^0.3.10"
+    "@vect/enum-matrix-directions": "^0.4.3",
+    "@vect/matrix": "^0.4.3",
+    "@vect/object-select": "^0.4.3",
+    "@vect/vector-mapper": "^0.4.3"
   },
   "devDependencies": {
-    "@texting/charset-fullwidth": "^0.0.10"
+    "@texting/charset-fullwidth": "^0.0.12"
   },
   "repository": {
     "type": "git",

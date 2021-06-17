@@ -15,7 +15,7 @@
     "test": "babel-node test/archive/test.index.js"
   },
   "dependencies": {
-    "@aryth/comparer": "^0.3.19",
+    "@aryth/comparer": "^0.3.21",
     "@palett/dye": "^0.8.15",
     "@palett/presets": "^0.8.15",
     "@palett/projector-config": "^0.8.15",
