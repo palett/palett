@@ -6,7 +6,7 @@ import { hexAt, prolif } from '../utils/hex'
  * @returns {number}
  */
 export function hexToInt(hex) {
-  let lo = 0, hi = hex.length
+  let lo = 0, hi = hex?.length
   if (hi === 7) lo++, hi--
   if (hi === 6) {
     const r = ( hexAt(hex, lo++) << 4 ) | hexAt(hex, lo++)
