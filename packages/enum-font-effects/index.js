@@ -5,7 +5,7 @@ export {
   ITALIC,
   UNDERLINE,
   BLINK,
-  INVERSE,
+  REVERSE, INVERSE,
   HIDE, INVISIBLE,
   STRIKE,
 } from './resources/fontEffects'
