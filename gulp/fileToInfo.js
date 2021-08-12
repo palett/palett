@@ -3,7 +3,7 @@ import path from 'path'
 const CWD = process.cwd()
 
 export const fileToInfo = file => {
-  const [filename] = file.history
+  const [ filename ] = file.history
   const extname = path.extname(filename)
   const dirname = path.dirname(filename)
   return {
