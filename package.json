@@ -17,8 +17,10 @@
     "watch-specific": "lerna exec --scope=kalorie -- rollup -c ../../rollup.config.js -w"
   },
   "devDependencies": {
+    "@acq/path": "^0.2.19",
     "@analys/convert": "^0.5.2",
     "@analys/crostab": "^0.5.2",
+    "@analys/table": "^0.5.2",
     "@aryth/rand": "^0.3.23",
     "@aryth/rank": "^0.3.23",
     "@aryth/subset": "^0.3.23",
@@ -34,11 +36,11 @@
     "@babel/register": "^7.15.3",
     "@babel/runtime": "^7.15.3",
     "@flua/json-reader": "^0.3.3",
+    "@flua/vinylize": "^0.3.3",
     "@foba/foo": "^0.5.0",
     "@foba/matrix": "^0.5.0",
     "@foba/object-string": "^0.5.0",
     "@foba/util": "^0.5.0",
-    "merge-stream": "^2.0.0",
     "@foba/vector-number": "^0.5.0",
     "@foba/vector-string": "^0.5.0",
     "@glossa/translator": "^0.1.8",
@@ -80,7 +82,6 @@
     "rollup-plugin-fileinfo": "^0.2.11",
     "rollup-plugin-terser": "^7.0.2",
     "roulett": "^0.1.2",
-    "streamqueue": "^1.1.2",
     "through2": "^4.0.2"
   }
 }

@@ -1,0 +1,22 @@
+  card          ,code       ,rgb             ,hex    ,name           ,year,domain         
+  CotY_21-colors,15-4020 TPX,"rgb(152,180,212)",#98B4D4,Cerulean       ,2000,custom-palettes
+  CotY_21-colors,17-2031 TPX,"rgb(195,68,122) ",#C3447A,Fuchsia Rose   ,2001,custom-palettes
+  CotY_21-colors,19-1664 TCX,"rgb(191,25,50)  ",#BF1932,True Red       ,2002,custom-palettes
+  CotY_21-colors,14-4811 TCX,"rgb(123,196,196)",#7BC4C4,Aqua Sky       ,2003,custom-palettes
+  CotY_21-colors,17-1456 TCX,"rgb(226,88,62)  ",#E2583E,Tigerlily      ,2004,custom-palettes
+  CotY_21-colors,15-5217 TCX,"rgb(83,176,174) ",#53B0AE,Blue Turquoise ,2005,custom-palettes
+  CotY_21-colors,13-1106 TCX,"rgb(222,205,190)",#DECDBE,Sand Dollar    ,2006,custom-palettes
+  CotY_21-colors,19-1557 TCX,"rgb(155,27,48)  ",#9B1B30,Chili Pepper   ,2007,custom-palettes
+  CotY_21-colors,18-3943 TCX,"rgb(90,91,159)  ",#5A5B9F,Blue Iris      ,2008,custom-palettes
+  CotY_21-colors,14-0848 TPG,"rgb(235,191,87) ",#EBBF57,Mimosa         ,2009,custom-palettes
+  CotY_21-colors,15-5519 TCX,"rgb(69,181,170) ",#45B5AA,Turquoise      ,2010,custom-palettes
+  CotY_21-colors,18-2120 TPX,"rgb(214,80,118) ",#D65076,Honeysuckle    ,2011,custom-palettes
+  CotY_21-colors,17-1463 TCX,"rgb(221,65,36)  ",#DD4124,Tangerine Tango,2012,custom-palettes
+  CotY_21-colors,17-5641 TCX,"rgb(0,148,115)  ",#009473,Emerald        ,2013,custom-palettes
+  CotY_21-colors,18-3224 TPX,"rgb(177,99,163) ",#B163A3,Radiant Orchid ,2014,custom-palettes
+  CotY_21-colors,18-1438 TCX,"rgb(150,79,76)  ",#964F4C,Marsala        ,2015,custom-palettes
+  CotY_21-colors,15-3919 TPG,"rgb(149,170,211)",#95AAD3,Serenity       ,2016,custom-palettes
+  CotY_21-colors,13-1520 TCX,"rgb(247,202,201)",#F7CAC9,Rose Quartz    ,2017,custom-palettes
+  CotY_21-colors,15-0343 TCX,"rgb(136,176,75) ",#88B04B,Greenery       ,2018,custom-palettes
+  CotY_21-colors,18-3838 TCX,"rgb(95,75,139)  ",#5F4B8B,Ultra Violet   ,2019,custom-palettes
+  CotY_21-colors,16-1546 TCX,"rgb(255,111,97) ",#FF6F61,Living Coral   ,2020,custom-palettes
