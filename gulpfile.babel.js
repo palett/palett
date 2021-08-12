@@ -1,10 +1,13 @@
-import gulp                 from 'gulp'
-import { convertJsonToCsv } from './gulp/gulpfile.palett.json.to.csv'
+import gulp                     from 'gulp'
+import { convertJsonToCsv }     from './gulp/gulpfile.palett.json.to.csv'
+import { convertCsvToCombined } from './gulp/gulpfile.csv.to.combined'
 
 export {
-  convertJsonToCsv
+  convertJsonToCsv,
+  convertCsvToCombined
 }
 
 export default gulp.series(
-  convertJsonToCsv
+  convertJsonToCsv,
+  convertCsvToCombined
 )
