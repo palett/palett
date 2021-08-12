@@ -30,7 +30,7 @@
     "@vect/vector-mapper": "^0.4.4"
   },
   "devDependencies": {
-    "@texting/charset-fullwidth": "^0.0.12"
+    "@texting/charset-fullwidth": "^0.0.13"
   },
   "repository": {
     "type": "git",
