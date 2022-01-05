@@ -16,14 +16,14 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@aryth/bound-vector": "^0.3.23",
+    "@aryth/bound-vector": "^0.4.2",
     "@ject/oneself": "^0.0.16",
     "@palett/convert": "^0.8.18",
     "@palett/enum-colorant-modes": "^0.8.18",
     "@palett/presets": "^0.8.18",
     "@palett/projector-factory": "^0.8.18",
     "@typen/nullish": "^0.1.17",
-    "@vect/vector-mapper": "^0.4.4"
+    "@vect/vector-mapper": "^0.4.10"
   },
   "repository": {
     "type": "git",

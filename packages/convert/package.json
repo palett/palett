@@ -15,7 +15,7 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/math": "^0.3.23",
+    "@aryth/math": "^0.4.2",
     "@ject/oneself": "^0.0.16"
   },
   "repository": {
