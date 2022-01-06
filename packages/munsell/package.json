@@ -1,0 +1,48 @@
+{
+  "name": "@palett/presets",
+  "version": "0.8.18",
+  "description": "A color converter",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "pub": "npm publish",
+    "test": "node -r @babel/register test/test.index.js"
+  },
+  "dependencies": {
+    "@aryth/rand": "^0.4.2",
+    "@ject/oneself": "^0.0.16",
+    "@palett/cards": "^0.8.18",
+    "@palett/convert": "^0.8.18",
+    "@palett/dye": "^0.8.18",
+    "@palett/toner-hsl": "^0.8.18",
+    "@typen/enum-data-types": "^0.1.17"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoyeungw/palett/presets.git"
+  },
+  "keywords": [
+    "table",
+    "cross table",
+    "bi",
+    "insight",
+    "analytic"
+  ],
+  "author": {
+    "name": "Hoyeung Wong",
+    "email": "hoyeungw@outlook.com",
+    "url": "https://github.com/hoyeungw"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hoyeungw/palett/presets"
+  },
+  "homepage": "https://github.com/hoyeungw/palett/presets#readme",
+  "gitHead": "9ada72b743678a37d673631afbf392374dba6516"
+}
