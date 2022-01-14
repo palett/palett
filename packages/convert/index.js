@@ -19,4 +19,6 @@ export { intToHsl }   from './src/intToHsl'
 // omni converter
 export { Conv } from './src/Conv'
 
-export { hexAt, dil2, dil3, dil6 } from './utils/hex'
+export { hexAt, prolif, dil2, dil3, dil6 } from './utils/hex'
+export { hf }                              from './utils/hsl'
+export { bound, bd, hue }                  from './utils/rgb'

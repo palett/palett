@@ -3,7 +3,7 @@ import { RGB }        from '@palett/enum-color-space'
 import { INVERSE }    from '@palett/enum-font-effects'
 import { logger, xr } from '@spare/logger'
 import { intToRgb }   from '../src/intToRgb'
-import {  rgbToInt }  from '../src/rgbToInt'
+import { rgbToInt }   from '../src/rgbToInt'
 
 export const XTERM = {
   noir: [ 0, 0, 0 ],
@@ -24,14 +24,14 @@ export const XTERM = {
   blanc_brillant: [ 255, 255, 255 ],
 }
 
-const dye = DyeFactory.build(RGB, [ INVERSE ])
+const dyeFab = DyeFactory.build(RGB, [ INVERSE ])
 
 for (let [ key, rgb, int ] of Object.entries(XTERM)) {
   xr()
     .p(key.padStart(16))
-    .rgb(dye(rgb)(rgb.map(x => String(x).padStart(3))))
+    .rgb(dyeFab.make(rgb)(rgb.map(x => String(x).padStart(3))))
     .int(String(int = rgbToInt(rgb)).padStart(8))
-    .rgb(dye(rgb = intToRgb(int))(rgb.map(x => String(x).padStart(3)))) |> logger
+    .rgb(dyeFab.make(rgb = intToRgb(int))(rgb.map(x => String(x).padStart(3)))) |> logger
 }
 
 

@@ -17,7 +17,7 @@
   "dependencies": {
     "@analys/convert": "^0.5.2",
     "@analys/crostab": "^0.5.3",
-    "@aryth/math": "^0.4.2",
+    "@aryth/math": "^0.4.5",
     "@ject/oneself": "^0.0.16",
     "@palett/cards": "^0.8.18",
     "@palett/convert": "^0.8.18",

@@ -1,5 +1,5 @@
-import { round }      from '@aryth/math'
-import { bound, hue } from '../utils/rgb'
+import { round }   from '@aryth/math'
+import { bd, hue } from '../utils/rgb'
 
 const THOUSAND = 1000
 
@@ -13,13 +13,13 @@ export function intToHsl(int) {
   r /= 255
   g /= 255
   b /= 255
-  const { max, sum, dif } = bound([ r, g, b ])
+  const { max, sum, dif } = bd(r, g, b)
   let
     h = hue(r, g, b, max, dif) * 60,
     s = !dif
       ? 0
       : sum > 1
-        ? dif / ( 2 - sum )
+        ? dif / (2 - sum)
         : dif / sum,
     l = sum / 2
   return [ round(h), round(s * THOUSAND) / 10, round(l * THOUSAND) / 10 ]
