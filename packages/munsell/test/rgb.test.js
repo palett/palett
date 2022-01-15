@@ -1,8 +1,8 @@
-import { hexToRgb }         from '@palett/convert'
+import { hexToRgb }           from '@palett/convert'
 import { Fluo }               from '@palett/fluo'
 import { hexToStr, rgbToStr } from '@palett/stringify'
 import { DecoObject, says }   from '@spare/logger'
-import { RGB }              from '../src/types/RGB'
+import { RGB }                from '../src/types/RGB'
 
 export const XTERM = {
   noir: [ 0, 0, 0 ],
@@ -46,12 +46,6 @@ const rgb = RGB.from(RGB_COLLECTION.cyan_brillant)
   const list = rgb.approximatesByTop(5)
   for (let [ hex, name ] of list) {
     `${Fluo.hex(name, hex)} ${hexToStr(hex)} ${rgbToStr(hex|> hexToRgb)}` |> says['approximatesByTop'].br(name)
-  }
-}
-{
-  const list = rgb.analogous(5, 5)
-  for (let [ hex, name ] of list) {
-    `${Fluo.hex(name, hex)} ${hexToStr(hex)} ${rgbToStr(hex|> hexToRgb)}` |> says['analogous'].br(name)
   }
 }
 

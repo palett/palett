@@ -51,7 +51,7 @@ const hsl = HSL.from(HSL_COLLECTION.cyan_brillant)
   }
 }
 {
-  const list = hsl.analogous(5, 5)
+  const list = hsl.analogous(60, 5)
   for (let [ hex, name ] of list) {
     `${Fluo.hex(name, hex)} ${hexToStr(hex)} ${hslToStr(hex|> hexToHsl)}` |> says['analogous'].br(name)
   }
