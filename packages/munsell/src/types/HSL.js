@@ -2,7 +2,6 @@ import * as math                from '@aryth/math'
 import { round }                from '@aryth/math'
 import { distance as d, Polar } from '@aryth/polar'
 import { hf }                   from '@palett/convert'
-import { decoMatrix }           from '@spare/logger'
 import { entriesMinBy }         from '../../utils/minBy'
 import { Cuvette }              from '../Cuvette'
 import { Domain }               from './Domain'
@@ -60,11 +59,17 @@ export class HSL extends Array {
     return d(this.h, h) < epsilon.h && abs(this.s - s) < epsilon.s && abs(this.l - l) < epsilon.l
   }
 
-// bool
-  almostEqualByPolar(polar, polarEpsilon, saturationInterval) {
-    return math.almostEquals(this.h, polar.θ, polarEpsilon.θ) &&
+  /**
+   *
+   * @param {Polar} polar
+   * @param {Polar} epsilon
+   * @param {{min:number,max:number}} saturationInterval
+   * @return {boolean}
+   */
+  almostEqualByPolar(polar, epsilon, saturationInterval) {
+    return math.almostEqual(this.h, polar.θ, epsilon.θ) &&
       saturationInterval.min <= this.s && this.s <= saturationInterval.max &&
-      math.almostEquals(this.l, polar.r, polarEpsilon.r)
+      math.almostEqual(this.l, polar.r, epsilon.r)
   }
 
   comparative(epsilon = 0.1, domain = Domain.fashion) {
