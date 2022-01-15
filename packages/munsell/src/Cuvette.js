@@ -77,14 +77,14 @@ export class Cuvette {
 
   // (string hex, string name)
   comparativeByHsl(hsl) {
-    let [ hex, _ ] = entriesMinBy(this.hexToHsl, kv => distance(hsl, kv[1]))
+    let [ hex, _ ] = entriesMinBy(this.hexToHsl, ([ , tempHsl ]) => distance(hsl, tempHsl))
     return [ hex, this.name(hex) ]
   }
 
   // (string hex, string name)
   comparativeByPolar(polar, s) {
-    const hsl = polarToHsl(polar, s)
-    let [ hex, _ ] = entriesMinBy(this.hexToHsl, kv => distance(hsl, kv[1]))
+    const major = polarToHsl(polar, s)
+    let [ hex, _ ] = entriesMinBy(this.hexToHsl, ([ , hsl ]) => major.distance(hsl))
     return [ hex, this.name(hex) ]
   }
 }
