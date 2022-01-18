@@ -18,6 +18,7 @@ export class RGB extends Array {
   set g(v) { this[1] = v }
   set b(v) { this[2] = v }
 
+  static build(r, g, b) { return new RGB(r, g, b) }
   /** @returns {HSL} [Hue([0,360]), Saturation([0,100]), Lightness([0,100])] */
   toHsl() {
     const r = this.r / 255,
