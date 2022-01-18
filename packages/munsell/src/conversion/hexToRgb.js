@@ -4,7 +4,7 @@ import { RGB }      from '../types/RGB'
 /**
  *
  * @param {string} hex
- * @returns {number[]}
+ * @returns {RGB}
  */
 export function hexToRgb(hex) {
   const int = hexToInt(hex)
