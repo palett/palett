@@ -2,8 +2,11 @@
   "name": "@palett/stringify",
   "version": "0.8.19",
   "description": "A color converter among RGB, HEX and HSL.",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/index.cjs",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.cjs"
+  },
   "files": [
     "dist"
   ],
@@ -40,5 +43,5 @@
     "url": "https://github.com/hoyeungw/palett"
   },
   "homepage": "https://github.com/hoyeungw/palett/rgb#readme",
-  "gitHead": "9ada72b743678a37d673631afbf392374dba6516"
+  "gitHead": "7aacc1919f1babd2ffce9ce2ac3a82cb756791f1"
 }

@@ -2,8 +2,11 @@
   "name": "@palett/fluo-entries",
   "version": "0.8.19",
   "description": "A colorant to string",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/index.cjs",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.cjs"
+  },
   "files": [
     "dist"
   ],
@@ -16,9 +19,9 @@
   },
   "dependencies": {
     "@palett/fluo-vector": "^0.8.19",
-    "@vect/entries-init": "^0.4.10",
-    "@vect/entries-unwind": "^0.4.10",
-    "@vect/entries-zipper": "^0.4.10"
+    "@vect/entries-init": "^0.5.1",
+    "@vect/entries-unwind": "^0.5.1",
+    "@vect/entries-zipper": "^0.5.1"
   },
   "repository": {
     "type": "git",
@@ -38,5 +41,5 @@
     "url": "https://github.com/hoyeungw/palett/fluo-entries"
   },
   "homepage": "https://github.com/hoyeungw/palett/fluo-entries#readme",
-  "gitHead": "9ada72b743678a37d673631afbf392374dba6516"
+  "gitHead": "7aacc1919f1babd2ffce9ce2ac3a82cb756791f1"
 }

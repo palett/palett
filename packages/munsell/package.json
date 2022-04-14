@@ -2,8 +2,11 @@
   "name": "@palett/munsell",
   "version": "0.8.19",
   "description": "A color converter",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/index.cjs",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.cjs"
+  },
   "files": [
     "dist"
   ],
@@ -16,17 +19,17 @@
   },
   "dependencies": {
     "@analys/crostab": "^0.5.3",
-    "@aryth/bound": "^0.4.9",
-    "@aryth/distinct-column": "^0.4.9",
-    "@aryth/flopper": "^0.4.9",
-    "@aryth/math": "^0.4.9",
-    "@aryth/polar": "^0.4.9",
+    "@aryth/bound": "^0.4.10",
+    "@aryth/distinct-column": "^0.4.10",
+    "@aryth/flopper": "^0.4.10",
+    "@aryth/math": "^0.4.10",
+    "@aryth/polar": "^0.4.10",
     "@palett/convert": "^0.8.19",
     "@palett/flopper": "^0.8.19",
-    "@vect/columns-indicator": "^0.4.10",
-    "@vect/matrix-init": "^0.4.10",
-    "@vect/vector-init": "^0.4.10",
-    "@vect/vector-mapper": "^0.4.10"
+    "@vect/columns-indicator": "^0.5.1",
+    "@vect/matrix-init": "^0.5.1",
+    "@vect/vector-init": "^0.5.1",
+    "@vect/vector-mapper": "^0.5.1"
   },
   "devDependencies": {
     "@valjoux/timestamp-pretty": "^0.3.8"
@@ -52,5 +55,5 @@
     "url": "https://github.com/hoyeungw/palett/presets"
   },
   "homepage": "https://github.com/hoyeungw/palett/presets#readme",
-  "gitHead": "9ada72b743678a37d673631afbf392374dba6516"
+  "gitHead": "7aacc1919f1babd2ffce9ce2ac3a82cb756791f1"
 }

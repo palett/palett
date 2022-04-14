@@ -2,8 +2,11 @@
   "name": "@palett/table",
   "version": "0.8.19",
   "description": "A color converter",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/index.cjs",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.cjs"
+  },
   "files": [
     "dist"
   ],
@@ -17,7 +20,7 @@
   "dependencies": {
     "@analys/convert": "^0.5.2",
     "@analys/crostab": "^0.5.3",
-    "@aryth/math": "^0.4.9",
+    "@aryth/math": "^0.4.10",
     "@ject/oneself": "^0.0.16",
     "@palett/cards": "^0.8.19",
     "@palett/convert": "^0.8.19",
@@ -27,15 +30,15 @@
     "@palett/enum-font-effects": "^0.8.19",
     "@spare/string": "^0.13.2",
     "@spare/translator": "^0.13.2",
-    "@vect/columns-mapper": "^0.4.10",
-    "@vect/matrix-mapper": "^0.4.10",
-    "@vect/matrix-transpose": "^0.4.10",
-    "@vect/object-select": "^0.4.10",
-    "@vect/vector-indicator": "^0.4.10",
-    "@vect/vector-init": "^0.4.10",
-    "@vect/vector-mapper": "^0.4.10",
-    "@vect/vector-stat": "^0.4.10",
-    "@vect/vector-zipper": "^0.4.10"
+    "@vect/columns-mapper": "^0.5.1",
+    "@vect/matrix-mapper": "^0.5.1",
+    "@vect/matrix-transpose": "^0.5.1",
+    "@vect/object-select": "^0.5.1",
+    "@vect/vector-indicator": "^0.5.1",
+    "@vect/vector-init": "^0.5.1",
+    "@vect/vector-mapper": "^0.5.1",
+    "@vect/vector-stat": "^0.5.1",
+    "@vect/vector-zipper": "^0.5.1"
   },
   "repository": {
     "type": "git",
@@ -58,5 +61,5 @@
     "url": "https://github.com/hoyeungw/palett/table"
   },
   "homepage": "https://github.com/hoyeungw/palett/table#readme",
-  "gitHead": "9ada72b743678a37d673631afbf392374dba6516"
+  "gitHead": "7aacc1919f1babd2ffce9ce2ac3a82cb756791f1"
 }

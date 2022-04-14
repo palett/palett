@@ -2,8 +2,11 @@
   "name": "@palett/flopper",
   "version": "0.8.19",
   "description": "A color converter",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/index.cjs",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.cjs"
+  },
   "files": [
     "dist"
   ],
@@ -16,15 +19,15 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/comparer": "^0.4.9",
-    "@aryth/rand": "^0.4.9",
-    "@aryth/rank": "^0.4.9",
+    "@aryth/comparer": "^0.4.10",
+    "@aryth/rand": "^0.4.10",
+    "@aryth/rank": "^0.4.10",
     "@palett/cards": "^0.8.19",
     "@palett/enum-color-space": "^0.8.19",
     "@palett/presets": "^0.8.19",
     "@palett/table": "^0.8.19",
-    "@vect/swap": "^0.4.10",
-    "@vect/vector-mapper": "^0.4.10"
+    "@vect/swap": "^0.5.1",
+    "@vect/vector-mapper": "^0.5.1"
   },
   "repository": {
     "type": "git",
@@ -47,5 +50,5 @@
     "url": "https://github.com/hoyeungw/palett/flopper"
   },
   "homepage": "https://github.com/hoyeungw/palett/flopper#readme",
-  "gitHead": "9ada72b743678a37d673631afbf392374dba6516"
+  "gitHead": "7aacc1919f1babd2ffce9ce2ac3a82cb756791f1"
 }

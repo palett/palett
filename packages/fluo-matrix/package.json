@@ -2,8 +2,11 @@
   "name": "@palett/fluo-matrix",
   "version": "0.8.19",
   "description": "A colorant to string",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/index.cjs",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.cjs"
+  },
   "files": [
     "dist"
   ],
@@ -24,10 +27,10 @@
     "@palett/presets": "^0.8.19",
     "@palett/projector-factory": "^0.8.19",
     "@typen/nullish": "^0.1.17",
-    "@vect/enum-matrix-directions": "^0.4.10",
-    "@vect/matrix": "^0.4.10",
-    "@vect/object-select": "^0.4.10",
-    "@vect/vector-mapper": "^0.4.10"
+    "@vect/enum-matrix-directions": "^0.5.1",
+    "@vect/matrix": "^0.5.1",
+    "@vect/object-select": "^0.5.1",
+    "@vect/vector-mapper": "^0.5.1"
   },
   "devDependencies": {
     "@texting/charset-fullwidth": "^0.0.13"
@@ -50,5 +53,5 @@
     "url": "https://github.com/hoyeungw/palett/fluo-matrix"
   },
   "homepage": "https://github.com/hoyeungw/palett/fluo-matrix#readme",
-  "gitHead": "9ada72b743678a37d673631afbf392374dba6516"
+  "gitHead": "7aacc1919f1babd2ffce9ce2ac3a82cb756791f1"
 }

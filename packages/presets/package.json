@@ -2,8 +2,11 @@
   "name": "@palett/presets",
   "version": "0.8.19",
   "description": "A color converter",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/index.cjs",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.cjs"
+  },
   "files": [
     "dist"
   ],
@@ -15,7 +18,7 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/rand": "^0.4.9",
+    "@aryth/rand": "^0.4.10",
     "@ject/oneself": "^0.0.16",
     "@palett/cards": "^0.8.19",
     "@palett/convert": "^0.8.19",
@@ -44,5 +47,5 @@
     "url": "https://github.com/hoyeungw/palett/presets"
   },
   "homepage": "https://github.com/hoyeungw/palett/presets#readme",
-  "gitHead": "9ada72b743678a37d673631afbf392374dba6516"
+  "gitHead": "7aacc1919f1babd2ffce9ce2ac3a82cb756791f1"
 }

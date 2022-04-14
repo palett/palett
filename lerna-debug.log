@@ -1,4 +1,0 @@
-144 error Error: Command failed with exit code 128: git push --follow-tags --no-verify --atomic origin master
-144 error fatal: unable to access 'https://github.com/palett/palett/': Could not resolve host: github.com
-144 error     at makeError (/home/alkindus/banyan/palett/node_modules/execa/lib/error.js:59:11)
-144 error     at handlePromise (/home/alkindus/banyan/palett/node_modules/execa/index.js:114:26)
