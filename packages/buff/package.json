@@ -1,6 +1,6 @@
 {
   "name": "@palett/buff",
-  "version": "0.8.20",
+  "version": "0.9.0",
   "description": "A colorant to string",
   "main": "dist/index.cjs",
   "exports": {
@@ -19,8 +19,8 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@palett/convert": "^0.8.20",
-    "@palett/util-ansi": "^0.8.20"
+    "@palett/convert": "^0.9.0",
+    "@palett/util-ansi": "^0.9.0"
   },
   "repository": {
     "type": "git",
