@@ -30,20 +30,25 @@ $ npm install @palett/<tool-name>
 
 ## Tools
 
-|                                              |                                    |            |
-| -------------------------------------------- | ---------------------------------- | ---------- |
-| [**convert**](packages/convert)              | Convert RGB, HEX or HSL            | util       |
-| [**cards**](packages/cards)                  | Palett color cards                 | constants  |
-| [**presets**](packages/presets)              | Color presets for 'fluoMatrix'           | constants  |
-| [**table**](packages/table)                  | Demo palett color table in console | constants  |
-| [**dye**](packages/dye)                      | Colorify string (by ANSI rule)     | colorant   |
-| [**says**](packages/says)                    | Colored narrate creator             | colorant   |
-| [**hatsu**](packages/hatsu)                  | Chalk-style color string           | colorant   |
-| [**fluoMatrix**](packages/fluo)                    | Index for submodules of 'fluoMatrix'     | colorant   |
-| [**fluoMatrix-vector**](packages/fluo-vector)      | Color array                        | colorant   |
-| [**fluoMatrix-matrix**](packages/fluo-matrix)      | Color 2d-array                     | colorant   |
-| [**fluoMatrix-entries**](packages/fluo-entries)    | Color entries                      | colorant   |
-|                                              |                                    |            |
+|                                                 |                                      |           |
+|-------------------------------------------------|--------------------------------------|-----------|
+| [**convert**](packages/convert)                 | Convert RGB, HEX or HSL              | util      |
+| [**cards**](packages/cards)                     | Palett color cards                   | constants |
+| [**presets**](packages/presets)                 | Color presets for 'fluoMatrix'       | constants |
+| [**table**](packages/table)                     | Demo palett color table in console   | constants |
+| [**dye**](packages/dye)                         | Colorify string (by ANSI rule)       | colorant  |
+| [**says**](packages/says)                       | Colored narrate creator              | colorant  |
+| [**hatsu**](archive/hatsu)                      | Chalk-style color string             | colorant  |
+| [**fluoMatrix**](packages/fluo)                 | Index for submodules of 'fluoMatrix' | colorant  |
+| [**fluoMatrix-vector**](packages/fluo-vector)   | Color array                          | colorant  |
+| [**fluoMatrix-matrix**](packages/fluo-matrix)   | Color 2d-array                       | colorant  |
+| [**fluoMatrix-entries**](packages/fluo-entries) | Color entries                        | colorant  |
+|                                                 |                                      |           |
+
+### Unpublished packages
+- @palett/ros
+- @palett/hatsu
+- @palett/buff
 
 ## Meta
 [LICENSE (MIT)](LICENSE)
