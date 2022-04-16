@@ -26,7 +26,7 @@
     "@palett/presets": "^0.9.0",
     "@palett/projector-factory": "^0.9.0",
     "@typen/nullish": "^0.1.17",
-    "@vect/vector-mapper": "^0.5.1"
+    "@vect/vector-mapper": "^0.5.3"
   },
   "repository": {
     "type": "git",

@@ -14,7 +14,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "rollup -c ../../rollup.config.js",
+    "build": "rollup -c ../../rollup.config.mjs",
     "pub": "npm publish",
     "test": "node -r @babel/register test/test.index.js"
   },
