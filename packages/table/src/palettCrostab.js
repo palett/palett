@@ -2,11 +2,9 @@ import { samplesToCrostab }   from '@analys/convert'
 import { oneself }            from '@ject/oneself'
 import { Cards }              from '@palett/cards'
 import { hexToHsl, hexToRgb } from '@palett/convert'
-import { DyeFactory }         from '@palett/dye'
+import { DyeFactory }         from '@palett/dye-factory'
 import { HEX, HSL, RGB }      from '@palett/enum-color-space'
 import { INVERSE }            from '@palett/enum-font-effects'
-// import { camelToSnake }       from '@spare/phrasing'
-// import { makeReplaceable }    from '@spare/translator'
 import { mapper }             from '@vect/vector-mapper'
 import { ColorGroups }        from '../resources/ColorGroups'
 import { Degrees }            from '../resources/Degrees'
@@ -29,11 +27,11 @@ export function palettCrostab({
     crostab.mutate(space === RGB ? hexToRgb : space === HSL ? hexToHsl : oneself)
   }
   if (dyed) {
-    const dyeFactory = DyeFactory.build(space, [INVERSE])
+    const dyeFactory = DyeFactory.build(space, [ INVERSE ])
     space === HEX
       ? crostab.mutate(hex => hex |> dyeFactory(hex))
       : crostab.mutate(xyz => mapper(xyz, v => v.toFixed(0).padStart(3))  |> dyeFactory(xyz))
   }
   return crostab
-    // .mutateBanner(shortenDescription)
+  // .mutateBanner(shortenDescription)
 }
