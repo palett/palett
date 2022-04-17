@@ -1,6 +1,6 @@
 {
   "name": "@palett/util-fluo",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "A colorant to string",
   "main": "dist/index.cjs",
   "exports": {
@@ -20,8 +20,8 @@
   "dependencies": {
     "@aryth/bound-vector": "^0.4.10",
     "@aryth/comparer": "^0.4.10",
-    "@palett/convert": "^0.9.0",
-    "@palett/dye": "^0.9.0",
+    "@palett/convert": "^0.9.1",
+    "@palett/dye": "^0.9.1",
     "@typen/enum-check-levels": "^0.1.17",
     "@typen/num-strict": "^0.1.17",
     "@vect/vector-mapper": "^0.5.3",
