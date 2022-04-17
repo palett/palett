@@ -32,10 +32,12 @@ export class RGB extends Array {
   }
 
   relative(another) { return new RGB(abs(this.r - another.r), abs(this.g - another.g), abs(this.b - another.b)) }
+
   distance(another) {
     const [ r, g, b ] = this.relative(another)
     return r + g + b
   }
+
   almostEqual(another, epsilon) { return abs(this.r - another.r) < epsilon.r && abs(this.g - another.g) < epsilon.g && abs(this.b - another.b) < epsilon.b }
 
   comparative(epsilon = 0.1, domain = Domain.fashion) {

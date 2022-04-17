@@ -1,11 +1,11 @@
-import * as math                from '@aryth/math'
-import { round }                from '@aryth/math'
-import { distance as d, Polar } from '@aryth/polar'
-import { hf }                   from '@palett/convert'
-import { entriesMinBy }         from '../../utils/minBy'
-import { Cuvette }              from '../Cuvette'
-import { Domain }               from './Domain'
-import { RGB }                  from './RGB'
+import * as math                                    from '@aryth/math'
+import { limitAboveZero, restrictAboveZero, round } from '@aryth/math'
+import { distance as d, Polar }                     from '@aryth/polar'
+import { hf }                                       from '@palett/convert'
+import { entriesMinBy }                             from '../../utils/minBy'
+import { Cuvette }                                  from '../Cuvette'
+import { Domain }                                   from './Domain'
+import { RGB }                                      from './RGB'
 
 const { abs } = Math
 
@@ -14,6 +14,7 @@ export class HSL extends Array {
     super(h, s, l)
   }
   static from([ h, s, l ]) { return new HSL(h, s, l) }
+  static build(h, s, l) { return new HSL(h, s, l) }
 
   get h() { return this[0] }
   get s() { return this[1] }
@@ -43,7 +44,21 @@ export class HSL extends Array {
   // 
   relative(another) {
     const [ h, s, l ] = another
-    return [ d(this.h, h), abs(this.s - s), abs(this.l - l) ]
+    return new HSL(d(this.h, h), abs(this.s - s), abs(this.l - l))
+  }
+
+  mutate(fn) {
+    this.h = fn(this.h)
+    this.s = fn(this.s)
+    this.l = fn(this.l)
+    return this
+  }
+
+  restrict() {
+    this.h = restrictAboveZero(this.h, 360)
+    this.s = limitAboveZero(this.s, 100)
+    this.l = limitAboveZero(this.l, 100)
+    return this
   }
 
 // float
@@ -108,8 +123,6 @@ export class HSL extends Array {
       .map(([ hex, ]) => [ hex, cuvette.name(hex) ])
   }
 
-  // liu haitao
-  // feng zhiwei
   // list<(string hex, string name)>
   analogous(delta, count, domain = Domain.fashion) {
     const cuvette = Cuvette.selectCuvette(domain)
