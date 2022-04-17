@@ -1,43 +1,13 @@
-// (string hex, string name)
-import { CrosTab }            from '@analys/crostab'
-import { Bound }              from '@aryth/bound'
-import { finiteFlopper }      from '@aryth/flopper'
-import * as pol               from '@aryth/polar'
-import { PetalNote }          from '@aryth/polar'
-import * as conv              from '@palett/convert'
-import { init as initMat }    from '@vect/matrix-init'
-import { init as initVec }    from '@vect/vector-init'
-import { iterate }            from '@vect/vector-mapper'
-import { Cuvette }            from './Cuvette'
-import { HSBGrad, HSBGrad2D } from './HSBGrad'
-import { Domain }             from './types/Domain'
-import { HSL }                from './types/HSL'
+import { Bound }         from '@aryth/bound'
+import { finiteFlopper } from '@aryth/flopper'
+import * as pol          from '@aryth/polar'
+import { PetalNote }     from '@aryth/polar'
+import * as conv         from '@palett/convert'
+import { iterate }       from '@vect/vector-mapper'
+import { Cuvette }       from './Cuvette'
+import { Domain }        from './types/Domain'
 
 const { PI, pow, abs, round } = Math
-
-
-// crostab<hsl>
-export function gradientCrostab(hslPair, attrX, attrY, lenX, lenY) {
-  // ((float, float, float) a, (float, float, float) b) for hslPair
-  const [ a, b ] = hslPair
-  const hsbA = HSL.build(a)
-  const hsbB = HSL.build(b)
-  const delta = hsbB - hsbA
-
-  const gradX = new HSBGrad(hsbA, delta / (lenX - 1))
-  const gradY = new HSBGrad(hsbA, delta / (lenY - 1))
-
-  const fnSide = gradX.makeGrad(attrX)
-  const fnHead = gradY.makeGrad(attrY)
-  const fnRows = HSBGrad2D.makeGrad([ gradX, gradY ], attrX, attrY)
-
-  const side = initVec(lenX, x => fnSide(x).toString("f1"))
-  const head = initVec(lenY, y => fnHead(y).toString("f1"))
-  const rows = initMat(lenX, lenY, fnRows)
-
-  return CrosTab.from({ side, head, rows })
-}
-
 
 // list<(string hex, string name)>
 export function rhodoneaFolios(
