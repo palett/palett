@@ -1,5 +1,5 @@
 import { hexToRgb, hslToRgb, rgbToHsl } from '@palett/convert'
-import { Hatsu }                        from '@palett/hatsu'
+import { Hatsu }                        from 'archive/hatsu'
 
 import { normal } from './resources/NORD'
 

@@ -1,4 +1,4 @@
-import { Hatsu } from '@palett/hatsu'
+import { Hatsu } from 'archive/hatsu'
 import { Greys } from 'palett'
 import { Ob }    from 'veho'
 

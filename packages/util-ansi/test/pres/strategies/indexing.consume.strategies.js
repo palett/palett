@@ -1,7 +1,6 @@
-const { says } = require('@palett/says')
-const { decoCrostab } = require('@spare/logger')
-const { makeEmbedded } = require('@foba/util')
-const { strategies } = require('@valjoux/strategies')
+import { makeEmbedded }      from '@foba/util'
+import { decoCrostab, says } from '@spare/logger'
+import { strategies }        from '@valjoux/strategies'
 
 
 const { lapse, result } = strategies({
