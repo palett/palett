@@ -1,8 +1,8 @@
 import { Fluo }               from '@palett/fluo'
 import { hexToStr }           from '@palett/stringify'
 import { DecoVector, logger } from '@spare/logger'
-import { hexToRgb }           from '../src/conversion'
-import { rhodoneaFolios }     from '../src/Munsell.HSL'
+import { hexToRgb }       from '../src/conversion'
+import { rhodoneaFolios } from '../src/rhodoneaFolios'
 
 // '#AE5459': 'Mineral Red',
 const hsl = hexToRgb('#AE5459').toHsl()
