@@ -47,5 +47,8 @@
     "url": "https://github.com/hoyeungw/palett/presets"
   },
   "homepage": "https://github.com/hoyeungw/palett/presets#readme",
-  "gitHead": "7aacc1919f1babd2ffce9ce2ac3a82cb756791f1"
+  "gitHead": "7aacc1919f1babd2ffce9ce2ac3a82cb756791f1",
+  "devDependencies": {
+    "@vect/object-init": "^0.5.3"
+  }
 }
