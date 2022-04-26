@@ -18,14 +18,14 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/bound-vector": "^0.5.0",
-    "@aryth/comparer": "^0.5.0",
+    "@aryth/bound-vector": "^0.5.2",
+    "@aryth/comparer": "^0.5.2",
     "@palett/convert": "^0.9.2",
     "@palett/dye": "^0.9.2",
-    "@typen/enum-check-levels": "^0.1.17",
-    "@typen/num-strict": "^0.1.17",
-    "@vect/vector-mapper": "^0.5.8",
-    "@vect/vector-zipper": "^0.5.8"
+    "@typen/enum-check-levels": "^0.1.19",
+    "@typen/num-strict": "^0.1.19",
+    "@vect/vector-mapper": "^0.5.10",
+    "@vect/vector-zipper": "^0.5.10"
   },
   "repository": {
     "type": "git",

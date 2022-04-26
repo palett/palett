@@ -1,6 +1,4 @@
-import { Hatsu } from 'archive/hatsu'
-import { Greys } from 'palett'
-import { Ob }    from 'veho'
+
 
 const colorTube = Hatsu.hex
 

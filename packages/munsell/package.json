@@ -19,20 +19,20 @@
   },
   "dependencies": {
     "@analys/crostab": "^0.5.12",
-    "@aryth/bound": "^0.5.0",
-    "@aryth/distinct-column": "^0.5.0",
-    "@aryth/flopper": "^0.5.0",
-    "@aryth/math": "^0.5.0",
-    "@aryth/polar": "^0.5.0",
+    "@aryth/bound": "^0.5.2",
+    "@aryth/distinct-column": "^0.5.2",
+    "@aryth/flopper": "^0.5.2",
+    "@aryth/math": "^0.5.2",
+    "@aryth/polar": "^0.5.2",
     "@palett/convert": "^0.9.2",
     "@palett/flopper": "^0.9.2",
-    "@vect/columns-indicator": "^0.5.8",
-    "@vect/matrix-init": "^0.5.8",
-    "@vect/vector-init": "^0.5.8",
-    "@vect/vector-mapper": "^0.5.8"
+    "@vect/columns-indicator": "^0.5.10",
+    "@vect/matrix-init": "^0.5.10",
+    "@vect/vector-init": "^0.5.10",
+    "@vect/vector-mapper": "^0.5.10"
   },
   "devDependencies": {
-    "@valjoux/timestamp-pretty": "^0.3.10"
+    "@valjoux/timestamp-pretty": "^0.3.11"
   },
   "repository": {
     "type": "git",

@@ -18,13 +18,13 @@
     "test": "babel-node test/archive/test.index.js"
   },
   "dependencies": {
-    "@aryth/comparer": "^0.5.0",
+    "@aryth/comparer": "^0.5.2",
     "@palett/dye": "^0.9.2",
     "@palett/presets": "^0.9.2",
     "@palett/projector-config": "^0.9.2",
     "@palett/projector-factory": "^0.9.2",
-    "@typen/nullish": "^0.1.17",
-    "@typen/num-strict": "^0.1.17"
+    "@typen/nullish": "^0.1.19",
+    "@typen/num-strict": "^0.1.19"
   },
   "repository": {
     "type": "git",

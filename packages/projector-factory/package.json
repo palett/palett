@@ -18,7 +18,7 @@
     "test": "babel-node test/archive/test.index.js"
   },
   "dependencies": {
-    "@ject/oneself": "^0.0.16",
+    "@ject/oneself": "^0.0.17",
     "@palett/projector-config": "^0.9.2"
   },
   "repository": {
