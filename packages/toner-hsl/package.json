@@ -1,6 +1,6 @@
 {
   "name": "@palett/toner-hsl",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "A color converter among RGB, HEX and HSL.",
   "main": "dist/index.cjs",
   "exports": {
@@ -18,7 +18,7 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/math": "^0.4.10"
+    "@aryth/math": "^0.5.0"
   },
   "repository": {
     "type": "git",

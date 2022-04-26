@@ -1,6 +1,6 @@
 {
   "name": "@palett/fluo-matrix",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "A colorant to string",
   "main": "dist/index.cjs",
   "exports": {
@@ -19,21 +19,21 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@aryth/bound-matrix": "^0.4.10",
+    "@aryth/bound-matrix": "^0.5.0",
     "@ject/oneself": "^0.0.16",
-    "@palett/convert": "^0.9.1",
-    "@palett/enum-colorant-modes": "^0.9.1",
-    "@palett/fluo-vector": "^0.9.1",
-    "@palett/presets": "^0.9.1",
-    "@palett/projector-factory": "^0.9.1",
+    "@palett/convert": "^0.9.2",
+    "@palett/enum-colorant-modes": "^0.9.2",
+    "@palett/fluo-vector": "^0.9.2",
+    "@palett/presets": "^0.9.2",
+    "@palett/projector-factory": "^0.9.2",
     "@typen/nullish": "^0.1.17",
-    "@vect/enum-matrix-directions": "^0.5.3",
-    "@vect/matrix": "^0.5.3",
-    "@vect/object-select": "^0.5.3",
-    "@vect/vector-mapper": "^0.5.3"
+    "@vect/enum-matrix-directions": "^0.5.8",
+    "@vect/matrix": "^0.5.8",
+    "@vect/object-select": "^0.5.8",
+    "@vect/vector-mapper": "^0.5.8"
   },
   "devDependencies": {
-    "@texting/charset-fullwidth": "^0.0.13"
+    "@texting/charset-fullwidth": "^0.1.0"
   },
   "repository": {
     "type": "git",

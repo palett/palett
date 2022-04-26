@@ -1,6 +1,6 @@
 {
   "name": "@palett/says",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "A debug tool",
   "main": "dist/index.cjs",
   "exports": {
@@ -18,17 +18,17 @@
     "test": "babel-node test/archive/test.index.js"
   },
   "dependencies": {
-    "@palett/convert": "^0.9.1",
-    "@palett/dye": "^0.9.1",
-    "@palett/enum-font-effects": "^0.9.1",
-    "@palett/flopper": "^0.9.1",
-    "@spare/bracket": "^0.13.4",
-    "@spare/deco-string": "^0.13.4",
-    "@spare/enum-chars": "^0.13.4",
-    "@spare/util": "^0.13.4",
+    "@palett/convert": "^0.9.2",
+    "@palett/dye": "^0.9.2",
+    "@palett/enum-font-effects": "^0.9.2",
+    "@palett/flopper": "^0.9.2",
+    "@spare/bracket": "^0.13.5",
+    "@spare/deco-string": "^0.13.5",
+    "@spare/enum-chars": "^0.13.5",
+    "@spare/util": "^0.13.5",
     "@typen/enum-data-types": "^0.1.17",
     "@typen/enums": "^0.1.17",
-    "@vect/object-mapper": "^0.5.3"
+    "@vect/object-mapper": "^0.5.8"
   },
   "repository": {
     "type": "git",

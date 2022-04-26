@@ -1,6 +1,6 @@
 {
   "name": "@palett/munsell",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "A color converter",
   "main": "dist/index.cjs",
   "exports": {
@@ -18,18 +18,18 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@analys/crostab": "^0.5.6",
-    "@aryth/bound": "^0.4.10",
-    "@aryth/distinct-column": "^0.4.10",
-    "@aryth/flopper": "^0.4.10",
-    "@aryth/math": "^0.4.10",
-    "@aryth/polar": "^0.4.10",
-    "@palett/convert": "^0.9.1",
-    "@palett/flopper": "^0.9.1",
-    "@vect/columns-indicator": "^0.5.3",
-    "@vect/matrix-init": "^0.5.3",
-    "@vect/vector-init": "^0.5.3",
-    "@vect/vector-mapper": "^0.5.3"
+    "@analys/crostab": "^0.5.12",
+    "@aryth/bound": "^0.5.0",
+    "@aryth/distinct-column": "^0.5.0",
+    "@aryth/flopper": "^0.5.0",
+    "@aryth/math": "^0.5.0",
+    "@aryth/polar": "^0.5.0",
+    "@palett/convert": "^0.9.2",
+    "@palett/flopper": "^0.9.2",
+    "@vect/columns-indicator": "^0.5.8",
+    "@vect/matrix-init": "^0.5.8",
+    "@vect/vector-init": "^0.5.8",
+    "@vect/vector-mapper": "^0.5.8"
   },
   "devDependencies": {
     "@valjoux/timestamp-pretty": "^0.3.10"

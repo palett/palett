@@ -1,6 +1,6 @@
 {
   "name": "@palett/fluo-vector",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "A colorant to string",
   "main": "dist/index.cjs",
   "exports": {
@@ -19,14 +19,14 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@aryth/bound-vector": "^0.4.10",
+    "@aryth/bound-vector": "^0.5.0",
     "@ject/oneself": "^0.0.16",
-    "@palett/convert": "^0.9.1",
-    "@palett/enum-colorant-modes": "^0.9.1",
-    "@palett/presets": "^0.9.1",
-    "@palett/projector-factory": "^0.9.1",
+    "@palett/convert": "^0.9.2",
+    "@palett/enum-colorant-modes": "^0.9.2",
+    "@palett/presets": "^0.9.2",
+    "@palett/projector-factory": "^0.9.2",
     "@typen/nullish": "^0.1.17",
-    "@vect/vector-mapper": "^0.5.3"
+    "@vect/vector-mapper": "^0.5.8"
   },
   "repository": {
     "type": "git",
