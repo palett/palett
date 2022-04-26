@@ -1,6 +1,6 @@
 {
   "name": "@palett/util-ansi",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "description": "A color converter",
   "main": "dist/index.cjs",
   "exports": {
@@ -19,7 +19,7 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@palett/convert": "^0.9.2"
+    "@palett/convert": "^0.9.3"
   },
   "devDependencies": {
     "@pres/util-colors": "^0.2.19"

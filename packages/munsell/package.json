@@ -1,6 +1,6 @@
 {
   "name": "@palett/munsell",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "description": "A color converter",
   "main": "dist/index.cjs",
   "exports": {
@@ -24,8 +24,8 @@
     "@aryth/flopper": "^0.5.2",
     "@aryth/math": "^0.5.2",
     "@aryth/polar": "^0.5.2",
-    "@palett/convert": "^0.9.2",
-    "@palett/flopper": "^0.9.2",
+    "@palett/convert": "^0.9.3",
+    "@palett/flopper": "^0.9.3",
     "@vect/columns-indicator": "^0.5.10",
     "@vect/matrix-init": "^0.5.10",
     "@vect/vector-init": "^0.5.10",
