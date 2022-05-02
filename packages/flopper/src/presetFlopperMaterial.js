@@ -8,7 +8,7 @@ import { swap }                                from '@vect/swap'
 import { degreeToIndice }                      from '../utils/degreeToIndice'
 import { sortBy }                              from '../utils/sortDegrees'
 
-export function* presetFlopper({
+export function* presetFlopperMaterial({
                                  degrees = Degrees.entire,
                                  colors = ColorGroups.rainbow,
                                  space = HEX,
