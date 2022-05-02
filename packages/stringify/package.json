@@ -18,7 +18,12 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@palett/fluo": "^0.9.3"
+    "@aryth/math": "^0.5.6",
+    "@palett/convert": "^0.9.3",
+    "@palett/fluo": "^0.9.3",
+    "@palett/munsell": "^0.9.3",
+    "@texting/phrasing": "^0.1.2",
+    "@vect/vector": "^0.5.22"
   },
   "repository": {
     "type": "git",
