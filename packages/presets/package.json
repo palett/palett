@@ -1,6 +1,6 @@
 {
   "name": "@palett/presets",
-  "version": "0.9.5",
+  "version": "0.9.6",
   "description": "A color converter",
   "main": "dist/index.cjs",
   "exports": {
@@ -21,14 +21,13 @@
     "@aryth/math": "^0.5.6",
     "@aryth/rand": "^0.5.6",
     "@ject/oneself": "^0.0.17",
-    "@palett/cards": "^0.9.5",
-    "@palett/convert": "^0.9.5",
-    "@palett/dye": "^0.9.5",
-    "@palett/toner-hsl": "^0.9.5",
+    "@palett/cards": "^0.9.6",
+    "@palett/convert": "^0.9.6",
+    "@palett/dye": "^0.9.6",
+    "@palett/toner-hsl": "^0.9.6",
     "@typen/enum-data-types": "^0.1.19"
   },
   "devDependencies": {
-    "@palett/stringify": "^0.9.5",
     "@vect/object-init": "^0.5.22"
   },
   "repository": {
