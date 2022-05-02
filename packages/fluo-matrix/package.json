@@ -1,6 +1,6 @@
 {
   "name": "@palett/fluo-matrix",
-  "version": "0.9.3",
+  "version": "0.9.4",
   "description": "A colorant to string",
   "main": "dist/index.cjs",
   "exports": {
@@ -21,11 +21,11 @@
   "dependencies": {
     "@aryth/bound-matrix": "^0.5.6",
     "@ject/oneself": "^0.0.17",
-    "@palett/convert": "^0.9.3",
-    "@palett/enum-colorant-modes": "^0.9.3",
-    "@palett/fluo-vector": "^0.9.3",
-    "@palett/presets": "^0.9.3",
-    "@palett/projector-factory": "^0.9.3",
+    "@palett/convert": "^0.9.4",
+    "@palett/enum-colorant-modes": "^0.9.4",
+    "@palett/fluo-vector": "^0.9.4",
+    "@palett/presets": "^0.9.4",
+    "@palett/projector-factory": "^0.9.4",
     "@typen/nullish": "^0.1.19",
     "@vect/enum-matrix-directions": "^0.5.22",
     "@vect/matrix": "^0.5.22",
