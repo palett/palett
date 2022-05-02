@@ -2,7 +2,7 @@ import { hexToRgb }      from '@palett/convert'
 import { PrepDye }       from '@palett/dye'
 import { BOLD }          from '@palett/enum-font-effects'
 import { deca, logger }  from '@spare/logger'
-import { presetFlopper } from '../src/presetFlopper'
+import { presetFlopper } from '../src/presetFlopperMaterial'
 
 const prepDye = PrepDye(BOLD)
 const flopper = presetFlopper()
