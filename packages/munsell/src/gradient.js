@@ -2,9 +2,9 @@ import { CrosTab }            from '@analys/crostab'
 import { roundD1 }            from '@aryth/math'
 import { init as initMatrix } from '@vect/matrix-init'
 import { init as initVector } from '@vect/vector-init'
-import { H, L, S }            from '../resources/attr'
-import { HSL }                from './types/HSL'
-import { VaryFab }            from './VaryFab'
+import { H, L, S } from '../resources/attr'
+import { HSL }     from './HSL'
+import { VaryFab } from './VaryFab'
 
 const { sqrt } = Math
 

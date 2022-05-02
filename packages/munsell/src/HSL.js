@@ -2,8 +2,8 @@ import * as math                                    from '@aryth/math'
 import { limitAboveZero, restrictAboveZero, round } from '@aryth/math'
 import { distance as d, Polar }                     from '@aryth/polar'
 import { hf }                                       from '@palett/convert'
-import { entriesMinBy }                             from '../../utils/minBy'
-import { Cuvette }                                  from '../Cuvette'
+import { entriesMinBy }                             from '../utils/minBy'
+import { Cuvette }                                  from './Cuvette'
 import { Domain }                                   from './Domain'
 import { RGB }                                      from './RGB'
 
@@ -14,6 +14,7 @@ export class HSL extends Array {
     super(h, s, l)
   }
   static from([ h, s, l ]) { return new HSL(h, s, l) }
+  static fromPolar(polar, s) { return new HSL(polar.th, s, polar.r) }
   static build(h, s, l) { return new HSL(h, s, l) }
 
   get h() { return this[0] }

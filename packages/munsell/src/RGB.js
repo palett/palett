@@ -1,9 +1,9 @@
-import { E3, round }    from '@aryth/math'
-import { bd, hue }      from '@palett/convert'
-import { entriesMinBy } from '../../utils/minBy'
-import { Cuvette }      from '../Cuvette'
-import { Domain }       from './Domain'
-import { HSL }          from './HSL'
+import { E3, round }         from '@aryth/math'
+import { bd, hexToInt, hue } from '@palett/convert'
+import { entriesMinBy }      from '../utils/minBy'
+import { Cuvette }           from './Cuvette'
+import { Domain }            from './Domain'
+import { HSL }               from './HSL'
 
 const { abs } = Math
 
@@ -19,6 +19,9 @@ export class RGB extends Array {
   set b(v) { this[2] = v }
 
   static build(r, g, b) { return new RGB(r, g, b) }
+  static from([ r, g, b ]) { return new RGB(r, g, b) }
+  static fromHex(hex) { return (hex = hexToInt(hex), new RGB(hex >> 16 & 0xFF, hex >> 8 & 0xFF, hex & 0xFF)) }
+
   /** @returns {HSL} [Hue([0,360]), Saturation([0,100]), Lightness([0,100])] */
   toHsl() {
     const r = this.r / 255,

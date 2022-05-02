@@ -2,9 +2,9 @@ import { hexToHsl }           from '@palett/convert'
 import { Fluo }               from '@palett/fluo'
 import { hexToStr, hslToStr } from '@palett/stringify'
 import { DecoObject, says }   from '@spare/logger'
-import { mapper }             from '@vect/object'
-import { rgbToHsl }           from '../src/conversion'
-import { HSL }                from '../src/types/HSL'
+import { mapper }   from '@vect/object'
+import { rgbToHsl } from '../src/convert'
+import { HSL }      from '../src/HSL'
 
 export const XTERM = {
   noir: [ 0, 0, 0 ],

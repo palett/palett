@@ -3,9 +3,9 @@ import { finiteFlopper } from '@aryth/flopper'
 import * as pol          from '@aryth/polar'
 import { PetalNote }     from '@aryth/polar'
 import * as conv         from '@palett/convert'
-import { iterate }       from '@vect/vector-mapper'
-import { Cuvette }       from './Cuvette'
-import { Domain }        from './types/Domain'
+import { iterate } from '@vect/vector-mapper'
+import { Cuvette } from './Cuvette'
+import { Domain }  from './Domain'
 
 const { PI, pow, abs, round } = Math
 

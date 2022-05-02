@@ -1,10 +1,10 @@
 ﻿import { FASHIONS }     from '../resources/Pavtone.Fashions'
 import { PRODUCTS }     from '../resources/Pavtone.Products'
-import { polarToHsl }   from '../utils/convert'
 import { distance }     from '../utils/hsl.util'
 import { entriesMinBy } from '../utils/minBy'
-import { hexToRgb }     from './conversion'
-import { Domain }       from './types/Domain'
+import { Domain }       from './Domain'
+import { HSL }          from './HSL'
+import { RGB }          from './RGB'
 
 export class Cuvette {
   dict // dictionary<string, string>
@@ -45,7 +45,7 @@ export class Cuvette {
   get hexToRgb() {
     return this.#rgbEntries?.length
       ? this.#rgbEntries
-      : this.#rgbEntries = Object.keys(this.dict).map(key => [ key, hexToRgb(key) ]) // this.dict.map(kv => [ kv.key, hexToRgb(kv.key) ]
+      : this.#rgbEntries = Object.keys(this.dict).map(key => [ key, RGB.fromHex(key) ]) // this.dict.map(kv => [ kv.key, hexToRgb(kv.key) ]
   }
 
   // list<(string hex, (float h, float s, float l) hsl)>
@@ -83,7 +83,7 @@ export class Cuvette {
 
   // (string hex, string name)
   comparativeByPolar(polar, s) {
-    const major = polarToHsl(polar, s)
+    const major = HSL.fromPolar(polar, s)
     let [ hex, _ ] = entriesMinBy(this.hexToHsl, ([ , hsl ]) => major.distance(hsl))
     return [ hex, this.name(hex) ]
   }

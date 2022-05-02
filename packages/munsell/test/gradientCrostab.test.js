@@ -5,7 +5,7 @@ import { Fluo }                      from '@palett/fluo'
 import { SUBTLE }                    from '@palett/presets'
 import { hslToStr }                  from '@palett/stringify'
 import { DecoCrostab, logger, says } from '@spare/logger'
-import { HSL }                       from '../src/types/HSL'
+import { HSL }                       from '../src/HSL'
 import { H, L }                      from '../resources/attr'
 import { Gradient }                  from '../src/gradient'
 

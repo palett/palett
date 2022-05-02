@@ -1,7 +1,7 @@
 import { says }    from '@spare/logger'
 import { time }    from '@valjoux/timestamp-pretty'
 import { Cuvette } from '../src/Cuvette'
-import { Domain }  from '../src/types/Domain'
+import { Domain }  from '../src/Domain'
 
 says['log-time'].attach(time)
 says['cuvette'].asc.asc

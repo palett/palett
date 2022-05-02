@@ -1,6 +1,6 @@
 ﻿import { limitAboveZero, restrictAboveZero } from '@aryth/math'
-import { H, L, S }                           from '../resources/attr'
-import { HSL }                               from './types/HSL'
+import { H, L, S } from '../resources/attr'
+import { HSL }     from './HSL'
 
 const { sqrt } = Math
 
