@@ -1,5 +1,5 @@
 import { hexToInt } from '@palett/convert'
-import { RGB }      from '../types/RGB'
+import { RGB }      from '../RGB'
 
 /**
  *

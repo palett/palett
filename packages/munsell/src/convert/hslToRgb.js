@@ -1,6 +1,6 @@
 import { round } from '@aryth/math'
-import { hf }    from '@palett/convert'
-import { RGB }   from '../types/RGB'
+import { hf }  from '@palett/convert'
+import { RGB } from '../RGB'
 
 /**
  *
