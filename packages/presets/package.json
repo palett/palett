@@ -18,8 +18,8 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/math": "^0.5.6",
-    "@aryth/rand": "^0.5.6",
+    "@aryth/math": "^0.5.9",
+    "@aryth/rand": "^0.5.9",
     "@ject/oneself": "^0.0.17",
     "@palett/cards": "^0.9.6",
     "@palett/convert": "^0.9.6",
@@ -28,7 +28,7 @@
     "@typen/enum-data-types": "^0.1.19"
   },
   "devDependencies": {
-    "@vect/object-init": "^0.5.22"
+    "@vect/object-init": "^0.6.2"
   },
   "repository": {
     "type": "git",
