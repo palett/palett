@@ -1,3 +1,4 @@
+import { Preset } from './dist/index'
 import { AQUA }   from './resources/standard/aqua'
 import { ATLAS }  from './resources/standard/atlas'
 import { AURORA } from './resources/standard/aurora'
@@ -14,32 +15,36 @@ import { POME }   from './resources/standard/pome'
 import { SUBTLE } from './resources/standard/subtle'
 import { VIOLA }  from './resources/standard/viola'
 
-import { ARUBA }   from './resources/pavtone/aruba'
-import { BESQUE }  from './resources/pavtone/besque'
-import { DECANTE } from './resources/pavtone/decante'
-import { ENSIGN }  from './resources/pavtone/ensign'
-import { BISTRO }  from './resources/pavtone/bistro'
-import { DUSKY }   from './resources/pavtone/dusky'
-import { KELLY }   from './resources/pavtone/kelly'
-import { LILAC }   from './resources/pavtone/lilac'
-import { SANDY }   from './resources/pavtone/sandy'
-import { PAGODA }  from './resources/pavtone/pagoda'
-import { PINE }    from './resources/pavtone/pine'
-import { FRESH }   from './resources/pavtone/fresh'
-import { BRANDY }  from './resources/pavtone/brandy'
-import { PERSIAN } from './resources/pavtone/persian'
-import { TOBACCO } from './resources/pavtone/tobacco'
-import { NORSE }   from './resources/pavtone/norse'
-import { BLUSH }   from './resources/pavtone/blush'
-import { ROCOCCO } from './resources/pavtone/rococco'
-import { PRETTY }  from './resources/pavtone/pretty'
-import { WINE }    from './resources/pavtone/wine'
-
 export { AQUA, ATLAS, AURORA, AZURE, MOSS, INSTA, JUNGLE, LAVA, METRO, OCEAN, PLANET, POME, SUBTLE, VIOLA, }
 export {
-  ARUBA, BESQUE, DECANTE, ENSIGN, BISTRO, DUSKY, KELLY, LILAC, SANDY, PAGODA, PINE, FRESH, BRANDY, PERSIAN, TOBACCO,
-  NORSE, BLUSH, ROCOCCO, PRETTY, WINE,
-}
+  BESQUE,
+  FRESH,
+  RODD,
+  AZALE,
+  AFRO,
+  Summer,
+  SANDY,
+  TOBACCO,
+  BRANDY,
+  DECANTE,
+  BISTRO,
+  KELLY,
+  PAGODA,
+  PINE,
+  NORSE,
+  ARUBA,
+  BERING,
+  DUSKY,
+  ENSIGN,
+  PERSIAN,
+  LILAC,
+  WINE,
+  ROCOCCO,
+  PRETTY,
+  BLUSH,
+}                 from './resources/pavtone/index'
+
+export { Preset } from './src/Preset'
 
 /** @typedef {{max:string,min:string,na:string}} Preset */
 
@@ -63,6 +68,10 @@ export const Presets = {
   pome: POME,
   viola: VIOLA
 }
+
+export const OPAL = Preset.build('#E46C9A', '#6ED1B4') // Azalea Opal
+export const AFRO = Preset.build('#B284BE', '#C6E67A') // African Violet - Sharp Green
+export const SUMMER = Preset.build('#CB8986', '#79D381')  // Rosette - Summer Green
 
 export { randPreset } from './src/randPreset'
 export { tapPresets } from './src/tapPresets'
