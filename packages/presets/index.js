@@ -1,4 +1,5 @@
 import { Preset } from './dist/index'
+import { FRESH }  from './resources/pavtone'
 import { AQUA }   from './resources/standard/aqua'
 import { ATLAS }  from './resources/standard/atlas'
 import { AURORA } from './resources/standard/aurora'
@@ -22,7 +23,7 @@ export {
   RODD,
   AZALE,
   AFRO,
-  Summer,
+  SUMMER,
   SANDY,
   TOBACCO,
   BRANDY,
@@ -68,10 +69,6 @@ export const Presets = {
   pome: POME,
   viola: VIOLA
 }
-
-export const OPAL = Preset.build('#E46C9A', '#6ED1B4') // Azalea Opal
-export const AFRO = Preset.build('#B284BE', '#C6E67A') // African Violet - Sharp Green
-export const SUMMER = Preset.build('#CB8986', '#79D381')  // Rosette - Summer Green
 
 export { randPreset } from './src/randPreset'
 export { tapPresets } from './src/tapPresets'

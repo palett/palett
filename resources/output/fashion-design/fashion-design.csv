@@ -1030,7 +1030,7 @@
   TCX_1438-colors,17-1641 TCX,"rgb(190,69,79)  ",#BE454F,Chrysanthemum         ,fashion-design
   TCX_1438-colors,17-1145 TCX,"rgb(196,98,21)  ",#C46215,Autumn Maple          ,fashion-design
   TCX_1438-colors,18-1454 TCX,"rgb(194,69,45)  ",#C2452D,Red Clay              ,fashion-design
-  TCX_1438-colors,17-1450 TCX,"rgb(190,75,59)  ",#BE4B3B,Summer Fig            ,fashion-design
+  TCX_1438-colors,17-1450 TCX,"rgb(190,75,59)  ",#BE4B3B,SUMMER Fig            ,fashion-design
   TCX_1438-colors,17-1140 TCX,"rgb(193,101,18) ",#C16512,Marmalade             ,fashion-design
   TCX_1438-colors,18-1448 TCX,"rgb(190,81,65)  ",#BE5141,Chili                 ,fashion-design
   TCX_1438-colors,18-1635 TCX,"rgb(180,88,101) ",#B45865,Slate Rose            ,fashion-design
@@ -1486,7 +1486,7 @@
   TCX_1438-colors,13-0851 TCX,"rgb(254,213,93) ",#FED55D,Minion Yellow         ,fashion-design
   TCX_1438-colors,13-0822 TCX,"rgb(237,213,158)",#EDD59E,Sunlight              ,fashion-design
   TCX_1438-colors,12-0822 TCX,"rgb(242,209,160)",#F2D1A0,Golden Fleece         ,fashion-design
-  TCX_1438-colors,13-0814 TCX,"rgb(234,211,174)",#EAD3AE,Summer Melon          ,fashion-design
+  TCX_1438-colors,13-0814 TCX,"rgb(234,211,174)",#EAD3AE,SUMMER Melon          ,fashion-design
   TCX_1438-colors,12-0811 TCX,"rgb(235,210,183)",#EBD2B7,Dawn                  ,fashion-design
   TCX_1438-colors,12-0813 TCX,"rgb(238,208,174)",#EED0AE,Autumn Blonde         ,fashion-design
   TCX_1438-colors,12-0913 TCX,"rgb(241,206,179)",#F1CEB3,Alesan                ,fashion-design
@@ -1574,7 +1574,7 @@
   TPG_376-colors ,18-4430 TPG,"rgb(0,116,147)  ",#007493,Fjord Blue            ,fashion-design
   TPG_376-colors ,18-3946 TPG,"rgb(90,105,175) ",#5A69AF,Baja Blue             ,fashion-design
   TPG_376-colors ,16-4033 TPG,"rgb(101,133,193)",#6585C1,Granada Sky           ,fashion-design
-  TPG_376-colors ,14-0156 TPG,"rgb(121,211,129)",#79D381,Summer Green          ,fashion-design
+  TPG_376-colors ,14-0156 TPG,"rgb(121,211,129)",#79D381,SUMMER Green          ,fashion-design
   TPG_376-colors ,17-4032 TPG,"rgb(99,141,183) ",#638DB7,Lichen Blue           ,fashion-design
   TPG_376-colors ,15-4428 TPG,"rgb(96,177,211) ",#60B1D3,Crystal Seas          ,fashion-design
   TPG_376-colors ,16-4612 TPG,"rgb(108,158,170)",#6C9EAA,Reef Waters           ,fashion-design
@@ -2386,7 +2386,7 @@
   TPX_477-colors ,14-0941 TPX,"rgb(238,169,74) ",#EEA94A,Beeswax               ,fashion-design
   TPX_477-colors ,13-0758 TPX,"rgb(255,209,0)  ",#FFD100,Dandelion             ,fashion-design
   TPX_477-colors ,14-0760 TPX,"rgb(255,211,0)  ",#FFD300,Cyber Yellow          ,fashion-design
-  TPX_477-colors ,11-4802 TPX,"rgb(229,235,230)",#E5EBE6,Summer Shower         ,fashion-design
+  TPX_477-colors ,11-4802 TPX,"rgb(229,235,230)",#E5EBE6,SUMMER Shower         ,fashion-design
   TPX_477-colors ,17-1656 TPX,"rgb(237,86,86)  ",#ED5656,Hot Coral             ,fashion-design
   TPX_477-colors ,16-1356 TPX,"rgb(243,116,31) ",#F3741F,Persimmon Orange      ,fashion-design
   TPX_477-colors ,16-1462 TPX,"rgb(242,103,46) ",#F2672E,Golden Poppy          ,fashion-design

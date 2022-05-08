@@ -5,7 +5,7 @@ export const FRESH = Preset.build('#DDB614', '#BADF30', '#6A6A6A')      // - Sul
 export const RODD = Preset.build('#91672C', '#C6E67A', '#6A6A6A')       // - Golden Brown    - Sharp Green       - Charcoal Gray      -
 export const AZALE = Preset.build('#E46C9A', '#6ED1B4', '#6A6A6A')      // - Azalea          - Opal              - Charcoal Gray      -
 export const AFRO = Preset.build('#B284BE', '#C6E67A', '#6A6A6A')       // - African Violet  - Sharp Green       - Charcoal Gray      -
-export const Summer = Preset.build('#CB8986', '#79D381', '#6A6A6A')     // - Rosette         - Summer Green      - Charcoal Gray      -
+export const SUMMER = Preset.build('#CB8986', '#79D381', '#6A6A6A')     // - Rosette         - SUMMER Green      - Charcoal Gray      -
 export const SANDY = Preset.build('#815F34', '#F5EDD6', '#6A6A6A')      // - Bronze Brown    - Papyrus           - Charcoal Gray      -
 export const TOBACCO = Preset.build('#574D35', '#F4E5C4', '#612E35')    // - Dark Olive      - Vanilla           - Chocolate Truffle  -
 export const BRANDY = Preset.build('#815F34', '#FACD9E', '#6A6A6A')     // - Bronze Brown    - Apricot Sherbet   - Charcoal Gray      -
@@ -26,14 +26,13 @@ export const ROCOCCO = Preset.build('#BB363F', '#F7D1D4', '#513235')    // - Roc
 export const PRETTY = Preset.build('#A33546', '#F1D7DD', '#6A6A6A')     // - American Beauty - Barely Pink       - Charcoal Gray      -
 export const BLUSH = Preset.build('#F5D3DB', '#E44165', '#6A6A6A')      // - Blushing Bride  - Rouge Red         - Charcoal Gray      -
 
-
 export default {
   BESQUE,
   FRESH,
   RODD,
   AZALE,
   AFRO,
-  Summer,
+  Summer: SUMMER,
 
   SANDY,
   TOBACCO,

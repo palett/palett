@@ -1334,7 +1334,7 @@
   PQ_4967-colors ,PQ-2292C        ,"rgb(147,201,14) ",#93C90E,                  ,product-design
   PQ_4967-colors ,PQ-2269C        ,"rgb(124,204,108)",#7CCC6C,                  ,product-design
   PQ_4967-colors ,PQ-2268C        ,"rgb(121,217,124)",#79D97C,                  ,product-design
-  PQ_4967-colors ,PQ-14-0156TCX   ,"rgb(126,211,127)",#7ED37F,Summer Green      ,product-design
+  PQ_4967-colors ,PQ-14-0156TCX   ,"rgb(126,211,127)",#7ED37F,SUMMER Green      ,product-design
   PQ_4967-colors ,PQ-10319C       ,"rgb(121,165,80) ",#79A550,                  ,product-design
   PQ_4967-colors ,PQ-16-0237TCX   ,"rgb(117,161,79) ",#75A14F,Foliage           ,product-design
   PQ_4967-colors ,PQ-353C         ,"rgb(128,224,167)",#80E0A7,                  ,product-design
@@ -3302,7 +3302,7 @@
   PQ_4967-colors ,PQ-2429C        ,"rgb(194,94,28)  ",#C25E1C,                  ,product-design
   PQ_4967-colors ,PQ-18-1454TCX   ,"rgb(194,69,45)  ",#C2452D,Red Clay          ,product-design
   PQ_4967-colors ,PQ-18-1354TCX   ,"rgb(187,79,53)  ",#BB4F35,Burnt Ochre       ,product-design
-  PQ_4967-colors ,PQ-17-1450TCX   ,"rgb(190,75,59)  ",#BE4B3B,Summer Fig        ,product-design
+  PQ_4967-colors ,PQ-17-1450TCX   ,"rgb(190,75,59)  ",#BE4B3B,SUMMER Fig        ,product-design
   PQ_4967-colors ,PQ-2436C        ,"rgb(182,82,61)  ",#B6523D,                  ,product-design
   PQ_4967-colors ,PQ-8903C        ,"rgb(189,70,73)  ",#BD4649,                  ,product-design
   PQ_4967-colors ,PQ-17-1545TCX   ,"rgb(187,74,77)  ",#BB4A4D,Cranberry         ,product-design
@@ -4581,7 +4581,7 @@
   PQ_4967-colors ,PQ-11-0609TCX   ,"rgb(241,236,202)",#F1ECCA,Ethereal Green    ,product-design
   PQ_4967-colors ,PQ-9140C        ,"rgb(242,238,202)",#F2EECA,                  ,product-design
   PQ_4967-colors ,PQ-11-0205TCX   ,"rgb(236,234,208)",#ECEAD0,Glass Green       ,product-design
-  PQ_4967-colors ,PQ-11-4802TCX   ,"rgb(229,235,227)",#E5EBE3,Summer Shower     ,product-design
+  PQ_4967-colors ,PQ-11-4802TCX   ,"rgb(229,235,227)",#E5EBE3,SUMMER Shower     ,product-design
   PQ_4967-colors ,PQ-114C         ,"rgb(251,221,64) ",#FBDD40,                  ,product-design
   PQ_4967-colors ,PQ-11-0601TCX   ,"rgb(244,245,240)",#F4F5F0,Bright White      ,product-design
   PQ_4967-colors ,PQ-WarmRedC     ,"rgb(249,66,58)  ",#F9423A,                  ,product-design
@@ -4721,7 +4721,7 @@
   PQ_4967-colors ,PQ-13-0822TCX   ,"rgb(237,213,158)",#EDD59E,Sunlight          ,product-design
   PQ_4967-colors ,PQ-155C         ,"rgb(239,209,159)",#EFD19F,                  ,product-design
   PQ_4967-colors ,PQ-12-0822TCX   ,"rgb(242,209,160)",#F2D1A0,Golden Fleece     ,product-design
-  PQ_4967-colors ,PQ-13-0814TCX   ,"rgb(234,211,174)",#EAD3AE,Summer Melon      ,product-design
+  PQ_4967-colors ,PQ-13-0814TCX   ,"rgb(234,211,174)",#EAD3AE,SUMMER Melon      ,product-design
   PQ_4967-colors ,PQ-12-0811TCX   ,"rgb(235,210,183)",#EBD2B7,Dawn              ,product-design
   PQ_4967-colors ,PQ-12-0813TCX   ,"rgb(238,208,174)",#EED0AE,Autumn Blonde     ,product-design
   PQ_4967-colors ,PQ-12-0807TCX   ,"rgb(235,209,187)",#EBD1BB,Sun Kiss          ,product-design
@@ -5488,7 +5488,7 @@
   TCX_2310-colors,PQ-15-4714TCX   ,"rgb(97,170,177) ",#61AAB1,Aquarelle         ,product-design
   TCX_2310-colors,PQ-16-4421TCX   ,"rgb(91,172,195) ",#5BACC3,Blue Mist         ,product-design
   TCX_2310-colors,PQ-15-4428TCX   ,"rgb(93,175,206) ",#5DAFCE,Crystal Seas      ,product-design
-  TCX_2310-colors,PQ-14-0156TCX   ,"rgb(126,211,127)",#7ED37F,Summer Green      ,product-design
+  TCX_2310-colors,PQ-14-0156TCX   ,"rgb(126,211,127)",#7ED37F,SUMMER Green      ,product-design
   TCX_2310-colors,PQ-16-0237TCX   ,"rgb(117,161,79) ",#75A14F,Foliage           ,product-design
   TCX_2310-colors,PQ-15-6442TCX   ,"rgb(121,180,101)",#79B465,Bud Green         ,product-design
   TCX_2310-colors,PQ-13-5313TCX   ,"rgb(129,215,211)",#81D7D3,Aruba Blue        ,product-design
@@ -6376,7 +6376,7 @@
   TCX_2310-colors,PQ-17-1145TCX   ,"rgb(196,98,21)  ",#C46215,Autumn Maple      ,product-design
   TCX_2310-colors,PQ-18-1454TCX   ,"rgb(194,69,45)  ",#C2452D,Red Clay          ,product-design
   TCX_2310-colors,PQ-18-1354TCX   ,"rgb(187,79,53)  ",#BB4F35,Burnt Ochre       ,product-design
-  TCX_2310-colors,PQ-17-1450TCX   ,"rgb(190,75,59)  ",#BE4B3B,Summer Fig        ,product-design
+  TCX_2310-colors,PQ-17-1450TCX   ,"rgb(190,75,59)  ",#BE4B3B,SUMMER Fig        ,product-design
   TCX_2310-colors,PQ-17-1545TCX   ,"rgb(187,74,77)  ",#BB4A4D,Cranberry         ,product-design
   TCX_2310-colors,PQ-17-1641TCX   ,"rgb(190,69,79)  ",#BE454F,Chrysanthemum     ,product-design
   TCX_2310-colors,PQ-17-1537TCX   ,"rgb(179,84,87)  ",#B35457,Mineral Red       ,product-design
@@ -7062,7 +7062,7 @@
   TCX_2310-colors,PQ-11-4800TCX   ,"rgb(231,233,231)",#E7E9E7,Blanc de Blanc    ,product-design
   TCX_2310-colors,PQ-11-0609TCX   ,"rgb(241,236,202)",#F1ECCA,Ethereal Green    ,product-design
   TCX_2310-colors,PQ-11-0205TCX   ,"rgb(236,234,208)",#ECEAD0,Glass Green       ,product-design
-  TCX_2310-colors,PQ-11-4802TCX   ,"rgb(229,235,227)",#E5EBE3,Summer Shower     ,product-design
+  TCX_2310-colors,PQ-11-4802TCX   ,"rgb(229,235,227)",#E5EBE3,SUMMER Shower     ,product-design
   TCX_2310-colors,PQ-11-0601TCX   ,"rgb(244,245,240)",#F4F5F0,Bright White      ,product-design
   TCX_2310-colors,PQ-17-1647TCX   ,"rgb(242,95,102) ",#F25F66,Dubarry           ,product-design
   TCX_2310-colors,PQ-16-1364TCX   ,"rgb(255,116,32) ",#FF7420,Vibrant Orange    ,product-design
@@ -7134,7 +7134,7 @@
   TCX_2310-colors,PQ-13-0850TCX   ,"rgb(255,214,98) ",#FFD662,Aspen Gold        ,product-design
   TCX_2310-colors,PQ-13-0822TCX   ,"rgb(237,213,158)",#EDD59E,Sunlight          ,product-design
   TCX_2310-colors,PQ-12-0822TCX   ,"rgb(242,209,160)",#F2D1A0,Golden Fleece     ,product-design
-  TCX_2310-colors,PQ-13-0814TCX   ,"rgb(234,211,174)",#EAD3AE,Summer Melon      ,product-design
+  TCX_2310-colors,PQ-13-0814TCX   ,"rgb(234,211,174)",#EAD3AE,SUMMER Melon      ,product-design
   TCX_2310-colors,PQ-12-0811TCX   ,"rgb(235,210,183)",#EBD2B7,Dawn              ,product-design
   TCX_2310-colors,PQ-12-0813TCX   ,"rgb(238,208,174)",#EED0AE,Autumn Blonde     ,product-design
   TCX_2310-colors,PQ-12-0807TCX   ,"rgb(235,209,187)",#EBD1BB,Sun Kiss          ,product-design
