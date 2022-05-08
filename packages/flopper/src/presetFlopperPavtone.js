@@ -1,6 +1,7 @@
 import { finiteFlopper }           from '@aryth/flopper'
 import { flop, randBetw }          from '@aryth/rand'
 import { hexToHsl, HSL, PRODUCTS } from '@palett/munsell'
+import { Preset }                  from '@palett/presets'
 import { filter }                  from '@vect/object-select'
 import { seq }                     from '@vect/vector'
 
@@ -22,7 +23,7 @@ export const randPreset = (hex, name) => {
     .restrict()
     .nearest()
   const [ gray, label ] = GRAYS |> flop
-  const preset = { min: hex, max: max, na: gray }
+  const preset = Preset.build(hex, max, gray)
   if (name?.length) preset.name = name
   return preset
 }
