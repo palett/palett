@@ -1,6 +1,6 @@
 {
   "name": "@palett/enum-color-space",
-  "version": "0.9.9",
+  "version": "0.9.10",
   "description": "A colorant to string",
   "main": "dist/index.cjs",
   "exports": {
