@@ -18,7 +18,7 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@analys/crostab": "^0.6.3",
+    "@analys/crostab": "^0.6.6",
     "@aryth/bound": "^0.5.9",
     "@aryth/distinct-column": "^0.5.9",
     "@aryth/flopper": "^0.5.9",
