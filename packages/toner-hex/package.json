@@ -1,6 +1,6 @@
 {
   "name": "@palett/toner-hex",
-  "version": "0.9.7",
+  "version": "0.9.8",
   "description": "A color converter among RGB, HEX and HSL.",
   "main": "dist/index.cjs",
   "exports": {
