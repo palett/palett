@@ -1,4 +1,3 @@
-import { Preset } from './dist/index'
 import { FRESH }  from './resources/pavtone'
 import { AQUA }   from './resources/standard/aqua'
 import { ATLAS }  from './resources/standard/atlas'

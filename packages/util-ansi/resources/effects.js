@@ -8,8 +8,8 @@ export const CLR_UNDERLINE = '24'
 export const CLR_INVERSE = '27'
 
 export const Effects = {
-  bold: [BOLD, CLR_BOLD],
-  italic: [ITALIC, CLR_ITALIC],
-  underline: [UNDERLINE, CLR_UNDERLINE],
-  inverse: [INVERSE, CLR_INVERSE],
+  bold: [ BOLD, CLR_BOLD ],
+  italic: [ ITALIC, CLR_ITALIC ],
+  underline: [ UNDERLINE, CLR_UNDERLINE ],
+  inverse: [ INVERSE, CLR_INVERSE ],
 }
