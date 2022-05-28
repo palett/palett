@@ -15,8 +15,8 @@ for (let [k, vector] of Object.entries(candidates)) {
     vector,
     PresetCollection.build(FRESH).assignEffect(BOLD, ITALIC)
     // [
-    //   { preset: FRESH, filter: isNumeric, mapper: x => x },
-    //   { preset: PLANET, filter: isLiteral, mapper: stringValue }
+    //   { preset: FRESH, by: isNumeric, to: x => x },
+    //   { preset: PLANET, by: isLiteral, to: stringValue }
     // ]
   )
     |> logger

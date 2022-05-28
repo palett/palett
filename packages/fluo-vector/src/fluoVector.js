@@ -12,8 +12,8 @@ import { mapper as mapperFunc, mutate as mutateFunc } from '@vect/vector-mapper'
  * @typedef {string} Preset.min
  * @typedef {string} Preset.na
  * @typedef {?string[]} Preset.effects
- * @typedef {?Function} Preset.filter
- * @typedef {?Function} Preset.mapper
+ * @typedef {?Function} Preset.by
+ * @typedef {?Function} Preset.to
  *
  * @param {*[]} vec
  * @param {Preset[]} presets

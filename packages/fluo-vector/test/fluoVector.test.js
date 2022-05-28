@@ -14,8 +14,8 @@ for (let [k, vector] of Object.entries(candidates)) {
       Object.assign({}, PLANET, { effects: [BOLD, ITALIC, UNDERLINE] })
     ]
     // [
-    //   { preset: FRESH, filter: isNumeric, mapper: x => x },
-    //   { preset: PLANET, filter: isLiteral, mapper: stringValue }
+    //   { preset: FRESH, by: isNumeric, to: x => x },
+    //   { preset: PLANET, by: isLiteral, to: stringValue }
     // ]
   )
     |> decoPale |> console.log

@@ -37,7 +37,7 @@ $ npm install @palett/<tool-name>
 | [**presets**](packages/presets)                 | Color presets for 'fluoMatrix'       | constants |
 | [**table**](packages/table)                     | Demo palett color table in console   | constants |
 | [**dye**](packages/dye)                         | Colorify string (by ANSI rule)       | colorant  |
-| [**says**](packages/says)                       | Colored narrate creator              | colorant  |
+| [**says**](archive/says)                       | Colored narrate creator              | colorant  |
 | [**hatsu**](archive/hatsu)                      | Chalk-style color string             | colorant  |
 | [**fluoMatrix**](packages/fluo)                 | Index for submodules of 'fluoMatrix' | colorant  |
 | [**fluoMatrix-vector**](packages/fluo-vector)   | Color array                          | colorant  |

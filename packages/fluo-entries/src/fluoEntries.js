@@ -9,8 +9,8 @@ import { mutazip as mutazipEntries } from '@vect/entries-zipper'
  * @typedef {string} Preset.max
  * @typedef {string} Preset.na
  * @typedef {string[]} Preset.effects
- * @typedef {Function} Preset.filter
- * @typedef {Function} Preset.mapper
+ * @typedef {Function} Preset.by
+ * @typedef {Function} Preset.to
  *
  * @param {[*,*][]} entries
  * @param {Preset[]} configs

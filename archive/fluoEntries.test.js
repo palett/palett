@@ -1,6 +1,6 @@
 import { simpleEntries } from '@foba/foo'
-import { says }        from '@palett/says'
-import { fluoEntries } from '@palett/fluo-entries/src/fluoEntries'
+import { says }          from 'says'
+import { fluoEntries }   from '@palett/fluo-entries/src/fluoEntries'
 
 const SimpleEntries = simpleEntries({ h: 15 })
 

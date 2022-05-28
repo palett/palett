@@ -1,8 +1,8 @@
 import { hexToHsl, hexToRgb, hslToHex, hslToRgb } from '@palett/convert'
 import { Dye }                                    from '@palett/dye'
-import { palettFlopper }                          from '@palett/flopper'
-import { says }                                   from '@palett/says'
-import { deco }                                   from '@spare/deco'
+import { palettFlopper } from '@palett/flopper'
+import { says }          from 'archive/says'
+import { deco }          from '@spare/deco'
 import { logger }                                 from '@spare/logger'
 import { toner }                                  from '../src/toner'
 

@@ -25,7 +25,7 @@ for (let [k, matrix] of Object.entries(candidates)) {
 
   duobound(matrix,
     [
-      Object.assign({}, FRESH, { filter: isNumeric, mapper: parseNum }),
+      Object.assign({}, FRESH, { by: isNumeric, to: parseNum }),
       PLANET
     ]
   ) |> DecoMatrix({ presets: [], full: true }) |> logger
@@ -34,7 +34,7 @@ for (let [k, matrix] of Object.entries(candidates)) {
     direct: COLUMNWISE,
     presets:
       [
-        Object.assign({}, FRESH, { filter: isNumeric, mapper: parseNum }),
+        Object.assign({}, FRESH, { by: isNumeric, to: parseNum }),
         PLANET
       ]
   }) |> DecoMatrix({ presets: [], full: true }) |> logger

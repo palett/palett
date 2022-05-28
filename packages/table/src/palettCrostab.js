@@ -1,4 +1,5 @@
 import { samplesToCrostab }   from '@analys/convert'
+import { Crostab }            from '@analyz/crostab'
 import { oneself }            from '@ject/oneself'
 import { Cards }              from '@palett/cards'
 import { hexToHsl, hexToRgb } from '@palett/convert'
@@ -22,7 +23,7 @@ export function palettCrostab({
                                 colors = ColorGroups.entire,
                                 dyed = false,
                               } = {}) {
-  const crostab = samplesToCrostab(Cards, { side: colors, head: degrees }).transpose()
+  const crostab = Crostab.from(samplesToCrostab(Cards, {side: colors, head: degrees})).transpose()
   if (space !== HEX) {
     crostab.mutate(space === RGB ? hexToRgb : space === HSL ? hexToHsl : oneself)
   }

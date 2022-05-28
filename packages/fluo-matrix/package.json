@@ -19,7 +19,7 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@aryth/bound-matrix": "^0.5.9",
+    "@aryth/bound-matrix": "^0.6.0",
     "@ject/oneself": "^0.0.17",
     "@palett/convert": "^0.9.10",
     "@palett/enum-colorant-modes": "^0.9.10",
@@ -27,10 +27,10 @@
     "@palett/presets": "^0.9.10",
     "@palett/projector-factory": "^0.9.10",
     "@typen/nullish": "^0.1.19",
-    "@vect/enum-matrix-directions": "^0.6.2",
-    "@vect/matrix": "^0.6.2",
-    "@vect/object-select": "^0.6.2",
-    "@vect/vector-mapper": "^0.6.2"
+    "@vect/enum-matrix-directions": "^0.6.13",
+    "@vect/matrix": "^0.7.11",
+    "@vect/object-select": "^0.7.11",
+    "@vect/vector-mapper": "^0.7.11"
   },
   "devDependencies": {
     "@texting/charset-fullwidth": "^0.1.3"

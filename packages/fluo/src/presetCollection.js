@@ -8,10 +8,10 @@ import { mutate, mutazip }                                      from '@vect/vect
 
 export const isNumericAny = x => isNumericFull(x) || isNumericHalf(x)
 
-export const NUM_BOUND_CONF_FULL = { filter: isNumericAny, mapper: parseNumFull }
-export const STR_BOUND_CONF_FULL = { filter: isLiteralAny, mapper: stringValue }
-export const NUM_BOUND_CONF_HALF = { filter: isNumericHalf, mapper: parseNumHalf }
-export const STR_BOUND_CONF_HALF = { filter: isLiteralHalf, mapper: stringValue }
+export const NUM_BOUND_CONF_FULL = { by: isNumericAny, to: parseNumFull }
+export const STR_BOUND_CONF_FULL = { by: isLiteralAny, to: stringValue }
+export const NUM_BOUND_CONF_HALF = { by: isNumericHalf, to: parseNumHalf }
+export const STR_BOUND_CONF_HALF = { by: isLiteralHalf, to: stringValue }
 
 export const NUMERIC_PRESET = FRESH
 export const LITERAL_PRESET = PLANET

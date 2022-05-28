@@ -1,6 +1,6 @@
 import { bound }        from '@aryth/bound-vector'
 import { LAVA, PLANET } from '@palett/presets'
-import { says }         from '@palett/says'
+import { says }         from 'archive/says'
 import { decoPale }     from '@spare/deco-pale'
 import { mapper }       from '@vect/vector-mapper'
 import { zipper }       from '@vect/vector-zipper'

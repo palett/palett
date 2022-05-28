@@ -1,8 +1,8 @@
 import { bracket, parenth } from '@spare/bracket'
 import { SP }               from '@spare/enum-chars'
-import { FUN, STR }         from '@typen/enum-data-types'
-import { Callable }         from '../util/Callable'
-import { narrate }          from './narrate'
+import { FUN, STR } from '@typen/enum-data-types'
+import { Callable } from '../util/Callable'
+import { narrate }  from './narrate'
 
 const NAME = 'name'
 

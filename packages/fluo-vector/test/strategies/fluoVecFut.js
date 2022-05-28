@@ -13,15 +13,15 @@ const oneself = x => x
  *
  * @param vec
  * @typedef {Object} PalettProjectConfig
- * @typedef {Function} PalettProjectConfig.filter
- * @typedef {Function} PalettProjectConfig.mapper
+ * @typedef {Function} PalettProjectConfig.by
+ * @typedef {Function} PalettProjectConfig.to
  * @typedef {Object} PalettProjectConfig.preset
  * @param {PalettProjectConfig} x
  * @param {PalettProjectConfig} y
  */
 export const fluoVecFut = function (vec,
-  x = { filter: isNumeric, mapper: oneself, preset: FRESH },
-  y = { filter: isString, mapper: stringValue, preset: PLANET }) {
+  x = { by: isNumeric, to: oneself, preset: FRESH },
+  y = { by: isString, to: stringValue, preset: PLANET }) {
   if (!vec?.length) return ''
   const
     config = Object.assign(this ?? {}, { dye: x.preset |> presetToFlat }),

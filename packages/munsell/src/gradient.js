@@ -1,4 +1,4 @@
-import { CrosTab }        from '@analys/crostab'
+import { Crostab }        from '@analyz/crostab'
 import { roundD1 }        from '@aryth/math'
 import { minus }          from '@aryth/polar'
 import { init as matrix } from '@vect/matrix-init'
@@ -47,7 +47,7 @@ export class Gradient {
     const hv = axis.x === H ? xv.bind(xp) : axis.y === H ? yv.bind(yp) : zv.bind(zp)
     const sv = axis.x === S ? xv.bind(xp) : axis.y === S ? yv.bind(yp) : zv.bind(zp)
     const lv = axis.x === L ? xv.bind(xp) : axis.y === L ? yv.bind(yp) : zv.bind(zp)
-    return CrosTab.from({
+    return Crostab.from({
       side: vector(n.x, (x) => xv.call(xp, x, null).toFixed(1)),
       head: vector(n.y, (y) => yv.call(yp, null, y).toFixed(1)),
       rows: matrix(n.x, n.y, (x, y) => HSL.build(hv(x, y), sv(x, y), lv(x, y)).restrict().mutate(roundD1)),

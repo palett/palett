@@ -9,14 +9,14 @@ import { mapper as mapperFunc, mutate as mutateFunc } from '@vect/vector'
 
 const oneself = x => x
 
-const configX = { filter: isNumeric, mapper: oneself, preset: FRESH }
-const configY = { filter: isString, mapper: stringValue, preset: PLANET }
+const configX = { by: isNumeric, to: oneself, preset: FRESH }
+const configY = { by: isString, to: stringValue, preset: PLANET }
 /**
  *
  * @param vec
  * @typedef {Object} PalettProjectConfig
- * @typedef {Function} PalettProjectConfig.filter
- * @typedef {Function} PalettProjectConfig.mapper
+ * @typedef {Function} PalettProjectConfig.by
+ * @typedef {Function} PalettProjectConfig.to
  * @typedef {Object} PalettProjectConfig.preset
  * @param {PalettProjectConfig} x
  * @param {PalettProjectConfig} y
