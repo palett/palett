@@ -1,6 +1,6 @@
 {
   "name": "@palett/projector-factory",
-  "version": "0.9.10",
+  "version": "0.9.11",
   "description": "A debug tool",
   "main": "dist/index.cjs",
   "exports": {
@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@ject/oneself": "^0.0.17",
-    "@palett/projector-config": "^0.9.10"
+    "@palett/projector-config": "^0.9.11"
   },
   "repository": {
     "type": "git",
