@@ -1,5 +1,5 @@
 import { Dye }                from '@palett/dye'
-import { hexToHsl, PRODUCTS } from '@palett/munsell'
+import { hexToHsl, PRODUCTS } from '@palett/color-space'
 import { logger }             from '@spare/logger'
 import { indexed }            from '@vect/object-mapper'
 import { filter }             from '@vect/object-select'

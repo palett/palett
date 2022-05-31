@@ -1,6 +1,6 @@
 import { almostEqual }        from '@aryth/math'
 import { hexToHsl, hslToHex } from '@palett/convert'
-import { HSL }                from '@palett/munsell'
+import { HSL }                from '@palett/color-space'
 import { hexToStr }           from '@palett/stringify'
 import { init, Trizipper }    from '@vect/vector'
 

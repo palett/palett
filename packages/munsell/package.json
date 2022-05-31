@@ -18,7 +18,7 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@analyz/crostab": "^0.0.15",
+    "@analyz/crostab": "^0.0.20",
     "@aryth/bound": "^0.6.0",
     "@aryth/distinct-column": "^0.6.0",
     "@aryth/flopper": "^0.6.0",
@@ -31,7 +31,7 @@
     "@vect/vector-mapper": "^0.7.11"
   },
   "devDependencies": {
-    "@valjoux/timestamp-pretty": "^0.3.12"
+    "@valjoux/timestamp-pretty": "^0.3.13"
   },
   "repository": {
     "type": "git",

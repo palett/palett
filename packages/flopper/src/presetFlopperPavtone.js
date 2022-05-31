@@ -1,6 +1,6 @@
 import { finiteFlopper }           from '@aryth/flopper'
 import { flop, randBetw }          from '@aryth/rand'
-import { hexToHsl, HSL, PRODUCTS } from '@palett/munsell'
+import { hexToHsl, HSL, PRODUCTS } from '@palett/color-space'
 import { Preset }                  from '@palett/presets'
 import { filter }                  from '@vect/object-select'
 import { seq }                     from '@vect/vector'

@@ -1,7 +1,7 @@
 import { almostEqual }        from '@aryth/math'
 import { hexToHsl, hslToHex } from '@palett/convert'
 import { Dye }                from '@palett/dye'
-import { HSL }                from '@palett/munsell'
+import { HSL }                from '@palett/color-space'
 import { hexToStr }           from '@palett/stringify'
 import { logger }             from '@spare/logger'
 import { init, Trizipper }    from '@vect/vector'
