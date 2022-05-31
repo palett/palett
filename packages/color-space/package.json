@@ -1,0 +1,58 @@
+{
+  "name": "@palett/color-space",
+  "version": "0.9.11",
+  "description": "A color space consists of RGB and HSL",
+  "main": "dist/index.cjs",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.cjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "pub": "npm publish",
+    "test": "node -r @babel/register test/test.index.js"
+  },
+  "dependencies": {
+    "@analyz/crostab": "^0.0.20",
+    "@aryth/bound": "^0.6.0",
+    "@aryth/distinct-column": "^0.6.0",
+    "@aryth/flopper": "^0.6.0",
+    "@aryth/math": "^0.6.0",
+    "@aryth/polar": "^0.6.0",
+    "@palett/convert": "^0.9.11",
+    "@vect/columns-indicator": "^0.6.13",
+    "@vect/matrix-init": "^0.7.11",
+    "@vect/vector-init": "^0.7.11",
+    "@vect/vector-mapper": "^0.7.11"
+  },
+  "devDependencies": {
+    "@valjoux/timestamp-pretty": "^0.3.13"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoyeungw/palett/presets.git"
+  },
+  "keywords": [
+    "table",
+    "cross table",
+    "bi",
+    "insight",
+    "analytic"
+  ],
+  "author": {
+    "name": "Hoyeung Wong",
+    "email": "hoyeungw@outlook.com",
+    "url": "https://github.com/hoyeungw"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hoyeungw/palett/presets"
+  },
+  "homepage": "https://github.com/hoyeungw/palett/presets#readme",
+  "gitHead": "7aacc1919f1babd2ffce9ce2ac3a82cb756791f1"
+}
