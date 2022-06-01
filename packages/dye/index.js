@@ -1,6 +1,2 @@
-export { dye }                                from './src/_dye'
-export { Dye }                                from './src/dye'
-// export { DyeFactory }                         from '@palett/dye-factory'
-// export { enstyle, enstyle as assignEffects }  from '@palett/dye-factory'
-// export { pushHex, pushHsl, pushInt, pushRgb } from '@palett/dye-factory'
-// export { DyeFab }                             from '@palett/dye-factory'
+export { dye } from './src/_dye'
+export { Dye } from './src/dye'
