@@ -1,4 +1,3 @@
-export { DyeFactory }                                        from './src/DyeFactory'
-export { enstyle }                                           from './src/enstyle'
-export { selectEncolor, pushHex, pushHsl, pushInt, pushRgb } from './src/encolor'
-export { DyeFab }                                            from './src/DyeFab'
+export { DyeFab, DyeFab as DyeFactory }   from './src/DyeFab'
+export { Dye }                            from './src/Dye'
+export { HexDye, HslDye, IntDye, RgbDye } from './src/DyeFab'

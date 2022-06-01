@@ -2,9 +2,9 @@ import { Cyan }             from '@palett/cards'
 import { HEX }              from '@palett/enum-color-space'
 import { ITALIC }           from '@palett/enum-font-effects'
 import { decoFunc, logger } from '@spare/logger'
-import { DyeFactory }       from '../src/DyeFactory'
+import { DyeFab }           from '../src/DyeFab'
 
-const dyeFactory = DyeFactory.prep(HEX, ITALIC)
-dyeFactory |> decoFunc |> logger
-const dyeInstance = dyeFactory(Cyan.accent_1)
-'some' |> dyeInstance |> logger
+const fab = DyeFab.prep(HEX, ITALIC)
+fab |> decoFunc |> logger
+const fn = fab.make(Cyan.accent_1)
+'some' |> fn |> logger

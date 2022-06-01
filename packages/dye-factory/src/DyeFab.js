@@ -1,37 +1,39 @@
-import { CSI, SGR }      from '@palett/enum-ansi-codes'
-import { selectEncolor } from './encolor'
-import { enstyle }       from './enstyle'
+import { Dye }                from './Dye'
+import { hexToInt, hslToInt } from '@palett/convert'
+
+
+export class HexDye extends Dye {
+  constructor(style) { super(), this.style(style) }
+  into(c) { return c = hexToInt(c), super.into(c >> 16 & 0xFF, (c >> 8 & 0xFF), (c & 0xFF)) }
+}
+
+export class HslDye extends Dye {
+  constructor(style) { super(), this.style(style) }
+  into(c) { return c = hslToInt(c), super.into(c >> 16 & 0xFF, (c >> 8 & 0xFF), (c & 0xFF)) }
+}
+
+export class IntDye extends Dye {
+  constructor(style) { super(), this.style(style) }
+  into(c) { return super.into(c >> 16 & 0xFF, (c >> 8 & 0xFF), (c & 0xFF)) }
+}
+
+export class RgbDye extends Dye {
+  constructor(style) { super(), this.style(style) }
+  into([r, g, b]) { return super.into(r, g, b) }
+}
 
 export class DyeFab {
-  head = ''
-  tail = ''
-  constructor(space, style) {
-    if (space) this.setEncolor(space)
-    if (style) this.enstyle(style)
+  /** @type {Dye} */ base
+  constructor(dye) { this.base = dye }
+  static build(space, style) {
+    if (!(space in DyeFab)) return null
+    const dye = DyeFab[space].apply(null, style)
+    return dye.style(style), dye
   }
-  static build(space, style) { return new DyeFab(space, style) }
-  static prep(...effects) { return new DyeFab().enstyle(effects) }
-  static shallow() { return { head: '', tail: '' } }
-  reboot() { return this.head = '', this.tail = '', this }
-  slice() { return { head: this.head ?? '', tail: this.tail ?? '' } }
-  copy() { return new DyeFab().assign(this) }
-  /**
-   * @param {string} head
-   * @param {string} tail
-   */
-  inject(head, tail) {
-    if (head) this.head = head
-    if (tail) this.tail = tail
-    return this
-  }
-  assign(another) {
-    const { head, tail } = another
-    if (head) this.head = head
-    if (tail) this.tail = tail
-    return this
-  }
-  /** @param {string[]} styles */
-  enstyle(styles) { return enstyle.call(this, styles) }
-  setEncolor(space) { return this.encolor = selectEncolor(space), this }
-  render(text) { return CSI + this.head + SGR + text + CSI + this.tail + SGR }
+  static prep(space, ...style) { return DyeFab.build(space, style) }
+  static hex(...style) { return new HexDye(style) }
+  static hsl(...style) { return new HslDye(style) }
+  static int(...style) { return new IntDye(style) }
+  static rgb(...style) { return new RgbDye(style) }
 }
+
