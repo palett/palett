@@ -22,16 +22,16 @@ export class Dye {
   }
 
   into(r, g, b) {
-    let { head, tail } = this
+    let { head = '', tail = '' } = this
     if (head.length) head += ';'
     if (tail.length) tail += ';'
     head += FORE_INI + SC + r + SC + g + SC + b
     tail += FORE_DEF
     return { head, tail }
   }
-  cast(text) { return CSI + this.head + SGR + text + CSI + this.tail + SGR }
-  make(color) { return this.cast.bind(this.into(color)) }
-  render(color, text) { return this.cast.call(this.into(color), text) }
+  draw(text) { return CSI + this.head + SGR + text + CSI + this.tail + SGR }
+  make(color) { return this.draw.bind(this.into(color)) }
+  render(color, text) { return this.draw.call(this.into(color), text) }
 
 
   clear() { return this.head = '', this.tail = '', this }

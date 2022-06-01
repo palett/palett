@@ -1,40 +1,30 @@
-import { DyeFab, pushHex, pushHsl, pushInt, pushRgb } from '@palett/dye-factory'
-
+import { RawDye, HexDye, HslDye, IntDye, RgbDye } from '@palett/dye'
 
 /**
  * @typedef {string|number|number[]} chroma
  */
 
-/**
- *
- * @this {DyeFab}
- * @param {string|any} text
- * @param {chroma} color
- * @returns {function(string):string}
- */
 export class Fluo {
-  /**
-   *
-   * @this {DyeFab}
-   * @param {function(chroma):string} encolor
-   * @param {string|any} text
-   * @param {chroma} color
-   * @returns {function(string):string}
-   */
-  static render(encolor, text, color) {
-    const local = this?.slice?.call(this) ?? DyeFab.shallow()
-    if (color) (encolor ?? local.encolor).call(local, color)
-    return DyeFab.prototype.render.call(local, text)
+  static hex(text, hex) {
+    const ctx = HexDye.prototype.into.call(this ?? (new RawDye()), hex)
+    return HexDye.prototype.draw.call(ctx, text)
+  }
+  static hsl(text, hsl) {
+    const ctx = HslDye.prototype.into.call(this ?? (new RawDye()), hsl)
+    return HslDye.prototype.draw.call(ctx, text)
+  }
+  static int(text, int) {
+    const ctx = IntDye.prototype.into.call(this ?? (new RawDye()), int)
+    return IntDye.prototype.draw.call(ctx, text)
+  }
+  static rgb(text, rgb) {
+    const ctx = RgbDye.prototype.into.call(this ?? (new RawDye()), rgb)
+    return RgbDye.prototype.draw.call(ctx, text)
   }
 
-  static rgb(text, rgb) { return Fluo.render.call(this, pushRgb, text, rgb) }
-  static hex(text, hex) { return Fluo.render.call(this, pushHex, text, hex) }
-  static hsl(text, hsl) { return Fluo.render.call(this, pushHsl, text, hsl) }
-  static int(text, int) { return Fluo.render.call(this, pushInt, text, int) }
 }
 
 export function fluo(text, color) {
-  const local = this?.slice?.call(this) ?? DyeFab.shallow()
-  if (color) (local.encolor ?? pushRgb).call(local, color)
-  return DyeFab.prototype.render.call(local, text)
+  const o = RgbDye.prototype.into.call(this ?? (new RawDye()), color)
+  return RgbDye.prototype.draw.bind(o)
 }

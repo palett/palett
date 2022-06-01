@@ -21,7 +21,7 @@
     "@aryth/comparer": "^0.6.1",
     "@palett/convert": "^0.9.11",
     "@palett/dye": "^0.9.11",
-    "@palett/dye-factory": "^0.9.11",
+    "@palett/dye": "^0.9.11",
     "@palett/enum-color-space": "^0.9.11",
     "@typen/nullish": "^0.1.19"
   },

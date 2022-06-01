@@ -22,10 +22,10 @@
     "@aryth/rand": "^0.6.1",
     "@ject/oneself": "^0.0.17",
     "@palett/cards": "^0.9.11",
+    "@palett/color-algebra": "^0.9.11",
     "@palett/color-space": "^0.9.11",
     "@palett/convert": "^0.9.11",
     "@palett/stringify": "^0.9.11",
-    "@palett/color-algebra": "^0.9.11",
     "@texting/phrasing": "^0.1.4",
     "@vect/vector-init": "^0.7.11"
   },
