@@ -3,9 +3,9 @@ import { finiteFlopper } from '@aryth/flopper'
 import * as pol          from '@aryth/polar'
 import { PetalNote }     from '@aryth/polar'
 import * as conv         from '@palett/convert'
-import { iterate } from '@vect/vector-mapper'
-import { Cuvette } from './Cuvette'
-import { Domain }  from './Domain'
+import { iterate }       from '@vect/vector-mapper'
+import { Cuvette }       from './Cuvette'
+import { Domain }        from './Domain'
 
 const { PI, pow, abs, round } = Math
 
@@ -35,18 +35,17 @@ export function rhodoneaFolios(
   const sortList = []
   const hslIndicator = (hsl) => hsl.h * 10000 + hsl.s * 100 + hsl.l
   let i = 0
-  for (const [ hex, hsl ] of finiteFlopper(hexToHsl)) {
+  for (const [hex, hsl] of finiteFlopper(hexToHsl)) {
     i++
-    let [ t, s, r ] = hsl
+    let [t, s, r] = hsl
     if (r < minL) continue
     if (polarMark.foliateRadius(t, petals) < r) continue
     const phase = petalNote.phase(t)
     if (thresholdPerPhase <= petalNote.counter[phase]) continue
     if (saturInterval.has(s)) {
       petalNote.notePhase(phase)
-      sortList.push([ hslIndicator(hsl), hex ])
-    }
-    else {
+      sortList.push([hslIndicator(hsl), hex])
+    } else {
       const ds = abs(hsl.s - s)
       const dr = abs(hsl.l - r)
       const dt = pol.distance(hsl.h, t)
@@ -54,16 +53,16 @@ export function rhodoneaFolios(
     }
     if (maximum <= petalNote.sum) break
   }
-  iterate(petalNote.counter, ([ phase, count ]) => {
+  iterate(petalNote.counter, ([phase, count]) => {
     if (count < thresholdPerPhase) {
       const cache = petalCache[phase]
       if (cache?.length) {
         for (let hex of cache.values.slice(0, thresholdPerPhase - count)) {
-          sortList.push([ hslIndicator(conv.hexToHsl(hex)), hex ])
+          sortList.push([hslIndicator(conv.hexToHsl(hex)), hex])
         }
       }
     }
   })
-  sortList.sort(([ a, ], [ b, ]) => a - b)
-  return sortList.map(([ _, hex ]) => [ hex, cuvette.name(hex) ])
+  sortList.sort(([a,], [b,]) => a - b)
+  return sortList.map(([_, hex]) => [hex, cuvette.name(hex)])
 }

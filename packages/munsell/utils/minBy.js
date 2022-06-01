@@ -1,4 +1,4 @@
-export const entriesMinBy = (entries, indicator) => {
+export const entMin = (entries, indicator) => {
   const hi = entries?.length ?? 0
   if (hi === 0) return void 0
   if (hi === 1) return entries[0]

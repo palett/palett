@@ -1,19 +1,18 @@
 import { randBetw }            from '@aryth/rand'
-import { hslToHex }            from '@palett/convert'
+import { hslToHex, rgbToHsl }  from '@palett/convert'
 import { Fluo }                from '@palett/fluo'
 import { Preset }              from '@palett/presets'
 import { hslToStr }            from '@palett/stringify'
 import { DecoCrostab, logger } from '@spare/logger'
 import { says }                from '@spare/xr'
 import { H, S }                from '../resources/attr'
-import { rgbToHsl }            from '../src/convert'
 import { Gradient }            from '../src/gradient'
 
 const a = Preset.build('#E46C9A', '#6ED1B4') // Azalea Opal
 const b = Preset.build('#B284BE', '#C6E67A') // African Violet - Sharp Green
 const c = Preset.build('#CB8986', '#79D381')  // Rosette - SUMMER Green
-const MIN = rgbToHsl([ randBetw(160, 255), randBetw(0, 196), randBetw(0, 196) ])|> hslToHex
-const MAX = rgbToHsl([ randBetw(0, 196), randBetw(160, 255), randBetw(0, 196) ])|> hslToHex
+const MIN = rgbToHsl([randBetw(160, 255), randBetw(0, 196), randBetw(0, 196)])|> hslToHex
+const MAX = rgbToHsl([randBetw(0, 196), randBetw(160, 255), randBetw(0, 196)])|> hslToHex
 const conf = {
   preset: a, //Preset.build(MIN, MAX),
   axis: { x: S, y: H },
@@ -31,7 +30,7 @@ crostabOriginal |> DecoCrostab({ read: hslToStr, presets: [] }) |> says['origina
 '' |> logger
 crostabExtended |> DecoCrostab({ read: hslToStr, presets: [] }) |> says['extended']
 
-const decoLocale = DecoCrostab({ read: ([ hex, name ]) => Fluo.hex(`'${hex}', // ${name}`, hex), presets: [] })
+const decoLocale = DecoCrostab({ read: ([hex, name]) => Fluo.hex(`'${hex}', // ${name}`, hex), presets: [] })
 '' |> logger
 crostabOriginal.map(x => x.nearest()) |> decoLocale |> says['original'].br('nearest')
 '' |> logger

@@ -1,6 +1,6 @@
-﻿import { limitAboveZero, restrictAboveZero } from '@aryth/math'
-import { H, L, S } from '../resources/attr'
-import { HSL }     from './HSL'
+﻿import { lim0up, rec0up } from '@aryth/math'
+import { H, L, S }        from '../resources/attr'
+import { HSL }            from './HSL'
 
 const { sqrt } = Math
 
@@ -12,9 +12,9 @@ export class VaryFab {
     this.delta = delta
   }
 
-  varyH(i) { return restrictAboveZero(this.basis.h + i * this.delta.h, 360) }
-  varyS(i) { return limitAboveZero(this.basis.s + i * this.delta.s, 100) }
-  varyL(i) { return limitAboveZero(this.basis.l + i * this.delta.l, 100) }
+  varyH(i) { return rec0up(this.basis.h + i * this.delta.h, 360) }
+  varyS(i) { return lim0up(this.basis.s + i * this.delta.s, 100) }
+  varyL(i) { return lim0up(this.basis.l + i * this.delta.l, 100) }
 
   getDelta(attr) {
     if (attr === H) { return this.delta.h }

@@ -1,11 +1,11 @@
 import { Fluo }               from '@palett/fluo'
 import { hexToStr }           from '@palett/stringify'
 import { DecoVector, logger } from '@spare/logger'
-import { hexToRgb }           from '../src/convert'
 import { rhodoneaFolios }     from '../src/rhodoneaFolios'
+import { HSL }                from '../src/HSL'
 
 // '#AE5459': 'Mineral Red',
-const hsl = hexToRgb('#AE5459').toHsl()
+const hsl = HSL.fromHex('#AE5459')
 
 const list = rhodoneaFolios(
   hsl,
@@ -14,4 +14,4 @@ const list = rhodoneaFolios(
     density: 0.01
   })
 
-list |> DecoVector({ read: ([ hex, name ]) => hexToStr(hex) + ' > ' + Fluo.hex(name, hex) }) |> logger
+list |> DecoVector({ read: ([hex, name]) => hexToStr(hex) + ' > ' + Fluo.hex(name, hex) }) |> logger
