@@ -2,7 +2,7 @@
   "name": "@palett/hatsu",
   "version": "0.9.0",
   "description": "A color converter",
-  "main": "dist/index.cjs",
+  "main": "./dist/index.cjs",
   "exports": {
     "import": "./dist/index.mjs",
     "require": "./dist/index.cjs"

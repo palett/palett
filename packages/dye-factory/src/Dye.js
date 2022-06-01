@@ -29,8 +29,8 @@ export class Dye {
     tail += FORE_DEF
     return { head, tail }
   }
-  draw(text) { return CSI + this.head + SGR + text + CSI + this.tail + SGR }
   into([r, g, b]) { return this.repl(r, g, b) }
+  draw(text) { return CSI + this.head + SGR + text + CSI + this.tail + SGR }
   make(color) { return this.draw.bind(this.into(color)) }
   render(color, text) { return this.draw.call(this.into(color), text) }
 

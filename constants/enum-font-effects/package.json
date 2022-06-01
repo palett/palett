@@ -1,8 +1,8 @@
 {
   "name": "@palett/enum-font-effects",
-  "version": "0.10.0",
+  "version": "0.9.11",
   "description": "A colorant to string",
-  "main": "dist/index.cjs",
+  "main": "./dist/index.cjs",
   "exports": {
     "import": "./dist/index.mjs",
     "require": "./dist/index.cjs"
