@@ -1,13 +1,12 @@
 import { hexToRgb, hslToRgb, rgbToHsl } from '@palett/convert'
 import { Hatsu }                        from 'archive/hatsu'
-
-import { normal } from './resources/NORD'
+import { NORD }                         from './resources/NORD'
 
 // const len = maxLen(Object.keys(normal))
 
 export class RgbTransHslTest {
   static testRgbToHsl() {
-    for (let [name, hex] of Object.entries(normal)) {
+    for (let [name, hex] of Object.entries(NORD)) {
       const rgb = hexToRgb(hex)
       const hsl = rgbToHsl(rgb);
       // const [r] = rgb

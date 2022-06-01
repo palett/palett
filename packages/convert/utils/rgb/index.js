@@ -1,27 +1,11 @@
-export const bound = ([ r, g, b ]) => {
-  let ma = r, mi = r
-  if (g > r) { ma = g }
-  else { mi = g }
-  if (b > ma) ma = b
-  if (b < mi) mi = b
-  return {
-    max: ma,
-    sum: ma + mi,
-    dif: ma - mi
-  }
-}
+import { E3, round } from '@aryth/math'
 
 export const bd = (r, g, b) => {
-  let ma = r, mi = r
-  if (g > r) { ma = g }
-  else { mi = g }
-  if (b > ma) ma = b
-  if (b < mi) mi = b
-  return {
-    max: ma,
-    sum: ma + mi,
-    dif: ma - mi
-  }
+  let hi = r, lo = r
+  if (g > r) { hi = g } else { lo = g }
+  if (b > hi) hi = b
+  if (b < lo) lo = b
+  return { max: hi, sum: hi + lo, dif: hi - lo }
 }
 
 export const hue = (r, g, b, max, dif) => {

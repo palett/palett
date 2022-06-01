@@ -1,1 +1,0 @@
-export const intToRgb = n => [ n >> 16 & 0xFF, n >> 8 & 0xFF, n & 0xFF ]

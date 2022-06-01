@@ -1,24 +1,41 @@
-// RGB to ***
-export { rgbToHex }   from './src/rgbToHex'
-export { rgbToHsl }   from './src/rgbToHsl'
-export { rgbToInt }   from './src/rgbToInt'
-// HEX to ***
-export { hexToRgb }   from './src/hexToRgb'
-export { hexToHsl }   from './src/hexToHsl'
-export { hexToInt }   from './src/hexToInt'
-export { hexToShort } from './src/hexToShort'
-// HSL to ***
-export { hslToRgb }   from './src/hslToRgb'
-export { hslToHex }   from './src/hslToHex'
-export { hslToInt }   from './src/hslToInt'
-// int to ***
-export { intToRgb }   from './src/intToRgb'
-export { intToHex }   from './src/intToHex'
-export { intToHsl }   from './src/intToHsl'
-
-// omni converter
-export { Conv } from './src/Conv'
+import { oneself }                                   from "@ject/oneself";
+import { hslToHex, intToHex, rgbToHex, }             from "./src/hex";
+import { hexToHsl, intToHsl, rgbToHsl }              from "./src/hsl";
+import { hexToInt, hexToShort, hslToInt, rgbToInt, } from "./src/int"
+import { hexToRgb, hslToRgb, intToRgb }              from './src/rgb'
 
 export { hexAt, prolif, dil2, dil3, dil6 } from './utils/hex'
 export { hf }                              from './utils/hsl'
-export { bound, bd, hue }                  from './utils/rgb'
+export { bd, hue }                         from './utils/rgb'
+
+export { hslToHex, intToHex, rgbToHex, }             from "./src/hex";
+export { hexToHsl, intToHsl, rgbToHsl }              from "./src/hsl";
+export { hexToInt, hexToShort, hslToInt, rgbToInt, } from "./src/int"
+export { hexToRgb, hslToRgb, intToRgb }              from './src/rgb'
+
+export class Conv {
+  static rgb = class Rgb {
+    static rgb = oneself
+    static hex = rgbToHex
+    static hsl = rgbToHsl
+    static int = rgbToInt
+  }
+  static hex = class Rgb {
+    static rgb = hexToRgb
+    static hex = oneself
+    static hsl = hexToHsl
+    static int = hexToInt
+  }
+  static hsl = class Rgb {
+    static rgb = hslToRgb
+    static hex = hslToHex
+    static hsl = oneself
+    static int = hslToInt
+  }
+  static int = class Rgb {
+    static rgb = intToRgb
+    static hex = intToHex
+    static hsl = intToHsl
+    static int = oneself
+  }
+}
