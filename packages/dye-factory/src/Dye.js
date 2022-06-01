@@ -21,8 +21,8 @@ export class Dye {
     return this
   }
 
-  into(r, g, b) {
-    let { head = '', tail = '' } = this
+  repl(r, g, b) {
+    let head = this?.head ?? '', tail = this?.tail ?? ''
     if (head.length) head += ';'
     if (tail.length) tail += ';'
     head += FORE_INI + SC + r + SC + g + SC + b
@@ -30,9 +30,9 @@ export class Dye {
     return { head, tail }
   }
   draw(text) { return CSI + this.head + SGR + text + CSI + this.tail + SGR }
+  into([r, g, b]) { return this.repl(r, g, b) }
   make(color) { return this.draw.bind(this.into(color)) }
   render(color, text) { return this.draw.call(this.into(color), text) }
-
 
   clear() { return this.head = '', this.tail = '', this }
   slice() { return new Dye(this.head, this.tail) }

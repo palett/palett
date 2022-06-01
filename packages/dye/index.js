@@ -9,7 +9,7 @@ export { Dye as RawDye, DyeFab, HexDye, HslDye, IntDye, RgbDye } from '@palett/d
  * @returns {string}
  */
 export const dye = function (text, color) {
-  let ctx = this ?? (new RawDye())
+  let ctx = this
   if (color) ctx = RgbDye.prototype.into.call(ctx, color)
   return RgbDye.prototype.draw.call(ctx, text)
 }
@@ -25,8 +25,8 @@ export const dye = function (text, color) {
  * @returns {function(string):string}
  */
 export function Dye(color) {
-  const o = RgbDye.prototype.into.call(this ?? (new RawDye()), color)
-  return RgbDye.prototype.draw.bind(o)
+  const ctx = RgbDye.prototype.into.call(this, color)
+  return RgbDye.prototype.draw.bind(ctx)
 }
 
 /**
@@ -37,26 +37,25 @@ export function Dye(color) {
  * @returns {function(string):string}
  */
 Dye.make = function (color) {
-  const o = RgbDye.prototype.into.call(this ?? (new RawDye()), color)
-  return RgbDye.prototype.draw.bind(o)
+  const ctx = RgbDye.prototype.into.call(this, color)
+  return RgbDye.prototype.draw.bind(ctx)
 }
-
 
 Dye.hex = function (hex) {
-  const o = HexDye.prototype.into.call(this ?? (new RawDye()), hex)
-  return HexDye.prototype.draw.bind(o)
+  const ctx = HexDye.prototype.into.call(this, hex)
+  return HexDye.prototype.draw.bind(ctx)
 }
 Dye.hsl = function (hsl) {
-  const o = HslDye.prototype.into.call(this ?? (new RawDye()), hsl)
-  return HslDye.prototype.draw.bind(o)
+  const ctx = HslDye.prototype.into.call(this, hsl)
+  return HslDye.prototype.draw.bind(ctx)
 }
 Dye.int = function (int) {
-  const o = IntDye.prototype.into.call(this ?? (new RawDye()), int)
-  return IntDye.prototype.draw.bind(o)
+  const ctx = IntDye.prototype.into.call(this, int)
+  return IntDye.prototype.draw.bind(ctx)
 }
 Dye.rgb = function (rgb) {
-  const o = RgbDye.prototype.into.call(this ?? (new RawDye()), rgb)
-  return RgbDye.prototype.draw.bind(o)
+  const ctx = RgbDye.prototype.into.call(this, rgb)
+  return RgbDye.prototype.draw.bind(ctx)
 }
 
 

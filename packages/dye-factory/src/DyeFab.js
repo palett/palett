@@ -4,22 +4,22 @@ import { hexToInt, hslToInt } from '@palett/convert'
 
 export class HexDye extends Dye {
   constructor(style) { super(), this.style(style) }
-  into(c) { return c = hexToInt(c), super.into(c >> 16 & 0xFF, (c >> 8 & 0xFF), (c & 0xFF)) }
+  into(c) { return c = hexToInt(c), super.repl(c >> 16 & 0xFF, c >> 8 & 0xFF, c & 0xFF) }
 }
 
 export class HslDye extends Dye {
   constructor(style) { super(), this.style(style) }
-  into(c) { return c = hslToInt(c), super.into(c >> 16 & 0xFF, (c >> 8 & 0xFF), (c & 0xFF)) }
+  into(c) { return c = hslToInt(c), super.repl(c >> 16 & 0xFF, c >> 8 & 0xFF, c & 0xFF) }
 }
 
 export class IntDye extends Dye {
   constructor(style) { super(), this.style(style) }
-  into(c) { return super.into(c >> 16 & 0xFF, (c >> 8 & 0xFF), (c & 0xFF)) }
+  into(c) { return super.repl(c >> 16 & 0xFF, c >> 8 & 0xFF, c & 0xFF) }
 }
 
 export class RgbDye extends Dye {
   constructor(style) { super(), this.style(style) }
-  into([r, g, b]) { return super.into(r, g, b) }
+  into([r, g, b]) { return super.repl(r, g, b) }
 }
 
 export class DyeFab {
