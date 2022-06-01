@@ -1,6 +1,6 @@
 {
   "name": "@palett/convert",
-  "version": "0.9.13",
+  "version": "0.9.14",
   "description": "A color converter among RGB, HEX and HSL.",
   "main": "./dist/index.cjs",
   "exports": {
