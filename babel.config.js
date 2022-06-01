@@ -3,9 +3,5 @@ module.exports = function (api) {
   const presets = [ [ '@babel/preset-env', { targets: { node: '16' } } ] ]
   const plugins = [ [ '@babel/plugin-proposal-pipeline-operator', { proposal: 'minimal' } ] ]
   const ignore = [ 'node_modules/**' ]
-  return {
-    presets,
-    plugins,
-    ignore
-  }
+  return { presets, plugins, ignore }
 }

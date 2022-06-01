@@ -19,7 +19,7 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@aryth/bound-matrix": "^0.6.0",
+    "@aryth/bound-matrix": "^0.6.1",
     "@ject/oneself": "^0.0.17",
     "@palett/convert": "^0.9.11",
     "@palett/enum-colorant-modes": "^0.9.11",

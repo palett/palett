@@ -1,7 +1,7 @@
 import { bound }             from '@aryth/bound-vector'
-import { VectorCollection }  from '@foba/vector-number'
-import { BOLD, ITALIC }      from '@palett/enum-font-effects'
-import { FRESH }             from '@palett/presets'
+import { VectorCollection } from '@foba/vector-number'
+import { BOLD, ITALIC }     from '@palett/enum-font-effects'
+import { FRESH }            from '@palett/presets'
 import { says }              from '@spare/logger'
 import { Colorant, Pigment } from '../index'
 

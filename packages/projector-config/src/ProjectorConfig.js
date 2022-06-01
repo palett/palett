@@ -1,8 +1,8 @@
 import { max as keepFloor, min as keepCeil } from '@aryth/comparer'
 import { hexToHsl }                          from '@palett/convert'
-import { DyeFab, DyeFactory }                from '@palett/dye-factory'
-import { HSL }                               from '@palett/enum-color-space'
-import { parseBound }                        from './parseBound'
+import { DyeFab, DyeFactory } from '@palett/dye-factory'
+import { HSL }                from '@palett/enum-color-space'
+import { parseBound }         from './parseBound'
 
 export const leverage = ([ x, y, z ], delta) => [ x / delta, y / delta, z / delta ]
 export const minus = ([ x_, y_, z_ ], [ _x, _y, _z ]) => [ x_ - _x, y_ - _y, z_ - _z ]

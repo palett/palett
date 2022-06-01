@@ -1,5 +1,5 @@
-import { BOLD }            from '@palett/enum-font-effects'
-import { ATLAS }           from '@palett/presets'
+import { BOLD }  from '@palett/enum-font-effects'
+import { ATLAS } from '@palett/presets'
 import { ProjectorConfig } from '../index'
 
 const config = ProjectorConfig.fromHEX({ min: 0, max: 5 }, Object.assign({}, ATLAS, { effects: [ BOLD ] }))

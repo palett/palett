@@ -4,7 +4,7 @@ import { mapper as mapVector, mutate as mutVector } from '@vect/vector-mapper'
 
 /**
  *
- * @typedef {Object} Preset
+ * @typedef {Object|Preset} Preset
  * @typedef {string} Preset.min
  * @typedef {string} Preset.max
  * @typedef {string} Preset.na

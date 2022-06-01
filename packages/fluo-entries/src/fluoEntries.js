@@ -4,7 +4,7 @@ import { unwind }                    from '@vect/entries-unwind'
 import { mutazip as mutazipEntries } from '@vect/entries-zipper'
 
 /**
- * @typedef {Object} Preset
+ * @typedef {Object|Preset} Preset
  * @typedef {string} Preset.min
  * @typedef {string} Preset.max
  * @typedef {string} Preset.na

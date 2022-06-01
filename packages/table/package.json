@@ -20,7 +20,7 @@
   "dependencies": {
     "@analys/convert": "^0.6.14",
     "@analyz/crostab": "^0.0.20",
-    "@aryth/math": "^0.6.0",
+    "@aryth/math": "^0.6.1",
     "@ject/oneself": "^0.0.17",
     "@palett/cards": "^0.9.11",
     "@palett/convert": "^0.9.11",

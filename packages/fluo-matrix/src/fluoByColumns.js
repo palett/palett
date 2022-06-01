@@ -4,7 +4,7 @@ import { columnsMapper, transpose } from '@vect/matrix'
 
 /**
  *
- * @typedef {Object} Preset
+ * @typedef {Object|Preset} Preset
  * @typedef {string} Preset.min
  * @typedef {string} Preset.max
  * @typedef {string} Preset.na

@@ -1,13 +1,13 @@
 import { boundaries }                                 from '@aryth/bound-vector'
 import { oneself }                                    from '@ject/oneself'
-import { hslToHex }                                   from '@palett/convert'
-import { COLOR, MAKER, RENDER }                       from '@palett/enum-colorant-modes'
-import { ProjectorFactory }                           from '@palett/projector-factory'
+import { hslToHex }             from '@palett/convert'
+import { COLOR, MAKER, RENDER } from '@palett/enum-colorant-modes'
+import { ProjectorFactory }     from '@palett/projector-factory'
 import { nullish }                                    from '@typen/nullish'
 import { mapper as mapperFunc, mutate as mutateFunc } from '@vect/vector-mapper'
 
 /**
- * @typedef {Object} Preset
+ * @typedef {Object|Preset} Preset
  * @typedef {string} Preset.max
  * @typedef {string} Preset.min
  * @typedef {string} Preset.na

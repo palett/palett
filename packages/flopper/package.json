@@ -19,10 +19,10 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/comparer": "^0.6.0",
-    "@aryth/flopper": "^0.6.0",
-    "@aryth/rand": "^0.6.0",
-    "@aryth/rank": "^0.6.0",
+    "@aryth/comparer": "^0.6.1",
+    "@aryth/flopper": "^0.6.1",
+    "@aryth/rand": "^0.6.1",
+    "@aryth/rank": "^0.6.1",
     "@palett/cards": "^0.9.11",
     "@palett/color-space": "^0.9.11",
     "@palett/enum-color-space": "^0.9.11",

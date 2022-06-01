@@ -37,15 +37,15 @@ export class ProjectorFactory {
     return new ProjectorFactory(config)
   }
 
-  render(value, text) { return this.fab(this.color(value))(text) }
-  make(value) { return this.fab(this.color(value)) }
-  color(value) {
-    if (isNaN(value)) return this.nap
+  render(val, text) { return this.fab(this.color(val))(text) }
+  make(val) { return this.fab(this.color(val)) }
+  color(val) {
+    if (isNaN(val)) return this.nap
     const { lo, lev, min } = this
     return [
-      scale(value, lo, lev[0], min[0], 360),
-      scale(value, lo, lev[1], min[1], 100),
-      scale(value, lo, lev[2], min[2], 100),
+      scale(val, lo, lev[0], min[0], 360),
+      scale(val, lo, lev[1], min[1], 100),
+      scale(val, lo, lev[2], min[2], 100),
     ]
   }
 }
@@ -69,6 +69,3 @@ export class VoidProjectorFactory {
   make(value) { return oneself }
   color(value) { return null }
 }
-
-// if (!preset) { return new VoidProjectorFactory() } else { preset = presetToLeap(preset) }
-// if (!bound.dif) return new SoleProjectorFactory(bound, preset, effects)
