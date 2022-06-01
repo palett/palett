@@ -1,4 +1,4 @@
-import { BOLD, ITALIC } from '@palett/enum-font-effects'
+import { BOLD, ITALIC } from 'constants/enum-font-effects'
 import { decoFunc }     from '@spare/deco-func'
 import { logger }       from '@spare/logger'
 import { Buff }         from '../index'

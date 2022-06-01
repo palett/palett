@@ -1,4 +1,4 @@
-import { ITALIC }        from '@palett/enum-font-effects';
+import { ITALIC }        from 'constants/enum-font-effects';
 import { presetFlopper } from '@palett/flopper';
 import { deco }          from '@spare/deco-string';
 import { STR, FUN } from '@typen/enum-data-types';

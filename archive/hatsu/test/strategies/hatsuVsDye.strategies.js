@@ -1,6 +1,6 @@
 import { Dye }                               from '@palett/dye'
 import { PreDye }                            from '@palett/dye/src/PreEffect'
-import { BOLD }                              from '@palett/enum-font-effects'
+import { BOLD }                              from 'constants/enum-font-effects'
 import { ColorGroups, Degrees, PalettTable } from '@palett/table'
 import { delogger }                          from '@spare/deco'
 import { decoCrostab, logger, says }         from '@spare/logger'

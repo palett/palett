@@ -1,5 +1,5 @@
-import { ITALIC }             from '@palett/enum-font-effects'
-import { presetFlopper }      from '@palett/flopper'
+import { ITALIC }        from 'constants/enum-font-effects'
+import { presetFlopper } from '@palett/flopper'
 import { deco as decoString } from "@spare/deco-string"
 import { FUN }                from '@typen/enum-data-types'
 import { mapper }             from '@vect/object-mapper'

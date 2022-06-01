@@ -2,7 +2,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var enumFontEffects = require('@palett/enum-font-effects');
+var enumFontEffects = require('constants/enum-font-effects');
 var flopper = require('@palett/flopper');
 var decoString = require('@spare/deco-string');
 var enumDataTypes = require('@typen/enum-data-types');

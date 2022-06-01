@@ -1,6 +1,6 @@
 import { rand }                    from '@aryth/rand'
 import { VectorCollection }        from '@foba/vector-string'
-import { BOLD, ITALIC, UNDERLINE } from '@palett/enum-font-effects'
+import { BOLD, ITALIC, UNDERLINE } from 'constants/enum-font-effects'
 import { delogger }                from '@spare/deco'
 import { Ros }                     from '../src/Ros'
 

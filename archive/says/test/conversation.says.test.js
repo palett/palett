@@ -1,5 +1,5 @@
-import { BOLD }           from '@palett/enum-font-effects'
-import { Deco }           from '@spare/deco'
+import { BOLD } from 'constants/enum-font-effects'
+import { Deco } from '@spare/deco'
 import { LF }             from '@spare/enum-chars'
 import { logger, logNeL } from '@spare/logger'
 import { Says }           from '../src/Says'
