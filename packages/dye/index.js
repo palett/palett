@@ -46,8 +46,8 @@ Dye.hex = function (hex) {
   return HexDye.prototype.draw.bind(ctx)
 }
 Dye.hsl = function (hsl) {
-  const ctx = HslDye.prototype.into.call(this, hsl)
-  return HslDye.prototype.draw.bind(ctx)
+  // const ctx = HslDye.prototype.into.call(this, hsl)
+  return HslDye.prototype.make.call(this, hsl)
 }
 Dye.int = function (int) {
   const ctx = IntDye.prototype.into.call(this, int)

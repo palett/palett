@@ -1,6 +1,7 @@
 import { DyeFab }       from '../src/DyeFab'
 import { BOLD, ITALIC } from '@palett/enum-font-effects'
+import { HEX }          from '@palett/enum-color-space'
 
-const fab = DyeFab.hex(ITALIC, BOLD)
+const fab = DyeFab.prep(HEX, ITALIC, BOLD)
 const f = fab.make('#F1D501')
 f('some') |> console.log

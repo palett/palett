@@ -12,34 +12,32 @@ export class Dye {
     this.tail = tail ?? ''
   }
   static of(head, tail) { return new Dye(head, tail) }
-  static from(dye) { return new Dye(dye.head, dye.tail) }
+  static from(dye) { return new Dye(dye?.head, dye?.tail) }
   static prep(...style) { return new Dye().style(style) }
 
-  open() {
+  load(r, g, b) {
     if (this.head.length) this.head += ';'
     if (this.tail.length) this.tail += ';'
+    this.head += FORE_INI + SC + r + SC + g + SC + b
+    this.tail += FORE_DEF
     return this
   }
-
   repl(r, g, b) {
-    let head = this?.head ?? '', tail = this?.tail ?? ''
-    if (head.length) head += ';'
-    if (tail.length) tail += ';'
-    head += FORE_INI + SC + r + SC + g + SC + b
-    tail += FORE_DEF
-    return { head, tail }
+    const ctx = { head: this?.head ?? '', tail: this?.tail ?? '' }
+    return load.call(ctx, r, g, b)
   }
   into([r, g, b]) { return this.repl(r, g, b) }
   draw(text) { return CSI + this.head + SGR + text + CSI + this.tail + SGR }
-  make(color) { return this.draw.bind(this.into(color)) }
-  render(color, text) { return this.draw.call(this.into(color), text) }
+  make(color) { return draw.bind(this.into(color)) }
+  render(color, text) { return draw.call(this.into(color), text) }
 
   clear() { return this.head = '', this.tail = '', this }
   slice() { return new Dye(this.head, this.tail) }
   /** @param {string[]} style */
   style(style) {
     if (!style?.length) return this
-    this.open()
+    if (this.head.length) this.head += ';'
+    if (this.tail.length) this.tail += ';'
     for (let t of style) {
       const [c] = t
       c === 'b' ? (this.head += BOL_ON, this.tail += BOL_OFF) // BOLD
@@ -55,3 +53,5 @@ export class Dye {
     return this
   }
 }
+
+export const { load, repl, draw } = Dye.prototype
