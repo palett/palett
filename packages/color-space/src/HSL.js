@@ -1,17 +1,16 @@
-import { almostEqual, limitAboveZero, restrictAboveZero, round } from '@aryth/math'
-import { distance as d, Polar }                                  from '@aryth/polar'
-import { hf }                                                    from '@palett/convert'
-import { RGB }                                                   from './RGB'
-
-const { abs } = Math
+import { almostEqual, lim0up, rec0up }                      from '@aryth/math'
+import { distance as d, Polar }                             from '@aryth/polar'
+import { hexToHsl, hslToHex, hslToRgb, rgbToHex, rgbToHsl } from '@palett/convert'
+import { RGB }                                              from './RGB'
+import { abs }                                              from '../utils/math'
 
 export class HSL extends Array {
-  constructor(h, s, l) {
-    super(h, s, l)
-  }
+  constructor(h, s, l) { super(h, s, l) }
+  static of(h, s, l) { return new HSL(h, s, l) }
   static from([h, s, l]) { return new HSL(h, s, l) }
+  static fromHex(rgb) { return hexToHsl.call(HSL, rgb)}
+  static fromRgb(rgb) { return rgbToHsl.call(HSL, rgb)}
   static fromPolar(polar, s) { return new HSL(polar.th, s, polar.r) }
-  static build(h, s, l) { return new HSL(h, s, l) }
 
   get h() { return this[0] }
   get s() { return this[1] }
@@ -23,44 +22,28 @@ export class HSL extends Array {
   get theta() { return this[0] }
   get radius() { return this[2] }
 
-  /** @returns {RGB} */
-  toRgb() {
-    let h = this.h, s = this.s / 100, l = this.l / 100
-    const a = s * Math.min(l, 1 - l), r = hf(0, h, a, l), g = hf(8, h, a, l), b = hf(4, h, a, l)
-    return new RGB(round(r * 0xFF), round(g * 0xFF), round(b * 0xFF))
-  }
-
-  toPolar() { return new Polar(this.l, this.h) }
-
-  // 
-  relative(another) {
-    const [h, s, l] = another
-    return new HSL(d(this.h, h), abs(this.s - s), abs(this.l - l))
-  }
+  get rgb() { return hslToRgb.call(RGB, this) }
+  get hex() { return hslToHex(this) }
+  get polar() { return new Polar(this.l, this.h) }
 
   mutate(fn) {
-    this.h = fn(this.h)
-    this.s = fn(this.s)
-    this.l = fn(this.l)
+    this.h = fn(this.h), this.s = fn(this.s), this.l = fn(this.l)
     return this
   }
-
+  relative(hsl) {
+    const [h, s, l] = hsl
+    return new HSL(d(this.h, h), abs(this.s - s), abs(this.l - l))
+  }
   restrict() {
-    this.h = restrictAboveZero(this.h, 360)
-    this.s = limitAboveZero(this.s, 100)
-    this.l = limitAboveZero(this.l, 100)
+    this.h = rec0up(this.h, 360)
+    this.s = lim0up(this.s, 100)
+    this.l = lim0up(this.l, 100)
     return this
   }
-
-  distance(another) {
-    // console.log('another', another)
-    const [h, s, l] = this.relative(another)
-    return h + s + l
-  }
-
-  almostEqual(another, epsilon) {
-    const [h, s, l] = another
-    return d(this.h, h) < epsilon.h && abs(this.s - s) < epsilon.s && abs(this.l - l) < epsilon.l
+  distance(hsl) { return hsl = this.relative(hsl), (hsl[0] + hsl[1] + hsl[2]) }
+  almostEqual(hsl, eps) {
+    const [h, s, l] = hsl
+    return d(this.h, h) < eps.h && abs(this.s - s) < eps.s && abs(this.l - l) < eps.l
   }
 
   /**
