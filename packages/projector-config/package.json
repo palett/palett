@@ -1,6 +1,6 @@
 {
   "name": "@palett/projector-config",
-  "version": "0.9.11",
+  "version": "0.10.0",
   "description": "A debug tool",
   "main": "dist/index.cjs",
   "exports": {
@@ -19,10 +19,9 @@
   },
   "dependencies": {
     "@aryth/comparer": "^0.6.1",
-    "@palett/convert": "^0.9.11",
-    "@palett/dye": "^0.9.11",
-    "@palett/dye": "^0.9.11",
-    "@palett/enum-color-space": "^0.9.11",
+    "@palett/convert": "^0.10.0",
+    "@palett/dye": "^0.10.0",
+    "@palett/enum-color-space": "^0.10.0",
     "@typen/nullish": "^0.1.19"
   },
   "repository": {

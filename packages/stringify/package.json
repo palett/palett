@@ -1,6 +1,6 @@
 {
   "name": "@palett/stringify",
-  "version": "0.9.11",
+  "version": "0.10.0",
   "description": "A color converter among RGB, HEX and HSL.",
   "main": "dist/index.cjs",
   "exports": {
@@ -19,9 +19,9 @@
   },
   "dependencies": {
     "@aryth/math": "^0.6.1",
-    "@palett/color-space": "^0.9.11",
-    "@palett/convert": "^0.9.11",
-    "@palett/fluo": "^0.9.11",
+    "@palett/color-space": "^0.10.0",
+    "@palett/convert": "^0.10.0",
+    "@palett/fluo": "^0.10.0",
     "@texting/phrasing": "^0.1.4",
     "@vect/vector": "^0.7.11"
   },

@@ -1,6 +1,6 @@
 {
   "name": "@palett/color-algebra",
-  "version": "0.9.11",
+  "version": "0.10.0",
   "description": "A color converter among RGB, HEX and HSL.",
   "main": "dist/index.cjs",
   "exports": {

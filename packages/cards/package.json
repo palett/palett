@@ -1,6 +1,6 @@
 {
   "name": "@palett/cards",
-  "version": "0.9.11",
+  "version": "0.10.0",
   "description": "A color converter",
   "main": "dist/index.cjs",
   "exports": {
