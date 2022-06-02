@@ -5,7 +5,7 @@ import { Preset }              from '@palett/presets'
 import { hslToStr }            from '@palett/stringify'
 import { DecoCrostab, logger } from '@spare/logger'
 import { says }                from '@spare/xr'
-import { H, S }                from '../resources/attr'
+import { H, L, S }             from '../resources/attr'
 import { Gradient }            from '../src/gradient'
 
 const a = Preset.build('#E46C9A', '#6ED1B4') // Azalea Opal
@@ -15,7 +15,7 @@ const MIN = rgbToHsl([randBetw(160, 255), randBetw(0, 196), randBetw(0, 196)])|>
 const MAX = rgbToHsl([randBetw(0, 196), randBetw(160, 255), randBetw(0, 196)])|> hslToHex
 const conf = {
   preset: a, //Preset.build(MIN, MAX),
-  axis: { x: S, y: H },
+  axis: { x: L, y: H },
   size: { x: 4, y: 5 },
   extend: { top: 4, bottom: 2, left: 2, right: 2 }
 }

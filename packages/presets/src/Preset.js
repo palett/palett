@@ -1,14 +1,11 @@
-import { almostEqual } from '@aryth/math'
-import { hslToHex }    from '@palett/convert'
-import { HSL }         from '@palett/color-space'
-import { toUpper }     from '@texting/phrasing'
-import { init }        from '@vect/vector-init'
-import { HexDye }      from '@palett/dye'
+import { almostEqual }  from '@aryth/math'
+import { hslToHex }     from '@palett/convert'
+import { HSL }          from '@palett/color-space'
+import { toUpper }      from '@texting/phrasing'
+import { init }         from '@vect/vector-init'
+import { draw, HexDye } from '@palett/dye'
 
-function hexToStr(hex) {
-  const ctx = HexDye.prototype.into.call(this, hex)
-  return HexDye.prototype.draw.call(ctx, hex)
-}
+function hexToStr(hex) { return draw.call(HexDye.prototype.into.call(this, hex), hex) }
 
 export class Preset {
   max
