@@ -1,6 +1,6 @@
 {
   "name": "@palett/dye-factory",
-  "version": "0.9.14",
+  "version": "0.9.15",
   "description": "A colorant to string",
   "main": "./dist/index.cjs",
   "exports": {
@@ -19,7 +19,7 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@palett/dye": "^0.9.14"
+    "@palett/dye": "^0.9.15"
   },
   "repository": {
     "type": "git",
