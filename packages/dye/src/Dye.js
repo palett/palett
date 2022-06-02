@@ -1,8 +1,9 @@
 import {
   BLI_OFF, BLI_ON, BOL_OFF, BOL_ON, CRO_OFF, CRO_ON, DIM_OFF, DIM_ON, FORE_DEF, FORE_INI,
   HID_OFF, HID_ON, INV_OFF, INV_ON, ITA_OFF, ITA_ON, UND_OFF, UND_ON, CSI, SGR,
-}             from '@palett/enum-ansi-codes'
-import { SC } from '@palett/util-ansi'
+}                             from '@palett/enum-ansi-codes'
+import { SC }                 from '@palett/util-ansi'
+import { hexToInt, hslToInt } from '@palett/convert'
 
 export class Dye {
   head
@@ -14,6 +15,11 @@ export class Dye {
   static of(head, tail) { return new Dye(head, tail) }
   static from(dye) { return new Dye(dye?.head, dye?.tail) }
   static prep(...style) { return new Dye().style(style) }
+
+  static hex(color) { return HexDye.init(this).make(color) }
+  static hsl(color) { return HslDye.init(this).make(color) }
+  static int(color) { return IntDye.init(this).make(color) }
+  static rgb(color) { return RgbDye.init(this).make(color) }
 
   load(r, g, b) {
     if (this.head.length) this.head += ';'
@@ -55,3 +61,36 @@ export class Dye {
 }
 
 export const { load, repl, draw } = Dye.prototype
+
+export class HexDye extends Dye {
+  constructor(h, t) { super(h, t) }
+  static init(ctx) { return new HexDye(ctx?.head, ctx?.tail) }
+  into(c) { return c = hexToInt(c), repl.call(this, c >> 16 & 0xFF, c >> 8 & 0xFF, c & 0xFF) }
+  make(c) { return draw.bind(HexDye.prototype.into.call(this, c))}
+  render(c, tx) { return draw.call(HexDye.prototype.into.call(this, c), tx) }
+}
+
+export class HslDye extends Dye {
+  constructor(h, t) { super(h, t) }
+  static init(ctx) { return new HslDye(ctx?.head, ctx?.tail) }
+  into(c) { return c = hslToInt(c), repl.call(this, c >> 16 & 0xFF, c >> 8 & 0xFF, c & 0xFF) }
+  make(c) { return draw.bind(HslDye.prototype.into.call(this, c))}
+  render(c, tx) { return draw.call(HslDye.prototype.into.call(this, c), tx) }
+}
+
+export class IntDye extends Dye {
+  constructor(h, t) { super(h, t) }
+  static init(ctx) { return new IntDye(ctx?.head, ctx?.tail) }
+  into(c) { return repl.call(this, c >> 16 & 0xFF, c >> 8 & 0xFF, c & 0xFF) }
+  make(c) { return draw.bind(IntDye.prototype.into.call(this, c))}
+  render(c, tx) { return draw.call(IntDye.prototype.into.call(this, c), tx) }
+}
+
+export class RgbDye extends Dye {
+  constructor(h, t) { super(h, t) }
+  static init(ctx) { return new RgbDye(ctx?.head, ctx?.tail) }
+  into([r, g, b]) { return repl.call(this, r, g, b) }
+  make(c) { return draw.bind(RgbDye.prototype.into.call(this, c))}
+  render(c, tx) { return draw.call(RgbDye.prototype.into.call(this, c), tx) }
+}
+
