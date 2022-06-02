@@ -19,11 +19,7 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@ject/oneself": "^0.0.17",
-    "@palett/convert": "^0.9.14",
-    "@palett/enum-ansi-codes": "^0.9.14",
-    "@palett/enum-color-space": "^0.9.14",
-    "@palett/util-ansi": "^0.9.14"
+    "@palett/dye": "^0.9.14"
   },
   "repository": {
     "type": "git",

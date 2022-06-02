@@ -1,4 +1,4 @@
-import { DyeFab } from '../src/DyeFab'
+import { DyeFab } from '../../dye/src/DyeFab'
 
 const fn = DyeFab.hsl([320, 55, 55])
 
