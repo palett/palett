@@ -24,7 +24,7 @@
     "@palett/convert": "^0.9.16",
     "@palett/enum-colorant-modes": "^0.9.16",
     "@palett/presets": "^0.9.16",
-    "@palett/projector-factory": "^0.9.16",
+    "@palett/projector": "^0.9.16",
     "@typen/nullish": "^0.1.19",
     "@vect/vector-mapper": "^0.7.11"
   },

@@ -1,5 +1,6 @@
-import { fluoVector }               from '@palett/fluo-vector'
-import { columnsMapper, transpose } from '@vect/matrix'
+import { fluoVector }    from '@palett/fluo-vector'
+import { columnsMapper } from '@vect/columns-mapper'
+import { transpose }     from '@vect/matrix-algebra'
 
 
 /**
@@ -17,6 +18,5 @@ import { columnsMapper, transpose } from '@vect/matrix'
  * @returns {*[][]}
  */
 export function fluoByColumns(mx, config) {
-  const context = this
-  return columnsMapper(mx, col => fluoVector.call(context, col, config))|> transpose
+  return columnsMapper(mx, col => fluoVector.call(this, col, config))|> transpose
 }

@@ -24,7 +24,7 @@
     "@palett/fluo-matrix": "^0.9.16",
     "@palett/fluo-vector": "^0.9.16",
     "@palett/presets": "^0.9.16",
-    "@palett/projector-factory": "^0.9.16",
+    "@palett/projector": "^0.9.16",
     "@spare/string-value": "^0.14.3",
     "@texting/charset-fullwidth": "^0.1.4",
     "@texting/charset-halfwidth": "^0.1.4",

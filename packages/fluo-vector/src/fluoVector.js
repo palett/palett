@@ -1,69 +1,56 @@
-import { boundaries }                                 from '@aryth/bound-vector'
-import { oneself }                                    from '@ject/oneself'
+import { boundaries }           from '@aryth/bound-vector'
+import { oneself }              from '@ject/oneself'
 import { hslToHex }             from '@palett/convert'
 import { COLOR, MAKER, RENDER } from '@palett/enum-colorant-modes'
-import { ProjectorFactory }     from '@palett/projector-factory'
-import { nullish }                                    from '@typen/nullish'
-import { mapper as mapperFunc, mutate as mutateFunc } from '@vect/vector-mapper'
+import { Proj }                 from '@palett/projector'
+import { valid }                from '@typen/nullish'
+import { mapper, mutate }       from '@vect/vector-mapper'
 
-/**
- * @typedef {Object|Preset} Preset
- * @typedef {string} Preset.max
- * @typedef {string} Preset.min
- * @typedef {string} Preset.na
- * @typedef {?string[]} Preset.effects
- * @typedef {?Function} Preset.by
- * @typedef {?Function} Preset.to
- *
- * @param {*[]} vec
- * @param {Preset[]} presets
- * @returns {*[]}
- */
-export const fluoVector = function (vec, presets) {
+export function fluoVector(vec, presets) {
   if (!vec?.length) return []
-  const projectorCollection = _toProjectorCollection(vec, presets)
-  const mapper = this?.mutate ? mutateFunc : mapperFunc
+  function makeProjectors(vec, presetCollection = []) {
+    const [cX, cY] = presetCollection
+    const [bX, bY] = boundaries(vec, presetCollection)
+    const [pX, pY] = [Proj.from(bX, cX), Proj.from(bY, cY)]
+    return [[bX, pX], [bY, pY]]
+  }
+  const projectors = makeProjectors(vec, presets)
+  const to = this?.mutate ? mutate : mapper
   switch (this?.colorant) {
     case COLOR:
-      return mapper(vec, ColorFactory.color(projectorCollection))
+      return to(vec, Thrust.into(projectors))
     case MAKER:
-      return mapper(vec, ColorFactory.maker(projectorCollection))
+      return to(vec, Thrust.make(projectors))
     case RENDER:
+      return to(vec, Thrust.render(projectors))
     default:
-      return mapper(vec, ColorFactory.render(projectorCollection))
+      return to(vec, Thrust.render(projectors))
   }
 }
 
-const _toProjectorCollection = (vec, presetCollection = []) => {
-  const [confX, confY] = presetCollection
-  const [vecX, vecY] = boundaries(vec, presetCollection)
-  const [projX, projY] = [ProjectorFactory.fromHEX(vecX, confX), ProjectorFactory.fromHEX(vecY, confY)]
-  return [[vecX, projX], [vecY, projY]]
-}
-
-export class ColorFactory {
-  static color([[bX, pX], [bY, pY]]) {
-    function toColor(hsl) { return hsl ? hsl|> hslToHex : null }
+export class Thrust {
+  static into([[bX, pX], [bY, pY]]) {
+    function toHex(hsl) { return hsl ? hslToHex(hsl) : null }
     return (_, i) => {
       let v
-      if (!nullish(v = bX && bX[i])) { return pX.color(v)|> toColor }
-      if (!nullish(v = bY && bY[i])) { return pY.color(v)|> toColor }
+      if (valid(v = bX && bX[i])) { return pX.into(v)|> toHex }
+      if (valid(v = bY && bY[i])) { return pY.into(v)|> toHex }
       return null
     }
   }
-  static maker([[bX, pX], [bY, pY]]) {
+  static make([[bX, pX], [bY, pY]]) {
     return (_, i) => {
       let v
-      if (!nullish(v = bX && bX[i])) { return pX.make(v) }
-      if (!nullish(v = bY && bY[i])) { return pY.make(v) }
+      if (valid(v = bX && bX[i])) { return pX.make(v) }
+      if (valid(v = bY && bY[i])) { return pY.make(v) }
       return (pX || pY)?.make(pX.nap) ?? oneself
     }
   }
   static render([[bX, pX], [bY, pY]]) {
     return (n, i) => {
       let v
-      if (!nullish(v = bX && bX[i])) { return pX.render(v, n) }
-      if (!nullish(v = bY && bY[i])) { return pY.render(v, n) }
+      if (valid(v = bX && bX[i])) { return pX.render(v, n) }
+      if (valid(v = bY && bY[i])) { return pY.render(v, n) }
       return (pX || pY)?.render(pX.nap, n) ?? n
     }
   }

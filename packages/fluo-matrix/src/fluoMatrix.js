@@ -25,6 +25,7 @@ export const fluoMatrix = function (mx, direct, configs) {
     case COLUMNWISE:
       return fluoByColumns.call(this, mx, configs)
     case POINTWISE:
+      return fluoByPoints.call(this, mx, configs)
     default:
       return fluoByPoints.call(this, mx, configs)
   }
