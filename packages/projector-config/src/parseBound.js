@@ -1,4 +1,4 @@
-import { nullish } from '@typen/nullish'
+import { valid } from '@typen/nullish'
 
 /**
  *
@@ -11,14 +11,14 @@ import { nullish } from '@typen/nullish'
 export const parseBound = bound => {
   // if (!bound) return { min: 0, dif: 0 }
   let { min, max, dif } = bound
-  if (!nullish(min)) {
-    if (!nullish(dif)) return { min, dif }
-    if (!nullish(max)) return { min, dif: max - min }
+  if (valid(min)) {
+    if (valid(dif)) return { min, dif }
+    if (valid(max)) return { min, dif: max - min }
   }
-  if (!nullish(dif)) {
-    if (!nullish(max)) return { min: max - dif, dif }
+  if (valid(dif)) {
+    if (valid(max)) return { min: max - dif, dif }
     return { min: 0, dif }
   }
-  if (!nullish(max)) return { min: 0, dif: max }
+  if (valid(max)) return { min: 0, dif: max }
   return { min: 0, dif: 0 }
 }

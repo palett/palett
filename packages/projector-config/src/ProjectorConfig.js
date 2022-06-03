@@ -6,6 +6,14 @@ import { parseBound }                        from './parseBound'
 export const leverage = ([x, y, z], delta) => [x / delta, y / delta, z / delta]
 export const minus = ([x_, y_, z_], [_x, _y, _z]) => [x_ - _x, y_ - _y, z_ - _z]
 export const scale = (x, lo, lev, min, hi) => keepCeil((keepFloor(x, lo) - lo) * lev + min, hi)
+export function into(val) {
+  const { lo, lev, min } = this
+  return [
+    scale(val, lo, lev[0], min[0], 360),
+    scale(val, lo, lev[1], min[1], 100),
+    scale(val, lo, lev[2], min[2], 100),
+  ]
+}
 
 /**
  * @typedef {[number,number,number]} Triple
@@ -60,12 +68,12 @@ export class ProjectorConfig {
     return new ProjectorConfig(parseBound(bound), { min, dif: minus(max, min) }, nap, effects)
   }
 
-  project(value) {
+  project(val) {
     const { lo, lev, min } = this
     return [
-      scale(value, lo, lev[0], min[0], 360),
-      scale(value, lo, lev[1], min[1], 100),
-      scale(value, lo, lev[2], min[2], 100)
+      scale(val, lo, lev[0], min[0], 360),
+      scale(val, lo, lev[1], min[1], 100),
+      scale(val, lo, lev[2], min[2], 100),
     ]
   }
 

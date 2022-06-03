@@ -1,5 +1,2 @@
-export { parseBound }                                                  from './src/parseBound'
-export { _project, projector, leverage, Projector, Colorant, Pigment } from './src/Projector'
-export { ProjectorFactory }                                            from '@palett/projector-factory'
-
-
+export { Proj, Proj as Projector, Proj as ProjectorFactory } from './src/Proj'
+export { lever, minus, add }                                 from './src/triplet'
