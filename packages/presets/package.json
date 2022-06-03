@@ -1,6 +1,6 @@
 {
   "name": "@palett/presets",
-  "version": "0.9.16",
+  "version": "0.9.17",
   "description": "A color converter",
   "main": "./dist/index.cjs",
   "exports": {
@@ -21,10 +21,10 @@
     "@aryth/math": "^0.6.1",
     "@aryth/rand": "^0.6.1",
     "@ject/oneself": "^0.0.17",
-    "@palett/cards": "^0.9.16",
-    "@palett/color-algebra": "^0.9.16",
-    "@palett/color-space": "^0.9.16",
-    "@palett/convert": "^0.9.16",
+    "@palett/cards": "^0.9.17",
+    "@palett/color-algebra": "^0.9.17",
+    "@palett/color-space": "^0.9.17",
+    "@palett/convert": "^0.9.17",
     "@texting/phrasing": "^0.1.4",
     "@vect/vector-init": "^0.7.11"
   },
