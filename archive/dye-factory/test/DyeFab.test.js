@@ -1,4 +1,4 @@
-import { DyeFab }       from '../../dye/src/DyeFab'
+import { DyeFab }       from '@palett/dye/src/DyeFab'
 import { BOLD, ITALIC } from '@palett/enum-font-effects'
 import { HEX }          from '@palett/enum-color-space'
 

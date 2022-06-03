@@ -2,7 +2,7 @@
   "name": "@palett/dye-factory",
   "version": "0.9.15",
   "description": "A colorant to string",
-  "main": "./dist/index.cjs",
+  "main": "dist/index.cjs",
   "exports": {
     "import": "./dist/index.mjs",
     "require": "./dist/index.cjs"
