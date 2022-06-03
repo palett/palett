@@ -17,6 +17,12 @@ export class Preset {
     this.na = na
   }
   static build(min, max, na = '#CCCCCC') { return new Preset(min, max, na) }
+  static from(preset, effects) {
+    const { min, max, na } = preset
+    const target = new Preset(min, max, na)
+    if (effects) target.effects = effects
+    return target
+  }
   static fromHSL(min, max, na) { return new Preset(hslToHex(min), hslToHex(max), hslToHex(na)) }
 
   reverse() { return Preset.build(this.max, this.min, this.na) }

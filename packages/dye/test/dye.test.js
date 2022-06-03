@@ -1,7 +1,7 @@
 import { BlueGrey, Brown, LightGreen, Purple } from '@palett/cards'
-import { hexToHsl, hexToInt, hexToRgb }        from '@palett/convert'
-import { DyeFactory }                          from '@palett/dye-factory'
-import { RGB }                                 from '@palett/enum-color-space'
+import { hexToHsl, hexToInt, hexToRgb } from '@palett/convert'
+import { DyeFactory }                   from 'archive/dye-factory'
+import { RGB }                          from '@palett/enum-color-space'
 import { UNDERLINE }                           from '@palett/enum-font-effects'
 import { Dye }                                 from '../src/dye'
 

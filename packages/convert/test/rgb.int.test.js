@@ -1,4 +1,4 @@
-import { DyeFactory } from '@palett/dye-factory'
+import { DyeFactory } from 'archive/dye-factory'
 import { RGB }        from '@palett/enum-color-space'
 import { INVERSE }    from '@palett/enum-font-effects'
 import { logger, xr } from '@spare/logger'
