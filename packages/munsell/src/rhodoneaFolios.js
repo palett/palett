@@ -20,7 +20,7 @@ export function rhodoneaFolios(
     domain = Domain.fashion
   }
 ) {
-  const cuvette = Cuvette.selectCuvette(domain)
+  const cuvette = Cuvette.select(domain)
   const polarMark = hsl.toPolar()
   const hexToHsl = cuvette.hexToHsl.slice() // create shallow copy
   const saturInterval = Bound.build(hsl.s - saturTolerance, hsl.s + saturTolerance)

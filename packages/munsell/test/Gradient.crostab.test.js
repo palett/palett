@@ -5,8 +5,8 @@ import { Preset }              from '@palett/presets'
 import { hslToStr }            from '@palett/stringify'
 import { DecoCrostab, logger } from '@spare/logger'
 import { says }                from '@spare/xr'
-import { H, L, S }             from '../resources/attr'
-import { Gradient }            from '../src/gradient'
+import { H, L, S }  from '../resources/attr'
+import { Gradient } from '../src/Gradient'
 
 const a = Preset.build('#E46C9A', '#6ED1B4') // Azalea Opal
 const b = Preset.build('#B284BE', '#C6E67A') // African Violet - Sharp Green

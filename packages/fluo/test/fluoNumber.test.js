@@ -1,6 +1,6 @@
-import { OCEAN }    from '@palett/presets'
-import { says }     from 'archive/says'
-import { delogger } from '@spare/deco'
+import { OCEAN }      from '@palett/presets'
+import { says }       from '@spare/xr'
+import { delogger }   from '@spare/deco'
 import { seq }        from '@vect/vector'
 import { FluoNumber } from './fluo-number'
 

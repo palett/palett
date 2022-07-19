@@ -24,7 +24,7 @@ export class Cuvette {
     return new Cuvette(raw)
   }
 
-  static selectCuvette(domain) {
+  static select(domain) {
     if (domain === Domain.fashion) return Cuvette.#fashion ?? (Cuvette.#fashion = Cuvette.build(FASHIONS))
     if (domain === Domain.product) return Cuvette.#product ?? (Cuvette.#product = Cuvette.build(PRODUCTS))
     return new Cuvette()

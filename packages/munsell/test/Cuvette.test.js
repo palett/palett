@@ -8,7 +8,7 @@ says['cuvette'].asc.asc
 
 const test = () => {
   'preparing' |> says['log-time']
-  const cuvette = Cuvette.selectCuvette(Domain.fashion)
+  const cuvette = Cuvette.select(Domain.fashion)
 
   'generating list' |> says['log-time']
   cuvette.list.length |> says['cuvette'].p('list.length')

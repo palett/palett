@@ -18,20 +18,20 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@analyz/crostab": "^0.0.20",
-    "@aryth/bound": "^0.6.1",
-    "@aryth/distinct-column": "^0.6.1",
-    "@aryth/flopper": "^0.6.1",
-    "@aryth/math": "^0.6.1",
-    "@aryth/polar": "^0.6.1",
+    "@analyz/crostab": "^0.1.0",
+    "@aryth/bound": "^0.6.4",
+    "@aryth/distinct-column": "^0.6.4",
+    "@aryth/flopper": "^0.6.4",
+    "@aryth/math": "^0.6.4",
+    "@aryth/polar": "^0.6.4",
     "@palett/convert": "^0.9.18",
     "@vect/columns-indicator": "^0.6.13",
-    "@vect/matrix-init": "^0.7.11",
-    "@vect/vector-init": "^0.7.11",
-    "@vect/vector-mapper": "^0.7.11"
+    "@vect/matrix-init": "^0.7.14",
+    "@vect/vector-init": "^0.7.14",
+    "@vect/vector-mapper": "^0.7.14"
   },
   "devDependencies": {
-    "@valjoux/timestamp-pretty": "^0.3.13"
+    "@valjoux/timestamp-pretty": "^0.3.18"
   },
   "repository": {
     "type": "git",

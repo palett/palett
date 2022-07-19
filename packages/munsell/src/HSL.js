@@ -16,7 +16,7 @@ export class HSL extends RawHSL {
   toPolar() { return super.polar }
 
   comparative(epsilon = 0.1, domain = Domain.fashion) {
-    const cuvette = Cuvette.selectCuvette(domain)
+    const cuvette = Cuvette.select(domain)
     let target = "", min = 1024
     for (let [hex, hsl] of cuvette.hexToHsl) {
       const distance = this.distance(hsl)
@@ -27,7 +27,7 @@ export class HSL extends RawHSL {
   }
 
   nearest(domain = Domain.fashion) {
-    const cuvette = Cuvette.selectCuvette(domain)
+    const cuvette = Cuvette.select(domain)
     // console.log('cuvette.hexToHsl', cuvette.hexToHsl.length, decoMatrix(cuvette.hexToHsl, { top: 5, bottom: 2 }))
     let [hex, _] = entMin(cuvette.hexToHsl, ([_, hsl]) => this.distance(hsl))
     return [hex, cuvette.name(hex)]
@@ -35,7 +35,7 @@ export class HSL extends RawHSL {
 
   // list<(string hex, string name)>
   approximates(epsilon, domain = Domain.fashion) {
-    const cuvette = Cuvette.selectCuvette(domain)
+    const cuvette = Cuvette.select(domain)
     const distances = cuvette.hexToHsl.filter(([_, hsl]) => this.almostEqual(hsl, epsilon))
     return distances.map(([hex,]) => [hex, cuvette.name(hex)])
   }
@@ -43,7 +43,7 @@ export class HSL extends RawHSL {
 
 // list<(string hex, string name)>
   approximatesByTop(top, domain = Domain.fashion) {
-    const cuvette = Cuvette.selectCuvette(domain)
+    const cuvette = Cuvette.select(domain)
     const distances = cuvette.hexToHsl.map(([hex, hsl]) => [hex, this.distance(hsl)])
     distances.sort(([, dA], [, dB]) => dA >= dB ? 1 : -1)
     return distances
@@ -53,7 +53,7 @@ export class HSL extends RawHSL {
 
   // list<(string hex, string name)>
   analogous(delta, count, domain = Domain.fashion) {
-    const cuvette = Cuvette.selectCuvette(domain)
+    const cuvette = Cuvette.select(domain)
     const [, s,] = this
     const analogous = this.toPolar()
       .analogous(delta, count)

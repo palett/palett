@@ -15,7 +15,7 @@ export class RGB extends RawRGB {
   toHsl() { return super.hsl }
 
   comparative(epsilon = 0.1, domain = Domain.fashion) {
-    const cuvette = Cuvette.selectCuvette(domain)
+    const cuvette = Cuvette.select(domain)
     let target = "", min = 1024
     for (let [hex, rgb] of cuvette.hexToRgb) {
       const distance = this.distance(rgb)
@@ -25,14 +25,14 @@ export class RGB extends RawRGB {
     return [target, cuvette.name(target)]
   }
   nearest(domain = Domain.fashion) {
-    const cuvette = Cuvette.selectCuvette(domain)
+    const cuvette = Cuvette.select(domain)
     let [hex, _] = entMin(cuvette.hexToRgb, ([_, hsl]) => this.distance(hsl))
     return [hex, cuvette.name(hex)]
   }
 
   // list<(string hex, string name)>
   approximates(epsilon, domain = Domain.fashion) {
-    const cuvette = Cuvette.selectCuvette(domain)
+    const cuvette = Cuvette.select(domain)
     const distances = cuvette
       .hexToRgb
       .filter(([, rgb]) => this.almostEqual(rgb, epsilon))
@@ -41,7 +41,7 @@ export class RGB extends RawRGB {
 
 // list<(string hex, string name)>
   approximatesByTop(top, domain = Domain.fashion) {
-    const cuvette = Cuvette.selectCuvette(domain)
+    const cuvette = Cuvette.select(domain)
     // list<(string hex, int len)>
     const distances = cuvette
       .hexToRgb

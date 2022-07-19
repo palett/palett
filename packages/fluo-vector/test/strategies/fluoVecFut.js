@@ -1,7 +1,7 @@
 import { duobound }                    from '@aryth/bound-vector'
 import { FRESH, PLANET, presetToLeap } from '@palett/presets'
 import { Projector }                   from '@palett/projector'
-import { stringValue }                  from '@spare/string'
+import { stringValue }                  from '@texting/string-value'
 import { isString }                     from '@typen/literal'
 import { nullish }                      from '@typen/nullish'
 import { isNumeric }                    from '@typen/num-strict'
