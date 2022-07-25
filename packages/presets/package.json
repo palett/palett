@@ -18,8 +18,8 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/math": "^0.6.4",
-    "@aryth/rand": "^0.6.4",
+    "@aryth/math": "^0.6.5",
+    "@aryth/rand": "^0.6.5",
     "@ject/oneself": "^0.0.17",
     "@palett/cards": "^0.9.19",
     "@palett/color-algebra": "^0.9.19",
