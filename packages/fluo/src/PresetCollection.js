@@ -20,6 +20,9 @@ export const HEADING_PRESET = SUBTLE
 export class PresetCollection extends Array {
   constructor(presets) {
     super(presets.length)
+    for(let i=0;i<presets.length;i++){
+      this[i]=presets[i]
+    }
     mutazip(this, presets, (receiver, preset) => Object.assign({}, preset))
   }
   static build(...presets) { return new PresetCollection(presets) }

@@ -21,7 +21,9 @@
     "@aryth/math": "^0.6.4",
     "@ject/oneself": "^0.0.17",
     "@palett/convert": "^0.9.18",
-    "@palett/dye": "^0.9.18"
+    "@palett/dye": "^0.9.18",
+    "@palett/enum-ansi-codes": "^0.9.18",
+    "@palett/util-ansi": "^0.9.18"
   },
   "repository": {
     "type": "git",

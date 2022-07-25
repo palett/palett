@@ -32,7 +32,7 @@ export class Dye {
     const ctx = { head: this?.head ?? '', tail: this?.tail ?? '' }
     return load.call(ctx, r, g, b)
   }
-  into([r, g, b]) { return this.repl(r, g, b) }
+  into([ r, g, b ]) { return this.repl(r, g, b) }
   draw(text) { return CSI + this.head + SGR + text + CSI + this.tail + SGR }
   make(color) { return draw.bind(this.into(color)) }
   render(color, text) { return draw.call(this.into(color), text) }
@@ -45,7 +45,7 @@ export class Dye {
     if (this.head.length) this.head += ';'
     if (this.tail.length) this.tail += ';'
     for (let t of style) {
-      const [c] = t
+      const [ c ] = t
       c === 'b' ? (this.head += BOL_ON, this.tail += BOL_OFF) // BOLD
         : c === 'd' ? (this.head += DIM_ON, this.tail += DIM_OFF) // DIM
           : c === 'i' && t[1] === 't' ? (this.head += ITA_ON, this.tail += ITA_OFF) // ITALIC
@@ -89,7 +89,7 @@ export class IntDye extends Dye {
 export class RgbDye extends Dye {
   constructor(h, t) { super(h, t) }
   static init(ctx) { return new RgbDye(ctx?.head, ctx?.tail) }
-  into([r, g, b]) { return repl.call(this, r, g, b) }
+  into([ r, g, b ]) { return repl.call(this, r, g, b) }
   make(c) { return draw.bind(RgbDye.prototype.into.call(this, c))}
   render(c, tx) { return draw.call(RgbDye.prototype.into.call(this, c), tx) }
 }

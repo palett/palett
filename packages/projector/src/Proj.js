@@ -2,7 +2,7 @@ import { oneself }        from '@ject/oneself'
 import { HslDye }         from '@palett/dye'
 import { hexToHsl }       from '@palett/convert'
 import { lim0up, rec0up } from '@aryth/math'
-import { lever, minus }   from './triplet'
+import { lever, minus }   from './utils/triplet.js'
 
 export function scale(x, xLo, lev, yLo) { return x < xLo ? yLo : (x - xLo) * lev + yLo }
 

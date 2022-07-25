@@ -1,6 +1,6 @@
-import { oneself }                                   from "@ject/oneself";
-import { hslToHex, intToHex, rgbToHex, }             from "./src/hex";
-import { hexToHsl, intToHsl, rgbToHsl }              from "./src/hsl";
+import { oneself }                                   from "@ject/oneself"
+import { hslToHex, intToHex, rgbToHex, }             from "./src/hex"
+import { hexToHsl, intToHsl, rgbToHsl }              from "./src/hsl"
 import { hexToInt, hexToShort, hslToInt, rgbToInt, } from "./src/int"
 import { hexToRgb, hslToRgb, intToRgb }              from './src/rgb'
 
@@ -8,8 +8,8 @@ export { hexAt, prolif, dil2, dil3, dil6 } from './utils/hex'
 export { hf }                              from './utils/hsl'
 export { bd, hue }                         from './utils/rgb'
 
-export { hslToHex, intToHex, rgbToHex, }             from "./src/hex";
-export { hexToHsl, intToHsl, rgbToHsl }              from "./src/hsl";
+export { hslToHex, intToHex, rgbToHex, }             from "./src/hex"
+export { hexToHsl, intToHsl, rgbToHsl, fracToHsl }   from "./src/hsl"
 export { hexToInt, hexToShort, hslToInt, rgbToInt, } from "./src/int"
 export { hexToRgb, hslToRgb, intToRgb }              from './src/rgb'
 

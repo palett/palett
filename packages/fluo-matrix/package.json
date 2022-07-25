@@ -33,7 +33,11 @@
     "@vect/matrix-algebra": "^0.7.14",
     "@vect/matrix-index": "^0.7.14",
     "@vect/object-select": "^0.7.14",
-    "@vect/vector-mapper": "^0.7.14"
+    "@vect/vector-mapper": "^0.7.14",
+    "@texting/string-value": "^0.1.7",
+    "@typen/enum-data-types": "^0.1.19",
+    "@typen/literal": "^0.1.19",
+    "@typen/num-strict": "^0.1.19"
   },
   "devDependencies": {
     "@texting/charset-fullwidth": "^0.1.7"

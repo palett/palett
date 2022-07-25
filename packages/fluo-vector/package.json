@@ -26,7 +26,11 @@
     "@palett/presets": "^0.9.18",
     "@palett/projector": "^0.9.18",
     "@typen/nullish": "^0.1.19",
-    "@vect/vector-mapper": "^0.7.14"
+    "@vect/vector-mapper": "^0.7.14",
+    "@texting/string-value": "^0.1.7",
+    "@typen/enum-data-types": "^0.1.19",
+    "@typen/literal": "^0.1.19",
+    "@typen/num-strict": "^0.1.19"
   },
   "repository": {
     "type": "git",

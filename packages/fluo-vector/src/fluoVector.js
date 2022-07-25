@@ -2,34 +2,35 @@ import { boundaries }           from '@aryth/bound-vector'
 import { oneself }              from '@ject/oneself'
 import { hslToHex }             from '@palett/convert'
 import { COLOR, MAKER, RENDER } from '@palett/enum-colorant-modes'
+import { PresetCollection }     from '@palett/fluo'
 import { Proj }                 from '@palett/projector'
 import { valid }                from '@typen/nullish'
 import { mapper, mutate }       from '@vect/vector-mapper'
 
 export function fluoVector(vec, presets) {
   if (!vec?.length) return []
+  if (presets?.length && !presets[0]?.by) PresetCollection.prototype.setBound.call(presets)
   function makeProjectors(vec, presetCollection = []) {
-    const [cX, cY] = presetCollection
-    const [bX, bY] = boundaries(vec, presetCollection)
-    const [pX, pY] = [Proj.from(bX, cX), Proj.from(bY, cY)]
-    return [[bX, pX], [bY, pY]]
+    const [ cX, cY ] = presetCollection
+    const [ bX, bY ] = boundaries(vec, presetCollection)
+    const [ pX, pY ] = [ Proj.from(bX, cX), Proj.from(bY, cY) ]
+    return [ [ bX, pX ], [ bY, pY ] ]
   }
   const projectors = makeProjectors(vec, presets)
   const to = this?.mutate ? mutate : mapper
   switch (this?.colorant) {
     case COLOR:
-      return to(vec, Thrust.into(projectors))
+      return to(vec, Factory.into(projectors))
     case MAKER:
-      return to(vec, Thrust.make(projectors))
+      return to(vec, Factory.make(projectors))
     case RENDER:
-      return to(vec, Thrust.render(projectors))
     default:
-      return to(vec, Thrust.render(projectors))
+      return to(vec, Factory.render(projectors))
   }
 }
 
-export class Thrust {
-  static into([[bX, pX], [bY, pY]]) {
+export class Factory {
+  static into([ [ bX, pX ], [ bY, pY ] ]) {
     function toHex(hsl) { return hsl ? hslToHex(hsl) : null }
     return (_, i) => {
       let v
@@ -38,7 +39,7 @@ export class Thrust {
       return null
     }
   }
-  static make([[bX, pX], [bY, pY]]) {
+  static make([ [ bX, pX ], [ bY, pY ] ]) {
     return (_, i) => {
       let v
       if (valid(v = bX && bX[i])) { return pX.make(v) }
@@ -46,7 +47,7 @@ export class Thrust {
       return (pX || pY)?.make(pX.nap) ?? oneself
     }
   }
-  static render([[bX, pX], [bY, pY]]) {
+  static render([ [ bX, pX ], [ bY, pY ] ]) {
     return (n, i) => {
       let v
       if (valid(v = bX && bX[i])) { return pX.render(v, n) }

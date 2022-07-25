@@ -1,8 +1,8 @@
 import { BOLD }                 from '@palett/enum-font-effects'
 import { ATLAS, FRESH, PLANET } from '@palett/presets'
 import { deco }                 from '@spare/deco'
-import { logger }               from '@spare/logger'
-import { PresetCollection }     from '../src/presetCollection'
+import { logger }           from '@spare/logger'
+import { PresetCollection } from '../src/PresetCollection.js'
 
 const presets = new PresetCollection([ATLAS])
 

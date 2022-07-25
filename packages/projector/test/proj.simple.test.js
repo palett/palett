@@ -1,5 +1,5 @@
 import { AZURE } from '@palett/presets'
-import { Proj }  from '../index'
+import { Proj }  from '../src/Proj.js'
 
 const bound = { min: 0, max: 100, }
 const proj = Proj.from(bound, AZURE)

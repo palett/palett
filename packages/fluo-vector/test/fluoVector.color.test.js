@@ -3,7 +3,7 @@ import { BOLD, ITALIC }     from '@palett/enum-font-effects'
 import { PresetCollection } from '@palett/fluo'
 import { FRESH }            from '@palett/presets'
 import { logger }           from '@spare/logger'
-import { fluoVector }       from '../src/fluoVector'
+import { fluoVector }       from '../index.js'
 import { candidates }       from './strategies/candidates'
 
 for (let [k, vector] of Object.entries(candidates)) {
