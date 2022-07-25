@@ -1,6 +1,6 @@
 {
   "name": "@palett/color-space",
-  "version": "0.9.18",
+  "version": "0.9.19",
   "description": "A color space consists of RGB and HSL",
   "main": "./dist/index.cjs",
   "exports": {
@@ -24,7 +24,7 @@
     "@aryth/flopper": "^0.6.4",
     "@aryth/math": "^0.6.4",
     "@aryth/polar": "^0.6.4",
-    "@palett/convert": "^0.9.18",
+    "@palett/convert": "^0.9.19",
     "@vect/columns-indicator": "^0.6.13",
     "@vect/matrix-init": "^0.7.14",
     "@vect/vector-init": "^0.7.14",

@@ -1,6 +1,6 @@
 {
   "name": "@palett/flopper",
-  "version": "0.9.18",
+  "version": "0.9.19",
   "description": "A color converter",
   "main": "./dist/index.cjs",
   "exports": {
@@ -23,11 +23,11 @@
     "@aryth/flopper": "^0.6.4",
     "@aryth/rand": "^0.6.4",
     "@aryth/rank": "^0.6.4",
-    "@palett/cards": "^0.9.18",
-    "@palett/color-space": "^0.9.18",
-    "@palett/enum-color-space": "^0.9.18",
-    "@palett/presets": "^0.9.18",
-    "@palett/table": "^0.9.18",
+    "@palett/cards": "^0.9.19",
+    "@palett/color-space": "^0.9.19",
+    "@palett/enum-color-space": "^0.9.19",
+    "@palett/presets": "^0.9.19",
+    "@palett/table": "^0.9.19",
     "@vect/object-select": "^0.7.14",
     "@vect/swap": "^0.6.13",
     "@vect/vector-mapper": "^0.7.14"
