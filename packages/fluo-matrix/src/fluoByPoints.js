@@ -14,7 +14,7 @@ export function fluoByPoints(matrix, pres, wd) {
   if (!matrix?.length) return []
   if (Array.isArray(pres)) pres = arrToPres(pres)
   const fluo = new Fluo(pres)
-  const vec = fluo.project(matrix.flat(), wd, this?.mode, this?.mutate)
+  const vec = fluo.project(matrix.flat(1), wd, this?.mode, this?.mutate)
   const h = height(matrix), w = width(matrix), t = Array(h)
   for (let i = 0; i < h; i++)
     for (let j = 0, r = t[i] = Array(w); j < w; j++)

@@ -26,10 +26,10 @@
     "@palett/color-space": "^0.9.19",
     "@palett/convert": "^0.9.19",
     "@texting/phrasing": "^0.1.7",
-    "@vect/vector-init": "^0.7.14"
+    "@vect/vector-init": "^0.7.15"
   },
   "devDependencies": {
-    "@vect/object-init": "^0.7.14"
+    "@vect/object-init": "^0.7.15"
   },
   "repository": {
     "type": "git",

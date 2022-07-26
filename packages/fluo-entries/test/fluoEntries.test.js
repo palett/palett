@@ -9,7 +9,8 @@ const SimpleEntries = simpleEntriesCollection({ h: 15 })
 
 for (const [ key, entries ] of Object.entries(SimpleEntries)) {
   key |> logger
-  const prettyEntries = fluoEntries(entries, PresetCollection.build(FRESH, PLANET).assignEffect(UNDERLINE))
+  const pres = PresetCollection.build(FRESH, PLANET).assignEffect(UNDERLINE)
+  const prettyEntries = fluoEntries(entries, pres)
   // prettyEntries  |> console.log
-  prettyEntries.map(([ k, v ]) => `${ k } > ${ v }`).join('\n') |> console.log
+  prettyEntries.map(([ k, v ]) => `${k} > ${v}`).join('\n') |> console.log
 }

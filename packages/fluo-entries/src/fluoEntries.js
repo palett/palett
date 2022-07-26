@@ -1,6 +1,4 @@
-import { fluoVector }                from '@palett/fluo-vector'
-import { wind }                      from '@vect/entries-init'
-import { unwind }                    from '@vect/entries-unwind'
+import { arrToPres, Fluo }           from '@palett/fluo'
 import { mutazip as mutazipEntries } from '@vect/entries-zipper'
 
 /**
@@ -12,19 +10,17 @@ import { mutazip as mutazipEntries } from '@vect/entries-zipper'
  * @typedef {Function} Preset.by
  * @typedef {Function} Preset.to
  *
- * @param {[*,*][]} entries
- * @param {Preset[]} configs
- * @returns {*[]}
+ * @param {[*,*][]}  entries
+ * @param {Preset[]} pres
+ * @param {number}  [keyWd]
+ * @param {number}  [valWd]
+ * @returns {[string,string][]}
  */
-export const fluoEntries = function (entries, configs) {
-  const
-    colorant = this?.colorant,
-    mutate = this?.mutate
-  let [keys, items] = unwind(entries)
-  const context = { colorant, mutate: true }
-  fluoVector.call(context, keys, configs)
-  fluoVector.call(context, items, configs)
-  const rendered = wind(keys, items)
+export const fluoEntries = function (entries, pres, keyWd, valWd) {
+  if (!entries?.length || !pres) return entries
+  if (Array.isArray(pres)) pres = arrToPres(pres)
+  const mode = this?.colorant, mutate = this?.mutate
+  const rendered = Fluo.entries(entries, pres, keyWd, valWd, mode)
   return mutate
     ? mutazipEntries(entries, rendered, (a, b) => b)
     : rendered

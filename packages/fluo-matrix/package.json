@@ -19,6 +19,10 @@
     "test-jest": "jest"
   },
   "dependencies": {
+    "@palett/fluo": "^0.9.19",
+    "@vect/enum-matrix-directions": "^0.6.13"
+  },
+  "devDependencies": {
     "@aryth/bound-matrix": "^0.6.5",
     "@ject/oneself": "^0.0.17",
     "@palett/convert": "^0.9.19",
@@ -26,21 +30,18 @@
     "@palett/fluo-vector": "^0.9.19",
     "@palett/presets": "^0.9.19",
     "@palett/projector": "^0.9.19",
+    "@texting/charset-fullwidth": "^0.1.7",
     "@texting/string-value": "^0.1.7",
     "@typen/enum-data-types": "^0.1.19",
     "@typen/literal": "^0.1.19",
     "@typen/nullish": "^0.1.19",
     "@typen/num-strict": "^0.1.19",
-    "@vect/columns-mapper": "^0.7.14",
-    "@vect/enum-matrix-directions": "^0.6.13",
-    "@vect/matrix": "^0.7.14",
-    "@vect/matrix-algebra": "^0.7.14",
-    "@vect/matrix-index": "^0.7.14",
-    "@vect/object-select": "^0.7.14",
-    "@vect/vector-mapper": "^0.7.14"
-  },
-  "devDependencies": {
-    "@texting/charset-fullwidth": "^0.1.7"
+    "@vect/columns-mapper": "^0.7.15",
+    "@vect/matrix": "^0.7.15",
+    "@vect/matrix-algebra": "^0.7.15",
+    "@vect/matrix-index": "^0.7.15",
+    "@vect/object-select": "^0.7.15",
+    "@vect/vector-mapper": "^0.7.15"
   },
   "repository": {
     "type": "git",

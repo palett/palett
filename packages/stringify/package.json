@@ -23,7 +23,7 @@
     "@palett/convert": "^0.9.19",
     "@palett/fluo": "^0.9.19",
     "@texting/phrasing": "^0.1.7",
-    "@vect/vector": "^0.7.14"
+    "@vect/vector": "^0.7.15"
   },
   "repository": {
     "type": "git",

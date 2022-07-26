@@ -18,10 +18,10 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@palett/fluo-vector": "^0.9.19",
-    "@vect/entries-init": "^0.7.14",
+    "@palett/fluo": "^0.9.19",
+    "@vect/entries-init": "^0.7.15",
     "@vect/entries-unwind": "^0.6.13",
-    "@vect/entries-zipper": "^0.7.14"
+    "@vect/entries-zipper": "^0.7.15"
   },
   "repository": {
     "type": "git",

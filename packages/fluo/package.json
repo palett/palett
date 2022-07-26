@@ -20,9 +20,6 @@
   },
   "dependencies": {
     "@palett/dye": "^0.9.19",
-    "@palett/fluo-entries": "^0.9.19",
-    "@palett/fluo-matrix": "^0.9.19",
-    "@palett/fluo-vector": "^0.9.19",
     "@palett/presets": "^0.9.19",
     "@palett/projector": "^0.9.19",
     "@spare/string-value": "^0.14.19",
@@ -32,8 +29,31 @@
     "@typen/enum-data-types": "^0.1.19",
     "@typen/literal": "^0.1.19",
     "@typen/nullish": "^0.1.19",
-    "@vect/object-update": "^0.7.14",
-    "@vect/vector": "^0.7.14"
+    "@typen/num-strict": "^0.1.19",
+    "@vect/entries": "^0.7.15",
+    "@vect/entries-init": "^0.7.15",
+    "@vect/matrix-algebra": "^0.7.15",
+    "@vect/matrix-index": "^0.7.15",
+    "@vect/matrix-init": "^0.7.15",
+    "@vect/object-update": "^0.7.15",
+    "@vect/vector": "^0.7.15"
+  },
+  "devDependencies": {
+    "@palett/dye": "^0.9.19",
+    "@palett/presets": "^0.9.19",
+    "@palett/projector": "^0.9.19",
+    "@spare/string-value": "^0.14.19",
+    "@texting/charset-fullwidth": "^0.1.7",
+    "@texting/charset-halfwidth": "^0.1.7",
+    "@texting/string-value": "^0.1.7",
+    "@typen/enum-data-types": "^0.1.19",
+    "@typen/literal": "^0.1.19",
+    "@typen/nullish": "^0.1.19",
+    "@typen/num-strict": "^0.1.19",
+    "@vect/matrix-index": "^0.7.15",
+    "@vect/matrix-init": "^0.7.15",
+    "@vect/object-update": "^0.7.15",
+    "@vect/vector": "^0.7.15"
   },
   "repository": {
     "type": "git",

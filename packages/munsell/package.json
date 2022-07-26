@@ -27,9 +27,9 @@
     "@palett/color-space": "^0.9.19",
     "@palett/convert": "^0.9.19",
     "@vect/columns-indicator": "^0.6.13",
-    "@vect/matrix-init": "^0.7.14",
-    "@vect/vector-init": "^0.7.14",
-    "@vect/vector-mapper": "^0.7.14"
+    "@vect/matrix-init": "^0.7.15",
+    "@vect/vector-init": "^0.7.15",
+    "@vect/vector-mapper": "^0.7.15"
   },
   "devDependencies": {
     "@valjoux/timestamp-pretty": "^0.3.18"
