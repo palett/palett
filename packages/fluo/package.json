@@ -25,6 +25,7 @@
     "@spare/string-value": "^0.14.19",
     "@texting/charset-fullwidth": "^0.1.7",
     "@texting/charset-halfwidth": "^0.1.7",
+    "@texting/regex-phrasing": "^0.1.7",
     "@texting/string-value": "^0.1.7",
     "@typen/enum-data-types": "^0.1.19",
     "@typen/literal": "^0.1.19",

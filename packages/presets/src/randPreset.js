@@ -3,7 +3,6 @@ import { randBetw }           from '@aryth/rand'
 import { hexToHsl, hslToHex } from '@palett/convert'
 import { toneHsl }            from '@palett/color-algebra'
 
-
 /**
  *
  * @param {string} hex

@@ -26,7 +26,8 @@
     "@palett/color-space": "^0.10.1",
     "@palett/convert": "^0.10.1",
     "@texting/phrasing": "^0.1.7",
-    "@vect/vector-init": "^0.7.15"
+    "@vect/vector-init": "^0.7.15",
+    "@palett/dye": "^0.10.1"
   },
   "devDependencies": {
     "@vect/object-init": "^0.7.15"

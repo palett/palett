@@ -41,9 +41,7 @@ export class Proj {
   ready() {
     const { lo, hi, min: [ loH, loS, loL ], max: [ hiH, hiS, hiL ] } = this
     const df = hi - lo
-    this.lev = df === 0
-      ? [ 0, 0, 0 ]
-      : [ (hiH - loH) / df, (hiS - loS) / df, (hiL - loL) / df ]
+    this.lev = df === 0 ? [ 0, 0, 0 ] : [ (hiH - loH) / df, (hiS - loS) / df, (hiL - loL) / df ]
     return this
   }
   clear() {

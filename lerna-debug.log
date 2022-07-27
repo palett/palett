@@ -1,16 +1,6 @@
-0 silly argv { _: [ 'clean' ], lernaVersion: '5.0.0', '$0': '/usr/local/bin/lerna' }
-1 notice cli v5.0.0
-2 verbose rootPath /home/zarkali/banyan/palett
-3 error JSONError: Unexpected token  in JSON at position 64 while parsing '{  "name": "@palett/enum-colorant-modes' in constants/enum-colorant-modes/package.json
-3 error
-3 error [0m [90m 1 |[39m {[0m
-3 error [0m [90m 2 |[39m   [32m"name"[39m[33m:[39m [32m"@palett/enum-colorant-modes"[39m[33m,[39m[0m
-3 error [0m[31m[1m>[22m[39m[90m 3 |[39m   [32m"version"[39m[33m:[39m [32m"0.9.11,[39m[0m
-3 error [0m [90m   |[39m                      [31m[1m^[22m[39m[0m
-3 error [0m [90m 4 |[39m   [32m"description"[39m[33m:[39m [32m"A colorant to string"[39m[33m,[39m[0m
-3 error [0m [90m 5 |[39m   [32m"main"[39m[33m:[39m [32m"./dist/index.cjs"[39m[33m,[39m[0m
-3 error [0m [90m 6 |[39m   [32m"exports"[39m[33m:[39m {[0m
-3 error
-3 error     at parseJson (/home/zarkali/banyan/palett/node_modules/parse-json/index.js:29:21)
-3 error     at parse (/home/zarkali/banyan/palett/node_modules/load-json-file/index.js:15:9)
-3 error     at module.exports (/home/zarkali/banyan/palett/node_modules/load-json-file/index.js:18:47)
+95 error Error: Command failed with exit code 128: git tag v0.10.0 -m v0.10.0
+95 error fatal: tag 'v0.10.0' already exists
+95 error     at makeError (/home/alkindus/banyan/palett/node_modules/execa/lib/error.js:59:11)
+95 error     at handlePromise (/home/alkindus/banyan/palett/node_modules/execa/index.js:114:26)
+95 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+95 error     at async Promise.all (index 0)

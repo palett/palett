@@ -1,4 +1,4 @@
-import { FRESH }  from './resources/pavtone'
+// import { FRESH }  from './resources/pavtone'
 import { AQUA }   from './resources/standard/aqua'
 import { ATLAS }  from './resources/standard/atlas'
 import { AURORA } from './resources/standard/aurora'
@@ -14,6 +14,33 @@ import { PLANET } from './resources/standard/planet'
 import { POME }   from './resources/standard/pome'
 import { SUBTLE } from './resources/standard/subtle'
 import { VIOLA }  from './resources/standard/viola'
+import {
+  BESQUE,
+  FRESH,
+  RODD,
+  AZALE,
+  AFRO,
+  SUMMER,
+  SANDY,
+  TOBACCO,
+  BRANDY,
+  DECANTE,
+  BISTRO,
+  KELLY,
+  PAGODA,
+  PINE,
+  NORSE,
+  ARUBA,
+  BERING,
+  DUSKY,
+  ENSIGN,
+  PERSIAN,
+  LILAC,
+  WINE,
+  ROCOCCO,
+  PRETTY,
+  BLUSH,
+}                 from './resources/pavtone/index'
 
 export { AQUA, ATLAS, AURORA, AZURE, MOSS, INSTA, JUNGLE, LAVA, METRO, OCEAN, PLANET, POME, SUBTLE, VIOLA, }
 export {
@@ -56,7 +83,6 @@ export const Presets = {
   atlas: ATLAS,
   aurora: AURORA,
   azure: AZURE,
-  fresh: FRESH,
   moss: MOSS,
   jungle: JUNGLE,
   ocean: OCEAN,
@@ -66,7 +92,32 @@ export const Presets = {
   subtle: SUBTLE,
   insta: INSTA,
   pome: POME,
-  viola: VIOLA
+  viola: VIOLA,
+  besque: BESQUE,
+  fresh: FRESH,
+  rodd: RODD,
+  azale: AZALE,
+  afro: AFRO,
+  summer: SUMMER,
+  sandy: SANDY,
+  tobacco: TOBACCO,
+  brandy: BRANDY,
+  decante: DECANTE,
+  bistro: BISTRO,
+  kelly: KELLY,
+  pagoda: PAGODA,
+  pine: PINE,
+  norse: NORSE,
+  aruba: ARUBA,
+  bering: BERING,
+  dusky: DUSKY,
+  ensign: ENSIGN,
+  persian: PERSIAN,
+  lilac: LILAC,
+  wine: WINE,
+  rococco: ROCOCCO,
+  pretty: PRETTY,
+  blush: BLUSH,
 }
 
 export { randPreset } from './src/randPreset'

@@ -7,6 +7,6 @@ export function column(y, h) {
     if (typeof x === STR && (wd = x.length)) { if (wd > hi) hi = wd }
     col[i] = x
   }
-  col.wd = hi
+  col.width = hi
   return col
 }
