@@ -1,6 +1,6 @@
 {
   "name": "@palett/enum-color-cards",
-  "version": "0.10.1",
+  "version": "0.10.2",
   "description": "A colorant to string",
   "main": "./dist/index.cjs",
   "exports": {
