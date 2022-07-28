@@ -35,7 +35,11 @@ export class Fluo {
 
   static entries(entries, pres, mode) {
     const [ keys, vals ] = unwind(entries)
-    const fluo = new Fluo(pres, true, mode)
+    keys.width = entries.width, vals.width = entries.valueWidth
+    return Fluo.wind(keys, vals, pres, mode)
+  }
+  static wind(keys, vals, pres, mode) {
+    const fluo = new Fluo(pres, false, mode)
     return wind(fluo.project(keys), fluo.project(vals))
   }
   static vector(vector, pres, mutate, mode) {
@@ -45,15 +49,15 @@ export class Fluo {
     const vec = (new Fluo(pres, mutate, mode)).project(matrix.flat(1))
     return reshape(vec, height(matrix), width(matrix))
   }
-  static columns(matrix, pres, mutate, mode) {
+  static columns(matrix, pres, mode) {
     const fluo = new Fluo(pres, true, mode), h = height(matrix), w = width(matrix), columns = Array(w)
     for (let j = 0; j < w; j++) columns[j] = fluo.project(column.call(matrix, j, h))
     return transpose(columns)
   }
   static rows(matrix, pres, mutate, mode) {
-    const fluo = new Fluo(pres, true, mode), h = matrix.length, rows = Array(h)
+    const fluo = new Fluo(pres, mutate, mode), h = matrix.length, rows = mutate ? matrix : Array(h)
     for (let i = 0; i < h; i++) rows[i] = fluo.project(matrix[i])
-    return transpose(rows)
+    return rows
   }
 
   reset() {
