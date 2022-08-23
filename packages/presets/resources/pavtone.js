@@ -1,4 +1,4 @@
-import { Preset } from '../../src/Preset'
+import { Preset } from '../src/Preset.js'
 
 export const BESQUE = Preset.build('#D16F52', '#C6E67A', '#6A6A6A')     // - Arabesque       - Sharp Green       - Charcoal Gray      -
 export const FRESH = Preset.build('#DDB614', '#BADF30', '#6A6A6A')      // - Sulfer          - Lime              - Charcoal Gray      -
@@ -10,7 +10,7 @@ export const SANDY = Preset.build('#815F34', '#F5EDD6', '#6A6A6A')      // - Bro
 export const TOBACCO = Preset.build('#574D35', '#F4E5C4', '#612E35')    // - Dark Olive      - Vanilla           - Chocolate Truffle  -
 export const BRANDY = Preset.build('#815F34', '#FACD9E', '#6A6A6A')     // - Bronze Brown    - Apricot Sherbet   - Charcoal Gray      -
 export const DECANTE = Preset.build('#34292A', '#EFE6E5', '#666B54')    // - Ganache         - Delicacy          - Olivine            -
-export const BISTRO = Preset.build('#2C504A', '#D8EBE6', '#6A6A6A')     // - Hint ofMint     - Bistro Green      - Charcoal Gray      -
+export const BISTRO = Preset.build('#2C504A', '#D8EBE6', '#6A6A6A')     // - Hint of Mint    - Bistro Green      - Charcoal Gray      -
 export const KELLY = Preset.build('#199D5C', '#88DCBE', '#6A6A6A')      // - Kelly Green     - Cabbage           - Charcoal Gray      -
 export const PAGODA = Preset.build('#1A7F8E', '#91DCE8', '#6A6A6A')     // - Pagoda Blue     - Tanager Turquoise - Charcoal Gray      -
 export const PINE = Preset.build('#4A6B6C', '#E2EAEB', '#6A6A6A')       // - Sea Pine        - Bit of Blue       - Charcoal Gray      -
@@ -25,37 +25,5 @@ export const WINE = Preset.build('#582B36', '#ECCFDB', '#2D2C4D')       // - Win
 export const ROCOCCO = Preset.build('#BB363F', '#F7D1D4', '#513235')    // - Rococco Red     - Marys Rose        - Decadent Chocolate -
 export const PRETTY = Preset.build('#A33546', '#F1D7DD', '#6A6A6A')     // - American Beauty - Barely Pink       - Charcoal Gray      -
 export const BLUSH = Preset.build('#F5D3DB', '#E44165', '#6A6A6A')      // - Blushing Bride  - Rouge Red         - Charcoal Gray      -
-
-export default {
-  BESQUE,
-  FRESH,
-  RODD,
-  AZALE,
-  AFRO,
-  Summer: SUMMER,
-
-  SANDY,
-  TOBACCO,
-  BRANDY,
-  DECANTE,
-
-  BISTRO,
-  KELLY,
-  PAGODA,
-  PINE,
-  NORSE,
-
-  ARUBA,
-  BERING,
-  DUSKY,
-  ENSIGN,
-  PERSIAN,
-
-  LILAC,
-  WINE,
-  ROCOCCO,
-  PRETTY,
-  BLUSH,
-}
 
 

@@ -1,41 +1,65 @@
-import { almostEqual }  from '@aryth/math'
-import { hslToHex }     from '@palett/convert'
-import { HSL }          from '@palett/color-space'
-import { toUpper }      from '@texting/phrasing'
-import { init }         from '@vect/vector-init'
-import { draw, HexDye } from '@palett/dye'
+import { hexToInt, intToRgb }   from '@palett/convert'
+import { init }                 from '@vect/vector-init'
+import { hexOntoHsl, hslToInt } from './utils.js'
 
-function hexToStr(hex) { return draw.call(HexDye.prototype.into.call(this, hex), hex) }
+export const scale = (vdf, lev, tlo) => vdf <= 0 ? tlo : tlo + vdf * lev
+
+export const limFF = (vdf, lev, tlo) => {
+  if (vdf <= 0) return tlo
+  const t = tlo + vdf * lev
+  return t < 0 ? 0 : t > 0xFF ? 0xFF : t
+}
+
+const GREY = '#CCCCCC'
 
 export class Preset {
-  max
-  min
-  na
-  constructor(min, max, na) {
-    this.min = min
-    this.max = max
-    this.na = na
+  nan
+  constructor(min, max, nan) {
+    hexOntoHsl(min, this, 0)
+    hexOntoHsl(max, this, 3)
+    this.nan = hexToInt(nan)
   }
-  static build(min, max, na = '#CCCCCC') { return new Preset(min, max, na) }
+
+  static build(min, max, nan = GREY) {
+    return new Preset(min, max, nan)
+  }
+
   static from(preset, effects) {
-    const { min, max, na } = preset
-    const target = new Preset(min, max, na)
+    const { min, max, nan } = preset
+    const target = new Preset(min, max, nan)
     if (effects) target.effects = effects
     return target
   }
-  static fromHSL(min, max, na) { return new Preset(hslToHex(min), hslToHex(max), hslToHex(na)) }
+  // static fromHSL(min, max, nan) { return new Preset(hslToHex(min), hslToHex(max), hslToHex(nan)) }
 
-  reverse() { return Preset.build(this.max, this.min, this.na) }
-  range(n) {
-    function d(min, max, n) {
-      const delta = (max - min) / (n - 1), EP = 0.0008
-      return almostEqual(delta, 0, EP) ? 0 : delta
-    }
-    const [h, s, l]    = HSL.fromHex(this.min),
-          max          = HSL.fromHex(this.max),
-          [dh, ds, dl] = [d(h, max.h, n), d(s, max.s, n), d(l, max.l, n)]
-    return init(n, i => HSL.of(h + i * dh, s + i * ds, l + i * dl).restrict().hex|> toUpper)
+  get min() { return hslToInt(this[0], this[1], this[2]) }
+  get max() { return hslToInt(this[3], this[4], this[5]) }
 
+  * [Symbol.iterator]() {
+    yield this[0]
+    yield this[1]
+    yield this[2]
+    yield this[3]
+    yield this[4]
+    yield this[5]
   }
-  demo(n) { return `[${this.range(n).map(hexToStr).join(' ')}] | [${this.na|> hexToStr}]` }
+  toInt() { return { min: this.min, max: this.max, nan: this.nan } }
+  toRgb() {
+    return {
+      min: this.min |> intToRgb, max: this.max |> intToRgb, nan: this.nan |> intToRgb
+    }
+  }
+  reverse() { return Preset.build(this.max, this.min, this.nan) }
+  range(count = 2) {
+    if (count < 2) count = 2
+    const gaps = count - 1
+    const lev = [ (this[3] - this[0]) / gaps, (this[4] - this[1]) / gaps, (this[5] - this[2]) / gaps ]
+    return init(count, i => this.proj(lev, i))
+  }
+  proj(lev, val) {
+    const vdf = val - (lev.lo ?? 0)
+    return hslToInt(scale(vdf, lev[0], this[0]), limFF(vdf, lev[1], this[1]), limFF(vdf, lev[2], this[2]))
+  }
 }
+
+

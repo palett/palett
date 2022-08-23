@@ -1,6 +1,6 @@
 {
   "name": "@palett/presets",
-  "version": "0.10.4",
+  "version": "0.10.7",
   "description": "A color converter",
   "main": "./dist/index.cjs",
   "exports": {
@@ -18,19 +18,19 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/math": "^0.6.5",
-    "@aryth/rand": "^0.6.5",
+    "@aryth/math": "^0.6.8",
+    "@aryth/rand": "^0.6.8",
     "@ject/oneself": "^0.0.17",
-    "@palett/cards": "^0.10.4",
-    "@palett/color-algebra": "^0.10.4",
-    "@palett/color-space": "^0.10.4",
-    "@palett/convert": "^0.10.4",
-    "@palett/dye": "^0.10.4",
-    "@texting/phrasing": "^0.1.7",
-    "@vect/vector-init": "^0.7.15"
+    "@palett/cards": "^0.10.7",
+    "@palett/color-algebra": "^0.10.7",
+    "@palett/color-space": "^0.10.7",
+    "@palett/convert": "^0.10.7",
+    "@palett/dye": "^0.10.7",
+    "@texting/phrasing": "^0.1.12",
+    "@vect/vector-init": "^0.7.16"
   },
   "devDependencies": {
-    "@vect/object-init": "^0.7.15"
+    "@vect/object-init": "^0.7.16"
   },
   "repository": {
     "type": "git",
@@ -53,5 +53,5 @@
     "url": "https://github.com/hoyeungw/palett/presets"
   },
   "homepage": "https://github.com/hoyeungw/palett/presets#readme",
-  "gitHead": "7aacc1919f1babd2ffce9ce2ac3a82cb756791f1"
+  "gitHead": "fa43c4eb4429e3c75cc8a2ae9093163359e8afb1"
 }

@@ -1,123 +1,19 @@
-// import { FRESH }  from './resources/pavtone'
-import { AQUA }   from './resources/standard/aqua'
-import { ATLAS }  from './resources/standard/atlas'
-import { AURORA } from './resources/standard/aurora'
-import { AZURE }  from './resources/standard/azure'
-// import { FRESH }  from './resources/standard/fresh'
-import { INSTA }  from './resources/standard/insta'
-import { JUNGLE } from './resources/standard/jungle'
-import { LAVA }   from './resources/standard/lava'
-import { METRO }  from './resources/standard/metro'
-import { MOSS }   from './resources/standard/moss'
-import { OCEAN }  from './resources/standard/ocean'
-import { PLANET } from './resources/standard/planet'
-import { POME }   from './resources/standard/pome'
-import { SUBTLE } from './resources/standard/subtle'
-import { VIOLA }  from './resources/standard/viola'
-import {
-  BESQUE,
-  FRESH,
-  RODD,
-  AZALE,
-  AFRO,
-  SUMMER,
-  SANDY,
-  TOBACCO,
-  BRANDY,
-  DECANTE,
-  BISTRO,
-  KELLY,
-  PAGODA,
-  PINE,
-  NORSE,
-  ARUBA,
-  BERING,
-  DUSKY,
-  ENSIGN,
-  PERSIAN,
-  LILAC,
-  WINE,
-  ROCOCCO,
-  PRETTY,
-  BLUSH,
-}                 from './resources/pavtone/index'
+import { intToStr } from '@palett/stringify'
 
-export { AQUA, ATLAS, AURORA, AZURE, MOSS, INSTA, JUNGLE, LAVA, METRO, OCEAN, PLANET, POME, SUBTLE, VIOLA, }
 export {
-  BESQUE,
-  FRESH,
-  RODD,
-  AZALE,
-  AFRO,
-  SUMMER,
-  SANDY,
-  TOBACCO,
-  BRANDY,
-  DECANTE,
-  BISTRO,
-  KELLY,
-  PAGODA,
-  PINE,
-  NORSE,
-  ARUBA,
-  BERING,
-  DUSKY,
-  ENSIGN,
-  PERSIAN,
-  LILAC,
-  WINE,
-  ROCOCCO,
-  PRETTY,
-  BLUSH,
-}                 from './resources/pavtone/index'
+  AQUA, ATLAS, AURORA, AZURE, FRESH, INSTA, JUNGLE, LAVA,
+  METRO, MOSS, OCEAN, PLANET, POME, SUBTLE, VIOLA
+} from './resources/material.js'
+export {
+  AFRO, ARUBA, AZALE, BERING, BESQUE, BISTRO, BLUSH, BRANDY, DECANTE, DUSKY, ENSIGN, KELLY,
+  LILAC, NORSE, PAGODA, PERSIAN, PINE, PRETTY, ROCOCCO, RODD, SANDY, SUMMER, TOBACCO, WINE
+} from './resources/pavtone.js'
 
-export { Preset } from './src/Preset'
+export { Presets } from './resources/index.js'
+export { Preset }  from './src/Preset.js'
 
-/** @typedef {{max:string,min:string,na:string}} Preset */
-
-/**
- * @type {Object<string,Preset>}
- */
-export const Presets = {
-  aqua: AQUA,
-  atlas: ATLAS,
-  aurora: AURORA,
-  azure: AZURE,
-  moss: MOSS,
-  jungle: JUNGLE,
-  ocean: OCEAN,
-  lava: LAVA,
-  planet: PLANET,
-  metro: METRO,
-  subtle: SUBTLE,
-  insta: INSTA,
-  pome: POME,
-  viola: VIOLA,
-  besque: BESQUE,
-  fresh: FRESH,
-  rodd: RODD,
-  azale: AZALE,
-  afro: AFRO,
-  summer: SUMMER,
-  sandy: SANDY,
-  tobacco: TOBACCO,
-  brandy: BRANDY,
-  decante: DECANTE,
-  bistro: BISTRO,
-  kelly: KELLY,
-  pagoda: PAGODA,
-  pine: PINE,
-  norse: NORSE,
-  aruba: ARUBA,
-  bering: BERING,
-  dusky: DUSKY,
-  ensign: ENSIGN,
-  persian: PERSIAN,
-  lilac: LILAC,
-  wine: WINE,
-  rococco: ROCOCCO,
-  pretty: PRETTY,
-  blush: BLUSH,
+export function demo(pres, count) {
+  return `${pres.range(count).map(intToStr).join(' ')} | ${pres.nan|> intToStr}`
 }
 
 export { randPreset } from './src/randPreset'
