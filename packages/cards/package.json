@@ -1,6 +1,6 @@
 {
   "name": "@palett/cards",
-  "version": "0.10.4",
+  "version": "0.10.7",
   "description": "A color converter",
   "main": "./dist/index.cjs",
   "exports": {
@@ -38,7 +38,7 @@
     "url": "https://github.com/hoyeungw/@palett"
   },
   "homepage": "https://github.com/hoyeungw/@palett#readme",
-  "gitHead": "7aacc1919f1babd2ffce9ce2ac3a82cb756791f1",
+  "gitHead": "fa43c4eb4429e3c75cc8a2ae9093163359e8afb1",
   "dependencies": {
     "palett-presets": "^0.1.1"
   }

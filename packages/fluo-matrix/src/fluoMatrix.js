@@ -1,5 +1,8 @@
 import { arrToPres, Fluo }                from '@palett/fluo'
 import { COLUMNWISE, POINTWISE, ROWWISE } from '@vect/enum-matrix-directions'
+import { fluoByColumns }                  from './fluoByColumns.js'
+import { fluoByRows }                     from './fluoByRows.js'
+import { fluoByPoints }                   from './fluoByPoints.js'
 
 /**
  *
@@ -16,7 +19,20 @@ import { COLUMNWISE, POINTWISE, ROWWISE } from '@vect/enum-matrix-directions'
  * @param {Preset[]} [pres]
  * @param {number} [width]
  */
-export const fluoMatrix = function (matrix, direct, pres, width) {
+export const fluoMatrix = function (matrix, direct, pres) {
+  if (!matrix?.length || !pres) return matrix
+  switch (direct) {
+    case ROWWISE:
+      return fluoByRows.call(this, matrix, pres)
+    case COLUMNWISE:
+      return fluoByColumns.call(this, matrix, pres)
+    case POINTWISE:
+    default:
+      return fluoByPoints.call(this, matrix, pres)
+  }
+}
+
+export const fluoMatrix2 = function (matrix, direct, pres, width) {
   if (!matrix?.length || !pres) return matrix
   if (Array.isArray(pres)) pres = arrToPres(pres)
   const mode = this?.colorant, mutate = this?.mutate

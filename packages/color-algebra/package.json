@@ -1,6 +1,6 @@
 {
   "name": "@palett/color-algebra",
-  "version": "0.10.4",
+  "version": "0.10.7",
   "description": "A color converter among RGB, HEX and HSL.",
   "main": "./dist/index.cjs",
   "exports": {
@@ -18,7 +18,7 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/math": "^0.6.5"
+    "@aryth/math": "^0.6.8"
   },
   "repository": {
     "type": "git",
@@ -43,5 +43,5 @@
     "url": "https://github.com/hoyeungw/palett"
   },
   "homepage": "https://github.com/hoyeungw/palett/rgb#readme",
-  "gitHead": "7aacc1919f1babd2ffce9ce2ac3a82cb756791f1"
+  "gitHead": "fa43c4eb4429e3c75cc8a2ae9093163359e8afb1"
 }

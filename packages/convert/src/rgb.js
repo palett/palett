@@ -14,15 +14,16 @@ export function hexToRgb(hex) {
 /** @returns {RGB} */
 export function intToRgb(n) {
   const of = this?.of ?? Array.of
-  return of(n >> 16 & 0xFF, n >> 8 & 0xFF, n & 0xFF);
+  return of(n >> 16 & 0xFF, n >> 8 & 0xFF, n & 0xFF)
 }
 
 /** @returns {RGB} */
 export function hslToRgb(hsl) {
   const of = this?.of ?? Array.of
-  let [h, s, l] = hsl
+  let [ h, s, l ] = hsl
   s /= 100, l /= 100
   const au = s * Math.min(l, 1 - l), r = hf(0, h, au, l), g = hf(8, h, au, l), b = hf(4, h, au, l)
+  // ;`>> hsl -> rgb [s, l] {${s}, ${l}} [a] (${au}) [r] (${r * 255}) [g] (${g * 255}) [b] (${b * 255})` |> console.log
   return of(round(r * 0xFF), round(g * 0xFF), round(b * 0xFF)) // return [r * 0xFF & 0xFF, g * 0xFF & 0xFF, b * 0xFF & 0xFF]
 }
 

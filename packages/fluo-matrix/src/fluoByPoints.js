@@ -1,16 +1,14 @@
-import { boundaries }           from '@aryth/bound-matrix'
-import { oneself }              from '@ject/oneself'
-import { hslToHex }             from '@palett/convert'
-import { COLOR, MAKER, RENDER } from '@palett/enum-colorant-modes'
-import { PresetCollection }     from '@palett/fluo'
-import { arrToPres }            from '@palett/fluo-vector'
-import { Proj }                 from '@palett/projector'
-import { valid }                from '@typen/nullish'
-import { height, width }        from '@vect/matrix-index'
-import { mapper, mutate }       from '@vect/matrix-mapper'
-import { Fluo }                 from '@palett/fluo-vector'
+import { boundaries }                              from '@aryth/bound-matrix'
+import { oneself }                                 from '@ject/oneself'
+import { hslToHex }                                from '@palett/convert'
+import { COLOR, MAKER, RENDER }                    from '@palett/enum-colorant-modes'
+import { arrToPres, Fluo, Pres, PresetCollection } from '@palett/fluo'
+import { Proj }                                    from '@palett/projector'
+import { valid }                                   from '@typen/nullish'
+import { height, width }                           from '@vect/matrix-index'
+import { mapper, mutate }                          from '@vect/matrix-mapper'
 
-export function fluoByPoints(matrix, pres, wd) {
+export function fluoByPoints2(matrix, pres, wd) {
   if (!matrix?.length) return []
   if (Array.isArray(pres)) pres = arrToPres(pres)
   const fluo = new Fluo(pres)
@@ -32,20 +30,21 @@ export function fluoByPoints(matrix, pres, wd) {
  * @typedef {Function} Preset.to
  *
  * @param {*[][]} matrix
- * @param {Preset[]} configs
+ * @param {Preset[]} opts
  * @returns {*[][]}
  */
-export const fluoByPoints2 = function (matrix, configs) {
+export const fluoByPoints = function (matrix, opts) {
   const h = height(matrix), w = width(matrix)
   if (!h || !w) return [ [] ]
-  if (configs?.length && !configs[0]?.by) PresetCollection.prototype.setBound.call(configs)
-  function makeProjector(matrix, configs = []) {
-    const [ cX, cY ] = configs
-    const [ mX, mY ] = boundaries(matrix, configs)
+  if (!opts) return matrix
+  opts = Pres.prepBound(opts ?? [])
+  function makeProjector(matrix, opts) {
+    const [ cX, cY ] = opts
+    const [ mX, mY ] = boundaries(matrix, opts)
     const [ pX, pY ] = [ Proj.from(mX, cX), Proj.from(mY, cY) ]
     return [ [ mX, pX ], [ mY, pY ] ]
   }
-  const projectors = makeProjector(matrix, configs)
+  const projectors = makeProjector(matrix, opts)
   const to = this?.mutate ? mutate : mapper
   switch (this?.colorant) {
     case COLOR:

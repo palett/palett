@@ -1,6 +1,6 @@
 {
   "name": "@palett/dye",
-  "version": "0.10.4",
+  "version": "0.10.7",
   "description": "A colorant to string",
   "main": "./dist/index.cjs",
   "exports": {
@@ -20,10 +20,10 @@
   },
   "dependencies": {
     "@ject/oneself": "^0.0.17",
-    "@palett/enum-ansi-codes": "^0.10.4",
-    "@palett/enum-color-space": "^0.10.4",
-    "@palett/enum-font-effects": "^0.10.4",
-    "@palett/util-ansi": "^0.10.4"
+    "@palett/enum-ansi-codes": "^0.10.7",
+    "@palett/enum-color-space": "^0.10.7",
+    "@palett/enum-font-effects": "^0.10.7",
+    "@palett/util-ansi": "^0.10.7"
   },
   "repository": {
     "type": "git",
@@ -43,5 +43,5 @@
     "url": "https://github.com/hoyeungw/palett/dye"
   },
   "homepage": "https://github.com/hoyeungw/palett/dye#readme",
-  "gitHead": "7aacc1919f1babd2ffce9ce2ac3a82cb756791f1"
+  "gitHead": "fa43c4eb4429e3c75cc8a2ae9093163359e8afb1"
 }

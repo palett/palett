@@ -1,14 +1,14 @@
-import { RENDER }                  from '@palett/enum-colorant-modes'
-import { BOLD, ITALIC, UNDERLINE } from '@palett/enum-font-effects'
-import { PresetCollection }        from '@palett/fluo'
+import { RENDER }                         from '@palett/enum-colorant-modes'
+import { BOLD, ITALIC, UNDERLINE }        from '@palett/enum-font-effects'
+import { PresetCollection }               from '@palett/fluo'
 import { FRESH, LAVA, METRO }             from '@palett/presets'
 import { decoPale, logger }               from '@spare/logger'
 import { COLUMNWISE, POINTWISE, ROWWISE } from '@vect/enum-matrix-directions'
 import { fluoMatrix }                     from '../src/fluoMatrix'
 
 const matrix = [
-  [1, 2, 3],
-  ['a', 'b', 'c']
+  [ 1, 2, 3 ],
+  [ 'a', 'b', 'c' ]
 ]
 
 const env = { colorant: RENDER }

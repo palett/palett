@@ -1,6 +1,6 @@
 {
   "name": "@palett/table",
-  "version": "0.10.4",
+  "version": "0.10.7",
   "description": "A color converter",
   "main": "./dist/index.cjs",
   "exports": {
@@ -20,25 +20,25 @@
   "dependencies": {
     "@analys/convert": "^0.6.14",
     "@analyz/crostab": "^0.1.0",
-    "@aryth/math": "^0.6.5",
+    "@aryth/math": "^0.6.8",
     "@ject/oneself": "^0.0.17",
-    "@palett/cards": "^0.10.4",
-    "@palett/convert": "^0.10.4",
-    "@palett/dye": "^0.10.4",
-    "@palett/enum-color-cards": "^0.10.4",
-    "@palett/enum-color-space": "^0.10.4",
-    "@palett/enum-font-effects": "^0.10.4",
-    "@spare/string": "^0.14.19",
-    "@spare/translator": "^0.14.19",
-    "@vect/columns-mapper": "^0.7.15",
+    "@palett/cards": "^0.10.7",
+    "@palett/convert": "^0.10.7",
+    "@palett/dye": "^0.10.7",
+    "@palett/enum-color-cards": "^0.10.7",
+    "@palett/enum-color-space": "^0.10.7",
+    "@palett/enum-font-effects": "^0.10.7",
+    "@spare/string": "^0.15.4",
+    "@spare/translator": "^0.15.4",
+    "@vect/columns-mapper": "^0.7.16",
     "@vect/matrix-mapper": "^0.7.15",
     "@vect/matrix-transpose": "^0.6.13",
     "@vect/object-select": "^0.7.15",
     "@vect/vector-indicator": "^0.6.13",
-    "@vect/vector-init": "^0.7.15",
-    "@vect/vector-mapper": "^0.7.15",
-    "@vect/vector-stat": "^0.7.15",
-    "@vect/vector-zipper": "^0.7.15"
+    "@vect/vector-init": "^0.7.16",
+    "@vect/vector-mapper": "^0.7.16",
+    "@vect/vector-stat": "^0.7.16",
+    "@vect/vector-zipper": "^0.7.16"
   },
   "repository": {
     "type": "git",
@@ -61,5 +61,5 @@
     "url": "https://github.com/hoyeungw/palett/table"
   },
   "homepage": "https://github.com/hoyeungw/palett/table#readme",
-  "gitHead": "7aacc1919f1babd2ffce9ce2ac3a82cb756791f1"
+  "gitHead": "fa43c4eb4429e3c75cc8a2ae9093163359e8afb1"
 }

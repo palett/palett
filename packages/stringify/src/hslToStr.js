@@ -1,9 +1,11 @@
-import { Fluo }     from '@palett/fluo'
-import { xyzToStr } from './xyzToStr'
+import { hslToInt } from '@palett/convert'
+import { intToStr } from './intToStr.js'
 
 /**
  *
  * @param {number[]} hsl
  * @return {string}
  */
-export function hslToStr(hsl) { return Fluo.hsl.call(this, hsl|> xyzToStr, hsl) }
+export function hslToStr(hsl) {
+  return intToStr.call(this, hslToInt(hsl))
+}

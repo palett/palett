@@ -1,41 +1,32 @@
-import { ProjBeta }            from '@palett/projector'
-import { value }               from '@texting/string-value'
-import { NUM }                 from '@typen/enum-data-types'
-import { isLiteral }           from '@typen/literal'
-import { valid }               from '@typen/nullish'
-import { isNumeric, parseNum } from '@typen/num-strict'
-import { unwind }              from '@vect/entries'
-import { wind }                from '@vect/entries-init'
-import { transpose }           from '@vect/matrix-algebra'
-import { height, width }       from '@vect/matrix-index'
-import { reshape }             from '@vect/matrix-init'
-import { column }              from './utils/column.js'
+import { Projec, SignedProj } from '@palett/projector'
+import { ArcFab, Cate }       from '@spare/arc'
+import { value }              from '@texting/string-value'
+import { valid }              from '@typen/nullish'
+import { unwind }             from '@vect/entries'
+import { wind }               from '@vect/entries-init'
+import { transpose }          from '@vect/matrix-algebra'
+import { height, width }      from '@vect/matrix-index'
+import { reshape }            from '@vect/matrix-init'
+import { column }             from './utils/column.js'
 
 const RENDER = 'render'
 
 export class Fluo {
-  isLiteral = isLiteral
-  isNumeric = isNumeric
-  parseNum = parseNum
-  strValue = value
-  pos = null
-  neg = null
-  str = null
-  numerals = Array()
-  literals = Array()
+  strTo = value
   mode = RENDER
   mutate = false
   constructor(pres, mutate, mode) {
     if (valid(mutate)) this.mutate = mutate
     if (valid(mode)) this.mode = mode
-    if (pres?.pos) this.pos = new ProjBeta(pres.pos)
-    if (pres?.neg) this.neg = new ProjBeta(pres.neg)
-    if (pres?.str) this.str = new ProjBeta(pres.str)
+    if (pres?.num) this.num = new Projec(pres.num)
+    if (pres?.pos && pres?.neg) this.num = new SignedProj(pres.pos, pres.neg)
+    if (pres?.str) this.str = new Projec(pres.str)
   }
 
+  get signed() { return this.num.pos && this.num.neg }
   static entries(entries, pres, mode) {
     const [ keys, vals ] = unwind(entries)
-    keys.width = entries.width, vals.width = entries.valueWidth
+    keys.width = entries.width, vals.width = entries.width
     return Fluo.wind(keys, vals, pres, mode)
   }
   static wind(keys, vals, pres, mode) {
@@ -60,43 +51,20 @@ export class Fluo {
     return rows
   }
 
-  reset() {
-    this.numerals.length = 0
-    this.literals.length = 0
-    this.pos?.reset()
-    this.neg?.reset()
-    this.str?.reset()
-  }
-  project(vector) {
-    this.reset()
-    const { width, length } = vector
-    const mode = this.mode, arr = this.mutate ? vector : Array(length)
-    for (let i = 0, x, n, { pos, neg, str } = this; i < length; i++) {
-      x = vector[i], n = this.parseNum(x)
-      if (pos && this.isNumeric(n)) {
-        if (neg) { this.numerals[i] = n >= 0 ? pos.note(n) : neg.note(n) }
-        else { this.numerals[i] = pos.note(n) }
-        continue
-      }
-      if (str && this.isLiteral(x)) {
-        this.literals[i] = str.note(n = this.strValue(x, width))
-        continue
-      }
-      { this.literals[i] = NaN }
+  project(vec, conf) { return this.render(ArcFab.to(vec, conf)) }
+  render(arc) {
+    const { strs, nums, cats, size, width: w } = arc
+    const { strTo, mode } = this
+    const sgrs = this.mutate ? strs : Array(size)
+    const numPr = this.signed ? this.num?.load(nums.pos, nums.neg) : this.num?.load(nums.lo, nums.hi),
+          strPr = this.str?.load(strTo(strs.lo ?? '', w), strTo(strs.hi ?? '', w))
+    for (let i = 0, c, s, n; i < size; i++) {
+      c = cats[i], s = strs[i], n = nums[i]
+      sgrs[i] =
+        c === Cate.Num ? numPr[mode](nums[i], s) :
+          c === Cate.Str ? strPr[mode](strTo(s, w), s) :
+            s
     }
-    const pos = this.pos?.ready(), neg = this.neg?.ready(), str = this.str?.ready()
-    for (let i = 0, n; i < length; i++) {
-      if (pos && typeof (n = this.numerals[i]) === NUM) {
-        if (neg) { arr[i] = (!(n < 0) ? pos[mode](n, vector[i]) : neg[mode](n, vector[i])) }
-        else { arr[i] = pos[mode](n, vector[i]) }
-        continue
-      }
-      if (str && typeof (n = this.literals[i]) === NUM) {
-        arr[i] = str[mode](n, vector[i])
-        continue
-      }
-      { arr[i] = vector[i] }
-    }
-    return arr
+    return sgrs
   }
 }

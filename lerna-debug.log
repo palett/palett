@@ -1,6 +1,304 @@
-95 error Error: Command failed with exit code 128: git tag v0.10.0 -m v0.10.0
-95 error fatal: tag 'v0.10.0' already exists
-95 error     at makeError (/home/alkindus/banyan/palett/node_modules/execa/lib/error.js:59:11)
-95 error     at handlePromise (/home/alkindus/banyan/palett/node_modules/execa/index.js:114:26)
-95 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-95 error     at async Promise.all (index 0)
+0 warn deprecated --skip-git has been replaced by --no-git-tag-version --no-push
+1 silly argv {
+1 silly argv   _: [ 'publish' ],
+1 silly argv   'force-publish': true,
+1 silly argv   forcePublish: true,
+1 silly argv   composed: 'publish',
+1 silly argv   lernaVersion: '5.3.0',
+1 silly argv   '$0': 'node_modules/lerna/cli.js',
+1 silly argv   gitTagVersion: false,
+1 silly argv   'git-tag-version': false,
+1 silly argv   push: false
+1 silly argv }
+2 notice cli v5.3.0
+3 verbose rootPath /home/alkindus/banyan/palett
+4 verbose session a2cd3cd783f8b263
+5 verbose user-agent lerna/5.3.0/node@v18.7.0+x64 (linux)
+6 silly argv {
+6 silly argv   _: [ 'publish' ],
+6 silly argv   'force-publish': true,
+6 silly argv   forcePublish: true,
+6 silly argv   composed: 'publish',
+6 silly argv   lernaVersion: '5.3.0',
+6 silly argv   gitTagVersion: false,
+6 silly argv   'git-tag-version': false,
+6 silly argv   push: false
+6 silly argv }
+7 verbose rootPath /home/alkindus/banyan/palett
+8 info current version 0.10.6
+9 notice FYI git repository validation has been skipped, please ensure your version bumps are correct
+10 silly hasTags
+11 verbose hasTags true
+12 silly git-describe.sync "v0.10.4-0-gfa43c4e-dirty" => {"lastTagName":"v0.10.4","lastVersion":"v0.10.4","refCount":"0","sha":"fa43c4e","isDirty":true}
+13 warn force-publish all packages
+14 info Assuming all packages changed
+15 verbose updated @palett/enum-ansi-codes
+16 verbose updated @palett/enum-color-cards
+17 verbose updated @palett/enum-color-space
+18 verbose updated @palett/enum-colorant-modes
+19 verbose updated @palett/enum-font-effects
+20 verbose updated @palett/cards
+21 verbose updated @palett/color-algebra
+22 verbose updated @palett/color-space
+23 verbose updated @palett/convert
+24 verbose updated @palett/dye
+25 verbose updated @palett/flopper
+26 verbose updated @palett/fluo-entries
+27 verbose updated @palett/fluo-matrix
+28 verbose updated @palett/fluo-vector
+29 verbose updated @palett/fluo
+30 verbose updated @palett/munsell
+31 verbose updated @palett/presets
+32 verbose updated @palett/projector
+33 verbose updated @palett/stringify
+34 verbose updated @palett/table
+35 verbose updated @palett/util-ansi
+36 verbose updated @palett/util-fluo
+37 warn version Skipping working tree validation, proceed at your own risk
+38 info execute Skipping git tag/commit
+39 info execute Skipping git push
+40 info execute Skipping releases
+41 silly lifecycle No script for "preversion" in "root", continuing
+42 silly lifecycle No script for "preversion" in "@palett/enum-ansi-codes", continuing
+43 silly lifecycle No script for "preversion" in "@palett/enum-color-cards", continuing
+44 silly lifecycle No script for "preversion" in "@palett/enum-color-space", continuing
+45 silly lifecycle No script for "preversion" in "@palett/enum-font-effects", continuing
+46 silly lifecycle No script for "preversion" in "@palett/cards", continuing
+47 silly lifecycle No script for "preversion" in "@palett/color-algebra", continuing
+48 silly lifecycle No script for "preversion" in "@palett/convert", continuing
+49 silly lifecycle No script for "version" in "@palett/enum-font-effects", continuing
+50 silly lifecycle No script for "version" in "@palett/convert", continuing
+51 silly lifecycle No script for "preversion" in "@palett/color-space", continuing
+52 silly lifecycle No script for "preversion" in "@palett/util-ansi", continuing
+53 silly lifecycle No script for "version" in "@palett/cards", continuing
+54 silly lifecycle No script for "version" in "@palett/enum-color-cards", continuing
+55 silly lifecycle No script for "version" in "@palett/enum-color-space", continuing
+56 silly lifecycle No script for "preversion" in "@palett/enum-colorant-modes", continuing
+57 silly lifecycle No script for "version" in "@palett/color-algebra", continuing
+58 silly lifecycle No script for "version" in "@palett/enum-ansi-codes", continuing
+59 silly lifecycle No script for "version" in "@palett/util-ansi", continuing
+60 silly lifecycle No script for "preversion" in "@palett/dye", continuing
+61 silly lifecycle No script for "version" in "@palett/color-space", continuing
+62 silly lifecycle No script for "preversion" in "@palett/munsell", continuing
+63 silly lifecycle No script for "version" in "@palett/enum-colorant-modes", continuing
+64 silly lifecycle No script for "version" in "@palett/munsell", continuing
+65 silly lifecycle No script for "version" in "@palett/dye", continuing
+66 silly lifecycle No script for "preversion" in "@palett/presets", continuing
+67 silly lifecycle No script for "preversion" in "@palett/projector", continuing
+68 silly lifecycle No script for "preversion" in "@palett/table", continuing
+69 silly lifecycle No script for "preversion" in "@palett/util-fluo", continuing
+70 silly lifecycle No script for "version" in "@palett/util-fluo", continuing
+71 silly lifecycle No script for "version" in "@palett/presets", continuing
+72 silly lifecycle No script for "version" in "@palett/projector", continuing
+73 silly lifecycle No script for "preversion" in "@palett/fluo", continuing
+74 silly lifecycle No script for "version" in "@palett/table", continuing
+75 silly lifecycle No script for "preversion" in "@palett/flopper", continuing
+76 silly lifecycle No script for "version" in "@palett/fluo", continuing
+77 silly lifecycle No script for "preversion" in "@palett/fluo-entries", continuing
+78 silly lifecycle No script for "preversion" in "@palett/fluo-vector", continuing
+79 silly lifecycle No script for "preversion" in "@palett/stringify", continuing
+80 silly lifecycle No script for "version" in "@palett/flopper", continuing
+81 silly lifecycle No script for "version" in "@palett/fluo-vector", continuing
+82 silly lifecycle No script for "preversion" in "@palett/fluo-matrix", continuing
+83 silly lifecycle No script for "version" in "@palett/fluo-entries", continuing
+84 silly lifecycle No script for "version" in "@palett/stringify", continuing
+85 silly lifecycle No script for "version" in "@palett/fluo-matrix", continuing
+86 silly lifecycle No script for "version" in "root", continuing
+87 info publish Publishing packages to npm...
+88 silly getCurrentSHA
+89 verbose getCurrentSHA fa43c4eb4429e3c75cc8a2ae9093163359e8afb1
+90 silly lifecycle No script for "prepublish" in "root", continuing
+91 silly lifecycle No script for "prepare" in "root", continuing
+92 silly lifecycle No script for "prepublishOnly" in "root", continuing
+93 silly lifecycle No script for "prepack" in "root", continuing
+94 verbose pack-directory constants/enum-ansi-codes
+95 verbose pack-directory constants/enum-color-cards
+96 verbose pack-directory constants/enum-color-space
+97 verbose pack-directory constants/enum-font-effects
+98 verbose pack-directory packages/cards
+99 verbose pack-directory packages/color-algebra
+100 verbose pack-directory packages/convert
+101 silly lifecycle No script for "prepublish" in "@palett/enum-ansi-codes", continuing
+102 silly lifecycle No script for "prepublish" in "@palett/enum-color-cards", continuing
+103 silly lifecycle No script for "prepublish" in "@palett/enum-color-space", continuing
+104 silly lifecycle No script for "prepublish" in "@palett/enum-font-effects", continuing
+105 silly lifecycle No script for "prepublish" in "@palett/cards", continuing
+106 silly lifecycle No script for "prepublish" in "@palett/color-algebra", continuing
+107 silly lifecycle No script for "prepublish" in "@palett/convert", continuing
+108 silly lifecycle No script for "prepare" in "@palett/enum-ansi-codes", continuing
+109 silly lifecycle No script for "prepare" in "@palett/enum-color-cards", continuing
+110 silly lifecycle No script for "prepare" in "@palett/enum-color-space", continuing
+111 silly lifecycle No script for "prepare" in "@palett/enum-font-effects", continuing
+112 silly lifecycle No script for "prepare" in "@palett/cards", continuing
+113 silly lifecycle No script for "prepare" in "@palett/color-algebra", continuing
+114 silly lifecycle No script for "prepare" in "@palett/convert", continuing
+115 silly lifecycle No script for "prepublishOnly" in "@palett/enum-ansi-codes", continuing
+116 silly lifecycle No script for "prepublishOnly" in "@palett/enum-color-cards", continuing
+117 silly lifecycle No script for "prepublishOnly" in "@palett/enum-color-space", continuing
+118 silly lifecycle No script for "prepublishOnly" in "@palett/enum-font-effects", continuing
+119 silly lifecycle No script for "prepublishOnly" in "@palett/color-algebra", continuing
+120 silly lifecycle No script for "prepublishOnly" in "@palett/cards", continuing
+121 silly lifecycle No script for "prepublishOnly" in "@palett/convert", continuing
+122 silly lifecycle No script for "prepack" in "@palett/enum-ansi-codes", continuing
+123 silly lifecycle No script for "prepack" in "@palett/enum-color-cards", continuing
+124 silly lifecycle No script for "prepack" in "@palett/enum-color-space", continuing
+125 silly lifecycle No script for "prepack" in "@palett/enum-font-effects", continuing
+126 silly lifecycle No script for "prepack" in "@palett/color-algebra", continuing
+127 silly lifecycle No script for "prepack" in "@palett/cards", continuing
+128 silly lifecycle No script for "prepack" in "@palett/convert", continuing
+129 silly lifecycle No script for "postpack" in "@palett/enum-ansi-codes", continuing
+130 verbose packed constants/enum-ansi-codes
+131 silly lifecycle No script for "postpack" in "@palett/enum-color-cards", continuing
+132 verbose packed constants/enum-color-cards
+133 silly lifecycle No script for "postpack" in "@palett/enum-color-space", continuing
+134 verbose packed constants/enum-color-space
+135 silly lifecycle No script for "postpack" in "@palett/enum-font-effects", continuing
+136 verbose packed constants/enum-font-effects
+137 silly lifecycle No script for "postpack" in "@palett/color-algebra", continuing
+138 verbose packed packages/color-algebra
+139 silly lifecycle No script for "postpack" in "@palett/cards", continuing
+140 verbose packed packages/cards
+141 silly lifecycle No script for "postpack" in "@palett/convert", continuing
+142 verbose packed packages/convert
+143 verbose pack-directory constants/enum-colorant-modes
+144 silly lifecycle No script for "prepublish" in "@palett/enum-colorant-modes", continuing
+145 silly lifecycle No script for "prepare" in "@palett/enum-colorant-modes", continuing
+146 verbose pack-directory packages/color-space
+147 verbose pack-directory packages/util-ansi
+148 silly lifecycle No script for "prepublish" in "@palett/color-space", continuing
+149 silly lifecycle No script for "prepublish" in "@palett/util-ansi", continuing
+150 silly lifecycle No script for "prepare" in "@palett/color-space", continuing
+151 silly lifecycle No script for "prepare" in "@palett/util-ansi", continuing
+152 silly lifecycle No script for "prepublishOnly" in "@palett/color-space", continuing
+153 silly lifecycle No script for "prepublishOnly" in "@palett/enum-colorant-modes", continuing
+154 silly lifecycle No script for "prepublishOnly" in "@palett/util-ansi", continuing
+155 silly lifecycle No script for "prepack" in "@palett/color-space", continuing
+156 silly lifecycle No script for "prepack" in "@palett/enum-colorant-modes", continuing
+157 silly lifecycle No script for "prepack" in "@palett/util-ansi", continuing
+158 silly lifecycle No script for "postpack" in "@palett/color-space", continuing
+159 verbose packed packages/color-space
+160 silly lifecycle No script for "postpack" in "@palett/enum-colorant-modes", continuing
+161 verbose packed constants/enum-colorant-modes
+162 silly lifecycle No script for "postpack" in "@palett/util-ansi", continuing
+163 verbose packed packages/util-ansi
+164 verbose pack-directory packages/munsell
+165 silly lifecycle No script for "prepublish" in "@palett/munsell", continuing
+166 silly lifecycle No script for "prepare" in "@palett/munsell", continuing
+167 verbose pack-directory packages/dye
+168 silly lifecycle No script for "prepublish" in "@palett/dye", continuing
+169 silly lifecycle No script for "prepare" in "@palett/dye", continuing
+170 silly lifecycle No script for "prepublishOnly" in "@palett/dye", continuing
+171 silly lifecycle No script for "prepublishOnly" in "@palett/munsell", continuing
+172 silly lifecycle No script for "prepack" in "@palett/dye", continuing
+173 silly lifecycle No script for "prepack" in "@palett/munsell", continuing
+174 silly lifecycle No script for "postpack" in "@palett/dye", continuing
+175 verbose packed packages/dye
+176 verbose pack-directory packages/presets
+177 verbose pack-directory packages/projector
+178 verbose pack-directory packages/table
+179 verbose pack-directory packages/util-fluo
+180 silly lifecycle No script for "prepublish" in "@palett/presets", continuing
+181 silly lifecycle No script for "prepublish" in "@palett/projector", continuing
+182 silly lifecycle No script for "prepublish" in "@palett/table", continuing
+183 silly lifecycle No script for "prepublish" in "@palett/util-fluo", continuing
+184 silly lifecycle No script for "prepare" in "@palett/presets", continuing
+185 silly lifecycle No script for "prepare" in "@palett/projector", continuing
+186 silly lifecycle No script for "prepare" in "@palett/table", continuing
+187 silly lifecycle No script for "prepare" in "@palett/util-fluo", continuing
+188 silly lifecycle No script for "postpack" in "@palett/munsell", continuing
+189 verbose packed packages/munsell
+190 silly lifecycle No script for "prepublishOnly" in "@palett/presets", continuing
+191 silly lifecycle No script for "prepublishOnly" in "@palett/projector", continuing
+192 silly lifecycle No script for "prepublishOnly" in "@palett/util-fluo", continuing
+193 silly lifecycle No script for "prepublishOnly" in "@palett/table", continuing
+194 silly lifecycle No script for "prepack" in "@palett/presets", continuing
+195 silly lifecycle No script for "prepack" in "@palett/util-fluo", continuing
+196 silly lifecycle No script for "prepack" in "@palett/projector", continuing
+197 silly lifecycle No script for "prepack" in "@palett/table", continuing
+198 silly lifecycle No script for "postpack" in "@palett/presets", continuing
+199 verbose packed packages/presets
+200 silly lifecycle No script for "postpack" in "@palett/util-fluo", continuing
+201 verbose packed packages/util-fluo
+202 silly lifecycle No script for "postpack" in "@palett/projector", continuing
+203 verbose packed packages/projector
+204 silly lifecycle No script for "postpack" in "@palett/table", continuing
+205 verbose packed packages/table
+206 verbose pack-directory packages/flopper
+207 silly lifecycle No script for "prepublish" in "@palett/flopper", continuing
+208 silly lifecycle No script for "prepare" in "@palett/flopper", continuing
+209 verbose pack-directory packages/fluo
+210 silly lifecycle No script for "prepublish" in "@palett/fluo", continuing
+211 silly lifecycle No script for "prepare" in "@palett/fluo", continuing
+212 silly lifecycle No script for "prepublishOnly" in "@palett/flopper", continuing
+213 silly lifecycle No script for "prepublishOnly" in "@palett/fluo", continuing
+214 silly lifecycle No script for "prepack" in "@palett/flopper", continuing
+215 silly lifecycle No script for "prepack" in "@palett/fluo", continuing
+216 silly lifecycle No script for "postpack" in "@palett/fluo", continuing
+217 verbose packed packages/fluo
+218 verbose pack-directory packages/fluo-entries
+219 verbose pack-directory packages/fluo-vector
+220 verbose pack-directory packages/stringify
+221 silly lifecycle No script for "prepublish" in "@palett/fluo-entries", continuing
+222 silly lifecycle No script for "prepublish" in "@palett/fluo-vector", continuing
+223 silly lifecycle No script for "prepublish" in "@palett/stringify", continuing
+224 silly lifecycle No script for "prepare" in "@palett/fluo-entries", continuing
+225 silly lifecycle No script for "prepare" in "@palett/fluo-vector", continuing
+226 silly lifecycle No script for "prepare" in "@palett/stringify", continuing
+227 silly lifecycle No script for "postpack" in "@palett/flopper", continuing
+228 verbose packed packages/flopper
+229 silly lifecycle No script for "prepublishOnly" in "@palett/fluo-entries", continuing
+230 silly lifecycle No script for "prepublishOnly" in "@palett/fluo-vector", continuing
+231 silly lifecycle No script for "prepublishOnly" in "@palett/stringify", continuing
+232 silly lifecycle No script for "prepack" in "@palett/fluo-entries", continuing
+233 silly lifecycle No script for "prepack" in "@palett/stringify", continuing
+234 silly lifecycle No script for "prepack" in "@palett/fluo-vector", continuing
+235 silly lifecycle No script for "postpack" in "@palett/fluo-entries", continuing
+236 verbose packed packages/fluo-entries
+237 silly lifecycle No script for "postpack" in "@palett/stringify", continuing
+238 verbose packed packages/stringify
+239 silly lifecycle No script for "postpack" in "@palett/fluo-vector", continuing
+240 verbose packed packages/fluo-vector
+241 verbose pack-directory packages/fluo-matrix
+242 silly lifecycle No script for "prepublish" in "@palett/fluo-matrix", continuing
+243 silly lifecycle No script for "prepare" in "@palett/fluo-matrix", continuing
+244 silly lifecycle No script for "prepublishOnly" in "@palett/fluo-matrix", continuing
+245 silly lifecycle No script for "prepack" in "@palett/fluo-matrix", continuing
+246 silly lifecycle No script for "postpack" in "@palett/fluo-matrix", continuing
+247 verbose packed packages/fluo-matrix
+248 silly lifecycle No script for "postpack" in "root", continuing
+249 verbose publish @palett/enum-ansi-codes
+250 verbose publish @palett/enum-color-cards
+251 verbose publish @palett/enum-color-space
+252 verbose publish @palett/enum-font-effects
+253 verbose publish @palett/cards
+254 verbose publish @palett/color-algebra
+255 verbose publish @palett/convert
+256 silly FetchError: request to https://registry.npmjs.org/@palett%2fcards failed, reason: read ECONNRESET
+256 silly     at ClientRequest.<anonymous> (/home/alkindus/banyan/palett/node_modules/minipass-fetch/lib/index.js:130:14)
+256 silly     at ClientRequest.emit (node:events:513:28)
+256 silly     at TLSSocket.socketErrorListener (node:_http_client:481:9)
+256 silly     at TLSSocket.emit (node:events:525:35)
+256 silly     at emitErrorNT (node:internal/streams/destroy:151:8)
+256 silly     at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+256 silly     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+256 silly  FetchError: request to https://registry.npmjs.org/@palett%2fcards failed, reason: read ECONNRESET
+256 silly     at ClientRequest.<anonymous> (/home/alkindus/banyan/palett/node_modules/minipass-fetch/lib/index.js:130:14)
+256 silly     at ClientRequest.emit (node:events:513:28)
+256 silly     at TLSSocket.socketErrorListener (node:_http_client:481:9)
+256 silly     at TLSSocket.emit (node:events:525:35)
+256 silly     at emitErrorNT (node:internal/streams/destroy:151:8)
+256 silly     at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+256 silly     at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+256 silly   code: 'ECONNRESET',
+256 silly   errno: 'ECONNRESET',
+256 silly   syscall: 'read',
+256 silly   type: 'system'
+256 silly }
+257 error ECONNRESET request to https://registry.npmjs.org/@palett%2fcards failed, reason: read ECONNRESET
+258 error FetchError: request to https://registry.npmjs.org/@palett%2fcards failed, reason: read ECONNRESET
+258 error     at ClientRequest.<anonymous> (/home/alkindus/banyan/palett/node_modules/minipass-fetch/lib/index.js:130:14)
+258 error     at ClientRequest.emit (node:events:513:28)
+258 error     at TLSSocket.socketErrorListener (node:_http_client:481:9)
+258 error     at TLSSocket.emit (node:events:525:35)
+258 error     at emitErrorNT (node:internal/streams/destroy:151:8)
+258 error     at emitErrorCloseNT (node:internal/streams/destroy:116:3)

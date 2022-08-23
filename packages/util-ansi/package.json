@@ -1,6 +1,6 @@
 {
   "name": "@palett/util-ansi",
-  "version": "0.10.4",
+  "version": "0.10.7",
   "description": "A color converter",
   "main": "./dist/index.cjs",
   "exports": {
@@ -19,7 +19,7 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@palett/convert": "^0.10.4"
+    "@palett/convert": "^0.10.7"
   },
   "devDependencies": {
     "@pres/util-colors": "^0.2.19"
@@ -42,5 +42,5 @@
     "url": "https://github.com/hoyeungw/palett/util-ansi"
   },
   "homepage": "https://github.com/hoyeungw/palett/util-ansi#readme",
-  "gitHead": "7aacc1919f1babd2ffce9ce2ac3a82cb756791f1"
+  "gitHead": "fa43c4eb4429e3c75cc8a2ae9093163359e8afb1"
 }

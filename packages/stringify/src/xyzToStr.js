@@ -1,3 +1,7 @@
 import { round } from '@aryth/math'
 
-export const xyzToStr = (xyz) => '[' + xyz.map(x => String(round(x)).padStart(3)).join(',') + ']'
+function pad(v) { return String(round(v)).padStart(3) }
+
+export function xyzToStr(x, y, z) {
+  return `[${pad(x)},${pad(y)},${pad(z)}]`
+}

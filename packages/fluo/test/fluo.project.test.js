@@ -41,6 +41,7 @@ const randPres = () => {
   neg = null
   return { pos, neg, str }
 }
+
 for (let [ key, vec ] of indexed(candidates)) {
   const pres = randPres()
   // const pres = null

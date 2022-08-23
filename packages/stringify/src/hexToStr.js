@@ -1,10 +1,13 @@
-import { Fluo } from '@palett/fluo'
+import { hexToInt } from '@palett/convert'
+import { intToStr } from './intToStr.js'
 
 /**
  *
  * @param {string} hex
  * @return {string}
  */
-export function hexToStr(hex) { return Fluo.hex.call(this, hex, hex) }
+export function hexToStr(hex) {
+  return intToStr.call(this,hexToInt(hex))
+}
 
 

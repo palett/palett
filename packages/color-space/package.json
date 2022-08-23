@@ -1,6 +1,6 @@
 {
   "name": "@palett/color-space",
-  "version": "0.10.4",
+  "version": "0.10.7",
   "description": "A color space consists of RGB and HSL",
   "main": "./dist/index.cjs",
   "exports": {
@@ -19,19 +19,19 @@
   },
   "dependencies": {
     "@analyz/crostab": "^0.1.0",
-    "@aryth/bound": "^0.6.5",
-    "@aryth/distinct-column": "^0.6.5",
-    "@aryth/flopper": "^0.6.5",
-    "@aryth/math": "^0.6.5",
-    "@aryth/polar": "^0.6.5",
-    "@palett/convert": "^0.10.4",
+    "@aryth/bound": "^0.6.8",
+    "@aryth/distinct-column": "^0.6.8",
+    "@aryth/flopper": "^0.6.8",
+    "@aryth/math": "^0.6.8",
+    "@aryth/polar": "^0.6.8",
+    "@palett/convert": "^0.10.7",
     "@vect/columns-indicator": "^0.6.13",
-    "@vect/matrix-init": "^0.7.15",
-    "@vect/vector-init": "^0.7.15",
-    "@vect/vector-mapper": "^0.7.15"
+    "@vect/matrix-init": "^0.7.16",
+    "@vect/vector-init": "^0.7.16",
+    "@vect/vector-mapper": "^0.7.16"
   },
   "devDependencies": {
-    "@valjoux/timestamp-pretty": "^0.3.18"
+    "@valjoux/timestamp-pretty": "^0.3.19"
   },
   "repository": {
     "type": "git",
@@ -54,5 +54,5 @@
     "url": "https://github.com/hoyeungw/palett/presets"
   },
   "homepage": "https://github.com/hoyeungw/palett/presets#readme",
-  "gitHead": "7aacc1919f1babd2ffce9ce2ac3a82cb756791f1"
+  "gitHead": "fa43c4eb4429e3c75cc8a2ae9093163359e8afb1"
 }
