@@ -1,7 +1,7 @@
 import { indexed } from '@vect/object-mapper'
-import { demo }    from '../index.js'
-import { METRO }   from '../resources/material.js'
-import { PAGODA }  from '../resources/pavtone.js'
+import { METRO }   from '../static/material.js'
+import { PAGODA }  from '../static/pavtone.js'
+import { demo }    from '../src/demo.js'
 import { Preset }  from '../src/Preset.js'
 
 export const presets = {

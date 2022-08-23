@@ -1,5 +1,5 @@
-import { limitAboveZero as lim0Up, restrictAboveZero as rec0Up } from '@aryth/math'
-import { hexToHsl, hslToHex, hslToRgb, rgbToHsl }                from '@palett/convert'
+import { lim0up, rec0up }                         from '@aryth/math'
+import { hexToHsl, hslToHex, hslToRgb, rgbToHsl } from '@palett/convert'
 
 export function toneHex(hex, dh, ds, dl) {
   let hsl = hexToHsl(hex)
@@ -8,9 +8,9 @@ export function toneHex(hex, dh, ds, dl) {
 }
 
 export function toneHsl(hsl, dh, ds, dl) {
-  if (dh) hsl[0] = rec0Up(hsl[0] + dh, 360)
-  if (ds) hsl[1] = lim0Up(hsl[1] + ds, 100)
-  if (dl) hsl[2] = lim0Up(hsl[2] + dl, 100)
+  if (dh) hsl[0] = rec0up(hsl[0] + dh, 360)
+  if (ds) hsl[1] = lim0up(hsl[1] + ds, 100)
+  if (dl) hsl[2] = lim0up(hsl[2] + dl, 100)
   return hsl
 }
 

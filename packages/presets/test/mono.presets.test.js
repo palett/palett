@@ -1,6 +1,6 @@
 import { logger }  from '@spare/logger'
 import { indexed } from '@vect/object-mapper'
-import { demo }    from '../index.js'
+import { demo }    from '../src/demo.js'
 import { Preset }  from '../src/Preset'
 
 const presetCollection = {

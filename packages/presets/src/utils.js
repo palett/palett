@@ -39,6 +39,7 @@ export function hslToInt(h, s, l) {
 
 
 export function hexOntoHsl(hex, vec, pos = 0) {
+  if (!hex?.length) { return vec[pos++] = 0, vec[pos++] = 0, vec[pos++] = 0, vec }
   let hi, lo, i = 0
   const r = hexAt(hex, ++i) << 4 | hexAt(hex, ++i),
         g = hexAt(hex, ++i) << 4 | hexAt(hex, ++i),

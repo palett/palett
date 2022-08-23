@@ -1,9 +1,8 @@
+import { Preset } from '../src/Preset.js'
 import {
   Amber, Blue, BlueGrey, Brown, Cyan, DeepOrange, DeepPurple, Green, Grey,
   Indigo, LightBlue, LightGreen, Lime, Orange, Pink, Purple, Red, Teal, Yellow
-} from '@palett/cards'
-
-import { Preset } from '../src/Preset.js'
+}                 from '@palett/cards'
 
 export const METRO = Preset.build(Blue.lighten_4, Pink.lighten_2, Teal.accent_3)
 export const AQUA = Preset.build(Green.darken_1, Cyan.accent_2, Grey.lighten_4)

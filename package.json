@@ -11,7 +11,7 @@
     "prewatch": "npm run bootstrap",
     "ckv": "yarn outdated --latest",
     "upint": "yarn upgrade-interactive",
-    "pub": "lerna publish --force-publish --skip-git",
+    "pub": "lerna publish --force-publish",
     "build": "lerna exec --parallel -- rollup -c ../../rollup.config.mjs",
     "build-specific": "lerna exec --scope=@palett/presets -- rollup -c ../../rollup.config.mjs",
     "watch": "lerna exec --parallel -- rollup -c ../../rollup.config.mjs -w",
