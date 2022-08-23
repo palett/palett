@@ -1,6 +1,6 @@
 {
   "name": "@palett/enum-ansi-codes",
-  "version": "0.10.7",
+  "version": "0.11.1",
   "description": "A colorant to string",
   "main": "./dist/index.cjs",
   "exports": {

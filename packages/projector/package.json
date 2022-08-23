@@ -1,6 +1,6 @@
 {
   "name": "@palett/projector",
-  "version": "0.10.7",
+  "version": "0.11.1",
   "description": "Projector projects input number to color within pre-defined bound",
   "main": "./dist/index.cjs",
   "exports": {
@@ -20,10 +20,10 @@
   "dependencies": {
     "@aryth/math": "^0.6.8",
     "@ject/oneself": "^0.0.17",
-    "@palett/convert": "^0.10.7",
-    "@palett/dye": "^0.10.7",
-    "@palett/enum-ansi-codes": "^0.10.7",
-    "@palett/util-ansi": "^0.10.7"
+    "@palett/convert": "^0.11.1",
+    "@palett/dye": "^0.11.1",
+    "@palett/enum-ansi-codes": "^0.11.1",
+    "@palett/util-ansi": "^0.11.1"
   },
   "repository": {
     "type": "git",

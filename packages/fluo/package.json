@@ -1,6 +1,6 @@
 {
   "name": "@palett/fluo",
-  "version": "0.10.7",
+  "version": "0.11.1",
   "description": "A color converter",
   "main": "./dist/index.cjs",
   "exports": {
@@ -19,9 +19,9 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@palett/dye": "^0.10.7",
-    "@palett/presets": "^0.10.7",
-    "@palett/projector": "^0.10.7",
+    "@palett/dye": "^0.11.1",
+    "@palett/presets": "^0.11.1",
+    "@palett/projector": "^0.11.1",
     "@spare/arc": "^0.15.4",
     "@spare/string-value": "^0.15.4",
     "@texting/charset-fullwidth": "^0.1.12",

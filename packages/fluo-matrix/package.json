@@ -1,6 +1,6 @@
 {
   "name": "@palett/fluo-matrix",
-  "version": "0.10.7",
+  "version": "0.11.1",
   "description": "A colorant to string",
   "main": "./dist/index.cjs",
   "exports": {
@@ -19,17 +19,17 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@palett/fluo": "^0.10.7",
+    "@palett/fluo": "^0.11.1",
     "@vect/enum-matrix-directions": "^0.6.13"
   },
   "devDependencies": {
     "@aryth/bound-matrix": "^0.6.8",
     "@ject/oneself": "^0.0.17",
-    "@palett/convert": "^0.10.7",
-    "@palett/enum-colorant-modes": "^0.10.7",
-    "@palett/fluo-vector": "^0.10.7",
-    "@palett/presets": "^0.10.7",
-    "@palett/projector": "^0.10.7",
+    "@palett/convert": "^0.11.1",
+    "@palett/enum-colorant-modes": "^0.11.1",
+    "@palett/fluo-vector": "^0.11.1",
+    "@palett/presets": "^0.11.1",
+    "@palett/projector": "^0.11.1",
     "@texting/charset-fullwidth": "^0.1.12",
     "@texting/string-value": "^0.1.12",
     "@typen/enum-data-types": "^0.1.19",
