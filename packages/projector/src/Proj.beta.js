@@ -1,66 +1,55 @@
-import { lim0up, rec0up }               from '@aryth/math'
-import { hexToHsl, hexToInt }           from '@palett/convert'
-import { CSI, FORE_DEF, FORE_INI, SGR } from '@palett/enum-ansi-codes'
-import { SC }                           from '@palett/util-ansi'
-import { scale }                        from './Proj.js'
-import { hslToInt }                     from './utils/convert.js'
-import { style }                        from './utils/style.js'
-
-/** @typedef {[number,number,number]} Triple */
+import { Preset }                                     from '@palett/presets'
+import { hslToInt, initialize, limFF, render, scale } from './utils/colors.js'
 
 export class Proj {
-  /** @type {string} */ head = ''
-  /** @type {string} */ tail = ''
-  /** @type {number} */ lo = Number.POSITIVE_INFINITY
-  /** @type {number} */ hi = Number.NEGATIVE_INFINITY
-  /** @type {Triple} */ min
-  /** @type {Triple} */ max
-  /** @type {Triple} */ lev
-  /** @type {number} */ na
+  /** @type {Preset} */ pre
+  /** @type {[*,*,*]|{lo}} */ lev = [ 0, 0, 0 ]
 
-  constructor(preset, bound) {
-    if (preset?.effects) style.call(this, preset.effects)
-    this.min = hexToHsl(preset.min)
-    this.max = hexToHsl(preset.max)
-    this.na = hexToInt(preset.na)
-    if (bound) {
-      this.hi = bound.hi
-      this.lo = bound.lo
-      this.ready()
-    }
+  constructor(preset) {
+    initialize.call(this, preset.effects)
+    this.pre = preset
   }
-  note(val) {
-    if (val > this.hi) this.hi = val
-    if (val < this.lo) this.lo = val
-    return val
+  static from(bound, preset) {
+    return (new Proj(preset)).load(bound.lo, bound.hi)
   }
-  reset() {
-    this.lo = Number.POSITIVE_INFINITY
-    this.hi = Number.NEGATIVE_INFINITY
-  }
-  ready() {
-    const { lo, hi, min: [ loH, loS, loL ], max: [ hiH, hiS, hiL ] } = this
-    const df = hi - lo
-    this.lev = df === 0 ? [ 0, 0, 0 ] : [ (hiH - loH) / df, (hiS - loS) / df, (hiL - loL) / df ]
+  get nan() { return this.pre.nan }
+  load(lo, hi) {
+    const vdf = hi - lo, { pre, lev } = this
+    lev[0] = vdf ? ((pre[3] - pre[0]) / vdf) : 0
+    lev[1] = vdf ? ((pre[4] - pre[1]) / vdf) : 0
+    lev[2] = vdf ? ((pre[5] - pre[2]) / vdf) : 0
+    lev.lo = lo
     return this
   }
-  clear() {
-    this.bound = null
-    this.lev = null
-  }
   into(val) {
-    if (isNaN(val)) return this.na
-    const { lo, min: [ loH, loS, loL ], lev: [ lvH, lvS, lvL ] } = this
-    const h = rec0up(scale(val, lo, lvH, loH), 360),
-          s = lim0up(scale(val, lo, lvS, loS), 100),
-          l = lim0up(scale(val, lo, lvL, loL), 100)
-    return hslToInt(h, s, l)
+    if (isNaN(val)) return this.nan
+    const { lev, pre } = this, vdf = val - (lev.lo ?? 0)
+    return hslToInt(scale(vdf, lev[0], pre[0]), limFF(vdf, lev[1], pre[1]), limFF(vdf, lev[2], pre[2]))
   }
   render(val, text) {
-    const n = this.into(val)
-    const r = n >> 16 & 0xFF, g = n >> 8 & 0xFF, b = n & 0xFF
-    const head = this.head + FORE_INI + SC + r + SC + g + SC + b
-    const tail = this.tail + FORE_DEF
-    return CSI + head + SGR + text + CSI + tail + SGR // return `[38;2;${head}${r};${g};${b}m${text}[${tail}39m`
+    return render.call(this, this.into(val), text)
+  }
+}
+
+export class SignedProj {
+  /** @type {Proj} */ pos
+  /** @type {Proj} */ neg
+  constructor(posPr, negPr) {
+    this.pos = new Proj(posPr)
+    this.neg = new Proj(negPr)
+  }
+  load(posBd, negBd) {
+    this.pos.load(posBd)
+    this.neg.load(negBd)
+  }
+  into(val) {
+    if (val > 0) return this.pos.into(val)
+    if (val < 0) return this.neg.into(val)
+    return val === 0 ? this.pos.na : this.neg.na
+  }
+  render(val, text) {
+    if (val > 0) return this.pos.render(val, text)
+    if (val < 0) return this.neg.render(val, text)
+    return val === 0 ? this.pos.render(NaN, text) : this.neg.render(NaN, text)
   }
 }

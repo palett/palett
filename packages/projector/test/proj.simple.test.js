@@ -1,9 +1,9 @@
-import { AZURE } from '@palett/presets'
-import { Proj }  from '../src/Proj.js'
+import { METRO } from '@palett/presets'
+import { Proj }  from '../src/Proj.beta.js'
 
-const bound = { min: 0, max: 100, }
-const proj = Proj.from(bound, AZURE)
+const proj = Proj.from({ lo: 0, hi: 100, }, METRO)
 
+proj.render(NaN, 'nan') |> console.log
 proj.render(0, 'zero') |> console.log
 proj.render(20, 'twenty') |> console.log
 proj.render(40, 'forty') |> console.log

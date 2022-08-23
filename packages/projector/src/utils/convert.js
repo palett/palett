@@ -14,10 +14,9 @@ export function rgbToHuv(r, g, b) {
   r /= 255, g /= 255, b /= 255
   let hi = r, lo = r
   {
-    if (g > r) { hi = g }
-    else { lo = g }
-    if (b > hi) hi = b
-    if (b < lo) lo = b
+    if (g > r) { hi = g } else { lo = g }
+    if (b > hi) { hi = b }
+    if (b < lo) { lo = b }
   }
   const t = hi + lo, d = hi - lo
   const h = hue(r, g, b, hi, d) * 60,
