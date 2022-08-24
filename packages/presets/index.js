@@ -1,4 +1,5 @@
 export { Preset, randPreset } from './src/Preset.js'
+export { demo }               from './src/demo.js'
 
 import {
   AQUA, ATLAS, AURORA, AZURE, FRESH, INSTA, JUNGLE, LAVA,

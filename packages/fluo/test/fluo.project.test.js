@@ -37,15 +37,13 @@ const randPres = () => {
   pos.name = posName
   neg.name = negName
   str.name = strName
-  pos = null
-  neg = null
-  return { pos, neg, str }
+  return { str, neg, pos }
 }
 
 for (let [ key, vec ] of indexed(candidates)) {
   const pres = randPres()
   // const pres = null
   const presNames = [ ...indexedTo(pres, (_, o) => o?.name ?? '-') ];
-  `[${key}] (${presNames})` |> console.log;
-  (new Fluo(pres)).project(vec) |> decoPale |> console.log
+  `[${key}] (${presNames})` |> console.log
+  Fluo.vector(vec, { pres }) |> decoPale |> console.log
 }

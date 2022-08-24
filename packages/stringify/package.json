@@ -22,7 +22,7 @@
     "@palett/color-space": "^0.11.1",
     "@palett/convert": "^0.11.1",
     "@palett/fluo": "^0.11.1",
-    "@texting/phrasing": "^0.1.12",
+    "@texting/phrasing": "^0.1.13",
     "@vect/vector": "^0.7.15"
   },
   "repository": {

@@ -1,8 +1,8 @@
-import { almostEqual, lim0up, rec0up }                      from '@aryth/math'
-import { distance as d, Polar }                             from '@aryth/polar'
-import { hexToHsl, hslToHex, hslToRgb, rgbToHex, rgbToHsl } from '@palett/convert'
-import { RGB }                                              from './RGB'
-import { abs }                                              from '../utils/math'
+import { almostEqual, lim0up, rec0up }            from '@aryth/math'
+import { distance as d, Polar }                   from '@aryth/polar'
+import { hexToHsl, hslToHex, hslToRgb, rgbToHsl } from '@palett/convert'
+import { abs }                                    from '../utils/math'
+import { RGB }                                    from './RGB'
 
 export class HSL extends Array {
   constructor(h, s, l) { super(h, s, l) }

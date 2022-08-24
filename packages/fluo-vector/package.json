@@ -28,7 +28,7 @@
     "@palett/enum-colorant-modes": "^0.11.1",
     "@palett/presets": "^0.11.1",
     "@palett/projector": "^0.11.1",
-    "@texting/string-value": "^0.1.12",
+    "@texting/string-value": "^0.1.13",
     "@typen/enum-data-types": "^0.1.19",
     "@typen/literal": "^0.1.19",
     "@typen/nullish": "^0.1.19",
