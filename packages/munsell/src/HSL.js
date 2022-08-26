@@ -17,7 +17,7 @@ export class HSL extends RawHSL {
 
   comparative(epsilon = 0.1, domain = Domain.fashion) {
     const cuvette = Cuvette.select(domain)
-    let target = "", min = 1024
+    let target = '', min = 1024
     for (let [hex, hsl] of cuvette.hexToHsl) {
       const distance = this.distance(hsl)
       if (distance < epsilon) return [hex, cuvette.name(hex)]

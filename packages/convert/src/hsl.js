@@ -23,7 +23,6 @@ export function fracToHsl(r, g, b) {
   const h = hue(r, g, b, hi, df) * 60,
         s = !df ? 0 : sm > 1 ? df / (2 - sm) : df / sm,
         l = sm / 2
-  // ;`>> [hi] (${round(hi * 255)}) [lo] (${round(lo * 255)}) [t] (${round(sm * 255)}) [d] (${round(df * 255)}) [s] (${roundD2(s * 255)}) [l] (${roundD2(l * 255)})` |> console.log
   return of(round(h), round(s * E3) / 10, round(l * E3) / 10)
 }
 

@@ -1,8 +1,9 @@
 import { hexToRgb }           from '@palett/convert'
+import { HexDye }             from '@palett/dye'
 import { Fluo }               from '@palett/fluo'
 import { hexToStr, rgbToStr } from '@palett/stringify'
-import { DecoObject, says } from '@spare/logger'
-import { RGB }              from '../src/RGB'
+import { DecoObject, says }   from '@spare/logger'
+import { RGB }                from '../src/RGB'
 
 export const XTERM = {
   noir: [ 0, 0, 0 ],
@@ -27,7 +28,7 @@ const RGB_COLLECTION = XTERM
 
 RGB_COLLECTION |> DecoObject({ read: rgbToStr }) |> says['XTERM']
 const rgb = RGB.from(RGB_COLLECTION.cyan_brillant)
-
+const dye = HexDye.init()
 {
   const [ hex, name ] = rgb.comparative();
   `${Fluo.hex(name, hex)} ${hexToStr(hex)} ${rgbToStr(hex|> hexToRgb)}` |> says['comparative'].br(name)

@@ -1,10 +1,10 @@
-import { hexToHsl }           from '@palett/convert'
+import { hexToHsl, rgbToHsl } from '@palett/convert'
+import { HexDye }             from '@palett/dye'
 import { Fluo }               from '@palett/fluo'
 import { hexToStr, hslToStr } from '@palett/stringify'
 import { DecoObject, says }   from '@spare/logger'
-import { mapper }   from '@vect/object'
-import { rgbToHsl } from '../src/convert'
-import { HSL }      from '../src/HSL'
+import { mapper }             from '@vect/object'
+import { HSL }                from '../src/HSL'
 
 export const XTERM = {
   noir: [ 0, 0, 0 ],
@@ -29,6 +29,7 @@ const HSL_COLLECTION = mapper(XTERM, rgb => rgbToHsl(rgb))
 
 HSL_COLLECTION |> DecoObject({ read: hsl => hslToStr(hsl) }) |> says['XTERM']
 const hsl = HSL.from(HSL_COLLECTION.cyan_brillant)
+const dye = HexDye.init()
 
 {
   const [ hex, name ] = hsl.comparative();
