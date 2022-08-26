@@ -1,15 +1,14 @@
 import { BlueGrey, Brown, LightGreen, Purple } from '@palett/cards'
-import { hexToHsl, hexToInt, hexToRgb } from '@palett/convert'
-import { DyeFactory }                   from 'archive/dye-factory'
-import { RGB }                          from '@palett/enum-color-space'
-import { UNDERLINE }                           from '@palett/enum-font-effects'
-import { Dye }                                 from '../src/dye'
+import { hexToHsl, hexToInt, hexToRgb }        from '@palett/convert'
+import { Dye }                                 from '../index.js'
 
-// export const dye = Dye.bind({ head: '', tail: '' })
-'some' |> DyeFactory.prep(RGB, UNDERLINE)([127, 127, 127]) |> console.log
-'some' |> Dye([127, 127, 127]) |> console.log
 
-'BlueGrey.accent_2' |> Dye.hex(BlueGrey.accent_2) |> console.log
-'Purple.lighten_3' |> Dye.rgb(Purple.lighten_3 |> hexToRgb) |> console.log
-'LightGreen.accent_3' |> Dye.int(LightGreen.accent_3 |> hexToInt) |> console.log
-'Brown.base' |> Dye.hsl(Brown.base |> hexToHsl) |> console.log
+const hex = BlueGrey.accent_2
+const rgb = Purple.lighten_3 |> hexToRgb
+const int = LightGreen.accent_3 |> hexToInt
+const hsl = Brown.base |> hexToHsl
+
+'BlueGrey.accent_2' |> Dye.hex(hex) |> console.log
+'Purple.lighten_3' |> Dye.rgb(rgb) |> console.log
+'LightGreen.accent_3' |> Dye.int(int) |> console.log
+'Brown.base' |> Dye.hsl(hsl) |> console.log

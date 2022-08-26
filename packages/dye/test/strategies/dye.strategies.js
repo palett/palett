@@ -1,50 +1,30 @@
-import { Cyan, Lime }        from '@palett/cards'
-import { hexToRgb }          from '@palett/convert'
-import { BOLD, ITALIC }      from '@palett/enum-font-effects'
-import { decoCrostab, says } from '@spare/logger'
-import { strategies }        from '@valjoux/strategies'
-import { Dye }               from '../../src/dye'
-import { HexDye }            from '../src/dye/HexDye'
-import { PrepDye }           from '../src/PrepDye/PrepDye'
-import { PrepHexDye }        from '../src/PrepDye/PrepHexDye'
+import { Blue, Lime, Orange }    from '@palett/cards'
+import { BOLD, ITALIC }          from '@palett/enum-font-effects'
+import { decoCrostab, says }     from '@spare/logger'
+import { strategies }            from '@valjoux/strategies'
+import { HexDye }                from '../../index.js'
+import { HexDye as HexDyeAlpha } from './alpha.js'
+// enzo: [ 'enzo' ],
+// urus: [ 'urus' ],
+// zagato: [ 'zagato' ]
 
-const prepDye = PrepDye(BOLD, ITALIC)
-const prepHexDye = PrepHexDye(BOLD, ITALIC)
-{
-  const { lapse, result } = strategies({
-    repeat: 1E+6,
-    candidates: {
-      simple: [Lime.accent_3, BOLD, ITALIC],
-      misc: [Cyan.accent_3, BOLD, ITALIC],
-    },
-    methods: {
-      bench: x => x,
-      dye: (hex, ...effects) => Dye(hex |> hexToRgb, ...effects),
-      hexDye: HexDye,
-      prepDye: hex => hex |> hexToRgb |> prepDye,
-      prepHexDye: hex => hex  |> prepHexDye,
-    }
-  })
-  lapse |> decoCrostab |> says['lapse']
-  result |> decoCrostab |> says['result']
-}
+const hexDyeAlpha = HexDyeAlpha.prep(BOLD, ITALIC)
+const hexDyeBeta = new HexDye(0b11)
 
-{
-  const { lapse, result } = strategies({
-    repeat: 1E+6,
-    candidates: {
-      enzo: ['enzo'],
-      urus: ['urus'],
-      zagato: ['zagato']
-    },
-    methods: {
-      bench: x => x,
-      dye: result.cell('simple', 'dye'),
-      hexDye: result.cell('simple', 'hexDye'),
-      prepDye: result.cell('simple', 'prepDye'),
-      prepHexDye: result.cell('simple', 'prepHexDye'),
-    }
-  })
-  lapse |> decoCrostab |> says['lapse']
-  result |> decoCrostab |> says['result']
-}
+const { lapse, result } = strategies({
+  repeat: 1E+6,
+  candidates: {
+    enzo: [ Lime.accent_3, 'enzo' ],
+    urus: [ Orange.accent_3, 'urus' ],
+    zaga: [ Blue.accent_3, 'zagato' ],
+  },
+  methods: {
+    bench: x => x,
+    alpha: (c, tx) => hexDyeAlpha.render(c, tx),
+    beta: (c, tx) => hexDyeBeta.render(c, tx),
+  }
+})
+lapse |> decoCrostab |> says['lapse']
+// result |> decoCrostab |> says['result']
+
+result |> console.log

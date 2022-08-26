@@ -65,9 +65,9 @@ export const { load, repl, draw } = Dye.prototype
 export class HexDye extends Dye {
   constructor(h, t) { super(h, t) }
   static init(ctx) { return new HexDye(ctx?.head, ctx?.tail) }
-  into(c) { return c = hexToInt(c), repl.call(this, c >> 16 & 0xFF, c >> 8 & 0xFF, c & 0xFF) }
-  make(c) { return draw.bind(HexDye.prototype.into.call(this, c))}
-  render(c, tx) { return draw.call(HexDye.prototype.into.call(this, c), tx) }
+  into(hex) { return hex = hexToInt(hex), repl.call(this, hex >> 16 & 0xFF, hex >> 8 & 0xFF, hex & 0xFF) }
+  make(hex) { return draw.bind(HexDye.prototype.into.call(this, hex))}
+  render(hex, tx) { return draw.call(HexDye.prototype.into.call(this, hex), tx) }
 }
 
 export class HslDye extends Dye {
