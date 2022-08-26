@@ -28,7 +28,7 @@ const HSL_COLLECTION = mapper(XTERM, rgb => rgbToHsl(rgb))
 
 HSL_COLLECTION |> DecoObject({ read: hsl => hslToStr(hsl) }) |> says['XTERM']
 const hsl = HSL.from(HSL_COLLECTION.cyan_brillant)
-const dye = HexDye.init()
+const dye = new HexDye()
 dye.render('#CCCCCC', 'some') |> console.log
 
 {
