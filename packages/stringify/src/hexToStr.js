@@ -1,7 +1,6 @@
 import { hexToInt }         from '@palett/convert'
 import { render, xyzToStr } from './utils.js'
 
-
 /**
  *
  * @param {string} hex
