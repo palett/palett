@@ -1,5 +1,6 @@
-import { hexToInt } from '@palett/convert'
-import { intToStr } from './intToStr.js'
+import { hexToInt }         from '@palett/convert'
+import { render, xyzToStr } from './utils.js'
+
 
 /**
  *
@@ -7,7 +8,17 @@ import { intToStr } from './intToStr.js'
  * @return {string}
  */
 export function hexToStr(hex) {
-  return intToStr.call(this,hexToInt(hex))
+  hex = hex?.toUpperCase()
+  const int = hexToInt(hex)
+  let r = int >> 16, g = int >> 8, b = int >> 0
+  return render.call(this, r & 0xFF, g & 0xFF, b & 0xFF, hex)
+}
+
+export function hexToSpec(hex) {
+  hex = hex?.toUpperCase()
+  const int = hexToInt(hex)
+  let r = int >> 16, g = int >> 8, b = int >> 0
+  return render.call(this, r &= 0xFF, g &= 0xFF, b &= 0xFF, hex + ' ' + xyzToStr(r, g, b))
 }
 
 

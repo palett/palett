@@ -1,6 +1,4 @@
-import { CSI, FORE_DEF, FORE_INI, SGR } from '@palett/enum-ansi-codes'
-import { SC }                           from '@palett/util-ansi'
-import { xyzToStr }                     from './xyzToStr'
+import { render, xyzToStr } from './utils.js'
 
 
 /**
@@ -8,11 +6,8 @@ import { xyzToStr }                     from './xyzToStr'
  * @param {number[]} rgb
  * @return {string}
  */
-export function rgbToStr(rgb) {
-  const [ r, g, b ] = new Uint8ClampedArray(rgb)
-  const head = (this?.head ?? '') + FORE_INI + SC + r + SC + g + SC + b
-  const tail = (this?.tail ?? '') + FORE_DEF
-  return CSI + head + SGR + xyzToStr(r, g, b) + CSI + tail + SGR
+export function rgbToStr([ r, g, b ]) {
+  return render.call(this, r &= 0xFF, g &= 0xFF, b &= 0xFF, xyzToStr(r, g, b))
 }
 
 
