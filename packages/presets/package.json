@@ -1,6 +1,6 @@
 {
   "name": "@palett/presets",
-  "version": "0.11.5",
+  "version": "0.11.6",
   "description": "A color converter",
   "main": "./dist/index.cjs",
   "exports": {
@@ -20,10 +20,10 @@
   "dependencies": {
     "@aryth/math": "^0.6.8",
     "@aryth/rand": "^0.6.8",
-    "@palett/convert": "^0.11.5",
-    "@palett/enum-ansi-codes": "^0.11.5",
-    "@palett/stringify": "^0.11.5",
-    "@palett/util-ansi": "^0.11.5",
+    "@palett/convert": "^0.11.6",
+    "@palett/enum-ansi-codes": "^0.11.6",
+    "@palett/stringify": "^0.11.6",
+    "@palett/util-ansi": "^0.11.6",
     "@vect/vector-init": "^0.7.16"
   },
   "devDependencies": {
