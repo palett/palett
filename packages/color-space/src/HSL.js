@@ -48,8 +48,7 @@ export class HSL {
   }
   distance(hsl) { return hsl = this.relative(hsl), (hsl.h + hsl.s + hsl.l) }
   almostEqual(hsl, eps) {
-    const { h, s, l } = hsl
-    return d(this.h, h) < eps.h && abs(this.s - s) < eps.s && abs(this.l - l) < eps.l
+    return d(this.h, hsl.h) < eps.h && abs(this.s - hsl.s) < eps.s && abs(this.l - hsl.l) < eps.l
   }
 
   /**

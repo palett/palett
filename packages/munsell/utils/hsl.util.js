@@ -1,4 +1,3 @@
-import * as math         from '@aryth/math'
 import { distance as d } from '@aryth/polar'
 
 const { abs } = Math
@@ -8,19 +7,12 @@ export function relative(hsl, it) {
 }
 
 // float
-export function distance(hsl, sub) {
-  const [ h, s, l ] = relative(hsl, sub)
+export function distance(hsl, hsl2) {
+  const [ h, s, l ] = relative(hsl, hsl2)
   return h + s + l
 }
 
 // bool
-export function almostEqual(hsl, sub, epsilon) {
-  return d(hsl.h, sub.h) < epsilon.h && abs(hsl.s - sub.s) < epsilon.s && abs(hsl.l - sub.l) < epsilon.l
-}
-
-// bool
-export function almostEqualByPolar(hsl, polar, polarEpsilon, saturationInterval) {
-  return math.almostEquals(hsl.h, polar.θ, polarEpsilon.θ) &&
-    saturationInterval.min <= hsl.s && hsl.s <= saturationInterval.max &&
-    math.almostEquals(hsl.l, polar.r, polarEpsilon.r)
+export function almostEqual(hsl, hsl2, epsilon) {
+  return d(hsl.h, hsl2.h) < epsilon.h && abs(hsl.s - hsl2.s) < epsilon.s && abs(hsl.l - hsl2.l) < epsilon.l
 }

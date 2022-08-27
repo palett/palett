@@ -2,7 +2,6 @@ import { hexToRgb }      from '@palett/convert'
 import { Dye }           from '@palett/dye'
 import { palettFlopper } from '@palett/flopper'
 import { deco, says }    from '@spare/logger'
-import { toner }         from '../src/color-algebra'
 
 const flopper = palettFlopper()
 

@@ -1,10 +1,9 @@
-import { hexToHsl, rgbToHsl } from '@palett/convert'
-import { HexDye }             from '@palett/dye'
-import { Fluo }               from '@palett/fluo'
-import { hexToStr, hslToStr } from '@palett/stringify'
-import { DecoObject, says }   from '@spare/logger'
-import { mapper }             from '@vect/object'
-import { HSL }                from '../src/HSL'
+import { rgbToHsl }         from '@palett/convert'
+import { HexDye }           from '@palett/dye'
+import { hslToStr }         from '@palett/stringify'
+import { DecoObject, says } from '@spare/logger'
+import { mapper }           from '@vect/object'
+import { HSL }              from '../src/HSL'
 
 export const XTERM = {
   noir: [ 0, 0, 0 ],
@@ -29,32 +28,10 @@ const HSL_COLLECTION = mapper(XTERM, rgb => rgbToHsl(rgb))
 
 HSL_COLLECTION |> DecoObject({ read: hsl => hslToStr(hsl) }) |> says['XTERM']
 const hsl = HSL.from(HSL_COLLECTION.cyan_brillant)
-const dye = HexDye.init()
+const dye = new HexDye
 
-{
-  const [ hex, name ] = hsl.comparative();
-  `${Fluo.hex(name, hex)} ${hexToStr(hex)} ${hslToStr(hex|> hexToHsl)}` |> says['comparative'].br(name)
-}
-{
-  const [ hex, name ] = hsl.nearest();
-  `${Fluo.hex(name, hex)} ${hexToStr(hex)} ${hslToStr(hex|> hexToHsl)}` |> says['nearest'].br(name)
-}
-{
-  const list = hsl.approximates({ h: 54, s: 5, l: 12 })
-  for (let [ hex, name ] of list) {
-    `${Fluo.hex(name, hex)} ${hexToStr(hex)} ${hslToStr(hex|> hexToHsl)}` |> says['approximates'].br(name)
-  }
-}
-{
-  const list = hsl.approximatesByTop(5)
-  for (let [ hex, name ] of list) {
-    `${Fluo.hex(name, hex)} ${hexToStr(hex)} ${hslToStr(hex|> hexToHsl)}` |> says['approximatesByTop'].br(name)
-  }
-}
-{
-  const list = hsl.analogous(60, 5)
-  for (let [ hex, name ] of list) {
-    `${Fluo.hex(name, hex)} ${hexToStr(hex)} ${hslToStr(hex|> hexToHsl)}` |> says['analogous'].br(name)
-  }
-}
 
+for (let [ key, rgb ] of XTERM) {
+  const hsl = HSL.fromRgb(rgb)
+
+}

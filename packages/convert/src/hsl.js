@@ -14,10 +14,9 @@ export function fracToHsl(r, g, b) {
   const of = this?.of ?? Array.of
   let hi = r, lo = r
   {
-    if (g > r) { hi = g }
-    else { lo = g }
-    if (b > hi) hi = b
-    if (b < lo) lo = b
+    g > r ? hi = g : lo = g
+    b > hi ? hi = b : void 0
+    b < lo ? lo = b : void 0
   }
   const sm = hi + lo, df = hi - lo
   const h = hue(r, g, b, hi, df) * 60,

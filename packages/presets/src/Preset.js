@@ -1,8 +1,8 @@
 import { lim0up, limBy, rec0up } from '@aryth/math'
 import { randBetw }              from '@aryth/rand'
 import { hexToInt, intToRgb }    from '@palett/convert'
+import { hexOntoHsl, hslToInt }  from '@palett/projector'
 import { init }                  from '@vect/vector-init'
-import { hexOntoHsl, hslToInt }  from './utils.js'
 
 export const scale = (vdf, lev, tlo) => vdf <= 0 ? tlo : tlo + vdf * lev
 

@@ -1,7 +1,10 @@
-import { HslDye } from './src/HslDye.js'
 import { HexDye } from './src/HexDye.js'
+import { HslDye } from './src/HslDye.js'
 import { IntDye } from './src/IntDye.js'
 import { RgbDye } from './src/RgbDye.js'
+
+export { draw }       from './src/utils/draw.js'
+export { initialize } from './src/utils/initialize.js'
 
 export class DyeFab {
   static build(space, attr) { return DyeFab[space ?? 'rgb'](attr) }

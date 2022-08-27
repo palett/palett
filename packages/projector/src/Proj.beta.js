@@ -9,6 +9,7 @@ export class Proj {
     initialize.call(this, preset.effects)
     this.pre = preset
   }
+  /** @returns {Proj} */
   static from(bound, preset) {
     return (new Proj(preset)).load(bound.lo, bound.hi)
   }

@@ -1,4 +1,4 @@
-import { Dye as RawDye, DyeFab, HexDye, HslDye, IntDye, RgbDye } from '@palett/dye-factory'
+import { DyeFab, HexDye, HslDye, IntDye, RgbDye } from '@palett/dye-factory'
 
 export { Dye as RawDye, DyeFab, HexDye, HslDye, IntDye, RgbDye } from '@palett/dye-factory'
 

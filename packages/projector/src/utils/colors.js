@@ -23,7 +23,7 @@ export function initialize(effects) {
                     : void 0
   }
   this.head = CSI + head + FORE_INI + SC
-  this.tail = CSI + tail + FORE_DEF + SGR
+  this.tail = CSI + FORE_DEF + tail + SGR
 }
 
 const H = CSI + FORE_INI + SC

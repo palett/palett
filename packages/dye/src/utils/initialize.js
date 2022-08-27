@@ -1,4 +1,3 @@
-import { hexToInt }                     from '@palett/convert'
 import { CSI, FORE_DEF, FORE_INI, SGR } from '@palett/enum-ansi-codes'
 import { SC }                           from '@palett/util-ansi'
 
@@ -19,6 +18,6 @@ export function initialize(attr) {
     do if (attr & 0x1) { h += i + ';', t += '2' + i + ';' } while (i++ && (attr >>= 1))
   }
   this.head = CSI + h + FORE_INI + SC
-  this.tail = CSI + t + FORE_DEF + SGR
+  this.tail = CSI + FORE_DEF + t + SGR
 }
 
