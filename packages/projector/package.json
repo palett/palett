@@ -1,6 +1,6 @@
 {
   "name": "@palett/projector",
-  "version": "0.11.4",
+  "version": "0.11.5",
   "description": "Projector projects input number to color within pre-defined bound",
   "main": "./dist/index.cjs",
   "exports": {
@@ -18,8 +18,8 @@
     "test": "babel-node test/archive/test.index.js"
   },
   "dependencies": {
-    "@palett/dye": "^0.11.4",
-    "@palett/presets": "^0.11.4"
+    "@palett/dye": "^0.11.5",
+    "@palett/presets": "^0.11.5"
   },
   "repository": {
     "type": "git",
