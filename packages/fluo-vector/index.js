@@ -1,5 +1,4 @@
-import { Fluo }      from '@palett/fluo'
-import { arrToPres } from '@palett/fluo'
+import { arrToPres, Fluo } from '@palett/fluo'
 
 export function fluoVector(vec, pres, wd) {
   if (!vec?.length) return []

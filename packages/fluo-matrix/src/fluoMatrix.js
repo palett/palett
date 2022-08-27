@@ -1,8 +1,8 @@
 import { arrToPres, Fluo }                from '@palett/fluo'
 import { COLUMNWISE, POINTWISE, ROWWISE } from '@vect/enum-matrix-directions'
 import { fluoByColumns }                  from './fluoByColumns.js'
-import { fluoByRows }                     from './fluoByRows.js'
 import { fluoByPoints }                   from './fluoByPoints.js'
+import { fluoByRows }                     from './fluoByRows.js'
 
 /**
  *

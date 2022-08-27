@@ -1,8 +1,8 @@
 import { lim0up, limBy, rec0up } from '@aryth/math'
 import { randBetw }              from '@aryth/rand'
 import { hexToInt, intToRgb }    from '@palett/convert'
-import { hexOntoHsl, hslToInt }  from '@palett/projector'
 import { init }                  from '@vect/vector-init'
+import { hexOntoHsl, hslToInt }  from './algebra.js'
 
 export const scale = (vdf, lev, tlo) => vdf <= 0 ? tlo : tlo + vdf * lev
 
@@ -23,15 +23,13 @@ export class Preset {
   }
 
   static build(min, max, nan = GREY) { return new Preset(min, max, nan) }
-  static from(preset, effects) {
+  static from(preset, attr) {
     const { min, max, nan } = preset
-    const target = new Preset(min, max, nan)
-    if (effects) target.effects = effects
-    return target
+    preset = new Preset(min, max, nan)
+    if (attr) preset.attr = attr
+    return preset
   }
-  static rand(hex, name) {
-    return randPreset(hex, name)
-  }
+  static rand(hex, name) { return randPreset(hex, name) }
 
   get min() { return hslToInt(this[0], this[1], this[2]) }
   get max() { return hslToInt(this[3], this[4], this[5]) }

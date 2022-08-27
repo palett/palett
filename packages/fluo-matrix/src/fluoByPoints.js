@@ -1,12 +1,12 @@
-import { boundaries }                              from '@aryth/bound-matrix'
-import { oneself }                                 from '@ject/oneself'
-import { hslToHex }                                from '@palett/convert'
-import { COLOR, MAKER, RENDER }                    from '@palett/enum-colorant-modes'
-import { arrToPres, Fluo, Pres, PresetCollection } from '@palett/fluo'
-import { Proj }                                    from '@palett/projector'
-import { valid }                                   from '@typen/nullish'
-import { height, width }                           from '@vect/matrix-index'
-import { mapper, mutate }                          from '@vect/matrix-mapper'
+import { boundaries }            from '@aryth/bound-matrix'
+import { oneself }               from '@ject/oneself'
+import { hslToHex }              from '@palett/convert'
+import { COLOR, MAKER, RENDER }  from '@palett/enum-colorant-modes'
+import { arrToPres, Fluo, Pres } from '@palett/fluo'
+import { Proj }                  from '@palett/projector'
+import { valid }                 from '@typen/nullish'
+import { height, width }         from '@vect/matrix-index'
+import { mapper, mutate }        from '@vect/matrix-mapper'
 
 export function fluoByPoints2(matrix, pres, wd) {
   if (!matrix?.length) return []

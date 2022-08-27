@@ -6,8 +6,8 @@ import { Liner }                                          from '@spare/liner'
 import { decoCrostab, logger, says }                      from '@spare/logger'
 import { strategies }                                     from '@valjoux/strategies'
 import { dateTime }                                       from '@valjoux/timestamp-pretty'
-import { mapper }       from '@vect/matrix'
-import { fluoByPoints } from '../src/fluoByPoints'
+import { mapper }                                         from '@vect/matrix'
+import { fluoByPoints }                                   from '../src/fluoByPoints'
 
 const test = () => {
   const { lapse, result } = strategies({

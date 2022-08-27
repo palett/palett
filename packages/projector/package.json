@@ -18,12 +18,8 @@
     "test": "babel-node test/archive/test.index.js"
   },
   "dependencies": {
-    "@aryth/math": "^0.6.8",
-    "@ject/oneself": "^0.0.17",
-    "@palett/convert": "^0.11.4",
     "@palett/dye": "^0.11.4",
-    "@palett/enum-ansi-codes": "^0.11.4",
-    "@palett/util-ansi": "^0.11.4"
+    "@palett/presets": "^0.11.4"
   },
   "repository": {
     "type": "git",

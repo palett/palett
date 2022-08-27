@@ -1,8 +1,8 @@
+import { ProjBeta }            from '@palett/projector'
 import { value }               from '@texting/string-value'
 import { NUM }                 from '@typen/enum-data-types'
 import { isLiteral }           from '@typen/literal'
 import { isNumeric, parseNum } from '@typen/num-strict'
-import { ProjBeta }            from '@palett/projector'
 
 export class Fluo {
   isLiteral = isLiteral

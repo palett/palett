@@ -30,7 +30,10 @@
     "@palett/table": "^0.11.4",
     "@vect/object-select": "^0.7.15",
     "@vect/swap": "^0.6.13",
-    "@vect/vector-mapper": "^0.7.16"
+    "@vect/vector-mapper": "^0.7.16",
+    "@palett/munsell": "^0.11.4",
+    "@vect/vector": "^0.7.15",
+    "@palett/convert": "^0.11.4"
   },
   "repository": {
     "type": "git",

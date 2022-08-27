@@ -1,5 +1,5 @@
 import { METRO } from '@palett/presets'
-import { Proj }  from '../src/Proj.beta.js'
+import { Proj }  from '../src/Proj.js'
 
 const proj = Proj.from({ lo: 0, hi: 100, }, METRO)
 

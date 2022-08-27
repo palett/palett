@@ -1,6 +1,4 @@
-import { BlueGrey, Brown, LightGreen, Purple } from '@palett/cards'
-import { hexToHsl, hexToInt, hexToRgb } from '@palett/convert'
-import { Fluo, fluo }                   from '../index.js'
+import { fluo } from '../index.js'
 
 fluo('some', [ 127, 127, 127 ]) |> console.log
 // Fluo.hex('BlueGrey.accent_2', BlueGrey.accent_2) |> console.log

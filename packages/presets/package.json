@@ -20,8 +20,10 @@
   "dependencies": {
     "@aryth/math": "^0.6.8",
     "@aryth/rand": "^0.6.8",
-    "@palett/cards": "^0.11.4",
     "@palett/convert": "^0.11.4",
+    "@palett/enum-ansi-codes": "^0.11.4",
+    "@palett/util-ansi": "^0.11.4",
+    "@palett/stringify": "^0.11.4",
     "@vect/vector-init": "^0.7.16"
   },
   "devDependencies": {

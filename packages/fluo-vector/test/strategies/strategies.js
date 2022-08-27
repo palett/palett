@@ -1,6 +1,6 @@
 import { makeEmbedded }   from '@foba/util'
-import { says }           from '@spare/logger'
 import { deco, delogger } from '@spare/deco'
+import { says }           from '@spare/logger'
 import { strategies }     from '@valjoux/strategies'
 import { fluoVector }     from '../../src/fluoVector'
 import { candidates }     from './candidates'

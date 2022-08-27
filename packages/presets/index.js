@@ -1,14 +1,15 @@
-export { Preset, randPreset } from './src/Preset.js'
-export { demo }               from './src/demo.js'
-
+export { Preset, randPreset }                                 from './src/Preset.js'
+export { demo }                                               from './src/demo.js'
+export { render, rgbToHsl, hslToInt, hexOntoHsl, hexOntoRgb } from './src/algebra.js'
+export { scale, limFF }                                       from './src/utils.js'
 import {
   AQUA, ATLAS, AURORA, AZURE, FRESH, INSTA, JUNGLE, LAVA,
   METRO, MOSS, OCEAN, PLANET, POME, SUBTLE, VIOLA
-} from './static/material.js'
+}                                                             from './static/material.js'
 import {
   AFRO, ARUBA, AZALE, BERING, BESQUE, BISTRO, BLUSH, BRANDY, DECANTE, DUSKY, ENSIGN, KELLY,
   LILAC, NORSE, PAGODA, PERSIAN, PINE, PRETTY, ROCOCCO, RODD, SANDY, SUMMER, TOBACCO, WINE
-} from './static/pavtone.js'
+}                                                             from './static/pavtone.js'
 
 export const Presets = {
   aqua: AQUA,

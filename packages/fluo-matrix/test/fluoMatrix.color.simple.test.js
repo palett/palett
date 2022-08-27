@@ -1,13 +1,13 @@
-import { COLUMNWISE, POINTWISE, ROWWISE } from '@vect/enum-matrix-directions'
-import { init }                           from '@vect/matrix'
-import { fluoMatrix }                     from '../src/fluoMatrix'
 import { simpleMatrixCollection }         from '@foba/foo'
+import { RENDER }                         from '@palett/enum-colorant-modes'
+import { BOLD, ITALIC, UNDERLINE }        from '@palett/enum-font-effects'
 import { PresetCollection }               from '@palett/fluo'
 import { FRESH, LAVA }                    from '@palett/presets'
-import { BOLD, ITALIC, UNDERLINE }        from '@palett/enum-font-effects'
-import { RENDER }                         from '@palett/enum-colorant-modes'
-import { METRO }                          from 'palett-presets'
+import { COLUMNWISE, POINTWISE, ROWWISE } from '@vect/enum-matrix-directions'
+import { init }                           from '@vect/matrix'
 import { indexed }                        from '@vect/object-mapper'
+import { METRO }                          from 'palett-presets'
+import { fluoMatrix }                     from '../src/fluoMatrix'
 
 // const SimpleMatrices = {}
 const SimpleMatrices = simpleMatrixCollection({ h: 6, w: 12 })
