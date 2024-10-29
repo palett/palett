@@ -1,6 +1,6 @@
 import { hslToHex } from '@palett/convert'
-import { Dye }      from '@palett/dye'
-import { Xr }       from '@spare/logger'
+import { Dye }    from '@palett/dye'
+import { xr, Xr } from '@spare/logger'
 
 
 export const BlueGreyAccents = {
@@ -26,7 +26,7 @@ export const GreyAccents = {
 
 const check = (ob) => {
   for (let [ name, hsl ] of Object.entries(ob)) {
-    Xr(name, String(hsl) |> Dye.hsl(hsl)).tag('HEX', hsl |> hslToHex) |> console.log
+    xr(name, String(hsl) |> Dye.hsl(hsl)).tag('HEX', hsl |> hslToHex) |> console.log
   }
   '' |> console.log
 }

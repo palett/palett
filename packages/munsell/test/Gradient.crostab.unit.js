@@ -5,14 +5,14 @@ import { demo, Preset }        from '@palett/presets'
 import { hslToStr }            from '@palett/stringify'
 import { DecoCrostab, logger } from '@spare/logger'
 import { says }                from '@spare/xr'
-import { H, L, S }             from '../resources/attr'
-import { Gradient }            from '../src/Gradient'
+import { H, L, S }             from '../resources/attr.js'
+import { Gradient }            from '../src/Gradient.js'
 
 const a = Preset.build('#E46C9A', '#6ED1B4') // Azalea Opal
 const b = Preset.build('#B284BE', '#C6E67A') // African Violet - Sharp Green
 const c = Preset.build('#CB8986', '#79D381')  // Rosette - SUMMER Green
-const MIN = rgbToHsl([ randBetw(160, 255), randBetw(0, 196), randBetw(0, 196) ])|> hslToHex
-const MAX = rgbToHsl([ randBetw(0, 196), randBetw(160, 255), randBetw(0, 196) ])|> hslToHex
+const MIN = hslToHex(rgbToHsl([ randBetw(160, 255), randBetw(0, 196), randBetw(0, 196) ]))
+const MAX = hslToHex(rgbToHsl([ randBetw(0, 196), randBetw(160, 255), randBetw(0, 196) ]))
 const conf = {
   preset: a, //Preset.build(MIN, MAX),
   axis: { x: L, y: H },
@@ -20,20 +20,19 @@ const conf = {
   extend: { top: 4, bottom: 2, left: 2, right: 2 }
 }
 
-
 const crostabOriginal = Gradient.crostab({ preset: conf.preset, axis: conf.axis, size: conf.size })
 const crostabExtended = Gradient.crostab(conf)
 
-demo(conf.preset, 7) |> says['preset']
-'' |> logger
-crostabOriginal |> DecoCrostab({ read: hslToStr, presets: [] }) |> says['original']
-'' |> logger
-crostabExtended |> DecoCrostab({ read: hslToStr, presets: [] }) |> says['extended']
+says['preset'](demo(conf.preset, 7))
+logger('')
+says['original'](DecoCrostab({ read: hslToStr, presets: [] })(crostabOriginal))
+logger('')
+says['extended'](DecoCrostab({ read: hslToStr, presets: [] })(crostabExtended))
 
 const decoLocale = DecoCrostab({ read: ([ hex, name ]) => Fluo.hex(`'${hex}', // ${name}`, hex), presets: [] })
-'' |> logger
-crostabOriginal.map(x => x.nearest()) |> decoLocale |> says['original'].br('nearest')
-'' |> logger
-crostabExtended.map(x => x.nearest()) |> decoLocale |> says['extended'].br('nearest')
-'' |> logger
+logger('')
+says['original'].br('nearest')(decoLocale(crostabOriginal.map(x => x.nearest())))
+logger('')
+says['extended'].br('nearest')(decoLocale(crostabExtended.map(x => x.nearest())))
+logger('')
 

@@ -22,5 +22,5 @@ const CANDIDATES = [
 for (let n of CANDIDATES) {
   const body = {}
   initialize.call(body, n)
-  body |> console.log
+  console.log(body)
 }

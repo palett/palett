@@ -23,5 +23,5 @@ const colors = [
 ]
 
 for (let color of colors) {
-  `${color.toUpperCase()} = '${color.toLowerCase()}',`|> logger
+  logger(`${color.toUpperCase()} = '${color.toLowerCase()}',`)
 }

@@ -1,27 +1,27 @@
 import { oneself }                      from '@ject/oneself'
 import { hslToHex, hslToInt, hslToRgb } from '@palett/convert'
-import { Dye }                          from '../index'
+import { Dye }                          from '../index.js'
 
 const hsl = [345, 60, 55]
 {
   const color = hslToHex(hsl)
   const fn = Dye.hex(color)
-  fn(`[hex] ${color}`) |> console.log
+  console.log(fn(`[hex] ${color}`))
 }
 {
   const color = oneself(hsl)
   const fn = Dye.hsl(color)
-  fn(`[hsl] ${color}`) |> console.log
+  console.log(fn(`[hsl] ${color}`))
 }
 {
   const color = hslToInt(hsl)
   const fn = Dye.int(color)
-  fn(`[int] ${color}`) |> console.log
+  console.log(fn(`[int] ${color}`))
 }
 {
   const color = hslToRgb(hsl)
   const fn = Dye.rgb(color)
-  fn(`[rgb] ${color}`) |> console.log
+  console.log(fn(`[rgb] ${color}`))
 }
 
 

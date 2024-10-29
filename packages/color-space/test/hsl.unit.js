@@ -3,7 +3,7 @@ import { HexDye }           from '@palett/dye'
 import { hslToStr }         from '@palett/stringify'
 import { DecoObject, says } from '@spare/logger'
 import { mapper }           from '@vect/object'
-import { HSL }              from '../src/HSL'
+import { HSL }              from '../src/HSL.js'
 
 export const XTERM = {
   noir: [ 0, 0, 0 ],
@@ -21,17 +21,15 @@ export const XTERM = {
   bleu_brillant: [ 92, 92, 255 ],
   magenta_brillant: [ 255, 0, 255 ],
   cyan_brillant: [ 0, 255, 255 ],
-  blanc_brillant: [ 255, 255, 255 ],
+  blanc_brillant: [ 255, 255, 255 ]
 }
 
 const HSL_COLLECTION = mapper(XTERM, rgb => rgbToHsl(rgb))
 
-HSL_COLLECTION |> DecoObject({ read: hsl => hslToStr(hsl) }) |> says['XTERM']
+says['XTERM'](DecoObject({ read: hsl => hslToStr(hsl) })(HSL_COLLECTION))
 const hsl = HSL.from(HSL_COLLECTION.cyan_brillant)
 const dye = new HexDye
 
-
 for (let [ key, rgb ] of XTERM) {
   const hsl = HSL.fromRgb(rgb)
-
 }

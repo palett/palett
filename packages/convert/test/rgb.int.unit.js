@@ -1,8 +1,8 @@
-import { DyeFactory } from 'archive/dye-factory'
+import { DyeFactory } from '@palett/dye'
 import { RGB }        from '@palett/enum-color-space'
 import { INVERSE }    from '@palett/enum-font-effects'
 import { logger, xr } from '@spare/logger'
-import { intToRgb, rgbToInt } from '../index'
+import { intToRgb, rgbToInt } from '../index.js'
 
 export const XTERM = {
   noir: [0, 0, 0],
@@ -26,11 +26,11 @@ export const XTERM = {
 const dyeFab = DyeFactory.build(RGB, [INVERSE])
 
 for (let [key, rgb, int] of Object.entries(XTERM)) {
-  xr()
+  logger(xr()
     .p(key.padStart(16))
     .rgb(dyeFab.make(rgb)(rgb.map(x => String(x).padStart(3))))
     .int(String(int = rgbToInt(rgb)).padStart(8))
-    .rgb(dyeFab.make(rgb = intToRgb(int))(rgb.map(x => String(x).padStart(3)))) |> logger
+    .rgb(dyeFab.make(rgb = intToRgb(int))(rgb.map(x => String(x).padStart(3)))))
 }
 
 
