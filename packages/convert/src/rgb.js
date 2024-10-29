@@ -1,6 +1,6 @@
 import { round }    from '@aryth/math'
-import { hexToInt } from "./int"
-import { hf }       from '../utils/hsl'
+import { hexToInt } from './int.js'
+import { hf }       from '../utils/hsl.js'
 
 /** @typedef {[*,*,*]|{r,g,b}|RGB} RGB */
 

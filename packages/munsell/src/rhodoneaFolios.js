@@ -4,8 +4,8 @@ import * as pol          from '@aryth/polar'
 import { PetalNote }     from '@aryth/polar'
 import * as conv         from '@palett/convert'
 import { iterate }       from '@vect/vector-mapper'
-import { Cuvette }       from './Cuvette'
-import { Domain }        from './Domain'
+import { Cuvette }       from './Cuvette.js'
+import { Domain }        from './Domain.js'
 
 const { PI, pow, abs, round } = Math
 

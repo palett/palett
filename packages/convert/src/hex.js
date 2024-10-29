@@ -1,8 +1,8 @@
-import { dil6 }     from '../utils/hex'
-import { hslToRgb } from "./rgb";
-import { rgbToInt } from "./int";
+import { dil6 }     from '../utils/hex.js'
+import { hslToRgb } from './rgb.js'
+import { rgbToInt } from './int.js'
 
-export const hslToHex = (hsl) => hsl |> hslToRgb |> rgbToHex
+export const hslToHex = (hsl) => rgbToHex(hslToRgb(hsl))
 
 export const intToHex = (int) => '#' + dil6(int.toString(16))
 

@@ -18,5 +18,5 @@ import { transpose }     from '@vect/matrix-algebra'
  * @returns {*[][]}
  */
 export function fluoByColumns(mx, config) {
-  return columnsMapper(mx, col => fluoVector.call(this, col, config))|> transpose
+  return transpose(columnsMapper(mx, col => fluoVector.call(this, col, config)))
 }

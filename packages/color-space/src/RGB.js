@@ -1,6 +1,6 @@
 import { hexToRgb, hslToRgb, rgbToHex, rgbToHsl, rgbToInt } from '@palett/convert'
-import { HSL }                                              from './HSL'
-import { abs }                                              from '../utils/math'
+import { HSL }                                              from './HSL.js'
+import { abs }                                              from '../utils/math.js'
 
 export class RGB {
   r

@@ -64,8 +64,8 @@ export class Thrust {
     function toHex(hsl) { return hsl ? hslToHex(hsl) : null }
     return (_, i, j) => {
       let v
-      if (valid(v = bX && bX[i][j])) { return pX.into(v)|> toHex }
-      if (valid(v = bY && bY[i][j])) { return pY.into(v)|> toHex }
+      if (valid(v = bX && bX[i][j])) { return toHex(pX.into(v)) }
+      if (valid(v = bY && bY[i][j])) { return toHex(pY.into(v)) }
       return null
     }
   }

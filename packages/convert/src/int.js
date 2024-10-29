@@ -1,6 +1,6 @@
 import { round }         from '@aryth/math'
-import { hexAt, prolif } from '../utils/hex'
-import { hf }            from '../utils/hsl'
+import { hexAt, prolif } from '../utils/hex.js'
+import { hf }            from '../utils/hsl.js'
 
 /**
  * @param {string} hex

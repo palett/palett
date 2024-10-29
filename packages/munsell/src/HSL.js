@@ -1,6 +1,6 @@
-import { entMin }             from '../utils/minBy'
-import { Cuvette }            from './Cuvette'
-import { Domain }             from './Domain'
+import { entMin }             from '../utils/minBy.js'
+import { Cuvette }            from './Cuvette.js'
+import { Domain }             from './Domain.js'
 import { HSL as RawHSL }      from '@palett/color-space'
 import { hexToHsl, rgbToHsl } from '@palett/convert'
 

@@ -18,12 +18,12 @@ const GRAYS = Object.entries(filter(PRODUCTS, (co, _) => (co = hexToHsl.call(HSL
  * @returns {{min:string, max:string, na:string, [name]:string}}
  */
 export const randPreset = (hex, name) => {
-  const [h, s, l] = hex |> hexToHsl
+  const [h, s, l] = hexToHsl(hex)
   const [max, _] = HSL
     .of(h + randBetw(-12, 12), s + randBetw(-12, -4), l + randBetw(8, 24))
     .restrict()
     .nearest()
-  const [gray, label] = GRAYS |> flop
+  const [gray, label] = flop(GRAYS)
   const preset = Preset.build(hex, max, gray)
   if (name?.length) preset.name = name
   return preset
@@ -42,7 +42,7 @@ export function* presetFlopperPavtone(exhausted = true) {
       }
   const rest = {}
   while (!exhausted) {
-    const [gray, label] = GRAYS|> flop
+    const [gray, label] = flop(GRAYS)
     yield label in rest ? rest[label] : (rest[label] = randPreset(gray, label))
   }
 }

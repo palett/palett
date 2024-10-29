@@ -1,5 +1,5 @@
 import { FRESH, PLANET, SUBTLE }                                from '@palett/presets'
-import { stringValue }                                          from '@spare/string-value'
+import { stringValue }                                          from '@texting/string-value'
 import { isNumeric as isNumericFull, parseNum as parseNumFull } from '@texting/charset-fullwidth'
 import { isNumeric, parseNum }                                  from '@texting/charset-halfwidth'
 import { isLiteral, isLiteralAny }                              from '@typen/literal'

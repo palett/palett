@@ -1,6 +1,6 @@
 import { E3, round } from '@aryth/math'
-import { hue }       from '../utils/rgb'
-import { hexToInt }  from "./int"
+import { hue }       from '../utils/rgb.js'
+import { hexToInt }  from './int.js'
 
 /** @typedef {[*,*,*]|{h,s,l}|HSL} HSL [Hue([0,360]), Saturation([0,100]), Lightness([0,100])] */
 
@@ -20,8 +20,8 @@ export function fracToHsl(r, g, b) {
   }
   const sm = hi + lo, df = hi - lo
   const h = hue(r, g, b, hi, df) * 60,
-        s = !df ? 0 : sm > 1 ? df / (2 - sm) : df / sm,
-        l = sm / 2
+    s = !df ? 0 : sm > 1 ? df / (2 - sm) : df / sm,
+    l = sm / 2
   return of(round(h), round(s * E3) / 10, round(l * E3) / 10)
 }
 

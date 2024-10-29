@@ -43,7 +43,7 @@ export class Preset {
     yield this[5]
   }
   toInt() { return { min: this.min, max: this.max, nan: this.nan } }
-  toRgb() { return { min: this.min |> intToRgb, max: this.max |> intToRgb, nan: this.nan |> intToRgb } }
+  toRgb() { return { min: intToRgb(this.min), max: intToRgb(this.max), nan: intToRgb(this.nan) } }
   reverse() { return Preset.build(this.max, this.min, this.nan) }
   range(count = 2) {
     if (count < 2) count = 2

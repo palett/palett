@@ -1,7 +1,7 @@
 import { hexToRgb, hslToRgb } from '@palett/convert'
-import { entMin }             from '../utils/minBy'
-import { Cuvette }            from './Cuvette'
-import { Domain }             from './Domain'
+import { entMin }             from '../utils/minBy.js'
+import { Cuvette }            from './Cuvette.js'
+import { Domain }             from './Domain.js'
 import { RGB as RawRGB }      from '@palett/color-space'
 
 export class RGB extends RawRGB {

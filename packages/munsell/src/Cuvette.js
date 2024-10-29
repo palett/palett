@@ -1,10 +1,10 @@
-﻿import { FASHIONS } from '../resources/Pavtone.Fashions'
-import { PRODUCTS } from '../resources/Pavtone.Products'
-import { distance } from '../utils/hsl.util'
-import { entMin }   from '../utils/minBy'
-import { Domain }   from './Domain'
-import { HSL }      from './HSL'
-import { RGB }      from './RGB'
+﻿import { FASHIONS } from '../resources/Pavtone.Fashions.js'
+import { PRODUCTS } from '../resources/Pavtone.Products.js'
+import { distance } from '../utils/hsl.util.js'
+import { entMin }   from '../utils/minBy.js'
+import { Domain }   from './Domain.js'
+import { HSL }      from './HSL.js'
+import { RGB }      from './RGB.js'
 
 export class Cuvette {
   dict // dictionary<string, string>

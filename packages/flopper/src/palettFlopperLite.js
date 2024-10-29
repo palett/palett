@@ -23,7 +23,7 @@ export function* palettFlopperLite({
       yield crostab.cell(side, banner)
     }
   }
-  defaultColor = defaultColor ?? (crostab.cell(degrees[0], crostab.head|> flop))
+  defaultColor = defaultColor ?? (crostab.cell(degrees[0], flop(crostab.head)))
   while (!exhausted) yield defaultColor
   return defaultColor
 }

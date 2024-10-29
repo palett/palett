@@ -14,4 +14,4 @@ export const hexToAnsi = (hex) => {
   return FORE + SC + (int >> 16 & 0xFF) + SC + (int >> 8 & 0xFF) + SC + (int & 0xFF)
 }
 
-export const hslToAnsi = (hsl) => hsl |> hslToRgb|> rgbToAnsi
+export const hslToAnsi = (hsl) => rgbToAnsi(hslToRgb(hsl))

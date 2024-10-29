@@ -25,7 +25,7 @@ export function* presetFlopperMaterial({
       yield randPreset(hex)
     }
   }
-  defaultColor = defaultColor ?? (crostab.cell(degrees[0], crostab.head|> flop))
+  defaultColor = defaultColor ?? (crostab.cell(degrees[0], flop(crostab.head)))
   const defaultPreset = randPreset(defaultColor)
   while (!exhausted) yield defaultPreset
   return defaultPreset

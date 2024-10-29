@@ -30,8 +30,8 @@ export function palettCrostab({
   if (dyed) {
     const dyeFactory = DyeFactory.build(space, [ INVERSE ])
     space === HEX
-      ? crostab.mutate(hex => hex |> dyeFactory(hex))
-      : crostab.mutate(xyz => mapper(xyz, v => v.toFixed(0).padStart(3))  |> dyeFactory(xyz))
+      ? crostab.mutate(hex => dyeFactory(hex)(hex))
+      : crostab.mutate(xyz => dyeFactory(xyz)(mapper(xyz, v => v.toFixed(0).padStart(3))))
   }
   return crostab
   // .mutateBanner(shortenDescription)

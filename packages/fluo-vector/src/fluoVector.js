@@ -34,8 +34,8 @@ export class Factory {
     function toHex(hsl) { return hsl ? hslToHex(hsl) : null }
     return (_, i) => {
       let v
-      if (valid(v = bX && bX[i])) { return pX.into(v)|> toHex }
-      if (valid(v = bY && bY[i])) { return pY.into(v)|> toHex }
+      if (valid(v = bX && bX[i])) { return toHex(pX.into(v)) }
+      if (valid(v = bY && bY[i])) { return toHex(pY.into(v)) }
       return null
     }
   }
