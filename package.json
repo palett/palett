@@ -23,6 +23,7 @@
     "@aryth/rand": "^0.7.0",
     "@aryth/rank": "^0.7.0",
     "@aryth/subset": "^0.7.0",
+    "@changesets/cli": "^2.27.9",
     "@flua/json-reader": "^0.3.7",
     "@flua/vinylize": "^0.3.7",
     "@foba/foo": "^0.6.1",

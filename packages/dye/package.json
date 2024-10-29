@@ -1,6 +1,6 @@
 {
   "name": "@palett/dye",
-  "version": "0.11.6",
+  "version": "0.12.0",
   "description": "A colorant to string",
   "type": "module",
   "exports": "./dist/index.js",
@@ -46,6 +46,6 @@
   "homepage": "https://github.com/hoyeungw/palett/dye#readme",
   "gitHead": "fa43c4eb4429e3c75cc8a2ae9093163359e8afb1",
   "devDependencies": {
-    "@palett/cards": "^0.11.6"
+    "@palett/cards": "workspace:^"
   }
 }

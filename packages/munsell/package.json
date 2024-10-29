@@ -1,6 +1,6 @@
 {
   "name": "@palett/munsell",
-  "version": "0.11.6",
+  "version": "0.12.0",
   "description": "A color converter",
   "type": "module",
   "exports": "./dist/index.js",
@@ -32,10 +32,10 @@
     "@vect/vector-mapper": "^0.8.0"
   },
   "devDependencies": {
-    "@palett/dye": "^0.11.6",
-    "@palett/fluo": "^0.11.6",
-    "@palett/presets": "^0.11.6",
-    "@palett/stringify": "^0.11.6",
+    "@palett/dye": "workspace:^",
+    "@palett/fluo": "workspace:^",
+    "@palett/presets": "workspace:^",
+    "@palett/stringify": "workspace:^",
     "@valjoux/timestamp-pretty": "^0.3.21"
   },
   "repository": {
