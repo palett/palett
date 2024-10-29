@@ -2,13 +2,5 @@
 temp
 node_modules
 packages/*/dist
-yarn.lock
-yarn-error.log
-.yarnrc
-.yarn/*
-#!.yarn/cache
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
+constants/*/dist
+pnpm-lock.yaml
