@@ -2,14 +2,14 @@
   "name": "@palett/cards",
   "version": "0.11.6",
   "description": "A color converter",
-  "main": "./dist/index.cjs",
-  "exports": {
-    "import": "./dist/index.mjs",
-    "require": "./dist/index.cjs"
-  },
+  "type": "module",
+  "exports": "./dist/index.js",
   "files": [
     "dist"
   ],
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -41,5 +41,9 @@
   "gitHead": "fa43c4eb4429e3c75cc8a2ae9093163359e8afb1",
   "dependencies": {
     "palett-presets": "^0.1.1"
+  },
+  "devDependencies": {
+    "@palett/convert": "^0.11.6",
+    "@palett/dye": "^0.11.6"
   }
 }

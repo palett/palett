@@ -2,14 +2,14 @@
   "name": "@palett/munsell",
   "version": "0.11.6",
   "description": "A color converter",
-  "main": "./dist/index.cjs",
-  "exports": {
-    "import": "./dist/index.mjs",
-    "require": "./dist/index.cjs"
-  },
+  "type": "module",
+  "exports": "./dist/index.js",
   "files": [
     "dist"
   ],
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -19,19 +19,23 @@
   },
   "dependencies": {
     "@analyz/crostab": "^0.1.0",
-    "@aryth/bound": "^0.6.8",
-    "@aryth/distinct-column": "^0.6.8",
-    "@aryth/flopper": "^0.6.8",
-    "@aryth/math": "^0.6.8",
-    "@aryth/polar": "^0.6.8",
-    "@palett/color-space": "^0.11.6",
-    "@palett/convert": "^0.11.6",
+    "@aryth/bound": "^0.7.0",
+    "@aryth/distinct-column": "^0.7.0",
+    "@aryth/flopper": "^0.7.0",
+    "@aryth/math": "^0.7.0",
+    "@aryth/polar": "^0.7.0",
+    "@palett/color-space": "workspace:^",
+    "@palett/convert": "workspace:^",
     "@vect/columns-indicator": "^0.6.13",
-    "@vect/matrix-init": "^0.7.16",
-    "@vect/vector-init": "^0.7.16",
-    "@vect/vector-mapper": "^0.7.16"
+    "@vect/matrix-init": "^0.8.0",
+    "@vect/vector-init": "^0.8.0",
+    "@vect/vector-mapper": "^0.8.0"
   },
   "devDependencies": {
+    "@palett/dye": "^0.11.6",
+    "@palett/fluo": "^0.11.6",
+    "@palett/presets": "^0.11.6",
+    "@palett/stringify": "^0.11.6",
     "@valjoux/timestamp-pretty": "^0.3.21"
   },
   "repository": {

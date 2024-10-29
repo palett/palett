@@ -2,14 +2,14 @@
   "name": "@palett/convert",
   "version": "0.11.6",
   "description": "A color converter among RGB, HEX and HSL.",
-  "main": "./dist/index.cjs",
-  "exports": {
-    "import": "./dist/index.mjs",
-    "require": "./dist/index.cjs"
-  },
+  "type": "module",
+  "exports": "./dist/index.js",
   "files": [
     "dist"
   ],
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -18,7 +18,7 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/math": "^0.6.8",
+    "@aryth/math": "^0.7.0",
     "@ject/oneself": "^0.0.17"
   },
   "repository": {
@@ -44,5 +44,10 @@
     "url": "https://github.com/hoyeungw/palett"
   },
   "homepage": "https://github.com/hoyeungw/palett/rgb#readme",
-  "gitHead": "fa43c4eb4429e3c75cc8a2ae9093163359e8afb1"
+  "gitHead": "fa43c4eb4429e3c75cc8a2ae9093163359e8afb1",
+  "devDependencies": {
+    "@palett/dye": "^0.11.6",
+    "@palett/enum-color-space": "^0.11.6",
+    "@palett/enum-font-effects": "^0.11.6"
+  }
 }

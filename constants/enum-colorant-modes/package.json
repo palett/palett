@@ -19,7 +19,7 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@palett/enum-color-space": "^0.11.6"
+    "@palett/enum-color-space": "workspace:^"
   },
   "repository": {
     "type": "git",

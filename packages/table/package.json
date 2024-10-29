@@ -2,14 +2,14 @@
   "name": "@palett/table",
   "version": "0.11.6",
   "description": "A color converter",
-  "main": "./dist/index.cjs",
-  "exports": {
-    "import": "./dist/index.mjs",
-    "require": "./dist/index.cjs"
-  },
+  "type": "module",
+  "exports": "./dist/index.js",
   "files": [
     "dist"
   ],
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -18,27 +18,27 @@
     "test": "node -r @babel/register test/table.test.js"
   },
   "dependencies": {
-    "@analys/convert": "^0.6.14",
+    "@analys/convert": "^0.7.2",
     "@analyz/crostab": "^0.1.0",
-    "@aryth/math": "^0.6.8",
+    "@aryth/math": "^0.7.0",
     "@ject/oneself": "^0.0.17",
-    "@palett/cards": "^0.11.6",
-    "@palett/convert": "^0.11.6",
-    "@palett/dye": "^0.11.6",
-    "@palett/enum-color-cards": "^0.11.6",
-    "@palett/enum-color-space": "^0.11.6",
-    "@palett/enum-font-effects": "^0.11.6",
-    "@spare/string": "^0.15.11",
-    "@spare/translator": "^0.15.11",
-    "@vect/columns-mapper": "^0.7.16",
-    "@vect/matrix-mapper": "^0.7.15",
+    "@palett/cards": "workspace:^",
+    "@palett/convert": "workspace:^",
+    "@palett/dye": "workspace:^",
+    "@palett/enum-color-cards": "workspace:^",
+    "@palett/enum-color-space": "workspace:^",
+    "@palett/enum-font-effects": "workspace:^",
+    "@spare/string": "^0.16.0",
+    "@spare/translator": "^0.16.0",
+    "@vect/columns-mapper": "^0.8.0",
+    "@vect/matrix-mapper": "^0.8.0",
     "@vect/matrix-transpose": "^0.6.13",
-    "@vect/object-select": "^0.7.15",
+    "@vect/object-select": "^0.8.0",
     "@vect/vector-indicator": "^0.6.13",
-    "@vect/vector-init": "^0.7.16",
-    "@vect/vector-mapper": "^0.7.16",
-    "@vect/vector-stat": "^0.7.16",
-    "@vect/vector-zipper": "^0.7.16"
+    "@vect/vector-init": "^0.8.0",
+    "@vect/vector-mapper": "^0.8.0",
+    "@vect/vector-stat": "^0.8.0",
+    "@vect/vector-zipper": "^0.8.0"
   },
   "repository": {
     "type": "git",

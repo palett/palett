@@ -2,14 +2,14 @@
   "name": "@palett/presets",
   "version": "0.11.6",
   "description": "A color converter",
-  "main": "./dist/index.cjs",
-  "exports": {
-    "import": "./dist/index.mjs",
-    "require": "./dist/index.cjs"
-  },
+  "type": "module",
+  "exports": "./dist/index.js",
   "files": [
     "dist"
   ],
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -18,16 +18,17 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/math": "^0.6.8",
-    "@aryth/rand": "^0.6.8",
-    "@palett/convert": "^0.11.6",
-    "@palett/enum-ansi-codes": "^0.11.6",
-    "@palett/stringify": "^0.11.6",
-    "@palett/util-ansi": "^0.11.6",
-    "@vect/vector-init": "^0.7.16"
+    "@aryth/math": "^0.7.0",
+    "@aryth/rand": "^0.7.0",
+    "@palett/cards": "workspace:^",
+    "@palett/convert": "workspace:^",
+    "@palett/enum-ansi-codes": "workspace:^",
+    "@palett/stringify": "workspace:^",
+    "@palett/util-ansi": "workspace:^",
+    "@vect/vector-init": "^0.8.0"
   },
   "devDependencies": {
-    "@vect/object-init": "^0.7.16"
+    "@vect/object-init": "^0.8.0"
   },
   "repository": {
     "type": "git",

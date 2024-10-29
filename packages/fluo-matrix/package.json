@@ -2,14 +2,14 @@
   "name": "@palett/fluo-matrix",
   "version": "0.11.6",
   "description": "A colorant to string",
-  "main": "./dist/index.cjs",
-  "exports": {
-    "import": "./dist/index.mjs",
-    "require": "./dist/index.cjs"
-  },
+  "type": "module",
+  "exports": "./dist/index.js",
   "files": [
     "dist"
   ],
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -19,29 +19,30 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@palett/fluo": "^0.11.6",
-    "@vect/enum-matrix-directions": "^0.6.13"
+    "@aryth/bound-matrix": "^0.7.0",
+    "@ject/oneself": "^0.0.17",
+    "@palett/convert": "workspace:^",
+    "@palett/enum-colorant-modes": "workspace:^",
+    "@palett/fluo": "workspace:^",
+    "@palett/fluo-vector": "workspace:^",
+    "@palett/projector": "workspace:^",
+    "@typen/nullish": "^0.1.19",
+    "@vect/columns-mapper": "^0.8.0",
+    "@vect/enum-matrix-directions": "^0.6.13",
+    "@vect/matrix-algebra": "^0.8.0",
+    "@vect/matrix-index": "^0.8.0",
+    "@vect/matrix-mapper": "^0.8.0",
+    "@vect/vector-mapper": "^0.8.0"
   },
   "devDependencies": {
-    "@aryth/bound-matrix": "^0.6.8",
-    "@ject/oneself": "^0.0.17",
-    "@palett/convert": "^0.11.6",
-    "@palett/enum-colorant-modes": "^0.11.6",
-    "@palett/fluo-vector": "^0.11.6",
-    "@palett/presets": "^0.11.6",
-    "@palett/projector": "^0.11.6",
-    "@texting/charset-fullwidth": "^0.1.13",
-    "@texting/string-value": "^0.1.13",
+    "@palett/presets": "workspace:^",
+    "@texting/charset-fullwidth": "^0.2.1",
+    "@texting/string-value": "^0.2.1",
     "@typen/enum-data-types": "^0.1.19",
     "@typen/literal": "^0.1.19",
-    "@typen/nullish": "^0.1.19",
     "@typen/num-strict": "^0.1.19",
-    "@vect/columns-mapper": "^0.7.16",
-    "@vect/matrix": "^0.7.15",
-    "@vect/matrix-algebra": "^0.7.16",
-    "@vect/matrix-index": "^0.7.16",
-    "@vect/object-select": "^0.7.15",
-    "@vect/vector-mapper": "^0.7.16"
+    "@vect/matrix": "^0.8.0",
+    "@vect/object-select": "^0.8.0"
   },
   "repository": {
     "type": "git",

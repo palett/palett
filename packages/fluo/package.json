@@ -2,14 +2,14 @@
   "name": "@palett/fluo",
   "version": "0.11.6",
   "description": "A color converter",
-  "main": "./dist/index.cjs",
-  "exports": {
-    "import": "./dist/index.mjs",
-    "require": "./dist/index.cjs"
-  },
+  "type": "module",
+  "exports": "./dist/index.js",
   "files": [
     "dist"
   ],
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -19,27 +19,30 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@palett/dye": "^0.11.6",
-    "@palett/presets": "^0.11.6",
-    "@palett/projector": "^0.11.6",
-    "@spare/arc": "^0.15.11",
-    "@spare/deco": "^0.15.11",
-    "@spare/string-value": "^0.15.11",
-    "@texting/charset-fullwidth": "^0.1.13",
-    "@texting/charset-halfwidth": "^0.1.13",
-    "@texting/regex-phrasing": "^0.1.13",
-    "@texting/string-value": "^0.1.13",
+    "@palett/dye": "workspace:^",
+    "@palett/enum-ansi-codes": "workspace:^",
+    "@palett/presets": "workspace:^",
+    "@palett/projector": "workspace:^",
+    "@palett/util-ansi": "workspace:^",
+    "@spare/arc": "^0.16.0",
+    "@spare/deco": "^0.16.0",
+    "@spare/string-value": "^0.16.0",
+    "@texting/charset-fullwidth": "^0.2.1",
+    "@texting/charset-halfwidth": "^0.2.1",
+    "@texting/regex-phrasing": "^0.2.1",
+    "@texting/string-value": "^0.2.1",
     "@typen/enum-data-types": "^0.1.19",
     "@typen/literal": "^0.1.19",
     "@typen/nullish": "^0.1.19",
     "@typen/num-strict": "^0.1.19",
-    "@vect/entries": "^0.7.15",
-    "@vect/entries-init": "^0.7.16",
-    "@vect/matrix-algebra": "^0.7.16",
-    "@vect/matrix-index": "^0.7.16",
-    "@vect/matrix-init": "^0.7.16",
-    "@vect/object-update": "^0.7.15",
-    "@vect/vector": "^0.7.15"
+    "@vect/entries": "^0.8.0",
+    "@vect/entries-init": "^0.8.0",
+    "@vect/enum-matrix-directions": "^0.6.13",
+    "@vect/matrix-algebra": "^0.8.0",
+    "@vect/matrix-index": "^0.8.0",
+    "@vect/matrix-init": "^0.8.0",
+    "@vect/object-update": "^0.8.0",
+    "@vect/vector": "^0.8.0"
   },
   "devDependencies": {
     "@palett/dye": "^0.11.1",
