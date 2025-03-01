@@ -34,8 +34,8 @@
     "@palett/dye": "workspace:^",
     "@palett/fluo": "workspace:^",
     "@palett/stringify": "workspace:^",
-    "@spare/logger": "^0.16.0",
-    "@valjoux/timestamp-pretty": "^0.3.21"
+    "@spare/logger": "^0.16.4",
+    "@valjoux/timestamp-pretty": "^0.4.0"
   },
   "repository": {
     "type": "git",

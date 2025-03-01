@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@aryth/math": "^0.7.0",
-    "@ject/oneself": "^0.0.17"
+    "@ject/oneself": "^0.1.2"
   },
   "repository": {
     "type": "git",

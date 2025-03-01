@@ -1,20 +1,23 @@
 import { flopEntry }          from '@aryth/rand'
 import { Presets }            from '@palett/presets'
-import { decoPale }           from '@spare/logger'
+// import { decoPale }           from '@spare/logger'
 import { STR }                from '@typen/enum-data-types'
 import { indexed, indexedTo } from '@vect/object-mapper'
+import { test }               from 'node:test'
 import { Fluo }               from '../src/Fluo.js'
 
 const proc = o => {
   for (let k in o) {
     const vec = o[k]
     vec.width = 0
-    for (let i = 0, x; i < vec.length; i++) { if (typeof (x = vec[i]) === STR || x.length > vec.width) vec.width = x.length}
+    for (let i = 0, x; i < vec.length; i++) {
+      if (typeof (x = vec[i]) === STR || x.length > vec.width) vec.width = x.length
+    }
   }
   return o
 }
 
-const candidates = {
+const candidates = proc({
   // empty: [],
   // one_zero: [ 0 ],
   // one_nan: [ NaN ],
@@ -27,8 +30,8 @@ const candidates = {
   tx_strs: 'comprehend how it\'s driven by animal spirits'.split(' '),
   dates: [ '2022-01-31', '2022-02-28', '2022-03-31', '2022-06-30', '2022-09-30', '2022-12-31' ],
   words: [ 'Alexander the Great', 'Caesar', 'Putin', 'Hannibal', 'Farnese', 'Charles', 'Frederick', 'Napoleon' ],
-  tx_padded: [ '  8', ' 32', ' 64', '108', '0', '-8', '-24', '-36', 'digit', 'bit', '~~~', '-', '' ],
-} |> proc
+  tx_padded: [ '  8', ' 32', ' 64', '108', '0', '-8', '-24', '-36', 'digit', 'bit', '~~~', '-', '' ]
+})
 
 const randPres = () => {
   let [ posName, pos ] = flopEntry(Presets)
@@ -40,10 +43,13 @@ const randPres = () => {
   return { str, neg, pos }
 }
 
-for (let [ key, vec ] of indexed(candidates)) {
-  const pres = randPres()
-  // const pres = null
-  const presNames = [ ...indexedTo(pres, (_, o) => o?.name ?? '-') ];
-  `[${key}] (${presNames})` |> console.log
-  Fluo.vector(vec, { pres }) |> decoPale |> console.log
-}
+test('fluo project', () => {
+  for (let [ key, vec ] of indexed(candidates)) {
+    const pres = randPres()
+    // const pres = null
+    const presNames = [ ...indexedTo(pres, (_, o) => o?.name ?? '-') ]
+    console.log(`[${key}] (${presNames})`)
+    console.log(Fluo.vector(vec, { pres }))
+    // console.log(decoPale(Fluo.vector(vec, { pres })))
+  }
+})

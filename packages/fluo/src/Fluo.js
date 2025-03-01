@@ -1,19 +1,19 @@
-import { Typo } from '@spare/deco'
+import { Node } from '@spare/node'
 
 export class Fluo {
   static vector(vector, conf) {
-    return (new Typo(conf)).flatVector(vector)
+    return (new Node(conf)).flatVector(vector)
   }
   static entries(entries, conf) {
-    return (new Typo(conf)).flatEntries(entries, conf.pad)
+    return (new Node(conf)).flatEntries(entries, conf.pad)
   }
   static matrix(matrix, conf) {
-    return (new Typo(conf)).flatMatrix(matrix)
+    return (new Node(conf)).flatMatrix(matrix)
   }
   static columns(matrix, conf) {
-    return (new Typo(conf)).flatColumns(matrix)
+    return (new Node(conf)).flatColumns(matrix)
   }
   static rows(matrix, conf) {
-    return (new Typo(conf)).flatRows(matrix)
+    return (new Node(conf)).flatRows(matrix)
   }
 }

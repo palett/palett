@@ -36,7 +36,7 @@
     "@palett/fluo": "workspace:^",
     "@palett/presets": "workspace:^",
     "@palett/stringify": "workspace:^",
-    "@valjoux/timestamp-pretty": "^0.3.21"
+    "@valjoux/timestamp-pretty": "^0.4.0"
   },
   "repository": {
     "type": "git",
