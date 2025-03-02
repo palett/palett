@@ -1,5 +1,11 @@
 # @palett/enum-ansi-codes
 
+## 0.12.1
+
+### Patch Changes
+
+- minor fix
+
 ## 0.12.0
 
 ### Minor Changes

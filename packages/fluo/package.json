@@ -1,6 +1,6 @@
 {
   "name": "@palett/fluo",
-  "version": "0.12.0",
+  "version": "0.12.1",
   "description": "A color converter",
   "type": "module",
   "exports": "./dist/index.js",
@@ -24,8 +24,8 @@
     "@palett/presets": "workspace:^",
     "@palett/projector": "workspace:^",
     "@palett/util-ansi": "workspace:^",
-    "@spare/node": "^0.16.4",
-    "@spare/string-value": "^0.16.4",
+    "@spare/node": "^0.16.5",
+    "@spare/string-value": "^0.16.5",
     "@texting/charset-fullwidth": "^0.2.1",
     "@texting/charset-halfwidth": "^0.2.1",
     "@texting/regex-phrasing": "^0.2.1",

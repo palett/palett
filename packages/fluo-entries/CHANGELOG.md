@@ -1,5 +1,13 @@
 # @palett/fluo-entries
 
+## 0.12.1
+
+### Patch Changes
+
+- minor fix
+- Updated dependencies
+  - @palett/fluo@0.12.1
+
 ## 0.12.0
 
 ### Minor Changes

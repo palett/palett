@@ -2,7 +2,7 @@ import { CSI, FORE_DEF, FORE_INI, SGR } from '@palett/enum-ansi-codes'
 import { SC }                           from '@palett/util-ansi'
 
 export { POINTWISE, ROWWISE, COLUMNWISE } from '@vect/enum-matrix-directions'
-export { arrToPres }                      from './src/arrToPres.js'
+export { arrToPres, intoPres }            from './src/intoPres.js'
 export { Fluo }                           from './src/Fluo.js'
 export { Pres, PresetCollection }         from './src/PresetCollection.js'
 

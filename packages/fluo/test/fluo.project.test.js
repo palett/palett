@@ -49,7 +49,7 @@ test('fluo project', () => {
     // const pres = null
     const presNames = [ ...indexedTo(pres, (_, o) => o?.name ?? '-') ]
     console.log(`[${key}] (${presNames})`)
-    console.log(Fluo.vector(vec, { pres }))
+    console.log(Fluo.vector(vec, { pres }).join(', '))
     // console.log(decoPale(Fluo.vector(vec, { pres })))
   }
 })

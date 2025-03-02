@@ -1,10 +1,9 @@
 import { simpleVectorCollection } from '@foba/foo'
 import { VectorCollection }       from '@foba/vector-number'
 
-const SimpleVectors = simpleVectorCollection({ h: 8 })
-delete SimpleVectors.empty
-SimpleVectors.another = ['A', 'B', 'C', 'x', 'y', 'z', ' ', '1', 2, 3]
-SimpleVectors.absoluteMirror = VectorCollection.absoluteMirror()
-SimpleVectors.sole = ['^1', '^1']
-
-export const candidates = SimpleVectors
+export const candidates = {
+  vector: simpleVectorCollection({ h: 8 }),
+  alphas: [ 'A', 'B', 'C', 'x', 'y', 'z', ' ', '1', 2, 3 ],
+  mirror: VectorCollection.absoluteMirror(),
+  sole: [ '^1', '^1' ]
+}

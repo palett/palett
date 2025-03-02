@@ -1,6 +1,6 @@
 {
   "name": "@palett/presets",
-  "version": "0.12.0",
+  "version": "0.12.1",
   "description": "A color converter",
   "type": "module",
   "exports": "./dist/index.js",

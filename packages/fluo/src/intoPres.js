@@ -1,4 +1,4 @@
-import { SUBTLE } from '@palett/presets'
+import { Preset, SUBTLE } from '@palett/presets'
 
 export function arrToPres(arr) {
   switch (arr.length) {
@@ -12,4 +12,10 @@ export function arrToPres(arr) {
     default:
       return { pos: arr[0], neg: arr[1], str: arr[2] }
   }
+}
+
+export function intoPres(pres) {
+  if (pres instanceof Preset) return { pos: pres, neg: pres, str: pres }
+  if (Array.isArray(pres)) return arrToPres(pres)
+  return pres
 }
