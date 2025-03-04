@@ -4,8 +4,8 @@ import { Grey }                                from '@palett/cards'
 import { HEX }                                 from '@palett/enum-color-space'
 import { ColorGroups, Degrees, palettCrostab } from '@palett/table'
 import { swap }                                from '@vect/swap'
-import { degreeToIndice }                      from '../utils/degreeToIndice'
-import { sortBy }                              from '../utils/sortDegrees'
+import { degreeToIndice }                      from '../utils/degreeToIndice.js'
+import { sortBy }                              from '../utils/sortDegrees.js'
 
 export function* palettFlopper({
                                  degrees = Degrees.entire,

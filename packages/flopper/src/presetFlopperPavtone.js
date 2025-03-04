@@ -1,14 +1,15 @@
 import { finiteFlopper }  from '@aryth/flopper'
 import { flop, randBetw } from '@aryth/rand'
+import { hexToHsl }       from '@palett/convert'
 import { HSL, PRODUCTS }  from '@palett/munsell'
 import { Preset }         from '@palett/presets'
 import { filter }         from '@vect/object-select'
 import { seq }            from '@vect/vector'
-import { hexToHsl }       from '@palett/convert'
 
 const HUES = seq(36, i => i * 10 + 5, 0)
-const SATURATIONS = [72, 64, 56, 48, 40, 80]
-const LIGHTS = [48, 56, 64, 72, 40, 32]
+// const SATURATIONS_PREV = [ 72, 64, 56, 48, 40, 80 ]
+const SATURATIONS = [ 48, 54, 42, 60, 36 ]
+const LIGHTS = [ 48, 56, 64, 72, 40, 32 ]
 const GRAYS = Object.entries(filter(PRODUCTS, (co, _) => (co = hexToHsl.call(HSL, co), co.s < 24 && 36 < co.l && co.l < 84)))
 
 /**
@@ -18,12 +19,12 @@ const GRAYS = Object.entries(filter(PRODUCTS, (co, _) => (co = hexToHsl.call(HSL
  * @returns {{min:string, max:string, na:string, [name]:string}}
  */
 export const randPreset = (hex, name) => {
-  const [h, s, l] = hexToHsl(hex)
-  const [max, _] = HSL
+  const [ h, s, l ] = hexToHsl(hex)
+  const [ max, _ ] = HSL
     .of(h + randBetw(-12, 12), s + randBetw(-12, -4), l + randBetw(8, 24))
     .restrict()
     .nearest()
-  const [gray, label] = flop(GRAYS)
+  const [ gray, label ] = flop(GRAYS)
   const preset = Preset.build(hex, max, gray)
   if (name?.length) preset.name = name
   return preset
@@ -35,14 +36,14 @@ export function* presetFlopperPavtone(exhausted = true) {
   for (let l of LIGHTS)
     for (let s of SATURATIONS)
       for (let h of finiteFlopper(HUES.slice())) {
-        const [hex, name] = HSL.of(h, s, l).nearest()
+        const [ hex, name ] = HSL.of(h, s, l).nearest()
         if (name in names) continue
         names[name] = true
         yield randPreset(hex, name)
       }
   const rest = {}
   while (!exhausted) {
-    const [gray, label] = flop(GRAYS)
+    const [ gray, label ] = flop(GRAYS)
     yield label in rest ? rest[label] : (rest[label] = randPreset(gray, label))
   }
 }
