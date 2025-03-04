@@ -1,4 +1,4 @@
-import { Preset } from '../src/Preset.js'
+import { Preset } from '@palett/pres'
 import {
   Amber, Blue, BlueGrey, Brown, Cyan, DeepOrange, DeepPurple, Green, Grey,
   Indigo, LightBlue, LightGreen, Lime, Orange, Pink, Purple, Red, Teal, Yellow

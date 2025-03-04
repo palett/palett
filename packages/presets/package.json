@@ -1,6 +1,6 @@
 {
   "name": "@palett/presets",
-  "version": "0.12.1",
+  "version": "0.12.3",
   "description": "A color converter",
   "type": "module",
   "exports": "./dist/index.js",
@@ -23,6 +23,7 @@
     "@palett/cards": "workspace:^",
     "@palett/convert": "workspace:^",
     "@palett/enum-ansi-codes": "workspace:^",
+    "@palett/pres": "workspace:^",
     "@palett/stringify": "workspace:^",
     "@palett/util-ansi": "workspace:^",
     "@vect/vector-init": "^0.8.0"

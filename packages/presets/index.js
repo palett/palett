@@ -1,7 +1,7 @@
-export { Preset, randPreset }                                 from './src/Preset.js'
-export { demo }                                               from './src/demo.js'
-export { render, rgbToHsl, hslToInt, hexOntoHsl, hexOntoRgb } from './src/algebra.js'
-export { scale, limFF }                                       from './src/utils.js'
+export { Preset, randPreset }                                 from '@palett/pres'
+export { demo }                                               from '@palett/pres'
+export { render, rgbToHsl, hslToInt, hexOntoHsl, hexOntoRgb } from '@palett/pres'
+export { scale, limFF }                                       from '@palett/pres'
 import {
   AQUA, ATLAS, AURORA, AZURE, FRESH, INSTA, JUNGLE, LAVA,
   METRO, MOSS, OCEAN, PLANET, POME, SUBTLE, VIOLA
@@ -50,7 +50,7 @@ export const Presets = {
   wine: WINE,
   rococco: ROCOCCO,
   pretty: PRETTY,
-  blush: BLUSH,
+  blush: BLUSH
 }
 
 export {

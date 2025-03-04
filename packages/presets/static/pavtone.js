@@ -1,4 +1,4 @@
-import { Preset } from '../src/Preset.js'
+import { Preset } from '@palett/pres'
 
 export const BESQUE = Preset.build('#D16F52', '#C6E67A', '#6A6A6A')     // - Arabesque       - Sharp Green       - Charcoal Gray      -
 export const FRESH = Preset.build('#DDB614', '#BADF30', '#6A6A6A')      // - Sulfer          - Lime              - Charcoal Gray      -
