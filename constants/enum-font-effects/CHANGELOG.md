@@ -1,5 +1,17 @@
 # @palett/enum-font-effects
 
+## 0.12.3
+
+### Patch Changes
+
+- fix bug on flopper
+
+## 0.12.2
+
+### Patch Changes
+
+- minor fix
+
 ## 0.12.1
 
 ### Patch Changes

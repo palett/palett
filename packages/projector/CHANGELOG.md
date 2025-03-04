@@ -1,5 +1,23 @@
 # @palett/projector
 
+## 0.12.3
+
+### Patch Changes
+
+- fix bug on flopper
+- Updated dependencies
+  - @palett/presets@0.12.3
+  - @palett/dye@0.12.3
+
+## 0.12.2
+
+### Patch Changes
+
+- minor fix
+- Updated dependencies
+  - @palett/dye@0.12.2
+  - @palett/presets@0.12.2
+
 ## 0.12.1
 
 ### Patch Changes
