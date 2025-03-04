@@ -1,0 +1,5 @@
+export { Pres, Pres as Preset }                               from './src/Pres.js'
+export { randPres, randPres as randPreset }                   from './src/randPres.js'
+export { demo }                                               from './src/demo.js'
+export { render, rgbToHsl, hslToInt, hexOntoHsl, hexOntoRgb } from './src/algebra.js'
+export { scale, limFF }                                       from './src/utils.js'
