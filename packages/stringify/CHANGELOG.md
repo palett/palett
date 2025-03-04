@@ -1,5 +1,15 @@
 # @palett/stringify
 
+## 0.12.5
+
+### Patch Changes
+
+- add Presm class in @palett/pres
+- Updated dependencies
+  - @palett/enum-ansi-codes@0.12.5
+  - @palett/convert@0.12.5
+  - @palett/util-ansi@0.12.5
+
 ## 0.12.4
 
 ### Patch Changes

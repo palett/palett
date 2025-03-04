@@ -1,5 +1,11 @@
 # @palett/convert
 
+## 0.12.5
+
+### Patch Changes
+
+- add Presm class in @palett/pres
+
 ## 0.12.4
 
 ### Patch Changes

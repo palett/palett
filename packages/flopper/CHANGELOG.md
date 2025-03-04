@@ -1,5 +1,19 @@
 # @palett/flopper
 
+## 0.12.5
+
+### Patch Changes
+
+- add Presm class in @palett/pres
+- Updated dependencies
+  - @palett/enum-color-space@0.12.5
+  - @palett/cards@0.12.5
+  - @palett/color-space@0.12.5
+  - @palett/convert@0.12.5
+  - @palett/munsell@0.12.5
+  - @palett/presets@0.12.5
+  - @palett/table@0.12.5
+
 ## 0.12.4
 
 ### Patch Changes

@@ -1,5 +1,18 @@
 # @palett/table
 
+## 0.12.5
+
+### Patch Changes
+
+- add Presm class in @palett/pres
+- Updated dependencies
+  - @palett/enum-color-cards@0.12.5
+  - @palett/enum-color-space@0.12.5
+  - @palett/enum-font-effects@0.12.5
+  - @palett/cards@0.12.5
+  - @palett/convert@0.12.5
+  - @palett/dye@0.12.5
+
 ## 0.12.4
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
   "name": "@palett/table",
-  "version": "0.12.4",
+  "version": "0.12.5",
   "description": "A color converter",
   "type": "module",
   "exports": "./dist/index.js",
