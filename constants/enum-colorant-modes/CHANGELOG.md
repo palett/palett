@@ -1,5 +1,13 @@
 # @palett/enum-colorant-modes
 
+## 0.12.4
+
+### Patch Changes
+
+- add package @palett/pres
+- Updated dependencies
+  - @palett/enum-color-space@0.12.4
+
 ## 0.12.3
 
 ### Patch Changes

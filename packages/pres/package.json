@@ -1,6 +1,6 @@
 {
   "name": "@palett/pres",
-  "version": "0.12.3",
+  "version": "0.12.4",
   "description": "",
   "type": "module",
   "exports": "./dist/index.js",
@@ -24,10 +24,15 @@
     "@palett/enum-ansi-codes": "workspace:^",
     "@palett/stringify": "workspace:^",
     "@palett/util-ansi": "workspace:^",
-    "@vect/vector-init": "^0.8.0"
+    "@vect/vector-algebra": "^0.8.0",
+    "@vect/vector-init": "^0.8.0",
+    "@vect/vector-select": "^0.8.0",
+    "@typen/enum-data-types": "^0.2.0",
+    "@vect/vector-mapper": "^0.8.0"
   },
   "devDependencies": {
-    "@vect/object-init": "^0.8.0"
+    "@vect/object-init": "^0.8.0",
+    "@palett/presets": "workspace:^"
   },
   "repository": {
     "type": "git",

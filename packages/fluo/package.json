@@ -1,6 +1,6 @@
 {
   "name": "@palett/fluo",
-  "version": "0.12.3",
+  "version": "0.12.4",
   "description": "A color converter",
   "type": "module",
   "exports": "./dist/index.js",

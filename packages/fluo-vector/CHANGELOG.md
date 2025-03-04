@@ -1,5 +1,13 @@
 # @palett/fluo-vector
 
+## 0.12.4
+
+### Patch Changes
+
+- add package @palett/pres
+- Updated dependencies
+  - @palett/fluo@0.12.4
+
 ## 0.12.3
 
 ### Patch Changes

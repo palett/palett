@@ -1,5 +1,17 @@
 # @palett/fluo-matrix
 
+## 0.12.4
+
+### Patch Changes
+
+- add package @palett/pres
+- Updated dependencies
+  - @palett/enum-colorant-modes@0.12.4
+  - @palett/convert@0.12.4
+  - @palett/fluo@0.12.4
+  - @palett/fluo-vector@0.12.4
+  - @palett/projector@0.12.4
+
 ## 0.12.3
 
 ### Patch Changes

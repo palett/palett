@@ -1,5 +1,18 @@
 # @palett/table
 
+## 0.12.4
+
+### Patch Changes
+
+- add package @palett/pres
+- Updated dependencies
+  - @palett/enum-color-cards@0.12.4
+  - @palett/enum-color-space@0.12.4
+  - @palett/enum-font-effects@0.12.4
+  - @palett/cards@0.12.4
+  - @palett/convert@0.12.4
+  - @palett/dye@0.12.4
+
 ## 0.12.3
 
 ### Patch Changes

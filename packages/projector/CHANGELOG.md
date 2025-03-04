@@ -1,5 +1,14 @@
 # @palett/projector
 
+## 0.12.4
+
+### Patch Changes
+
+- add package @palett/pres
+- Updated dependencies
+  - @palett/dye@0.12.4
+  - @palett/presets@0.12.4
+
 ## 0.12.3
 
 ### Patch Changes

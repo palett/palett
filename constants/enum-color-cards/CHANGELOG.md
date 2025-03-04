@@ -1,5 +1,11 @@
 # @palett/enum-color-cards
 
+## 0.12.4
+
+### Patch Changes
+
+- add package @palett/pres
+
 ## 0.12.3
 
 ### Patch Changes

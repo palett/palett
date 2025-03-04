@@ -1,5 +1,17 @@
 # @palett/dye
 
+## 0.12.4
+
+### Patch Changes
+
+- add package @palett/pres
+- Updated dependencies
+  - @palett/enum-ansi-codes@0.12.4
+  - @palett/enum-color-space@0.12.4
+  - @palett/enum-font-effects@0.12.4
+  - @palett/convert@0.12.4
+  - @palett/util-ansi@0.12.4
+
 ## 0.12.3
 
 ### Patch Changes
