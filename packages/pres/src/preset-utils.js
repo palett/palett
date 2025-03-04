@@ -1,7 +1,13 @@
 import { lim0up, limBy, rec0up } from '@aryth/math'
 import { randBetw }              from '@aryth/rand'
+import { intToRgb }              from '@palett/convert'
+import { rgbToStr }              from '@palett/stringify'
 import { hexOntoHsl, hslToInt }  from './algebra.js'
 import { Pres }                  from './Pres.js'
+
+export function demo(preset, count) {
+  return `${preset.range(count).map(int => rgbToStr(intToRgb(int))).join(' ')} | ${(rgbToStr(intToRgb(preset.nan)))}`
+}
 
 /**
  *
