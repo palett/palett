@@ -1,0 +1,1 @@
+export const round = n => ~~(n + 0.5)
