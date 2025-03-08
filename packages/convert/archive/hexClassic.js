@@ -1,4 +1,4 @@
-import { diluteHex } from './hex.js'
+import { diluteHex } from '../utils/hex.js'
 
 /**
  * @param {string} hex

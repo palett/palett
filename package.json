@@ -34,7 +34,7 @@
     "@foba/vector-string": "^0.6.1",
     "@glossa/translator": "^0.1.8",
     "@ject/pipe": "^0.1.2",
-    "@palett/enum-colorant-modes": "^0.12.3",
+    "@palett/enum-colorant-modes": "^0.12.5",
     "@rollup/plugin-json": "^6.1.0",
     "@spare/csv": "^0.16.8",
     "@spare/deco": "^0.16.8",

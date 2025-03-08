@@ -1,8 +1,8 @@
-import { initialize }                             from '@palett/dye'
-import { hslToInt, limFF, Preset, render, scale } from '@palett/presets'
+import { initialize }                           from '@palett/dye'
+import { hslToInt, limFF, Pres, render, scale } from '@palett/presets'
 
 export class Proj {
-  /** @type {Preset} */ pre
+  /** @type {Pres} */ pre
   /** @type {[*,*,*]|{lo}} */ lev = [ 0, 0, 0 ]
 
   constructor(preset) {
@@ -14,10 +14,11 @@ export class Proj {
 
   get nan() { return this.pre.nan }
   load(lo, hi) {
-    const vdf = hi - lo, { pre, lev } = this
-    lev[0] = vdf ? ((pre[3] - pre[0]) / vdf) : 0
-    lev[1] = vdf ? ((pre[4] - pre[1]) / vdf) : 0
-    lev[2] = vdf ? ((pre[5] - pre[2]) / vdf) : 0
+    const df = hi - lo, { pre, lev } = this
+    const [ hb, sb, lb, hp, sp, lp ] = pre
+    lev[0] = df ? ((hp - hb) / df) : 0
+    lev[1] = df ? ((sp - sb) / df) : 0
+    lev[2] = df ? ((lp - lb) / df) : 0
     lev.lo = lo
     return this
   }

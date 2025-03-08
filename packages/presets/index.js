@@ -1,15 +1,18 @@
-export { Preset, randPreset }                                 from '@palett/pres'
-export { demo }                                               from '@palett/pres'
-export { render, rgbToHsl, hslToInt, hexOntoHsl, hexOntoRgb } from '@palett/pres'
-export { scale, limFF }                                       from '@palett/pres'
+export {
+  Pres, Pres as Preset,
+  Presm,
+  demo, randPres, randPres as randPreset,
+  scale, limFF,
+  render,
+  rgaToHsi, hexToHsi, hsiToInt, hsiToHsl, modHsi
+} from '@palett/pres'
 import {
-  AQUA, ATLAS, AURORA, AZURE, FRESH, INSTA, JUNGLE, LAVA,
-  METRO, MOSS, OCEAN, PLANET, POME, SUBTLE, VIOLA
-}                                                             from './static/material.js'
+  AQUA, ATLAS, AURORA, AZURE, FRESH, INSTA, JUNGLE, LAVA, METRO, MOSS, OCEAN, PLANET, POME, SUBTLE, VIOLA
+} from './static/material.js'
 import {
-  AFRO, ARUBA, AZALE, BERING, BESQUE, BISTRO, BLUSH, BRANDY, DECANTE, DUSKY, ENSIGN, KELLY,
-  LILAC, NORSE, PAGODA, PERSIAN, PINE, PRETTY, ROCOCCO, RODD, SANDY, SUMMER, TOBACCO, WINE
-}                                                             from './static/pavtone.js'
+  AFRO, ARUBA, AZALE, BERING, BESQUE, BISTRO, BLUSH, BRANDY, DECANTE, DUSKY, ENSIGN, KELLY, LILAC, NORSE, PAGODA,
+  PERSIAN, PINE, PRETTY, ROCOCCO, RODD, SANDY, SUMMER, TOBACCO, WINE
+} from './static/pavtone.js'
 
 export const Presets = {
   aqua: AQUA,
