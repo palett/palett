@@ -4,6 +4,23 @@ export function assign(lo, df, ...args) {
   return this
 }
 
+export function onto3(i, x, y, z) {
+  this[i++] = x
+  this[i++] = y
+  this[i++] = z
+  return this
+}
+
+export function onto6(i, a, b, c, d, e, f) {
+  this[i++] = a
+  this[i++] = b
+  this[i++] = c
+  this[i++] = d
+  this[i++] = e
+  this[i++] = f
+  return this
+}
+
 // this[lo++] = h1
 // this[lo++] = s1
 // this[lo++] = l1

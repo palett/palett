@@ -1,8 +1,9 @@
+import { METRO }   from '@palett/presets/static/material.js'
+import { PAGODA }  from '@palett/presets/static/pavtone.js'
 import { indexed } from '@vect/object-mapper'
-import { METRO }   from '../static/material.js'
-import { PAGODA }  from '../static/pavtone.js'
-import { demo } from '../src/demo.js'
+
 import { Pres } from '../src/Pres.js'
+import { demo } from '../src/preset-utils.js'
 
 export const presets = {
   a: Pres.build('#E2A829', '#C5D51D'),
@@ -11,7 +12,7 @@ export const presets = {
 }
 
 for (let [ name, preset ] of indexed(presets)) {
-  preset |> console.log
-  demo(preset, 6) |> console.log
-  preset.toRgb() |> console.log
+  console.log(preset)
+  console.log(demo(preset, 6))
+  console.log(preset.toRgb())
 }

@@ -1,55 +1,56 @@
-import { hexToInt }     from '@palett/convert'
-import { STR }          from '@typen/enum-data-types'
-import { assign, leap } from './iterator-utils.js'
-import { Pres }         from './Pres.js'
+import { hexToInt } from '@palett/convert'
+import { STR }      from '@typen/enum-data-types'
 
 export class Presm {
-  /** @type {number}  int color for NaN         */ #nan
-  /** @type {boolean} mon mode: w/o str         */ #mon = true
-  /** @type {boolean} unsigned: no pos/neg diff */ #uns = true
-  constructor(str, pos, neg, nan) {
-    if (str) this.str = str
-    if (pos) this.pos = pos
-    if (neg) this.neg = neg
+  /** @type {number}  int color for NaN */ #nan
+  /** @type {number}  byte to store dimension info */ #dim = 0b000
+
+  constructor(xbd, ybd, zbd, nan) {
+    if (xbd) { this.xbd = xbd }
+    if (ybd) { this.ybd = ybd }
+    if (zbd) { this.zbd = zbd }
     if (nan) this.#nan = nan
-    if (pos && neg) this.#uns = false
-    if (str) this.#mon = false
   }
 
-  static build(conf) {
-    if (conf instanceof Pres) return new Presm(conf, conf)
-    if (conf.num || !conf.neg) return new Presm(conf.str, conf.num)
-    const { str, pos, neg, nan } = conf
-    return new Presm(str, pos, neg, typeof nan === STR ? hexToInt(nan) : str.nan)
+  static build(xbd, ybd, zbd, nan) {
+    nan = nan ?? xbd?.nan ?? ybd?.nan ?? zbd?.nan ?? void 0
+    return new Presm(xbd, ybd, zbd, typeof nan === STR ? hexToInt(nan) : xbd.nan)
   }
 
-  get length() { return 18 }
-  get mon() { return this.#mon }
-  get uns() { return this.#uns }
+  get hasX() { return this.#dim >> 0 & 0b1 }
+  get hasY() { return this.#dim >> 1 & 0b1 }
+  get hasZ() { return this.#dim >> 2 & 0b1 }
+  get xbd() { return [ this[0], this[1] ] }
+  get ybd() { return [ this[2], this[3] ] }
+  get zbd() { return [ this[4], this[5] ] }
   get nan() { return this.#nan }
-  get str() { return leap.call(this, 0, 6) }
-  get num() { return leap.call(this, 6, 6) }
-  get pos() { return leap.call(this, 6, 6) }
-  get neg() { return leap.call(this, 12, 6) }
+  get dim() { return this.#dim }
+  get length() { return 18 }
 
+  set xbd(pres) { this.#dim |= 1 << 0, this[0] = pres.min, this[1] = pres.max }
+  set ybd(pres) { this.#dim |= 1 << 1, this[2] = pres.min, this[3] = pres.max }
+  set zbd(pres) { this.#dim |= 1 << 2, this[4] = pres.min, this[5] = pres.max }
   set nan(int) { this.#nan = int }
-  set str(pres) { assign.call(this, 0, 6, ...pres) }
-  set num(pres) { assign.call(this, 6, 6, ...pres) }
-  set pos(pres) { assign.call(this, 6, 6, ...pres) }
-  set neg(pres) { assign.call(this, 12, 6, ...pres) }
 
-  * iterStr(pres) { for (let i = 0; i < 6; i++) yield this[i] }
-  * iterNum(pres) { for (let i = 6; i < 12; i++) yield this[i] }
-  * iterPos(pres) { for (let i = 6; i < 12; i++) yield this[i] }
-  * iterNeg(pres) { for (let i = 12; i < 18; i++) yield this[i] }
-  * [Symbol.iterator]() { for (let i = 0; i < 18; i++) yield this[i] }
+  * itx() {
+    yield this[0]
+    yield this[1]
+  }
+  * ity() {
+    yield this[2]
+    yield this[3]
+  }
+  * itz() {
+    yield this[4]
+    yield this[5]
+  }
+  * [Symbol.iterator]() { for (let i = 0; i < 6; i++) yield this[i] }
 
-  toObject() {
+  toHex() {
     return {
-      str: this.str,
-      num: this.num,
-      pos: this.pos,
-      neg: this.neg
+      xbd: this.xbd,
+      ybd: this.ybd,
+      zbd: this.zbd
     }
   }
 }

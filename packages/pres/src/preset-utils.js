@@ -1,14 +1,27 @@
-import { lim0up, limBy, rec0up } from '@aryth/math'
-import { randBetw }              from '@aryth/rand'
-import { intToRgb }              from '@palett/convert'
-import { rgbToStr }              from '@palett/stringify'
-import { hexOntoHsl, hslToInt }  from './algebra.js'
-import { Pres }                  from './Pres.js'
+import { randBetw }         from '@aryth/rand'
+import { intToRgb }         from '@palett/convert'
+import { rgbToStr }         from '@palett/stringify'
+import { hexToHsi, modHsi } from './color-bitwise.js'
+import { Pres }             from './Pres.js'
+import { sequence }         from './sequence.js'
 
-export function demo(preset, count) {
-  return `${preset.range(count).map(int => rgbToStr(intToRgb(int))).join(' ')} | ${(rgbToStr(intToRgb(preset.nan)))}`
+export function demo(pres, count) {
+  return `${sequence.call(pres, count).map(int => rgbToStr(intToRgb(int))).join(' ')} | ${(rgbToStr(intToRgb(pres.nan)))}`
 }
 
+const randUpward = (hsi) => {
+  const dh = randBetw(-16, 16)
+  const ds = randBetw(-8, 8)
+  const dl = randBetw(-8, 24)
+  return modHsi(hsi, dh, ds, dl)
+}
+
+const randCounter = (hsi) => {
+  const dh = randBetw(150, 210)
+  const ds = randBetw(-32, -24)
+  const dl = randBetw(+16, +32)
+  return modHsi(hsi, dh, ds, dl)
+}
 /**
  *
  * @param {string} hex
@@ -16,16 +29,10 @@ export function demo(preset, count) {
  * @returns {Pres}
  */
 export const randPres = (hex, name) => {
-  const pres = new Pres()
-  hexOntoHsl(hex, pres, 0)
-  pres[3] = rec0up(pres[0] + randBetw(-12, 12), 360)
-  pres[4] = lim0up(pres[1] + randBetw(-5, 10), 100)
-  pres[5] = lim0up(pres[2] + randBetw(6, 18), 100)
-  pres.nan = hslToInt(
-    rec0up(pres[0] + 180, 360),
-    limBy(pres[1] - 32, 5, 90),
-    limBy(pres[2] + 24, 40, 96)
-  )
+  const min = hexToHsi(hex)
+  const max = randUpward(min)
+  const nan = randCounter(min)
+  const pres = new Pres(min, max, nan)
   if (name?.length) pres.name = name
   return pres
 }

@@ -1,22 +1,19 @@
-import { round }                 from '@aryth/math'
 import { OCEAN, PAGODA, SUBTLE } from '@palett/presets'
-import { $ }                     from '@spare/logger'
-import { mutate }                from '@vect/vector-mapper'
+import { $, deco }               from '@spare/logger'
 import { test }                  from 'node:test'
 import { Presm }                 from '../src/Presm.js'
 
-test('prespec test', () => {
-  mutate(SUBTLE, round, 6)
-  mutate(OCEAN, round, 6)
-  mutate(PAGODA, round, 6)
+test('presm test', () => {
   const conf = { str: SUBTLE, pos: OCEAN, neg: PAGODA }
-  const presm = Presm.build(conf)
+  const presm = Presm.build(SUBTLE, OCEAN, PAGODA)
   console.log(conf)
   console.log(presm)
-  console.log($['str'](presm.str)['pos'](presm.pos)['neg'](presm.neg))
+  console.log(deco(presm))
 
-  const str = [ ...presm.iterStr() ]
-  const pos = [ ...presm.iterPos() ]
-  const neg = [ ...presm.iterNeg() ]
-  console.log($['str'](str)['pos'](pos)['neg'](neg))
+  console.log($.xbd(presm.xbd).ybd(presm.ybd).zbd(presm.zbd))
+
+  // const str = [ ...presm.iterStr() ]
+  // const pos = [ ...presm.iterPos() ]
+  // const neg = [ ...presm.iterNeg() ]
+  // console.log($['str'](str)['pos'](pos)['neg'](neg))
 })

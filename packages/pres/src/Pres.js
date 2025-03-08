@@ -1,64 +1,58 @@
 import { hexToInt, intToHex, intToRgb } from '@palett/convert'
-import { STR }                          from '@typen/enum-data-types'
-import { init }                         from '@vect/vector-init'
-import { hexOntoHsl, hslToInt }         from './algebra.js'
-import { limFF, scale }                 from './color-utils.js'
+import { NUM, OBJ, STR }                from '@typen/enum-data-types'
+import { hexToHsi, hsiToInt }           from './color-bitwise.js'
 
 const GREY = '#CCCCCC'
 
 export class Pres {
-  #nan = 0
-  #attr = []
-  constructor(min, max, nan) {
-    if (min) hexOntoHsl(min, this, 0)
-    if (max) hexOntoHsl(max, this, 3)
-    if (nan) this.#nan = typeof nan === STR ? hexToInt(nan) : nan
+  min
+  max
+  nan
+  #at = []
+
+  constructor(min, max, nan, attr) {
+    if (typeof min === NUM) { this.min = min } else if (typeof min === STR) { this.min = hexToHsi(min) }
+    if (typeof max === NUM) { this.max = max } else if (typeof max === STR) { this.max = hexToHsi(max) }
+    if (typeof nan === NUM) { this.nan = nan } else if (typeof nan === STR) { this.nan = hexToInt(nan) }
+    if (typeof attr === OBJ) { this.#at = attr }
   }
 
-  static build(min, max, nan = GREY) { return new Pres(min, max, nan) }
+  /**
+   * @param {string} [min] - hexadecimal string, value for max
+   * @param {string} [max] - hexadecimal string, value for min
+   * @param {string} [nan] - hexadecimal string, value for nan
+   * @param {string[]} [attr] - array of strings, ansi effect names
+   * @returns {Pres}
+   */
+  static build(min, max, nan = GREY, attr) { return new Pres(min, max, nan, attr) }
 
-  static from(preset, attr) {
-    const { min, max, nan } = preset
-    preset = new Pres(min, max, nan)
-    if (attr) preset.attr = attr
-    return preset
-  }
-
-  get min() { return hslToInt(this[0], this[1], this[2]) }
-  get max() { return hslToInt(this[3], this[4], this[5]) }
-  get nan() { return this.#nan }
-  get attr() { return this.#attr }
-
-  set nan(int) { this.#nan = int }
-  set attr(vec) {
-    this.#attr.length = 0
-    Object.assign(this.#attr, vec)
-  }
-
-  range(count = 2) {
-    if (count < 2) count = 2
-    const gaps = count - 1
-    const lev = [ (this[3] - this[0]) / gaps, (this[4] - this[1]) / gaps, (this[5] - this[2]) / gaps ]
-    return init(count, i => this.proj(lev, i))
-  }
-  proj(lever, value) {
-    const diff = value - (lever.lo ?? 0)
-    return hslToInt(scale(diff, lever[0], this[0]), limFF(diff, lever[1], this[1]), limFF(diff, lever[2], this[2]))
-  }
-  reverse() { return new Pres(this.max, this.min, this.nan) }
+  get attr() { return this.#at }
+  set attr(vec) { this.#at.length = 0, Object.assign(this.#at, vec) }
+  reverse() { return new Pres(this.max, this.min, this.nan, this.#at) }
 
   * [Symbol.iterator]() {
-    yield this[0]
-    yield this[1]
-    yield this[2]
-    yield this[3]
-    yield this[4]
-    yield this[5]
+    yield this.min >> 16 & 0x1FF
+    yield this.min >> 8 & 0xFF
+    yield this.min >> 0 & 0xFF
+    yield this.max >> 16 & 0x1FF
+    yield this.max >> 8 & 0xFF
+    yield this.max >> 0 & 0xFF
   }
 
-  toInt() { return { min: this.min, max: this.max, nan: this.nan } }
-  toRgb() { return { min: intToRgb(this.min), max: intToRgb(this.max), nan: intToRgb(this.nan) } }
-  toHex() { return { min: intToHex(this.min), max: intToHex(this.max), nan: intToHex(this.nan) }}
+  toRgb() {
+    return {
+      min: intToRgb(hsiToInt(this.min)),
+      max: intToRgb(hsiToInt(this.max)),
+      nan: intToRgb(this.nan)
+    }
+  }
+  toHex() {
+    return {
+      min: intToHex(hsiToInt(this.min)),
+      max: intToHex(hsiToInt(this.max)),
+      nan: intToHex(this.nan)
+    }
+  }
 }
 
 
