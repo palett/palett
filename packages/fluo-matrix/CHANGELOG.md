@@ -1,5 +1,17 @@
 # @palett/fluo-matrix
 
+## 0.12.6
+
+### Patch Changes
+
+- update algorithms form conversion and Pres
+- Updated dependencies
+  - @palett/enum-colorant-modes@0.12.6
+  - @palett/convert@0.12.6
+  - @palett/fluo@0.12.6
+  - @palett/fluo-vector@0.12.6
+  - @palett/projector@0.12.6
+
 ## 0.12.5
 
 ### Patch Changes

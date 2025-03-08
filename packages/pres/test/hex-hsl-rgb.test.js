@@ -2,7 +2,7 @@ import { roundD1 }                      from '@aryth/math'
 import { hexToRgb, intToRgb, rgbToHex } from '@palett/convert'
 import { $, logger }                    from '@spare/logger'
 import { test }                         from 'node:test'
-import { hsiToHsl, hsiToInt, rgaToHsi } from '../src/color-bitwise.js'
+import { hsiToHsl, hsiToRgi, rgaToHsi } from '../src/color-bitwise.js'
 
 export const PRIMARY = {
   background: '#2E3440',
@@ -43,7 +43,7 @@ test('hex-hsl-rgb', () => {
     const rgb1 = hexToRgb(hex)
     const hsi = rgaToHsi(...rgb1)
     const hsl = hsiToHsl(hsi).map(roundD1)
-    const rgb2 = intToRgb(hsiToInt(hsi))
+    const rgb2 = intToRgb(hsiToRgi(hsi))
     const hex2 = rgbToHex(rgb2).toUpperCase()
     logger($[key].p('→')['hex'](hex)['rgb1'](rgb1)['hsl'](hsl)['rgb2'](rgb2)['hex'](hex2))
   }

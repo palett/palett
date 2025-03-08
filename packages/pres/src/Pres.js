@@ -1,15 +1,21 @@
 import { hexToInt, intToHex, intToRgb } from '@palett/convert'
-import { NUM, OBJ, STR }                from '@typen/enum-data-types'
-import { hexToHsi, hsiToInt }           from './color-bitwise.js'
+import { NUM, OBJ, STR }              from '@typen/enum-data-types'
+import { hexToHsi, hsiToRgi, modHsi } from './color-bitwise.js'
 
 const GREY = '#CCCCCC'
 
 export class Pres {
-  min
-  max
-  nan
-  #at = []
+  /** @type {number} 25 bit HSI */ min
+  /** @type {number} 25 bit HSI */ max
+  /** @type {number} 24 bit RGI */ nan
+  /** @type {string[]} array of effects */ #at = []
 
+  /**
+   * @param {number|string} [min] - hexadecimal string or 25 bit integer HSI, value for max
+   * @param {number|string} [max] - hexadecimal string or 25 bit integer HSI, value for min
+   * @param {number|string} [nan] - hexadecimal string or 24 bit integer RGI, value for nan
+   * @param {string[]} [attr] - array of strings, ansi effect names
+   */
   constructor(min, max, nan, attr) {
     if (typeof min === NUM) { this.min = min } else if (typeof min === STR) { this.min = hexToHsi(min) }
     if (typeof max === NUM) { this.max = max } else if (typeof max === STR) { this.max = hexToHsi(max) }
@@ -18,9 +24,9 @@ export class Pres {
   }
 
   /**
-   * @param {string} [min] - hexadecimal string, value for max
-   * @param {string} [max] - hexadecimal string, value for min
-   * @param {string} [nan] - hexadecimal string, value for nan
+   * @param {number|string} [min] - hexadecimal string or 25 bit integer HSI, value for max
+   * @param {number|string} [max] - hexadecimal string or 25 bit integer HSI, value for min
+   * @param {number|string} [nan] - hexadecimal string or 24 bit integer RGI, value for nan
    * @param {string[]} [attr] - array of strings, ansi effect names
    * @returns {Pres}
    */
@@ -28,6 +34,11 @@ export class Pres {
 
   get attr() { return this.#at }
   set attr(vec) { this.#at.length = 0, Object.assign(this.#at, vec) }
+
+  proj(lev, min, val) {
+    const df = val - min, hlv = lev[0], slv = lev[1], llv = lev[2]
+    return modHsi(this.min, df * hlv, df * slv, df * llv)
+  }
   reverse() { return new Pres(this.max, this.min, this.nan, this.#at) }
 
   * [Symbol.iterator]() {
@@ -41,15 +52,15 @@ export class Pres {
 
   toRgb() {
     return {
-      min: intToRgb(hsiToInt(this.min)),
-      max: intToRgb(hsiToInt(this.max)),
+      min: intToRgb(hsiToRgi(this.min)),
+      max: intToRgb(hsiToRgi(this.max)),
       nan: intToRgb(this.nan)
     }
   }
   toHex() {
     return {
-      min: intToHex(hsiToInt(this.min)),
-      max: intToHex(hsiToInt(this.max)),
+      min: intToHex(hsiToRgi(this.min)),
+      max: intToHex(hsiToRgi(this.max)),
       nan: intToHex(this.nan)
     }
   }

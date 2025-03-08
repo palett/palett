@@ -1,7 +1,7 @@
 import { hexToRgb, intToRgb, rgbToHex } from '@palett/convert'
 import { $, logger }                    from '@spare/logger'
 import { test }                         from 'node:test'
-import { hexToHsi, hsiToHsl, hsiToInt } from '../src/color-bitwise.js'
+import { hexToHsi, hsiToHsl, hsiToRgi } from '../src/color-bitwise.js'
 
 export const PRIMARY = {
   background: '#2E3440',
@@ -42,7 +42,7 @@ test('hex-hsl-rgb bitwise', () => {
     const rgb1 = hexToRgb(hex1)
     const hslVal = hexToHsi(hex1)
     const hsl = hsiToHsl(hslVal)
-    const rgb2 = intToRgb(hsiToInt(hslVal))
+    const rgb2 = intToRgb(hsiToRgi(hslVal))
     const hex2 = rgbToHex(rgb2)
     logger($[key].p('→')['hex1'](hex1)['rgb1'](rgb1)['hsl'](hsl)['rgb2'](rgb2)['hex2'](hex2))
   }

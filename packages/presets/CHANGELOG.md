@@ -1,5 +1,18 @@
 # @palett/presets
 
+## 0.12.6
+
+### Patch Changes
+
+- update algorithms form conversion and Pres
+- Updated dependencies
+  - @palett/enum-ansi-codes@0.12.6
+  - @palett/cards@0.12.6
+  - @palett/convert@0.12.6
+  - @palett/pres@0.12.6
+  - @palett/stringify@0.12.6
+  - @palett/util-ansi@0.12.6
+
 ## 0.12.5
 
 ### Patch Changes

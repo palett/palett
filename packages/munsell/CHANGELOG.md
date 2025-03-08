@@ -1,5 +1,14 @@
 # @palett/munsell
 
+## 0.12.6
+
+### Patch Changes
+
+- update algorithms form conversion and Pres
+- Updated dependencies
+  - @palett/color-space@0.12.6
+  - @palett/convert@0.12.6
+
 ## 0.12.5
 
 ### Patch Changes

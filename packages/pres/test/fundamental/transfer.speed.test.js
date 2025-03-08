@@ -1,6 +1,6 @@
 import { hexToInt, hexToRgb, hslToRgb, rgbToHsl } from '@palett/convert'
 import { test }               from 'node:test'
-import { hsaToInt, hexToHsi } from '../../src/color-bitwise.js'
+import { hsaToRgi, hexToHsi } from '../../src/color-bitwise.js'
 import { hue }                from '../../src/color-utils.js'
 
 function int_hsv(int) {
@@ -18,7 +18,7 @@ function int_hsv(int) {
 function hsv_int(hsv) {
   let h = hsv >> 16 & 0x1FF, s = hsv >> 8 & 0xFF, l = hsv & 0xFF
   h++, s++, l++
-  return hsaToInt(h, s, l)
+  return hsaToRgi(h, s, l)
 }
 
 function hsl_rgb(hsl) {
@@ -32,7 +32,7 @@ function int_hsl_int(int) {
   let hsl = int_hsv(int)
   let h = hsl >> 16 & 0x1FF, s = hsl >> 8 & 0xFF, l = hsl & 0xFF
   h++, s++, l++
-  return hsaToInt(h, s, l)
+  return hsaToRgi(h, s, l)
 }
 
 

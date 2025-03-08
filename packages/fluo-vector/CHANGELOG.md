@@ -1,5 +1,13 @@
 # @palett/fluo-vector
 
+## 0.12.6
+
+### Patch Changes
+
+- update algorithms form conversion and Pres
+- Updated dependencies
+  - @palett/fluo@0.12.6
+
 ## 0.12.5
 
 ### Patch Changes

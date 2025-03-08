@@ -22,12 +22,12 @@ export function hsiToHsl(int) {
   return [ roundByte(h), roundByte(s / 2), roundByte(l / 2) ]
 }
 
-export function hsiToInt(int) {
+export function hsiToRgi(int) {
   let h = int >> 16 & 0x1FF, s = int >> 8 & 0xFF, l = int & 0xFF
-  return hsaToInt(h, s, l)
+  return hsaToRgi(h, s, l)
 }
 
-export function hsaToInt(h, s, l) {
+export function hsaToRgi(h, s, l) {
   h = h / 30
   s += 0.5
   l += 0.5
@@ -52,4 +52,13 @@ export function modHsi(int, dh, ds, dl) {
   s = s < 0 ? 0 : s > 200 ? 200 : s
   l = l < 0 ? 0 : l > 200 ? 200 : l
   return (h & 0x1FF) << 16 | (s & 0xFF) << 8 | l & 0xFF // 9 bit + 9 bit + 9 bit = 25 bit
+}
+
+export function modRgi(int, dh, ds, dl) {
+  let r = int >> 16 & 0xFF, g = int >> 8 & 0xFF, b = int & 0xFF
+  r += dh, g += ds, b += dl
+  r = r < 0 ? 0 : r > 0xFF ? 0xFF : r
+  g = g < 0 ? 0 : g > 0xFF ? 0xFF : g
+  b = b < 0 ? 0 : b > 0xFF ? 0xFF : b
+  return (r & 0xFF) << 16 | (g & 0xFF) << 8 | b & 0xFF // 9 bit + 9 bit + 9 bit = 25 bit
 }
