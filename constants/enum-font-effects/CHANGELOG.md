@@ -1,5 +1,23 @@
 # @palett/enum-font-effects
 
+## 0.12.9
+
+### Patch Changes
+
+- fix bugs
+
+## 0.12.8
+
+### Patch Changes
+
+- minor fix
+
+## 0.12.7
+
+### Patch Changes
+
+- minor fix
+
 ## 0.12.6
 
 ### Patch Changes
