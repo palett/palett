@@ -1,6 +1,5 @@
-import { hexToInt, intToHex, intToRgb } from '@palett/convert'
-import { NUM, OBJ, STR }              from '@typen/enum-data-types'
-import { hexToHsi, hsiToRgi, modHsi } from './color-bitwise.js'
+import { hexToHsi, hexToRgi, hsiToRgi, modHsi, rgiToHex, rgiToRgb } from '@palett/convert'
+import { NUM, OBJ, STR }                                            from '@typen/enum-data-types'
 
 const GREY = '#CCCCCC'
 
@@ -19,7 +18,7 @@ export class Pres {
   constructor(min, max, nan, attr) {
     if (typeof min === NUM) { this.min = min } else if (typeof min === STR) { this.min = hexToHsi(min) }
     if (typeof max === NUM) { this.max = max } else if (typeof max === STR) { this.max = hexToHsi(max) }
-    if (typeof nan === NUM) { this.nan = nan } else if (typeof nan === STR) { this.nan = hexToInt(nan) }
+    if (typeof nan === NUM) { this.nan = nan } else if (typeof nan === STR) { this.nan = hexToRgi(nan) }
     if (typeof attr === OBJ) { this.#at = attr }
   }
 
@@ -36,8 +35,8 @@ export class Pres {
   set attr(vec) { this.#at.length = 0, Object.assign(this.#at, vec) }
 
   proj(lev, min, val) {
-    const df = val - min, hlv = lev[0], slv = lev[1], llv = lev[2]
-    return modHsi(this.min, df * hlv, df * slv, df * llv)
+    const df = val - min
+    return modHsi(this.min, df * lev[0], df * lev[1], df * lev[2])
   }
   reverse() { return new Pres(this.max, this.min, this.nan, this.#at) }
 
@@ -52,16 +51,16 @@ export class Pres {
 
   toRgb() {
     return {
-      min: intToRgb(hsiToRgi(this.min)),
-      max: intToRgb(hsiToRgi(this.max)),
-      nan: intToRgb(this.nan)
+      min: rgiToRgb(hsiToRgi(this.min)),
+      max: rgiToRgb(hsiToRgi(this.max)),
+      nan: rgiToRgb(this.nan)
     }
   }
   toHex() {
     return {
-      min: intToHex(hsiToRgi(this.min)),
-      max: intToHex(hsiToRgi(this.max)),
-      nan: intToHex(this.nan)
+      min: rgiToHex(hsiToRgi(this.min)),
+      max: rgiToHex(hsiToRgi(this.max)),
+      nan: rgiToHex(this.nan)
     }
   }
 }

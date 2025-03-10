@@ -1,7 +1,6 @@
-import { hexToRgb, intToRgb, rgbToHex } from '@palett/convert'
-import { $, logger }                    from '@spare/logger'
-import { test }                         from 'node:test'
-import { hexToHsi, hsiToHsl, hsiToRgi } from '../src/color-bitwise.js'
+import { hexToHsi, hexToRgb, hsiToHsl, hsiToRgi, intToRgb, rgbToHex } from '@palett/convert'
+import { $, logger }                                                  from '@spare/logger'
+import { test }                                                       from 'node:test'
 
 export const PRIMARY = {
   background: '#2E3440',

@@ -1,5 +1,5 @@
 import { ff }  from '@palett/convert'
-import { hue } from '../src/color-utils.js'
+import { hue } from '@palett/convert/src/util/number-utils.js'
 
 /**
  * Assign HSL values from a hexadecimal color code to this (target vector).

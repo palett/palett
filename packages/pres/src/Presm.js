@@ -1,5 +1,6 @@
-import { hexToInt } from '@palett/convert'
+import { hexToRgi } from '@palett/convert'
 import { STR }      from '@typen/enum-data-types'
+import { deltaHsi } from '@palett/convert'
 
 export class Presm {
   /** @type {number}  int color for NaN */ #nan
@@ -14,7 +15,7 @@ export class Presm {
 
   static build(xbd, ybd, zbd, nan) {
     nan = nan ?? xbd?.nan ?? ybd?.nan ?? zbd?.nan ?? void 0
-    return new Presm(xbd, ybd, zbd, typeof nan === STR ? hexToInt(nan) : xbd.nan)
+    return new Presm(xbd, ybd, zbd, typeof nan === STR ? hexToRgi(nan) : xbd.nan)
   }
 
   get hasX() { return this.#dim >> 0 & 0b1 }
@@ -23,6 +24,9 @@ export class Presm {
   get xbd() { return [ this[0], this[1] ] }
   get ybd() { return [ this[2], this[3] ] }
   get zbd() { return [ this[4], this[5] ] }
+  get xdf() { return deltaHsi(this[0], this[1]) }
+  get ydf() { return deltaHsi(this[2], this[3]) }
+  get zdf() { return deltaHsi(this[4], this[5]) }
   get nan() { return this.#nan }
   get dim() { return this.#dim }
   get length() { return 18 }
@@ -33,16 +37,34 @@ export class Presm {
   set nan(int) { this.#nan = int }
 
   * itx() {
-    yield this[0]
-    yield this[1]
+    const min = this[0]
+    yield min >> 16 & 0x1FF
+    yield min >> 8 & 0xFF
+    yield min >> 0 & 0xFF
+    const max = this[1]
+    yield max >> 16 & 0x1FF
+    yield max >> 8 & 0xFF
+    yield max >> 0 & 0xFF
   }
   * ity() {
-    yield this[2]
-    yield this[3]
+    const min = this[2]
+    yield min >> 16 & 0x1FF
+    yield min >> 8 & 0xFF
+    yield min >> 0 & 0xFF
+    const max = this[3]
+    yield max >> 16 & 0x1FF
+    yield max >> 8 & 0xFF
+    yield max >> 0 & 0xFF
   }
   * itz() {
-    yield this[4]
-    yield this[5]
+    const min = this[4]
+    yield min >> 16 & 0x1FF
+    yield min >> 8 & 0xFF
+    yield min >> 0 & 0xFF
+    const max = this[5]
+    yield max >> 16 & 0x1FF
+    yield max >> 8 & 0xFF
+    yield max >> 0 & 0xFF
   }
   * [Symbol.iterator]() { for (let i = 0; i < 6; i++) yield this[i] }
 

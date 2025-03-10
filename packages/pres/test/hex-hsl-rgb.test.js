@@ -1,8 +1,7 @@
-import { roundD1 }                      from '@aryth/math'
-import { hexToRgb, intToRgb, rgbToHex } from '@palett/convert'
-import { $, logger }                    from '@spare/logger'
-import { test }                         from 'node:test'
-import { hsiToHsl, hsiToRgi, rgaToHsi } from '../src/color-bitwise.js'
+import { roundD1 }                                                    from '@aryth/math'
+import { hexToRgb, hsiToHsl, hsiToRgi, intToRgb, rgaToHsi, rgbToHex } from '@palett/convert'
+import { $, logger }                                                  from '@spare/logger'
+import { test }                                                       from 'node:test'
 
 export const PRIMARY = {
   background: '#2E3440',

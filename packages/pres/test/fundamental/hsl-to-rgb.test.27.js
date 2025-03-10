@@ -1,7 +1,7 @@
 import { round }              from '@aryth/math'
 import { hslToInt, intToRgb } from '@palett/convert'
-import { test }               from 'node:test'
-import { hf }                 from '../../src/color-utils.js'
+import { test }    from 'node:test'
+import { channel } from '@palett/convert/src/util/number-utils.js'
 
 const PARAM = 85.33333333333333
 
@@ -47,9 +47,9 @@ export function hsiToInt_edge(int) {
   let h = int >> 18 & 0x1FF, s = int >> 9 & 0x1FF, l = int & 0x1FF
   h = h / 30 // original h ∈ [0,360), then h = h * 12 / 30, makes h ∈ [0,12)
   const a = l <= 255.5 ? (s * l / 511) : (s - s * l / 511)
-  const r = (hf(0, h, a, l) + 1) >> 1 // ( 2x + 1 ) >> 1 -> mock round(x)
-  const g = (hf(8, h, a, l) + 1) >> 1
-  const b = (hf(4, h, a, l) + 1) >> 1
+  const r = (channel(0, h, a, l) + 1) >> 1 // ( 2x + 1 ) >> 1 -> mock round(x)
+  const g = (channel(8, h, a, l) + 1) >> 1
+  const b = (channel(4, h, a, l) + 1) >> 1
   return (r & 0xFF) << 16 | (g & 0xFF) << 8 | b & 0xFF
 }
 export function hsiToInt_next(int) {

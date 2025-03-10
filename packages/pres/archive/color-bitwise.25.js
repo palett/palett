@@ -1,5 +1,5 @@
 import { ff, hslToInt } from '@palett/convert'
-import { hf, hue }      from './color-utils.js'
+import { hf, hue }      from './number-utils.js'
 
 const PARAM = 85.33333333333333
 

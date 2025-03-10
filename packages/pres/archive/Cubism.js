@@ -1,7 +1,7 @@
 import { hexToInt }     from '@palett/convert'
 import { STR }          from '@typen/enum-data-types'
 import { assign, leap } from './iterator-utils.js'
-import { Pres }         from './Pres.js'
+import { Pres }         from '../src/Pres.js'
 
 export class Cubism {
   /** @type {number}  int color for NaN         */ #nan

@@ -1,7 +1,7 @@
 import { hexToInt, hexToRgb, hslToRgb, rgbToHsl } from '@palett/convert'
 import { test }               from 'node:test'
-import { hsaToRgi, hexToHsi } from '../../src/color-bitwise.js'
-import { hue }                from '../../src/color-utils.js'
+import { hsaToRgi, hexToHsi } from '@palett/convert/src/hsi.js'
+import { hue }                from '@palett/convert/src/util/number-utils.js'
 
 function int_hsv(int) {
   let r = int >> 16 & 0xFF, g = int >> 8 & 0xFF, b = int & 0xFF

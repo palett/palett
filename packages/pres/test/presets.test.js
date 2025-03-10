@@ -4,8 +4,8 @@ import {
 }                  from '@palett/presets'
 import { logger }  from '@spare/logger'
 import { indexed } from '@vect/object-mapper'
-import { test }    from 'node:test'
-import { demo }    from '../src/preset-utils.js'
+import { test } from 'node:test'
+import { demo } from '../src/pres-extensions.js'
 
 const Pavtone = {
   RODD: RODD,
