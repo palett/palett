@@ -3,8 +3,8 @@ import { roundD1 }        from '@aryth/math'
 import { minus }          from '@aryth/polar'
 import { init as matrix } from '@vect/matrix-init'
 import { init as vector } from '@vect/vector-init'
-import { H, L, S }        from '../resources/attr.js'
-import { HSL }            from './HSL.js'
+import { H, L, S } from '../resources/attr.js'
+import { HSL }     from './extends/HSL.js'
 
 const { sqrt } = Math
 

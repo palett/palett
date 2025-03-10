@@ -2,8 +2,8 @@ import { hexToRgb }           from '@palett/convert'
 import { HexDye }             from '@palett/dye'
 import { Fluo }               from '@palett/fluo'
 import { hexToStr, rgbToStr } from '@palett/stringify'
-import { DecoObject, says }   from '@spare/logger'
-import { RGB }                from '../src/RGB.js'
+import { DecoObject, says } from '@spare/logger'
+import { RGB }              from '../src/extends/RGB.js'
 
 export const XTERM = {
   noir: [ 0, 0, 0 ],

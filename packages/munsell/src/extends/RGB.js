@@ -1,8 +1,8 @@
 import { hexToRgb, hslToRgb } from '@palett/convert'
-import { entMin }             from '../utils/minBy.js'
-import { Cuvette }            from './Cuvette.js'
-import { Domain }             from './Domain.js'
-import { RGB as RawRGB }      from '@palett/color-space'
+import { minEntry }           from '../../utils/minBy.js'
+import { Cova }          from '../Cova.js'
+import { Domain }        from '../../resources/Domain.js'
+import { RGB as RawRGB } from '@palett/color-space'
 
 export class RGB extends RawRGB {
   constructor(r, g, b) { super(r, g, b) }
@@ -15,7 +15,7 @@ export class RGB extends RawRGB {
   toHsl() { return super.hsl }
 
   comparative(epsilon = 0.1, domain = Domain.fashion) {
-    const cuvette = Cuvette.select(domain)
+    const cuvette = Cova.select(domain)
     let target = "", min = 1024
     for (let [hex, rgb] of cuvette.hexToRgb) {
       const distance = this.distance(rgb)
@@ -25,24 +25,24 @@ export class RGB extends RawRGB {
     return [target, cuvette.name(target)]
   }
   nearest(domain = Domain.fashion) {
-    const cuvette = Cuvette.select(domain)
-    let [hex, _] = entMin(cuvette.hexToRgb, ([_, hsl]) => this.distance(hsl))
+    const cuvette = Cova.select(domain)
+    let [hex, _] = minEntry(cuvette.hexToRgb, ([_, hsl]) => this.distance(hsl))
     return [hex, cuvette.name(hex)]
   }
 
-  // list<(string hex, string name)>
+  // entries<(string hex, string name)>
   approximates(epsilon, domain = Domain.fashion) {
-    const cuvette = Cuvette.select(domain)
+    const cuvette = Cova.select(domain)
     const distances = cuvette
       .hexToRgb
       .filter(([, rgb]) => this.almostEqual(rgb, epsilon))
     return distances.map(([hex,]) => [hex, cuvette.name(hex)])
   }
 
-// list<(string hex, string name)>
+// entries<(string hex, string name)>
   approximatesByTop(top, domain = Domain.fashion) {
-    const cuvette = Cuvette.select(domain)
-    // list<(string hex, int len)>
+    const cuvette = Cova.select(domain)
+    // entries<(string hex, int len)>
     const distances = cuvette
       .hexToRgb
       .map(([hex, _rgb]) => [hex, this.distance(_rgb)])

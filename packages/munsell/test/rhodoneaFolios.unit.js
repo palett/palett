@@ -1,17 +1,21 @@
-import { Fluo }               from '@palett/fluo'
-import { hexToStr }           from '@palett/stringify'
-import { DecoVector, logger } from '@spare/logger'
-import { rhodoneaFolios }     from '../src/rhodoneaFolios.js'
-import { HSL }                from '../src/HSL.js'
+import { hexToHsl }           from '@palett/convert'
+import { dhex }               from '@palett/dye'
+import { hexToStr, hslToStr } from '@palett/stringify'
+import { logger }         from '@spare/logger'
+import { HSL }            from '../src/extends/HSL.js'
+import { rhodoneaFolios } from '../src/rhodoneaFolios.js'
 
 // '#AE5459': 'Mineral Red',
-const hsl = HSL.fromHex('#AE5459')
+// '#C9D77E': 'Daiquiri Green',
 
-const list = rhodoneaFolios(
-  hsl,
-  {
-    petals: 5,
-    density: 0.01
-  })
+const hsl = HSL.fromHex('#C9D77E')
 
-logger(DecoVector({ read: ([ hex, name ]) => hexToStr(hex) + ' > ' + Fluo.hex(name, hex) })(list))
+const list = rhodoneaFolios(hsl, {
+  petals: 5,
+  density: 0.01,
+  lightMinimum: 54
+})
+
+const rendered = list.map(([ hex, name ]) => hexToStr(hex) + ' > ' + hslToStr(hexToHsl(hex)) + ' > ' + dhex.call(hex, name))
+logger('rendered')
+logger(rendered.join('\n'))

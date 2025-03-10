@@ -1,34 +1,33 @@
 import { says }    from '@spare/logger'
 import { time }    from '@valjoux/timestamp-pretty'
-import { Cuvette } from '../src/Cuvette'
-import { Domain }  from '../src/Domain'
+import { test } from 'node:test'
+import { Cova } from '../src/Cova.js'
 
 says['log-time'].attach(time)
 says['cuvette'].asc.asc
 
-const test = () => {
-  'preparing' |> says['log-time']
-  const cuvette = Cuvette.select(Domain.fashion)
+test('cuvette test', () => {
+  // Transform pipeline operator to nested function calls
+  says['log-time']('preparing')
+  const cuvette = Cova
 
-  'generating list' |> says['log-time']
-  cuvette.list.length |> says['cuvette'].p('list.length')
-  'generating list' |> says['log-time']
-  cuvette.list.length |> says['cuvette'].p('list.length')
+  says['log-time']('generating entries')
+  says['cuvette'].p('entries.length', cuvette.entries.length)
+  says['log-time']('generating entries')
+  says['cuvette'].p('entries.length', cuvette.entries.length)
 
-  'generating hexToRgb' |> says['log-time']
-  cuvette.hexToRgb.length |> says['cuvette'].p('list.length')
-  'generating hexToRgb' |> says['log-time']
-  cuvette.hexToRgb.length |> says['cuvette'].p('list.length')
+  says['log-time']('generating hexToRgb')
+  says['cuvette'].p('entries.length', cuvette.hexToRgb.length)
+  says['log-time']('generating hexToRgb')
+  says['cuvette'].p('entries.length', cuvette.hexToRgb.length)
 
-  'generating hexToHsl' |> says['log-time']
-  cuvette.hexToHsl.length |> says['cuvette'].p('list.length')
-  'generating hexToHsl' |> says['log-time']
-  cuvette.hexToHsl.length |> says['cuvette'].p('list.length')
+  says['log-time']('generating hexToHsl')
+  says['cuvette'].p('entries.length', cuvette.hexToHsl.length)
+  says['log-time']('generating hexToHsl')
+  says['cuvette'].p('entries.length', cuvette.hexToHsl.length)
 
-  'generating hexToPolar' |> says['log-time']
-  cuvette.hexToPolar.length |> says['cuvette'].p('list.length')
-  'generating hexToPolar' |> says['log-time']
-  cuvette.hexToPolar.length |> says['cuvette'].p('list.length')
-}
-
-test()
+  says['log-time']('generating hexToPolar')
+  says['cuvette'].p('entries.length', cuvette.hexToPolar.length)
+  says['log-time']('generating hexToPolar')
+  says['cuvette'].p('entries.length', cuvette.hexToPolar.length)
+})
