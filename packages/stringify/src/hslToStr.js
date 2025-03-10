@@ -7,7 +7,7 @@ import { render, xyzToStr } from './utils.js'
  * @return {string}
  */
 export function hslToStr(hsl) {
-  const [ h, s, l ] = hsl, int = hslToInt(hsl)
+  const int = hslToInt(hsl)
   let r = int >> 16, g = int >> 8, b = int >> 0
-  return render.call(this, r & 0xFF, g & 0xFF, b & 0xFF, xyzToStr(h, s, l))
+  return render.call(this, r & 0xFF, g & 0xFF, b & 0xFF, xyzToStr(hsl[0], hsl[1], hsl[2]))
 }
