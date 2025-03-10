@@ -1,8 +1,8 @@
 import { makeEmbedded }                                                               from '@foba/util'
 import { AFRO, BESQUE, BRANDY, FRESH, KELLY, PERSIAN, PINE, PLANET, ROCOCCO, SUBTLE } from '@palett/presets'
-import { NUM, STR }                                                                   from '@typen/enum-data-types'
-import { hexToHsl, hexToInt, hslToRgb, rgbToHsl }                                     from '../../index.js'
-import { hexToStr, intToStr, rgbToStr }                                               from '@palett/stringify'
+import { NUM, STR }                               from '@typen/enum-data-types'
+import { hexToHsl, hexToRgi, hslToRgb, rgbToHsl } from '../../index.js'
+import { hexToStr, intToStr, rgbToStr }           from '@palett/stringify'
 import { strategies }                                                                 from '@valjoux/strategies'
 import { Beta }                                                                       from './beta.js'
 import { Gamma }                                                                      from './gamma.js'
@@ -20,9 +20,9 @@ const { lapse, result } = strategies({
       return { max, min, nan: na }
     },
     dev: ({ max, min, na }) => {
-      const ia = hexToInt(max)
-      const ib = hexToInt(min)
-      const ic = hexToInt(na)
+      const ia = hexToRgi(max)
+      const ib = hexToRgi(min)
+      const ic = hexToRgi(na)
       const [ ha, sa, la ] = Beta.rgbToHsl(ia >> 16 & 0xFF, ia >> 8 & 0xFF, ia & 0xFF)
       const [ hb, sb, lb ] = Beta.rgbToHsl(ib >> 16 & 0xFF, ib >> 8 & 0xFF, ib & 0xFF)
       const [ hc, sc, lc ] = Beta.rgbToHsl(ic >> 16 & 0xFF, ic >> 8 & 0xFF, ic & 0xFF)

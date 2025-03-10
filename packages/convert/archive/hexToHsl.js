@@ -1,4 +1,4 @@
-import { hexAt } from '../src/string-utils.js'
+import { hexAt } from '../src/util/string-utils.js'
 import { hue }   from '../test/beta/beta.js'
 
 export function hex_hsl(hex) {

@@ -1,16 +1,16 @@
 import { logger, xr } from '@spare/logger'
-import { rgbToInt }   from '../index'
+import { rgbToRgi }   from '../index'
 
 const candidates = [
-  [0, 0, 0]|> rgbToInt,
-  [0, 0, 1]|> rgbToInt,
-  [0, 1, 0]|> rgbToInt,
-  [1, 0, 0]|> rgbToInt,
-  [0, 0, 255]|> rgbToInt,
-  [0, 255, 0]|> rgbToInt,
-  [255, 0, 0]|> rgbToInt,
-  [255, 255, 255]|> rgbToInt,
-  [51, 255, 0] |>  rgbToInt,
+  [0, 0, 0]|> rgbToRgi,
+  [0, 0, 1]|> rgbToRgi,
+  [0, 1, 0]|> rgbToRgi,
+  [1, 0, 0]|> rgbToRgi,
+  [0, 0, 255]|> rgbToRgi,
+  [0, 255, 0]|> rgbToRgi,
+  [255, 0, 0]|> rgbToRgi,
+  [255, 255, 255]|> rgbToRgi,
+  [51, 255, 0] |>  rgbToRgi,
 ]
 
 for (let n of candidates) {

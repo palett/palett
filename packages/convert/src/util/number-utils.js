@@ -1,13 +1,5 @@
 const { min } = Math
 
-export const scale = (df, lv, lo) => df <= 0 ? lo : lo + df * lv
-
-export const limFF = (df, lv, lo) => {
-  if (df <= 0) return lo
-  const t = lo + df * lv
-  return t < 0 ? 0 : t > 0xFF ? 0xFF : t
-}
-
 /**
  * Calculates hue angle for HSL conversion from RGB components
  * @param {number} r - Red component (0-255)
@@ -34,12 +26,12 @@ export const hue = (r, g, b, hi, df) => {
  * @param {number} l from 0 to 1. Lightness value
  * @returns {number} Color component value
  */
-export const hf = (n, h, a, l) => {
+export const channel = (n, h, a, l) => {
   let m = (n + h) % 12
   m = min(m - 3, 9 - m) // equivalent to: if (m < 6) { m - 3 } else { 9 - m }
   m = m > 1 ? 1 : m < -1 ? -1 : m
   return l - a * m
 }
 
-export const roundByte = x => ~~(x + 0.5)
+export const round = x => ~~(x + 0.5)
 

@@ -1,5 +1,15 @@
-export { hslToHex, intToHex, rgbToHex }             from './src/hex.js'
-export { hexToHsl, intToHsl, rgbToHsl, hue }        from './src/hsl.js'
-export { hexToInt, hexToShort, hslToInt, rgbToInt } from './src/int.js'
-export { hexToRgb, hslToRgb, intToRgb, hf }         from './src/rgb.js'
-export { hexAt, ff, prolif, dil2, dil6 }            from './src/string-utils.js'
+export { hslToHex, rgiToHex, rgbToHex, hsiToHex }                       from './src/hex.js'
+export { hexToHsl, rgiToHsl, rgbToHsl, hsiToHsl }                       from './src/hsl.js'
+export { hexToHsi, rgaToHsi, modHsi, modHsiTo, deltaHsi, modRgi }       from './src/hsi.js'
+export { hexToRgi, hexToShort, hslToRgi, hsaToRgi, rgbToRgi, hsiToRgi } from './src/rgi.js'
+export { hexToRgb, hslToRgb, rgiToRgb }                                 from './src/rgb.js'
+export { hexAt, ff, prolif, dil2, dil6 }                                from './src/util/string-utils.js'
+export { hue, channel, round }                                          from './src/util/number-utils.js'
+
+export { rgiToHex as intToHex } from './src/hex.js'
+export { rgiToHsl as intToHsl } from './src/hsl.js'
+export { modRgi as modInt }     from './src/hsi.js'
+export {
+  hexToRgi as hexToInt, hslToRgi as hslToInt, hsaToRgi as hsaToInt, rgbToRgi as rgbToInt, hsiToRgi as hsiToInt
+}                               from './src/rgi.js'
+export { rgiToRgb as intToRgb } from './src/rgb.js'
