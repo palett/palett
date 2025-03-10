@@ -1,6 +1,6 @@
-import { demo,Preset }                 from '@palett/presets'
-import { test }                 from 'node:test'
-import { presetFlopperPavtone } from '../src/presetFlopperPavtone.js'
+import { demo }        from '@palett/presets'
+import { test }        from 'node:test'
+import { presFlopper } from '../src/presFlopper.js'
 
 // const flopper = presetFlopperPavtone()
 // for (let preset of flopper) {
@@ -8,7 +8,7 @@ import { presetFlopperPavtone } from '../src/presetFlopperPavtone.js'
 // }
 
 test('presetFlopper pavtone', () => {
-  const flopper = presetFlopperPavtone(false)
+  const flopper = presFlopper(false)
   for (let i = 0; i < 1000; i++) {
     const preset = flopper.next().value
     // console.log(preset, preset instanceof Preset)
