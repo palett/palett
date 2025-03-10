@@ -1,5 +1,32 @@
 # @palett/projector
 
+## 0.12.9
+
+### Patch Changes
+
+- fix bugs
+- Updated dependencies
+  - @palett/presets@0.12.9
+  - @palett/dye@0.12.9
+
+## 0.12.8
+
+### Patch Changes
+
+- minor fix
+- Updated dependencies
+  - @palett/presets@0.12.8
+  - @palett/dye@0.12.8
+
+## 0.12.7
+
+### Patch Changes
+
+- minor fix
+- Updated dependencies
+  - @palett/dye@0.12.7
+  - @palett/presets@0.12.7
+
 ## 0.12.6
 
 ### Patch Changes

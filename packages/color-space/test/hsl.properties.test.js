@@ -1,5 +1,7 @@
-import { HSL } from '../src/HSL'
+import { test } from 'node:test'
+import { HSL }  from '../src/HSL.js'
 
-const hsl = HSL.fromRgb([92, 92, 255]);
-
-`[h] (${hsl.h}) [s] (${hsl.s}) [l] (${hsl.l})` |> console.log
+test('hsl properties', () => {
+  const hsl = HSL.fromRgb([ 92, 92, 255 ])
+  console.log(`[h] (${hsl.h}) [s] (${hsl.s}) [l] (${hsl.l})`)
+})

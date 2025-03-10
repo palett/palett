@@ -31,8 +31,8 @@ const { lapse, result } = strategies({
       return { fore, back, style }
     },
     // fut({ fore, back, style }) {
-    //   fore = hexToInt(fore)
-    //   back = hexToInt(back)
+    //   fore = hexToRgi(fore)
+    //   back = hexToRgi(back)
     //   style = parseStyle(style)
     //   return [ fore << 24 & back, style ]
     // },

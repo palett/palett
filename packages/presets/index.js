@@ -1,5 +1,5 @@
 export {
-  Pres, Pres as Preset, Presm, demo, randPres, render
+  Pres, Pres as Preset, Presm, demo, randPres
 } from '@palett/pres'
 import {
   AQUA, ATLAS, AURORA, AZURE, FRESH, INSTA, JUNGLE, LAVA, METRO, MOSS, OCEAN, PLANET, POME, SUBTLE, VIOLA
