@@ -1,4 +1,4 @@
-import { almostEqual, lim0up, rec0up }            from '@aryth/math'
+import { almostEqual }                            from '@aryth/math'
 import { distance as d, Polar }                   from '@aryth/polar'
 import { hexToHsl, hslToHex, hslToRgb, rgbToHsl } from '@palett/convert'
 import { abs }                                    from '../utils/math.js'
@@ -16,11 +16,11 @@ export class HSL {
   static of(h, s, l) { return new HSL(h, s, l) }
   static from([ h, s, l ]) { return new HSL(h, s, l) }
   static fromHex(rgb) { return hexToHsl.call(HSL, rgb)}
-  static fromRgb(rgb) { return rgbToHsl.call(HSL, rgb)}
+  static fromRgb(rgb) { return rgbToHsl.call(HSL, rgb) }
   static fromPolar(polar, s) { return new HSL(polar.th, s, polar.r) }
 
-  get theta() { return this[0] }
-  get radius() { return this[2] }
+  get theta() { return this.h }
+  get radius() { return this.l }
 
   get rgb() { return hslToRgb.call(RGB, this) }
   get hex() { return hslToHex(this) }
@@ -41,9 +41,13 @@ export class HSL {
     return new HSL(d(this.h, h), abs(this.s - s), abs(this.l - l))
   }
   restrict() {
-    this.h = rec0up(this.h, 360)
-    this.s = lim0up(this.s, 100)
-    this.l = lim0up(this.l, 100)
+    // this.h = rec0up(this.h, 360)
+    // this.s = lim0up(this.s, 100)
+    // this.l = lim0up(this.l, 100)
+    while (this.h > 360) this.h -= 360
+    while (this.h < 0) this.h += 360
+    this.s = this.s < 0 ? 0 : this.s > 100 ? 100 : this.s
+    this.l = this.l < 0 ? 0 : this.l > 100 ? 100 : this.l
     return this
   }
   distance(hsl) { return hsl = this.relative(hsl), (hsl.h + hsl.s + hsl.l) }

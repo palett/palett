@@ -1,4 +1,4 @@
-import { hexToRgb, hslToRgb, rgbToHex, rgbToHsl, rgbToInt } from '@palett/convert'
+import { hexToRgb, hslToRgb, rgbToHex, rgbToHsl, rgbToRgi } from '@palett/convert'
 import { HSL }                                              from './HSL.js'
 import { abs }                                              from '../utils/math.js'
 
@@ -24,7 +24,7 @@ export class RGB {
   }
 
   get hsl() { return rgbToHsl.call(HSL, this) }
-  get int() { return rgbToInt(this) }
+  get int() { return rgbToRgi(this) }
   get hex() { return rgbToHex(this) }
 
   relative(rgb) { return new RGB(abs(this.r - rgb.r), abs(this.g - rgb.g), abs(this.b - rgb.b)) }
