@@ -1,6 +1,6 @@
 import { distance } from '@aryth/polar'
 import { hexToHsi } from '@palett/convert'
-import { BOOK }     from '../resources/BOOK.js'
+import { MIDTONE }  from '../resources/MIDTONE.js'
 import { deltaHsi } from './utils/color-utils.js'
 import { circ }     from './utils/iter-utils.js'
 
@@ -37,14 +37,14 @@ import { circ }     from './utils/iter-utils.js'
 
 export class Munsell {
   static #MAX = 0x400
-  static #ds = 18
-  static #dl = 18
+  static #ds = 24
+  static #dl = 24
   static #inds = Array(30)
   static #rev
   static #list
 
   static #init() {
-    const entries = Object.entries(BOOK)
+    const entries = Object.entries(MIDTONE)
     const hi = entries.length, list = Array(hi), rev = {}
     Munsell.#list = list, Munsell.#rev = rev
     let hueInt = 6, t = 0
@@ -52,8 +52,10 @@ export class Munsell {
       const [ hex, name ] = entries[i]
       hsi = list[i] = hexToHsi(hex)
       rev[hsi] = hex + ' ' + name
-      // console.log(hexToStr(hsiToHex(hsi)), hsi >> 16 & 0x1FF, distance(hsi >> 16 & 0x1FF, 15))
-      if (distance(hsi >> 16 & 0x1FF, hueInt) > 6) { Munsell.#inds[t++] = i, hueInt += 12 }
+    }
+    list.sort((a, b) => a - b)
+    for (let i = 0; i < hi; i++) { // console.log(hexToStr(hsiToHex(hsi)), hsi >> 16 & 0x1FF, distance(hsi >> 16 & 0x1FF, 15))
+      if (distance((list[i]) >> 16 & 0x1FF, hueInt) > 6) { Munsell.#inds[t++] = i, hueInt += 12 }
     }
     Munsell.#inds[t] = hi
     return Munsell.#list
