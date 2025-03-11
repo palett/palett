@@ -9,7 +9,7 @@ import { presFlopper } from '../src/presFlopper.js'
 
 test('presetFlopper pavtone', () => {
   const flopper = presFlopper(false)
-  for (let i = 0; i < 1000; i++) {
+  for (let i = 0; i < 2000; i++) {
     const preset = flopper.next().value
     // console.log(preset, preset instanceof Preset)
     console.log(i, preset.name, demo(preset, 7))

@@ -1,5 +1,4 @@
-import { rand, randBetw } from '@aryth/rand'
-import { NUM }            from '@typen/enum-data-types'
+import { NUM } from '@typen/enum-data-types'
 
 /**
  * Generator function that shuffles an array by shifting elements randomly.
@@ -7,27 +6,50 @@ import { NUM }            from '@typen/enum-data-types'
  * @param {*[]} vec - The array to be shuffled.
  * @param {number} shl - The left shift limit for random index selection.
  * @param {number} [shr=shl] - The right shift limit for random index selection. Defaults to shl.
- * @yields {*} - The shuffled element after each swap op.
+ * @yields {*} - The shuffled element after each swap operation.
  * @returns {undefined}
  */
 export function* shiftFlopper(vec, shl, shr) {
-  vec = vec.slice()
-  let hi = vec.length
+  // Create a copy of the array and track available indices
+  const bin = Array(vec.length).fill(true)
   if (typeof shr !== NUM) { shr = shl }
+// Helper function for random integer
+  function rand(max) { return ~~(Math.random() * max) }
+// Helper function for random integer between min and max
+  function randBetw(min, max) { return min + rand(max - min + 1) }
+  let hi = vec.length
   let i = rand(hi)
-  if (--hi >= 0) {
-    const [ x ] = vec.splice(i, 1)
-    yield x
+  // First element
+  if (hi > 0) {
+    bin[i] = false
+    yield vec[i]
+    hi--
   }
-  while (--hi > 0) {
-    if (shl > hi) shl = hi - 1
-    if (shr > hi) shr = hi - 1
-    i = randBetw(i - shl, i + shr)
-    while (i > hi) i -= hi
-    while (i < 0) i += hi
-    const [ x ] = vec.splice(i, 1)
-    yield x
+  while (hi > 1) {
+    // Adjust shift limits if needed
+    shl = Math.min(shl, hi - 1)
+    shr = Math.min(shr, hi - 1)
+    // Calculate new index within bounds
+    let newI = randBetw(i - shl, i + shr)
+    // Wrap around if outside valid range
+    while (newI >= vec.length) newI -= vec.length
+    while (newI < 0) newI += vec.length
+    // Skip already used indices
+    while (!bin[newI]) {
+      newI = (newI + 1) % vec.length
+    }
+    // Mark as used and yield
+    i = newI
+    bin[i] = false
+    yield vec[i]
+    hi--
   }
-  yield vec[0]
+  // Last remaining element
+  for (let j = 0; j < vec.length; j++) {
+    if (bin[j]) {
+      yield vec[j]
+      break
+    }
+  }
   return void 0
 }

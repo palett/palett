@@ -1,5 +1,35 @@
 # @palett/flopper
 
+## 0.12.11
+
+### Patch Changes
+
+- minor fix
+- Updated dependencies
+  - @palett/enum-color-space@0.12.11
+  - @palett/color-space@0.12.11
+  - @palett/convert@0.12.11
+  - @palett/munsell@0.12.11
+  - @palett/presets@0.12.11
+  - @palett/cards@0.12.11
+  - @palett/table@0.12.11
+  - @palett/pres@0.12.11
+
+## 0.12.10
+
+### Patch Changes
+
+- update interface
+- Updated dependencies
+  - @palett/enum-color-space@0.12.10
+  - @palett/cards@0.12.10
+  - @palett/color-space@0.12.10
+  - @palett/convert@0.12.10
+  - @palett/munsell@0.12.10
+  - @palett/pres@0.12.10
+  - @palett/presets@0.12.10
+  - @palett/table@0.12.10
+
 ## 0.12.9
 
 ### Patch Changes
