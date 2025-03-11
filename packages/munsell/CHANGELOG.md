@@ -1,5 +1,25 @@
 # @palett/munsell
 
+## 0.12.11
+
+### Patch Changes
+
+- minor fix
+- Updated dependencies
+  - @palett/color-space@0.12.11
+  - @palett/convert@0.12.11
+  - @palett/pres@0.12.11
+
+## 0.12.10
+
+### Patch Changes
+
+- update interface
+- Updated dependencies
+  - @palett/color-space@0.12.10
+  - @palett/convert@0.12.10
+  - @palett/pres@0.12.10
+
 ## 0.12.9
 
 ### Patch Changes

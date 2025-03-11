@@ -1,5 +1,29 @@
 # @palett/dye
 
+## 0.12.11
+
+### Patch Changes
+
+- minor fix
+- Updated dependencies
+  - @palett/enum-font-effects@0.12.11
+  - @palett/enum-color-space@0.12.11
+  - @palett/enum-ansi-codes@0.12.11
+  - @palett/util-ansi@0.12.11
+  - @palett/convert@0.12.11
+
+## 0.12.10
+
+### Patch Changes
+
+- update interface
+- Updated dependencies
+  - @palett/enum-ansi-codes@0.12.10
+  - @palett/enum-color-space@0.12.10
+  - @palett/enum-font-effects@0.12.10
+  - @palett/convert@0.12.10
+  - @palett/util-ansi@0.12.10
+
 ## 0.12.9
 
 ### Patch Changes

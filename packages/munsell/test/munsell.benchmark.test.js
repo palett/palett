@@ -2,9 +2,10 @@ import { hexToHsi, hexToHsl, hsiToHex } from '@palett/convert'
 import { dhex }                         from '@palett/dye'
 import { hexToStr, hslToStr }           from '@palett/stringify'
 import { mapEntry }                     from '@vect/object-mapper'
-import { test }              from 'node:test'
-import { BOOK }              from '../resources/BOOK.js'
-import { deltaHsi, Munsell } from '../src/Munsell.js'
+import { test }                         from 'node:test'
+import { BOOK }                         from '../resources/BOOK.js'
+import { Munsell }                      from '../src/Munsell.js'
+import { deltaHsi }                     from '../src/utils/color-utils.js'
 
 
 export class MunPrev {

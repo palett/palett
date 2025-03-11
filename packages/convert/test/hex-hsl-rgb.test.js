@@ -6,6 +6,7 @@ import { hexToRgb, hslToRgb } from '../src/rgb.js'
 import { NORD }               from './resources/NORD.js'
 
 console.log(NORD)
+NORD['royal blue']='#3D428B'
 
 test('hex-hsl-rgb', () => {
   for (const [ key, hex ] of Object.entries(NORD)) {
