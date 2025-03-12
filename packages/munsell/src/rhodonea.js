@@ -2,7 +2,6 @@ import { Bound }            from '@aryth/bound'
 import { finiteFlopper }    from '@aryth/flopper'
 import { PetalNote, Polar } from '@aryth/polar'
 import { init }             from '@vect/vector-init'
-import { Ubitone }          from '../index.js'
 import { Munsell }          from './Munsell.js'
 
 const { PI, abs, round } = Math
@@ -12,7 +11,7 @@ export function rhodonea(hsi) {
   let h = (hsi >> 16) & 0x1FF, s = (hsi >> 8) & 0xFF, l = hsi & 0xFF
   s /= 2, l /= 2
   const conf = this ?? {}
-  const { petals = 3, density = 0.01, minL = 0, devS = 18, munsell = Ubitone } = conf
+  const { petals = 3, density = 0.01, minL = 0, devS = 18, munsell } = conf
   const polar = new Polar(l, h)
   const sbd = Bound.build(s - devS, s + devS)
   // console.log(polar, sbd)
