@@ -11,10 +11,11 @@ export function rgaToHsi(r, g, b) {
   let hi, lo
   g > r ? (hi = g, lo = r) : (hi = r, lo = g)
   b > hi ? hi = b : b < lo ? lo = b : void 0
-  let tt = hi + lo, df = hi - lo
-  const h = hue(r, g, b, hi, df) * 60 // original h ∈ [0,6), then h = h * 60, makes h ∈ [0,360)
-  const s = !df ? 0 : (df * 200) / (tt > 255 ? (510 - tt) : tt) // s ∈ [0,512)
-  const l = (tt * 200) / 510
+  let tt = hi + lo, df = hi - lo,
+    h = hue(r, g, b, hi, df) * 60, // original h ∈ [0,6), then h = h * 60, makes h ∈ [0,360)
+    s = !df ? 0 : (df * 200) / (tt > 255 ? (510 - tt) : tt), // s ∈ [0,512)
+    l = (tt * 200) / 510
+  h = ~~(h + 0.5), s = ~~(s + 0.5), l = ~~(l + 0.5)
   return (h & 0x1FF) << 16 | (s & 0xFF) << 8 | l & 0xFF // h ∈ [0, 360), s ∈ [0, 512), l ∈ [0, 512)
 }
 

@@ -4,7 +4,7 @@ export { hexToHsi, rgaToHsi, modHsi, modHsiTo, deltaHsi, modRgi }       from './
 export { hexToRgi, hexToShort, hslToRgi, hsaToRgi, rgbToRgi, hsiToRgi } from './src/rgi.js'
 export { hexToRgb, hslToRgb, rgiToRgb }                                 from './src/rgb.js'
 export { hexAt, ff, prolif, dil2, dil6 }                                from './src/util/string-utils.js'
-export { hue, channel, round }                                          from './src/util/number-utils.js'
+export { hue, channel, centFF }                                         from './src/util/number-utils.js'
 
 export { rgiToHex as intToHex } from './src/hex.js'
 export { rgiToHsl as intToHsl } from './src/hsl.js'
