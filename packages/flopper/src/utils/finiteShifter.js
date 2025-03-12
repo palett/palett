@@ -9,15 +9,15 @@ import { NUM } from '@typen/enum-data-types'
  * @yields {*} - The shuffled element after each swap operation.
  * @returns {undefined}
  */
-export function* shiftFlopper(vec, shl, shr) {
+export function* finiteShifter(vec, shl, shr) {
+  let hi = vec.length
   // Create a copy of the array and track available indices
-  const bin = Array(vec.length).fill(true)
+  const bin = Array(hi).fill(true)
   if (typeof shr !== NUM) { shr = shl }
 // Helper function for random integer
   function rand(max) { return ~~(Math.random() * max) }
 // Helper function for random integer between min and max
   function randBetw(min, max) { return min + rand(max - min + 1) }
-  let hi = vec.length
   let i = rand(hi)
   // First element
   if (hi > 0) {
