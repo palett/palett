@@ -1,5 +1,17 @@
 # @palett/fluo
 
+## 0.12.12
+
+### Patch Changes
+
+- minor fix
+- Updated dependencies
+  - @palett/enum-ansi-codes@0.12.12
+  - @palett/dye@0.12.12
+  - @palett/presets@0.12.12
+  - @palett/projector@0.12.12
+  - @palett/util-ansi@0.12.12
+
 ## 0.12.11
 
 ### Patch Changes

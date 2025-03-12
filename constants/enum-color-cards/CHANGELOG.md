@@ -1,5 +1,11 @@
 # @palett/enum-color-cards
 
+## 0.12.12
+
+### Patch Changes
+
+- minor fix
+
 ## 0.12.11
 
 ### Patch Changes

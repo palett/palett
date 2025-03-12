@@ -1,11 +1,13 @@
-export { RGB }                   from './src/extends/RGB.js'
-export { HSL }                   from './src/extends/HSL.js'
-export { rhodoneaFolios }        from './src/rhodoneaFolios'
-export { Gradient }              from './src/Gradient'
-export { Munsell }               from './src/Munsell.js'
-export { Cova, Cova as Cuvette } from './src/Cova.js'
-export { FASHIONS }              from './resources/Pavtone.Fashions'
-export { PRODUCTS }              from './resources/Pavtone.Products'
-export { BOOK, BOOK as TCX }     from './resources/BOOK.js'
-export { LOTONE }               from './resources/LOTONE.js'
-export { MIDTONE }              from './resources/MIDTONE.js'
+import { MIDTONE } from './resources/MIDTONE.js'
+import { UBITONE } from './resources/UBITONE.js'
+import { Munsell } from './src/Munsell.js'
+
+export const Midtone = Munsell.build(MIDTONE, 24, 24)
+export const Ubitone = Munsell.build(UBITONE, 24, 24)
+
+export { rhodonea } from './src/rhodonea.js'
+export { Gradient } from './src/Gradient.js'
+export { UBITONE }  from './resources/UBITONE.js'
+export { LOTONE }   from './resources/LOTONE.js'
+export { MIDTONE }  from './resources/MIDTONE.js'
+export { Munsell }  from './src/Munsell.js'

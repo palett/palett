@@ -1,5 +1,13 @@
 # @palett/util-ansi
 
+## 0.12.12
+
+### Patch Changes
+
+- minor fix
+- Updated dependencies
+  - @palett/convert@0.12.12
+
 ## 0.12.11
 
 ### Patch Changes

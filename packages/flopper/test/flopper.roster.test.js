@@ -1,8 +1,8 @@
 import { VectorCollection }  from '@foba/vector-string'
 import { hexToRgb }          from '@palett/convert'
-import { PrepDye } from '@palett/dye'
-import { BOLD }    from '@palett/enum-font-effects'
-import { logger }  from '@spare/logger'
+import { PrepDye }           from '@palett/dye'
+import { BOLD }              from '@palett/enum-font-effects'
+import { logger }            from '@spare/logger'
 import { palettFlopperLite } from '../src/palettFlopperLite.js'
 
 const vec = VectorCollection.flopShuffle({ size: 10 })

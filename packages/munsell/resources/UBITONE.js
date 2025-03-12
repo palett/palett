@@ -1,4 +1,4 @@
-export const BOOK = {
+export const UBITONE = {
   '#C5C5C5': 'Lunar Rock',
   '#686767': 'Gargoyle',
   '#2B2929': 'Meteorite',

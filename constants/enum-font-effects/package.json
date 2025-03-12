@@ -1,6 +1,6 @@
 {
   "name": "@palett/enum-font-effects",
-  "version": "0.12.11",
+  "version": "0.12.12",
   "description": "A colorant to string",
   "type": "module",
   "exports": "./dist/index.js",

@@ -1,21 +1,27 @@
-import { hexToHsl }           from '@palett/convert'
+import { hexToHsi, hexToHsl } from '@palett/convert'
 import { dhex }               from '@palett/dye'
 import { hexToStr, hslToStr } from '@palett/stringify'
-import { logger }         from '@spare/logger'
-import { HSL }            from '../src/extends/HSL.js'
-import { rhodoneaFolios } from '../src/rhodoneaFolios.js'
-
+import { logger }             from '@spare/logger'
+import { Midtone }            from '../index.js'
+import { rhodonea }           from '../src/rhodonea.js'
 // '#AE5459': 'Mineral Red',
 // '#C9D77E': 'Daiquiri Green',
 
-const hsl = HSL.fromHex('#C9D77E')
-
-const list = rhodoneaFolios(hsl, {
+// test('rhodonea unit', () => {
+const hex = '#8FB68F'
+// const hsl = HSL.fromHex('#AE5459')
+const conf = {
   petals: 5,
   density: 0.01,
-  lightMinimum: 54
-})
+  minL: 45,
+  munsell: Midtone
+}
+const result = rhodonea.call(conf, hexToHsi(hex))
+// console.log('result', result)
 
-const rendered = list.map(([ hex, name ]) => hexToStr(hex) + ' > ' + hslToStr(hexToHsl(hex)) + ' > ' + dhex.call(hex, name))
+const rendered = result.map(
+  ([ hex, name ]) => hexToStr(hex) + ' > ' + hslToStr(hexToHsl(hex)) + ' > ' + dhex.call(hex, name)
+)
 logger('rendered')
 logger(rendered.join('\n'))
+// })

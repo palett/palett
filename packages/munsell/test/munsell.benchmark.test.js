@@ -2,9 +2,9 @@ import { hexToHsi, hexToHsl, hsiToHex } from '@palett/convert'
 import { dhex }                         from '@palett/dye'
 import { hexToStr, hslToStr }           from '@palett/stringify'
 import { mapEntry }                     from '@vect/object-mapper'
-import { test }                         from 'node:test'
-import { BOOK }                         from '../resources/BOOK.js'
-import { Munsell }                      from '../src/Munsell.js'
+import { test }    from 'node:test'
+import { UBITONE } from '../resources/UBITONE.js'
+import { Munsell } from '../src/Munsell.js'
 import { deltaHsi }                     from '../src/utils/color-utils.js'
 
 
@@ -13,7 +13,7 @@ export class MunPrev {
   static #raw
 
   static get dict() {
-    return MunPrev.#raw ?? (MunPrev.#raw = mapEntry(BOOK, hex => [ hex, hexToHsi(hex) ]))
+    return MunPrev.#raw ?? (MunPrev.#raw = mapEntry(UBITONE, hex => [ hex, hexToHsi(hex) ]))
   }
   static nearest(hsi) {
     let min = MunPrev.#MAX, curr, next, delta
@@ -30,9 +30,9 @@ export class MunEpic {
   static #raw
 
   static get dict() {
-    return MunEpic.#raw ?? (MunEpic.#raw = mapEntry(BOOK, hex => [ hexToHsi(hex), hex ]))
+    return MunEpic.#raw ?? (MunEpic.#raw = mapEntry(UBITONE, hex => [ hexToHsi(hex), hex ]))
   }
-  static name(hsi) { return BOOK[MunEpic.#raw[hsi]]}
+  static name(hsi) { return UBITONE[MunEpic.#raw[hsi]]}
   static hsiToHex(hsi) { return MunEpic.dict[hsi] }
   static nearest(hsi) {
     let min = MunEpic.#MAX, next, delta, curr
@@ -48,7 +48,7 @@ export class MunEdge {
   static #list
 
   static get list() {
-    return MunEdge.#list ?? (MunEdge.#list = Object.keys(BOOK).map(hexToHsi))
+    return MunEdge.#list ?? (MunEdge.#list = Object.keys(UBITONE).map(hexToHsi))
   }
   static nearest(hsi) {
     let min = MunEdge.#MAX, next, delta, curr

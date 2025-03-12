@@ -1,5 +1,14 @@
 # @palett/projector
 
+## 0.12.12
+
+### Patch Changes
+
+- minor fix
+- Updated dependencies
+  - @palett/dye@0.12.12
+  - @palett/presets@0.12.12
+
 ## 0.12.11
 
 ### Patch Changes

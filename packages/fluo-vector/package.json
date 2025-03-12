@@ -1,6 +1,6 @@
 {
   "name": "@palett/fluo-vector",
-  "version": "0.12.11",
+  "version": "0.12.12",
   "description": "A colorant to string",
   "type": "module",
   "exports": "./dist/index.js",
@@ -23,7 +23,7 @@
     "@spare/node": "^0.16.10"
   },
   "devDependencies": {
-    "@aryth/bound-vector": "^0.7.0",
+    "@aryth/bound-vector": "^0.7.4",
     "@ject/oneself": "^0.1.2",
     "@palett/convert": "workspace:^",
     "@palett/enum-colorant-modes": "workspace:^",

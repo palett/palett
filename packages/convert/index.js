@@ -1,7 +1,7 @@
 export { hslToHex, rgiToHex, rgbToHex, hsiToHex }                       from './src/hex.js'
 export { hexToHsl, rgiToHsl, rgbToHsl, hsiToHsl }                       from './src/hsl.js'
 export { hexToHsi, rgaToHsi, modHsi, modHsiTo, deltaHsi, modRgi }       from './src/hsi.js'
-export { hexToRgi, hexToShort, hslToRgi, hsaToRgi, rgbToRgi, hsiToRgi } from './src/rgi.js'
+export { hexToRgi, hslToRgi, hsaToRgi, rgbToRgi, hsiToRgi, hexToShort } from './src/rgi.js'
 export { hexToRgb, hslToRgb, rgiToRgb }                                 from './src/rgb.js'
 export { hexAt, ff, prolif, dil2, dil6 }                                from './src/util/string-utils.js'
 export { hue, channel, centFF }                                         from './src/util/number-utils.js'

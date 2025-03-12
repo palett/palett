@@ -1,5 +1,18 @@
 # @palett/table
 
+## 0.12.12
+
+### Patch Changes
+
+- minor fix
+- Updated dependencies
+  - @palett/enum-color-cards@0.12.12
+  - @palett/enum-color-space@0.12.12
+  - @palett/enum-font-effects@0.12.12
+  - @palett/cards@0.12.12
+  - @palett/convert@0.12.12
+  - @palett/dye@0.12.12
+
 ## 0.12.11
 
 ### Patch Changes

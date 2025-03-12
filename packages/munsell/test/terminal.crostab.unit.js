@@ -7,7 +7,7 @@ import { Preset }              from '@palett/presets'
 import { Fluo }                from '@palett/fluo'
 import { toneHex }             from '@palett/color-algebra'
 import { indexedTo } from '@vect/object-mapper'
-import { Domain }    from '../resources/Domain.js'
+import { Domain }    from '../archive/Domain.js'
 import { HSL }       from '../src/extends/HSL.js'
 import { RGB }    from '../src/extends/RGB.js'
 

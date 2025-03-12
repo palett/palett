@@ -1,7 +1,7 @@
 import { hexToHsi, hsiToHsl } from '@palett/convert'
 import { hslToStr }           from '@palett/stringify'
-import { test } from 'node:test'
-import { BOOK } from '../resources/BOOK.js'
+import { test }    from 'node:test'
+import { UBITONE } from '../resources/UBITONE.js'
 
 function sortHSIs(list) {
   list.sort((a, b) => (a & 0xFF) - (b & 0xFF))
@@ -11,7 +11,7 @@ function sortHSIs(list) {
 }
 
 test('hsi list sort', () => {
-  const raw = BOOK
+  const raw = UBITONE
   const list = Object.keys(raw).map(hexToHsi)
   console.log('length', list.length)
   // logger(list.map(hsi => [ hslToStr(hsiToHsl(hsi)), hsi ]).join('\n'))
@@ -33,7 +33,7 @@ test('hsi list sort entries', () => {
     entries.sort(([ , a ], [ , b ]) => (a >> 16 & 0x1FF) - (b >> 16 & 0x1FF))
     return entries
   }
-  const raw = BOOK
+  const raw = UBITONE
   const list = Object.keys(raw).map(hexToHsi)
   console.log('length', list.length)
   // logger(list.map(hsi => [ hslToStr(hsiToHsl(hsi)), hsi ]).join('\n'))

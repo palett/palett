@@ -1,5 +1,5 @@
 ﻿import { Polar }    from '@aryth/polar'
-import { FASHIONS } from '../resources/Pavtone.Fashions.js'
+import { FASHIONS } from '../archive/Pavtone.Fashions.js'
 import { distance } from '../utils/hsl.util.js'
 import { minEntry } from '../utils/minBy.js'
 import { HSL }      from './extends/HSL.js'

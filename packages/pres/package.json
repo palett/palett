@@ -1,6 +1,6 @@
 {
   "name": "@palett/pres",
-  "version": "0.12.11",
+  "version": "0.12.12",
   "description": "",
   "type": "module",
   "exports": "./dist/index.js",
@@ -18,22 +18,22 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/math": "^0.7.0",
-    "@aryth/rand": "^0.7.0",
+    "@aryth/math": "^0.7.4",
+    "@aryth/rand": "^0.7.4",
     "@palett/convert": "workspace:^",
     "@palett/enum-ansi-codes": "workspace:^",
     "@palett/stringify": "workspace:^",
     "@palett/util-ansi": "workspace:^",
+    "@texting/string-value": "^0.2.2",
+    "@typen/enum-data-types": "^0.2.0",
     "@vect/vector-algebra": "^0.8.0",
     "@vect/vector-init": "^0.8.0",
-    "@vect/vector-select": "^0.8.0",
-    "@typen/enum-data-types": "^0.2.0",
     "@vect/vector-mapper": "^0.8.0",
-    "@texting/string-value": "^0.2.2"
+    "@vect/vector-select": "^0.8.0"
   },
   "devDependencies": {
-    "@vect/object-init": "^0.8.0",
-    "@palett/presets": "workspace:^"
+    "@palett/presets": "workspace:^",
+    "@vect/object-init": "^0.8.0"
   },
   "repository": {
     "type": "git",
