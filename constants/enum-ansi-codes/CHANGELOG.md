@@ -1,5 +1,11 @@
 # @palett/enum-ansi-codes
 
+## 0.12.13
+
+### Patch Changes
+
+- restructure interface and optimize performance
+
 ## 0.12.12
 
 ### Patch Changes

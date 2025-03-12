@@ -1,5 +1,13 @@
 # @palett/enum-colorant-modes
 
+## 0.12.13
+
+### Patch Changes
+
+- restructure interface and optimize performance
+- Updated dependencies
+  - @palett/enum-color-space@0.12.13
+
 ## 0.12.12
 
 ### Patch Changes

@@ -1,5 +1,18 @@
 # @palett/table
 
+## 0.12.13
+
+### Patch Changes
+
+- restructure interface and optimize performance
+- Updated dependencies
+  - @palett/enum-color-cards@0.12.13
+  - @palett/enum-color-space@0.12.13
+  - @palett/enum-font-effects@0.12.13
+  - @palett/cards@0.12.13
+  - @palett/convert@0.12.13
+  - @palett/dye@0.12.13
+
 ## 0.12.12
 
 ### Patch Changes

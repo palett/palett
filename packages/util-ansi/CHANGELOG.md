@@ -1,5 +1,13 @@
 # @palett/util-ansi
 
+## 0.12.13
+
+### Patch Changes
+
+- restructure interface and optimize performance
+- Updated dependencies
+  - @palett/convert@0.12.13
+
 ## 0.12.12
 
 ### Patch Changes

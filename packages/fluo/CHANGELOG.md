@@ -1,5 +1,17 @@
 # @palett/fluo
 
+## 0.12.13
+
+### Patch Changes
+
+- restructure interface and optimize performance
+- Updated dependencies
+  - @palett/enum-ansi-codes@0.12.13
+  - @palett/dye@0.12.13
+  - @palett/presets@0.12.13
+  - @palett/projector@0.12.13
+  - @palett/util-ansi@0.12.13
+
 ## 0.12.12
 
 ### Patch Changes

@@ -1,5 +1,16 @@
 # @palett/presets
 
+## 0.12.13
+
+### Patch Changes
+
+- restructure interface and optimize performance
+- Updated dependencies
+  - @palett/enum-ansi-codes@0.12.13
+  - @palett/convert@0.12.13
+  - @palett/stringify@0.12.13
+  - @palett/util-ansi@0.12.13
+
 ## 0.12.12
 
 ### Patch Changes
