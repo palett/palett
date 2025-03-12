@@ -1,6 +1,5 @@
 import { distance } from '@aryth/polar'
 import { hexToHsi } from '@palett/convert'
-import { MIDTONE }  from '../resources/MIDTONE.js'
 import { deltaHsi } from './utils/color-utils.js'
 import { circ }     from './utils/iter-utils.js'
 
@@ -36,17 +35,22 @@ import { circ }     from './utils/iter-utils.js'
 // 29: (348,360] //  (2197, 2314]
 
 export class Munsell {
-  static #MAX = 0x400
-  static #ds = 24
-  static #dl = 24
-  static #inds = Array(30)
-  static #rev
-  static #list
+  #MAX = 0x400
+  #ds
+  #dl
+  #inds = Array(30)
+  #rev
+  #list
 
-  static #init() {
-    const entries = Object.entries(MIDTONE)
+  constructor(ds, dl) {
+    this.#ds = ds ?? 24
+    this.#dl = dl ?? 24
+  }
+  static build(book, ds, dl) { return (new Munsell(ds, dl)).init(book) }
+  init(book) {
+    const entries = Object.entries(book)
     const hi = entries.length, list = Array(hi), rev = {}
-    Munsell.#list = list, Munsell.#rev = rev
+    this.#list = list, this.#rev = rev
     let hueInt = 6, t = 0
     for (let i = 0, hsi; i < hi; i++) {
       const [ hex, name ] = entries[i]
@@ -55,19 +59,26 @@ export class Munsell {
     }
     list.sort((a, b) => a - b)
     for (let i = 0; i < hi; i++) { // console.log(hexToStr(hsiToHex(hsi)), hsi >> 16 & 0x1FF, distance(hsi >> 16 & 0x1FF, 15))
-      if (distance((list[i]) >> 16 & 0x1FF, hueInt) > 6) { Munsell.#inds[t++] = i, hueInt += 12 }
+      if (distance(list[i] >> 16 & 0x1FF, hueInt) > 6) { this.#inds[t++] = i, hueInt += 12 }
     }
-    Munsell.#inds[t] = hi
-    return Munsell.#list
+    this.#inds[t] = hi
+    return this
   }
 
-  static get list() {
-    return Munsell.#list ?? Munsell.#init()
+  get list() { return this.#list }
+
+  entry(hsi) {
+    const entry = this.#rev[hsi]
+    return entry ? [ entry.slice(0, 7), entry.slice(8) ] : null
   }
 
-  static adjacent(hue) {
-    if (!Munsell.#list) Munsell.#init()
-    const inds = Munsell.#inds
+  name(hsi) {
+    const entry = this.#rev[hsi]
+    return entry ? entry.slice(8) : null
+  }
+
+  adjacent(hue) {
+    const inds = this.#inds
     for (let i = 0, min = 0, mid = 6, max = 12; i < 30; i++) {
       if (min <= hue && hue < mid) return [ inds.at(i - 2), inds.at(i) ]
       if (hue === mid) return [ inds.at(i - 2), inds.at(++i > 30 ? i - 30 : i) ]
@@ -76,30 +87,26 @@ export class Munsell {
     }
   }
 
-  static nearest(hsi) {
+  nearest(hsi) {
     const h = hsi >> 16 & 0x1FF, s = hsi >> 8 & 0xFF, l = hsi & 0xFF
-    const sb = s - Munsell.#ds, sp = s + Munsell.#ds
-    const lb = l - Munsell.#dl, lp = l + Munsell.#dl
-    let [ ib, ip ] = Munsell.adjacent(h) // console.log(ib, ip)
-    let min = Munsell.#MAX, next, delta
-    circ.call(Munsell.list, ib, ip, (cur) => {
+    const sb = s - this.#ds, sp = s + this.#ds
+    const lb = l - this.#dl, lp = l + this.#dl
+    let [ ib, ip ] = this.adjacent(h) // console.log(ib, ip)
+    let min = this.#MAX, next, delta
+    circ.call(this.list, ib, ip, cur => {
       const sc = cur >> 8 & 0xFF, lc = cur & 0xFF
       if ((sb <= sc && sc <= sp) && (lb <= lc && lc <= lp)) {
         if ((delta = deltaHsi(hsi, cur)) < min) { min = delta, next = cur }
       }
     }) // console.log(hslToStr(hsiToHsl(hsi)), hslToStr(hsiToHsl(next)), deltaHsi(hsi, next), min)
-    return min === Munsell.#MAX ? null : next
+    return min === this.#MAX ? null : next
   }
 
-  static nearestHex(hsi) {
-    hsi = Munsell.nearest(hsi)
-    const entry = Munsell.#rev[hsi]
+  nearestHex(hsi) {
+    hsi = this.nearest(hsi)
+    const entry = this.#rev[hsi]
     return entry ? entry.slice(0, 7) : null
   }
 
-  static nearestEntry(hsi) {
-    hsi = Munsell.nearest(hsi)
-    const entry = Munsell.#rev[hsi]
-    return entry ? [ entry.slice(0, 7), entry.slice(8) ] : null
-  }
+  nearestEntry(hsi) { return this.entry(this.nearest(hsi)) }
 }
