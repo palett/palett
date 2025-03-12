@@ -1,9 +1,16 @@
 import { round }              from '@aryth/math'
 import { hslToInt, intToRgb } from '@palett/convert'
-import { test }    from 'node:test'
-import { channel } from '@palett/convert/src/util/number-utils.js'
+import { test }               from 'node:test'
 
 const PARAM = 85.33333333333333
+
+// amp and lt should align order of magnitude
+function channel(off, hf, amp, lt) {
+  let pha = (off + hf) % 12 // Calculate modular position in color wheel. 相位偏移
+  pha = 3 + (pha < 6 ? pha - 6 : 6 - pha) // Create triangular wave pattern, 对称波形生成
+  pha = pha > 1 ? 1 : pha < -1 ? -1 : pha // Clamp to [-1, 1] range. 钳制到 [-1, 1]
+  return lt - amp * pha // Apply chroma to get final component value. 合并乘法和舍入
+}
 
 export function hsiToInt_grok(int) {
   let h = int >> 18 & 0x1FF, s = int >> 9 & 0x1FF, l = int & 0x1FF
@@ -46,10 +53,10 @@ export function hsiToInt_grok(int) {
 export function hsiToInt_edge(int) {
   let h = int >> 18 & 0x1FF, s = int >> 9 & 0x1FF, l = int & 0x1FF
   h = h / 30 // original h ∈ [0,360), then h = h * 12 / 30, makes h ∈ [0,12)
-  const a = l <= 255.5 ? (s * l / 511) : (s - s * l / 511)
-  const r = (channel(0, h, a, l) + 1) >> 1 // ( 2x + 1 ) >> 1 -> mock round(x)
-  const g = (channel(8, h, a, l) + 1) >> 1
-  const b = (channel(4, h, a, l) + 1) >> 1
+  const a = l <= 255.5 ? s * l / 511 : s - s * l / 511
+  const r = channel(0, h, a, l) + 1 >> 1 // ( 2x + 1 ) >> 1 -> mock round(x)
+  const g = channel(8, h, a, l) + 1 >> 1
+  const b = channel(4, h, a, l) + 1 >> 1
   return (r & 0xFF) << 16 | (g & 0xFF) << 8 | b & 0xFF
 }
 export function hsiToInt_next(int) {
@@ -59,7 +66,7 @@ export function hsiToInt_next(int) {
     let ph = (off + hv) % 12
     ph = Math.min(ph - 3, 9 - ph) // equivalent to: if (m < 6) { m - 3 } else { 9 - m }
     ph = ph > 1 ? 1 : ph < -1 ? -1 : ph
-    return ((l - co * ph) + 1) >> 1
+    return (l - co * ph) + 1 >> 1
   }
   const a = s * (l <= 255 ? l : 511 - l) / 511
   const r = hf(0, h, a, l)

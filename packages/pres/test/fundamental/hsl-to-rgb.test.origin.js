@@ -1,7 +1,6 @@
-import { round }              from '@aryth/math'
-import { hslToInt, intToRgb } from '@palett/convert'
-import { test }    from 'node:test'
-import { channel } from '@palett/convert/src/util/number-utils.js'
+import { round }                       from '@aryth/math'
+import { channel, hslToInt, intToRgb } from '@palett/convert'
+import { test }                        from 'node:test'
 
 const PARAM = 85.33333333333333
 
