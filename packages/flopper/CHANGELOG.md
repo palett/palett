@@ -1,5 +1,21 @@
 # @palett/flopper
 
+## 0.12.13
+
+### Patch Changes
+
+- restructure interface and optimize performance
+- Updated dependencies
+  - @palett/enum-color-space@0.12.13
+  - @palett/cards@0.12.13
+  - @palett/color-algebra@0.12.13
+  - @palett/color-space@0.12.13
+  - @palett/convert@0.12.13
+  - @palett/munsell@0.12.13
+  - @palett/pres@0.12.13
+  - @palett/presets@0.12.13
+  - @palett/table@0.12.13
+
 ## 0.12.12
 
 ### Patch Changes
