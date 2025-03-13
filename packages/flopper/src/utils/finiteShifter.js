@@ -17,7 +17,7 @@ export function* finiteShifter(vec, shl, shr) {
 // Helper function for random integer
   function rand(max) { return ~~(Math.random() * max) }
 // Helper function for random integer between min and max
-  function randBetw(min, max) { return min + rand(max - min + 1) }
+  function betw(min, max) { return min + rand(max - min + 1) }
   let i = rand(hi)
   // First element
   if (hi > 0) {
@@ -30,7 +30,7 @@ export function* finiteShifter(vec, shl, shr) {
     shl = Math.min(shl, hi - 1)
     shr = Math.min(shr, hi - 1)
     // Calculate new index within bounds
-    let newI = randBetw(i - shl, i + shr)
+    let newI = betw(i - shl, i + shr)
     // Wrap around if outside valid range
     while (newI >= vec.length) newI -= vec.length
     while (newI < 0) newI += vec.length

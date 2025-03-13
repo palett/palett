@@ -1,7 +1,8 @@
 import { flop }                from '@aryth/rand'
 import { Munsell }             from '@palett/munsell'
 import { seq }                 from '@vect/vector'
-import { LOTONE, MIDTONE }     from './fake-book.js'
+import { LOTONE }              from './asset/LOTONE.js'
+import { MIDTONE }             from './asset/MIDTONE.js'
 import { blendPres, randPres } from './randPres.js'
 import { finiteShifter }       from './utils/finiteShifter.js'
 

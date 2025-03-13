@@ -4,9 +4,9 @@ import { Grey }                                from '@palett/cards'
 import { HEX }                                 from '@palett/enum-color-space'
 import { randPres }                            from '@palett/pres'
 import { ColorGroups, Degrees, palettCrostab } from '@palett/table'
-import { swap }                                from '@vect/swap'
-import { degreeToIndice }                      from '../src/utils/degreeToIndice.js'
-import { sortBy }                              from '../src/utils/sortDegrees.js'
+import { swap }           from '@vect/swap'
+import { degreeToIndice } from './utils/degreeToIndice.js'
+import { sortBy }         from './utils/sortDegrees.js'
 
 export function* presetFlopperMaterial({
                                          degrees = Degrees.entire,

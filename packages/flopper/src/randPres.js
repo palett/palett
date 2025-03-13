@@ -2,7 +2,7 @@ import { flop, randBetw } from '@aryth/rand'
 import { dslHex }         from '@palett/color-algebra'
 import { modHsi }         from '@palett/convert'
 import { Pres }           from '@palett/pres'
-import { LOTONE }         from './fake-book.js'
+import { LOTONE }         from './asset/LOTONE.js'
 
 const LOTONE_LIST = Object.keys(LOTONE)
 

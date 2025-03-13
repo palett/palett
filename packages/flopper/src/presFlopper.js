@@ -1,6 +1,7 @@
 import { finiteFlopper }   from '@aryth/flopper'
 import { flop }            from '@aryth/rand'
-import { LOTONE, MIDTONE } from './fake-book.js'
+import { LOTONE }          from './asset/LOTONE.js'
+import { MIDTONE }         from './asset/MIDTONE.js'
 import { randPres }        from './randPres.js'
 
 export function* presFlopper(exhausted = true) {

@@ -1,7 +1,7 @@
 import { hexToHsl }           from '@palett/convert'
 import { hexToStr, hslToStr } from '@palett/stringify'
-import { test }               from 'node:test'
-import { narrowSL }           from '../src/utils/color-utils.js'
+import { test }     from 'node:test'
+import { narrowSL } from '../archive/utils/color-utils.js'
 
 const candidates = [
   '#625D5D', '#BEBDBD', '#6E4C4B', '#A99592', '#AE9490', '#BBA5A0',
