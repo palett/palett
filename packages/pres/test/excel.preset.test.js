@@ -3,7 +3,7 @@ import { PAGODA }  from '@palett/presets/static/pavtone.js'
 import { indexed } from '@vect/object-mapper'
 
 import { Pres } from '../src/Pres.js'
-import { demo } from '../src/pres-extensions.js'
+import { demo } from '../src/sequence.js'
 
 export const presets = {
   a: Pres.build('#E2A829', '#C5D51D'),

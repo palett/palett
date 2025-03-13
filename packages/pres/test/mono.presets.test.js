@@ -2,7 +2,7 @@ import { logger }  from '@spare/logger'
 import { indexed } from '@vect/object-mapper'
 import { test }    from 'node:test'
 import { Pres } from '../src/Pres.js'
-import { demo } from '../src/pres-extensions.js'
+import { demo } from '../src/sequence.js'
 
 const presetCollection = {
   bleu: Pres.build('#2E4DA7', '#9299ff'),

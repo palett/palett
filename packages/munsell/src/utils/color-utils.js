@@ -12,6 +12,5 @@ export const deltaHsi = (hsib, hsip) => {
   const dh = distance(hb, hp)
   const ds = abs(sp - sb)
   const dl = abs(lp - lb)
-  // if (hsip === 10768531) console.log(dh, ds, dl, dh + ds + dl,hexToStr(hsiToHex(hsip)))
   return dh + ds + dl
 }

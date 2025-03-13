@@ -1,7 +1,7 @@
 import { says }    from '@spare/logger'
 import { time }    from '@valjoux/timestamp-pretty'
 import { test } from 'node:test'
-import { Cova } from '../src/Cova.js'
+import { Cova } from '../archive/Cova.js'
 
 says['log-time'].attach(time)
 says['cuvette'].asc.asc

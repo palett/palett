@@ -1,5 +1,15 @@
 # @palett/stringify
 
+## 0.12.14
+
+### Patch Changes
+
+- minor fix
+- Updated dependencies
+  - @palett/enum-ansi-codes@0.12.14
+  - @palett/convert@0.12.14
+  - @palett/util-ansi@0.12.14
+
 ## 0.12.13
 
 ### Patch Changes

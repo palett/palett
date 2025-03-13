@@ -7,8 +7,8 @@ import { hexToHsi }          from '@palett/convert'
 import { iterate }           from '@vect/vector-mapper'
 import { test }              from 'node:test'
 import { Midtone, rhodonea } from '../index.js'
-import { Cova }              from '../src/Cova.js'
-import { HSL }               from '../src/extends/HSL.js'
+import { Cova }              from '../archive/Cova.js'
+import { HSL }               from '../archive/extends/HSL.js'
 
 const { PI, pow, abs, round } = Math
 

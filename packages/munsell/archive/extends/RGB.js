@@ -1,8 +1,8 @@
 import { hexToRgb, hslToRgb } from '@palett/convert'
-import { minEntry }           from '../../utils/minBy.js'
-import { Cova }          from '../Cova.js'
-import { Domain }        from '../../archive/Domain.js'
-import { RGB as RawRGB } from '@palett/color-space'
+import { minEntry } from '../../utils/minBy.js'
+import { Cova }     from '../Cova.js'
+import { Domain }   from '../Domain.js'
+import { RGB as RawRGB }      from '@palett/color-space'
 
 export class RGB extends RawRGB {
   constructor(r, g, b) { super(r, g, b) }

@@ -1,12 +1,7 @@
-import { randBetw }                                       from '@aryth/rand'
-import { hexToHsi, hsiToRgi, rgiToRgb, modHsi, rgaToHsi } from '@palett/convert'
-import { rgbToStr }                                       from '@palett/stringify'
-import { init }                                           from '@vect/vector-init'
-import { Pres }                                           from './Pres.js'
+import { randBetw }                             from '@aryth/rand'
+import { hexToHsi, hsiToRgi, modHsi, rgaToHsi } from '@palett/convert'
+import { Pres }                                 from '../src/Pres.js'
 
-export function demo(pres, count) {
-  return `${sequence.call(pres, count).map(int => rgbToStr(rgiToRgb(int))).join(' ')} | ${(rgbToStr(rgiToRgb(pres.nan)))}`
-}
 
 const hsiUpward = (hsi) => {
   const dh = randBetw(-16, 16)
@@ -31,6 +26,7 @@ const rgiReverse = (rgi) => {
   const hsi1 = modHsi(hsi0, dh, ds, dl)
   return hsiToRgi(hsi1)
 }
+
 /**
  *
  * @param {string} hex
@@ -44,13 +40,4 @@ export const randPres = (hex, name) => {
   const pres = new Pres(min, max, nan)
   if (name?.length) pres.name = name
   return pres
-}
-
-export function sequence(count = 2) {
-  if (count < 2) count = 2
-  const delta = count - 1
-  const pres = this
-  const [ hb, sb, lb, hp, sp, lp ] = pres
-  const lever = [ (hp - hb) / delta, (sp - sb) / delta, (lp - lb) / delta ]
-  return init(count, i => hsiToRgi(modHsi(pres.min, i * lever[0], i * lever[1], i * lever[2])))
 }

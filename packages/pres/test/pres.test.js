@@ -6,7 +6,7 @@ import { rgbToStr }        from '@palett/stringify'
 import { $, logger }       from '@spare/logger'
 import { indexed, mapper } from '@vect/object-mapper'
 import { test } from 'node:test'
-import { demo } from '../src/pres-extensions.js'
+import { demo } from '../src/sequence.js'
 
 const Pavtone = {
   RODD: RODD,

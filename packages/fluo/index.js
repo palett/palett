@@ -1,10 +1,12 @@
 import { CSI, FORE_DEF, FORE_INI, SGR } from '@palett/enum-ansi-codes'
 import { SC }                           from '@palett/util-ansi'
 
-export { POINTWISE, ROWWISE, COLUMNWISE } from '@vect/enum-matrix-directions'
-export { arrToPres, intoPres }            from './src/intoPres.js'
-export { Fluo }                           from './src/Fluo.js'
-export { Pres, PresetCollection }         from './src/PresetCollection.js'
+export { Fluo }                         from './src/Fluo.js'
+// export { Pres, PresetCollection }         from './src/PresetCollection.js'
+
+export const POINTWISE = 0
+export const ROWWISE = 1
+export const COLUMNWISE = 2
 
 export function fluo(text, [ r, g, b ]) {
   const head = CSI + (this?.head ?? '') + FORE_INI + SC + r + SC + g + SC + b + SGR

@@ -4,7 +4,7 @@ import { hexToStr, hslToStr } from '@palett/stringify'
 import { decoObject, says }   from '@spare/logger'
 import { mapper }             from '@vect/object'
 import { test } from 'node:test'
-import { HSL }  from '../src/extends/HSL.js'
+import { HSL }  from '../archive/extends/HSL.js'
 
 export const XTERM = {
   noir: [ 0, 0, 0 ],

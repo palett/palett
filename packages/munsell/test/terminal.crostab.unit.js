@@ -1,15 +1,15 @@
 import { indexed }             from '@vect/object'
 import { H, L, S }  from '../resources/attr'
-import { Gradient } from '../src/Gradient'
+import { Gradient } from '../archive/Gradient.js'
 import { says }     from '@spare/xr'
 import { DecoCrostab, logger } from '@spare/logger'
 import { Preset }              from '@palett/presets'
 import { Fluo }                from '@palett/fluo'
 import { toneHex }             from '@palett/color-algebra'
 import { indexedTo } from '@vect/object-mapper'
-import { Domain }    from '../archive/Domain.js'
-import { HSL }       from '../src/extends/HSL.js'
-import { RGB }    from '../src/extends/RGB.js'
+import { Domain } from '../archive/Domain.js'
+import { HSL }    from '../archive/extends/HSL.js'
+import { RGB }    from '../archive/extends/RGB.js'
 
 // XTerm's default colors
 

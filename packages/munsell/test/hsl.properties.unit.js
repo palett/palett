@@ -2,7 +2,7 @@ import { hslToRgb }     from '@palett/convert'
 import { fluo }         from '@palett/fluo'
 import { deco, logger } from '@spare/logger'
 import { test } from 'node:test'
-import { HSL }  from '../src/extends/HSL.js'
+import { HSL }  from '../archive/extends/HSL.js'
 
 const hsl = HSL.fromRgb([ 92, 92, 255 ])
 
