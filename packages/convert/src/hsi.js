@@ -1,3 +1,4 @@
+import { minus }    from '@aryth/polar'
 import { hsaToRgi } from './rgi.js'
 import { hue }      from './util/number-utils.js'
 import { ff }       from './util/string-utils.js'
@@ -40,7 +41,7 @@ export function modHsiTo(int, dh, ds, dl) {
 }
 
 export function deltaHsi(min, max) {
-  return [ (max >> 16 & 0x1FF) - (min >> 16 & 0x1FF), (max >> 8 & 0xFF) - (min >> 8 & 0xFF), (max & 0xFF) - (min & 0xFF) ]
+  return [ minus(max >> 16 & 0x1FF, min >> 16 & 0x1FF), (max >> 8 & 0xFF) - (min >> 8 & 0xFF), (max & 0xFF) - (min & 0xFF) ]
 }
 
 export function modRgi(int, dh, ds, dl) {
