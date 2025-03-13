@@ -1,6 +1,6 @@
 {
   "name": "@palett/flopper",
-  "version": "0.12.14",
+  "version": "0.12.15",
   "description": "A color converter",
   "type": "module",
   "exports": "./dist/index.js",

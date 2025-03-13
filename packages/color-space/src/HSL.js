@@ -44,8 +44,8 @@ export class HSL {
     // this.h = rec0up(this.h, 360)
     // this.s = lim0up(this.s, 100)
     // this.l = lim0up(this.l, 100)
-    while (this.h > 360) this.h -= 360
-    while (this.h < 0) this.h += 360
+    let h = this.h
+    this.h = (h %= 360) < 0 ? h + 360 : h
     this.s = this.s < 0 ? 0 : this.s > 100 ? 100 : this.s
     this.l = this.l < 0 ? 0 : this.l > 100 ? 100 : this.l
     return this

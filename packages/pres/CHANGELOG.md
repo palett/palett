@@ -1,5 +1,15 @@
 # @palett/presets
 
+## 0.12.15
+
+### Patch Changes
+
+- minor fix
+- Updated dependencies
+  - @palett/color-algebra@0.12.15
+  - @palett/convert@0.12.15
+  - @palett/stringify@0.12.15
+
 ## 0.12.14
 
 ### Patch Changes

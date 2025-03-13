@@ -23,20 +23,18 @@ export function rgaToHsi(r, g, b) {
 export function modHsi(int, dh, ds, dl) {
   let h = int >> 16 & 0x1FF, s = int >> 8 & 0xFF, l = int & 0xFF
   h += dh, s += ds, l += dl
-  while (h > 360) h -= 360
-  while (h < 0) h += 360
-  s = s < 0 ? 0 : s > 200 ? 200 : s
-  l = l < 0 ? 0 : l > 200 ? 200 : l
+  if ((h %= 360) < 0) h += 360
+  if (s < 0) { s = 0 } else if (s > 200) { s = 200 }
+  if (l < 0) { l = 0 } else if (l > 200) { l = 200 }
   return (h & 0x1FF) << 16 | (s & 0xFF) << 8 | l & 0xFF // 9 bit + 9 bit + 9 bit = 25 bit
 }
 
 export function modHsiTo(int, dh, ds, dl) {
   let h = int >> 16 & 0x1FF, s = int >> 8 & 0xFF, l = int & 0xFF
   h += dh, s += ds, l += dl
-  while (h > 360) h -= 360
-  while (h < 0) h += 360
-  s = s < 0 ? 0 : s > 200 ? 200 : s
-  l = l < 0 ? 0 : l > 200 ? 200 : l
+  if ((h %= 360) < 0) h += 360
+  if (s < 0) { s = 0 } else if (s > 200) { s = 200 }
+  if (l < 0) { l = 0 } else if (l > 200) { l = 200 }
   return hsaToRgi(h, s, l)
 }
 

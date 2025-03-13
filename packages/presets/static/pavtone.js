@@ -1,7 +1,7 @@
 import { Pres } from '@palett/pres'
 
 export const BESQUE = Pres.build('#D16F52', '#C6E67A', '#6A6A6A')     // - Arabesque       - Sharp Green       - Charcoal Gray      -
-export const FRESH = Pres.build('#DDB614', '#BADF30', '#6A6A6A')      // - Sulfer          - Lime              - Charcoal Gray      -
+export const TROPIC = Pres.build('#DDB614', '#BADF30', '#6A6A6A')      // - Sulfer          - Lime              - Charcoal Gray      -
 export const RODD = Pres.build('#91672C', '#C6E67A', '#6A6A6A')       // - Golden Brown    - Sharp Green       - Charcoal Gray      -
 export const AZALE = Pres.build('#E46C9A', '#6ED1B4', '#6A6A6A')      // - Azalea          - Opal              - Charcoal Gray      -
 export const AFRO = Pres.build('#B284BE', '#C6E67A', '#6A6A6A')       // - African Violet  - Sharp Green       - Charcoal Gray      -

@@ -1,5 +1,16 @@
 # @palett/flopper
 
+## 0.12.15
+
+### Patch Changes
+
+- minor fix
+- Updated dependencies
+  - @palett/color-algebra@0.12.15
+  - @palett/convert@0.12.15
+  - @palett/munsell@0.12.15
+  - @palett/pres@0.12.15
+
 ## 0.12.14
 
 ### Patch Changes
