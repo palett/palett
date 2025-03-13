@@ -1,11 +1,18 @@
-import { hexToRgi } from '@palett/convert'
-import { STR }      from '@typen/enum-data-types'
-import { deltaHsi } from '@palett/convert'
+import { deltaHsi, hexToRgi } from '@palett/convert'
+import { OBJ, STR }           from '@typen/enum-data-types'
+import { Pres }               from './Pres.js'
+import { randPres }           from './randPres.js'
 
 export class Presm {
   /** @type {number}  int color for NaN */ #nan
-  /** @type {number}  byte to store dimension info */ #dim = 0b000
+  /** @type {number}  x/y/z dimension info in 0b111 */ #dim = 0b000
 
+  /**
+   * @param {Pres} xbd - x bound
+   * @param {Pres} ybd - y bound
+   * @param {Pres} zbd - z bound
+   * @param {number} nan -  int color for NaN
+   */
   constructor(xbd, ybd, zbd, nan) {
     if (xbd) { this.xbd = xbd }
     if (ybd) { this.ybd = ybd }
@@ -16,6 +23,25 @@ export class Presm {
   static build(xbd, ybd, zbd, nan) {
     nan = nan ?? xbd?.nan ?? ybd?.nan ?? zbd?.nan ?? void 0
     return new Presm(xbd, ybd, zbd, typeof nan === STR ? hexToRgi(nan) : xbd.nan)
+  }
+
+  /**
+   * Parses a configuration object or string to create a Presm instance.
+   *
+   * @param {Pres|Presm|string} conf - The configuration object or string.
+   * @returns {Presm|null} - a Presm instance or null if the configuration is invalid.
+   */
+  static create(conf) {
+    if (!conf) return null
+    if (typeof conf === STR && conf.startsWith('#')) {
+      const pres = randPres(conf)
+      return Presm.build(pres, pres)
+    }
+    if (typeof conf === OBJ) {
+      if (conf instanceof Pres) return Presm.build(conf, conf)
+      if (conf instanceof Presm) return conf
+    }
+    return null
   }
 
   get hasX() { return this.#dim >> 0 & 0b1 }
@@ -72,7 +98,7 @@ export class Presm {
     return {
       xbd: this.xbd,
       ybd: this.ybd,
-      zbd: this.zbd
+      zbd: this.zbd,
     }
   }
 }
