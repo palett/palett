@@ -1,5 +1,11 @@
 # @palett/nuance-lotone
 
+## 0.12.16
+
+### Patch Changes
+
+- minor fix
+
 ## 0.12.15
 
 ### Patch Changes

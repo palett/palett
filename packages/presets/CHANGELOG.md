@@ -1,5 +1,14 @@
 # @palett/presets
 
+## 0.12.16
+
+### Patch Changes
+
+- minor fix
+- Updated dependencies
+  - @palett/cards@0.12.16
+  - @palett/pres@0.12.16
+
 ## 0.12.15
 
 ### Patch Changes
