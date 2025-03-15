@@ -1,21 +1,22 @@
-import { initialize }                           from '@palett/dye'
-import { hslToInt, limFF, Pres, render, scale } from '@palett/presets'
+import { modHsiTo }           from '@palett/convert'
+import { initialize, render } from '@palett/dye'
+import { Pres }               from '@palett/pres'
 
 export class Proj {
-  /** @type {Pres} */ pre
+  /** @type {Pres} */ pres
   /** @type {[*,*,*]|{lo}} */ lev = [ 0, 0, 0 ]
 
-  constructor(preset) {
-    initialize.call(this, preset?.attr)
-    this.pre = preset
+  constructor(pres) {
+    initialize.call(this, pres?.attr)
+    this.pres = pres
   }
   /** @returns {Proj} */
   static from(bound, preset) { return (new Proj(preset)).load(bound.lo, bound.hi) }
 
-  get nan() { return this.pre.nan }
+  get nan() { return this.pres.nan }
   load(lo, hi) {
-    const df = hi - lo, { pre, lev } = this
-    const [ hb, sb, lb, hp, sp, lp ] = pre
+    const df = hi - lo, { pres, lev } = this
+    const [ hb, sb, lb, hp, sp, lp ] = pres
     lev[0] = df ? ((hp - hb) / df) : 0
     lev[1] = df ? ((sp - sb) / df) : 0
     lev[2] = df ? ((lp - lb) / df) : 0
@@ -24,8 +25,10 @@ export class Proj {
   }
   into(val) {
     if (isNaN(val)) return this.nan
-    const { lev, pre } = this, vdf = val - (lev.lo ?? 0)
-    return hslToInt(scale(vdf, lev[0], pre[0]), limFF(vdf, lev[1], pre[1]), limFF(vdf, lev[2], pre[2]))
+    // return pres.proj(lev, lev.lo ?? 0, val)
+    const df = val - (this.lev.lo ?? 0)
+    const [ hlv, slv, llv ] = this.lev
+    return modHsiTo(this.pres.min, df * hlv, df * slv, df * llv)
   }
   render(val, text) {
     return render.call(this, this.into(val), text)

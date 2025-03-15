@@ -1,6 +1,6 @@
 {
   "name": "@palett/flopper",
-  "version": "0.12.16",
+  "version": "0.12.17",
   "description": "A color converter",
   "type": "module",
   "exports": "./dist/index.js",
@@ -26,10 +26,11 @@
     "@palett/munsell": "workspace:^",
     "@palett/pres": "workspace:^",
     "@typen/enum-data-types": "^0.2.0",
-    "@vect/vector": "^0.8.0"
+    "@vect/vector-init": "^0.8.0"
   },
   "devDependencies": {
     "@palett/stringify": "workspace:^",
+    "@palett/nuance-midtone": "workspace:^",
     "@vect/vector-init": "^0.8.0"
   },
   "repository": {

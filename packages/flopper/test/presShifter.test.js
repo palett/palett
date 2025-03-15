@@ -1,4 +1,4 @@
-import { demo }        from '@palett/presets'
+import { demo }        from '@palett/pres'
 import { test }        from 'node:test'
 import { presShifter } from '../src/presShifter.js'
 

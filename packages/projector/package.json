@@ -1,6 +1,6 @@
 {
   "name": "@palett/projector",
-  "version": "0.12.16",
+  "version": "0.12.17",
   "description": "Projector projects input number to color within pre-defined bound",
   "type": "module",
   "exports": "./dist/index.js",
@@ -19,6 +19,8 @@
   },
   "dependencies": {
     "@palett/dye": "workspace:^",
+    "@palett/pres": "workspace:^",
+    "@palett/convert": "workspace:^",
     "@palett/presets": "workspace:^"
   },
   "repository": {

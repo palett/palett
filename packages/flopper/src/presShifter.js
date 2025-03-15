@@ -1,6 +1,6 @@
 import { flop }                from '@aryth/rand'
 import { Munsell }             from '@palett/munsell'
-import { seq }                 from '@vect/vector'
+import { seq }                 from '@vect/vector-init'
 import { LOTONE }              from './asset/LOTONE.js'
 import { MIDTONE }             from './asset/MIDTONE.js'
 import { blendPres, randPres } from './randPres.js'
