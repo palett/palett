@@ -1,5 +1,13 @@
 # @palett/color-algebra
 
+## 0.12.17
+
+### Patch Changes
+
+- fix dependency issue in @palett/projector
+- Updated dependencies
+  - @palett/convert@0.12.17
+
 ## 0.12.16
 
 ### Patch Changes

@@ -1,5 +1,17 @@
 # @palett/fluo-matrix
 
+## 0.12.17
+
+### Patch Changes
+
+- fix dependency issue in @palett/projector
+- Updated dependencies
+  - @palett/fluo-vector@0.12.17
+  - @palett/projector@0.12.17
+  - @palett/fluo@0.12.17
+  - @palett/enum-colorant-modes@0.12.17
+  - @palett/convert@0.12.17
+
 ## 0.12.16
 
 ### Patch Changes

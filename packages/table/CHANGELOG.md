@@ -1,5 +1,18 @@
 # @palett/table
 
+## 0.12.17
+
+### Patch Changes
+
+- fix dependency issue in @palett/projector
+- Updated dependencies
+  - @palett/enum-color-cards@0.12.17
+  - @palett/enum-color-space@0.12.17
+  - @palett/enum-font-effects@0.12.17
+  - @palett/cards@0.12.17
+  - @palett/convert@0.12.17
+  - @palett/dye@0.12.17
+
 ## 0.12.16
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @palett/fluo-vector
 
+## 0.12.17
+
+### Patch Changes
+
+- fix dependency issue in @palett/projector
+- Updated dependencies
+  - @palett/fluo@0.12.17
+
 ## 0.12.16
 
 ### Patch Changes
