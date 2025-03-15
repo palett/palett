@@ -1,28 +1,34 @@
-import { deltaHsi, hexToRgi } from '@palett/convert'
-import { OBJ, STR }           from '@typen/enum-data-types'
-import { Pres }               from './Pres.js'
-import { randPres }           from './randPres.js'
+import { deltaHsi, hexToRgi, hsiToHsl } from '@palett/convert'
+import { OBJ, STR }                     from '@typen/enum-data-types'
+import { Pres }                         from './Pres.js'
+import { randPres }                     from './randPres.js'
 
 export class Presm {
-  /** @type {number}  int color for NaN */ #nan
-  /** @type {number}  x/y/z dimension info in 0b111 */ #dim = 0b000
+  /** @type {number}  int color for NaN */ #na
+  /** @type {number}  x/y/z dimension info in 0b111 */ #dm = 0b000
 
   /**
-   * @param {Pres} xbd - x bound
-   * @param {Pres} ybd - y bound
-   * @param {Pres} zbd - z bound
+   * @param {number} xb  - hsi value for x min
+   * @param {number} xp  - hsi value for x max
+   * @param {number} yb  - hsi value for y min
+   * @param {number} yp  - hsi value for y max
+   * @param {number} zb  - hsi value for z min
+   * @param {number} zp  - hsi value for z max
    * @param {number} nan -  int color for NaN
    */
-  constructor(xbd, ybd, zbd, nan) {
-    if (xbd) { this.xbd = xbd }
-    if (ybd) { this.ybd = ybd }
-    if (zbd) { this.zbd = zbd }
-    if (nan) this.#nan = nan
+  constructor(xb, xp, yb, yp, zb, zp, nan) {
+    this[0] = xb //  xmin
+    this[1] = xp //  xmax
+    this[2] = yb //  ymin
+    this[3] = yp //  ymax
+    this[4] = zb //  zmin
+    this[5] = zp //  zmax
+    this.#na = nan
   }
 
   static build(xbd, ybd, zbd, nan) {
-    nan = nan ?? xbd?.nan ?? ybd?.nan ?? zbd?.nan ?? void 0
-    return new Presm(xbd, ybd, zbd, typeof nan === STR ? hexToRgi(nan) : xbd.nan)
+    nan = typeof nan === STR ? hexToRgi(nan) : (nan ?? xbd?.nan ?? ybd?.nan ?? zbd?.nan ?? undefined)
+    return new Presm(xbd?.min, xbd?.max, ybd?.min, ybd?.max, zbd?.min, zbd?.max, nan)
   }
 
   /**
@@ -44,23 +50,23 @@ export class Presm {
     return null
   }
 
-  get hasX() { return this.#dim >> 0 & 0b1 }
-  get hasY() { return this.#dim >> 1 & 0b1 }
-  get hasZ() { return this.#dim >> 2 & 0b1 }
+  get hasX() { return this.#dm >> 0 & 0b1 }
+  get hasY() { return this.#dm >> 1 & 0b1 }
+  get hasZ() { return this.#dm >> 2 & 0b1 }
   get xbd() { return [ this[0], this[1] ] }
   get ybd() { return [ this[2], this[3] ] }
   get zbd() { return [ this[4], this[5] ] }
   get xdf() { return deltaHsi(this[0], this[1]) }
   get ydf() { return deltaHsi(this[2], this[3]) }
   get zdf() { return deltaHsi(this[4], this[5]) }
-  get nan() { return this.#nan }
-  get dim() { return this.#dim }
+  get nan() { return this.#na }
+  get dim() { return this.#dm }
   get length() { return 18 }
 
-  set xbd(pres) { this.#dim |= 1 << 0, this[0] = pres.min, this[1] = pres.max }
-  set ybd(pres) { this.#dim |= 1 << 1, this[2] = pres.min, this[3] = pres.max }
-  set zbd(pres) { this.#dim |= 1 << 2, this[4] = pres.min, this[5] = pres.max }
-  set nan(int) { this.#nan = int }
+  set xbd(pres) { this.#dm |= 1 << 0, this[0] = pres.min, this[1] = pres.max }
+  set ybd(pres) { this.#dm |= 1 << 1, this[2] = pres.min, this[3] = pres.max }
+  set zbd(pres) { this.#dm |= 1 << 2, this[4] = pres.min, this[5] = pres.max }
+  set nan(int) { this.#na = int }
 
   * itx() {
     const min = this[0]
@@ -94,11 +100,16 @@ export class Presm {
   }
   * [Symbol.iterator]() { for (let i = 0; i < 6; i++) yield this[i] }
 
+  toString() {
+    const xb = hsiToHsl(this[0])
+    const xp = hsiToHsl(this[1])
+    const yb = hsiToHsl(this[2])
+    const yp = hsiToHsl(this[3])
+    const zb = hsiToHsl(this[4])
+    const zp = hsiToHsl(this[5])
+    return `Presm { x [${xb} → ${xp}] y [${yb} → ${yp}] z [${zb} → ${zp}] }`
+  }
   toHex() {
-    return {
-      xbd: this.xbd,
-      ybd: this.ybd,
-      zbd: this.zbd,
-    }
+    return { xbd: this.xbd, ybd: this.ybd, zbd: this.zbd }
   }
 }
