@@ -12,7 +12,7 @@ export const Yellow = {
   accent_1: '#FFFF8D',
   accent_2: '#FFFF00',
   accent_3: '#FFEA00',
-  accent_4: '#FFD600'
+  accent_4: '#FFD600',
 }
 
 

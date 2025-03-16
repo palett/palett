@@ -27,7 +27,7 @@ const { lapse, result } = strategies({
     // arc: x => x,
     // rea: x => x,
     // fut: x => x,
-  }
+  },
 })
 lapse |> decoCrostab |> says['lapse']
 result |> decoCrostab |> says['result']

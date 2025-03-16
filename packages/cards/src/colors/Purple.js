@@ -12,5 +12,5 @@ export const Purple = {
   accent_1: '#EA80FC',
   accent_2: '#E040FB',
   accent_3: '#D500F9',
-  accent_4: '#AA00FF'
+  accent_4: '#AA00FF',
 }

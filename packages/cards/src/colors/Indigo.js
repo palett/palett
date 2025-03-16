@@ -12,5 +12,5 @@ export const Indigo = {
   accent_1: '#8C9EFF',
   accent_2: '#536DFE',
   accent_3: '#3D5AFE',
-  accent_4: '#304FFE'
+  accent_4: '#304FFE',
 }

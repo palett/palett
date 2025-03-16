@@ -12,5 +12,5 @@ export const BlueGrey = {
   accent_1: '#B7C9D1',
   accent_2: '#89A5B3',
   accent_3: '#6A8EA0',
-  accent_4: '#547383'
+  accent_4: '#547383',
 }

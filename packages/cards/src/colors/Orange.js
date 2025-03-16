@@ -12,5 +12,5 @@ export const Orange = {
   accent_1: '#FFD180',
   accent_2: '#FFAB40',
   accent_3: '#FF9100',
-  accent_4: '#FF6D00'
+  accent_4: '#FF6D00',
 }

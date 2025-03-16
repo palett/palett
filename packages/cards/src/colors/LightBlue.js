@@ -12,5 +12,5 @@ export const LightBlue = {
   accent_1: '#80D8FF',
   accent_2: '#40C4FF',
   accent_3: '#00B0FF',
-  accent_4: '#0091EA'
+  accent_4: '#0091EA',
 }

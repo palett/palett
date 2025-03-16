@@ -1,4 +1,4 @@
-import { HEX, RGB }            from '@palett/enum-color-space'
+import { HEX }                 from '@palett/enum-color-space'
 import { decoCrostab, logger } from '@spare/logger'
 import { palettCrostab }       from '../src/palettCrostab'
 

@@ -1,6 +1,6 @@
 import { hslToHex } from '@palett/convert'
-import { Dye }    from '@palett/dye'
-import { xr, Xr } from '@spare/logger'
+import { Dye }      from '@palett/dye'
+import { xr }       from '@spare/logger'
 
 
 export const BlueGreyAccents = {

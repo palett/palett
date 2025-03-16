@@ -6,7 +6,7 @@ import { Preset }  from '../src/Preset'
 const presetCollection = {
   bleu: Preset.build('#2E4DA7', '#9299ff'),
   magenta: Preset.build('#C379E4', '#C6B0D5'),
-  green: Preset.build('#22F0CC', '#DFEF87')
+  green: Preset.build('#22F0CC', '#DFEF87'),
 }
 
 const LEN = 9

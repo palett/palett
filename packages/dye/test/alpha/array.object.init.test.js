@@ -10,9 +10,9 @@ const { lapse, result } = Chrono.strategies({
     bench: x => x,
     ob: x => ({}),
     ar: x => ([]),
-    rgb: x => [255, 255, 255],
-    emb: x => ({ rgb: [255, 255, 255] })
-  }
+    rgb: x => [ 255, 255, 255 ],
+    emb: x => ({ rgb: [ 255, 255, 255 ] }),
+  },
 })
 'lapse' |> console.log
 lapse |> decoCrostab |> says['lapse']

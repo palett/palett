@@ -49,7 +49,7 @@ const { lapse, result } = strategies({
         (bold ? 1 : 0)
       )
     },
-  }
+  },
 })
 
 lapse |> decoCrostab |> says['lapse']

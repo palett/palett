@@ -12,5 +12,5 @@ palettCrostab({
   colors: [ ...ColorGroups.grey, ...ColorGroups.rainbow ],
   average: false,
   cellColor: true,
-  dyed: true
+  dyed: true,
 }) |> decoCrostab|> logger

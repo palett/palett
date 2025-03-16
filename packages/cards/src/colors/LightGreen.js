@@ -12,5 +12,5 @@ export const LightGreen = {
   accent_1: '#CCFF90',
   accent_2: '#B2FF59',
   accent_3: '#76FF03',
-  accent_4: '#64DD17'
+  accent_4: '#64DD17',
 }

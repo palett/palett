@@ -17,7 +17,7 @@ const CANDIDATES = [
   0b100000000,
   0b101010101,
   0b010101010,
-  0b000000101
+  0b000000101,
 ]
 for (let n of CANDIDATES) {
   const body = {}

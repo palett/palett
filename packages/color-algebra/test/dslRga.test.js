@@ -2,9 +2,9 @@ import { hexToRgi, hsiToHsl, rgaToHsi, rgiToHex, rgiToHsl, rgiToRgb } from '@pal
 import { hexToStr, hslToStr, rgbToStr }                               from '@palett/stringify'
 import { $ }                                                          from '@spare/logger'
 import { indexedOf }                                                  from '@vect/object-mapper'
-import { test }   from 'node:test'
-import { dslRga } from '../src/dslRgi.js'
-import { PURE }   from './resources/PURE.js'
+import { test }                                                       from 'node:test'
+import { dslRga }                                                     from '../src/dslRgi.js'
+import { PURE }                                                       from './resources/PURE.js'
 import { ROEM }                                                       from './resources/ROEM.js'
 
 test('dslRga', () => {

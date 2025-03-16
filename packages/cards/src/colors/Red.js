@@ -12,5 +12,5 @@ export const Red = {
   accent_1: '#FF8A80',
   accent_2: '#FF5252',
   accent_3: '#FF1744',
-  accent_4: '#D50000'
+  accent_4: '#D50000',
 }

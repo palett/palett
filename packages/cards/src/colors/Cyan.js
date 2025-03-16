@@ -12,5 +12,5 @@ export const Cyan = {
   accent_1: '#84FFFF',
   accent_2: '#18FFFF',
   accent_3: '#00E5FF',
-  accent_4: '#00B8D4'
+  accent_4: '#00B8D4',
 }

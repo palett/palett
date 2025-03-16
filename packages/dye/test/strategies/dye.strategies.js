@@ -22,7 +22,7 @@ const { lapse, result } = strategies({
     bench: x => x,
     alpha: (c, tx) => hexDyeAlpha.render(c, tx),
     beta: (c, tx) => hexDyeBeta.render(c, tx),
-  }
+  },
 })
 lapse |> decoCrostab |> says['lapse']
 // result |> decoCrostab |> says['result']

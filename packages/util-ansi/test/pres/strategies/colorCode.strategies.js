@@ -36,7 +36,7 @@ const { lapse, result } = strategies({
     //   style = parseStyle(style)
     //   return [ fore << 24 & back, style ]
     // },
-  }
+  },
 })
 lapse |> decoCrostab |> says['lapse']
 result |> decoCrostab |> says['result']

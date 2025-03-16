@@ -1,7 +1,7 @@
 import { hexToInt, hslToInt } from '@palett/convert'
 import {
-  BLI_OFF, BLI_ON, BOL_OFF, BOL_ON, CRO_OFF, CRO_ON, CSI, DIM_OFF, DIM_ON, FORE_DEF, FORE_INI, HID_OFF, HID_ON, INV_OFF, INV_ON, ITA_OFF,
-  ITA_ON, SGR, UND_OFF, UND_ON,
+  BLI_OFF, BLI_ON, BOL_OFF, BOL_ON, CRO_OFF, CRO_ON, CSI, DIM_OFF, DIM_ON, FORE_DEF, FORE_INI, HID_OFF, HID_ON, INV_OFF,
+  INV_ON, ITA_OFF, ITA_ON, SGR, UND_OFF, UND_ON,
 }                             from '@palett/enum-ansi-codes'
 import { SC }                 from '@palett/util-ansi'
 

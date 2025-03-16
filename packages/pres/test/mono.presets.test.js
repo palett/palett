@@ -1,13 +1,13 @@
 import { logger }  from '@spare/logger'
 import { indexed } from '@vect/object-mapper'
 import { test }    from 'node:test'
-import { Pres } from '../src/Pres.js'
-import { demo } from '../src/sequence.js'
+import { Pres }    from '../src/Pres.js'
+import { demo }    from '../src/sequence.js'
 
 const presetCollection = {
   bleu: Pres.build('#2E4DA7', '#9299ff'),
   magenta: Pres.build('#C379E4', '#C6B0D5'),
-  green: Pres.build('#22F0CC', '#DFEF87')
+  green: Pres.build('#22F0CC', '#DFEF87'),
 }
 
 test('mono presets', () => {

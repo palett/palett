@@ -12,5 +12,5 @@ export const DeepOrange = {
   accent_1: '#FF9E80',
   accent_2: '#FF6E40',
   accent_3: '#FF3D00',
-  accent_4: '#DD2C00'
+  accent_4: '#DD2C00',
 }

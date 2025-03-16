@@ -1,6 +1,6 @@
 {
   "name": "@palett/table",
-  "version": "0.12.17",
+  "version": "0.12.19",
   "description": "A color converter",
   "type": "module",
   "exports": "./dist/index.js",
@@ -20,7 +20,7 @@
   "dependencies": {
     "@analys/convert": "^0.7.2",
     "@analyz/crostab": "^0.1.0",
-    "@aryth/math": "^0.7.4",
+    "@aryth/math": "^0.7.5",
     "@ject/oneself": "^0.1.2",
     "@palett/cards": "workspace:^",
     "@palett/convert": "workspace:^",
@@ -28,8 +28,7 @@
     "@palett/enum-color-cards": "workspace:^",
     "@palett/enum-color-space": "workspace:^",
     "@palett/enum-font-effects": "workspace:^",
-    "@spare/string": "^0.16.13",
-    "@spare/translator": "^0.16.13",
+    "@texting/translator": "^0.2.3",
     "@vect/columns-mapper": "^0.8.0",
     "@vect/matrix-mapper": "^0.8.0",
     "@vect/matrix-transpose": "^0.6.13",

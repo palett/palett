@@ -1,11 +1,11 @@
 import {
   AFRO, ARUBA, AZALE, BERING, BISTRO, BLUSH, BRANDY, DECANTE, DUSKY, ENSIGN, KELLY, LILAC, NORSE, PAGODA, PERSIAN, PINE,
-  PRETTY, ROCOCCO, RODD, SANDY, SUMMER, TOBACCO, WINE
+  PRETTY, ROCOCCO, RODD, SANDY, SUMMER, TOBACCO, WINE,
 }                  from '@palett/presets'
 import { logger }  from '@spare/logger'
 import { indexed } from '@vect/object-mapper'
-import { test } from 'node:test'
-import { demo } from '../src/sequence.js'
+import { test }    from 'node:test'
+import { demo }    from '../src/sequence.js'
 
 const Pavtone = {
   RODD: RODD,
@@ -30,7 +30,7 @@ const Pavtone = {
   WINE: WINE,
   ROCOCCO: ROCOCCO,
   PRETTY: PRETTY,
-  BLUSH: BLUSH
+  BLUSH: BLUSH,
 }
 const LEN = 7
 test('preset test', () => {

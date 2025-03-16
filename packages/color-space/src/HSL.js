@@ -13,19 +13,16 @@ export class HSL {
     this.s = s
     this.l = l
   }
+  get theta() { return this.h }
+  get radius() { return this.l }
+  get rgb() { return hslToRgb.call(RGB, this) }
+  get hex() { return hslToHex(this) }
+  get polar() { return new Polar(this.l, this.h) }
   static of(h, s, l) { return new HSL(h, s, l) }
   static from([ h, s, l ]) { return new HSL(h, s, l) }
   static fromHex(rgb) { return hexToHsl.call(HSL, rgb)}
   static fromRgb(rgb) { return rgbToHsl.call(HSL, rgb) }
   static fromPolar(polar, s) { return new HSL(polar.th, s, polar.r) }
-
-  get theta() { return this.h }
-  get radius() { return this.l }
-
-  get rgb() { return hslToRgb.call(RGB, this) }
-  get hex() { return hslToHex(this) }
-  get polar() { return new Polar(this.l, this.h) }
-
   * [Symbol.iterator]() {
     yield this.h
     yield this.s

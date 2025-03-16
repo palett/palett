@@ -12,5 +12,5 @@ export const DeepPurple = {
   accent_1: '#B388FF',
   accent_2: '#7C4DFF',
   accent_3: '#651FFF',
-  accent_4: '#6200EA'
+  accent_4: '#6200EA',
 }

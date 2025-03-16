@@ -21,7 +21,7 @@ export const XTERM = {
   bleu_brillant: [ 92, 92, 255 ],
   magenta_brillant: [ 255, 0, 255 ],
   cyan_brillant: [ 0, 255, 255 ],
-  blanc_brillant: [ 255, 255, 255 ]
+  blanc_brillant: [ 255, 255, 255 ],
 }
 
 const HSL_COLLECTION = mapper(XTERM, rgb => rgbToHsl(rgb))

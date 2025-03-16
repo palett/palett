@@ -67,5 +67,5 @@ export {
   HexDye,
   IntDye,
   RgbDye,
-  DyeFab as DyeFactory
+  DyeFab as DyeFactory,
 }

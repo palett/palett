@@ -138,7 +138,7 @@ function adjust_nexo(rgb, saturationAdjust, lightnessAdjust) {
   return [
     Math.round(Math.min(255, Math.max(0, adjustedR))),
     Math.round(Math.min(255, Math.max(0, adjustedG))),
-    Math.round(Math.min(255, Math.max(0, adjustedB)))
+    Math.round(Math.min(255, Math.max(0, adjustedB))),
   ]
 }
 

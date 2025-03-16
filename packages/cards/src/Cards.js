@@ -42,15 +42,15 @@ export const Cards = {
   deepOrange: DeepOrange,
   brown: Brown,
   blueGrey: BlueGrey,
-  grey: Grey
+  grey: Grey,
 }
 
 Reflect.defineProperty(Cards, 'colors', {
-  get () { return Object.keys(Cards) },
-  enumerable: false
+  get() { return Object.keys(Cards) },
+  enumerable: false,
 })
 Reflect.defineProperty(Cards, 'degrees', {
-  get () { for (let color in Cards) return Object.keys(Cards[color]) },
-  enumerable: false
+  get() { for (let color in Cards) return Object.keys(Cards[color]) },
+  enumerable: false,
 })
 

@@ -13,7 +13,7 @@ for (let i = 0; i < 10; i++) {
     hex: color,
     rgb: hexToRgb(color),
     color: fluo(hexToRgb(color))(color),
-    toned: Dye.rgb(hexToRgb(colorBeta))((colorBeta))
+    toned: Dye.rgb(hexToRgb(colorBeta))((colorBeta)),
   })))
 }
 

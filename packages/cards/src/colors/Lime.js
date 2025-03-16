@@ -12,5 +12,5 @@ export const Lime = {
   accent_1: '#F4FF81',
   accent_2: '#EEFF41',
   accent_3: '#C6FF00',
-  accent_4: '#AEEA00'
+  accent_4: '#AEEA00',
 }

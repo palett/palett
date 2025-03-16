@@ -1,5 +1,5 @@
-import { decoCrostab, says } from '@spare/logger'
 import { makeEmbedded }      from '@foba/util'
+import { decoCrostab, says } from '@spare/logger'
 import { strategies }        from '@valjoux/strategies'
 
 
@@ -8,7 +8,7 @@ const { lapse, result } = strategies({
   candidates: {
     foo: 'foo',
     bar: 'bar',
-    zen: 'zen'
+    zen: 'zen',
   } |> makeEmbedded,
   methods: {
     bench: x => x,
@@ -39,7 +39,7 @@ const { lapse, result } = strategies({
     },
     // arc: x => x,
     // fut: x => x,
-  }
+  },
 })
 lapse |> decoCrostab |> says['lapse']
 result |> decoCrostab |> says['result']

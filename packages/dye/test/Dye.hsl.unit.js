@@ -2,7 +2,7 @@ import { oneself }                      from '@ject/oneself'
 import { hslToHex, hslToInt, hslToRgb } from '@palett/convert'
 import { Dye }                          from '../index.js'
 
-const hsl = [345, 60, 55]
+const hsl = [ 345, 60, 55 ]
 {
   const color = hslToHex(hsl)
   const fn = Dye.hex(color)

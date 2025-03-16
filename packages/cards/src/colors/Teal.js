@@ -12,5 +12,5 @@ export const Teal = {
   accent_1: '#A7FFEB',
   accent_2: '#64FFDA',
   accent_3: '#1DE9B6',
-  accent_4: '#00BFA5'
+  accent_4: '#00BFA5',
 }

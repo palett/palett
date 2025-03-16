@@ -15,8 +15,8 @@ export class Morisot {
   }
   static codeToElements(code) {
     const effect = (code >> 18) & 0x1ff,
-          fore   = (code >> 9) & 0x1ff,
-          back   = (code) & 0x1ff
+      fore = (code >> 9) & 0x1ff,
+      back = (code) & 0x1ff
     return [ effect, fore, back ]
   }
   static sattr(style, fg, bg) {
@@ -45,8 +45,8 @@ export class Morisot {
   // Convert an SGR string to our own attribute format.
   static attrCode(code, cur, def) {
     let effect = (cur >> 18) & 0x1ff,
-        fore   = (cur >> 9) & 0x1ff,
-        back   = (cur) & 0x1ff
+      fore = (cur >> 9) & 0x1ff,
+      back = (cur) & 0x1ff
     code = code.slice(2, -1).split(';')
     if (!code[0]) code[0] = '0'
     for (let i = 0, c; i < code.length; i++) {
@@ -102,20 +102,17 @@ export class Morisot {
             i += 2
             back = +code[i]
             break
-          }
-          else if (c === 48 && +code[i + 1] === 2) {
+          } else if (c === 48 && +code[i + 1] === 2) {
             i += 2
             back = colors.match(+code[i], +code[i + 1], +code[i + 2])
             if (back === -1) back = def & 0x1ff
             i += 2
             break
-          }
-          else if (c === 38 && +code[i + 1] === 5) {
+          } else if (c === 38 && +code[i + 1] === 5) {
             i += 2
             fore = +code[i]
             break
-          }
-          else if (c === 38 && +code[i + 1] === 2) {
+          } else if (c === 38 && +code[i + 1] === 2) {
             i += 2
             fore = colors.match(+code[i], +code[i + 1], +code[i + 2])
             if (fore === -1) fore = (def >> 9) & 0x1ff
@@ -124,25 +121,19 @@ export class Morisot {
           }
           if (c >= 40 && c <= 47) {
             back = c - 40
-          }
-          else if (c >= 100 && c <= 107) {
+          } else if (c >= 100 && c <= 107) {
             back = c - 100
             back += 8
-          }
-          else if (c === 49) {
+          } else if (c === 49) {
             back = def & 0x1ff
-          }
-          else if (c >= 30 && c <= 37) {
+          } else if (c >= 30 && c <= 37) {
             fore = c - 30
-          }
-          else if (c >= 90 && c <= 97) {
+          } else if (c >= 90 && c <= 97) {
             fore = c - 90
             fore += 8
-          }
-          else if (c === 39) {
+          } else if (c === 39) {
             fore = (def >> 9) & 0x1ff
-          }
-          else if (c === 100) {
+          } else if (c === 100) {
             fore = (def >> 9) & 0x1ff
             back = def & 0x1ff
           }
@@ -154,9 +145,9 @@ export class Morisot {
   // Convert our own attribute format to an SGR string.
   static codeAttr(code) {
     const flags = (code >> 18) & 0x1ff
-    let fg  = (code >> 9) & 0x1ff,
-        bg  = code & 0x1ff,
-        out = ''
+    let fg = (code >> 9) & 0x1ff,
+      bg = code & 0x1ff,
+      out = ''
     if (flags & 1) { out += '1;' } // bold
     if (flags & 2) { out += '4;' } // underline
     if (flags & 4) { out += '5;' } // blink
@@ -165,26 +156,22 @@ export class Morisot {
     if (bg !== 0x1ff) {
       bg = Morisot._reduceColor(bg)
       if (bg < 16) {
-        if (bg < 8) { bg += 40 }
-        else if (bg < 16) {
+        if (bg < 8) { bg += 40 } else if (bg < 16) {
           bg -= 8
           bg += 100
         }
         out += bg + ';'
-      }
-      else { out += '48;5;' + bg + ';' }
+      } else { out += '48;5;' + bg + ';' }
     }
     if (fg !== 0x1ff) {
       fg = Morisot._reduceColor(fg)
       if (fg < 16) {
-        if (fg < 8) { fg += 30 }
-        else if (fg < 16) {
+        if (fg < 8) { fg += 30 } else if (fg < 16) {
           fg -= 8
           fg += 90
         }
         out += fg + ';'
-      }
-      else { out += '38;5;' + fg + ';' }
+      } else { out += '38;5;' + fg + ';' }
     }
     if (out[out.length - 1] === ';') out = out.slice(0, -1)
     return CSI + out + SGR

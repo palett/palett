@@ -1,6 +1,6 @@
 import {
   Amber, Blue, BlueGrey, Brown, Cyan, DeepOrange, DeepPurple, Green, Grey, Indigo, LightBlue, LightGreen, Lime, Orange,
-  Pink, Purple, Red, Teal, Yellow
+  Pink, Purple, Red, Teal, Yellow,
 }               from '@palett/cards'
 import { Pres } from '@palett/pres'
 

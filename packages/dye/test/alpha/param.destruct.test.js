@@ -3,8 +3,8 @@ import { Chrono } from 'elprimero'
 const { lapse, result } = Chrono.strategies({
   repeat: 1E+7,
   paramsList: {
-    rgb: [{ rgb: [128, 128, 128] }],
-    hsl: [{ hsl: [128, 55, 55] }],
+    rgb: [ { rgb: [ 128, 128, 128 ] } ],
+    hsl: [ { hsl: [ 128, 55, 55 ] } ],
   },
   funcList: {
     bench: x => x,
@@ -31,7 +31,7 @@ const { lapse, result } = Chrono.strategies({
           return rgb
       }
     },
-  }
+  },
 })
 'lapse' |> console.log
 lapse |> decoCrostab |> says['lapse']

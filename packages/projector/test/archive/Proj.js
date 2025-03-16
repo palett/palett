@@ -1,7 +1,7 @@
-import { oneself }        from '@ject/oneself'
-import { HslDye }         from '@palett/dye'
-import { hexToHsl }       from '@palett/convert'
 import { lim0up, rec0up } from '@aryth/math'
+import { oneself }        from '@ject/oneself'
+import { hexToHsl }       from '@palett/convert'
+import { HslDye }         from '@palett/dye'
 import { lever, minus }   from './triplet.js'
 
 export function scale(x, xLo, lev, yLo) { return x < xLo ? yLo : (x - xLo) * lev + yLo }
@@ -28,7 +28,7 @@ export class Proj {
   static from(bound, preset) {
     if (!bound || !preset) { return new VoidProj() }
     const lo = bound.min,
-          hi = bound.max ?? (bound.min + bound.dif)
+      hi = bound.max ?? (bound.min + bound.dif)
     const { max, min, na, effects } = preset
     return lo === hi
       ? new SoleProj(hexToHsl(min), hexToHsl(na), effects)

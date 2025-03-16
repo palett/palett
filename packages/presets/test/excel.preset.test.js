@@ -1,8 +1,8 @@
 import { indexed } from '@vect/object-mapper'
-import { METRO }   from '../static/material.js'
-import { PAGODA }  from '../static/pavtone.js'
 import { demo }    from '../src/demo.js'
 import { Preset }  from '../src/Preset.js'
+import { METRO }   from '../static/material.js'
+import { PAGODA }  from '../static/pavtone.js'
 
 export const presets = {
   a: Preset.build('#E2A829', '#C5D51D'),

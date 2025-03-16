@@ -12,5 +12,5 @@ export const Amber = {
   accent_1: '#FFE57F',
   accent_2: '#FFD740',
   accent_3: '#FFC400',
-  accent_4: '#FFAB00'
+  accent_4: '#FFAB00',
 }

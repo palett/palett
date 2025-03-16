@@ -12,5 +12,5 @@ export const Green = {
   accent_1: '#B9F6CA',
   accent_2: '#69F0AE',
   accent_3: '#00E676',
-  accent_4: '#00C853'
+  accent_4: '#00C853',
 }

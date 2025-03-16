@@ -14,6 +14,6 @@ export function ucaToPres(uca) {
   return {
     min: hslToInt(ha, sa, la),
     max: hslToInt(hb, sb, lb),
-    nan: rc << 16 | gc << 8 | bc
+    nan: rc << 16 | gc << 8 | bc,
   }
 }

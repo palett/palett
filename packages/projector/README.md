@@ -1,4 +1,5 @@
 ## says
+
 ### A light and simple debug tool.
 
 <p align="center">
@@ -20,6 +21,7 @@ $ npm install says
 ## Usage
 
 ### Simple
+
 ```js
 import { Says } from '@palett/projector'
 import { greys, palette } from 'spettro'
@@ -37,6 +39,7 @@ debug.says('server', '\'Dickens\'')
 ```
 
 ### Factorial with pipeline operator
+
 ```js
 import { Says } from '@palett/projector'
 import { greys, palette } from 'spettro'

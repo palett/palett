@@ -12,5 +12,5 @@ export const Pink = {
   accent_1: '#FF80AB',
   accent_2: '#FF4081',
   accent_3: '#F50057',
-  accent_4: '#C51162'
+  accent_4: '#C51162',
 }

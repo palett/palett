@@ -16,7 +16,7 @@ const vec = [
   256,
   510,
   511,
-  512
+  512,
 ]
 
 test('bitwise operator', () => {

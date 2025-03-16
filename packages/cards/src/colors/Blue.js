@@ -12,5 +12,5 @@ export const Blue = {
   accent_1: '#82B1FF',
   accent_2: '#448AFF',
   accent_3: '#2979FF',
-  accent_4: '#2962FF'
+  accent_4: '#2962FF',
 }

@@ -3,10 +3,10 @@ import { Crostab }            from '@analyz/crostab'
 import { oneself }            from '@ject/oneself'
 import { Cards }              from '@palett/cards'
 import { hexToHsl, hexToRgb } from '@palett/convert'
-import { DyeFactory }    from '@palett/dye'
-import { HEX, HSL, RGB } from '@palett/enum-color-space'
-import { INVERSE }       from '@palett/enum-font-effects'
-import { mapper }        from '@vect/vector-mapper'
+import { DyeFactory }         from '@palett/dye'
+import { HEX, HSL, RGB }      from '@palett/enum-color-space'
+import { INVERSE }            from '@palett/enum-font-effects'
+import { mapper }             from '@vect/vector-mapper'
 import { ColorGroups }        from '../resources/ColorGroups'
 import { Degrees }            from '../resources/Degrees'
 
@@ -23,7 +23,7 @@ export function palettCrostab({
                                 colors = ColorGroups.entire,
                                 dyed = false,
                               } = {}) {
-  const crostab = Crostab.from(samplesToCrostab(Cards, {side: colors, head: degrees})).transpose()
+  const crostab = Crostab.from(samplesToCrostab(Cards, { side: colors, head: degrees })).transpose()
   if (space !== HEX) {
     crostab.mutate(space === RGB ? hexToRgb : space === HSL ? hexToHsl : oneself)
   }

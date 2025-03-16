@@ -1,4 +1,5 @@
 ## @palett/stringify
+
 ### A color converter.
 
 <p align="center">
@@ -8,14 +9,15 @@
 </p>
 
 ## Usage
-    
+
 ### ES6
+
     import { Rgb, Hsl } from '@palett/stringify'
-    
+
 ### CommonJS
 
 ### Browser
-    
+
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)

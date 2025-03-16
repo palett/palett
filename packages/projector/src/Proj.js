@@ -10,10 +10,9 @@ export class Proj {
     initialize.call(this, pres?.attr)
     this.pres = pres
   }
+  get nan() { return this.pres.nan }
   /** @returns {Proj} */
   static from(bound, preset) { return (new Proj(preset)).load(bound.lo, bound.hi) }
-
-  get nan() { return this.pres.nan }
   load(lo, hi) {
     const df = hi - lo, { pres, lev } = this
     const [ hb, sb, lb, hp, sp, lp ] = pres
