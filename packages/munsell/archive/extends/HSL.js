@@ -1,7 +1,7 @@
 import { HSL as RawHSL }      from '@palett/color-space'
 import { hexToHsl, rgbToHsl } from '@palett/convert'
-import { minEntry } from '../../utils/minBy.js'
-import { Cova }     from '../Cova.js'
+import { minEntry }           from '../../utils/minBy.js'
+import { Cova }               from '../Cova.js'
 
 export class HSL extends RawHSL {
   constructor(h, s, l) { super(h, s, l) }

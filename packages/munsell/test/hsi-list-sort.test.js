@@ -1,7 +1,7 @@
 import { hexToHsi, hsiToHsl } from '@palett/convert'
 import { hslToStr }           from '@palett/stringify'
-import { test }    from 'node:test'
-import { UBITONE } from '../resources/UBITONE.js'
+import { test }               from 'node:test'
+import { UBITONE }            from '../resources/UBITONE.js'
 
 function sortHSIs(list) {
   list.sort((a, b) => (a & 0xFF) - (b & 0xFF))

@@ -45,7 +45,7 @@ export class Gradient {
       vector(sz.x, (x) => xv.call(xp, x, null).toFixed(1)),
       vector(sz.y, (y) => yv.call(yp, null, y).toFixed(1)),
       matrix(sz.x, sz.y, (x, y) => HSL.of(hv(x, y), sv(x, y), lv(x, y)).restrict().mutate(roundD1)),
-      'gradient'
+      'gradient',
     )
   }
 }

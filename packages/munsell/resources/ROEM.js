@@ -35,5 +35,5 @@ export const ROEM = {
   '#B85A89': 'Roem 330',
   '#C35076': 'Roem 340',
   '#BC3D52': 'Roem 350',
-  '#C94F4F': 'Roem 360'
+  '#C94F4F': 'Roem 360',
 }

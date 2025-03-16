@@ -42,7 +42,9 @@ export class MunsellEpic {
   static #inds = Array(30)
   static #rev
   static #list
-
+  static get list() {
+    return MunsellEpic.#list ?? MunsellEpic.#init()
+  }
   static #init() {
     const entries = Object.entries(MIDTONE)
     const hi = entries.length, list = Array(hi), rev = {}
@@ -60,11 +62,6 @@ export class MunsellEpic {
     MunsellEpic.#inds[t] = hi
     return MunsellEpic.#list
   }
-
-  static get list() {
-    return MunsellEpic.#list ?? MunsellEpic.#init()
-  }
-
   static entry(hsi) {
     if (!MunsellEpic.#list) MunsellEpic.#init()
     const entry = MunsellEpic.#rev[hsi]

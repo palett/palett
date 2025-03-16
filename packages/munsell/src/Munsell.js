@@ -43,9 +43,10 @@ export class Munsell {
   #list
 
   constructor(ds, dl) {
-    this.#ds = ds ?? 24
-    this.#dl = dl ?? 24
+    this.#ds = ds ?? 9
+    this.#dl = dl ?? 12
   }
+  get list() { return this.#list }
   static build(book, ds, dl) { return (new Munsell(ds, dl)).init(book) }
   init(book) {
     const entries = Object.entries(book)
@@ -64,9 +65,6 @@ export class Munsell {
     this.#inds[t] = hi
     return this
   }
-
-  get list() { return this.#list }
-
   entry(hsi) {
     const entry = this.#rev[hsi]
     return entry ? [ entry.slice(0, 7), entry.slice(8) ] : null
@@ -77,7 +75,7 @@ export class Munsell {
     return entry ? entry.slice(8) : null
   }
 
-  adjacent(hue) {
+  range(hue) {
     const inds = this.#inds
     for (let i = 0, min = 0, mid = 6, max = 12; i < 30; i++) {
       if (min <= hue && hue < mid) return [ inds.at(i - 2), inds.at(i) ]
@@ -91,7 +89,7 @@ export class Munsell {
     const h = hsi >> 16 & 0x1FF, s = hsi >> 8 & 0xFF, l = hsi & 0xFF
     const sb = s - this.#ds, sp = s + this.#ds
     const lb = l - this.#dl, lp = l + this.#dl
-    let [ ib, ip ] = this.adjacent(h) // console.log(ib, ip)
+    let [ ib, ip ] = this.range(h) // console.log(ib, ip)
     let min = this.#MAX, next, delta
     circ.call(this.list, ib, ip, cur => {
       const sc = cur >> 8 & 0xFF, lc = cur & 0xFF

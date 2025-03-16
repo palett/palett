@@ -2,7 +2,8 @@ import { hexToHsi, hexToHsl, hslToHex } from '@palett/convert'
 import { hexToStr, hslToStr }           from '@palett/stringify'
 import { indexedOf }                    from '@vect/object-mapper'
 import { test }                         from 'node:test'
-import { Midtone }                      from '../index.js'
+import { MIDTONE }                      from '../resources/MIDTONE.js'
+import { Munsell }                      from '../src/Munsell.js'
 
 const ROEM = {
   'REDx 000': '#C26060',
@@ -41,7 +42,7 @@ const ROEM = {
   'MRCx 330': '#B85A89',
   'MRDx 340': '#C35076',
   'MREx 350': '#BC3D52',
-  'REDx 360': '#C94F4F'
+  'REDx 360': '#C94F4F',
 }
 
 const CAMP = {
@@ -81,11 +82,12 @@ const CAMP = {
   'MRC 330': '#BF3F7F',
   'MRD 340': '#BF3F6A',
   'MRE 350': '#BF3F54',
-  'RED 360': '#BF3F3F'
+  'RED 360': '#BF3F3F',
 
 }
 
 test('Munsell nearest function test', () => {
+  const Midtone = Munsell.build(MIDTONE)
   for (const [ name, hex ] of indexedOf({ ...ROEM, ...CAMP })) {
     const hsl = hexToHsl(hex)
     const hsi = hexToHsi(hex)

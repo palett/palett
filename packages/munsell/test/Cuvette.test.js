@@ -1,5 +1,5 @@
-import { says }    from '@spare/logger'
-import { time }    from '@valjoux/timestamp-pretty'
+import { says } from '@spare/logger'
+import { time } from '@valjoux/timestamp-pretty'
 import { test } from 'node:test'
 import { Cova } from '../archive/Cova.js'
 

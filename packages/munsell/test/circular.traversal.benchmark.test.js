@@ -124,7 +124,7 @@ test('circular traversal benchmark', () => {
     'Very Peri',       // 2022 | #6667AB
     'Viva Magenta',    // 2023 | #BB2649
     'Peach Fuzz',      // 2024 | #FFBE98
-    'Mocha Mousse'     // 2025 | #A47864
+    'Mocha Mousse',     // 2025 | #A47864
   ]
 
   const TEST_PRIM = 'vec → circular traversal - prim'

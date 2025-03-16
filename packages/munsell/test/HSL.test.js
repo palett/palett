@@ -3,8 +3,8 @@ import { HexDye }             from '@palett/dye'
 import { hexToStr, hslToStr } from '@palett/stringify'
 import { decoObject, says }   from '@spare/logger'
 import { mapper }             from '@vect/object'
-import { test } from 'node:test'
-import { HSL }  from '../archive/extends/HSL.js'
+import { test }               from 'node:test'
+import { HSL }                from '../archive/extends/HSL.js'
 
 export const XTERM = {
   noir: [ 0, 0, 0 ],
@@ -22,7 +22,7 @@ export const XTERM = {
   bleu_brillant: [ 92, 92, 255 ],
   magenta_brillant: [ 255, 0, 255 ],
   cyan_brillant: [ 0, 255, 255 ],
-  blanc_brillant: [ 255, 255, 255 ]
+  blanc_brillant: [ 255, 255, 255 ],
 }
 
 const HSL_COLLECTION = mapper(XTERM, rgbToHsl)

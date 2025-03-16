@@ -1,15 +1,12 @@
-import { indexed }             from '@vect/object'
-import { H, L, S }  from '../resources/attr'
-import { Gradient } from '../archive/Gradient.js'
-import { says }     from '@spare/xr'
-import { DecoCrostab, logger } from '@spare/logger'
-import { Preset }              from '@palett/presets'
-import { Fluo }                from '@palett/fluo'
 import { toneHex }             from '@palett/color-algebra'
-import { indexedTo } from '@vect/object-mapper'
-import { Domain } from '../archive/Domain.js'
-import { HSL }    from '../archive/extends/HSL.js'
-import { RGB }    from '../archive/extends/RGB.js'
+import { Fluo }                from '@palett/fluo'
+import { Preset }              from '@palett/presets'
+import { DecoCrostab, logger } from '@spare/logger'
+import { indexedTo }           from '@vect/object-mapper'
+import { HSL }                 from '../archive/extends/HSL.js'
+import { RGB }                 from '../archive/extends/RGB.js'
+import { Gradient }            from '../archive/Gradient.js'
+import { H, S }                from '../resources/attr'
 
 // XTerm's default colors
 
@@ -55,23 +52,23 @@ export const BRIGHT = {
   white: '#ffffff',
 }
 
-for (let [key, hex, hsl, rgb] of indexedTo(NORMAL, (k, v) => [k, v.toUpperCase(), HSL.fromHex(v), RGB.fromHex(v)])) {
+for (let [ key, hex, hsl, rgb ] of indexedTo(NORMAL, (k, v) => [ k, v.toUpperCase(), HSL.fromHex(v), RGB.fromHex(v) ])) {
   Fluo.hex(`>> '${hex}', // ${key}`, hex) |> console.log
   const crostab = Gradient.crostab({
     preset: Preset.build(toneHex(hex, -15, 12, 18), toneHex(hex, 15, 30, -6)),
     axis: { x: S, y: H },
     size: { x: 4, y: 3 },
-    extend: { top: 2, bottom: 2, left: 2, right: 2 }
+    extend: { top: 2, bottom: 2, left: 2, right: 2 },
   })
-  const decoCrostab = DecoCrostab({ read: ([hex, name]) => Fluo.hex(`'${hex}', // ${name}`, hex), presets: [] })
+  const decoCrostab = DecoCrostab({ read: ([ hex, name ]) => Fluo.hex(`'${hex}', // ${name}`, hex), presets: [] })
   crostab.map(x => x.nearest()) |> decoCrostab |> console.log
 
   '>> HSL approximates' |> console.log
-  for (let [hex, name] of hsl.approximates({ h: 24, s: 5, l: 12 })) {
+  for (let [ hex, name ] of hsl.approximates({ h: 24, s: 5, l: 12 })) {
     Fluo.hex(`'${hex}', // ${name}`, hex) |> console.log
   }
   '>> RGB approximates' |> console.log
-  for (let [hex, name] of rgb.approximates({ r: 12, g: 12, b: 24 })) {
+  for (let [ hex, name ] of rgb.approximates({ r: 12, g: 12, b: 24 })) {
     Fluo.hex(`'${hex}', // ${name}`, hex) |> console.log
   }
   '' |> logger
@@ -80,8 +77,8 @@ for (let [key, hex, hsl, rgb] of indexedTo(NORMAL, (k, v) => [k, v.toUpperCase()
 
 export const NORMAL2 = {
   black: '#2B2929', // Meteorite
-  red:  '#E04951', // Cayenne
-  green:  '#A5EE6F',
+  red: '#E04951', // Cayenne
+  green: '#A5EE6F',
   yellow: '#FFCF73', // Banana Cream
   blue: '#7079F7', //
   magenta: '#C379E4', //
@@ -91,13 +88,13 @@ export const NORMAL2 = {
 
 export const BRIGHT2 = {
   black: '#6A6A6A', // Charcoal Gray
-  red:  '#CA848A', // Brandied Apricot
+  red: '#CA848A', // Brandied Apricot
   green: '#AFCB80', // Sap Green
   yellow: '#F0DD9D', // Mellow Yellow
   blue: '#96B3D2', // Powder Blue
   magenta: '#D2ADD5', // Orchid Bouquet
   cyan: '#95DEE3', // Island Paradise
-  white: '#e5e5e5'//
+  white: '#e5e5e5',//
 }
 
 

@@ -1999,5 +1999,5 @@ export const MIDTONE = {
   '#DCD67E': 'P 166-12 C',
   '#D8D16C': 'P 166-13 C',
   '#D5CE58': 'P 166-14 C',
-  '#CEC73A': 'P 166-15 C'
+  '#CEC73A': 'P 166-15 C',
 }

@@ -6,9 +6,9 @@ import * as conv             from '@palett/convert'
 import { hexToHsi }          from '@palett/convert'
 import { iterate }           from '@vect/vector-mapper'
 import { test }              from 'node:test'
-import { Midtone, rhodonea } from '../index.js'
 import { Cova }              from '../archive/Cova.js'
 import { HSL }               from '../archive/extends/HSL.js'
+import { Midtone, rhodonea } from '../index.js'
 
 const { PI, pow, abs, round } = Math
 
@@ -18,8 +18,8 @@ export function rhodoneaArch(
     petals,
     density = 0.01,
     minL = 0,
-    devS = 18
-  }
+    devS = 18,
+  },
 ) {
   const polarMark = hsl.toPolar()
   const hexToHsl = Cova.hexToHsl.slice() // create shallow copy
@@ -79,7 +79,7 @@ test('flopper benchmark', () => {
     '#3AB0A2': 'Waterfall',
     '#AAAAC4': 'Cosmic Sky',
     '#ECB2B3': 'Powder Pink',
-    '#D75C5D': 'Spiced Coral'
+    '#D75C5D': 'Spiced Coral',
   }
 
   const hex = '#8FB68F'
@@ -94,7 +94,7 @@ test('flopper benchmark', () => {
     density: 0.01,
     minL: 48,
     devS: 18,
-    munsell: Midtone
+    munsell: Midtone,
   }
 
   const rhodoneaFuse = rhodonea.bind(conf)

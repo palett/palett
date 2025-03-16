@@ -2,8 +2,8 @@ import { hexToRgb }           from '@palett/convert'
 import { HexDye }             from '@palett/dye'
 import { Fluo }               from '@palett/fluo'
 import { hexToStr, rgbToStr } from '@palett/stringify'
-import { DecoObject, says } from '@spare/logger'
-import { RGB }              from '../archive/extends/RGB.js'
+import { DecoObject, says }   from '@spare/logger'
+import { RGB }                from '../archive/extends/RGB.js'
 
 export const XTERM = {
   noir: [ 0, 0, 0 ],
@@ -21,7 +21,7 @@ export const XTERM = {
   bleu_brillant: [ 92, 92, 255 ],
   magenta_brillant: [ 255, 0, 255 ],
   cyan_brillant: [ 0, 255, 255 ],
-  blanc_brillant: [ 255, 255, 255 ]
+  blanc_brillant: [ 255, 255, 255 ],
 }
 
 const RGB_COLLECTION = XTERM

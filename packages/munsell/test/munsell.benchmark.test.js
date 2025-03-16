@@ -2,9 +2,9 @@ import { hexToHsi, hexToHsl, hsiToHex } from '@palett/convert'
 import { dhex }                         from '@palett/dye'
 import { hexToStr, hslToStr }           from '@palett/stringify'
 import { mapEntry }                     from '@vect/object-mapper'
-import { test }    from 'node:test'
-import { UBITONE } from '../resources/UBITONE.js'
-import { Munsell } from '../src/Munsell.js'
+import { test }                         from 'node:test'
+import { UBITONE }                      from '../resources/UBITONE.js'
+import { Munsell }                      from '../src/Munsell.js'
 import { deltaHsi }                     from '../src/utils/color-utils.js'
 
 
@@ -67,14 +67,14 @@ test('hInterval', () => {
     '#3AB0A2': 'Waterfall',
     '#AAAAC4': 'Cosmic Sky',
     '#ECB2B3': 'Powder Pink',
-    '#D75C5D': 'Spiced Coral'
+    '#D75C5D': 'Spiced Coral',
   }
   for (let hex in candidates) {
     const hsi = hexToHsi(hex)
     const h = (hsi >> 16 & 0x1FF)
     console.log(hexToStr(hex), hslToStr(hexToHsl(hex)), dhex.call(hex, candidates[hex]))
     Munsell.list
-    console.log(Munsell.adjacent(h))
+    console.log(Munsell.range(h))
   }
 })
 

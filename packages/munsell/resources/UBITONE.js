@@ -2312,5 +2312,5 @@ export const UBITONE = {
   '#F4C3C4': 'Strawberry Cream',
   '#884344': 'Cowhide',
   '#D01C1F': 'Fiery Red',
-  '#D75C5D': 'Spiced Coral'
+  '#D75C5D': 'Spiced Coral',
 }

@@ -5,8 +5,8 @@ import { demo, Preset }        from '@palett/presets'
 import { hslToStr }            from '@palett/stringify'
 import { DecoCrostab, logger } from '@spare/logger'
 import { says }                from '@spare/xr'
-import { H, L, S }  from '../resources/attr.js'
-import { Gradient } from '../archive/Gradient.js'
+import { Gradient }            from '../archive/Gradient.js'
+import { H, L }                from '../resources/attr.js'
 
 const a = Preset.build('#E46C9A', '#6ED1B4') // Azalea Opal
 const b = Preset.build('#B284BE', '#C6E67A') // African Violet - Sharp Green
@@ -17,7 +17,7 @@ const conf = {
   preset: a, //Preset.build(MIN, MAX),
   axis: { x: L, y: H },
   size: { x: 4, y: 5 },
-  extend: { top: 4, bottom: 2, left: 2, right: 2 }
+  extend: { top: 4, bottom: 2, left: 2, right: 2 },
 }
 
 const crostabOriginal = Gradient.crostab({ preset: conf.preset, axis: conf.axis, size: conf.size })
