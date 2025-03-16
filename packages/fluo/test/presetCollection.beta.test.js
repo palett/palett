@@ -1,10 +1,10 @@
 import { BOLD }                 from '@palett/enum-font-effects'
 import { ATLAS, FRESH, PLANET } from '@palett/presets'
 import { deco }                 from '@spare/deco'
-import { logger }           from '@spare/logger'
-import { PresetCollection } from '../archive/PresetCollection.js'
+import { logger }               from '@spare/logger'
+import { PresetCollection }     from '../archive/PresetCollection.js'
 
-const presets = new PresetCollection([ATLAS])
+const presets = new PresetCollection([ ATLAS ])
 
 presets |> JSON.stringify |> logger
 

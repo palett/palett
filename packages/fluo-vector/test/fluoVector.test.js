@@ -14,8 +14,8 @@ test('fluoVector', () => {
       [
         Object.assign({}, FRESH, { effects: [ BOLD, ITALIC, UNDERLINE ] }),
         Object.assign({}, METRO, { effects: [ BOLD, ITALIC, UNDERLINE ] }),
-        Object.assign({}, PLANET, { effects: [ BOLD, ITALIC, UNDERLINE ] })
-      ]
+        Object.assign({}, PLANET, { effects: [ BOLD, ITALIC, UNDERLINE ] }),
+      ],
       // [
       //   { preset: FRESH, by: isNumeric, to: oneself },
       //   { preset: PLANET, by: isLiteral, to: stringValue }

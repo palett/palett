@@ -13,18 +13,18 @@ const SimpleMatrices = simpleMatrixCollection({ h: 6, w: 12 })
 SimpleMatrices.alphabetical = init(4, 7, (x, y) => String.fromCharCode(63 + (x * 7) + y))
 
 SimpleMatrices.another = [
-  [1, 2, 3],
-  ['a', 'b', 'c']
+  [ 1, 2, 3 ],
+  [ 'a', 'b', 'c' ],
 ]
 
 const environment = { colorant: RENDER }
 'fluoMatrix' |> logger
-for (const [key, matrix] of Object.entries(SimpleMatrices)) {
+for (const [ key, matrix ] of Object.entries(SimpleMatrices)) {
   fluoMatrix.call(
     environment,
     matrix,
     POINTWISE,
-    PresetCollection.build(FRESH).assignEffect(BOLD)
+    PresetCollection.build(FRESH).assignEffect(BOLD),
   )
     |> decoPale |> logger
   // |> decoMatrix |> says[key]O
@@ -32,12 +32,12 @@ for (const [key, matrix] of Object.entries(SimpleMatrices)) {
 }
 
 'fluoRows' |> logger
-for (const [key, matrix] of Object.entries(SimpleMatrices)) {
+for (const [ key, matrix ] of Object.entries(SimpleMatrices)) {
   fluoMatrix.call(
     environment,
     matrix,
     ROWWISE,
-    PresetCollection.build(METRO).assignEffect(ITALIC)
+    PresetCollection.build(METRO).assignEffect(ITALIC),
   )
     |> decoPale |> logger
   // |> decoMatrix |> says[key]
@@ -45,12 +45,12 @@ for (const [key, matrix] of Object.entries(SimpleMatrices)) {
 }
 
 'fluoColumns' |> logger
-for (const [key, matrix] of Object.entries(SimpleMatrices)) {
+for (const [ key, matrix ] of Object.entries(SimpleMatrices)) {
   fluoMatrix.call(
     environment,
     matrix,
     COLUMNWISE,
-    PresetCollection.build(LAVA).assignEffect(UNDERLINE)
+    PresetCollection.build(LAVA).assignEffect(UNDERLINE),
   )
     |> decoPale |> logger
   // |> decoMatrix |> says[key]

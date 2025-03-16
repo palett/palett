@@ -23,12 +23,12 @@ const configY = { by: isString, to: stringValue, preset: PLANET }
  */
 export const fluoVecEdge = function (vec,
                                      x = configX,
-                                     y = configY
+                                     y = configY,
 ) {
   if (!vec?.length) return ''
   const { colorant = false, mutate = false } = this ?? {}
-  const [bvX, bvY] = this?.values ?? duobound(vec, x, y)
-  const [dyeX, dyeY] = [bvX && Projector(bvX, presetToLeap(x.preset)), bvY && Projector(bvY, presetToLeap(y.preset))]
+  const [ bvX, bvY ] = this?.values ?? duobound(vec, x, y)
+  const [ dyeX, dyeY ] = [ bvX && Projector(bvX, presetToLeap(x.preset)), bvY && Projector(bvY, presetToLeap(y.preset)) ]
   const mapper = mutate ? mutateFunc : mapperFunc
   return colorant
     ? mapper(vec, Colorant({ vec: bvX, dye: dyeX }, { vec: bvY, dye: dyeY }, x.preset |> presetToFlat))

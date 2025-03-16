@@ -5,8 +5,7 @@ const LIT = new RegExp(LITERAL)
 export function isLiteral(x) {
   if (typeof x === STR) {
     return LITERAL.test(x)
-  }
-  else {
+  } else {
 
   }
 }

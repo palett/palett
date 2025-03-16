@@ -17,7 +17,7 @@ const { lapse, result } = strategies({
     cla: fluoVector,
     fut: fluoVecFut,
     edge: fluoVecEdge,
-  }
+  },
 })
 lapse |> deco |> says['lapse']
 result |> deco |> says['result']

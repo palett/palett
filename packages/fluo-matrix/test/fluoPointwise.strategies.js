@@ -15,13 +15,13 @@ const test = () => {
     candidates: {
       marketingMovement: StringMatrixCollection['marketingMovement'],
       integratedCultureFramework: StringMatrixCollection['integratedCultureFramework'],
-      zigZagMatrix: NumberMatrixCollection['zigZagMatrix'](6)
+      zigZagMatrix: NumberMatrixCollection['zigZagMatrix'](6),
     } |> makeEmbedded,
     methods: {
       arch: x => x,
-      dev: x => fluoByPoints(x, [{ preset: METRO }, { preset: FRESH }]),
-      edge: x => fluoByPoints(mapper(x, v => String(v).trim()), [{ preset: METRO }, { preset: FRESH }]),
-    }
+      dev: x => fluoByPoints(x, [ { preset: METRO }, { preset: FRESH } ]),
+      edge: x => fluoByPoints(mapper(x, v => String(v).trim()), [ { preset: METRO }, { preset: FRESH } ]),
+    },
   })
   lapse |> decoCrostab |> says['lapse'].p(dateTime())
   '' |> logger

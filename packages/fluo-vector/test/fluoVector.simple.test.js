@@ -12,6 +12,6 @@ test('fluoVector simple', () => {
   logger(fluoVector.call(
     RENDER,
     vector,
-    PresetCollection.build(FRESH).assignEffect(BOLD, ITALIC)
+    PresetCollection.build(FRESH).assignEffect(BOLD, ITALIC),
   ))
 })

@@ -8,7 +8,7 @@ import { fluoMatrix }                     from '../src/fluoMatrix'
 
 const matrix = [
   [ 1, 2, 3 ],
-  [ 'a', 'b', 'c' ]
+  [ 'a', 'b', 'c' ],
 ]
 
 const env = { colorant: RENDER }
@@ -18,7 +18,7 @@ fluoMatrix.call(
   env,
   matrix,
   POINTWISE,
-  PresetCollection.build(FRESH).assignEffect(BOLD)
+  PresetCollection.build(FRESH).assignEffect(BOLD),
 )
   |> decoPale |> logger
 // |> decoMatrix |> says[key]O
@@ -31,7 +31,7 @@ fluoMatrix.call(
   env,
   matrix,
   ROWWISE,
-  PresetCollection.build(METRO).assignEffect(ITALIC)
+  PresetCollection.build(METRO).assignEffect(ITALIC),
 )
   |> decoPale |> logger
 // |> decoMatrix |> says[key]
@@ -43,7 +43,7 @@ fluoMatrix.call(
   env,
   matrix,
   COLUMNWISE,
-  PresetCollection.build(LAVA).assignEffect(UNDERLINE)
+  PresetCollection.build(LAVA).assignEffect(UNDERLINE),
 )
   |> decoPale |> logger
 // |> decoMatrix |> says[key]

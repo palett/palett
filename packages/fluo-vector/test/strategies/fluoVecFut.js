@@ -20,14 +20,14 @@ const oneself = x => x
  * @param {PalettProjectConfig} y
  */
 export const fluoVecFut = function (vec,
-  x = { by: isNumeric, to: oneself, preset: FRESH },
-  y = { by: isString, to: stringValue, preset: PLANET }) {
+                                    x = { by: isNumeric, to: oneself, preset: FRESH },
+                                    y = { by: isString, to: stringValue, preset: PLANET }) {
   if (!vec?.length) return ''
   const
     config = Object.assign(this ?? {}, { dye: x.preset |> presetToFlat }),
     { colorant } = config
-  const [bvX, bvY] = this?.values ?? duobound(vec, x, y)
-  const [dyeX, dyeY] = [bvX && Projector(bvX, presetToLeap(x.preset)), bvY && Projector(bvY, presetToLeap(y.preset))]
+  const [ bvX, bvY ] = this?.values ?? duobound(vec, x, y)
+  const [ dyeX, dyeY ] = [ bvX && Projector(bvX, presetToLeap(x.preset)), bvY && Projector(bvY, presetToLeap(y.preset)) ]
   if (colorant) {
     if (dyeX && dyeY) return Duozipper(DuoDyer.call(config, dyeX, dyeY))(vec, bvX, bvY)
     if (dyeX) return mapper(bvX, SoleDyer.call(config, dyeX))

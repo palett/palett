@@ -1,5 +1,5 @@
-import { intoPres } from '@palett/fluo'
-import { Node }     from '@spare/node'
+import { serialVector } from '@spare/serial'
+
 // export function fluoVector(vec, pres) {
 //   if (!vec?.length) return []
 //   if (!pres) return vec
@@ -7,9 +7,8 @@ import { Node }     from '@spare/node'
 //   return (new Fluo(pres)).project(vec, wd, this?.mode, this?.mutate)
 // }
 
-export function fluoVector(vec, pres) {
-  if (!vec?.length) return []
-  if (!pres) return vec
-  const node = (new Node({}, intoPres(pres)))
-  return node.flatVector(vec)
+export function fluoVector(vec, presm) {
+  presm = presm ?? this
+  if (!vec?.length || !presm) return vec
+  return serialVector.call(presm, vec)
 }

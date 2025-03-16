@@ -7,27 +7,27 @@ import { fluoMatrix }          from '../src/fluoMatrix'
 
 const candidates = {
   matrix: [
-    ['De sterrennacht', '１８９０', '文森特·梵高',],
-    ['Sunday Afternoon on the Island of la Grande Jatte', '１８８６', '乔治·修拉'],
-    ['Garçon à la pipe', '１９０５', 'Pablo Picasso'],
-    ['Les Joueurs de cartes', '１８９０', '保罗·塞尚'],
+    [ 'De sterrennacht', '１８９０', '文森特·梵高' ],
+    [ 'Sunday Afternoon on the Island of la Grande Jatte', '１８８６', '乔治·修拉' ],
+    [ 'Garçon à la pipe', '１９０５', 'Pablo Picasso' ],
+    [ 'Les Joueurs de cartes', '１８９０', '保罗·塞尚' ],
   ],
   simple: [
     // ['a', 'b', 'c'],
-    ['ａ', 'ｂ', 'ｃ'],
-    ['Ａ', 'Ｂ', 'Ｃ'],
-  ]
+    [ 'ａ', 'ｂ', 'ｃ' ],
+    [ 'Ａ', 'Ｂ', 'Ｃ' ],
+  ],
 }
 
-for (let [k, matrix] of Object.entries(candidates)) {
+for (let [ k, matrix ] of Object.entries(candidates)) {
   k |> logger
   matrix |> DecoMatrix({ presets: [], full: true }) |> logger
 
   duobound(matrix,
     [
       Object.assign({}, FRESH, { by: isNumeric, to: parseNum }),
-      PLANET
-    ]
+      PLANET,
+    ],
   ) |> DecoMatrix({ presets: [], full: true }) |> logger
 
   fluoMatrix(matrix, {
@@ -35,8 +35,8 @@ for (let [k, matrix] of Object.entries(candidates)) {
     presets:
       [
         Object.assign({}, FRESH, { by: isNumeric, to: parseNum }),
-        PLANET
-      ]
+        PLANET,
+      ],
   }) |> DecoMatrix({ presets: [], full: true }) |> logger
 
 }

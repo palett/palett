@@ -5,5 +5,5 @@ export const candidates = {
   vector: simpleVectorCollection({ h: 8 }),
   alphas: [ 'A', 'B', 'C', 'x', 'y', 'z', ' ', '1', 2, 3 ],
   mirror: VectorCollection.absoluteMirror(),
-  sole: [ '^1', '^1' ]
+  sole: [ '^1', '^1' ],
 }

@@ -14,27 +14,27 @@ const SimpleMatrices = simpleMatrixCollection({ h: 6, w: 12 })
 SimpleMatrices.alphabetical = init(4, 7, (x, y) => String.fromCharCode(63 + (x * 7) + y))
 
 SimpleMatrices.another = [
-  [1, 2, 3],
-  ['a', 'b', 'c']
+  [ 1, 2, 3 ],
+  [ 'a', 'b', 'c' ],
 ]
 
 const CONTEXT = { colorant: RENDER }
 'fluoMatrix' |> console.log
-for (const [key, mx] of indexed(SimpleMatrices)) {
+for (const [ key, mx ] of indexed(SimpleMatrices)) {
   const presets = PresetCollection.build(FRESH).assignEffect(BOLD)
   fluoMatrix.call(CONTEXT, mx, POINTWISE, presets) |> console.log
   '' |> console.log
 }
 
 'fluoRows' |> console.log
-for (const [key, mx] of indexed(SimpleMatrices)) {
+for (const [ key, mx ] of indexed(SimpleMatrices)) {
   const presets = PresetCollection.build(METRO).assignEffect(ITALIC)
   fluoMatrix.call(CONTEXT, mx, ROWWISE, presets) |> console.log
   '' |> console.log
 }
 
 'fluoColumns' |> console.log
-for (const [key, mx] of indexed(SimpleMatrices)) {
+for (const [ key, mx ] of indexed(SimpleMatrices)) {
   const presets = PresetCollection.build(LAVA).assignEffect(UNDERLINE)
   fluoMatrix.call(CONTEXT, mx, COLUMNWISE, presets) |> console.log
   '' |> console.log

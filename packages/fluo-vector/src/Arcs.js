@@ -9,6 +9,12 @@ export class Arcs extends Array {
   wd = 0
   ts = 0
   constructor(hi) { super(hi) }
+  get hasNum() { return (this.ts >> 1) & 1}
+  set hasNum(value) { this.ts |= value << 1 }
+  get hasStr() { return (this.ts >> 0) & 1}
+  set hasStr(value) { this.ts |= value << 0 }
+  get hasPos() { return this.pos.hi > 0 }
+  get hasNeg() { return this.neg.lo < 0 }
   static from(vec) { return (new Arcs(vec.length)).overwrite(vec) }
   etchNum(x, i) {
     this.hasNum = true // this.ts |= 1 << 1
@@ -21,28 +27,16 @@ export class Arcs extends Array {
       this.hasStr = true // this.ts |= 1 << 0
       if (x.length > this.wd) this.wd = x.length
       return this[i] = x
-    }
-    else {
+    } else {
       return this.etchNum(n, i)
     }
   }
-
-  set hasNum(value) { this.ts |= value << 1 }
-  set hasStr(value) { this.ts |= value << 0 }
-
-  get hasNum() { return (this.ts >> 1) & 1}
-  get hasStr() { return (this.ts >> 0) & 1}
-  get hasPos() { return this.pos.hi > 0 }
-  get hasNeg() { return this.neg.lo < 0 }
-
   type(ind) { return (this[ind] >> 24) & 7 }
   overwrite(vec) {
     const size = vec.length, { pos, neg, str } = this
     for (let i = 0, x; i < size; i++) {
       x = vec[i]
-      if (x === undefined || x === null) { this.etchNum(NaN, i) }
-      else if (typeof x === NUM) { this.etchNum(x, i) }
-      else if (typeof x === STR) { this.etchStr(x, i) }
+      if (x === undefined || x === null) { this.etchNum(NaN, i) } else if (typeof x === NUM) { this.etchNum(x, i) } else if (typeof x === STR) { this.etchStr(x, i) }
     }
     for (let i = 0, x; i < size; i++) {
       x = this[i]

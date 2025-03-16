@@ -11,7 +11,7 @@ SimpleMatrices.alphabetical = init(4, 7, (x, y) => String.fromCharCode(63 + (x *
 
 SimpleMatrices.another = [
   [ 1, 2, 3 ],
-  [ 'a', 'b', 'c' ]
+  [ 'a', 'b', 'c' ],
 ]
 
 'fluoMatrix' |> logger
@@ -19,7 +19,7 @@ for (const [ key, matrix ] of Object.entries(SimpleMatrices)) {
   fluoMatrix.call({ colorant: false }, matrix, {
     direct: POINTWISE,
     presets: [ FRESH ],
-    effects: [ BOLD ]
+    effects: [ BOLD ],
   }) |> decoMatrix |> says[key]
   '' |> logger
 }
@@ -29,8 +29,8 @@ for (const [ key, matrix ] of Object.entries(SimpleMatrices)) {
   fluoMatrix.call({ colorant: false }, matrix, {
       direct: ROWWISE,
       presets: [ METRO ],
-      effects: [ ITALIC ]
-    }
+      effects: [ ITALIC ],
+    },
   ) |> decoMatrix |> says[key]
   '' |> logger
 }
@@ -40,8 +40,8 @@ for (const [ key, matrix ] of Object.entries(SimpleMatrices)) {
   fluoMatrix.call({ colorant: false }, matrix, {
       direct: COLUMNWISE,
       presets: [ LAVA ],
-      effects: [ UNDERLINE ]
-    }
+      effects: [ UNDERLINE ],
+    },
   ) |> decoMatrix |> says[key]
   '' |> logger
 }
