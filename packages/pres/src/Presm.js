@@ -1,11 +1,11 @@
 import { deltaHsi, hexToRgi, hsiToHsl } from '@palett/convert'
-import { OBJ, STR }                     from '@typen/enum-data-types'
+import { NUM, OBJ, STR }                from '@typen/enum-data-types'
 import { Pres }                         from './Pres.js'
 import { randPres }                     from './randPres.js'
 
 export class Presm {
-  /** @type {number}  int color for NaN */ #na
-  /** @type {number}  x/y/z dimension info in 0b111 */ #dm = 0b000
+  /** @type {number}  (rgb) int color for NaN  */ #na
+  /** @type {number}  x/y/z dimension in 0b111 */ #dm = 0b000
 
   /**
    * @param {number} xb  - hsi value for x min
@@ -17,20 +17,32 @@ export class Presm {
    * @param {number} nan -  int color for NaN
    */
   constructor(xb, xp, yb, yp, zb, zp, nan) {
-    this[0] = xb //  xmin
-    this[1] = xp //  xmax
-    this[2] = yb //  ymin
-    this[3] = yp //  ymax
-    this[4] = zb //  zmin
-    this[5] = zp //  zmax
-    this.#na = nan
+    if (typeof xb === NUM && typeof xp === NUM) { this.#dm |= 1 << 0, this[0] = xb, this[1] = xp }
+    if (typeof yb === NUM && typeof yp === NUM) { this.#dm |= 1 << 1, this[2] = yb, this[3] = yp }
+    if (typeof zb === NUM && typeof zp === NUM) { this.#dm |= 1 << 2, this[4] = zb, this[5] = zp }
+    if (typeof nan === NUM) this.#na = nan
   }
-
+  get hasX() { return this.#dm >> 0 & 0b1 }
+  get hasY() { return this.#dm >> 1 & 0b1 }
+  get hasZ() { return this.#dm >> 2 & 0b1 }
+  get xbd() { return [ this[0], this[1] ] }
+  set xbd(pres) { this.#dm |= 1 << 0, this[0] = pres.min, this[1] = pres.max }
+  get ybd() { return [ this[2], this[3] ] }
+  set ybd(pres) { this.#dm |= 1 << 1, this[2] = pres.min, this[3] = pres.max }
+  get zbd() { return [ this[4], this[5] ] }
+  set zbd(pres) { this.#dm |= 1 << 2, this[4] = pres.min, this[5] = pres.max }
+  get xdf() { return deltaHsi(this[0], this[1]) }
+  get ydf() { return deltaHsi(this[2], this[3]) }
+  get zdf() { return deltaHsi(this[4], this[5]) }
+  get nan() { return this.#na }
+  set nan(int) { this.#na = int }
+  get dim() { return this.#dm }
+  set dim(dmv) { this.#dm = dmv }
+  get length() { return 18 }
   static build(xbd, ybd, zbd, nan) {
     nan = typeof nan === STR ? hexToRgi(nan) : (nan ?? xbd?.nan ?? ybd?.nan ?? zbd?.nan ?? undefined)
     return new Presm(xbd?.min, xbd?.max, ybd?.min, ybd?.max, zbd?.min, zbd?.max, nan)
   }
-
   /**
    * Parses a configuration object or string to create a Presm instance.
    *
@@ -49,25 +61,6 @@ export class Presm {
     }
     return null
   }
-
-  get hasX() { return this.#dm >> 0 & 0b1 }
-  get hasY() { return this.#dm >> 1 & 0b1 }
-  get hasZ() { return this.#dm >> 2 & 0b1 }
-  get xbd() { return [ this[0], this[1] ] }
-  get ybd() { return [ this[2], this[3] ] }
-  get zbd() { return [ this[4], this[5] ] }
-  get xdf() { return deltaHsi(this[0], this[1]) }
-  get ydf() { return deltaHsi(this[2], this[3]) }
-  get zdf() { return deltaHsi(this[4], this[5]) }
-  get nan() { return this.#na }
-  get dim() { return this.#dm }
-  get length() { return 18 }
-
-  set xbd(pres) { this.#dm |= 1 << 0, this[0] = pres.min, this[1] = pres.max }
-  set ybd(pres) { this.#dm |= 1 << 1, this[2] = pres.min, this[3] = pres.max }
-  set zbd(pres) { this.#dm |= 1 << 2, this[4] = pres.min, this[5] = pres.max }
-  set nan(int) { this.#na = int }
-
   * itx() {
     const min = this[0]
     yield min >> 16 & 0x1FF
