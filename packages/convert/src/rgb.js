@@ -1,5 +1,5 @@
-import { hexToRgi } from './rgi.js'
-import { centFF }   from './util/number-utils.js'
+import { hexToRgi, hsiToRgi } from './rgi.js'
+import { centFF }             from './util/number-utils.js'
 
 /** @typedef {[number,number,number]} RGB */
 
@@ -16,6 +16,10 @@ export function hexToRgb(hex) {
 export function rgiToRgb(int) {
   const of = this?.of ?? Array.of
   return of(int >> 16 & 0xFF, int >> 8 & 0xFF, int & 0xFF)
+}
+
+export function hsiToRgb(hsi) {
+  return rgiToRgb(hsiToRgi(hsi))
 }
 
 /** @returns {RGB} */

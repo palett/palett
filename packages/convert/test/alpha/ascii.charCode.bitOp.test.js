@@ -8,7 +8,7 @@ export const UPPERS = range(65, 90)
 export const LOWERS = range(97, 122)
 export const WORDS = [ ...DECIMALS, ...UPPERS, ...LOWERS ]
 export const ASCII_COLLECTION = Object.fromEntries(
-  range(32, 127).map(n => ( [ n, String.fromCharCode(n) ] ))
+  range(32, 127).map(n => ([ n, String.fromCharCode(n) ])),
 )
 
 for (const [ code, char ] of Object.entries(ASCII_COLLECTION)) {

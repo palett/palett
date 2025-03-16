@@ -1,7 +1,7 @@
 import { makeEmbedded }       from '@foba/util'
-import { hslToRgb, rgbToHsl } from '../../index.js'
 import { intToStr, rgbToStr } from '@palett/stringify'
 import { strategies }         from '@valjoux/strategies'
+import { hslToRgb, rgbToHsl } from '../../index.js'
 import { Beta }               from './beta.js'
 import { Gamma }              from './gamma.js'
 
@@ -27,7 +27,7 @@ const { lapse, result } = strategies({
       const [ h, s, l ] = Gamma.rgbToHsl(r, g, b)
       // const h = (hsl >> 16) & 0xFF, s = (hsl >> 8) & 0xFF, l = (hsl >> 0) & 0xFF
       return Gamma.hslToRgb(h, s, l)
-    }
+    },
   },
   showPretty: false,
 })

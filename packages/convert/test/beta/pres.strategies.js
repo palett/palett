@@ -1,12 +1,11 @@
-import { makeEmbedded }                                                               from '@foba/util'
-import { AFRO, BESQUE, BRANDY, FRESH, KELLY, PERSIAN, PINE, PLANET, ROCOCCO, SUBTLE } from '@palett/presets'
-import { NUM, STR }                               from '@typen/enum-data-types'
-import { hexToHsl, hexToRgi, hslToRgb, rgbToHsl } from '../../index.js'
-import { hexToStr, intToStr, rgbToStr }           from '@palett/stringify'
-import { strategies }                                                                 from '@valjoux/strategies'
-import { Beta }                                                                       from './beta.js'
-import { Gamma }                                                                      from './gamma.js'
-import { UCA }                                                                        from './pres.js'
+import { makeEmbedded }                                                        from '@foba/util'
+import { AFRO, BESQUE, BRANDY, KELLY, PERSIAN, PINE, PLANET, ROCOCCO, SUBTLE } from '@palett/presets'
+import { hexToStr, intToStr, rgbToStr }                                        from '@palett/stringify'
+import { NUM, STR }                                                            from '@typen/enum-data-types'
+import { strategies }                                                          from '@valjoux/strategies'
+import { hexToHsl, hexToRgi, hslToRgb }                                        from '../../index.js'
+import { Beta }                                                                from './beta.js'
+import { UCA }                                                                 from './pres.js'
 
 const { lapse, result } = strategies({
   repeat: 1E+5,
@@ -45,7 +44,7 @@ const { lapse, result } = strategies({
     uca: (pres) => {
       const uca = UCA.presToUCA(pres)
       return UCA.ucaToPres(uca)
-    }
+    },
   },
   showPretty: false,
 })

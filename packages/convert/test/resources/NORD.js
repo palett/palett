@@ -3,12 +3,12 @@ import { NameMapper } from './NAME_MAPPING.js'
 
 export const PRIMARY = {
   background: '#2E3440',
-  foreground: '#D8DEE9'
+  foreground: '#D8DEE9',
 }
 
 export const CURSOR = {
   text: '#2E3440',
-  cursor: '#D8DEE9'
+  cursor: '#D8DEE9',
 }
 
 export const NORMAL = {
@@ -19,7 +19,7 @@ export const NORMAL = {
   blue: '#81A1C1',
   magenta: '#B48EAD',
   cyan: '#88C0D0',
-  white: '#E5E9F0'
+  white: '#E5E9F0',
 }
 
 export const BRIGHT = {
@@ -30,7 +30,7 @@ export const BRIGHT = {
   blue: '#81A1C1',
   magenta: '#B48EAD',
   cyan: '#8FBCBB',
-  white: '#ECEFF4'
+  white: '#ECEFF4',
 }
 
 export const EXTREME = {
@@ -41,7 +41,7 @@ export const EXTREME = {
   'pure-green': '#00FF00',
   'pure-cyan': '#00FFFF',
   'pure-blue': '#0000FF',
-  'pure-magenta': '#FF00FF'
+  'pure-magenta': '#FF00FF',
 }
 
 export const NORD = {
@@ -49,5 +49,5 @@ export const NORD = {
   ...mapKeys(CURSOR, NameMapper('cursor', 14)),
   ...mapKeys(NORMAL, NameMapper('normal', 14)),
   ...mapKeys(BRIGHT, NameMapper('bright', 14)),
-  ...mapKeys(EXTREME, NameMapper('extreme', 14))
+  ...mapKeys(EXTREME, NameMapper('extreme', 14)),
 }

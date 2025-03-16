@@ -6,7 +6,7 @@ import { NORD }                         from './resources/NORD'
 
 export class RgbTransHslTest {
   static testRgbToHsl() {
-    for (let [name, hex] of Object.entries(NORD)) {
+    for (let [ name, hex ] of Object.entries(NORD)) {
       const rgb = hexToRgb(hex)
       const hsl = rgbToHsl(rgb);
       // const [r] = rgb
@@ -20,7 +20,7 @@ export class RgbTransHslTest {
   }
 
   static testHslToRgb() {
-    for (let [name, { hex, rgb, hsl }] of Object.entries(normal)) {
+    for (let [ name, { hex, rgb, hsl } ] of Object.entries(normal)) {
       `${Hatsu.hex(hex).underline(name)}`
         .tag('hsl').tag(hsl)
         .tag('rgb0').tag(rgb)

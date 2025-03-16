@@ -30,13 +30,13 @@ const { lapse, result } = strategies({
       return '#' + dil2(r.toString(16)) + dil2(g.toString(16)) + dil2(b.toString(16))
     },
     dev(r, g, b) {
-      return '#' + ( ( ( r & 0xFF ) << 16 ) | ( ( g & 0xFF ) << 8 ) | ( b & 0xFF ) ).toString(16).toUpperCase().padStart(6, '0')
+      return '#' + (((r & 0xFF) << 16) | ((g & 0xFF) << 8) | (b & 0xFF)).toString(16).toUpperCase().padStart(6, '0')
     },
     edg(r, g, b) {
-      const hex = ( ( ( r & 0xFF ) << 16 ) | ( ( g & 0xFF ) << 8 ) | ( b & 0xFF ) ).toString(16)
+      const hex = (((r & 0xFF) << 16) | ((g & 0xFF) << 8) | (b & 0xFF)).toString(16)
       return '#' + dil6(hex)
     },
-  }
+  },
   // cla, dev, edg, rea, arc, epi
 })
 lapse |> decoCrostab |> says['lapse']

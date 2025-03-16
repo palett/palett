@@ -1,7 +1,7 @@
 import { hexToStr, rgbToStr } from '@palett/stringify'
 import { logger, xr }         from '@spare/logger'
-import { rgbToHex }           from '../src/rgbToHex'
 import { hexToRgb }           from '../src/hexToRgb'
+import { rgbToHex }           from '../src/rgbToHex'
 import { NORD }               from './resources/NORD'
 
 for (const [ key, hex ] of Object.entries(NORD)) {

@@ -35,5 +35,5 @@ export const ROEM = {
   'MRCx 330': '#B85A89',
   'MRDx 340': '#C35076',
   'MREx 350': '#BC3D52',
-  'REDx 360': '#C94F4F'
+  'REDx 360': '#C94F4F',
 }

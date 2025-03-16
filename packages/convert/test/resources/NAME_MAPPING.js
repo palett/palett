@@ -10,7 +10,7 @@ export const NAME_MAPPING = {
   background: 'back',
   foreground: 'fore',
   cursor: 'cursor',
-  text: 'text'
+  text: 'text',
 }
 
 export function nameMapper(key) {

@@ -14,7 +14,7 @@ const { lapse, result } = strategies({
     dev: (r, g, b) => [ r, g, b ],
     rea: (r, g, b) => new RGB(r, g, b),
     arc: (r, g, b) => (((r & 0xFF) << 16) + ((g & 0xFF) << 8) + (b & 0xFF)),
-  }
+  },
 })
 lapse |> decoCrostab |> says['lapse']
 result |> decoCrostab |> says['result']

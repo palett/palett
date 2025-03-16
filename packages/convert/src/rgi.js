@@ -57,6 +57,8 @@ export function hsaToRgi(h, s, l) {
   return (r & 0xFF) << 16 | (g & 0xFF) << 8 | b & 0xFF
 }
 
+export function rgaToRgi(r, g, b) { return (r & 0xFF) << 16 | (g & 0xFF) << 8 | b & 0xFF }
+
 export function rgbToRgi(rgb) { return (rgb[0] & 0xFF) << 16 | (rgb[1] & 0xFF) << 8 | rgb[2] & 0xFF }
 
 export function hsiToRgi(int) {

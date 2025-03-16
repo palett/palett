@@ -10,7 +10,7 @@ const { lapse, result } = strategies({
   repeat: 5E+6,
   candidates: {
     ...mapKeys(PRIMARY, NameMapper('primary', 14)),
-    ...mapKeys(NORMAL, NameMapper('normal', 14))
+    ...mapKeys(NORMAL, NameMapper('normal', 14)),
   } |> makeEmbedded,
   methods: {
     bench: v => v,
@@ -20,13 +20,13 @@ const { lapse, result } = strategies({
         hex = sharp + r + r + g + g + b + b
       }
       const n = parseInt(hex.slice(1), 16)
-      return [ ( n >> 16 ) & 0xff, ( n >> 8 ) & 0xff, n & 0xff ]
+      return [ (n >> 16) & 0xff, (n >> 8) & 0xff, n & 0xff ]
     },
     dev(hex) {
       if (hex.charAt(0) === '#') hex = hex.slice(1)
       if (!hex[3]) hex = diluteHex(hex)
       const n = parseInt(hex, 16)
-      return [ ( n >> 16 ) & 0xff, ( n >> 8 ) & 0xff, n & 0xff ]
+      return [ (n >> 16) & 0xff, (n >> 8) & 0xff, n & 0xff ]
     },
     edg(hex) {
       function hexAt(tx, i) {
@@ -39,9 +39,9 @@ const { lapse, result } = strategies({
       }
       let n
       if (hex.length === 4) {
-        const r = ( n = hexAt(hex, 1) ) << 4 | n
-        const g = ( n = hexAt(hex, 2) ) << 4 | n
-        const b = ( n = hexAt(hex, 3) ) << 4 | n
+        const r = (n = hexAt(hex, 1)) << 4 | n
+        const g = (n = hexAt(hex, 2)) << 4 | n
+        const b = (n = hexAt(hex, 3)) << 4 | n
         return [ r, g, b ]
       }
       if (hex.length === 7) {
@@ -56,13 +56,13 @@ const { lapse, result } = strategies({
       function hexAt(tx, i) {
         let n = tx.codePointAt(i)
         const seg = n >> 5
-        return seg <= 1 ? n & 0xf : ( n & 0x7 ) + 9
+        return seg <= 1 ? n & 0xf : (n & 0x7) + 9
       }
       let n
       if (hex.length === 4) {
-        const r = ( n = hexAt(hex, 1) ) << 4 | n
-        const g = ( n = hexAt(hex, 2) ) << 4 | n
-        const b = ( n = hexAt(hex, 3) ) << 4 | n
+        const r = (n = hexAt(hex, 1)) << 4 | n
+        const g = (n = hexAt(hex, 2)) << 4 | n
+        const b = (n = hexAt(hex, 3)) << 4 | n
         return [ r, g, b ]
       }
       if (hex.length === 7) {
@@ -73,7 +73,7 @@ const { lapse, result } = strategies({
       }
       return [ 0, 0, 0 ]
     },
-  }
+  },
   // cla, dev, edg, rea, arc, epi
 })
 lapse |> decoCrostab |> says['lapse']

@@ -1,8 +1,8 @@
 import { rgbToStr, xyzToStr } from '@palett/stringify'
 import { indexed }            from '@vect/object-mapper'
+import { rgbToHsl }           from '../../src/hsl.js'
 import { hslToRgb }           from '../../src/rgb.js'
-import { rgbToHsl } from '../../src/hsl.js'
-import { Beta }     from './beta.js'
+import { Beta }               from './beta.js'
 
 const COLORS = {
   noir: [ 0, 0, 0 ],
@@ -18,7 +18,7 @@ const COLORS = {
   tinsel: [ 195, 150, 77 ],
   maroon: [ 131, 70, 85 ],
   cloud: [ 254, 254, 255 ],
-  blanc: [ 255, 255, 255 ]
+  blanc: [ 255, 255, 255 ],
 }
 
 for (let [ name, [ or, og, ob ] ] of indexed(COLORS)) {

@@ -1,8 +1,8 @@
 import { oneself }                      from '@ject/oneself'
-import { hslToHex, rgiToHex, rgbToHex } from '../src/hex.js'
+import { hslToHex, rgbToHex, rgiToHex } from '../src/hex.js'
 import { hexToHsl, intToHsl, rgbToHsl } from '../src/hsl.js'
-import { hexToRgi, hslToRgi, rgbToRgi } from '../src/rgi.js'
 import { hexToRgb, hslToRgb, rgiToRgb } from '../src/rgb.js'
+import { hexToRgi, hslToRgi, rgbToRgi } from '../src/rgi.js'
 
 export class Conv {
   static rgb = class Rgb {

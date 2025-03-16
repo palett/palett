@@ -38,8 +38,8 @@ export class Gamma {
     }
     const t = hi + lo, d = hi - lo
     let h = hue(r, g, b, hi, d),
-        s = (!d ? 0 : t > 255 ? d / (510 - t) : d / t),
-        l = t / 2
+      s = (!d ? 0 : t > 255 ? d / (510 - t) : d / t),
+      l = t / 2
     h = (h * 40)
     s = round(s * 255)
     l = round(l)
@@ -50,9 +50,9 @@ export class Gamma {
   static hslToRgb(h, s, l) {
     h /= 20
     const a = l <= 127 ? (s * l / 255) : (s - s * l / 255),
-          r = hf(0, h, a, l),
-          g = hf(8, h, a, l),
-          b = hf(4, h, a, l)
+      r = hf(0, h, a, l),
+      g = hf(8, h, a, l),
+      b = hf(4, h, a, l)
     return ((r & 0xFF) << 16) | ((g & 0xFF) << 8) | (b & 0xFF)
   }
 }

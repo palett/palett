@@ -1,4 +1,4 @@
-import { rec0up, round, roundD1, roundD2 } from '@aryth/math'
+import { roundD2 } from '@aryth/math'
 
 const { max, min } = Math
 
@@ -38,8 +38,8 @@ export class Beta {
     }
     const t = hi + lo, d = hi - lo
     const h = hue(r, g, b, hi, d),
-          s = !d ? 0 : t > 255 ? d / (511 - t) : d / t,
-          l = t / 2
+      s = !d ? 0 : t > 255 ? d / (511 - t) : d / t,
+      l = t / 2
     // ;`<< [hi] (${hi}) [lo] (${lo}) [t] (${t}) [d] (${d}) [s] (${roundD2(s * 255)}) [l] (${l})` |> console.log
     return [ (h * 40) & 0xFF, s, roundD2(l) ]
   }
@@ -47,9 +47,9 @@ export class Beta {
   static hslToRgb(h, s, l) {
     h /= 20
     const a = l <= 127 ? (s * l) : (s * 255 - s * l),
-          r = hf(0, h, a, l),
-          g = hf(8, h, a, l),
-          b = hf(4, h, a, l)
+      r = hf(0, h, a, l),
+      g = hf(8, h, a, l),
+      b = hf(4, h, a, l)
     // `hsl -> rgb [a] (${a}) [r] (${r}) [g] (${g}) [b] (${b})` |> console.log
     return [ r, g, b ]
   }

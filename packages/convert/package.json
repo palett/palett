@@ -1,6 +1,6 @@
 {
   "name": "@palett/convert",
-  "version": "0.12.17",
+  "version": "0.12.19",
   "description": "A color converter among RGB, HEX and HSL.",
   "type": "module",
   "exports": "./dist/index.js",
@@ -18,14 +18,14 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/polar": "^0.7.4"
+    "@aryth/polar": "^0.7.5"
   },
   "devDependencies": {
     "@ject/oneself": "^0.1.2",
     "@palett/dye": "workspace:^",
     "@palett/enum-color-space": "workspace:^",
-    "@palett/stringify": "workspace:^",
-    "@palett/enum-font-effects": "workspace:^"
+    "@palett/enum-font-effects": "workspace:^",
+    "@palett/stringify": "workspace:^"
   },
   "repository": {
     "type": "git",

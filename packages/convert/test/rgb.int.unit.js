@@ -2,7 +2,7 @@ import { DyeFactory }         from '@palett/dye'
 import { RGB }                from '@palett/enum-color-space'
 import { INVERSE }            from '@palett/enum-font-effects'
 import { logger, xr }         from '@spare/logger'
-import { rgiToRgb, rgbToRgi } from '../index.js'
+import { rgbToRgi, rgiToRgb } from '../index.js'
 
 export const XTERM = {
   noir: [ 0, 0, 0 ],
@@ -20,7 +20,7 @@ export const XTERM = {
   bleu_brillant: [ 92, 92, 255 ],
   magenta_brillant: [ 255, 0, 255 ],
   cyan_brillant: [ 0, 255, 255 ],
-  blanc_brillant: [ 255, 255, 255 ]
+  blanc_brillant: [ 255, 255, 255 ],
 }
 
 const dyeFab = DyeFactory.build(RGB, [ INVERSE ])

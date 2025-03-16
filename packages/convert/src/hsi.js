@@ -1,11 +1,21 @@
-import { minus }    from '@aryth/polar'
-import { hsaToRgi } from './rgi.js'
-import { hue }      from './util/number-utils.js'
-import { ff }       from './util/string-utils.js'
+import { minus }      from '@aryth/polar'
+import { hsaToRgi }   from './rgi.js'
+import { hue, round } from './util/number-utils.js'
+import { ff }         from './util/string-utils.js'
 
 export function hexToHsi(hex) {
   const r = ff(hex, 1), g = ff(hex, 3), b = ff(hex, 5)
   return rgaToHsi(r, g, b)
+}
+
+export function hslToHsi(hsl) {
+  const h = round(hsl[0]), s = round(hsl[1] * 2), l = round(hsl[2] * 2)
+  return (h & 0x1FF) << 16 | (s & 0xFF) << 8 | l & 0xFF
+}
+
+export function hsaToHsi(h, s, l) {
+  h = round(h), s = round(s * 2), l = round(l * 2)
+  return (h & 0x1FF) << 16 | (s & 0xFF) << 8 | l & 0xFF
 }
 
 export function rgaToHsi(r, g, b) {
