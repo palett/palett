@@ -1,5 +1,7 @@
-import { hexToHsi, hexToRgi, hsiToRgi, modHsi, rgiToHex, rgiToRgb } from '@palett/convert'
-import { NUM, STR }                                                 from '@typen/enum-data-types'
+import { hexToHsi, hexToRgi, hsiToHex, hsiToHsl, hsiToRgb, modHsi, rgiToHex, rgiToHsl, rgiToRgb } from '@palett/convert'
+import {
+  NUM, STR,
+}                                                                                                 from '@typen/enum-data-types'
 
 const GREY = '#CCCCCC'
 
@@ -10,10 +12,10 @@ export class Pres {
   /** @type {string[]} array of effects */ #at
 
   /**
-   * @param {number|string} [min] - hexadecimal string or 25 bit integer HSI, value for max
-   * @param {number|string} [max] - hexadecimal string or 25 bit integer HSI, value for min
-   * @param {number|string} [nan] - hexadecimal string or 24 bit integer RGI, value for nan
-   * @param {string[]} [attr] - array of strings, ansi effect names
+   * @param {number|string} [min] - hex or HSI(25 bit int)
+   * @param {number|string} [max] - hex or HSI(25 bit int)
+   * @param {number|string} [nan] - hex or RGI(24 bit int)
+   * @param {string[]} [attr] - string[], ansi effect names
    * @param {string} [name]
    */
   constructor(min, max, nan, attr, name) {
@@ -23,25 +25,22 @@ export class Pres {
     if (!!attr) this.attr = attr
     if (!!name) this.name = name
   }
-
+  get attr() { return this.#at }
+  set attr(vec) { if (this.#at) { this.#at.length = 0, Object.assign(this.#at, vec) } else { this.#at = vec.slice() } }
   /**
-   * @param {number|string} [min] - hexadecimal string or 25 bit integer HSI, value for max
-   * @param {number|string} [max] - hexadecimal string or 25 bit integer HSI, value for min
-   * @param {number|string} [nan] - hexadecimal string or 24 bit integer RGI, value for nan
-   * @param {string[]} [attr] - array of strings, ansi effect names
+   * @param {number|string} [min] - hex or HSI(25 bit int)
+   * @param {number|string} [max] - hex or HSI(25 bit int)
+   * @param {number|string} [nan] - hex or RGI(24 bit int)
+   * @param {string[]} [attr] - string[], ansi effect names
    * @param {string} [name]
    * @returns {Pres}
    */
   static build(min, max, nan = GREY, attr, name) {
     return new Pres(min, max, nan, attr, name)
   }
-
-  get attr() { return this.#at }
-  set attr(vec) { if (this.#at) { this.#at.length = 0, Object.assign(this.#at, vec) } else { this.#at = vec.slice() } }
-
-  proj(lev, min, val) {
-    const df = val - min
-    return modHsi(this.min, df * lev[0], df * lev[1], df * lev[2])
+  proj(lever, min, val) {
+    const incre = val - min
+    return modHsi(this.min, incre * lever[0], incre * lever[1], incre * lever[2])
   }
   reverse() { return new Pres(this.max, this.min, this.nan, this.#at) }
 
@@ -54,18 +53,25 @@ export class Pres {
     yield this.max >> 0 & 0xFF
   }
 
+  toHsl() {
+    return {
+      min: hsiToHsl(this.min),
+      max: hsiToHsl(this.max),
+      nan: rgiToHsl(this.nan),
+    }
+  }
   toRgb() {
     return {
-      min: rgiToRgb(hsiToRgi(this.min)),
-      max: rgiToRgb(hsiToRgi(this.max)),
-      nan: rgiToRgb(this.nan)
+      min: hsiToRgb(this.min),
+      max: hsiToRgb(this.max),
+      nan: rgiToRgb(this.nan),
     }
   }
   toHex() {
     return {
-      min: rgiToHex(hsiToRgi(this.min)),
-      max: rgiToHex(hsiToRgi(this.max)),
-      nan: rgiToHex(this.nan)
+      min: hsiToHex(this.min),
+      max: hsiToHex(this.max),
+      nan: rgiToHex(this.nan),
     }
   }
 }
