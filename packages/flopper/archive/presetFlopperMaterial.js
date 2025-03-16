@@ -4,16 +4,16 @@ import { Grey }                                from '@palett/cards'
 import { HEX }                                 from '@palett/enum-color-space'
 import { randPres }                            from '@palett/pres'
 import { ColorGroups, Degrees, palettCrostab } from '@palett/table'
-import { swap }           from '@vect/swap'
-import { degreeToIndice } from './utils/degreeToIndice.js'
-import { sortBy }         from './utils/sortDegrees.js'
+import { swap }                                from '@vect/swap'
+import { degreeToIndice }                      from './utils/degreeToIndice.js'
+import { sortBy }                              from './utils/sortDegrees.js'
 
 export function* presetFlopperMaterial({
                                          degrees = Degrees.entire,
                                          colors = ColorGroups.rainbow,
                                          space = HEX,
                                          defaultColor = Grey.lighten_1,
-                                         exhausted = true
+                                         exhausted = true,
                                        } = {}) {
   const crostab = palettCrostab({ space, degrees, colors, dyed: false })
   degrees = sortBy.call(degrees.slice(), degreeToIndice, NUM_DESC)

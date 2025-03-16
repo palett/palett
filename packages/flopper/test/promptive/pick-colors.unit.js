@@ -6,12 +6,12 @@ import { presShifter } from '../../src/presShifter.js'
 
 const FUSE = 'fuse'
 console.time(FUSE)
-const flopper = presShifter.call({ flow: MIDTONE })
+const flopper = presShifter.call(MIDTONE)
 console.timeEnd(FUSE)
 
 const choices = init(6, i => {
   const pres = flopper.next().value
-  return { name: demo(pres, 6) + ' | ' + pres.name, value: pres.name }
+  return { name: demo.call(pres, 6) + ' | ' + pres.name, value: pres.name }
 })
 const answer = await checkbox({
   message: 'Select a pres(et)',

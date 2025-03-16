@@ -64,8 +64,8 @@ export function* shiftFlopperFuse(arr, shl, shr) {
   }
   while (hi > 1) {
     // Adjust shift limits if needed
-     shl = Math.min(shl, hi - 1)
-     shr = Math.min(shr, hi - 1)
+    shl = Math.min(shl, hi - 1)
+    shr = Math.min(shr, hi - 1)
     // Calculate new index within bounds
     let newI = randBetw(i - shl, i + shr)
     // Wrap around if outside valid range

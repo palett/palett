@@ -1,8 +1,8 @@
-import { flop, randBetw } from '@aryth/rand'
-import { dslHex }         from '@palett/color-algebra'
-import { modHsi }         from '@palett/convert'
-import { Pres }           from '@palett/pres'
-import { LOTONE }         from './asset/LOTONE.js'
+import { betw, flop } from '@aryth/rand'
+import { dslHex }     from '@palett/color-algebra'
+import { modHsi }     from '@palett/convert'
+import { Pres }       from '@palett/pres'
+import { LOTONE }     from './asset/LOTONE.js'
 
 const LOTONE_LIST = Object.keys(LOTONE)
 
@@ -13,7 +13,7 @@ const LOTONE_LIST = Object.keys(LOTONE)
  * @returns Pres
  */
 export function randPres(hex, name) {
-  const next = dslHex(hex, randBetw(-12, -3), randBetw(12, 27))
+  const next = dslHex(hex, betw(-12, -3), betw(9, 24))
   const gray = flop(LOTONE_LIST)
   return Pres.build(hex, next, gray, null, name)
 }
@@ -26,7 +26,7 @@ export function blendPres(hsi) {
   const munsell = this
   const hsiA = munsell.nearest(hsi)
   if (!hsiA) return null
-  const next = modHsi(hsiA, randBetw(-15, 15), randBetw(-12, -3), randBetw(12, 27))
+  const next = modHsi(hsiA, betw(-15, 15), betw(-12, -3), betw(9, 24))
   const hsiB = munsell.nearest(next) ?? next
   const gray = flop(LOTONE_LIST)
   return Pres.build(hsiA, hsiB, gray, null, munsell.name(hsiA))

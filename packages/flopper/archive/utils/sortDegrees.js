@@ -3,9 +3,9 @@ import { mutate } from '@vect/vector-mapper'
 export const sortBy = function (indicator, comparer) {
   const
     vec = this,
-    kvs = mutate(vec, (x, i) => [indicator(x, i), x])
+    kvs = mutate(vec, (x, i) => [ indicator(x, i), x ])
       .sort(toKeyComparer(comparer))
-  return mutate(kvs, ([, value]) => value)
+  return mutate(kvs, ([ , value ]) => value)
 }
 
 const toKeyComparer = comparer => (a, b) => comparer(a[0], b[0])

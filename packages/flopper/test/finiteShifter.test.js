@@ -1,4 +1,4 @@
-import { init }         from '@vect/vector-init'
+import { init }          from '@vect/vector-init'
 import { test }          from 'node:test'
 import { finiteShifter } from '../src/util/finiteShifter.js'
 
