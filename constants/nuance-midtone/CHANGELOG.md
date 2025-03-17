@@ -1,5 +1,11 @@
 # @palett/nuance-midtone
 
+## 0.12.20
+
+### Patch Changes
+
+- restructure class, change interface, redefine usage
+
 ## 0.12.19
 
 ### Patch Changes
