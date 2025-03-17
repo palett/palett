@@ -1,8 +1,9 @@
-import { betw, flop } from '@aryth/rand'
-import { dslHex }     from '@palett/color-algebra'
-import { modHsi }     from '@palett/convert'
-import { Pres }       from '@palett/pres'
-import { LOTONE }     from './asset/LOTONE.js'
+import { betw, flop }       from '@aryth/rand'
+import { dslHex }           from '@palett/color-algebra'
+import { hsiToHsl, modHsi } from '@palett/convert'
+import { Pres }             from '@palett/pres'
+import { LOTONE }           from '../asset/LOTONE.js'
+import { norm }             from './normDist.js'
 
 const LOTONE_LIST = Object.keys(LOTONE)
 
@@ -18,6 +19,14 @@ export function randPres(hex, name) {
   return Pres.build(hex, next, gray, null, name)
 }
 
+export function hsiToPres(hsiA) {
+  const munsell = this
+  hsiA = munsell.nearest(hsiA) ?? hsiA
+  let hsiB = modHsi(hsiA, norm(0, 3), norm(-3, 3), norm(15, 3))
+  const gray = flop(LOTONE_LIST)
+  const name = munsell.name(hsiA) ?? hsiToHsl(hsiA).toString()
+  return Pres.build(hsiA, hsiB, gray, null, name) // munsell.name(hsiA)
+}
 /**
  * @param {number} hsi
  * @returns Pres
