@@ -43,8 +43,8 @@ export class Munsell {
   #list
 
   constructor(ds, dl) {
-    this.#ds = ds ?? 9
-    this.#dl = dl ?? 12
+    this.#ds = ds ?? 48
+    this.#dl = dl ?? 48
   }
   get list() { return this.#list }
   static build(book, ds, dl) { return (new Munsell(ds, dl)).init(book) }
@@ -58,11 +58,13 @@ export class Munsell {
       hsi = list[i] = hexToHsi(hex)
       rev[hsi] = hex + ' ' + name
     }
+    // console.time('Munsell Init Sort')
     list.sort((a, b) => a - b)
+    // console.timeEnd('Munsell Init Sort')
     for (let i = 0; i < hi; i++) { // console.log(hexToStr(hsiToHex(hsi)), hsi >> 16 & 0x1FF, distance(hsi >> 16 & 0x1FF, 15))
       if (distance(list[i] >> 16 & 0x1FF, hueInt) > 6) { this.#inds[t++] = i, hueInt += 12 }
     }
-    this.#inds[t] = hi
+    this.#inds[t] = hi // console.log(this.#list.length, this.#inds)
     return this
   }
   entry(hsi) {
@@ -75,28 +77,31 @@ export class Munsell {
     return entry ? entry.slice(8) : null
   }
 
-  range(hue) {
+  range(hue, span = 1) {
     const inds = this.#inds
-    for (let i = 0, min = 0, mid = 6, max = 12; i < 30; i++) {
-      if (min <= hue && hue < mid) return [ inds.at(i - 2), inds.at(i) ]
-      if (hue === mid) return [ inds.at(i - 2), inds.at(++i > 30 ? i - 30 : i) ]
-      if (mid < hue && hue <= max) return [ inds.at(i - 1), inds.at(++i > 30 ? i - 30 : i) ]
-      min = max, mid += 12, max += 12
-    }
+    const hueMod = hue % 360
+    const hi = ~~(hueMod / 12)
+    const lo = hi - 1
+    const min = hi * 12
+    const mid = min + 6
+    if (hueMod < mid) return [ inds.at(lo - span), inds[lo + span] ]
+    if (hueMod === mid) return [ inds.at(lo - span), inds[(hi + span) % 30] ]
+    if (hueMod > mid) return [ inds.at(hi - span), inds[(hi + span) % 30] ]
   }
 
   nearest(hsi) {
     const h = hsi >> 16 & 0x1FF, s = hsi >> 8 & 0xFF, l = hsi & 0xFF
     const sb = s - this.#ds, sp = s + this.#ds
     const lb = l - this.#dl, lp = l + this.#dl
-    let [ ib, ip ] = this.range(h) // console.log(ib, ip)
     let min = this.#MAX, next, delta
-    circ.call(this.list, ib, ip, cur => {
-      const sc = cur >> 8 & 0xFF, lc = cur & 0xFF
+    circ.call(this.list, this.range(h), curr => {
+      const sc = curr >> 8 & 0xFF, lc = curr & 0xFF
       if ((sb <= sc && sc <= sp) && (lb <= lc && lc <= lp)) {
-        if ((delta = deltaHsi(hsi, cur)) < min) { min = delta, next = cur }
+        if ((delta = deltaHsi(hsi, curr)) < min) { min = delta, next = curr }
       }
-    }) // console.log(hslToStr(hsiToHsl(hsi)), hslToStr(hsiToHsl(next)), deltaHsi(hsi, next), min)
+      // console.log(i++, hslToStr(hsiToHsl(hsi)), hslToStr(hsiToHsl(curr)), deltaHsi(hsi, curr), min)
+    })
+
     return min === this.#MAX ? null : next
   }
 
