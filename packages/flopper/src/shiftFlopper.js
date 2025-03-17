@@ -3,17 +3,15 @@ import { Munsell }             from '@palett/munsell'
 import { seq }                 from '@vect/vector-init'
 import { LOTONE }              from './asset/LOTONE.js'
 import { MIDTONE }             from './asset/MIDTONE.js'
-import { blendPres, randPres } from './randPres.js'
 import { finiteShifter }       from './utils/finiteShifter.js'
-
-// const HUES = [ 5, 15, 25, 35, 45, 55, 65, 75, 85, 95, 105, 115, 125, 135, 145, 155, 165, 175, 185, 195, 205, 215, 225, 235, 245, 255, 265, 275, 285, 295, 305, 315, 325, 335, 345, 355 ]
+import { blendPres, randPres } from './utils/randPres.js'
 
 export const HUES = seq(60, i => i * 6, 0)
 export const SATURATIONS = [ 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60 ]
 export const LIGHTS = [ 42, 48, 54, 56, 57, 60, 62, 63, 66, 69, 72, 75 ]
 
-export function* presShifter(exhausted = true) {
-  const munsell = Munsell.build(this ?? MIDTONE, 24, 24), dock = {}
+export function* shiftFlopper(exhausted = true) {
+  const munsell = this instanceof Munsell ? this : Munsell.build(this ?? MIDTONE, 48, 48), dock = {}
   let name
   for (let s of finiteShifter(SATURATIONS.slice(), 3, 3))
     for (let l of finiteShifter(LIGHTS.slice(), 3, 3))
@@ -29,4 +27,3 @@ export function* presShifter(exhausted = true) {
     yield hex in rest ? rest[hex] : (rest[hex] = randPres(hex, name))
   }
 }
-
