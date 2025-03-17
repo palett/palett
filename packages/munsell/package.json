@@ -1,6 +1,6 @@
 {
   "name": "@palett/munsell",
-  "version": "0.12.19",
+  "version": "0.12.21",
   "description": "A color converter",
   "type": "module",
   "exports": "./dist/index.js",
@@ -18,12 +18,9 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/bound": "^0.7.5",
-    "@aryth/flopper": "^0.7.5",
-    "@aryth/math": "^0.7.5",
-    "@aryth/polar": "^0.7.5",
-    "@palett/convert": "workspace:^",
-    "@vect/vector-init": "^0.8.0"
+    "@aryth/math": "^0.7.6",
+    "@aryth/polar": "^0.7.6",
+    "@palett/convert": "workspace:^"
   },
   "devDependencies": {
     "@palett/dye": "workspace:^",
@@ -33,7 +30,7 @@
     "@palett/nuance-ubitone": "workspace:^",
     "@palett/presets": "workspace:^",
     "@palett/stringify": "workspace:^",
-    "@valjoux/timestamp-pretty": "^0.4.0"
+    "@valjoux/timestamp-pretty": "^0.4.1"
   },
   "repository": {
     "type": "git",

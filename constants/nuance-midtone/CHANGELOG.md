@@ -1,5 +1,11 @@
 # @palett/nuance-midtone
 
+## 0.12.21
+
+### Patch Changes
+
+- minor fix
+
 ## 0.12.20
 
 ### Patch Changes

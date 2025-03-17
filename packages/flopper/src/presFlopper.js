@@ -1,7 +1,7 @@
 import { finiteFlopper } from '@aryth/flopper'
 import { flop }          from '@aryth/rand'
 import { MIDTONE }       from './asset/MIDTONE.js'
-import { randPres }      from './randPres.js'
+import { randPres }      from './utils/randPres.js'
 
 export function* presFlopper(exhausted = true) {
   const entries = Object.entries(this ?? MIDTONE)

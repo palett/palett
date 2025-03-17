@@ -1,12 +1,12 @@
 import checkbox        from '@inquirer/checkbox'
 import { MIDTONE }     from '@palett/nuance-midtone'
 import { demo }        from '@palett/pres'
-import { init }        from '@vect/vector-init'
-import { presShifter } from '../../src/presShifter.js'
+import { init }         from '@vect/vector-init'
+import { shiftFlopper } from '../../src/shiftFlopper.js'
 
 const FUSE = 'fuse'
 console.time(FUSE)
-const flopper = presShifter.call(MIDTONE)
+const flopper = shiftFlopper.call(MIDTONE)
 console.timeEnd(FUSE)
 
 const choices = init(6, i => {

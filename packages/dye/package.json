@@ -1,6 +1,6 @@
 {
   "name": "@palett/dye",
-  "version": "0.12.19",
+  "version": "0.12.21",
   "description": "A colorant to string",
   "type": "module",
   "exports": "./dist/index.js",
@@ -19,11 +19,8 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@ject/oneself": "^0.1.2",
     "@palett/convert": "workspace:^",
     "@palett/enum-ansi-codes": "workspace:^",
-    "@palett/enum-color-space": "workspace:^",
-    "@palett/enum-font-effects": "workspace:^",
     "@palett/util-ansi": "workspace:^",
     "@typen/enum-data-types": "^0.2.0"
   },

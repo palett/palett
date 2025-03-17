@@ -1,6 +1,6 @@
 {
   "name": "@palett/flopper",
-  "version": "0.12.19",
+  "version": "0.12.21",
   "description": "A color converter",
   "type": "module",
   "exports": "./dist/index.js",
@@ -19,8 +19,10 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/flopper": "^0.7.5",
-    "@aryth/rand": "^0.7.5",
+    "@aryth/flopper": "^0.7.6",
+    "@aryth/math": "^0.7.6",
+    "@aryth/polar": "^0.7.6",
+    "@aryth/rand": "^0.7.6",
     "@palett/color-algebra": "workspace:^",
     "@palett/convert": "workspace:^",
     "@palett/munsell": "workspace:^",
@@ -31,6 +33,7 @@
   "devDependencies": {
     "@palett/nuance-midtone": "workspace:^",
     "@palett/stringify": "workspace:^",
+    "@palett/dye": "workspace:^",
     "@vect/vector-init": "^0.8.0"
   },
   "repository": {

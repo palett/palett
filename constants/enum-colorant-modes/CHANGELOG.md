@@ -1,5 +1,21 @@
 # @palett/enum-colorant-modes
 
+## 0.12.21
+
+### Patch Changes
+
+- minor fix
+- Updated dependencies
+  - @palett/enum-color-space@0.12.21
+
+## 0.12.20
+
+### Patch Changes
+
+- restructure class, change interface, redefine usage
+- Updated dependencies
+  - @palett/enum-color-space@0.12.20
+
 ## 0.12.19
 
 ### Patch Changes

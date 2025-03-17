@@ -1,16 +1,38 @@
 # @palett/dye
 
+## 0.12.21
+
+### Patch Changes
+
+- minor fix
+- Updated dependencies
+  - @palett/enum-ansi-codes@0.12.21
+  - @palett/util-ansi@0.12.21
+  - @palett/convert@0.12.21
+
+## 0.12.20
+
+### Patch Changes
+
+- restructure class, change interface, redefine usage
+- Updated dependencies
+  - @palett/enum-ansi-codes@0.12.20
+  - @palett/enum-color-space@0.12.20
+  - @palett/enum-font-effects@0.12.20
+  - @palett/convert@0.12.20
+  - @palett/util-ansi@0.12.20
+
 ## 0.12.19
 
 ### Patch Changes
 
 - minor fix
 - Updated dependencies
-    - @palett/enum-font-effects@0.12.19
-    - @palett/enum-color-space@0.12.19
-    - @palett/enum-ansi-codes@0.12.19
-    - @palett/util-ansi@0.12.19
-    - @palett/convert@0.12.19
+  - @palett/enum-font-effects@0.12.19
+  - @palett/enum-color-space@0.12.19
+  - @palett/enum-ansi-codes@0.12.19
+  - @palett/util-ansi@0.12.19
+  - @palett/convert@0.12.19
 
 ## 0.12.18
 
@@ -18,11 +40,11 @@
 
 - minor fix
 - Updated dependencies
-    - @palett/enum-ansi-codes@0.12.18
-    - @palett/enum-color-space@0.12.18
-    - @palett/enum-font-effects@0.12.18
-    - @palett/convert@0.12.18
-    - @palett/util-ansi@0.12.18
+  - @palett/enum-ansi-codes@0.12.18
+  - @palett/enum-color-space@0.12.18
+  - @palett/enum-font-effects@0.12.18
+  - @palett/convert@0.12.18
+  - @palett/util-ansi@0.12.18
 
 ## 0.12.17
 
@@ -30,11 +52,11 @@
 
 - fix dependency issue in @palett/projector
 - Updated dependencies
-    - @palett/enum-ansi-codes@0.12.17
-    - @palett/enum-color-space@0.12.17
-    - @palett/enum-font-effects@0.12.17
-    - @palett/convert@0.12.17
-    - @palett/util-ansi@0.12.17
+  - @palett/enum-ansi-codes@0.12.17
+  - @palett/enum-color-space@0.12.17
+  - @palett/enum-font-effects@0.12.17
+  - @palett/convert@0.12.17
+  - @palett/util-ansi@0.12.17
 
 ## 0.12.16
 
@@ -42,11 +64,11 @@
 
 - minor fix
 - Updated dependencies
-    - @palett/enum-ansi-codes@0.12.16
-    - @palett/enum-color-space@0.12.16
-    - @palett/enum-font-effects@0.12.16
-    - @palett/convert@0.12.16
-    - @palett/util-ansi@0.12.16
+  - @palett/enum-ansi-codes@0.12.16
+  - @palett/enum-color-space@0.12.16
+  - @palett/enum-font-effects@0.12.16
+  - @palett/convert@0.12.16
+  - @palett/util-ansi@0.12.16
 
 ## 0.12.15
 
@@ -54,11 +76,11 @@
 
 - minor fix
 - Updated dependencies
-    - @palett/enum-ansi-codes@0.12.15
-    - @palett/enum-color-space@0.12.15
-    - @palett/enum-font-effects@0.12.15
-    - @palett/convert@0.12.15
-    - @palett/util-ansi@0.12.15
+  - @palett/enum-ansi-codes@0.12.15
+  - @palett/enum-color-space@0.12.15
+  - @palett/enum-font-effects@0.12.15
+  - @palett/convert@0.12.15
+  - @palett/util-ansi@0.12.15
 
 ## 0.12.14
 
@@ -66,11 +88,11 @@
 
 - minor fix
 - Updated dependencies
-    - @palett/enum-ansi-codes@0.12.14
-    - @palett/enum-color-space@0.12.14
-    - @palett/enum-font-effects@0.12.14
-    - @palett/convert@0.12.14
-    - @palett/util-ansi@0.12.14
+  - @palett/enum-ansi-codes@0.12.14
+  - @palett/enum-color-space@0.12.14
+  - @palett/enum-font-effects@0.12.14
+  - @palett/convert@0.12.14
+  - @palett/util-ansi@0.12.14
 
 ## 0.12.13
 
@@ -78,11 +100,11 @@
 
 - restructure interface and optimize performance
 - Updated dependencies
-    - @palett/enum-ansi-codes@0.12.13
-    - @palett/enum-color-space@0.12.13
-    - @palett/enum-font-effects@0.12.13
-    - @palett/convert@0.12.13
-    - @palett/util-ansi@0.12.13
+  - @palett/enum-ansi-codes@0.12.13
+  - @palett/enum-color-space@0.12.13
+  - @palett/enum-font-effects@0.12.13
+  - @palett/convert@0.12.13
+  - @palett/util-ansi@0.12.13
 
 ## 0.12.12
 
@@ -90,11 +112,11 @@
 
 - minor fix
 - Updated dependencies
-    - @palett/enum-ansi-codes@0.12.12
-    - @palett/enum-color-space@0.12.12
-    - @palett/enum-font-effects@0.12.12
-    - @palett/convert@0.12.12
-    - @palett/util-ansi@0.12.12
+  - @palett/enum-ansi-codes@0.12.12
+  - @palett/enum-color-space@0.12.12
+  - @palett/enum-font-effects@0.12.12
+  - @palett/convert@0.12.12
+  - @palett/util-ansi@0.12.12
 
 ## 0.12.11
 
@@ -102,11 +124,11 @@
 
 - minor fix
 - Updated dependencies
-    - @palett/enum-font-effects@0.12.11
-    - @palett/enum-color-space@0.12.11
-    - @palett/enum-ansi-codes@0.12.11
-    - @palett/util-ansi@0.12.11
-    - @palett/convert@0.12.11
+  - @palett/enum-font-effects@0.12.11
+  - @palett/enum-color-space@0.12.11
+  - @palett/enum-ansi-codes@0.12.11
+  - @palett/util-ansi@0.12.11
+  - @palett/convert@0.12.11
 
 ## 0.12.10
 
@@ -114,11 +136,11 @@
 
 - update interface
 - Updated dependencies
-    - @palett/enum-ansi-codes@0.12.10
-    - @palett/enum-color-space@0.12.10
-    - @palett/enum-font-effects@0.12.10
-    - @palett/convert@0.12.10
-    - @palett/util-ansi@0.12.10
+  - @palett/enum-ansi-codes@0.12.10
+  - @palett/enum-color-space@0.12.10
+  - @palett/enum-font-effects@0.12.10
+  - @palett/convert@0.12.10
+  - @palett/util-ansi@0.12.10
 
 ## 0.12.9
 
@@ -126,11 +148,11 @@
 
 - fix bugs
 - Updated dependencies
-    - @palett/enum-font-effects@0.12.9
-    - @palett/enum-color-space@0.12.9
-    - @palett/enum-ansi-codes@0.12.9
-    - @palett/util-ansi@0.12.9
-    - @palett/convert@0.12.9
+  - @palett/enum-font-effects@0.12.9
+  - @palett/enum-color-space@0.12.9
+  - @palett/enum-ansi-codes@0.12.9
+  - @palett/util-ansi@0.12.9
+  - @palett/convert@0.12.9
 
 ## 0.12.8
 
@@ -138,11 +160,11 @@
 
 - minor fix
 - Updated dependencies
-    - @palett/enum-font-effects@0.12.8
-    - @palett/enum-color-space@0.12.8
-    - @palett/enum-ansi-codes@0.12.8
-    - @palett/util-ansi@0.12.8
-    - @palett/convert@0.12.8
+  - @palett/enum-font-effects@0.12.8
+  - @palett/enum-color-space@0.12.8
+  - @palett/enum-ansi-codes@0.12.8
+  - @palett/util-ansi@0.12.8
+  - @palett/convert@0.12.8
 
 ## 0.12.7
 
@@ -150,11 +172,11 @@
 
 - minor fix
 - Updated dependencies
-    - @palett/enum-ansi-codes@0.12.7
-    - @palett/enum-color-space@0.12.7
-    - @palett/enum-font-effects@0.12.7
-    - @palett/convert@0.12.7
-    - @palett/util-ansi@0.12.7
+  - @palett/enum-ansi-codes@0.12.7
+  - @palett/enum-color-space@0.12.7
+  - @palett/enum-font-effects@0.12.7
+  - @palett/convert@0.12.7
+  - @palett/util-ansi@0.12.7
 
 ## 0.12.6
 
@@ -162,11 +184,11 @@
 
 - update algorithms form conversion and Pres
 - Updated dependencies
-    - @palett/enum-ansi-codes@0.12.6
-    - @palett/enum-color-space@0.12.6
-    - @palett/enum-font-effects@0.12.6
-    - @palett/convert@0.12.6
-    - @palett/util-ansi@0.12.6
+  - @palett/enum-ansi-codes@0.12.6
+  - @palett/enum-color-space@0.12.6
+  - @palett/enum-font-effects@0.12.6
+  - @palett/convert@0.12.6
+  - @palett/util-ansi@0.12.6
 
 ## 0.12.5
 
@@ -174,11 +196,11 @@
 
 - add Presm class in @palett/pres
 - Updated dependencies
-    - @palett/enum-ansi-codes@0.12.5
-    - @palett/enum-color-space@0.12.5
-    - @palett/enum-font-effects@0.12.5
-    - @palett/convert@0.12.5
-    - @palett/util-ansi@0.12.5
+  - @palett/enum-ansi-codes@0.12.5
+  - @palett/enum-color-space@0.12.5
+  - @palett/enum-font-effects@0.12.5
+  - @palett/convert@0.12.5
+  - @palett/util-ansi@0.12.5
 
 ## 0.12.4
 
@@ -186,11 +208,11 @@
 
 - add package @palett/pres
 - Updated dependencies
-    - @palett/enum-ansi-codes@0.12.4
-    - @palett/enum-color-space@0.12.4
-    - @palett/enum-font-effects@0.12.4
-    - @palett/convert@0.12.4
-    - @palett/util-ansi@0.12.4
+  - @palett/enum-ansi-codes@0.12.4
+  - @palett/enum-color-space@0.12.4
+  - @palett/enum-font-effects@0.12.4
+  - @palett/convert@0.12.4
+  - @palett/util-ansi@0.12.4
 
 ## 0.12.3
 
@@ -198,11 +220,11 @@
 
 - fix bug on flopper
 - Updated dependencies
-    - @palett/enum-font-effects@0.12.3
-    - @palett/enum-color-space@0.12.3
-    - @palett/enum-ansi-codes@0.12.3
-    - @palett/util-ansi@0.12.3
-    - @palett/convert@0.12.3
+  - @palett/enum-font-effects@0.12.3
+  - @palett/enum-color-space@0.12.3
+  - @palett/enum-ansi-codes@0.12.3
+  - @palett/util-ansi@0.12.3
+  - @palett/convert@0.12.3
 
 ## 0.12.2
 
@@ -210,11 +232,11 @@
 
 - minor fix
 - Updated dependencies
-    - @palett/enum-ansi-codes@0.12.2
-    - @palett/enum-color-space@0.12.2
-    - @palett/enum-font-effects@0.12.2
-    - @palett/convert@0.12.2
-    - @palett/util-ansi@0.12.2
+  - @palett/enum-ansi-codes@0.12.2
+  - @palett/enum-color-space@0.12.2
+  - @palett/enum-font-effects@0.12.2
+  - @palett/convert@0.12.2
+  - @palett/util-ansi@0.12.2
 
 ## 0.12.1
 
@@ -222,11 +244,11 @@
 
 - minor fix
 - Updated dependencies
-    - @palett/convert@0.12.1
-    - @palett/enum-ansi-codes@0.12.1
-    - @palett/enum-color-space@0.12.1
-    - @palett/enum-font-effects@0.12.1
-    - @palett/util-ansi@0.12.1
+  - @palett/convert@0.12.1
+  - @palett/enum-ansi-codes@0.12.1
+  - @palett/enum-color-space@0.12.1
+  - @palett/enum-font-effects@0.12.1
+  - @palett/util-ansi@0.12.1
 
 ## 0.12.0
 
@@ -237,8 +259,8 @@
 ### Patch Changes
 
 - Updated dependencies
-    - @palett/enum-ansi-codes@0.12.0
-    - @palett/enum-color-space@0.12.0
-    - @palett/enum-font-effects@0.12.0
-    - @palett/convert@0.12.0
-    - @palett/util-ansi@0.12.0
+  - @palett/enum-ansi-codes@0.12.0
+  - @palett/enum-color-space@0.12.0
+  - @palett/enum-font-effects@0.12.0
+  - @palett/convert@0.12.0
+  - @palett/util-ansi@0.12.0

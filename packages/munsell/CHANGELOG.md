@@ -1,12 +1,28 @@
 # @palett/munsell
 
+## 0.12.21
+
+### Patch Changes
+
+- minor fix
+- Updated dependencies
+  - @palett/convert@0.12.21
+
+## 0.12.20
+
+### Patch Changes
+
+- restructure class, change interface, redefine usage
+- Updated dependencies
+  - @palett/convert@0.12.20
+
 ## 0.12.19
 
 ### Patch Changes
 
 - minor fix
 - Updated dependencies
-    - @palett/convert@0.12.19
+  - @palett/convert@0.12.19
 
 ## 0.12.18
 
@@ -14,7 +30,7 @@
 
 - minor fix
 - Updated dependencies
-    - @palett/convert@0.12.18
+  - @palett/convert@0.12.18
 
 ## 0.12.17
 
@@ -22,7 +38,7 @@
 
 - fix dependency issue in @palett/projector
 - Updated dependencies
-    - @palett/convert@0.12.17
+  - @palett/convert@0.12.17
 
 ## 0.12.16
 
@@ -30,7 +46,7 @@
 
 - minor fix
 - Updated dependencies
-    - @palett/convert@0.12.16
+  - @palett/convert@0.12.16
 
 ## 0.12.15
 
@@ -38,7 +54,7 @@
 
 - minor fix
 - Updated dependencies
-    - @palett/convert@0.12.15
+  - @palett/convert@0.12.15
 
 ## 0.12.14
 
@@ -46,9 +62,9 @@
 
 - minor fix
 - Updated dependencies
-    - @palett/color-space@0.12.14
-    - @palett/convert@0.12.14
-    - @palett/pres@0.12.14
+  - @palett/color-space@0.12.14
+  - @palett/convert@0.12.14
+  - @palett/pres@0.12.14
 
 ## 0.12.13
 
@@ -56,9 +72,9 @@
 
 - restructure interface and optimize performance
 - Updated dependencies
-    - @palett/color-space@0.12.13
-    - @palett/convert@0.12.13
-    - @palett/pres@0.12.13
+  - @palett/color-space@0.12.13
+  - @palett/convert@0.12.13
+  - @palett/pres@0.12.13
 
 ## 0.12.12
 
@@ -66,9 +82,9 @@
 
 - minor fix
 - Updated dependencies
-    - @palett/color-space@0.12.12
-    - @palett/convert@0.12.12
-    - @palett/pres@0.12.12
+  - @palett/color-space@0.12.12
+  - @palett/convert@0.12.12
+  - @palett/pres@0.12.12
 
 ## 0.12.11
 
@@ -76,9 +92,9 @@
 
 - minor fix
 - Updated dependencies
-    - @palett/color-space@0.12.11
-    - @palett/convert@0.12.11
-    - @palett/pres@0.12.11
+  - @palett/color-space@0.12.11
+  - @palett/convert@0.12.11
+  - @palett/pres@0.12.11
 
 ## 0.12.10
 
@@ -86,9 +102,9 @@
 
 - update interface
 - Updated dependencies
-    - @palett/color-space@0.12.10
-    - @palett/convert@0.12.10
-    - @palett/pres@0.12.10
+  - @palett/color-space@0.12.10
+  - @palett/convert@0.12.10
+  - @palett/pres@0.12.10
 
 ## 0.12.9
 
@@ -96,8 +112,8 @@
 
 - fix bugs
 - Updated dependencies
-    - @palett/color-space@0.12.9
-    - @palett/convert@0.12.9
+  - @palett/color-space@0.12.9
+  - @palett/convert@0.12.9
 
 ## 0.12.8
 
@@ -105,8 +121,8 @@
 
 - minor fix
 - Updated dependencies
-    - @palett/color-space@0.12.8
-    - @palett/convert@0.12.8
+  - @palett/color-space@0.12.8
+  - @palett/convert@0.12.8
 
 ## 0.12.7
 
@@ -114,8 +130,8 @@
 
 - minor fix
 - Updated dependencies
-    - @palett/color-space@0.12.7
-    - @palett/convert@0.12.7
+  - @palett/color-space@0.12.7
+  - @palett/convert@0.12.7
 
 ## 0.12.6
 
@@ -123,8 +139,8 @@
 
 - update algorithms form conversion and Pres
 - Updated dependencies
-    - @palett/color-space@0.12.6
-    - @palett/convert@0.12.6
+  - @palett/color-space@0.12.6
+  - @palett/convert@0.12.6
 
 ## 0.12.5
 
@@ -132,8 +148,8 @@
 
 - add Presm class in @palett/pres
 - Updated dependencies
-    - @palett/color-space@0.12.5
-    - @palett/convert@0.12.5
+  - @palett/color-space@0.12.5
+  - @palett/convert@0.12.5
 
 ## 0.12.4
 
@@ -141,8 +157,8 @@
 
 - add package @palett/pres
 - Updated dependencies
-    - @palett/color-space@0.12.4
-    - @palett/convert@0.12.4
+  - @palett/color-space@0.12.4
+  - @palett/convert@0.12.4
 
 ## 0.12.3
 
@@ -150,8 +166,8 @@
 
 - fix bug on flopper
 - Updated dependencies
-    - @palett/color-space@0.12.3
-    - @palett/convert@0.12.3
+  - @palett/color-space@0.12.3
+  - @palett/convert@0.12.3
 
 ## 0.12.2
 
@@ -159,8 +175,8 @@
 
 - minor fix
 - Updated dependencies
-    - @palett/color-space@0.12.2
-    - @palett/convert@0.12.2
+  - @palett/color-space@0.12.2
+  - @palett/convert@0.12.2
 
 ## 0.12.1
 
@@ -168,8 +184,8 @@
 
 - minor fix
 - Updated dependencies
-    - @palett/color-space@0.12.1
-    - @palett/convert@0.12.1
+  - @palett/color-space@0.12.1
+  - @palett/convert@0.12.1
 
 ## 0.12.0
 
@@ -180,5 +196,5 @@
 ### Patch Changes
 
 - Updated dependencies
-    - @palett/color-space@0.12.0
-    - @palett/convert@0.12.0
+  - @palett/color-space@0.12.0
+  - @palett/convert@0.12.0

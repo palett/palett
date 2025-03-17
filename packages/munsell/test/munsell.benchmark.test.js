@@ -60,24 +60,6 @@ export class MunEdge {
   }
 }
 
-test('hInterval', () => {
-  const candidates = {
-    '#CA3422': 'Poinciana',
-    '#B5817D': 'Ash Rose',
-    '#3AB0A2': 'Waterfall',
-    '#AAAAC4': 'Cosmic Sky',
-    '#ECB2B3': 'Powder Pink',
-    '#D75C5D': 'Spiced Coral',
-  }
-  for (let hex in candidates) {
-    const hsi = hexToHsi(hex)
-    const h = (hsi >> 16 & 0x1FF)
-    console.log(hexToStr(hex), hslToStr(hexToHsl(hex)), dhex.call(hex, candidates[hex]))
-    Munsell.list
-    console.log(Munsell.range(h))
-  }
-})
-
 // Ash Rose #B5817D
 // Waterfall #3AB0A2
 test('flopper benchmark', () => {

@@ -14,12 +14,7 @@ test('nice test', () => {
   }
 })
 
-export const neonS = (h) => {
-  if ((h %= 360) < 0) h += 360 // clamp to 0 to 360
-  let s = 27 * Math.cos((2 * Math.PI / 180) * (h - 20)) + 57
-  if (110 < h && h < 290) s = (s - 30) * 0.5 + 30
-  return s
-}
+
 
 test('neon test', () => {
   for (let h = 0; h < 360; h += 10) {

@@ -1,5 +1,17 @@
 # @palett/enum-font-effects
 
+## 0.12.21
+
+### Patch Changes
+
+- minor fix
+
+## 0.12.20
+
+### Patch Changes
+
+- restructure class, change interface, redefine usage
+
 ## 0.12.19
 
 ### Patch Changes
