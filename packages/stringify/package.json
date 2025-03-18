@@ -1,11 +1,11 @@
 {
   "name": "@palett/stringify",
-  "version": "0.12.22",
+  "version": "0.12.23",
   "description": "A color converter among RGB, HEX and HSL.",
   "type": "module",
-  "exports": "./dist/index.js",
+  "exports": "./index.js",
   "files": [
-    "dist"
+    "index.js"
   ],
   "engines": {
     "node": ">=22.0.0"

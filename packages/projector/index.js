@@ -1,6 +1,7 @@
 import { modHsiTo } from '@palett/convert';
 import { initialize, render } from '@palett/dye';
-import '@palett/pres';
+
+// import { Pres }               from '@palett/pres'
 
 class Proj {
   /** @type {Pres} */ pres
