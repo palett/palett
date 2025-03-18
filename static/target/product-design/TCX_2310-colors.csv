@@ -1,0 +1,2311 @@
+  code         ,rgb             ,hex    ,name              
+  PQ-19-3909TCX,"rgb(46,39,42)   ",#2E272A,Black Bean        
+  PQ-19-3911TCX,"rgb(38,38,42)   ",#26262A,Black Beauty      
+  PQ-19-3922TCX,"rgb(38,41,52)   ",#262934,Sky Captain       
+  PQ-19-4003TCX,"rgb(43,39,43)   ",#2B272B,Black Onyx        
+  PQ-19-4004TCX,"rgb(42,43,45)   ",#2A2B2D,Tap Shoe          
+  PQ-19-4006TCX,"rgb(41,42,45)   ",#292A2D,Caviar            
+  PQ-19-4007TCX,"rgb(40,40,45)   ",#28282D,Anthracite        
+  PQ-19-4008TCX,"rgb(43,41,41)   ",#2B2929,Meteorite         
+  PQ-19-5350TCX,"rgb(35,49,45)   ",#23312D,Scarab            
+  PQ-19-5708TCX,"rgb(38,44,42)   ",#262C2A,Jet Set           
+  PQ-19-4038TCX,"rgb(18,56,80)   ",#123850,Gibraltar Sea     
+  PQ-19-4034TCX,"rgb(14,58,83)   ",#0E3A53,Sailor Blue       
+  PQ-19-3952TCX,"rgb(32,60,127)  ",#203C7F,Surf the Web      
+  PQ-19-3864TCX,"rgb(39,60,118)  ",#273C76,Mazarine Blue     
+  PQ-19-3951TCX,"rgb(54,59,124)  ",#363B7C,Clematis Blue     
+  PQ-19-4045TCX,"rgb(0,75,141)   ",#004B8D,Lapis Blue        
+  PQ-19-4049TCX,"rgb(3,79,132)   ",#034F84,Snorkel Blue      
+  PQ-19-4050TCX,"rgb(26,80,145)  ",#1A5091,Nautical Blue     
+  PQ-19-4052TCX,"rgb(15,76,129)  ",#0F4C81,Classic Blue      
+  PQ-19-4056TCX,"rgb(26,76,139)  ",#1A4C8B,Blue Iolite       
+  PQ-18-3949TCX,"rgb(56,80,160)  ",#3850A0,Dazzling Blue     
+  PQ-19-4150TCX,"rgb(0,83,156)   ",#00539C,Princess Blue     
+  PQ-19-4151TCX,"rgb(0,88,155)   ",#00589B,Skydiver          
+  PQ-18-4148TCX,"rgb(8,88,157)   ",#08589D,Victoria Blue     
+  PQ-19-4245TCX,"rgb(0,90,146)   ",#005A92,Imperial Blue     
+  PQ-18-4244TCX,"rgb(0,97,163)   ",#0061A3,Directoire Blue   
+  PQ-18-4045TCX,"rgb(15,95,154)  ",#0F5F9A,Daphne            
+  PQ-18-4051TCX,"rgb(31,93,160)  ",#1F5DA0,Strong Blue       
+  PQ-18-3945TCX,"rgb(73,96,168)  ",#4960A8,Amparo Blue       
+  PQ-18-4048TCX,"rgb(45,98,163)  ",#2D62A3,Nebulas Blue      
+  PQ-19-4033TCX,"rgb(18,57,85)   ",#123955,Poseidon          
+  PQ-19-4120TCX,"rgb(15,59,87)   ",#0F3B57,Blue Opal         
+  PQ-19-4053TCX,"rgb(25,81,144)  ",#195190,Turkish Sea       
+  PQ-18-4250TCX,"rgb(0,108,169)  ",#006CA9,Indigo Bunting    
+  PQ-18-4043TCX,"rgb(52,108,176) ",#346CB0,Palace Blue       
+  PQ-19-5220TCX,"rgb(18,64,60)   ",#12403C,Botanical Garden  
+  PQ-19-5232TCX,"rgb(21,70,62)   ",#15463E,Rain Forest       
+  PQ-19-4057TCX,"rgb(30,68,119)  ",#1E4477,True Blue         
+  PQ-18-4140TCX,"rgb(0,114,181)  ",#0072B5,French Blue       
+  PQ-18-4247TCX,"rgb(0,117,179)  ",#0075B3,Brilliant Blue    
+  PQ-18-4252TCX,"rgb(0,119,179)  ",#0077B3,Blue Aster        
+  PQ-18-4440TCX,"rgb(0,117,175)  ",#0075AF,Cloisonné         
+  PQ-19-5406TCX,"rgb(33,54,49)   ",#213631,Pine Grove        
+  PQ-19-5230TCX,"rgb(24,74,69)   ",#184A45,Forest Biome      
+  PQ-17-4245TCX,"rgb(0,124,183)  ",#007CB7,Ibiza Blue        
+  PQ-17-4247TCX,"rgb(0,123,178)  ",#007BB2,Diva Blue         
+  PQ-19-5918TCX,"rgb(46,61,48)   ",#2E3D30,Mountain View     
+  PQ-19-5217TCX,"rgb(3,84,83)    ",#035453,Storm             
+  PQ-19-4524TCX,"rgb(0,88,94)    ",#00585E,Shaded Spruce     
+  PQ-19-4540TCX,"rgb(0,82,101)   ",#005265,Deep Lagoon       
+  PQ-19-4340TCX,"rgb(0,88,113)   ",#005871,Lyons Blue        
+  PQ-18-4434TCX,"rgb(0,87,128)   ",#005780,Mykonos Blue      
+  PQ-18-4231TCX,"rgb(9,87,123)   ",#09577B,Blue Sapphire     
+  PQ-19-4048TCX,"rgb(21,81,135)  ",#155187,Baleine Blue      
+  PQ-19-4914TCX,"rgb(24,69,75)   ",#18454B,Deep Teal         
+  PQ-18-5322TCX,"rgb(0,95,86)    ",#005F56,Alpine Green      
+  PQ-19-5226TCX,"rgb(0,91,93)    ",#005B5D,Everglade         
+  PQ-19-4234TCX,"rgb(11,83,105)  ",#0B5369,Ink Blue          
+  PQ-19-4241TCX,"rgb(15,78,103)  ",#0F4E67,Moroccan Blue     
+  PQ-19-4342TCX,"rgb(0,94,125)   ",#005E7D,Seaport           
+  PQ-19-4535TCX,"rgb(0,97,117)   ",#006175,Ocean Depths      
+  PQ-18-4530TCX,"rgb(0,99,128)   ",#006380,Celestial         
+  PQ-18-4330TCX,"rgb(0,126,177)  ",#007EB1,Swedish Blue      
+  PQ-19-6050TCX,"rgb(38,78,54)   ",#264E36,Eden              
+  PQ-19-5420TCX,"rgb(17,87,74)   ",#11574A,Evergreen         
+  PQ-18-5338TCX,"rgb(0,107,84)   ",#006B54,Ultramarine Green 
+  PQ-18-5845TCX,"rgb(0,110,81)   ",#006E51,Lush Meadow       
+  PQ-18-5424TCX,"rgb(0,103,91)   ",#00675B,Cadmium Green     
+  PQ-19-4922TCX,"rgb(0,99,97)    ",#006361,Teal Green        
+  PQ-18-5025TCX,"rgb(0,104,101)  ",#006865,Quetzal Green     
+  PQ-18-4728TCX,"rgb(0,101,110)  ",#00656E,Harbor Blue       
+  PQ-18-4834TCX,"rgb(0,101,107)  ",#00656B,Deep Lake         
+  PQ-19-4536TCX,"rgb(0,99,124)   ",#00637C,Crystal Teal      
+  PQ-18-4432TCX,"rgb(0,105,139)  ",#00698B,Turkish Tile      
+  PQ-17-4336TCX,"rgb(0,132,189)  ",#0084BD,Blithe            
+  PQ-17-4435TCX,"rgb(0,140,193)  ",#008CC1,Malibu Blue       
+  PQ-18-6030TCX,"rgb(0,120,68)   ",#007844,Jolly Green       
+  PQ-18-5624TCX,"rgb(0,110,91)   ",#006E5B,Shady Glade       
+  PQ-18-4936TCX,"rgb(0,109,112)  ",#006D70,Fanfare           
+  PQ-18-4630TCX,"rgb(0,107,126)  ",#006B7E,Tahitian Tide     
+  PQ-18-4537TCX,"rgb(0,116,168)  ",#0074A8,Methyl Blue       
+  PQ-19-6026TCX,"rgb(18,103,74)  ",#12674A,Verdant Green     
+  PQ-18-5633TCX,"rgb(0,117,88)   ",#007558,Bosphorus         
+  PQ-18-5020TCX,"rgb(0,115,108)  ",#00736C,Parasailing       
+  PQ-18-4430TCX,"rgb(0,114,144)  ",#007290,Fjord Blue        
+  PQ-18-4528TCX,"rgb(0,117,143)  ",#00758F,Mosaic Blue       
+  PQ-18-4535TCX,"rgb(0,123,170)  ",#007BAA,Blue Jewel        
+  PQ-18-4538TCX,"rgb(0,120,167)  ",#0078A7,Hawaiian Surf     
+  PQ-17-6153TCX,"rgb(0,140,69)   ",#008C45,Fern Green        
+  PQ-18-5841TCX,"rgb(0,125,96)   ",#007D60,Pepper Green      
+  PQ-17-5528TCX,"rgb(0,125,105)  ",#007D69,Greenlake         
+  PQ-18-5619TCX,"rgb(10,111,105) ",#0A6F69,Tidepool          
+  PQ-17-5024TCX,"rgb(0,127,124)  ",#007F7C,Teal Blue         
+  PQ-18-5128TCX,"rgb(0,124,122)  ",#007C7A,Blue Grass        
+  PQ-18-4733TCX,"rgb(0,122,142)  ",#007A8E,Enamel Blue       
+  PQ-18-4525TCX,"rgb(0,129,157)  ",#00819D,Caribbean Sea     
+  PQ-17-4433TCX,"rgb(0,134,187)  ",#0086BB,Dresden Blue      
+  PQ-17-6030TCX,"rgb(0,134,88)   ",#008658,Jelly Bean        
+  PQ-17-5734TCX,"rgb(0,132,107)  ",#00846B,Viridis           
+  PQ-18-5642TCX,"rgb(0,135,99)   ",#008763,Golf Green        
+  PQ-17-5029TCX,"rgb(0,131,129)  ",#008381,Deep Peacock Blue 
+  PQ-17-5430TCX,"rgb(0,135,120)  ",#008778,Alhambra          
+  PQ-17-5025TCX,"rgb(0,133,131)  ",#008583,Navigate          
+  PQ-17-5034TCX,"rgb(0,134,132)  ",#008684,Lapis             
+  PQ-18-4726TCX,"rgb(9,121,136)  ",#097988,Biscay Bay        
+  PQ-18-4930TCX,"rgb(0,135,134)  ",#008786,Tropical Green    
+  PQ-18-4735TCX,"rgb(0,132,145)  ",#008491,Tile Blue         
+  PQ-17-4728TCX,"rgb(0,133,156)  ",#00859C,Algiers Blue      
+  PQ-17-4730TCX,"rgb(0,132,159)  ",#00849F,Caneel Bay        
+  PQ-17-4735TCX,"rgb(0,135,153)  ",#008799,Capri Breeze      
+  PQ-17-4928TCX,"rgb(0,140,150)  ",#008C96,Lake Blue         
+  PQ-17-4530TCX,"rgb(0,132,161)  ",#0084A1,Barrier Reef      
+  PQ-17-4432TCX,"rgb(0,136,176)  ",#0088B0,Vivid Blue        
+  PQ-17-4440TCX,"rgb(0,135,182)  ",#0087B6,Blue Danube       
+  PQ-17-5735TCX,"rgb(0,140,105)  ",#008C69,Parakeet          
+  PQ-17-5330TCX,"rgb(0,142,128)  ",#008E80,Dynasty Green     
+  PQ-17-5633TCX,"rgb(0,146,118)  ",#009276,Deep Green        
+  PQ-17-5130TCX,"rgb(0,146,136)  ",#009288,Columbia          
+  PQ-17-4540TCX,"rgb(0,141,185)  ",#008DB9,Hawaiian Ocean    
+  PQ-15-5534TCX,"rgb(0,155,92)   ",#009B5C,Bright Green      
+  PQ-17-5641TCX,"rgb(0,148,115)  ",#009473,Emerald           
+  PQ-16-5938TCX,"rgb(0,161,112)  ",#00A170,Mint              
+  PQ-17-5936TCX,"rgb(0,155,117)  ",#009B75,Simply Green      
+  PQ-17-5937TCX,"rgb(0,158,109)  ",#009E6D,Deep Mint         
+  PQ-17-5638TCX,"rgb(0,158,130)  ",#009E82,Vivid Green       
+  PQ-17-5335TCX,"rgb(0,155,140)  ",#009B8C,Spectra Green     
+  PQ-17-5126TCX,"rgb(0,148,153)  ",#009499,Viridian Green    
+  PQ-16-5942TCX,"rgb(0,167,118)  ",#00A776,Blarney           
+  PQ-16-5431TCX,"rgb(0,167,139)  ",#00A78B,Peacock Green     
+  PQ-16-5533TCX,"rgb(0,162,138)  ",#00A28A,Arcadia           
+  PQ-16-4728TCX,"rgb(0,160,176)  ",#00A0B0,Peacock Blue      
+  PQ-16-4834TCX,"rgb(0,157,174)  ",#009DAE,Bluebird          
+  PQ-16-5127TCX,"rgb(0,170,169)  ",#00AAA9,Ceramic           
+  PQ-16-4535TCX,"rgb(0,177,210)  ",#00B1D2,Blue Atoll        
+  PQ-16-5932TCX,"rgb(15,157,118) ",#0F9D76,Holly Green       
+  PQ-16-5427TCX,"rgb(0,170,146)  ",#00AA92,Billiard          
+  PQ-15-5425TCX,"rgb(0,175,159)  ",#00AF9F,Atlantis          
+  PQ-16-5425TCX,"rgb(0,175,157)  ",#00AF9D,Pool Green        
+  PQ-16-4725TCX,"rgb(0,171,192)  ",#00ABC0,Scuba Blue        
+  PQ-16-4529TCX,"rgb(20,163,199) ",#14A3C7,Cyan Blue         
+  PQ-16-6340TCX,"rgb(57,168,69)  ",#39A845,Classic Green     
+  PQ-15-5728TCX,"rgb(0,182,148)  ",#00B694,Mint Leaf         
+  PQ-15-5421TCX,"rgb(0,184,159)  ",#00B89F,Aqua Green        
+  PQ-16-6138TCX,"rgb(51,156,94)  ",#339C5E,Kelly Green       
+  PQ-16-6240TCX,"rgb(43,174,102) ",#2BAE66,Island Green      
+  PQ-16-5930TCX,"rgb(58,162,120) ",#3AA278,Ming Green        
+  PQ-15-4825TCX,"rgb(50,190,204) ",#32BECC,Blue Curacao      
+  PQ-15-4720TCX,"rgb(56,175,205) ",#38AFCD,River Blue        
+  PQ-16-4530TCX,"rgb(60,173,212) ",#3CADD4,Aquarius          
+  PQ-16-6444TCX,"rgb(77,181,96)  ",#4DB560,Poison Green      
+  PQ-15-6340TCX,"rgb(69,190,118) ",#45BE76,Irish Green       
+  PQ-19-4011TCX,"rgb(40,43,52)   ",#282B34,Salute            
+  PQ-19-3831TCX,"rgb(39,41,61)   ",#27293D,Maritime Blue     
+  PQ-18-3963TCX,"rgb(61,60,124)  ",#3D3C7C,Spectrum Blue     
+  PQ-19-3847TCX,"rgb(68,55,125)  ",#44377D,Deep Blue         
+  PQ-19-3955TCX,"rgb(61,66,139)  ",#3D428B,Royal Blue        
+  PQ-19-3923TCX,"rgb(40,45,60)   ",#282D3C,Navy Blazer       
+  PQ-19-4012TCX,"rgb(39,47,56)   ",#272F38,Carbon            
+  PQ-19-4020TCX,"rgb(38,43,55)   ",#262B37,Dark Sapphire     
+  PQ-19-3940TCX,"rgb(38,48,86)   ",#263056,Blue Depths       
+  PQ-19-3953TCX,"rgb(37,54,104)  ",#253668,Sodalite Blue     
+  PQ-19-4029TCX,"rgb(34,58,94)   ",#223A5E,Navy Peony        
+  PQ-19-4027TCX,"rgb(35,54,88)   ",#233658,Estate Blue       
+  PQ-19-3964TCX,"rgb(39,67,116)  ",#274374,Blue Quartz       
+  PQ-19-5320TCX,"rgb(32,59,61)   ",#203B3D,Ponderosa Pine    
+  PQ-19-4326TCX,"rgb(32,62,74)   ",#203E4A,Reflecting Pond   
+  PQ-19-5030TCX,"rgb(37,68,69)   ",#254445,Sea Moss          
+  PQ-19-4324TCX,"rgb(31,73,91)   ",#1F495B,Legion Blue       
+  PQ-19-4044TCX,"rgb(36,63,108)  ",#243F6C,Limoges           
+  PQ-19-5414TCX,"rgb(38,74,72)   ",#264A48,June Bug          
+  PQ-19-4526TCX,"rgb(27,83,102)  ",#1B5366,Blue Coral        
+  PQ-19-4329TCX,"rgb(24,87,108)  ",#18576C,Corsair           
+  PQ-19-4916TCX,"rgb(31,89,92)   ",#1F595C,Pacific           
+  PQ-18-5315TCX,"rgb(37,89,88)   ",#255958,Bayberry          
+  PQ-18-4225TCX,"rgb(31,102,128) ",#1F6680,Saxony Blue       
+  PQ-18-4334TCX,"rgb(20,120,167) ",#1478A7,Mediterranian Blue
+  PQ-18-6024TCX,"rgb(31,115,73)  ",#1F7349,Amazon            
+  PQ-18-5620TCX,"rgb(34,108,99)  ",#226C63,Ivy               
+  PQ-18-5121TCX,"rgb(32,112,111) ",#20706F,Bayou             
+  PQ-17-4427TCX,"rgb(21,126,160) ",#157EA0,Bluejay           
+  PQ-17-5421TCX,"rgb(16,135,128) ",#108780,Porcelain Green   
+  PQ-17-4724TCX,"rgb(26,127,142) ",#1A7F8E,Pagoda Blue       
+  PQ-17-0145TCX,"rgb(68,136,60)  ",#44883C,Online Lime       
+  PQ-16-5421TCX,"rgb(20,156,136) ",#149C88,Sea Green         
+  PQ-15-4722TCX,"rgb(68,187,202) ",#44BBCA,Capri             
+  PQ-16-6339TCX,"rgb(85,168,96)  ",#55A860,Vibrant Green     
+  PQ-15-5519TCX,"rgb(69,181,170) ",#45B5AA,Turquoise         
+  PQ-19-3713TCX,"rgb(44,42,51)   ",#2C2A33,Deep Well         
+  PQ-19-3924TCX,"rgb(42,42,53)   ",#2A2A35,Night Sky         
+  PQ-19-3815TCX,"rgb(42,41,62)   ",#2A293E,Evening Blue      
+  PQ-19-3850TCX,"rgb(77,68,138)  ",#4D448A,Liberty           
+  PQ-19-0303TCX,"rgb(45,44,47)   ",#2D2C2F,Jet Black         
+  PQ-19-4005TCX,"rgb(43,44,48)   ",#2B2C30,Stretch Limo      
+  PQ-19-4203TCX,"rgb(47,45,48)   ",#2F2D30,Moonless Night    
+  PQ-19-3920TCX,"rgb(43,46,67)   ",#2B2E43,Peacoat           
+  PQ-19-3933TCX,"rgb(41,48,78)   ",#29304E,Medieval Blue     
+  PQ-19-1018TCX,"rgb(52,41,42)   ",#34292A,Ganache           
+  PQ-19-3921TCX,"rgb(43,48,66)   ",#2B3042,Black Iris        
+  PQ-19-4024TCX,"rgb(42,50,68)   ",#2A3244,Dress Blues       
+  PQ-19-3939TCX,"rgb(45,51,89)   ",#2D3359,Blueprint         
+  PQ-19-4013TCX,"rgb(46,47,54)   ",#2E2F36,Dark Navy         
+  PQ-19-4218TCX,"rgb(45,48,54)   ",#2D3036,Vulcan            
+  PQ-19-4010TCX,"rgb(44,49,61)   ",#2C313D,Total Eclipse     
+  PQ-19-4021TCX,"rgb(44,51,62)   ",#2C333E,Blueberry         
+  PQ-19-4122TCX,"rgb(41,59,77)   ",#293B4D,Moonlit Ocean     
+  PQ-19-5212TCX,"rgb(48,61,60)   ",#303D3C,Darkest Spruce    
+  PQ-19-4028TCX,"rgb(47,62,85)   ",#2F3E55,Insignia Blue     
+  PQ-19-4121TCX,"rgb(44,64,83)   ",#2C4053,Blue Wing Teal    
+  PQ-19-4125TCX,"rgb(39,67,87)   ",#274357,Majolica Blue     
+  PQ-19-3938TCX,"rgb(49,61,100)  ",#313D64,Twilight Blue     
+  PQ-19-4906TCX,"rgb(50,66,65)   ",#324241,Green Gables      
+  PQ-19-4726TCX,"rgb(39,78,85)   ",#274E55,Atlantic Deep     
+  PQ-19-4126TCX,"rgb(41,73,92)   ",#29495C,Deep Dive         
+  PQ-19-4055TCX,"rgb(42,75,124)  ",#2A4B7C,Galaxy Blue       
+  PQ-18-4039TCX,"rgb(72,122,183) ",#487AB7,Regatta           
+  PQ-19-5513TCX,"rgb(49,79,64)   ",#314F40,Dark Green        
+  PQ-17-4041TCX,"rgb(79,132,196) ",#4F84C4,Marina            
+  PQ-18-5616TCX,"rgb(50,91,81)   ",#325B51,Posy Green        
+  PQ-19-4826TCX,"rgb(42,92,106)  ",#2A5C6A,Dragonfly         
+  PQ-18-4141TCX,"rgb(50,114,175) ",#3272AF,Campanula         
+  PQ-18-5418TCX,"rgb(41,103,92)  ",#29675C,Antique Green     
+  PQ-18-5725TCX,"rgb(41,104,95)  ",#29685F,Galapagos Green   
+  PQ-18-4522TCX,"rgb(45,100,113) ",#2D6471,Colonial Blue     
+  PQ-18-4032TCX,"rgb(38,102,145) ",#266691,Deep Water        
+  PQ-18-4034TCX,"rgb(48,101,142) ",#30658E,Vallarta Blue     
+  PQ-18-4232TCX,"rgb(42,106,139) ",#2A6A8B,Faience           
+  PQ-17-4429TCX,"rgb(49,131,160) ",#3183A0,Navagio Bay       
+  PQ-16-5123TCX,"rgb(39,157,159) ",#279D9F,Baltic            
+  PQ-16-4427TCX,"rgb(40,157,190) ",#289DBE,Horizon Blue      
+  PQ-16-5825TCX,"rgb(46,167,133) ",#2EA785,Gumdrop Green     
+  PQ-16-5422TCX,"rgb(48,162,153) ",#30A299,Bright Aqua       
+  PQ-14-4522TCX,"rgb(74,187,213) ",#4ABBD5,Bachelor Button   
+  PQ-14-5721TCX,"rgb(75,195,168) ",#4BC3A8,Electric Green    
+  PQ-19-3731TCX,"rgb(57,40,82)   ",#392852,Parachute Purple  
+  PQ-19-1103TCX,"rgb(54,48,49)   ",#363031,Espresso          
+  PQ-19-1106TCX,"rgb(57,45,43)   ",#392D2B,Mole'             
+  PQ-19-1109TCX,"rgb(56,46,45)   ",#382E2D,Chocolate Torte   
+  PQ-19-1110TCX,"rgb(60,45,46)   ",#3C2D2E,Chocolate Plum    
+  PQ-19-3830TCX,"rgb(54,49,81)   ",#363151,Astral Aura       
+  PQ-19-0509TCX,"rgb(54,54,45)   ",#36362D,Rosin             
+  PQ-19-4015TCX,"rgb(50,49,55)   ",#323137,Blue Graphite     
+  PQ-19-4009TCX,"rgb(47,52,65)   ",#2F3441,Outer Space       
+  PQ-19-4022TCX,"rgb(50,52,65)   ",#323441,Parisian Night    
+  PQ-19-3810TCX,"rgb(52,49,72)   ",#343148,Eclipse           
+  PQ-19-3925TCX,"rgb(54,55,86)   ",#363756,Patriot Blue      
+  PQ-19-3950TCX,"rgb(56,72,131)  ",#384883,Deep Ultramarine  
+  PQ-19-4023TCX,"rgb(54,59,72)   ",#363B48,Blue Nights       
+  PQ-19-4025TCX,"rgb(53,58,76)   ",#353A4C,Mood Indigo       
+  PQ-19-4110TCX,"rgb(52,65,78)   ",#34414E,Midnight Navy     
+  PQ-19-4031TCX,"rgb(53,67,90)   ",#35435A,Sargasso Sea      
+  PQ-19-0417TCX,"rgb(58,64,50)   ",#3A4032,Kombu Green       
+  PQ-19-0415TCX,"rgb(57,64,52)   ",#394034,Duffel Bag        
+  PQ-19-5917TCX,"rgb(53,70,61)   ",#35463D,Sycamore          
+  PQ-19-5920TCX,"rgb(51,77,65)   ",#334D41,Pineneedle        
+  PQ-19-6110TCX,"rgb(55,65,58)   ",#37413A,Deep Forest       
+  PQ-19-4118TCX,"rgb(53,70,94)   ",#35465E,Dark Denim        
+  PQ-19-4035TCX,"rgb(48,86,121)  ",#305679,Dark Blue         
+  PQ-19-6311TCX,"rgb(55,80,61)   ",#37503D,Greener Pastures  
+  PQ-19-5411TCX,"rgb(53,80,72)   ",#355048,Trekking Green    
+  PQ-19-5511TCX,"rgb(51,87,73)   ",#335749,Hunter Green      
+  PQ-19-5914TCX,"rgb(60,78,71)   ",#3C4E47,Jungle Green      
+  PQ-19-4316TCX,"rgb(57,80,92)   ",#39505C,Stargazer         
+  PQ-19-4517TCX,"rgb(50,87,93)   ",#32575D,Mediterranea      
+  PQ-19-4820TCX,"rgb(51,86,94)   ",#33565E,Balsam            
+  PQ-19-5413TCX,"rgb(51,89,89)   ",#335959,Jasper            
+  PQ-19-5408TCX,"rgb(57,85,81)   ",#395551,Bistro Green      
+  PQ-19-4127TCX,"rgb(50,91,116)  ",#325B74,Midnight          
+  PQ-19-4318TCX,"rgb(58,92,110)  ",#3A5C6E,Mallard Blue      
+  PQ-19-4037TCX,"rgb(56,93,141)  ",#385D8D,Bright Cobalt     
+  PQ-18-0330TCX,"rgb(78,99,44)   ",#4E632C,Twist of Lime     
+  PQ-18-5115TCX,"rgb(49,108,107) ",#316C6B,North Sea         
+  PQ-18-4222TCX,"rgb(53,99,124)  ",#35637C,Bluesteel         
+  PQ-18-0135TCX,"rgb(71,106,48)  ",#476A30,Treetop           
+  PQ-18-5621TCX,"rgb(58,114,95)  ",#3A725F,Fir               
+  PQ-18-5618TCX,"rgb(54,113,111) ",#36716F,Deep Jungle       
+  PQ-17-5923TCX,"rgb(58,121,94)  ",#3A795E,Pine Green        
+  PQ-17-5117TCX,"rgb(53,128,130) ",#358082,Green-Blue Slate  
+  PQ-17-6229TCX,"rgb(60,130,78)  ",#3C824E,Medium Green      
+  PQ-18-6022TCX,"rgb(55,134,97)  ",#378661,Leprechaun        
+  PQ-17-4328TCX,"rgb(54,134,160) ",#3686A0,Blue Moon         
+  PQ-17-5122TCX,"rgb(55,145,144) ",#379190,Latigo Bay        
+  PQ-15-5516TCX,"rgb(58,176,162) ",#3AB0A2,Waterfall         
+  PQ-14-4816TCX,"rgb(88,201,212) ",#58C9D4,Blue Radiance     
+  PQ-15-5718TCX,"rgb(85,198,169) ",#55C6A9,Biscay Green      
+  PQ-14-5420TCX,"rgb(88,200,182) ",#58C8B6,Cockatoo          
+  PQ-15-5416TCX,"rgb(86,190,171) ",#56BEAB,Florida Keys      
+  PQ-19-3750TCX,"rgb(62,40,92)   ",#3E285C,Violet Indigo     
+  PQ-19-2520TCX,"rgb(70,38,57)   ",#462639,Potent Purple     
+  PQ-19-1111TCX,"rgb(59,48,47)   ",#3B302F,Black Coffee      
+  PQ-19-3520TCX,"rgb(63,42,71)   ",#3F2A47,Blackberry Cordial
+  PQ-19-3628TCX,"rgb(70,41,90)   ",#46295A,Acai              
+  PQ-19-3839TCX,"rgb(58,57,95)   ",#3A395F,Blue Ribbon       
+  PQ-19-0508TCX,"rgb(59,58,54)   ",#3B3A36,Peat              
+  PQ-19-4305TCX,"rgb(54,56,56)   ",#363838,Pirate Black      
+  PQ-19-4205TCX,"rgb(57,55,59)   ",#39373B,Phantom           
+  PQ-19-3927TCX,"rgb(59,59,72)   ",#3B3B48,Graphite          
+  PQ-19-3832TCX,"rgb(64,63,111)  ",#403F6F,Navy Blue         
+  PQ-19-3842TCX,"rgb(68,63,111)  ",#443F6F,Deep Wisteria     
+  PQ-19-0419TCX,"rgb(65,72,50)   ",#414832,Rifle Green       
+  PQ-19-3935TCX,"rgb(64,68,102)  ",#404466,Deep Cobalt       
+  PQ-19-4026TCX,"rgb(56,76,103)  ",#384C67,Ensign Blue       
+  PQ-19-0712TCX,"rgb(64,52,43)   ",#40342B,Demitasse         
+  PQ-19-0840TCX,"rgb(63,53,47)   ",#3F352F,Delicioso         
+  PQ-19-1016TCX,"rgb(67,51,49)   ",#433331,Java              
+  PQ-19-0315TCX,"rgb(65,79,60)   ",#414F3C,Black Forest      
+  PQ-18-5913TCX,"rgb(62,82,75)   ",#3E524B,Garden Topiary    
+  PQ-19-4229TCX,"rgb(62,79,92)   ",#3E4F5C,Orion Blue        
+  PQ-19-4030TCX,"rgb(63,82,119)  ",#3F5277,True Navy         
+  PQ-19-4227TCX,"rgb(60,88,107)  ",#3C586B,Indian Teal       
+  PQ-18-4023TCX,"rgb(59,95,120)  ",#3B5F78,Blue Ashes        
+  PQ-18-4041TCX,"rgb(56,97,146)  ",#386192,Star Sapphire     
+  PQ-19-4039TCX,"rgb(61,94,140)  ",#3D5E8C,Delft             
+  PQ-19-0230TCX,"rgb(73,94,53)   ",#495E35,Garden Green      
+  PQ-19-0413TCX,"rgb(70,72,60)   ",#46483C,Deep Depths       
+  PQ-18-5718TCX,"rgb(62,98,87)   ",#3E6257,Smoke Pine        
+  PQ-18-4029TCX,"rgb(67,98,139)  ",#43628B,Federal Blue      
+  PQ-18-6330TCX,"rgb(61,114,69)  ",#3D7245,Juniper           
+  PQ-18-6018TCX,"rgb(62,111,88)  ",#3E6F58,Foliage Green     
+  PQ-17-4421TCX,"rgb(60,125,144) ",#3C7D90,Larkspur          
+  PQ-17-4131TCX,"rgb(62,127,165) ",#3E7FA5,Cendre Blue       
+  PQ-17-5722TCX,"rgb(66,125,109) ",#427D6D,Bottle Green      
+  PQ-16-5721TCX,"rgb(64,164,142) ",#40A48E,Marine Green      
+  PQ-14-5416TCX,"rgb(96,201,179) ",#60C9B3,Bermuda           
+  PQ-15-6123TCX,"rgb(96,184,146) ",#60B892,Jade Cream        
+  PQ-15-5819TCX,"rgb(100,191,164)",#64BFA4,Spearmint         
+  PQ-19-2620TCX,"rgb(71,36,59)   ",#47243B,Winter Bloom      
+  PQ-19-3519TCX,"rgb(67,44,71)   ",#432C47,Purple Pennant    
+  PQ-19-2420TCX,"rgb(77,35,61)   ",#4D233D,Pickled Beet      
+  PQ-19-0915TCX,"rgb(64,49,47)   ",#40312F,Coffee Bean       
+  PQ-19-3640TCX,"rgb(72,45,84)   ",#482D54,Crown Jewel       
+  PQ-19-3902TCX,"rgb(58,54,59)   ",#3A363B,Obsidian          
+  PQ-19-3728TCX,"rgb(67,52,85)   ",#433455,Grape             
+  PQ-19-1101TCX,"rgb(60,53,53)   ",#3C3535,After Dark        
+  PQ-19-1102TCX,"rgb(58,53,54)   ",#3A3536,Licorice          
+  PQ-19-3725TCX,"rgb(65,53,77)   ",#41354D,Purple Velvet     
+  PQ-19-0000TCX,"rgb(65,62,61)   ",#413E3D,Raven             
+  PQ-19-4019TCX,"rgb(60,63,74)   ",#3C3F4A,India Ink         
+  PQ-19-3722TCX,"rgb(73,60,98)   ",#493C62,Mulberry Purple   
+  PQ-19-3947TCX,"rgb(71,69,122)  ",#47457A,Orient Blue       
+  PQ-19-0414TCX,"rgb(67,66,55)   ",#434237,Forest Night      
+  PQ-19-0506TCX,"rgb(68,65,60)   ",#44413C,Black Ink         
+  PQ-19-0201TCX,"rgb(67,68,71)   ",#434447,Asphalt           
+  PQ-19-3930TCX,"rgb(67,68,82)   ",#434452,Odyssey Gray      
+  PQ-19-3926TCX,"rgb(70,75,101)  ",#464B65,Crown Blue        
+  PQ-17-3934TCX,"rgb(110,129,190)",#6E81BE,Persian Jewel     
+  PQ-19-0323TCX,"rgb(74,83,53)   ",#4A5335,Chive             
+  PQ-19-1419TCX,"rgb(74,52,46)   ",#4A342E,Chicory Coffee    
+  PQ-19-5621TCX,"rgb(67,84,75)   ",#43544B,Cilantro          
+  PQ-19-4220TCX,"rgb(70,81,90)   ",#46515A,Dark Slate        
+  PQ-19-3928TCX,"rgb(73,81,109)  ",#49516D,Blue Indigo       
+  PQ-19-4818TCX,"rgb(64,94,92)   ",#405E5C,Mallard Green     
+  PQ-18-4018TCX,"rgb(64,93,115)  ",#405D73,Real Teal         
+  PQ-18-4417TCX,"rgb(67,101,115) ",#436573,Tapestry          
+  PQ-18-4026TCX,"rgb(70,100,126) ",#46647E,Stellar           
+  PQ-18-3928TCX,"rgb(74,99,141)  ",#4A638D,Dutch Blue        
+  PQ-18-0125TCX,"rgb(75,109,65)  ",#4B6D41,Artichoke Green   
+  PQ-18-6320TCX,"rgb(71,112,80)  ",#477050,Fairway           
+  PQ-18-4718TCX,"rgb(66,105,114) ",#426972,Hydro             
+  PQ-17-6333TCX,"rgb(72,125,73)  ",#487D49,Mint Green        
+  PQ-17-4716TCX,"rgb(71,120,138) ",#47788A,Storm Blue        
+  PQ-17-4139TCX,"rgb(77,145,198) ",#4D91C6,Azure Blue        
+  PQ-17-4919TCX,"rgb(71,133,137) ",#478589,Teal              
+  PQ-15-4427TCX,"rgb(76,165,199) ",#4CA5C7,Norse Blue        
+  PQ-16-6127TCX,"rgb(75,155,105) ",#4B9B69,Greenbriar        
+  PQ-16-5924TCX,"rgb(79,158,129) ",#4F9E81,Winter Green      
+  PQ-16-5418TCX,"rgb(77,158,154) ",#4D9E9A,Lagoon            
+  PQ-14-6340TCX,"rgb(109,206,135)",#6DCE87,Spring Bouquet    
+  PQ-14-6330TCX,"rgb(107,205,156)",#6BCD9C,Spring Bud        
+  PQ-15-0545TCX,"rgb(126,200,69) ",#7EC845,Jasmine Green     
+  PQ-15-0146TCX,"rgb(121,199,83) ",#79C753,Green Flash       
+  PQ-16-6030TCX,"rgb(102,188,145)",#66BC91,Katydid           
+  PQ-16-0235TCX,"rgb(122,171,85) ",#7AAB55,Kiwi              
+  PQ-19-2118TCX,"rgb(73,42,52)   ",#492A34,Winetasting       
+  PQ-19-2524TCX,"rgb(88,33,71)   ",#582147,Dark Purple       
+  PQ-19-3712TCX,"rgb(67,55,72)   ",#433748,Nightshade        
+  PQ-19-1317TCX,"rgb(80,49,48)   ",#503130,Bitter Chocolate  
+  PQ-19-1627TCX,"rgb(80,43,51)   ",#502B33,Port Royale       
+  PQ-19-2816TCX,"rgb(77,50,70)   ",#4D3246,Blackberry Wine   
+  PQ-19-3218TCX,"rgb(81,48,78)   ",#51304E,Plum Purple       
+  PQ-19-3518TCX,"rgb(79,45,84)   ",#4F2D54,Grape Royale      
+  PQ-19-3528TCX,"rgb(84,44,93)   ",#542C5D,Imperial Purple   
+  PQ-19-3316TCX,"rgb(71,52,66)   ",#473442,Plum Perfect      
+  PQ-19-3720TCX,"rgb(71,57,81)   ",#473951,Gothic Grape      
+  PQ-19-3632TCX,"rgb(79,52,102)  ",#4F3466,Petunia           
+  PQ-19-3737TCX,"rgb(79,56,114)  ",#4F3872,Heliotrope        
+  PQ-19-0910TCX,"rgb(67,57,55)   ",#433937,Mulch             
+  PQ-19-1619TCX,"rgb(73,51,56)   ",#493338,Fudge             
+  PQ-19-3217TCX,"rgb(78,51,78)   ",#4E334E,Shadow Purple     
+  PQ-19-3617TCX,"rgb(70,57,75)   ",#46394B,Mysterioso        
+  PQ-19-3716TCX,"rgb(71,56,84)   ",#473854,Purple Plumeria   
+  PQ-19-3215TCX,"rgb(76,57,87)   ",#4C3957,Indigo            
+  PQ-19-3638TCX,"rgb(86,52,116)  ",#563474,Tillandsia Purple 
+  PQ-18-3839TCX,"rgb(90,78,143)  ",#5A4E8F,Purple Corallites 
+  PQ-19-0814TCX,"rgb(75,61,51)   ",#4B3D33,Slate Black       
+  PQ-19-4104TCX,"rgb(65,66,74)   ",#41424A,Ebony             
+  PQ-19-3619TCX,"rgb(75,59,79)   ",#4B3B4F,Sweet Grape       
+  PQ-19-3748TCX,"rgb(83,61,125)  ",#533D7D,Prism Violet      
+  PQ-19-0307TCX,"rgb(68,73,64)   ",#444940,Climbing Ivy      
+  PQ-19-0608TCX,"rgb(72,65,59)   ",#48413B,Black Olive       
+  PQ-19-3907TCX,"rgb(72,70,74)   ",#48464A,Forged Iron       
+  PQ-19-3908TCX,"rgb(70,67,74)   ",#46434A,Nine Iron         
+  PQ-19-3918TCX,"rgb(70,68,76)   ",#46444C,Periscope         
+  PQ-19-0203TCX,"rgb(73,73,77)   ",#49494D,Gray Pinstripe    
+  PQ-19-4014TCX,"rgb(67,72,84)   ",#434854,Ombre Blue        
+  PQ-19-3915TCX,"rgb(77,73,91)   ",#4D495B,Graystone         
+  PQ-19-3936TCX,"rgb(72,74,114)  ",#484A72,Skipper Blue      
+  PQ-18-3943TCX,"rgb(90,91,159)  ",#5A5B9F,Blue Iris         
+  PQ-17-4037TCX,"rgb(91,126,189) ",#5B7EBD,Ultramarine       
+  PQ-19-5004TCX,"rgb(70,78,77)   ",#464E4D,Urban Chic        
+  PQ-19-3929TCX,"rgb(74,85,107)  ",#4A556B,Vintage Indigo    
+  PQ-19-0815TCX,"rgb(90,70,50)   ",#5A4632,Desert Palm       
+  PQ-18-0322TCX,"rgb(84,90,62)   ",#545A3E,Cypress           
+  PQ-18-4028TCX,"rgb(75,91,110)  ",#4B5B6E,Bering Sea        
+  PQ-18-3917TCX,"rgb(77,88,122)  ",#4D587A,Gray Blue         
+  PQ-18-0228TCX,"rgb(89,95,52)   ",#595F34,Pesto             
+  PQ-18-5308TCX,"rgb(72,107,103) ",#486B67,Blue Spruce       
+  PQ-18-3929TCX,"rgb(78,100,130) ",#4E6482,Blue Horizon      
+  PQ-17-4028TCX,"rgb(76,106,146) ",#4C6A92,Riverside         
+  PQ-18-0130TCX,"rgb(83,113,61)  ",#53713D,Cactus            
+  PQ-18-4320TCX,"rgb(78,110,129) ",#4E6E81,Aegean Blue       
+  PQ-18-5610TCX,"rgb(76,126,134) ",#4C7E86,Brittany Blue     
+  PQ-18-4036TCX,"rgb(79,124,164) ",#4F7CA4,Parisian Blue     
+  PQ-17-4033TCX,"rgb(84,128,172) ",#5480AC,Pacific Coast     
+  PQ-16-4134TCX,"rgb(83,156,204) ",#539CCC,Bonnie Blue       
+  PQ-16-4525TCX,"rgb(82,162,180) ",#52A2B4,Maui Blue         
+  PQ-16-5820TCX,"rgb(88,159,126) ",#589F7E,Green Spruce      
+  PQ-16-5119TCX,"rgb(84,159,152) ",#549F98,Sea Blue          
+  PQ-16-5412TCX,"rgb(89,159,153) ",#599F99,Agate Green       
+  PQ-15-5217TCX,"rgb(83,176,174) ",#53B0AE,Blue Turquoise    
+  PQ-14-6329TCX,"rgb(118,181,131)",#76B583,Absinthe Green    
+  PQ-15-0343TCX,"rgb(136,176,75) ",#88B04B,Greenery          
+  PQ-14-5718TCX,"rgb(119,207,183)",#77CFB7,Opal              
+  PQ-19-1625TCX,"rgb(81,50,53)   ",#513235,Decadent Chocolate
+  PQ-19-1314TCX,"rgb(73,59,57)   ",#493B39,Seal Brown        
+  PQ-19-1718TCX,"rgb(83,45,59)   ",#532D3B,Fig               
+  PQ-19-2514TCX,"rgb(83,49,70)   ",#533146,Italian Plum      
+  PQ-19-3323TCX,"rgb(80,49,76)   ",#50314C,Deep Purple       
+  PQ-19-1724TCX,"rgb(100,36,46)  ",#64242E,Cabernet          
+  PQ-19-2429TCX,"rgb(97,34,74)   ",#61224A,Plum Caspia       
+  PQ-19-1522TCX,"rgb(92,41,53)   ",#5C2935,Zinfandel         
+  PQ-19-1528TCX,"rgb(88,43,54)   ",#582B36,Windsor Wine      
+  PQ-19-1725TCX,"rgb(92,44,53)   ",#5C2C35,Tawny Port        
+  PQ-19-2315TCX,"rgb(90,47,67)   ",#5A2F43,Grape Wine        
+  PQ-19-3220TCX,"rgb(90,49,93)   ",#5A315D,Plum              
+  PQ-19-3642TCX,"rgb(96,63,131)  ",#603F83,Royal Purple      
+  PQ-19-1218TCX,"rgb(84,57,45)   ",#54392D,Potting Soil      
+  PQ-19-1432TCX,"rgb(86,53,45)   ",#56352D,Chocolate Fondant 
+  PQ-19-1321TCX,"rgb(88,52,50)   ",#583432,Rum Raisin        
+  PQ-19-0812TCX,"rgb(72,63,57)   ",#483F39,Turkish Coffee    
+  PQ-19-1624TCX,"rgb(84,53,59)   ",#54353B,Sassafras         
+  PQ-19-3903TCX,"rgb(74,63,65)   ",#4A3F41,Shale             
+  PQ-19-2009TCX,"rgb(85,59,80)   ",#553B50,Hortensia         
+  PQ-19-3714TCX,"rgb(80,59,83)   ",#503B53,Navy Cosmos       
+  PQ-19-3514TCX,"rgb(89,55,97)   ",#593761,Majesty           
+  PQ-18-3946TCX,"rgb(95,109,176) ",#5F6DB0,Baja Blue         
+  PQ-19-0614TCX,"rgb(74,65,57)   ",#4A4139,Wren              
+  PQ-19-1215TCX,"rgb(84,59,53)   ",#543B35,Shaved Chocolate  
+  PQ-19-1518TCX,"rgb(80,57,56)   ",#503938,Puce              
+  PQ-19-0912TCX,"rgb(78,64,59)   ",#4E403B,Chocolate Brown   
+  PQ-19-1015TCX,"rgb(79,63,59)   ",#4F3F3B,Bracken           
+  PQ-19-3620TCX,"rgb(86,69,107)  ",#56456B,Purple Reign      
+  PQ-19-3730TCX,"rgb(84,66,117)  ",#544275,Gentian Violet    
+  PQ-18-3840TCX,"rgb(96,86,154)  ",#60569A,Purple Opulence   
+  PQ-19-0405TCX,"rgb(74,72,67)   ",#4A4843,Beluga            
+  PQ-19-3906TCX,"rgb(74,75,77)   ",#4A4B4D,Dark Shadow       
+  PQ-19-3901TCX,"rgb(77,75,79)   ",#4D4B4F,Magnet            
+  PQ-19-3917TCX,"rgb(77,75,80)   ",#4D4B50,Blackened Pearl   
+  PQ-18-3838TCX,"rgb(95,75,139)  ",#5F4B8B,Ultra Violet      
+  PQ-16-4033TCX,"rgb(93,129,187) ",#5D81BB,Granada Sky       
+  PQ-19-0516TCX,"rgb(87,77,53)   ",#574D35,Dark Olive        
+  PQ-19-0515TCX,"rgb(83,80,64)   ",#535040,Olive Night       
+  PQ-19-0511TCX,"rgb(84,81,68)   ",#545144,Grape Leaf        
+  PQ-19-3900TCX,"rgb(82,77,80)   ",#524D50,Pavement          
+  PQ-19-3910TCX,"rgb(78,80,85)   ",#4E5055,Iron Gate         
+  PQ-19-4215TCX,"rgb(78,84,91)   ",#4E545B,Turbulence        
+  PQ-19-3919TCX,"rgb(78,83,104)  ",#4E5368,Nightshadow Blue  
+  PQ-18-3932TCX,"rgb(81,91,135)  ",#515B87,Marlin            
+  PQ-18-0523TCX,"rgb(91,90,65)   ",#5B5A41,Winter Moss       
+  PQ-18-0317TCX,"rgb(82,95,72)   ",#525F48,Bronze Green      
+  PQ-19-0309TCX,"rgb(80,87,76)   ",#50574C,Thyme             
+  PQ-19-0312TCX,"rgb(85,88,76)   ",#55584C,Beetle            
+  PQ-18-3920TCX,"rgb(80,93,126)  ",#505D7E,Coastal Fjord     
+  PQ-18-3921TCX,"rgb(78,94,127)  ",#4E5E7F,Bijou Blue        
+  PQ-18-3950TCX,"rgb(91,96,158)  ",#5B609E,Iris Bloom        
+  PQ-18-0328TCX,"rgb(94,103,55)  ",#5E6737,Cedar Green       
+  PQ-18-6011TCX,"rgb(83,102,92)  ",#53665C,Duck Green        
+  PQ-18-6114TCX,"rgb(79,107,88)  ",#4F6B58,Myrtle            
+  PQ-18-5112TCX,"rgb(76,105,105) ",#4C6969,Sea Pine          
+  PQ-18-5410TCX,"rgb(78,104,102) ",#4E6866,Silver Pine       
+  PQ-18-5606TCX,"rgb(87,102,100) ",#576664,Balsam Green      
+  PQ-18-4214TCX,"rgb(88,100,109) ",#58646D,Stormy Weather    
+  PQ-18-3918TCX,"rgb(84,100,119) ",#546477,China Blue        
+  PQ-18-4025TCX,"rgb(81,107,132) ",#516B84,Copen Blue        
+  PQ-18-4027TCX,"rgb(80,104,134) ",#506886,Moonlight Blue    
+  PQ-18-0107TCX,"rgb(90,114,71)  ",#5A7247,Kale              
+  PQ-18-0121TCX,"rgb(84,112,83)  ",#547053,Elm Green         
+  PQ-18-5611TCX,"rgb(85,105,98)  ",#556962,Dark Forest       
+  PQ-18-4612TCX,"rgb(83,109,112) ",#536D70,North Atlantic    
+  PQ-18-4020TCX,"rgb(85,112,136) ",#557088,Captain's Blue    
+  PQ-18-4217TCX,"rgb(87,114,132) ",#577284,Bluestone         
+  PQ-17-3936TCX,"rgb(99,132,184) ",#6384B8,Blue Bonnet       
+  PQ-17-4030TCX,"rgb(97,139,185) ",#618BB9,Silver Lake Blue  
+  PQ-17-5912TCX,"rgb(91,119,99)  ",#5B7763,Dark Ivy          
+  PQ-17-5513TCX,"rgb(79,124,116) ",#4F7C74,Deep Sea          
+  PQ-18-5612TCX,"rgb(86,117,114) ",#567572,Sagebrush Green   
+  PQ-17-4029TCX,"rgb(90,120,154) ",#5A789A,Quiet Harbor      
+  PQ-17-4027TCX,"rgb(88,121,162) ",#5879A2,Riviera           
+  PQ-18-3937TCX,"rgb(90,119,168) ",#5A77A8,Blue Yonder       
+  PQ-18-3935TCX,"rgb(100,121,179)",#6479B3,Wedgewood         
+  PQ-17-6219TCX,"rgb(85,131,103) ",#558367,Deep Grass Green  
+  PQ-18-5622TCX,"rgb(87,130,112) ",#578270,Frosty Spruce     
+  PQ-17-4123TCX,"rgb(84,135,164) ",#5487A4,Niagara           
+  PQ-17-4032TCX,"rgb(93,137,179) ",#5D89B3,Lichen Blue       
+  PQ-17-4818TCX,"rgb(85,143,145) ",#558F91,Bristol Blue      
+  PQ-16-4127TCX,"rgb(93,150,188) ",#5D96BC,Heritage Blue     
+  PQ-15-4323TCX,"rgb(92,166,206) ",#5CA6CE,Ethereal Blue     
+  PQ-15-4421TCX,"rgb(92,172,206) ",#5CACCE,Blue Grotto       
+  PQ-16-4719TCX,"rgb(93,156,164) ",#5D9CA4,Porcelain         
+  PQ-16-5121TCX,"rgb(96,160,163) ",#60A0A3,Meadowbrook       
+  PQ-15-4714TCX,"rgb(97,170,177) ",#61AAB1,Aquarelle         
+  PQ-16-4421TCX,"rgb(91,172,195) ",#5BACC3,Blue Mist         
+  PQ-15-4428TCX,"rgb(93,175,206) ",#5DAFCE,Crystal Seas      
+  PQ-14-0156TCX,"rgb(126,211,127)",#7ED37F,SUMMER Green
+  PQ-16-0237TCX,"rgb(117,161,79) ",#75A14F,Foliage           
+  PQ-15-6442TCX,"rgb(121,180,101)",#79B465,Bud Green         
+  PQ-13-5313TCX,"rgb(129,215,211)",#81D7D3,Aruba Blue        
+  PQ-19-1535TCX,"rgb(106,40,44)  ",#6A282C,Syrah             
+  PQ-19-1623TCX,"rgb(88,54,61)   ",#58363D,Vineyard Wine     
+  PQ-19-1930TCX,"rgb(108,40,49)  ",#6C2831,Pomegranate       
+  PQ-19-2430TCX,"rgb(105,39,70)  ",#692746,Purple Potion     
+  PQ-19-2428TCX,"rgb(107,38,75)  ",#6B264B,Magenta Purple    
+  PQ-19-1337TCX,"rgb(106,46,42)  ",#6A2E2A,Fired Brick       
+  PQ-19-1526TCX,"rgb(97,46,53)   ",#612E35,Chocolate Truffle 
+  PQ-18-3340TCX,"rgb(99,42,96)   ",#632A60,Charisma          
+  PQ-19-3022TCX,"rgb(98,46,90)   ",#622E5A,Gloxinia          
+  PQ-19-3230TCX,"rgb(104,41,97)  ",#682961,Grape Juice       
+  PQ-19-3540TCX,"rgb(102,50,113) ",#663271,Purple Magic      
+  PQ-19-3536TCX,"rgb(106,57,123) ",#6A397B,Amaranth Purple   
+  PQ-19-1716TCX,"rgb(91,54,68)   ",#5B3644,Mauve Wine        
+  PQ-19-2814TCX,"rgb(90,57,91)   ",#5A395B,Wineberry         
+  PQ-19-1327TCX,"rgb(96,53,53)   ",#603535,Andorra           
+  PQ-19-1420TCX,"rgb(85,59,57)   ",#553B39,Deep Mahogany     
+  PQ-19-1606TCX,"rgb(82,65,68)   ",#524144,Raisin            
+  PQ-19-1608TCX,"rgb(92,58,77)   ",#5C3A4D,Prune Purple      
+  PQ-19-1118TCX,"rgb(88,64,57)   ",#584039,Chestnut          
+  PQ-19-1214TCX,"rgb(92,62,53)   ",#5C3E35,Chocolate Lab     
+  PQ-19-1234TCX,"rgb(90,62,54)   ",#5A3E36,Rocky Road        
+  PQ-19-1322TCX,"rgb(89,60,57)   ",#593C39,Brown Stone       
+  PQ-19-1012TCX,"rgb(88,66,63)   ",#58423F,French Roast      
+  PQ-19-1621TCX,"rgb(93,60,67)   ",#5D3C43,Catawba Grape     
+  PQ-19-3622TCX,"rgb(90,71,105)  ",#5A4769,Loganberry        
+  PQ-18-3521TCX,"rgb(98,64,118)  ",#624076,Plum Jam          
+  PQ-19-3542TCX,"rgb(101,61,124) ",#653D7C,Pansy             
+  PQ-18-3737TCX,"rgb(109,86,152) ",#6D5698,Passion Flower    
+  PQ-19-1224TCX,"rgb(93,66,54)   ",#5D4236,Fondue Fudge      
+  PQ-19-1020TCX,"rgb(92,73,57)   ",#5C4939,Dark Earth        
+  PQ-19-1116TCX,"rgb(93,71,58)   ",#5D473A,Carafe            
+  PQ-19-1213TCX,"rgb(90,71,67)   ",#5A4743,Shopping Bag      
+  PQ-19-1620TCX,"rgb(91,67,73)   ",#5B4349,Huckleberry       
+  PQ-18-3635TCX,"rgb(99,72,120)  ",#634878,Picasso Lily      
+  PQ-19-0618TCX,"rgb(91,79,59)   ",#5B4F3B,Beech             
+  PQ-19-0512TCX,"rgb(88,84,66)   ",#585442,Ivy Green         
+  PQ-19-0810TCX,"rgb(91,81,73)   ",#5B5149,Major Brown       
+  PQ-19-0822TCX,"rgb(90,83,72)   ",#5A5348,Tarmac            
+  PQ-18-3620TCX,"rgb(95,78,114)  ",#5F4E72,Mystical          
+  PQ-18-3615TCX,"rgb(96,78,122)  ",#604E7A,Imperial Palace   
+  PQ-18-3944TCX,"rgb(92,97,157)  ",#5C619D,Violet Storm      
+  PQ-18-0627TCX,"rgb(103,89,42)  ",#67592A,Fir Green         
+  PQ-19-0622TCX,"rgb(99,86,59)   ",#63563B,Military Olive    
+  PQ-19-0403TCX,"rgb(94,87,73)   ",#5E5749,Sea Turtle        
+  PQ-18-0306TCX,"rgb(92,93,91)   ",#5C5D5B,Gunmetal          
+  PQ-18-5210TCX,"rgb(92,86,88)   ",#5C5658,Eiffel Tower      
+  PQ-18-3907TCX,"rgb(94,91,96)   ",#5E5B60,Tornado           
+  PQ-18-3912TCX,"rgb(88,94,111)  ",#585E6F,Grisaille         
+  PQ-18-0430TCX,"rgb(103,98,50)  ",#676232,Avocado           
+  PQ-18-0220TCX,"rgb(101,102,63) ",#65663F,Mayfly            
+  PQ-18-0426TCX,"rgb(101,99,68)  ",#656344,Capulet Olive     
+  PQ-18-0420TCX,"rgb(97,102,82)  ",#616652,Four Leaf Clover  
+  PQ-18-3927TCX,"rgb(96,104,141) ",#60688D,Velvet Morning    
+  PQ-18-0435TCX,"rgb(106,111,52) ",#6A6F34,Calla Green       
+  PQ-18-0119TCX,"rgb(89,117,77)  ",#59754D,Willow Bough      
+  PQ-17-6009TCX,"rgb(97,111,101) ",#616F65,Laurel Wreath     
+  PQ-18-4011TCX,"rgb(95,114,120) ",#5F7278,Goblin Blue       
+  PQ-18-4215TCX,"rgb(92,109,124) ",#5C6D7C,Blue Mirage       
+  PQ-18-3922TCX,"rgb(89,114,142) ",#59728E,Coronet Blue      
+  PQ-18-6216TCX,"rgb(91,121,97)  ",#5B7961,Comfrey           
+  PQ-18-4220TCX,"rgb(92,121,142) ",#5C798E,Provincial Blue   
+  PQ-17-4023TCX,"rgb(91,126,152) ",#5B7E98,Blue Heaven       
+  PQ-16-4032TCX,"rgb(101,141,198)",#658DC6,Provence          
+  PQ-18-0110TCX,"rgb(97,132,91)  ",#61845B,English Ivy       
+  PQ-16-5515TCX,"rgb(97,145,135) ",#619187,Beryl Green       
+  PQ-17-5111TCX,"rgb(101,140,136)",#658C88,Oil Blue          
+  PQ-17-4320TCX,"rgb(92,137,155) ",#5C899B,Adriatic Blue     
+  PQ-15-4225TCX,"rgb(109,169,210)",#6DA9D2,Alaskan Blue      
+  PQ-16-4132TCX,"rgb(110,162,213)",#6EA2D5,Little Boy Blue   
+  PQ-16-4519TCX,"rgb(97,152,174) ",#6198AE,Delphinium Blue   
+  PQ-16-6329TCX,"rgb(105,158,109)",#699E6D,Peppermint        
+  PQ-16-5114TCX,"rgb(100,155,158)",#649B9E,Dusty Turquoise   
+  PQ-15-4717TCX,"rgb(100,161,173)",#64A1AD,Aqua              
+  PQ-15-4715TCX,"rgb(107,170,174)",#6BAAAE,Aqua Sea          
+  PQ-15-5218TCX,"rgb(103,188,179)",#67BCB3,Pool Blue         
+  PQ-14-0452TCX,"rgb(159,193,49) ",#9FC131,Lime Green        
+  PQ-16-0230TCX,"rgb(155,181,62) ",#9BB53E,Macaw Green       
+  PQ-14-0127TCX,"rgb(139,194,140)",#8BC28C,Greengage         
+  PQ-13-5714TCX,"rgb(135,215,190)",#87D7BE,Cabbage           
+  PQ-19-1531TCX,"rgb(117,35,41)  ",#752329,Sun-Dried Tomato  
+  PQ-19-1534TCX,"rgb(114,38,44)  ",#72262C,Merlot            
+  PQ-19-1555TCX,"rgb(125,32,39)  ",#7D2027,Red Dahlia        
+  PQ-19-1650TCX,"rgb(119,33,46)  ",#77212E,Biking Red        
+  PQ-19-1652TCX,"rgb(119,32,47)  ",#77202F,Rhubarb           
+  PQ-19-1435TCX,"rgb(102,53,43)  ",#66352B,Cherry Mahogany   
+  PQ-19-1617TCX,"rgb(100,49,62)  ",#64313E,Burgundy          
+  PQ-19-2820TCX,"rgb(105,45,93)  ",#692D5D,Phlox             
+  PQ-19-1521TCX,"rgb(96,55,61)   ",#60373D,Red Mahogany      
+  PQ-19-2014TCX,"rgb(96,55,73)   ",#603749,Prune             
+  PQ-19-1525TCX,"rgb(102,51,54)  ",#663336,Port              
+  PQ-18-3540TCX,"rgb(111,70,133) ",#6F4685,Purple Sapphire   
+  PQ-19-3438TCX,"rgb(120,67,132) ",#784384,Bright Violet     
+  PQ-18-1048TCX,"rgb(112,72,34)  ",#704822,Monk's Robe       
+  PQ-19-1331TCX,"rgb(106,51,49)  ",#6A3331,Madder Brown      
+  PQ-19-2312TCX,"rgb(100,58,76)  ",#643A4C,Crushed Violets   
+  PQ-18-3531TCX,"rgb(119,77,142) ",#774D8E,Royal Lilac       
+  PQ-19-1220TCX,"rgb(99,63,51)   ",#633F33,Cappuccino        
+  PQ-19-1233TCX,"rgb(99,66,53)   ",#634235,Tiramisu          
+  PQ-19-1325TCX,"rgb(104,59,57)  ",#683B39,Hot Chocolate     
+  PQ-19-1431TCX,"rgb(99,64,58)   ",#63403A,Fudgesickle       
+  PQ-19-2311TCX,"rgb(97,63,76)   ",#613F4C,Eggplant          
+  PQ-19-3223TCX,"rgb(104,61,98)  ",#683D62,Purple Passion    
+  PQ-18-3633TCX,"rgb(119,84,150) ",#775496,Deep Lavender     
+  PQ-18-1028TCX,"rgb(104,72,50)  ",#684832,Emperador         
+  PQ-19-1121TCX,"rgb(97,71,59)   ",#61473B,Pinecone          
+  PQ-19-0916TCX,"rgb(95,76,64)   ",#5F4C40,Rain Drum         
+  PQ-18-1411TCX,"rgb(103,69,80)  ",#674550,Plum Wine         
+  PQ-18-3410TCX,"rgb(99,79,98)   ",#634F62,Vintage Violet    
+  PQ-19-3424TCX,"rgb(111,69,110) ",#6F456E,Sunset Purple     
+  PQ-18-0930TCX,"rgb(106,81,59)  ",#6A513B,Coffee Liqueúr    
+  PQ-19-0820TCX,"rgb(94,83,71)   ",#5E5347,Canteen           
+  PQ-19-0823TCX,"rgb(93,83,72)   ",#5D5348,Crocodile         
+  PQ-19-3905TCX,"rgb(95,87,92)   ",#5F575C,Rabbit            
+  PQ-18-3518TCX,"rgb(108,78,121) ",#6C4E79,Patrician Purple  
+  PQ-19-0510TCX,"rgb(95,91,76)   ",#5F5B4C,Kalamata          
+  PQ-19-0809TCX,"rgb(104,90,78)  ",#685A4E,Chocolate Chip    
+  PQ-18-0403TCX,"rgb(98,93,93)   ",#625D5D,Dark Gull Gray    
+  PQ-18-3908TCX,"rgb(97,92,96)   ",#615C60,Volcanic Glass    
+  PQ-18-5204TCX,"rgb(97,94,95)   ",#615E5F,Granite Gray      
+  PQ-19-3803TCX,"rgb(98,91,92)   ",#625B5C,Plum Kitten       
+  PQ-18-0201TCX,"rgb(95,94,98)   ",#5F5E62,Castlerock        
+  PQ-18-3714TCX,"rgb(103,90,116) ",#675A74,Mulled Grape      
+  PQ-18-3817TCX,"rgb(98,97,126)  ",#62617E,Heron             
+  PQ-18-3828TCX,"rgb(100,96,147) ",#646093,Corsican Blue     
+  PQ-18-0521TCX,"rgb(100,96,73)  ",#646049,Burnt Olive       
+  PQ-18-0629TCX,"rgb(113,100,62) ",#71643E,Lizard            
+  PQ-18-0527TCX,"rgb(106,106,69) ",#6A6A45,Olive Branch      
+  PQ-18-0515TCX,"rgb(100,99,86)  ",#646356,Dusty Olive       
+  PQ-18-0615TCX,"rgb(104,94,79)  ",#685E4F,Stone Gray        
+  PQ-18-0000TCX,"rgb(101,100,102)",#656466,Smoked Pearl      
+  PQ-18-0510TCX,"rgb(100,103,98) ",#646762,Castor Gray       
+  PQ-18-5203TCX,"rgb(102,101,100)",#666564,Pewter            
+  PQ-18-4006TCX,"rgb(102,103,109)",#66676D,Quiet Shade       
+  PQ-18-3812TCX,"rgb(106,99,120) ",#6A6378,Cadet             
+  PQ-18-3910TCX,"rgb(98,104,121) ",#626879,Folkstone Gray    
+  PQ-18-3820TCX,"rgb(102,100,139)",#66648B,Twilight Purple   
+  PQ-18-3834TCX,"rgb(109,102,149)",#6D6695,Veronica          
+  PQ-18-3833TCX,"rgb(105,107,160)",#696BA0,Dusted Peri       
+  PQ-17-3940TCX,"rgb(112,123,180)",#707BB4,Iolite            
+  PQ-18-0117TCX,"rgb(95,115,85)  ",#5F7355,Vineyard Green    
+  PQ-18-0108TCX,"rgb(100,119,85) ",#647755,Dill              
+  PQ-18-0316TCX,"rgb(102,107,84) ",#666B54,Olivine           
+  PQ-18-5105TCX,"rgb(104,109,108)",#686D6C,Sedona Sage       
+  PQ-18-3916TCX,"rgb(103,114,131)",#677283,Flint Stone       
+  PQ-18-3930TCX,"rgb(100,111,155)",#646F9B,Bleached Denim    
+  PQ-18-4510TCX,"rgb(105,122,126)",#697A7E,Trooper           
+  PQ-17-3923TCX,"rgb(101,118,154)",#65769A,Colony Blue       
+  PQ-16-4031TCX,"rgb(115,145,200)",#7391C8,Cornflower Blue   
+  PQ-17-4911TCX,"rgb(100,133,137)",#648589,Arctic            
+  PQ-18-4711TCX,"rgb(110,128,130)",#6E8082,Stormy Sea        
+  PQ-17-4020TCX,"rgb(102,130,154)",#66829A,Blue Shadow       
+  PQ-17-0230TCX,"rgb(107,141,83) ",#6B8D53,Forest Green      
+  PQ-17-0133TCX,"rgb(105,145,88) ",#699158,Fluorite Green    
+  PQ-17-0123TCX,"rgb(101,142,103)",#658E67,Stone Green       
+  PQ-17-5110TCX,"rgb(106,137,136)",#6A8988,Trellis           
+  PQ-17-4412TCX,"rgb(109,137,148)",#6D8994,Smoke Blue        
+  PQ-15-6432TCX,"rgb(111,162,107)",#6FA26B,Shamrock          
+  PQ-16-5919TCX,"rgb(112,163,141)",#70A38D,Crème de Menthe   
+  PQ-16-5112TCX,"rgb(109,162,158)",#6DA29E,Canton            
+  PQ-16-4612TCX,"rgb(111,159,169)",#6F9FA9,Reef Waters       
+  PQ-14-4310TCX,"rgb(120,189,212)",#78BDD4,Blue Topaz        
+  PQ-16-5109TCX,"rgb(115,168,158)",#73A89E,Wasabi            
+  PQ-15-4319TCX,"rgb(119,172,199)",#77ACC7,Air Blue          
+  PQ-16-0233TCX,"rgb(115,153,87) ",#739957,Meadow Green      
+  PQ-14-5713TCX,"rgb(118,193,178)",#76C1B2,Cascade           
+  PQ-13-4720TCX,"rgb(145,220,232)",#91DCE8,Tanager Turquoise 
+  PQ-15-6437TCX,"rgb(123,179,105)",#7BB369,Grass Green       
+  PQ-14-5714TCX,"rgb(122,204,184)",#7ACCB8,Beveled Glass     
+  PQ-14-4620TCX,"rgb(149,222,227)",#95DEE3,Island Paradise   
+  PQ-13-5414TCX,"rgb(135,216,195)",#87D8C3,Ice Green         
+  PQ-19-1429TCX,"rgb(110,54,44)  ",#6E362C,Smoked Paprika    
+  PQ-19-1726TCX,"rgb(112,47,59)  ",#702F3B,Cordovan          
+  PQ-19-2024TCX,"rgb(114,43,63)  ",#722B3F,Rhododendron      
+  PQ-19-2030TCX,"rgb(122,31,61)  ",#7A1F3D,Beet Red          
+  PQ-19-1940TCX,"rgb(124,36,57)  ",#7C2439,Rumba Red         
+  PQ-19-1934TCX,"rgb(120,42,57)  ",#782A39,Tibetan Red       
+  PQ-19-2025TCX,"rgb(124,41,70)  ",#7C2946,Red Plum          
+  PQ-19-2924TCX,"rgb(130,50,112) ",#823270,Hollyhock         
+  PQ-18-1541TCX,"rgb(115,54,42)  ",#73362A,Brandy Brown      
+  PQ-19-3336TCX,"rgb(119,51,118) ",#773376,Sparkling Grape   
+  PQ-19-1338TCX,"rgb(116,51,50)  ",#743332,Russet Brown      
+  PQ-19-1235TCX,"rgb(102,66,56)  ",#664238,Brunette          
+  PQ-19-1629TCX,"rgb(119,51,59)  ",#77333B,Ruby Wine         
+  PQ-19-2410TCX,"rgb(111,60,86)  ",#6F3C56,Amaranth          
+  PQ-19-1436TCX,"rgb(107,65,57)  ",#6B4139,Cinnamon          
+  PQ-19-1320TCX,"rgb(110,64,60)  ",#6E403C,Sable             
+  PQ-19-1524TCX,"rgb(112,57,63)  ",#70393F,Oxblood Red       
+  PQ-19-3325TCX,"rgb(117,64,106) ",#75406A,Wood Violet       
+  PQ-19-3425TCX,"rgb(109,71,115) ",#6D4773,Spiced Plum       
+  PQ-19-1230TCX,"rgb(110,73,58)  ",#6E493A,Friar Brown       
+  PQ-19-1241TCX,"rgb(117,71,52)  ",#754734,Tortoise Shell    
+  PQ-19-1217TCX,"rgb(104,75,64)  ",#684B40,Mustang           
+  PQ-18-1506TCX,"rgb(103,86,87)  ",#675657,Plum Truffle      
+  PQ-18-1027TCX,"rgb(110,79,58)  ",#6E4F3A,Bison             
+  PQ-18-1033TCX,"rgb(112,79,55)  ",#704F37,Dachshund         
+  PQ-19-0617TCX,"rgb(101,83,65)  ",#655341,Teak              
+  PQ-18-0928TCX,"rgb(107,84,62)  ",#6B543E,Sepia             
+  PQ-18-1222TCX,"rgb(108,80,67)  ",#6C5043,Cocoa Brown       
+  PQ-18-1404TCX,"rgb(105,89,92)  ",#69595C,Sparrow           
+  PQ-18-1409TCX,"rgb(108,86,86)  ",#6C5656,Peppercorn        
+  PQ-18-1706TCX,"rgb(108,87,101) ",#6C5765,Black Plum        
+  PQ-18-1708TCX,"rgb(111,89,101) ",#6F5965,Ephemera          
+  PQ-18-3715TCX,"rgb(108,89,113) ",#6C5971,Montana Grape     
+  PQ-18-3513TCX,"rgb(107,88,118) ",#6B5876,Grape Compote     
+  PQ-19-3526TCX,"rgb(118,79,130) ",#764F82,Meadow Violet     
+  PQ-17-3834TCX,"rgb(126,110,172)",#7E6EAC,Dahlia Purple     
+  PQ-18-0840TCX,"rgb(128,93,36)  ",#805D24,Tapenade          
+  PQ-18-0820TCX,"rgb(105,94,75)  ",#695E4B,Capers            
+  PQ-18-1016TCX,"rgb(110,92,75)  ",#6E5C4B,Cub               
+  PQ-19-0808TCX,"rgb(104,92,83)  ",#685C53,Morel             
+  PQ-18-3905TCX,"rgb(103,97,104) ",#676168,Excalibur         
+  PQ-18-1705TCX,"rgb(115,91,106) ",#735B6A,Arctic Dusk       
+  PQ-18-0832TCX,"rgb(122,99,50)  ",#7A6332,Plantation        
+  PQ-18-0825TCX,"rgb(117,102,62) ",#75663E,Nutria            
+  PQ-18-0830TCX,"rgb(122,100,63) ",#7A643F,Butternut         
+  PQ-18-0513TCX,"rgb(105,97,86)  ",#696156,Bungee Cord       
+  PQ-18-1304TCX,"rgb(109,98,91)  ",#6D625B,Falcon            
+  PQ-18-0503TCX,"rgb(104,103,103)",#686767,Gargoyle          
+  PQ-18-1703TCX,"rgb(109,99,107) ",#6D636B,Shark             
+  PQ-18-0622TCX,"rgb(117,109,71) ",#756D47,Olive Drab        
+  PQ-18-0625TCX,"rgb(113,106,77) ",#716A4D,Martini Olive     
+  PQ-18-0312TCX,"rgb(110,110,92) ",#6E6E5C,Deep Lichen Green 
+  PQ-18-0422TCX,"rgb(110,113,83) ",#6E7153,Loden Green       
+  PQ-18-5806TCX,"rgb(107,113,105)",#6B7169,Agave Green       
+  PQ-18-4005TCX,"rgb(114,111,112)",#726F70,Steel Gray        
+  PQ-18-3933TCX,"rgb(113,115,136)",#717388,Blue Granite      
+  PQ-17-0530TCX,"rgb(121,123,58) ",#797B3A,Guacamole         
+  PQ-18-0538TCX,"rgb(123,127,50) ",#7B7F32,Woodbine          
+  PQ-18-0324TCX,"rgb(117,122,78) ",#757A4E,Calliste Green    
+  PQ-17-6212TCX,"rgb(113,126,111)",#717E6F,Sea Spray         
+  PQ-17-3922TCX,"rgb(112,120,155)",#70789B,Blue Ice          
+  PQ-17-4015TCX,"rgb(110,126,153)",#6E7E99,Infinity          
+  PQ-18-0332TCX,"rgb(119,130,74) ",#77824A,Grasshopper       
+  PQ-17-3917TCX,"rgb(116,128,154)",#74809A,Stonewash         
+  PQ-17-3918TCX,"rgb(113,127,155)",#717F9B,Country Blue      
+  PQ-17-3920TCX,"rgb(113,129,164)",#7181A4,English Manor     
+  PQ-17-3932TCX,"rgb(124,131,188)",#7C83BC,Deep Periwinkle   
+  PQ-15-3930TCX,"rgb(129,160,212)",#81A0D4,Vista Blue        
+  PQ-16-4020TCX,"rgb(122,157,203)",#7A9DCB,Della Robbia Blue 
+  PQ-17-0119TCX,"rgb(111,140,105)",#6F8C69,Turf Green        
+  PQ-17-0220TCX,"rgb(116,140,105)",#748C69,Watercress        
+  PQ-17-6319TCX,"rgb(111,141,106)",#6F8D6A,Kashmir           
+  PQ-16-6116TCX,"rgb(115,144,114)",#739072,Shale Green       
+  PQ-17-6323TCX,"rgb(118,138,117)",#768A75,Hedge Green       
+  PQ-16-4712TCX,"rgb(109,145,146)",#6D9192,Mineral Blue      
+  PQ-17-4111TCX,"rgb(116,137,149)",#748995,Citadel           
+  PQ-16-4021TCX,"rgb(114,145,180)",#7291B4,Allure            
+  PQ-17-0336TCX,"rgb(129,149,72) ",#819548,Peridot           
+  PQ-17-0235TCX,"rgb(118,147,88) ",#769358,Piquant Green     
+  PQ-16-0228TCX,"rgb(117,148,101)",#759465,Jade Green        
+  PQ-16-6318TCX,"rgb(122,155,120)",#7A9B78,Mineral Green     
+  PQ-16-5815TCX,"rgb(114,155,139)",#729B8B,Feldspar          
+  PQ-16-5917TCX,"rgb(112,154,137)",#709A89,Malachite Green   
+  PQ-16-6324TCX,"rgb(119,162,118)",#77A276,Jadesheen         
+  PQ-16-4610TCX,"rgb(112,164,176)",#70A4B0,Stillwater        
+  PQ-15-4415TCX,"rgb(114,168,186)",#72A8BA,Milky Blue        
+  PQ-16-4120TCX,"rgb(123,160,192)",#7BA0C0,Dusk Blue         
+  PQ-14-4320TCX,"rgb(121,181,216)",#79B5D8,Baltic Sea        
+  PQ-14-6327TCX,"rgb(124,176,131)",#7CB083,Zephyr Green      
+  PQ-15-5210TCX,"rgb(118,167,171)",#76A7AB,Nile Blue         
+  PQ-15-4712TCX,"rgb(118,175,182)",#76AFB6,Marine Blue       
+  PQ-15-6120TCX,"rgb(124,176,138)",#7CB08A,Ming              
+  PQ-15-6322TCX,"rgb(124,182,142)",#7CB68E,Light Grass Green 
+  PQ-15-5711TCX,"rgb(123,181,163)",#7BB5A3,Dusty Jade Green  
+  PQ-14-6017TCX,"rgb(127,187,158)",#7FBB9E,Neptune Green     
+  PQ-14-4710TCX,"rgb(130,194,199)",#82C2C7,Tibetan Stone     
+  PQ-14-4811TCX,"rgb(123,196,196)",#7BC4C4,Aqua Sky          
+  PQ-14-5413TCX,"rgb(129,195,180)",#81C3B4,Holiday           
+  PQ-14-0244TCX,"rgb(151,188,98) ",#97BC62,Bright Lime Green 
+  PQ-14-4812TCX,"rgb(133,206,209)",#85CED1,Aqua Splash       
+  PQ-13-4810TCX,"rgb(152,221,222)",#98DDDE,Limpet Shell      
+  PQ-19-1656TCX,"rgb(138,34,50)  ",#8A2232,Rio Red           
+  PQ-19-2432TCX,"rgb(128,42,80)  ",#802A50,Raspberry Radiance
+  PQ-19-3138TCX,"rgb(133,59,123) ",#853B7B,Byzantium         
+  PQ-18-3324TCX,"rgb(132,62,131) ",#843E83,Dahlia            
+  PQ-18-1148TCX,"rgb(134,76,36)  ",#864C24,Caramel Café      
+  PQ-18-1325TCX,"rgb(120,57,55)  ",#783937,Spiced Apple      
+  PQ-19-1536TCX,"rgb(123,53,57)  ",#7B3539,Red Pear          
+  PQ-18-2027TCX,"rgb(128,48,76)  ",#80304C,Beaujolais        
+  PQ-19-2431TCX,"rgb(133,50,92)  ",#85325C,Boysenberry       
+  PQ-19-1334TCX,"rgb(124,66,60)  ",#7C423C,Henna             
+  PQ-18-1415TCX,"rgb(110,76,75)  ",#6E4C4B,Marron            
+  PQ-19-1228TCX,"rgb(113,74,65)  ",#714A41,Root Beer         
+  PQ-18-3014TCX,"rgb(123,67,104) ",#7B4368,Grape Kiss        
+  PQ-18-3533TCX,"rgb(139,88,151) ",#8B5897,Dewberry          
+  PQ-19-1430TCX,"rgb(115,75,66)  ",#734B42,Mink              
+  PQ-18-1614TCX,"rgb(122,75,86)  ",#7A4B56,Nocturne          
+  PQ-18-1405TCX,"rgb(112,88,97)  ",#705861,Flint             
+  PQ-18-3013TCX,"rgb(118,82,105) ",#765269,Berry Conserve    
+  PQ-18-3415TCX,"rgb(114,86,113) ",#725671,Grape Jam         
+  PQ-18-3520TCX,"rgb(116,85,135) ",#745587,Purple Heart      
+  PQ-18-1031TCX,"rgb(117,81,57)  ",#755139,Toffee            
+  PQ-18-1124TCX,"rgb(114,84,64)  ",#725440,Partridge         
+  PQ-18-1418TCX,"rgb(128,79,90)  ",#804F5A,Crushed Berry     
+  PQ-18-3218TCX,"rgb(124,83,121) ",#7C5379,Concord Grape     
+  PQ-18-3522TCX,"rgb(122,84,127) ",#7A547F,Crushed Grape     
+  PQ-19-1034TCX,"rgb(121,93,52)  ",#795D34,Breen             
+  PQ-18-0920TCX,"rgb(114,94,67)  ",#725E43,Kangaroo          
+  PQ-18-1130TCX,"rgb(122,87,71)  ",#7A5747,Aztec             
+  PQ-18-1015TCX,"rgb(115,98,83)  ",#736253,Shitake           
+  PQ-17-1708TCX,"rgb(114,95,105) ",#725F69,Moonscape         
+  PQ-18-3012TCX,"rgb(122,89,111) ",#7A596F,Purple Gumdrop    
+  PQ-18-3634TCX,"rgb(125,93,153) ",#7D5D99,Chive Blossom     
+  PQ-18-1306TCX,"rgb(115,100,96) ",#736460,Iron              
+  PQ-18-0601TCX,"rgb(108,104,104)",#6C6868,Charcoal Gray     
+  PQ-18-3712TCX,"rgb(117,105,126)",#75697E,Purple Sage       
+  PQ-18-0724TCX,"rgb(124,110,79) ",#7C6E4F,Gothic Olive      
+  PQ-17-0517TCX,"rgb(116,108,87) ",#746C57,Dusky Green       
+  PQ-18-1112TCX,"rgb(119,106,95) ",#776A5F,Walnut            
+  PQ-18-5102TCX,"rgb(115,112,111)",#73706F,Brushed Nickel    
+  PQ-17-1503TCX,"rgb(120,115,118)",#787376,Storm Front       
+  PQ-18-4016TCX,"rgb(118,114,117)",#767275,December Sky      
+  PQ-17-3826TCX,"rgb(125,116,168)",#7D74A8,Aster Purple      
+  PQ-17-0636TCX,"rgb(133,121,70) ",#857946,Green Moss        
+  PQ-17-3924TCX,"rgb(118,123,165)",#767BA5,Lavender Violet   
+  PQ-17-3930TCX,"rgb(132,141,197)",#848DC5,Jacaranda         
+  PQ-17-0115TCX,"rgb(128,133,109)",#80856D,Oil Green         
+  PQ-17-0000TCX,"rgb(132,130,131)",#848283,Frost Gray        
+  PQ-17-4016TCX,"rgb(132,129,130)",#848182,Gray Flannel      
+  PQ-17-3915TCX,"rgb(121,131,155)",#79839B,Tempest           
+  PQ-16-3929TCX,"rgb(131,152,202)",#8398CA,Grapemist         
+  PQ-16-4030TCX,"rgb(132,155,204)",#849BCC,Hydrangea         
+  PQ-17-0839TCX,"rgb(170,136,5)  ",#AA8805,Golden Palm       
+  PQ-17-0330TCX,"rgb(129,137,78) ",#81894E,Turtle Green      
+  PQ-17-0210TCX,"rgb(120,143,116)",#788F74,Loden Frost       
+  PQ-17-5107TCX,"rgb(124,140,135)",#7C8C87,Chinois Green     
+  PQ-17-4408TCX,"rgb(122,137,143)",#7A898F,Lead              
+  PQ-17-4021TCX,"rgb(121,142,164)",#798EA4,Faded Denim       
+  PQ-16-0224TCX,"rgb(125,149,109)",#7D956D,Green Eyes        
+  PQ-17-0215TCX,"rgb(126,155,118)",#7E9B76,Aspen Green       
+  PQ-16-5810TCX,"rgb(126,146,133)",#7E9285,Green Bay         
+  PQ-16-4414TCX,"rgb(118,157,166)",#769DA6,Cameo Blue        
+  PQ-15-3920TCX,"rgb(140,173,211)",#8CADD3,Placid Blue       
+  PQ-15-6428TCX,"rgb(134,169,111)",#86A96F,Green Tea         
+  PQ-14-6324TCX,"rgb(130,177,133)",#82B185,Peapod            
+  PQ-14-6319TCX,"rgb(139,186,148)",#8BBA94,Meadow            
+  PQ-15-5209TCX,"rgb(135,185,188)",#87B9BC,Aqua Haze         
+  PQ-14-4615TCX,"rgb(131,194,205)",#83C2CD,Antigua Sand      
+  PQ-14-4814TCX,"rgb(131,197,205)",#83C5CD,Angel Blue        
+  PQ-14-4516TCX,"rgb(135,194,212)",#87C2D4,Petit four        
+  PQ-14-4511TCX,"rgb(136,195,208)",#88C3D0,Gulf Stream       
+  PQ-15-0341TCX,"rgb(141,176,81) ",#8DB051,Parrot Green      
+  PQ-13-5412TCX,"rgb(150,223,206)",#96DFCE,Beach Glass       
+  PQ-14-0232TCX,"rgb(161,202,123)",#A1CA7B,Jade Lime         
+  PQ-19-1757TCX,"rgb(170,10,39)  ",#AA0A27,Barbados Cherry   
+  PQ-19-1862TCX,"rgb(158,16,48)  ",#9E1030,Jester Red        
+  PQ-19-1863TCX,"rgb(148,30,50)  ",#941E32,Scooter           
+  PQ-19-2033TCX,"rgb(132,44,72)  ",#842C48,Anemone           
+  PQ-19-2630TCX,"rgb(146,49,111) ",#92316F,Wild Aster        
+  PQ-19-1540TCX,"rgb(126,57,47)  ",#7E392F,Burnt Henna       
+  PQ-18-2320TCX,"rgb(138,51,113) ",#8A3371,Clover            
+  PQ-18-2929TCX,"rgb(140,53,115) ",#8C3573,Purple Wine       
+  PQ-18-3120TCX,"rgb(142,68,131) ",#8E4483,Willowherb        
+  PQ-18-3331TCX,"rgb(141,70,135) ",#8D4687,Hyacinth Violet   
+  PQ-19-1532TCX,"rgb(129,54,57)  ",#813639,Rosewood          
+  PQ-19-1530TCX,"rgb(126,57,64)  ",#7E3940,Burnt Russet      
+  PQ-19-1245TCX,"rgb(136,67,50)  ",#884332,Arabian Spice     
+  PQ-18-1420TCX,"rgb(124,76,83)  ",#7C4C53,Wild Ginger       
+  PQ-18-1619TCX,"rgb(131,70,85)  ",#834655,Maroon            
+  PQ-18-1716TCX,"rgb(133,76,101) ",#854C65,Damson            
+  PQ-18-1246TCX,"rgb(148,74,31)  ",#944A1F,Umber             
+  PQ-19-1333TCX,"rgb(128,72,57)  ",#804839,Sequoia           
+  PQ-18-1425TCX,"rgb(130,77,70)  ",#824D46,Mahogany          
+  PQ-18-1426TCX,"rgb(132,75,77)  ",#844B4D,Apple Butter      
+  PQ-18-1725TCX,"rgb(140,71,89)  ",#8C4759,Dry Rose          
+  PQ-18-1709TCX,"rgb(128,84,102) ",#805466,Tulipwood         
+  PQ-18-1720TCX,"rgb(139,73,99)  ",#8B4963,Violet Quartz     
+  PQ-18-3015TCX,"rgb(134,77,117) ",#864D75,Amethyst          
+  PQ-18-1242TCX,"rgb(131,79,61)  ",#834F3D,Brown Patina      
+  PQ-18-1230TCX,"rgb(135,78,60)  ",#874E3C,Coconut Shell     
+  PQ-18-1238TCX,"rgb(133,81,65)  ",#855141,Rustic Brown      
+  PQ-18-1512TCX,"rgb(128,86,91)  ",#80565B,Rose Brown        
+  PQ-18-1616TCX,"rgb(136,81,87)  ",#885157,Roan Rouge        
+  PQ-18-0937TCX,"rgb(130,94,47)  ",#825E2F,Bronze Brown      
+  PQ-18-0933TCX,"rgb(129,91,55)  ",#815B37,Rubber            
+  PQ-18-1314TCX,"rgb(126,94,82)  ",#7E5E52,Acorn             
+  PQ-18-1326TCX,"rgb(126,92,84)  ",#7E5C54,Nutmeg            
+  PQ-18-1612TCX,"rgb(128,96,98)  ",#806062,Rose Taupe        
+  PQ-18-3418TCX,"rgb(131,94,129) ",#835E81,Chinese Violet    
+  PQ-18-1018TCX,"rgb(127,103,79) ",#7F674F,Otter             
+  PQ-18-1312TCX,"rgb(123,102,96) ",#7B6660,Deep Taupe        
+  PQ-18-3211TCX,"rgb(133,103,123)",#85677B,Grapeade          
+  PQ-17-0935TCX,"rgb(138,111,72) ",#8A6F48,Dull Gold         
+  PQ-18-1022TCX,"rgb(131,107,79) ",#836B4F,Ermine            
+  PQ-18-1017TCX,"rgb(129,109,94) ",#816D5E,Caribou           
+  PQ-17-0909TCX,"rgb(128,111,99) ",#806F63,Fossil            
+  PQ-17-1410TCX,"rgb(130,112,100)",#827064,Pine Bark         
+  PQ-17-3911TCX,"rgb(127,124,129)",#7F7C81,Silver Filigree   
+  PQ-18-3718TCX,"rgb(128,115,150)",#807396,Purple Haze       
+  PQ-17-0620TCX,"rgb(129,122,96) ",#817A60,Aloe              
+  PQ-17-0627TCX,"rgb(132,122,89) ",#847A59,Dried Herb        
+  PQ-18-0617TCX,"rgb(128,118,95) ",#80765F,Covert Green      
+  PQ-17-0618TCX,"rgb(129,122,101)",#817A65,Mermaid           
+  PQ-18-1108TCX,"rgb(128,118,105)",#807669,Fallen Rock       
+  PQ-18-1110TCX,"rgb(130,119,107)",#82776B,Brindle           
+  PQ-17-0613TCX,"rgb(128,125,111)",#807D6F,Vetiver           
+  PQ-18-1210TCX,"rgb(132,122,117)",#847A75,Driftwood         
+  PQ-17-3907TCX,"rgb(126,125,136)",#7E7D88,Quicksilver       
+  PQ-17-4014TCX,"rgb(128,125,127)",#807D7F,Titanium          
+  PQ-18-3710TCX,"rgb(132,121,134)",#847986,Gray Ridge        
+  PQ-17-3730TCX,"rgb(139,121,177)",#8B79B1,Paisley Purple    
+  PQ-18-0525TCX,"rgb(129,132,85) ",#818455,Iguana            
+  PQ-17-0525TCX,"rgb(133,137,97) ",#858961,Mosstone          
+  PQ-17-1500TCX,"rgb(130,126,124)",#827E7C,Steeple Gray      
+  PQ-18-4105TCX,"rgb(128,129,125)",#80817D,Moon Mist         
+  PQ-17-1502TCX,"rgb(131,127,127)",#837F7F,Cloudburst        
+  PQ-17-3914TCX,"rgb(131,132,135)",#838487,Sharkskin         
+  PQ-15-4307TCX,"rgb(127,135,147)",#7F8793,Tradewinds        
+  PQ-17-4405TCX,"rgb(132,137,140)",#84898C,Monument          
+  PQ-17-3933TCX,"rgb(129,131,154)",#81839A,Silver Bullet     
+  PQ-17-3817TCX,"rgb(137,129,160)",#8981A0,Daybreak          
+  PQ-16-3925TCX,"rgb(145,155,201)",#919BC9,Easter Egg        
+  PQ-17-0324TCX,"rgb(132,145,97) ",#849161,Epsom             
+  PQ-16-5807TCX,"rgb(129,143,132)",#818F84,Lily Pad          
+  PQ-17-6206TCX,"rgb(136,141,130)",#888D82,Shadow            
+  PQ-17-3919TCX,"rgb(133,143,177)",#858FB1,Purple Impression 
+  PQ-15-3932TCX,"rgb(129,154,193)",#819AC1,Bel Air Blue      
+  PQ-17-3929TCX,"rgb(136,149,197)",#8895C5,Pale Iris         
+  PQ-16-5804TCX,"rgb(138,150,145)",#8A9691,Slate Gray        
+  PQ-16-4109TCX,"rgb(135,155,163)",#879BA3,Arona             
+  PQ-16-4114TCX,"rgb(130,156,165)",#829CA5,Stone Blue        
+  PQ-16-4013TCX,"rgb(134,153,171)",#8699AB,Ashley Blue       
+  PQ-16-0439TCX,"rgb(144,155,76) ",#909B4C,Spinach Green     
+  PQ-16-0123TCX,"rgb(137,160,107)",#89A06B,Tendril           
+  PQ-16-0220TCX,"rgb(138,162,130)",#8AA282,Mistletoe         
+  PQ-16-6216TCX,"rgb(135,159,132)",#879F84,Basil             
+  PQ-16-5907TCX,"rgb(134,162,147)",#86A293,Granite Green     
+  PQ-16-4408TCX,"rgb(140,159,161)",#8C9FA1,Slate             
+  PQ-16-4411TCX,"rgb(134,161,169)",#86A1A9,Tourmaline        
+  PQ-15-5207TCX,"rgb(137,172,172)",#89ACAC,Aquifer           
+  PQ-14-4318TCX,"rgb(138,186,211)",#8ABAD3,Sky Blue          
+  PQ-14-4121TCX,"rgb(147,180,215)",#93B4D7,Blue Bell         
+  PQ-14-5711TCX,"rgb(142,197,182)",#8EC5B6,Ocean Wave        
+  PQ-13-0117TCX,"rgb(160,218,169)",#A0DAA9,Green Ash         
+  PQ-13-0442TCX,"rgb(176,201,101)",#B0C965,Green Glow        
+  PQ-13-0220TCX,"rgb(178,231,159)",#B2E79F,Paradise Green    
+  PQ-19-1557TCX,"rgb(155,27,48)  ",#9B1B30,Chili Pepper      
+  PQ-19-1559TCX,"rgb(157,32,47)  ",#9D202F,Scarlet Sage      
+  PQ-19-1758TCX,"rgb(161,23,41)  ",#A11729,Haute Red         
+  PQ-19-1761TCX,"rgb(172,14,46)  ",#AC0E2E,Tango Red         
+  PQ-19-1955TCX,"rgb(164,18,71)  ",#A41247,Cerise            
+  PQ-19-2047TCX,"rgb(152,37,81)  ",#982551,Sangria           
+  PQ-19-2434TCX,"rgb(158,44,106) ",#9E2C6A,Festival Fuchsia  
+  PQ-18-3339TCX,"rgb(153,60,124) ",#993C7C,Vivid Viola       
+  PQ-18-1340TCX,"rgb(158,70,36)  ",#9E4624,Potter's Clay     
+  PQ-19-1250TCX,"rgb(141,63,45)  ",#8D3F2D,Picante           
+  PQ-18-1440TCX,"rgb(142,60,54)  ",#8E3C36,Chili Oil         
+  PQ-18-1442TCX,"rgb(145,56,50)  ",#913832,Red Ochre         
+  PQ-19-1543TCX,"rgb(140,55,62)  ",#8C373E,Brick Red         
+  PQ-19-1533TCX,"rgb(136,67,68)  ",#884344,Cowhide           
+  PQ-18-3022TCX,"rgb(144,63,117) ",#903F75,Deep Orchid       
+  PQ-18-1531TCX,"rgb(143,66,59)  ",#8F423B,Barn Red          
+  PQ-18-1718TCX,"rgb(136,76,94)  ",#884C5E,Hawthorn Rose     
+  PQ-18-2527TCX,"rgb(151,60,108) ",#973C6C,Baton Rouge       
+  PQ-18-1163TCX,"rgb(160,92,23)  ",#A05C17,Pumpkin Spice     
+  PQ-18-1345TCX,"rgb(155,71,34)  ",#9B4722,Cinnamon Stick    
+  PQ-18-1244TCX,"rgb(140,74,47)  ",#8C4A2F,Ginger Bread      
+  PQ-18-1613TCX,"rgb(134,85,96)  ",#865560,Renaissance Rose  
+  PQ-18-1154TCX,"rgb(145,85,43)  ",#91552B,Glazed Ginger     
+  PQ-18-1155TCX,"rgb(147,85,41)  ",#935529,Sugar Almond      
+  PQ-18-1140TCX,"rgb(140,84,58)  ",#8C543A,Mocha Bisque      
+  PQ-17-1142TCX,"rgb(139,89,62)  ",#8B593E,Argan Oil         
+  PQ-18-1229TCX,"rgb(133,92,76)  ",#855C4C,Carob Brown       
+  PQ-18-3011TCX,"rgb(137,92,121) ",#895C79,Argyle Purple     
+  PQ-18-3025TCX,"rgb(148,78,135) ",#944E87,Striking Purple   
+  PQ-17-1052TCX,"rgb(147,89,43)  ",#93592B,Roasted Pecan     
+  PQ-18-1142TCX,"rgb(151,87,43)  ",#97572B,Leather Brown     
+  PQ-18-1137TCX,"rgb(134,94,73)  ",#865E49,Rawhide           
+  PQ-18-1235TCX,"rgb(143,95,80)  ",#8F5F50,Russet            
+  PQ-18-1320TCX,"rgb(135,97,85)  ",#876155,Clove             
+  PQ-18-1710TCX,"rgb(141,92,116) ",#8D5C74,Grape Nectar      
+  PQ-18-0940TCX,"rgb(145,103,47) ",#91672F,Golden Brown      
+  PQ-18-0950TCX,"rgb(153,100,44) ",#99642C,Cathay Spice      
+  PQ-18-1029TCX,"rgb(139,106,79) ",#8B6A4F,Toasted Coconut   
+  PQ-18-1421TCX,"rgb(139,100,90) ",#8B645A,Cognac            
+  PQ-18-2109TCX,"rgb(136,105,113)",#886971,Grape Shake       
+  PQ-18-3628TCX,"rgb(148,105,162)",#9469A2,Bellflower        
+  PQ-17-3619TCX,"rgb(147,108,167)",#936CA7,Hyacinth          
+  PQ-17-3628TCX,"rgb(146,106,166)",#926AA6,Amethyst Orchid   
+  PQ-18-0939TCX,"rgb(146,114,64) ",#927240,Cumin             
+  PQ-18-1807TCX,"rgb(139,111,112)",#8B6F70,Twilight Mauve    
+  PQ-17-0836TCX,"rgb(146,123,60) ",#927B3C,Ecru Olive        
+  PQ-17-1028TCX,"rgb(144,121,84) ",#907954,Antique Bronze    
+  PQ-17-1118TCX,"rgb(138,121,99) ",#8A7963,Lead Gray         
+  PQ-17-1314TCX,"rgb(137,117,96) ",#897560,Sepia Tint        
+  PQ-17-1115TCX,"rgb(141,121,96) ",#8D7960,Petrified Oak     
+  PQ-17-1506TCX,"rgb(138,126,120)",#8A7E78,Cinder            
+  PQ-17-3612TCX,"rgb(145,119,152)",#917798,Orchid Mist       
+  PQ-17-3812TCX,"rgb(137,127,152)",#897F98,Dusk              
+  PQ-17-3615TCX,"rgb(143,125,165)",#8F7DA5,Chalk Violet      
+  PQ-17-3640TCX,"rgb(148,121,175)",#9479AF,Fairy Wren        
+  PQ-17-0840TCX,"rgb(154,128,58) ",#9A803A,Amber Green       
+  PQ-17-0625TCX,"rgb(142,133,95) ",#8E855F,Boa               
+  PQ-17-1019TCX,"rgb(140,124,97) ",#8C7C61,Elmwood           
+  PQ-17-1310TCX,"rgb(141,128,112)",#8D8070,Timber Wolf       
+  PQ-17-1311TCX,"rgb(141,126,113)",#8D7E71,Desert Taupe      
+  PQ-17-1212TCX,"rgb(143,129,119)",#8F8177,Fungi             
+  PQ-17-3810TCX,"rgb(143,131,149)",#8F8395,Purple Ash        
+  PQ-17-3925TCX,"rgb(140,142,178)",#8C8EB2,Persian Violet    
+  PQ-17-3725TCX,"rgb(152,132,185)",#9884B9,Bougainvillea     
+  PQ-17-0535TCX,"rgb(141,139,85) ",#8D8B55,Green Olive       
+  PQ-16-0526TCX,"rgb(146,142,100)",#928E64,Cedar             
+  PQ-16-0421TCX,"rgb(145,148,110)",#91946E,Sage              
+  PQ-17-0510TCX,"rgb(147,139,120)",#938B78,Silver Sage       
+  PQ-17-0610TCX,"rgb(145,140,126)",#918C7E,Laurel Oak        
+  PQ-17-0205TCX,"rgb(143,137,130)",#8F8982,Elephant Skin     
+  PQ-17-1501TCX,"rgb(139,140,137)",#8B8C89,Wild Dove         
+  PQ-17-3802TCX,"rgb(145,140,143)",#918C8F,Gull              
+  PQ-17-5102TCX,"rgb(141,143,143)",#8D8F8F,Griffin           
+  PQ-16-0543TCX,"rgb(154,151,56) ",#9A9738,Golden Lime       
+  PQ-16-0545TCX,"rgb(156,154,64) ",#9C9A40,Split Pea         
+  PQ-16-5806TCX,"rgb(138,153,146)",#8A9992,Green Milieu      
+  PQ-17-4402TCX,"rgb(142,145,143)",#8E918F,Neutral Gray      
+  PQ-16-4706TCX,"rgb(138,154,154)",#8A9A9A,Silver Blue       
+  PQ-16-5808TCX,"rgb(140,156,146)",#8C9C92,Iceberg Green     
+  PQ-16-3916TCX,"rgb(146,148,155)",#92949B,Sleet             
+  PQ-16-4010TCX,"rgb(140,157,173)",#8C9DAD,Dusty Blue        
+  PQ-16-4019TCX,"rgb(137,155,184)",#899BB8,Forever Blue      
+  PQ-16-3920TCX,"rgb(140,156,193)",#8C9CC1,Lavender Lustre   
+  PQ-16-4404TCX,"rgb(143,158,157)",#8F9E9D,Abyss             
+  PQ-16-3921TCX,"rgb(150,163,199)",#96A3C7,Blue Heron        
+  PQ-15-3919TCX,"rgb(145,168,208)",#91A8D0,Serenity          
+  PQ-16-0435TCX,"rgb(160,172,79) ",#A0AC4F,Dark Citron       
+  PQ-15-6423TCX,"rgb(145,172,128)",#91AC80,Forest Shade      
+  PQ-16-5106TCX,"rgb(144,168,164)",#90A8A4,Blue Surf         
+  PQ-15-4312TCX,"rgb(143,173,189)",#8FADBD,Forget-Me-Not     
+  PQ-15-6316TCX,"rgb(146,175,136)",#92AF88,Fair Green        
+  PQ-14-4122TCX,"rgb(146,182,213)",#92B6D5,Airy Blue         
+  PQ-14-4214TCX,"rgb(150,179,210)",#96B3D2,Powder Blue       
+  PQ-15-6114TCX,"rgb(151,193,161)",#97C1A1,Hemlock           
+  PQ-14-6011TCX,"rgb(155,190,169)",#9BBEA9,Grayed Jade       
+  PQ-14-4315TCX,"rgb(152,191,202)",#98BFCA,Sea Angel         
+  PQ-14-4512TCX,"rgb(149,192,203)",#95C0CB,Porcelain Blue    
+  PQ-14-0446TCX,"rgb(181,204,57) ",#B5CC39,Tender Shoots     
+  PQ-14-0340TCX,"rgb(186,223,48) ",#BADF30,Acid Lime         
+  PQ-14-6316TCX,"rgb(159,192,156)",#9FC09C,Sprucestone       
+  PQ-13-4910TCX,"rgb(159,217,215)",#9FD9D7,Blue Tint         
+  PQ-15-0543TCX,"rgb(181,182,68) ",#B5B644,Apple Green       
+  PQ-14-0445TCX,"rgb(181,191,80) ",#B5BF50,Bright Chartreuse 
+  PQ-14-0226TCX,"rgb(163,197,125)",#A3C57D,Opaline Green     
+  PQ-18-1657TCX,"rgb(170,24,43)  ",#AA182B,Salsa             
+  PQ-18-1659TCX,"rgb(185,18,40)  ",#B91228,Goji Berry        
+  PQ-19-1762TCX,"rgb(174,14,54)  ",#AE0E36,Crimson           
+  PQ-19-1860TCX,"rgb(162,20,65)  ",#A21441,Persian Red       
+  PQ-18-1654TCX,"rgb(186,11,50)  ",#BA0B32,Lychee            
+  PQ-18-1759TCX,"rgb(178,16,60)  ",#B2103C,Jalapeño Red      
+  PQ-19-1662TCX,"rgb(162,36,47)  ",#A2242F,Samba             
+  PQ-19-2039TCX,"rgb(165,35,80)  ",#A52350,Granita           
+  PQ-19-2041TCX,"rgb(162,36,82)  ",#A22452,Cherries Jubilee  
+  PQ-18-1658TCX,"rgb(164,41,46)  ",#A4292E,Pompeian Red      
+  PQ-19-1850TCX,"rgb(150,45,73)  ",#962D49,Red Bud           
+  PQ-18-1355TCX,"rgb(162,60,38)  ",#A23C26,Rooibos Tea       
+  PQ-18-1449TCX,"rgb(154,56,45)  ",#9A382D,Ketchup           
+  PQ-19-2045TCX,"rgb(163,40,87)  ",#A32857,Vivacious         
+  PQ-19-1655TCX,"rgb(149,54,64)  ",#953640,Garnet            
+  PQ-19-1840TCX,"rgb(151,52,67)  ",#973443,Deep Claret       
+  PQ-18-1547TCX,"rgb(151,58,54)  ",#973A36,Bossa Nova        
+  PQ-18-1631TCX,"rgb(149,66,78)  ",#95424E,Earth Red         
+  PQ-18-1540TCX,"rgb(156,69,59)  ",#9C453B,Cinnabar          
+  PQ-18-2525TCX,"rgb(157,68,110) ",#9D446E,Magenta Haze      
+  PQ-18-1050TCX,"rgb(168,98,23)  ",#A86217,Honey Ginger      
+  PQ-17-1342TCX,"rgb(161,83,37)  ",#A15325,Autumnal          
+  PQ-18-1250TCX,"rgb(159,81,48)  ",#9F5130,Bombay Brown      
+  PQ-18-1438TCX,"rgb(150,79,76)  ",#964F4C,Marsala           
+  PQ-17-1723TCX,"rgb(159,80,105) ",#9F5069,Malaga            
+  PQ-18-1239TCX,"rgb(152,92,65)  ",#985C41,Sierra            
+  PQ-18-1433TCX,"rgb(152,89,75)  ",#98594B,Chutney           
+  PQ-17-1612TCX,"rgb(153,99,120) ",#996378,Mellow Mauve      
+  PQ-17-1710TCX,"rgb(150,99,123) ",#96637B,Bordeaux          
+  PQ-18-3530TCX,"rgb(147,106,152)",#936A98,Lavender Crystal  
+  PQ-18-1030TCX,"rgb(147,107,79) ",#936B4F,Thrush            
+  PQ-17-1614TCX,"rgb(152,95,104) ",#985F68,Deco Rose         
+  PQ-18-1321TCX,"rgb(143,114,101)",#8F7265,Brownie           
+  PQ-17-1511TCX,"rgb(148,108,116)",#946C74,Wistful Mauve     
+  PQ-18-0935TCX,"rgb(167,111,31) ",#A76F1F,Buckthorn Brown   
+  PQ-17-0942TCX,"rgb(151,117,71) ",#977547,Medal Bronze      
+  PQ-17-1044TCX,"rgb(151,111,76) ",#976F4C,Chipmunk          
+  PQ-17-1422TCX,"rgb(146,112,95) ",#92705F,Raw Umber         
+  PQ-17-1321TCX,"rgb(148,119,100)",#947764,Woodsmoke         
+  PQ-17-0808TCX,"rgb(142,124,113)",#8E7C71,Taupe Gray        
+  PQ-17-1610TCX,"rgb(154,113,130)",#9A7182,Dusky Orchid      
+  PQ-18-3220TCX,"rgb(146,114,136)",#927288,Very Grape        
+  PQ-18-0835TCX,"rgb(153,123,56) ",#997B38,Dried Tobacco     
+  PQ-17-1036TCX,"rgb(152,117,74) ",#98754A,Bistre            
+  PQ-17-1125TCX,"rgb(151,117,76) ",#97754C,Dijon             
+  PQ-17-1128TCX,"rgb(157,116,70) ",#9D7446,Bone Brown        
+  PQ-17-1038TCX,"rgb(151,124,97) ",#977C61,Tiger's Eye       
+  PQ-17-1316TCX,"rgb(147,123,106)",#937B6A,Portabella        
+  PQ-17-1417TCX,"rgb(153,120,103)",#997867,Beaver Fur        
+  PQ-17-1418TCX,"rgb(151,125,112)",#977D70,Ginger Snap       
+  PQ-17-1105TCX,"rgb(145,133,121)",#918579,Roasted Cashew    
+  PQ-17-1510TCX,"rgb(149,122,118)",#957A76,Antler            
+  PQ-17-3520TCX,"rgb(152,121,162)",#9879A2,Diffused Orchid   
+  PQ-17-3617TCX,"rgb(157,123,176)",#9D7BB0,English Lavender  
+  PQ-17-3735TCX,"rgb(151,135,184)",#9787B8,Sunlit Allium     
+  PQ-17-0843TCX,"rgb(156,126,65) ",#9C7E41,Bronze Mist       
+  PQ-17-0929TCX,"rgb(153,132,86) ",#998456,Fennel Seed       
+  PQ-17-1022TCX,"rgb(152,132,103)",#988467,Kelp              
+  PQ-16-1109TCX,"rgb(146,132,117)",#928475,Greige            
+  PQ-17-1113TCX,"rgb(147,135,114)",#938772,Coriander         
+  PQ-17-1108TCX,"rgb(148,138,122)",#948A7A,Winter Twig       
+  PQ-16-1606TCX,"rgb(152,135,140)",#98878C,Purple Dove       
+  PQ-17-1505TCX,"rgb(152,134,140)",#98868C,Quail             
+  PQ-17-2601TCX,"rgb(146,137,138)",#92898A,Zinc              
+  PQ-16-0847TCX,"rgb(169,139,45) ",#A98B2D,Olive Oil         
+  PQ-16-0632TCX,"rgb(154,139,79) ",#9A8B4F,Willow            
+  PQ-17-0630TCX,"rgb(152,140,117)",#988C75,Tree House        
+  PQ-17-1009TCX,"rgb(153,137,120)",#998978,Dune              
+  PQ-17-0207TCX,"rgb(145,140,134)",#918C86,Rock Ridge        
+  PQ-17-1210TCX,"rgb(149,139,132)",#958B84,Moon Rock         
+  PQ-16-3800TCX,"rgb(151,141,137)",#978D89,Satellite         
+  PQ-16-4400TCX,"rgb(148,144,139)",#94908B,Mourning Dove     
+  PQ-16-5101TCX,"rgb(146,144,144)",#929090,Wet Weather       
+  PQ-17-3906TCX,"rgb(148,141,153)",#948D99,Minimal Gray      
+  PQ-17-3910TCX,"rgb(152,144,162)",#9890A2,Lavender Gray     
+  PQ-16-3930TCX,"rgb(148,153,187)",#9499BB,Thistle Down      
+  PQ-16-3823TCX,"rgb(158,145,195)",#9E91C3,Violet Tulip      
+  PQ-16-6008TCX,"rgb(149,152,137)",#959889,Seagrass          
+  PQ-16-3915TCX,"rgb(152,151,154)",#98979A,Alloy             
+  PQ-16-4702TCX,"rgb(152,154,152)",#989A98,Limestone         
+  PQ-16-3905TCX,"rgb(152,150,164)",#9896A4,Lilac Gray        
+  PQ-16-3812TCX,"rgb(157,150,178)",#9D96B2,Heirloom Lilac    
+  PQ-16-3919TCX,"rgb(149,158,183)",#959EB7,Eventide          
+  PQ-16-3931TCX,"rgb(154,155,193)",#9A9BC1,Sweet Lavender    
+  PQ-16-0540TCX,"rgb(163,160,78) ",#A3A04E,Oasis             
+  PQ-16-0430TCX,"rgb(154,160,103)",#9AA067,Fern              
+  PQ-16-0532TCX,"rgb(160,157,89) ",#A09D59,Moss              
+  PQ-16-0213TCX,"rgb(153,155,133)",#999B85,Tea               
+  PQ-16-5904TCX,"rgb(153,158,152)",#999E98,Wrought Iron      
+  PQ-15-4305TCX,"rgb(152,160,165)",#98A0A5,Quarry            
+  PQ-16-5304TCX,"rgb(149,166,159)",#95A69F,Jadeite           
+  PQ-15-3912TCX,"rgb(154,158,179)",#9A9EB3,Aleutian          
+  PQ-15-0336TCX,"rgb(156,173,96) ",#9CAD60,Herbal Garden     
+  PQ-15-0332TCX,"rgb(159,175,108)",#9FAF6C,Leaf Green        
+  PQ-15-4706TCX,"rgb(153,174,174)",#99AEAE,Gray Mist         
+  PQ-15-4008TCX,"rgb(155,171,187)",#9BABBB,Blue Fog          
+  PQ-14-3912TCX,"rgb(159,169,190)",#9FA9BE,Zen Blue          
+  PQ-16-3922TCX,"rgb(155,169,202)",#9BA9CA,Brunnera Blue     
+  PQ-14-4506TCX,"rgb(158,182,184)",#9EB6B8,Ether             
+  PQ-15-4020TCX,"rgb(155,183,212)",#9BB7D4,Cerulean          
+  PQ-15-4030TCX,"rgb(158,180,211)",#9EB4D3,Chambray Blue     
+  PQ-15-6317TCX,"rgb(158,188,151)",#9EBC97,Quiet Green       
+  PQ-15-5812TCX,"rgb(155,194,177)",#9BC2B1,Lichen            
+  PQ-13-5309TCX,"rgb(153,197,196)",#99C5C4,Pastel Turquoise  
+  PQ-14-4510TCX,"rgb(153,193,204)",#99C1CC,Aquatic           
+  PQ-14-4810TCX,"rgb(156,194,197)",#9CC2C5,Canal Blue        
+  PQ-14-0123TCX,"rgb(163,200,147)",#A3C893,Arcadian Green    
+  PQ-14-0121TCX,"rgb(167,199,150)",#A7C796,Nile Green        
+  PQ-14-4313TCX,"rgb(157,195,212)",#9DC3D4,Aquamarine        
+  PQ-13-4411TCX,"rgb(161,200,219)",#A1C8DB,Crystal Blue      
+  PQ-13-0550TCX,"rgb(192,215,37) ",#C0D725,Lime Punch        
+  PQ-13-0221TCX,"rgb(169,211,158)",#A9D39E,Pistachio Green   
+  PQ-13-5409TCX,"rgb(161,215,201)",#A1D7C9,Yucca             
+  PQ-13-0443TCX,"rgb(192,219,58) ",#C0DB3A,Love Bird         
+  PQ-13-0535TCX,"rgb(198,230,122)",#C6E67A,Sharp Green       
+  PQ-12-4608TCX,"rgb(170,213,219)",#AAD5DB,Clearwater        
+  PQ-12-0225TCX,"rgb(185,234,179)",#B9EAB3,Patina Green      
+  PQ-13-4909TCX,"rgb(172,223,221)",#ACDFDD,Blue Light        
+  PQ-18-1653TCX,"rgb(182,16,50)  ",#B61032,Toreador          
+  PQ-19-1764TCX,"rgb(179,26,56)  ",#B31A38,Lipstick Red      
+  PQ-18-1551TCX,"rgb(180,38,42)  ",#B4262A,Aura Orange       
+  PQ-18-2328TCX,"rgb(171,52,117) ",#AB3475,Fuchsia Red       
+  PQ-19-1759TCX,"rgb(167,51,64)  ",#A73340,American Beauty   
+  PQ-18-2326TCX,"rgb(168,62,108) ",#A83E6C,Cactus Flower     
+  PQ-18-3027TCX,"rgb(173,77,140) ",#AD4D8C,Purple Orchid     
+  PQ-18-1444TCX,"rgb(159,68,64)  ",#9F4440,Tandoori Spice    
+  PQ-18-3230TCX,"rgb(169,86,140) ",#A9568C,Meadow Mauve      
+  PQ-18-1350TCX,"rgb(161,77,58)  ",#A14D3A,Burnt Brick       
+  PQ-17-2617TCX,"rgb(166,79,130) ",#A64F82,Dahlia Mauve      
+  PQ-18-3224TCX,"rgb(173,94,153) ",#AD5E99,Radiant Orchid    
+  PQ-18-1049TCX,"rgb(171,104,25) ",#AB6819,Thai Curry        
+  PQ-18-1441TCX,"rgb(156,86,66)  ",#9C5642,Baked Clay        
+  PQ-18-1343TCX,"rgb(161,88,67)  ",#A15843,Auburn            
+  PQ-18-1336TCX,"rgb(154,96,81)  ",#9A6051,Copper Brown      
+  PQ-17-1623TCX,"rgb(164,89,109) ",#A4596D,Rose Wine         
+  PQ-17-1818TCX,"rgb(163,87,118) ",#A35776,Red Violet        
+  PQ-17-3323TCX,"rgb(167,103,162)",#A767A2,Iris Orchid       
+  PQ-17-1340TCX,"rgb(163,98,59)  ",#A3623B,Adobe             
+  PQ-18-1434TCX,"rgb(162,87,75)  ",#A2574B,Etruscan Red      
+  PQ-17-1147TCX,"rgb(166,102,70) ",#A66646,Amber Brown       
+  PQ-17-1525TCX,"rgb(161,101,91) ",#A1655B,Cedar Wood        
+  PQ-18-1435TCX,"rgb(162,102,102)",#A26666,Withered Rose     
+  PQ-17-1516TCX,"rgb(155,113,107)",#9B716B,Burlwood          
+  PQ-18-1160TCX,"rgb(172,107,41) ",#AC6B29,Sudan Brown       
+  PQ-16-1438TCX,"rgb(164,111,68) ",#A46F44,Meerkat           
+  PQ-17-1134TCX,"rgb(161,114,73) ",#A17249,Brown Sugar       
+  PQ-17-1327TCX,"rgb(154,115,82) ",#9A7352,Tobacco Brown     
+  PQ-17-1330TCX,"rgb(160,113,79) ",#A0714F,Lion              
+  PQ-17-1430TCX,"rgb(163,110,81) ",#A36E51,Pecan Brown       
+  PQ-17-1609TCX,"rgb(166,110,122)",#A66E7A,Mesa Rose         
+  PQ-17-3014TCX,"rgb(167,108,151)",#A76C97,Mulberry          
+  PQ-17-3313TCX,"rgb(161,117,156)",#A1759C,Dusty Lavender    
+  PQ-17-1230TCX,"rgb(164,120,100)",#A47864,Mocha Mousse      
+  PQ-17-1322TCX,"rgb(158,126,103)",#9E7E67,Burro             
+  PQ-17-1512TCX,"rgb(164,119,126)",#A4777E,Nostalgia Rose    
+  PQ-17-2411TCX,"rgb(152,128,136)",#988088,Toadstool         
+  PQ-17-1605TCX,"rgb(157,132,142)",#9D848E,Elderberry        
+  PQ-17-3410TCX,"rgb(159,122,147)",#9F7A93,Valerian          
+  PQ-16-3720TCX,"rgb(159,144,193)",#9F90C1,Sand Verbena      
+  PQ-17-1129TCX,"rgb(164,125,67) ",#A47D43,Wood Thrush       
+  PQ-17-1319TCX,"rgb(159,134,114)",#9F8672,Amphora           
+  PQ-16-3817TCX,"rgb(159,134,170)",#9F86AA,Rhapsody          
+  PQ-15-3716TCX,"rgb(176,159,202)",#B09FCA,Purple Rose       
+  PQ-15-3720TCX,"rgb(179,160,201)",#B3A0C9,Lilac Breeze      
+  PQ-16-0742TCX,"rgb(174,142,44) ",#AE8E2C,Green Sulphur     
+  PQ-16-0726TCX,"rgb(163,146,100)",#A39264,Khaki             
+  PQ-17-1320TCX,"rgb(166,138,109)",#A68A6D,Tannin            
+  PQ-17-1107TCX,"rgb(154,146,127)",#9A927F,Seneca Rock       
+  PQ-17-1109TCX,"rgb(156,142,123)",#9C8E7B,Chinchilla        
+  PQ-17-1312TCX,"rgb(159,141,124)",#9F8D7C,Silver Mink       
+  PQ-16-0205TCX,"rgb(154,145,134)",#9A9186,Vintage Khaki     
+  PQ-16-0639TCX,"rgb(175,152,65) ",#AF9841,Golden Olive      
+  PQ-16-1118TCX,"rgb(164,151,117)",#A49775,Sponge            
+  PQ-16-0518TCX,"rgb(164,154,121)",#A49A79,Gray Green        
+  PQ-16-0713TCX,"rgb(160,152,124)",#A0987C,Slate Green       
+  PQ-16-1107TCX,"rgb(159,149,134)",#9F9586,Aluminum          
+  PQ-16-3802TCX,"rgb(160,153,152)",#A09998,Ash               
+  PQ-16-4703TCX,"rgb(156,155,152)",#9C9B98,Ghost Gray        
+  PQ-16-3907TCX,"rgb(156,155,167)",#9C9BA7,Dapple Gray       
+  PQ-16-3810TCX,"rgb(161,152,175)",#A198AF,Wisteria          
+  PQ-16-3911TCX,"rgb(159,153,170)",#9F99AA,Lavender Aura     
+  PQ-16-0613TCX,"rgb(163,159,134)",#A39F86,Elm               
+  PQ-16-1108TCX,"rgb(167,155,130)",#A79B82,Twill             
+  PQ-16-0207TCX,"rgb(162,158,146)",#A29E92,London Fog        
+  PQ-16-0000TCX,"rgb(159,156,153)",#9F9C99,Paloma            
+  PQ-16-4402TCX,"rgb(160,159,156)",#A09F9C,Drizzle           
+  PQ-16-5803TCX,"rgb(160,156,152)",#A09C98,Flint Gray        
+  PQ-14-5002TCX,"rgb(162,162,161)",#A2A2A1,Silver            
+  PQ-16-3801TCX,"rgb(164,158,158)",#A49E9E,Opal Gray         
+  PQ-16-3803TCX,"rgb(164,156,160)",#A49CA0,Gull Gray         
+  PQ-16-3850TCX,"rgb(161,159,165)",#A19FA5,Silver Sconce     
+  PQ-15-3910TCX,"rgb(162,161,186)",#A2A1BA,Languid Lavender  
+  PQ-16-0550TCX,"rgb(171,164,77) ",#ABA44D,Lentil Sprout     
+  PQ-15-0531TCX,"rgb(163,169,105)",#A3A969,Sweet Pea         
+  PQ-15-0326TCX,"rgb(164,174,119)",#A4AE77,Tarragon          
+  PQ-15-6414TCX,"rgb(161,173,146)",#A1AD92,Reseda            
+  PQ-15-4306TCX,"rgb(163,169,166)",#A3A9A6,Belgian Block     
+  PQ-15-0538TCX,"rgb(176,180,84) ",#B0B454,Green Oasis       
+  PQ-15-6310TCX,"rgb(168,177,151)",#A8B197,Swamp             
+  PQ-15-5706TCX,"rgb(163,181,166)",#A3B5A6,Frosty Green      
+  PQ-15-5205TCX,"rgb(165,178,170)",#A5B2AA,Aqua Gray         
+  PQ-14-4306TCX,"rgb(162,182,185)",#A2B6B9,Cloud Blue        
+  PQ-14-4210TCX,"rgb(163,180,196)",#A3B4C4,Celestial Blue    
+  PQ-15-4309TCX,"rgb(162,185,194)",#A2B9C2,Sterling Blue     
+  PQ-15-6315TCX,"rgb(168,187,162)",#A8BBA2,Smoke Green       
+  PQ-14-5706TCX,"rgb(169,189,177)",#A9BDB1,Silt Green        
+  PQ-15-4707TCX,"rgb(165,188,187)",#A5BCBB,Blue Haze         
+  PQ-14-4508TCX,"rgb(158,193,204)",#9EC1CC,Stratosphere      
+  PQ-15-4005TCX,"rgb(160,188,208)",#A0BCD0,Dream Blue        
+  PQ-15-4105TCX,"rgb(163,189,211)",#A3BDD3,Angel Falls       
+  PQ-13-0331TCX,"rgb(175,203,128)",#AFCB80,Sap Green         
+  PQ-14-4809TCX,"rgb(163,204,201)",#A3CCC9,Eggshell Blue     
+  PQ-14-4311TCX,"rgb(169,202,218)",#A9CADA,Corydalis Blue    
+  PQ-14-4317TCX,"rgb(165,197,217)",#A5C5D9,Cool Blue         
+  PQ-13-0651TCX,"rgb(204,219,30) ",#CCDB1E,Evening Primrose  
+  PQ-13-6110TCX,"rgb(170,206,188)",#AACEBC,Mist Green        
+  PQ-13-4809TCX,"rgb(165,207,213)",#A5CFD5,Plume             
+  PQ-13-5410TCX,"rgb(171,211,219)",#ABD3DB,Iced Aqua         
+  PQ-13-6009TCX,"rgb(175,221,204)",#AFDDCC,Brook Green       
+  PQ-13-0540TCX,"rgb(195,211,99) ",#C3D363,Wild Lime         
+  PQ-13-0116TCX,"rgb(180,211,178)",#B4D3B2,Pastel Green      
+  PQ-13-4409TCX,"rgb(178,212,221)",#B2D4DD,Blue Glow         
+  PQ-18-1663TCX,"rgb(190,19,45)  ",#BE132D,Chinese Red       
+  PQ-19-1763TCX,"rgb(189,22,44)  ",#BD162C,Racing Red        
+  PQ-18-1761TCX,"rgb(187,18,55)  ",#BB1237,Ski Patrol        
+  PQ-18-1950TCX,"rgb(182,28,80)  ",#B61C50,Jazzy             
+  PQ-18-1655TCX,"rgb(188,39,49)  ",#BC2731,Mars Red          
+  PQ-19-1663TCX,"rgb(185,38,54)  ",#B92636,Ribbon Red        
+  PQ-18-1549TCX,"rgb(188,50,44)  ",#BC322C,Valiant Poppy     
+  PQ-18-2336TCX,"rgb(183,50,117) ",#B73275,Very Berry        
+  PQ-18-1555TCX,"rgb(181,51,46)  ",#B5332E,Molten Lava       
+  PQ-18-1643TCX,"rgb(173,62,72)  ",#AD3E48,Cardinal          
+  PQ-18-1550TCX,"rgb(185,58,50)  ",#B93A32,Aurora Red        
+  PQ-18-1249TCX,"rgb(187,92,20)  ",#BB5C14,Hawaiian Sunset   
+  PQ-18-1536TCX,"rgb(171,79,65)  ",#AB4F41,Hot Sauce         
+  PQ-18-1648TCX,"rgb(179,70,70)  ",#B34646,Baked Apple       
+  PQ-18-1633TCX,"rgb(172,75,85)  ",#AC4B55,Garnet Rose       
+  PQ-17-3023TCX,"rgb(182,95,154) ",#B65F9A,Rosebud           
+  PQ-16-1449TCX,"rgb(180,84,34)  ",#B45422,Gold Flame        
+  PQ-18-1346TCX,"rgb(167,89,73)  ",#A75949,Bruschetta        
+  PQ-18-1443TCX,"rgb(166,89,76)  ",#A6594C,Redwood           
+  PQ-17-1522TCX,"rgb(167,93,103) ",#A75D67,Mauvewood         
+  PQ-17-3020TCX,"rgb(186,105,161)",#BA69A1,Spring Crocus     
+  PQ-17-3240TCX,"rgb(183,107,163)",#B76BA3,Bodacious         
+  PQ-18-1248TCX,"rgb(181,90,48)  ",#B55A30,Rust              
+  PQ-18-1630TCX,"rgb(173,93,93)  ",#AD5D5D,Dusty Cedar       
+  PQ-18-1634TCX,"rgb(179,90,102) ",#B35A66,Baroque Rose      
+  PQ-17-1137TCX,"rgb(164,113,73) ",#A47149,Cashew            
+  PQ-17-1336TCX,"rgb(166,110,74) ",#A66E4A,Bran              
+  PQ-17-1608TCX,"rgb(173,109,127)",#AD6D7F,Heather Rose      
+  PQ-16-1432TCX,"rgb(167,117,77) ",#A7754D,Almond            
+  PQ-17-1520TCX,"rgb(175,108,103)",#AF6C67,Canyon Rose       
+  PQ-18-1436TCX,"rgb(173,109,104)",#AD6D68,Light Mahogany    
+  PQ-16-1414TCX,"rgb(162,135,118)",#A28776,Chanterelle       
+  PQ-17-0949TCX,"rgb(177,131,47) ",#B1832F,Chai Tea          
+  PQ-17-1328TCX,"rgb(173,133,103)",#AD8567,Indian Tan        
+  PQ-17-1226TCX,"rgb(171,133,111)",#AB856F,Tawny Brown       
+  PQ-16-1412TCX,"rgb(165,141,127)",#A58D7F,Stucco            
+  PQ-17-3808TCX,"rgb(162,145,155)",#A2919B,Nirvana           
+  PQ-16-3520TCX,"rgb(176,133,183)",#B085B7,African Violet    
+  PQ-16-3525TCX,"rgb(169,139,175)",#A98BAF,Regal Orchid      
+  PQ-16-3815TCX,"rgb(166,146,186)",#A692BA,Viola             
+  PQ-16-0954TCX,"rgb(188,141,31) ",#BC8D1F,Arrowwood         
+  PQ-16-0948TCX,"rgb(182,138,58) ",#B68A3A,Harvest Gold      
+  PQ-16-1133TCX,"rgb(176,142,81) ",#B08E51,Mustard Gold      
+  PQ-17-1045TCX,"rgb(176,136,90) ",#B0885A,Apple Cinnamon    
+  PQ-16-1415TCX,"rgb(167,140,123)",#A78C7B,Almondine         
+  PQ-15-1506TCX,"rgb(165,149,143)",#A5958F,Etherea           
+  PQ-16-1806TCX,"rgb(174,140,142)",#AE8C8E,Woodrose          
+  PQ-16-3304TCX,"rgb(165,146,157)",#A5929D,Sea Fog           
+  PQ-16-3310TCX,"rgb(177,142,170)",#B18EAA,Lavender Herb     
+  PQ-16-0737TCX,"rgb(170,152,85) ",#AA9855,Burnished Gold    
+  PQ-16-1126TCX,"rgb(177,150,100)",#B19664,Antelope          
+  PQ-16-1110TCX,"rgb(166,153,122)",#A6997A,Olive Gray        
+  PQ-16-1315TCX,"rgb(169,148,122)",#A9947A,Cornstalk         
+  PQ-16-1104TCX,"rgb(164,152,135)",#A49887,Crockery          
+  PQ-16-1106TCX,"rgb(165,151,136)",#A59788,Tuffet            
+  PQ-16-0806TCX,"rgb(168,154,145)",#A89A91,Goat              
+  PQ-16-1407TCX,"rgb(168,154,142)",#A89A8E,Cobblestone       
+  PQ-16-1506TCX,"rgb(169,149,146)",#A99592,Bark              
+  PQ-16-1406TCX,"rgb(168,156,148)",#A89C94,Atmosphere        
+  PQ-16-1703TCX,"rgb(171,152,149)",#AB9895,Sphinx            
+  PQ-16-0840TCX,"rgb(185,160,35) ",#B9A023,Antique Moss      
+  PQ-15-3800TCX,"rgb(167,161,158)",#A7A19E,Porpoise          
+  PQ-16-1103TCX,"rgb(173,163,150)",#ADA396,Pure Cashmere     
+  PQ-16-1305TCX,"rgb(170,159,150)",#AA9F96,String            
+  PQ-15-3817TCX,"rgb(175,164,206)",#AFA4CE,Lavender          
+  PQ-15-0548TCX,"rgb(184,175,35) ",#B8AF23,Citronelle        
+  PQ-15-0643TCX,"rgb(188,169,73) ",#BCA949,Cress Green       
+  PQ-15-0535TCX,"rgb(175,175,94) ",#AFAF5E,Palm              
+  PQ-14-6408TCX,"rgb(171,167,152)",#ABA798,Abbey Stone       
+  PQ-15-6410TCX,"rgb(175,171,151)",#AFAB97,Moss Gray         
+  PQ-16-0110TCX,"rgb(167,174,158)",#A7AE9E,Desert Sage       
+  PQ-15-6304TCX,"rgb(174,172,161)",#AEACA1,Pussywillow Gray  
+  PQ-15-4702TCX,"rgb(168,176,174)",#A8B0AE,Puritan Gray      
+  PQ-15-4704TCX,"rgb(169,175,170)",#A9AFAA,Pigeon            
+  PQ-14-3906TCX,"rgb(177,170,179)",#B1AAB3,Raindrops         
+  PQ-15-3908TCX,"rgb(169,173,194)",#A9ADC2,Icelandic Blue    
+  PQ-15-3909TCX,"rgb(170,170,196)",#AAAAC4,Cosmic Sky        
+  PQ-15-3915TCX,"rgb(165,179,204)",#A5B3CC,Kentucky Blue     
+  PQ-14-4115TCX,"rgb(165,184,208)",#A5B8D0,Cashmere Blue     
+  PQ-13-3920TCX,"rgb(189,198,220)",#BDC6DC,Halogen Blue      
+  PQ-15-0525TCX,"rgb(179,177,123)",#B3B17B,Weeping Willow    
+  PQ-15-0523TCX,"rgb(176,180,135)",#B0B487,Winter Pear       
+  PQ-15-6313TCX,"rgb(173,187,161)",#ADBBA1,Laurel Green      
+  PQ-15-4703TCX,"rgb(171,175,174)",#ABAFAE,Mirage Gray       
+  PQ-14-4202TCX,"rgb(175,177,180)",#AFB1B4,Harbor Mist       
+  PQ-15-4101TCX,"rgb(174,178,181)",#AEB2B5,High-rise         
+  PQ-14-4206TCX,"rgb(176,183,190)",#B0B7BE,Pearl Blue        
+  PQ-14-0434TCX,"rgb(186,188,114)",#BABC72,Green Banana      
+  PQ-14-0223TCX,"rgb(180,187,133)",#B4BB85,Nile              
+  PQ-14-6312TCX,"rgb(170,192,173)",#AAC0AD,Cameo Green       
+  PQ-14-4908TCX,"rgb(168,192,187)",#A8C0BB,Harbor Gray       
+  PQ-14-5707TCX,"rgb(173,195,180)",#ADC3B4,Aqua Foam         
+  PQ-14-4307TCX,"rgb(169,192,203)",#A9C0CB,Winter Sky        
+  PQ-14-4112TCX,"rgb(173,190,211)",#ADBED3,Skyway            
+  PQ-14-0115TCX,"rgb(180,199,156)",#B4C79C,Foam Green        
+  PQ-13-5911TCX,"rgb(170,204,185)",#AACCB9,Bird's Egg Green  
+  PQ-13-0650TCX,"rgb(213,215,23) ",#D5D717,Sulphur Spring    
+  PQ-13-0324TCX,"rgb(190,211,142)",#BED38E,Lettuce Green     
+  PQ-13-5907TCX,"rgb(178,207,190)",#B2CFBE,Gossamer Green    
+  PQ-13-5306TCX,"rgb(176,211,209)",#B0D3D1,Icy Morn          
+  PQ-12-5507TCX,"rgb(186,229,214)",#BAE5D6,Bay               
+  PQ-12-5808TCX,"rgb(186,225,211)",#BAE1D3,Honeydew          
+  PQ-12-5409TCX,"rgb(184,226,220)",#B8E2DC,Fair Aqua         
+  PQ-12-5410TCX,"rgb(188,227,223)",#BCE3DF,Bleached Aqua     
+  PQ-19-1664TCX,"rgb(191,25,50)  ",#BF1932,True Red          
+  PQ-18-1760TCX,"rgb(191,25,69)  ",#BF1945,Barberry          
+  PQ-18-1856TCX,"rgb(198,23,78)  ",#C6174E,Virtual Pink      
+  PQ-18-1951TCX,"rgb(192,19,82)  ",#C01352,Love Potion       
+  PQ-18-1945TCX,"rgb(197,25,89)  ",#C51959,Bright Rose       
+  PQ-18-1664TCX,"rgb(208,28,31)  ",#D01C1F,Fiery Red         
+  PQ-18-1763TCX,"rgb(199,31,45)  ",#C71F2D,High Risk Red     
+  PQ-18-2045TCX,"rgb(198,33,104) ",#C62168,Pink Peacock      
+  PQ-17-2624TCX,"rgb(192,66,138) ",#C0428A,Rose Violet       
+  PQ-17-1449TCX,"rgb(195,65,33)  ",#C34121,Pureed Pumpkin    
+  PQ-19-1760TCX,"rgb(188,43,61)  ",#BC2B3D,Scarlet           
+  PQ-18-1741TCX,"rgb(182,55,83)  ",#B63753,Raspberry Wine    
+  PQ-18-1652TCX,"rgb(187,54,63)  ",#BB363F,Rococco Red       
+  PQ-18-1661TCX,"rgb(197,51,70)  ",#C53346,Tomato Puree      
+  PQ-17-2227TCX,"rgb(189,66,117) ",#BD4275,Lilac Rose        
+  PQ-17-1145TCX,"rgb(196,98,21)  ",#C46215,Autumn Maple      
+  PQ-18-1454TCX,"rgb(194,69,45)  ",#C2452D,Red Clay          
+  PQ-18-1354TCX,"rgb(187,79,53)  ",#BB4F35,Burnt Ochre       
+  PQ-17-1450TCX,"rgb(190,75,59)  ",#BE4B3B,SUMMER Fig
+  PQ-17-1545TCX,"rgb(187,74,77)  ",#BB4A4D,Cranberry         
+  PQ-17-1641TCX,"rgb(190,69,79)  ",#BE454F,Chrysanthemum     
+  PQ-17-1537TCX,"rgb(179,84,87)  ",#B35457,Mineral Red       
+  PQ-17-1633TCX,"rgb(180,78,93)  ",#B44E5D,Holly Berry       
+  PQ-17-1831TCX,"rgb(188,72,105) ",#BC4869,Carmine           
+  PQ-17-1140TCX,"rgb(193,101,18) ",#C16512,Marmalade         
+  PQ-18-1451TCX,"rgb(179,87,63)  ",#B3573F,Autumn Glaze      
+  PQ-18-1635TCX,"rgb(180,88,101) ",#B45865,Slate Rose        
+  PQ-17-1345TCX,"rgb(185,91,63)  ",#B95B3F,Spice Route       
+  PQ-17-1446TCX,"rgb(183,94,65)  ",#B75E41,Mango             
+  PQ-18-1535TCX,"rgb(182,93,75)  ",#B65D4B,Ginger Spice      
+  PQ-17-1347TCX,"rgb(181,104,76) ",#B5684C,Autumn Leaf       
+  PQ-17-1532TCX,"rgb(176,100,85) ",#B06455,Aragon            
+  PQ-17-1143TCX,"rgb(174,114,80) ",#AE7250,Hazel             
+  PQ-16-3320TCX,"rgb(193,127,181)",#C17FB5,Violet            
+  PQ-16-1429TCX,"rgb(179,114,86) ",#B37256,Sunburn           
+  PQ-17-1436TCX,"rgb(185,113,79) ",#B9714F,Raw Sienna        
+  PQ-17-1424TCX,"rgb(176,112,105)",#B07069,Brick Dust        
+  PQ-17-1048TCX,"rgb(187,122,44) ",#BB7A2C,Inca Gold         
+  PQ-17-1046TCX,"rgb(190,117,45) ",#BE752D,Golden Oak        
+  PQ-17-1225TCX,"rgb(174,133,108)",#AE856C,Tawny Birch       
+  PQ-17-1518TCX,"rgb(180,123,119)",#B47B77,Old Rose          
+  PQ-17-1718TCX,"rgb(186,121,125)",#BA797D,Dusty Rose        
+  PQ-16-3416TCX,"rgb(193,147,192)",#C193C0,Violet Tulle      
+  PQ-16-3617TCX,"rgb(183,147,192)",#B793C0,Sheer Lilac       
+  PQ-16-1336TCX,"rgb(180,131,91) ",#B4835B,Biscuit           
+  PQ-17-1224TCX,"rgb(176,132,106)",#B0846A,Camel             
+  PQ-17-1227TCX,"rgb(174,135,116)",#AE8774,Café au Lait      
+  PQ-16-1310TCX,"rgb(170,144,125)",#AA907D,Natural           
+  PQ-17-1223TCX,"rgb(173,139,117)",#AD8B75,Praline           
+  PQ-17-1514TCX,"rgb(181,129,125)",#B5817D,Ash Rose          
+  PQ-16-1221TCX,"rgb(176,144,128)",#B09080,Roebuck           
+  PQ-16-1710TCX,"rgb(185,131,145)",#B98391,Foxglove          
+  PQ-16-2111TCX,"rgb(181,130,153)",#B58299,Mauve Orchid      
+  PQ-16-1707TCX,"rgb(175,146,148)",#AF9294,Deauville Mauve   
+  PQ-16-1708TCX,"rgb(184,137,149)",#B88995,Lilas             
+  PQ-16-2107TCX,"rgb(176,135,155)",#B0879B,Orchid Haze       
+  PQ-16-3307TCX,"rgb(174,144,167)",#AE90A7,Lavender Mist     
+  PQ-16-0946TCX,"rgb(186,146,56) ",#BA9238,Honey             
+  PQ-17-1040TCX,"rgb(190,138,74) ",#BE8A4A,Spruce Yellow     
+  PQ-17-1047TCX,"rgb(182,143,82) ",#B68F52,Honey Mustard     
+  PQ-15-1040TCX,"rgb(177,143,106)",#B18F6A,Iced Coffee       
+  PQ-16-1323TCX,"rgb(179,139,113)",#B38B71,Macaroon          
+  PQ-16-1318TCX,"rgb(175,148,131)",#AF9483,Warm Taupe        
+  PQ-16-1510TCX,"rgb(174,148,144)",#AE9490,Fawn              
+  PQ-16-3110TCX,"rgb(184,138,172)",#B88AAC,Smoky Grape       
+  PQ-16-0952TCX,"rgb(200,151,32) ",#C89720,Nugget Gold       
+  PQ-16-0953TCX,"rgb(196,150,44) ",#C4962C,Tawny Olive       
+  PQ-15-0927TCX,"rgb(189,152,101)",#BD9865,Pale Gold         
+  PQ-16-1326TCX,"rgb(181,154,106)",#B59A6A,Prairie Sand      
+  PQ-16-1120TCX,"rgb(176,154,119)",#B09A77,Starfish          
+  PQ-16-1334TCX,"rgb(182,149,116)",#B69574,Tan               
+  PQ-15-1114TCX,"rgb(174,153,125)",#AE997D,Travertine        
+  PQ-16-1010TCX,"rgb(175,154,126)",#AF9A7E,Incense           
+  PQ-16-1320TCX,"rgb(182,152,133)",#B69885,Nougat            
+  PQ-16-1210TCX,"rgb(177,157,141)",#B19D8D,Light Taupe       
+  PQ-16-0906TCX,"rgb(173,159,147)",#AD9F93,Simply Taupe      
+  PQ-16-3205TCX,"rgb(181,152,163)",#B598A3,Mauve Shadows     
+  PQ-15-3520TCX,"rgb(185,155,197)",#B99BC5,Crocus Petal      
+  PQ-16-0730TCX,"rgb(181,158,95) ",#B59E5F,Antique Gold      
+  PQ-16-1212TCX,"rgb(180,159,137)",#B49F89,Nomad             
+  PQ-14-1012TCX,"rgb(179,159,141)",#B39F8D,Gilded Beige      
+  PQ-15-0309TCX,"rgb(174,166,146)",#AEA692,Spray Green       
+  PQ-16-1105TCX,"rgb(174,163,147)",#AEA393,Plaza Taupe       
+  PQ-15-0628TCX,"rgb(183,177,122)",#B7B17A,Leek Green        
+  PQ-15-0719TCX,"rgb(187,170,126)",#BBAA7E,Silver Fern       
+  PQ-15-0318TCX,"rgb(178,172,136)",#B2AC88,Sage Green        
+  PQ-15-0522TCX,"rgb(181,173,136)",#B5AD88,Pale Olive Green  
+  PQ-15-0513TCX,"rgb(177,169,146)",#B1A992,Eucalyptus        
+  PQ-15-1307TCX,"rgb(182,168,147)",#B6A893,White Pepper      
+  PQ-15-6307TCX,"rgb(177,176,159)",#B1B09F,Agate Gray        
+  PQ-15-0000TCX,"rgb(179,173,167)",#B3ADA7,Dove              
+  PQ-15-0703TCX,"rgb(181,172,171)",#B5ACAB,Ashes of Roses    
+  PQ-15-3802TCX,"rgb(183,169,172)",#B7A9AC,Cloud Gray        
+  PQ-15-3507TCX,"rgb(189,171,190)",#BDABBE,Lavender Frost    
+  PQ-15-0646TCX,"rgb(199,182,60) ",#C7B63C,Warm Olive        
+  PQ-15-0636TCX,"rgb(189,179,105)",#BDB369,Golden Green      
+  PQ-14-0216TCX,"rgb(182,186,153)",#B6BA99,Lint              
+  PQ-14-0418TCX,"rgb(186,182,150)",#BAB696,Bog               
+  PQ-14-6308TCX,"rgb(183,181,159)",#B7B59F,Alfalfa           
+  PQ-15-5704TCX,"rgb(178,182,172)",#B2B6AC,Mineral Gray      
+  PQ-15-4003TCX,"rgb(181,186,182)",#B5BAB6,Storm Gray        
+  PQ-14-3907TCX,"rgb(185,179,197)",#B9B3C5,Thistle           
+  PQ-15-0533TCX,"rgb(196,191,113)",#C4BF71,Linden Green      
+  PQ-14-0116TCX,"rgb(181,195,142)",#B5C38E,Margarita         
+  PQ-14-0114TCX,"rgb(181,193,165)",#B5C1A5,Celadon Green     
+  PQ-14-4804TCX,"rgb(185,188,182)",#B9BCB6,Blue Fox          
+  PQ-14-6007TCX,"rgb(183,194,178)",#B7C2B2,Sea Foam          
+  PQ-14-4105TCX,"rgb(186,188,192)",#BABCC0,Micro Chip        
+  PQ-14-4107TCX,"rgb(185,186,189)",#B9BABD,Quiet Gray        
+  PQ-14-4503TCX,"rgb(186,191,188)",#BABFBC,Metal             
+  PQ-14-3949TCX,"rgb(183,192,215)",#B7C0D7,Xenon Blue        
+  PQ-14-4110TCX,"rgb(183,192,214)",#B7C0D6,Heather           
+  PQ-14-4807TCX,"rgb(180,200,194)",#B4C8C2,Surf Spray        
+  PQ-14-6008TCX,"rgb(181,203,187)",#B5CBBB,Subtle Green      
+  PQ-14-4504TCX,"rgb(188,200,198)",#BCC8C6,Sky Gray          
+  PQ-12-4609TCX,"rgb(181,206,212)",#B5CED4,Starlight Blue    
+  PQ-13-4308TCX,"rgb(181,199,211)",#B5C7D3,Baby Blue         
+  PQ-13-4200TCX,"rgb(181,206,223)",#B5CEDF,Omphalodes        
+  PQ-13-0532TCX,"rgb(197,204,123)",#C5CC7B,Celery Green      
+  PQ-12-0317TCX,"rgb(191,209,173)",#BFD1AD,Gleam             
+  PQ-13-0111TCX,"rgb(191,209,179)",#BFD1B3,Seacrest          
+  PQ-13-6008TCX,"rgb(188,217,200)",#BCD9C8,Misty Jade        
+  PQ-12-5209TCX,"rgb(195,233,228)",#C3E9E4,Soothing Sea      
+  PQ-13-0215TCX,"rgb(195,211,168)",#C3D3A8,Reed              
+  PQ-13-0645TCX,"rgb(211,217,95) ",#D3D95F,Limeade           
+  PQ-12-5506TCX,"rgb(192,220,205)",#C0DCCD,Dusty Aqua        
+  PQ-12-5406TCX,"rgb(195,221,214)",#C3DDD6,Opal Blue         
+  PQ-12-5206TCX,"rgb(198,227,225)",#C6E3E1,Blue Glass        
+  PQ-12-5408TCX,"rgb(199,229,223)",#C7E5DF,Moonlight Jade    
+  PQ-12-4604TCX,"rgb(200,224,224)",#C8E0E0,Skylight          
+  PQ-18-1764TCX,"rgb(204,28,59)  ",#CC1C3B,Lollipop          
+  PQ-18-1662TCX,"rgb(205,33,42)  ",#CD212A,Flame Scarlet     
+  PQ-18-1852TCX,"rgb(201,35,81)  ",#C92351,Rose Red          
+  PQ-18-2333TCX,"rgb(204,67,133) ",#CC4385,Raspberry Rose    
+  PQ-18-2143TCX,"rgb(207,45,113) ",#CF2D71,Beetroot Purple   
+  PQ-17-2034TCX,"rgb(206,49,117) ",#CE3175,Pink Yarrow       
+  PQ-18-1564TCX,"rgb(202,52,34)  ",#CA3422,Poinciana         
+  PQ-18-2140TCX,"rgb(203,51,115) ",#CB3373,Cabaret           
+  PQ-17-2036TCX,"rgb(210,60,119) ",#D23C77,Magenta           
+  PQ-18-1660TCX,"rgb(206,41,57)  ",#CE2939,Tomato            
+  PQ-18-1561TCX,"rgb(218,50,28)  ",#DA321C,Orange.com        
+  PQ-17-1654TCX,"rgb(203,52,65)  ",#CB3441,Poinsettia        
+  PQ-17-2031TCX,"rgb(199,67,117) ",#C74375,Fuchsia Rose      
+  PQ-18-1448TCX,"rgb(190,81,65)  ",#BE5141,Chili             
+  PQ-17-2627TCX,"rgb(206,94,154) ",#CE5E9A,Phlox Pink        
+  PQ-18-1447TCX,"rgb(194,90,60)  ",#C25A3C,Orange Rust       
+  PQ-18-1450TCX,"rgb(189,87,69)  ",#BD5745,Mecca Orange      
+  PQ-17-2625TCX,"rgb(206,107,164)",#CE6BA4,Super Pink        
+  PQ-18-1629TCX,"rgb(191,100,100)",#BF6464,Faded Rose        
+  PQ-16-1448TCX,"rgb(200,103,51) ",#C86733,Burnt Orange      
+  PQ-18-1537TCX,"rgb(186,107,87) ",#BA6B57,Copper Coin       
+  PQ-17-1540TCX,"rgb(194,106,90) ",#C26A5A,Apricot Brandy    
+  PQ-16-3115TCX,"rgb(198,127,174)",#C67FAE,Crocus            
+  PQ-16-3116TCX,"rgb(202,128,177)",#CA80B1,Opera Mauve       
+  PQ-16-1149TCX,"rgb(200,118,41) ",#C87629,Desert Sun        
+  PQ-16-1347TCX,"rgb(197,115,61) ",#C5733D,Peach Caramel     
+  PQ-17-1353TCX,"rgb(200,107,60) ",#C86B3C,Apricot Orange    
+  PQ-16-1346TCX,"rgb(199,121,67) ",#C77943,Golden Ochre      
+  PQ-16-1348TCX,"rgb(197,118,68) ",#C57644,Tomato Cream      
+  PQ-17-1524TCX,"rgb(189,123,116)",#BD7B74,Desert Sand       
+  PQ-15-0953TCX,"rgb(203,142,22) ",#CB8E16,Golden Yellow     
+  PQ-16-1325TCX,"rgb(196,126,90) ",#C47E5A,Copper            
+  PQ-16-1422TCX,"rgb(186,134,113)",#BA8671,Cork              
+  PQ-16-1516TCX,"rgb(192,138,128)",#C08A80,Cameo Brown       
+  PQ-16-1712TCX,"rgb(194,135,153)",#C28799,Polignac          
+  PQ-16-0950TCX,"rgb(195,148,73) ",#C39449,Narcissus         
+  PQ-16-1139TCX,"rgb(193,149,82) ",#C19552,Amber Gold        
+  PQ-15-1430TCX,"rgb(189,140,102)",#BD8C66,Pastry Shell      
+  PQ-16-1333TCX,"rgb(185,142,104)",#B98E68,Doe               
+  PQ-16-1235TCX,"rgb(189,139,105)",#BD8B69,Sandstorm         
+  PQ-15-3620TCX,"rgb(188,164,203)",#BCA4CB,Lavendula         
+  PQ-15-0948TCX,"rgb(198,151,63) ",#C6973F,Golden Spice      
+  PQ-16-0945TCX,"rgb(195,150,77) ",#C3964D,Tinsel            
+  PQ-16-1324TCX,"rgb(184,155,114)",#B89B72,Lark              
+  PQ-16-1219TCX,"rgb(190,151,133)",#BE9785,Tuscany           
+  PQ-16-1317TCX,"rgb(185,153,132)",#B99984,Brush             
+  PQ-16-1508TCX,"rgb(186,159,153)",#BA9F99,Adobe Rose        
+  PQ-16-1509TCX,"rgb(187,165,160)",#BBA5A0,Shadow Gray       
+  PQ-16-3521TCX,"rgb(190,156,193)",#BE9CC1,Lupine            
+  PQ-15-0751TCX,"rgb(205,163,35) ",#CDA323,Lemon Curry       
+  PQ-15-0743TCX,"rgb(196,166,71) ",#C4A647,Oil Yellow        
+  PQ-15-0942TCX,"rgb(197,162,83) ",#C5A253,Sauterne          
+  PQ-15-0732TCX,"rgb(193,166,92) ",#C1A65C,Olivenite         
+  PQ-15-0730TCX,"rgb(188,166,106)",#BCA66A,Southern Moss     
+  PQ-16-0928TCX,"rgb(190,158,111)",#BE9E6F,Curry             
+  PQ-15-1215TCX,"rgb(186,163,139)",#BAA38B,Sesame            
+  PQ-16-0920TCX,"rgb(188,164,131)",#BCA483,Curds & Whey      
+  PQ-15-1020TCX,"rgb(191,165,138)",#BFA58A,Ginger Root       
+  PQ-15-1304TCX,"rgb(183,167,147)",#B7A793,Humus             
+  PQ-15-1306TCX,"rgb(184,169,154)",#B8A99A,Oxford Tan        
+  PQ-15-1305TCX,"rgb(184,173,158)",#B8AD9E,Feather Gray      
+  PQ-15-2205TCX,"rgb(191,163,175)",#BFA3AF,Dawn Pink         
+  PQ-15-2705TCX,"rgb(192,165,174)",#C0A5AE,Keepsake Lilac    
+  PQ-15-3207TCX,"rgb(196,157,180)",#C49DB4,Mauve Mist        
+  PQ-14-3911TCX,"rgb(186,184,211)",#BAB8D3,Purple Heather    
+  PQ-14-0721TCX,"rgb(192,173,124)",#C0AD7C,Hemp              
+  PQ-15-1119TCX,"rgb(191,167,127)",#BFA77F,Taos Taupe        
+  PQ-15-1116TCX,"rgb(186,170,145)",#BAAA91,Safari            
+  PQ-15-1314TCX,"rgb(193,166,141)",#C1A68D,Cuban Sand        
+  PQ-15-1308TCX,"rgb(189,171,155)",#BDAB9B,Doeskin           
+  PQ-14-1305TCX,"rgb(189,172,163)",#BDACA3,Mushroom          
+  PQ-15-4503TCX,"rgb(187,177,168)",#BBB1A8,Chateau Gray      
+  PQ-14-3805TCX,"rgb(186,175,188)",#BAAFBC,Iris              
+  PQ-15-2706TCX,"rgb(194,172,177)",#C2ACB1,Violet Ice        
+  PQ-15-3508TCX,"rgb(192,170,192)",#C0AAC0,Fair Orchid       
+  PQ-14-3812TCX,"rgb(189,176,208)",#BDB0D0,Pastel Lilac      
+  PQ-15-1216TCX,"rgb(191,175,146)",#BFAF92,Pale Khaki        
+  PQ-15-1217TCX,"rgb(199,181,149)",#C7B595,Mojave Desert     
+  PQ-14-4501TCX,"rgb(189,182,171)",#BDB6AB,Silver Lining     
+  PQ-15-4502TCX,"rgb(190,183,176)",#BEB7B0,Silver Cloud      
+  PQ-14-4103TCX,"rgb(187,188,188)",#BBBCBC,Gray Violet       
+  PQ-14-4203TCX,"rgb(190,189,189)",#BEBDBD,Vapor Blue        
+  PQ-15-3807TCX,"rgb(188,180,196)",#BCB4C4,Misty Lilac       
+  PQ-14-3710TCX,"rgb(191,180,203)",#BFB4CB,Orchid Petal      
+  PQ-14-3904TCX,"rgb(189,184,199)",#BDB8C7,Evening Haze      
+  PQ-14-0647TCX,"rgb(206,193,83) ",#CEC153,Celery            
+  PQ-14-0425TCX,"rgb(194,193,141)",#C2C18D,Beechnut          
+  PQ-14-0210TCX,"rgb(191,185,163)",#BFB9A3,Tidal Foam        
+  PQ-14-0105TCX,"rgb(195,189,171)",#C3BDAB,Overcast          
+  PQ-14-6305TCX,"rgb(193,188,172)",#C1BCAC,Pelican           
+  PQ-14-4500TCX,"rgb(194,190,182)",#C2BEB6,Moonstruck        
+  PQ-14-4502TCX,"rgb(186,194,186)",#BAC2BA,Mercury           
+  PQ-14-4106TCX,"rgb(187,193,204)",#BBC1CC,Gray Dawn         
+  PQ-14-0217TCX,"rgb(192,203,161)",#C0CBA1,Seedling          
+  PQ-13-6208TCX,"rgb(188,202,179)",#BCCAB3,Bok Choy          
+  PQ-13-0210TCX,"rgb(194,203,180)",#C2CBB4,Fog Green         
+  PQ-13-6108TCX,"rgb(184,204,186)",#B8CCBA,Celadon           
+  PQ-14-4505TCX,"rgb(191,200,195)",#BFC8C3,Smoke             
+  PQ-13-4201TCX,"rgb(195,198,200)",#C3C6C8,Oyster Mushroom   
+  PQ-13-4110TCX,"rgb(191,199,214)",#BFC7D6,Arctic Ice        
+  PQ-13-4111TCX,"rgb(191,202,214)",#BFCAD6,Plein Air         
+  PQ-12-0435TCX,"rgb(201,215,126)",#C9D77E,Daiquiri Green    
+  PQ-13-0317TCX,"rgb(197,207,152)",#C5CF98,Lily Green        
+  PQ-13-6007TCX,"rgb(190,211,187)",#BED3BB,Spray             
+  PQ-13-4405TCX,"rgb(191,205,204)",#BFCDCC,Misty Blue        
+  PQ-12-4607TCX,"rgb(188,211,213)",#BCD3D5,Pastel Blue       
+  PQ-13-4404TCX,"rgb(198,210,210)",#C6D2D2,Ice Flow          
+  PQ-13-4304TCX,"rgb(192,206,218)",#C0CEDA,Ballad Blue       
+  PQ-13-0530TCX,"rgb(205,215,138)",#CDD78A,Lime Sherbet      
+  PQ-12-0322TCX,"rgb(202,222,165)",#CADEA5,Butterfly         
+  PQ-12-5505TCX,"rgb(195,219,212)",#C3DBD4,Glacier           
+  PQ-13-0319TCX,"rgb(207,224,157)",#CFE09D,Shadow Lime       
+  PQ-12-0109TCX,"rgb(210,231,202)",#D2E7CA,Ambrosia          
+  PQ-12-5504TCX,"rgb(206,225,212)",#CEE1D4,Clearly Aqua      
+  PQ-18-2436TCX,"rgb(211,52,121) ",#D33479,Fuchsia Purple    
+  PQ-17-1842TCX,"rgb(212,46,91)  ",#D42E5B,Azalea            
+  PQ-18-1754TCX,"rgb(211,46,94)  ",#D32E5E,Raspberry         
+  PQ-18-1445TCX,"rgb(215,60,38)  ",#D73C26,Spicy Orange      
+  PQ-18-2043TCX,"rgb(210,56,108) ",#D2386C,Raspberry Sorbet  
+  PQ-17-1753TCX,"rgb(218,61,88)  ",#DA3D58,Geranium          
+  PQ-17-1740TCX,"rgb(200,76,97)  ",#C84C61,Claret Red        
+  PQ-17-2520TCX,"rgb(202,98,143) ",#CA628F,Ibis Rose         
+  PQ-17-1553TCX,"rgb(206,77,66)  ",#CE4D42,Paprika           
+  PQ-17-1544TCX,"rgb(198,93,82)  ",#C65D52,Burnt Sienna      
+  PQ-17-1926TCX,"rgb(206,91,120) ",#CE5B78,Fruit Dove        
+  PQ-18-2133TCX,"rgb(211,80,122) ",#D3507A,Pink Flambé       
+  PQ-17-1452TCX,"rgb(209,88,55)  ",#D15837,Koi               
+  PQ-17-1444TCX,"rgb(201,101,81) ",#C96551,Ginger            
+  PQ-17-1929TCX,"rgb(209,98,119) ",#D16277,Rapture Rose      
+  PQ-17-1349TCX,"rgb(232,104,0)  ",#E86800,Exuberance        
+  PQ-16-1260TCX,"rgb(213,98,49)  ",#D56231,Harvest Pumpkin   
+  PQ-17-1927TCX,"rgb(207,105,119)",#CF6977,Desert Rose       
+  PQ-16-1440TCX,"rgb(202,108,86) ",#CA6C56,Langoustino       
+  PQ-16-1441TCX,"rgb(209,111,82) ",#D16F52,Arabesque         
+  PQ-17-2120TCX,"rgb(210,115,143)",#D2738F,Chateau Rose      
+  PQ-16-3118TCX,"rgb(214,135,186)",#D687BA,Cyclamen          
+  PQ-16-1439TCX,"rgb(195,124,84) ",#C37C54,Caramel           
+  PQ-16-1340TCX,"rgb(206,123,91) ",#CE7B5B,Brandied Melon    
+  PQ-16-1435TCX,"rgb(206,120,93) ",#CE785D,Carnelian         
+  PQ-16-1327TCX,"rgb(192,135,104)",#C08768,Toasted Nut       
+  PQ-16-1332TCX,"rgb(198,132,99) ",#C68463,Pheasant          
+  PQ-16-1522TCX,"rgb(194,135,123)",#C2877B,Rose Dawn         
+  PQ-16-1610TCX,"rgb(202,132,138)",#CA848A,Brandied Apricot  
+  PQ-16-1140TCX,"rgb(208,137,63) ",#D0893F,Yam               
+  PQ-16-1150TCX,"rgb(208,131,68) ",#D08344,Topaz             
+  PQ-16-1148TCX,"rgb(207,136,72) ",#CF8848,Nugget            
+  PQ-16-1443TCX,"rgb(205,126,77) ",#CD7E4D,Apricot Buff      
+  PQ-16-1328TCX,"rgb(196,138,105)",#C48A69,Sandstone         
+  PQ-15-1425TCX,"rgb(192,145,108)",#C0916C,Fenugreek         
+  PQ-16-1431TCX,"rgb(206,132,119)",#CE8477,Canyon Clay       
+  PQ-16-1617TCX,"rgb(209,132,137)",#D18489,Mauveglow         
+  PQ-16-1715TCX,"rgb(206,132,152)",#CE8498,Wild Rose         
+  PQ-16-2215TCX,"rgb(206,135,159)",#CE879F,Cashmere Rose     
+  PQ-16-1341TCX,"rgb(198,143,101)",#C68F65,Butterum          
+  PQ-16-1518TCX,"rgb(206,142,139)",#CE8E8B,Rosette           
+  PQ-15-1051TCX,"rgb(215,148,45) ",#D7942D,Golden Orange     
+  PQ-16-1054TCX,"rgb(211,146,55) ",#D39237,Sunflower         
+  PQ-16-1143TCX,"rgb(202,148,86) ",#CA9456,Honey Yellow      
+  PQ-16-0940TCX,"rgb(195,155,106)",#C39B6A,Taffy             
+  PQ-16-1331TCX,"rgb(202,153,120)",#CA9978,Toast             
+  PQ-16-1220TCX,"rgb(199,150,133)",#C79685,Café Crème        
+  PQ-15-1213TCX,"rgb(191,163,135)",#BFA387,Candied Ginger    
+  PQ-15-1317TCX,"rgb(195,157,136)",#C39D88,Sirocco           
+  PQ-15-1315TCX,"rgb(194,165,148)",#C2A594,Rugby Tan         
+  PQ-15-1511TCX,"rgb(197,161,147)",#C5A193,Mahogany Rose     
+  PQ-15-1906TCX,"rgb(200,159,165)",#C89FA5,Zephyr            
+  PQ-15-2210TCX,"rgb(210,148,170)",#D294AA,Orchid Smoke      
+  PQ-15-3214TCX,"rgb(209,152,197)",#D198C5,Orchid            
+  PQ-15-0960TCX,"rgb(214,156,47) ",#D69C2F,Mango Mojito      
+  PQ-15-1046TCX,"rgb(211,156,67) ",#D39C43,Mineral Yellow    
+  PQ-15-1142TCX,"rgb(209,160,84) ",#D1A054,Honey Gold        
+  PQ-16-0947TCX,"rgb(207,159,82) ",#CF9F52,Bright Gold       
+  PQ-15-1220TCX,"rgb(197,165,130)",#C5A582,Lattè             
+  PQ-15-1316TCX,"rgb(201,163,141)",#C9A38D,Maple Sugar       
+  PQ-14-1208TCX,"rgb(192,172,146)",#C0AC92,Irish Cream       
+  PQ-15-1512TCX,"rgb(202,163,154)",#CAA39A,Misty Rose        
+  PQ-15-1607TCX,"rgb(198,164,164)",#C6A4A4,Pale Mauve        
+  PQ-14-3612TCX,"rgb(197,174,207)",#C5AECF,Orchid Bloom      
+  PQ-15-0850TCX,"rgb(212,174,64) ",#D4AE40,Ceylon Yellow     
+  PQ-14-0740TCX,"rgb(210,176,76) ",#D2B04C,Bamboo            
+  PQ-14-0952TCX,"rgb(216,174,71) ",#D8AE47,Spicy Mustard     
+  PQ-15-1132TCX,"rgb(201,168,106)",#C9A86A,Fall Leaf         
+  PQ-16-0924TCX,"rgb(196,171,134)",#C4AB86,Croissant         
+  PQ-15-1214TCX,"rgb(197,174,145)",#C5AE91,Warm Sand         
+  PQ-15-1309TCX,"rgb(197,177,160)",#C5B1A0,Moonlight         
+  PQ-15-1905TCX,"rgb(197,174,177)",#C5AEB1,Burnished Lilac   
+  PQ-14-0000TCX,"rgb(193,183,176)",#C1B7B0,Silver Gray       
+  PQ-14-3204TCX,"rgb(206,173,190)",#CEADBE,Fragrant Lilac    
+  PQ-16-0836TCX,"rgb(200,178,115)",#C8B273,Rich Gold         
+  PQ-14-1031TCX,"rgb(209,178,114)",#D1B272,Rattan            
+  PQ-14-1025TCX,"rgb(201,178,124)",#C9B27C,Cocoon            
+  PQ-14-1116TCX,"rgb(204,179,144)",#CCB390,Almond Buff       
+  PQ-14-1112TCX,"rgb(202,182,152)",#CAB698,Pebble            
+  PQ-14-0708TCX,"rgb(196,182,166)",#C4B6A6,Cement            
+  PQ-14-1106TCX,"rgb(197,187,174)",#C5BBAE,Peyote            
+  PQ-14-3903TCX,"rgb(195,186,191)",#C3BABF,Lilac Marble      
+  PQ-14-3905TCX,"rgb(197,192,208)",#C5C0D0,Lavender Blue     
+  PQ-14-0626TCX,"rgb(204,185,126)",#CCB97E,Dried Moss        
+  PQ-14-0826TCX,"rgb(207,187,123)",#CFBB7B,Pampas            
+  PQ-13-1105TCX,"rgb(199,187,164)",#C7BBA4,Brown Rice        
+  PQ-14-1014TCX,"rgb(203,191,162)",#CBBFA2,Gravel            
+  PQ-14-0108TCX,"rgb(200,193,171)",#C8C1AB,Castle Wall       
+  PQ-13-0403TCX,"rgb(202,190,181)",#CABEB5,Gray Morn         
+  PQ-13-4104TCX,"rgb(198,197,198)",#C6C5C6,Antarctica        
+  PQ-14-4102TCX,"rgb(197,198,199)",#C5C6C7,Glacier Gray      
+  PQ-14-4201TCX,"rgb(197,197,197)",#C5C5C5,Lunar Rock        
+  PQ-13-0648TCX,"rgb(217,206,82) ",#D9CE52,Green Sheen       
+  PQ-13-0640TCX,"rgb(218,205,101)",#DACD65,Acacia            
+  PQ-14-0636TCX,"rgb(209,200,124)",#D1C87C,Muted Lime        
+  PQ-13-0632TCX,"rgb(210,204,129)",#D2CC81,Endive            
+  PQ-14-0627TCX,"rgb(207,196,134)",#CFC486,Shadow Green      
+  PQ-13-0522TCX,"rgb(203,206,145)",#CBCE91,Pale Green        
+  PQ-14-0615TCX,"rgb(202,196,164)",#CAC4A4,Green Haze        
+  PQ-13-0212TCX,"rgb(197,207,182)",#C5CFB6,Tender Greens     
+  PQ-13-0401TCX,"rgb(203,195,180)",#CBC3B4,Oatmeal           
+  PQ-13-5305TCX,"rgb(193,204,194)",#C1CCC2,Pale Aqua         
+  PQ-13-6106TCX,"rgb(197,204,192)",#C5CCC0,Green Tint        
+  PQ-13-6107TCX,"rgb(193,206,193)",#C1CEC1,Green Lily        
+  PQ-12-0313TCX,"rgb(203,213,177)",#CBD5B1,Seafoam Green     
+  PQ-13-0107TCX,"rgb(196,209,194)",#C4D1C2,Dewkist           
+  PQ-13-6006TCX,"rgb(202,211,193)",#CAD3C1,Almost Aqua       
+  PQ-13-6105TCX,"rgb(203,206,190)",#CBCEBE,Celadon Tint      
+  PQ-13-4804TCX,"rgb(196,214,211)",#C4D6D3,Pale Blue         
+  PQ-13-4103TCX,"rgb(201,211,220)",#C9D3DC,Illusion Blue     
+  PQ-12-0315TCX,"rgb(212,219,178)",#D4DBB2,White Jade        
+  PQ-12-5303TCX,"rgb(203,215,210)",#CBD7D2,Sprout Green      
+  PQ-12-6205TCX,"rgb(207,219,209)",#CFDBD1,Milky Green       
+  PQ-12-4610TCX,"rgb(201,220,220)",#C9DCDC,Whispering Blue   
+  PQ-12-4805TCX,"rgb(203,220,223)",#CBDCDF,Wan Blue          
+  PQ-12-0312TCX,"rgb(215,232,188)",#D7E8BC,Lime Cream        
+  PQ-11-4805TCX,"rgb(216,235,230)",#D8EBE6,Hint of Mint      
+  PQ-12-0741TCX,"rgb(223,239,135)",#DFEF87,Sunny Lime        
+  PQ-12-0106TCX,"rgb(211,222,196)",#D3DEC4,Meadow Mist       
+  PQ-17-1463TCX,"rgb(221,65,36)  ",#DD4124,Tangerine Tango   
+  PQ-17-1664TCX,"rgb(220,52,59)  ",#DC343B,Poppy Red         
+  PQ-17-1663TCX,"rgb(217,55,68)  ",#D93744,Bittersweet       
+  PQ-18-1762TCX,"rgb(221,56,72)  ",#DD3848,Hibiscus          
+  PQ-18-1756TCX,"rgb(220,56,85)  ",#DC3855,Teaberry          
+  PQ-17-1558TCX,"rgb(223,63,50)  ",#DF3F32,Grenadine         
+  PQ-17-1564TCX,"rgb(221,65,50)  ",#DD4132,Fiesta            
+  PQ-18-1651TCX,"rgb(224,73,81)  ",#E04951,Cayenne           
+  PQ-18-1755TCX,"rgb(226,70,102) ",#E24666,Rouge Red         
+  PQ-18-2120TCX,"rgb(217,79,112) ",#D94F70,Honeysuckle       
+  PQ-17-2127TCX,"rgb(222,91,140) ",#DE5B8C,Shocking Pink     
+  PQ-17-2230TCX,"rgb(227,91,143) ",#E35B8F,Carmine Rose      
+  PQ-17-1461TCX,"rgb(226,85,44)  ",#E2552C,Orangeade         
+  PQ-17-2033TCX,"rgb(224,79,128) ",#E04F80,Fandango Pink     
+  PQ-16-1164TCX,"rgb(223,117,0)  ",#DF7500,Orange Pepper     
+  PQ-17-1644TCX,"rgb(215,92,93)  ",#D75C5D,Spiced Coral      
+  PQ-18-1649TCX,"rgb(217,97,91)  ",#D9615B,Deep Sea Coral    
+  PQ-17-1635TCX,"rgb(220,91,98)  ",#DC5B62,Rose of Sharon    
+  PQ-15-1150TCX,"rgb(224,129,25) ",#E08119,Dark Cheddar      
+  PQ-16-1454TCX,"rgb(216,109,57) ",#D86D39,Jaffa Orange      
+  PQ-15-1429TCX,"rgb(204,115,87) ",#CC7357,Dusted Clay       
+  PQ-16-1255TCX,"rgb(228,113,39) ",#E47127,Russet Orange     
+  PQ-16-1620TCX,"rgb(220,113,120)",#DC7178,Tea Rose          
+  PQ-16-2120TCX,"rgb(217,121,162)",#D979A2,Wild Orchid       
+  PQ-15-2718TCX,"rgb(223,136,183)",#DF88B7,Fuchsia Pink      
+  PQ-16-1253TCX,"rgb(220,121,58) ",#DC793A,Orange Ochre      
+  PQ-16-1350TCX,"rgb(220,121,62) ",#DC793E,Amberglow         
+  PQ-16-1337TCX,"rgb(210,125,86) ",#D27D56,Coral Gold        
+  PQ-16-1345TCX,"rgb(210,127,99) ",#D27F63,Sun Baked         
+  PQ-16-1532TCX,"rgb(215,126,112)",#D77E70,Crabapple         
+  PQ-17-1341TCX,"rgb(211,127,111)",#D37F6F,Tawny Orange      
+  PQ-16-1526TCX,"rgb(211,131,119)",#D38377,Terra Cotta       
+  PQ-16-1624TCX,"rgb(218,126,122)",#DA7E7A,Lantana           
+  PQ-16-2614TCX,"rgb(210,143,176)",#D28FB0,Moonlite Mauve    
+  PQ-15-1045TCX,"rgb(217,146,46) ",#D9922E,Autumn Blaze      
+  PQ-16-1342TCX,"rgb(209,142,84) ",#D18E54,Buckskin          
+  PQ-16-1330TCX,"rgb(210,147,128)",#D29380,Muted Clay        
+  PQ-15-1614TCX,"rgb(209,150,154)",#D1969A,Blush             
+  PQ-15-1050TCX,"rgb(217,153,56) ",#D99938,Golden Glow       
+  PQ-15-1147TCX,"rgb(225,150,64) ",#E19640,Butterscotch      
+  PQ-16-1144TCX,"rgb(207,156,99) ",#CF9C63,Oak Buff          
+  PQ-15-1322TCX,"rgb(210,155,131)",#D29B83,Dusty Coral       
+  PQ-16-1511TCX,"rgb(209,156,151)",#D19C97,Rose Tan          
+  PQ-14-0755TCX,"rgb(221,182,20) ",#DDB614,Sulphur           
+  PQ-14-0951TCX,"rgb(226,168,41) ",#E2A829,Golden Rod        
+  PQ-15-1231TCX,"rgb(210,161,114)",#D2A172,Clay              
+  PQ-15-1125TCX,"rgb(204,165,128)",#CCA580,Porcini           
+  PQ-15-1225TCX,"rgb(204,166,127)",#CCA67F,Sand              
+  PQ-15-1516TCX,"rgb(211,162,151)",#D3A297,Peach Beige       
+  PQ-15-1611TCX,"rgb(214,159,162)",#D69FA2,Bridal Rose       
+  PQ-14-3209TCX,"rgb(216,161,196)",#D8A1C4,Pastel Lavender   
+  PQ-15-3412TCX,"rgb(209,172,206)",#D1ACCE,Orchid Bouquet    
+  PQ-14-1041TCX,"rgb(221,167,88) ",#DDA758,Golden Apricot    
+  PQ-14-1036TCX,"rgb(214,175,102)",#D6AF66,Ochre             
+  PQ-14-1315TCX,"rgb(207,176,149)",#CFB095,Hazelnut          
+  PQ-14-1307TCX,"rgb(205,178,165)",#CDB2A5,Rose Dust         
+  PQ-14-2305TCX,"rgb(216,170,183)",#D8AAB7,Pink Nectar       
+  PQ-14-0846TCX,"rgb(226,176,81) ",#E2B051,Yolk Yellow       
+  PQ-14-0837TCX,"rgb(218,185,101)",#DAB965,Misted Yellow     
+  PQ-14-1038TCX,"rgb(215,181,127)",#D7B57F,New Wheat         
+  PQ-14-1213TCX,"rgb(210,180,156)",#D2B49C,Toasted Almond    
+  PQ-15-1218TCX,"rgb(206,184,153)",#CEB899,Semolina          
+  PQ-14-1212TCX,"rgb(209,183,160)",#D1B7A0,Frappé            
+  PQ-14-1209TCX,"rgb(206,186,168)",#CEBAA8,Smoke Gray        
+  PQ-14-1506TCX,"rgb(211,180,173)",#D3B4AD,Rose Smoke        
+  PQ-14-0002TCX,"rgb(202,194,185)",#CAC2B9,Pumice Stone      
+  PQ-14-3206TCX,"rgb(212,185,203)",#D4B9CB,Winsome Orchid    
+  PQ-14-0754TCX,"rgb(228,191,69) ",#E4BF45,Super Lemon       
+  PQ-13-0739TCX,"rgb(222,192,95) ",#DEC05F,Cream Gold        
+  PQ-14-0935TCX,"rgb(218,190,129)",#DABE81,Jojoba            
+  PQ-14-1110TCX,"rgb(209,190,155)",#D1BE9B,Boulder           
+  PQ-14-1118TCX,"rgb(213,186,152)",#D5BA98,Beige             
+  PQ-13-0919TCX,"rgb(210,194,157)",#D2C29D,Soybean           
+  PQ-13-1012TCX,"rgb(210,194,172)",#D2C2AC,Frosted Almond    
+  PQ-14-1107TCX,"rgb(203,193,174)",#CBC1AE,Oyster Gray       
+  PQ-13-0607TCX,"rgb(208,197,177)",#D0C5B1,Fog               
+  PQ-14-1803TCX,"rgb(212,186,182)",#D4BAB6,Sepia Rose        
+  PQ-13-0000TCX,"rgb(205,198,189)",#CDC6BD,Moonbeam          
+  PQ-14-3803TCX,"rgb(209,192,191)",#D1C0BF,Hushed Violet     
+  PQ-14-4002TCX,"rgb(202,197,194)",#CAC5C2,Wind Chime        
+  PQ-13-3805TCX,"rgb(206,195,210)",#CEC3D2,Orchid Hush       
+  PQ-13-3820TCX,"rgb(210,196,214)",#D2C4D6,Lavender Fog      
+  PQ-13-0725TCX,"rgb(218,196,131)",#DAC483,Raffia            
+  PQ-12-0619TCX,"rgb(212,204,154)",#D4CC9A,Dusty Yellow      
+  PQ-13-0624TCX,"rgb(213,205,148)",#D5CD94,Golden Mist       
+  PQ-14-0925TCX,"rgb(214,198,154)",#D6C69A,Parsnip           
+  PQ-12-0418TCX,"rgb(211,204,163)",#D3CCA3,Hay               
+  PQ-13-0715TCX,"rgb(216,201,163)",#D8C9A3,Sea Mist          
+  PQ-13-0611TCX,"rgb(210,203,175)",#D2CBAF,Moth              
+  PQ-13-0711TCX,"rgb(212,202,176)",#D4CAB0,Putty             
+  PQ-13-1007TCX,"rgb(210,202,175)",#D2CAAF,Oyster White      
+  PQ-13-1009TCX,"rgb(218,199,171)",#DAC7AB,Biscotti          
+  PQ-12-0311TCX,"rgb(210,205,180)",#D2CDB4,Asparagus Green   
+  PQ-13-5304TCX,"rgb(207,200,189)",#CFC8BD,Rainy Day         
+  PQ-13-4303TCX,"rgb(202,204,203)",#CACCCB,Dawn Blue         
+  PQ-13-4105TCX,"rgb(208,208,218)",#D0D0DA,Lilac Hint        
+  PQ-14-0756TCX,"rgb(247,208,0)  ",#F7D000,Empire Yellow     
+  PQ-12-0426TCX,"rgb(213,213,147)",#D5D593,Mellow Green      
+  PQ-13-0608TCX,"rgb(208,211,183)",#D0D3B7,Aloe Wash         
+  PQ-12-4301TCX,"rgb(214,206,190)",#D6CEBE,Almond Milk       
+  PQ-13-4403TCX,"rgb(210,207,196)",#D2CFC4,Silver Birch      
+  PQ-12-4806TCX,"rgb(204,218,215)",#CCDAD7,Chalk Blue        
+  PQ-12-5203TCX,"rgb(210,216,210)",#D2D8D2,Murmur            
+  PQ-12-5403TCX,"rgb(208,217,212)",#D0D9D4,Blue Flower       
+  PQ-13-4305TCX,"rgb(209,213,208)",#D1D5D0,Foggy Dew         
+  PQ-12-0633TCX,"rgb(223,216,126)",#DFD87E,Canary Yellow     
+  PQ-12-0108TCX,"rgb(214,222,201)",#D6DEC9,Canary Green      
+  PQ-12-5603TCX,"rgb(211,217,209)",#D3D9D1,Zephyr Blue       
+  PQ-12-5204TCX,"rgb(207,223,219)",#CFDFDB,Morning Mist      
+  PQ-12-0643TCX,"rgb(254,231,21) ",#FEE715,Blazing Yellow    
+  PQ-13-0644TCX,"rgb(243,221,62) ",#F3DD3E,Golden Kiwi       
+  PQ-12-0530TCX,"rgb(229,231,144)",#E5E790,Charlock          
+  PQ-12-0520TCX,"rgb(223,230,159)",#DFE69F,Pale Lime Yellow  
+  PQ-12-0521TCX,"rgb(225,227,169)",#E1E3A9,Young Wheat       
+  PQ-12-5407TCX,"rgb(210,232,224)",#D2E8E0,Aqua Glass        
+  PQ-11-4604TCX,"rgb(216,231,231)",#D8E7E7,Billowing Sail    
+  PQ-12-0752TCX,"rgb(250,224,60) ",#FAE03C,Buttercup         
+  PQ-12-0525TCX,"rgb(227,234,165)",#E3EAA5,Luminary Green    
+  PQ-12-5508TCX,"rgb(216,233,229)",#D8E9E5,Hushed Green      
+  PQ-13-0646TCX,"rgb(234,217,78) ",#EAD94E,Meadowlark        
+  PQ-12-0524TCX,"rgb(223,222,155)",#DFDE9B,Citron            
+  PQ-17-1563TCX,"rgb(235,60,39)  ",#EB3C27,Cherry Tomato     
+  PQ-17-1464TCX,"rgb(240,86,39)  ",#F05627,Red Orange        
+  PQ-17-1755TCX,"rgb(228,68,94)  ",#E4445E,Paradise Pink     
+  PQ-17-1937TCX,"rgb(229,89,130) ",#E55982,Hot Pink          
+  PQ-16-1363TCX,"rgb(233,92,32)  ",#E95C20,Puffin's Bill     
+  PQ-17-1562TCX,"rgb(231,74,51)  ",#E74A33,Mandarin Red      
+  PQ-17-1456TCX,"rgb(226,88,62)  ",#E2583E,Tigerlily         
+  PQ-16-2126TCX,"rgb(233,106,151)",#E96A97,Azalea Pink       
+  PQ-17-1736TCX,"rgb(234,102,118)",#EA6676,Sun Kissed Coral  
+  PQ-17-1930TCX,"rgb(235,96,129) ",#EB6081,Camellia Rose     
+  PQ-17-1360TCX,"rgb(232,112,58) ",#E8703A,Celosia Orange    
+  PQ-16-1450TCX,"rgb(223,114,83) ",#DF7253,Flamingo          
+  PQ-16-1344TCX,"rgb(226,122,83) ",#E27A53,Dusty Orange      
+  PQ-16-1626TCX,"rgb(222,130,134)",#DE8286,Peach Blossom     
+  PQ-16-1723TCX,"rgb(230,121,142)",#E6798E,Confetti          
+  PQ-15-2217TCX,"rgb(232,129,166)",#E881A6,Aurora Pink       
+  PQ-15-2913TCX,"rgb(222,155,196)",#DE9BC4,Lilac Chiffon     
+  PQ-16-1142TCX,"rgb(219,155,89) ",#DB9B59,Golden Nugget     
+  PQ-16-1338TCX,"rgb(222,142,101)",#DE8E65,Copper Tan        
+  PQ-15-1333TCX,"rgb(225,146,122)",#E1927A,Canyon Sunset     
+  PQ-16-1329TCX,"rgb(227,142,132)",#E38E84,Coral Haze        
+  PQ-16-1520TCX,"rgb(221,146,137)",#DD9289,Lobster Bisque    
+  PQ-15-1912TCX,"rgb(222,152,171)",#DE98AB,Sea Pink          
+  PQ-15-2214TCX,"rgb(226,144,178)",#E290B2,Rosebloom         
+  PQ-15-1054TCX,"rgb(238,150,38) ",#EE9626,Cadmium Yellow    
+  PQ-15-1237TCX,"rgb(221,151,96) ",#DD9760,Apricot Tan       
+  PQ-15-1234TCX,"rgb(221,156,107)",#DD9C6B,Gold Earth        
+  PQ-15-1327TCX,"rgb(217,155,124)",#D99B7C,Peach Bloom       
+  PQ-15-1515TCX,"rgb(217,166,161)",#D9A6A1,Mellow Rose       
+  PQ-15-0955TCX,"rgb(236,168,37) ",#ECA825,Old Gold          
+  PQ-14-2307TCX,"rgb(219,169,184)",#DBA9B8,Cameo Pink        
+  PQ-14-3207TCX,"rgb(217,175,202)",#D9AFCA,Pink Lavender     
+  PQ-13-0946TCX,"rgb(231,170,86) ",#E7AA56,Jurassic Gold     
+  PQ-14-0941TCX,"rgb(235,168,81) ",#EBA851,Beeswax           
+  PQ-14-1316TCX,"rgb(222,170,155)",#DEAA9B,Dusty Pink        
+  PQ-14-1313TCX,"rgb(219,176,162)",#DBB0A2,Rose Cloud        
+  PQ-15-1415TCX,"rgb(226,169,161)",#E2A9A1,Coral Cloud       
+  PQ-14-1310TCX,"rgb(215,184,171)",#D7B8AB,Cameo Rose        
+  PQ-14-1508TCX,"rgb(220,177,175)",#DCB1AF,Silver Pink       
+  PQ-14-1122TCX,"rgb(218,181,143)",#DAB58F,Sheepskin         
+  PQ-14-1127TCX,"rgb(224,181,137)",#E0B589,Desert Mist       
+  PQ-13-1014TCX,"rgb(216,185,152)",#D8B998,Mellow Buff       
+  PQ-14-1311TCX,"rgb(221,182,171)",#DDB6AB,Evening Sand      
+  PQ-14-1314TCX,"rgb(223,186,169)",#DFBAA9,Spanish Villa     
+  PQ-14-1907TCX,"rgb(223,184,182)",#DFB8B6,Peachskin         
+  PQ-13-0746TCX,"rgb(238,200,67) ",#EEC843,Maize             
+  PQ-14-0848TCX,"rgb(240,192,90) ",#F0C05A,Mimosa            
+  PQ-14-0936TCX,"rgb(223,192,138)",#DFC08A,Sahara Sun        
+  PQ-14-1113TCX,"rgb(216,192,157)",#D8C09D,Marzipan          
+  PQ-13-1011TCX,"rgb(218,192,167)",#DAC0A7,Ivory Cream       
+  PQ-13-1013TCX,"rgb(221,188,160)",#DDBCA0,Appleblossom      
+  PQ-13-1015TCX,"rgb(220,189,158)",#DCBD9E,Honey Peach       
+  PQ-14-1119TCX,"rgb(223,192,159)",#DFC09F,Winter Wheat      
+  PQ-14-1210TCX,"rgb(216,192,173)",#D8C0AD,Shifting Sand     
+  PQ-13-1208TCX,"rgb(226,189,179)",#E2BDB3,Peachy Keen       
+  PQ-14-1309TCX,"rgb(219,190,183)",#DBBEB7,Peach Whip        
+  PQ-13-3804TCX,"rgb(212,202,205)",#D4CACD,Gray Lilac        
+  PQ-14-0827TCX,"rgb(227,204,129)",#E3CC81,Dusky Citron      
+  PQ-13-0915TCX,"rgb(220,201,158)",#DCC99E,Reed Yellow       
+  PQ-13-0922TCX,"rgb(224,201,146)",#E0C992,Straw             
+  PQ-13-0613TCX,"rgb(217,202,165)",#D9CAA5,Chino Green       
+  PQ-14-1108TCX,"rgb(215,202,176)",#D7CAB0,Wood Ash          
+  PQ-13-0513TCX,"rgb(216,207,178)",#D8CFB2,Frozen Dew        
+  PQ-13-0907TCX,"rgb(216,204,187)",#D8CCBB,Sandshell         
+  PQ-13-1006TCX,"rgb(219,204,181)",#DBCCB5,Crème Brûlée      
+  PQ-13-1008TCX,"rgb(218,204,180)",#DACCB4,Bleached Sand     
+  PQ-13-1308TCX,"rgb(218,202,183)",#DACAB7,Brazilian Sand    
+  PQ-12-0105TCX,"rgb(215,208,192)",#D7D0C0,Bone White        
+  PQ-12-0110TCX,"rgb(215,207,187)",#D7CFBB,Pistachio Shell   
+  PQ-12-1403TCX,"rgb(220,205,188)",#DCCDBC,Tapioca           
+  PQ-12-1404TCX,"rgb(219,203,189)",#DBCBBD,Pink Tint         
+  PQ-13-1106TCX,"rgb(222,205,190)",#DECDBE,Sand Dollar       
+  PQ-13-1107TCX,"rgb(218,203,190)",#DACBBE,Whisper Pink      
+  PQ-13-3801TCX,"rgb(215,203,196)",#D7CBC4,Crystal Gray      
+  PQ-13-3803TCX,"rgb(215,205,205)",#D7CDCD,Lilac Ash         
+  PQ-12-2903TCX,"rgb(222,198,211)",#DEC6D3,Light Lilac       
+  PQ-13-3405TCX,"rgb(224,199,215)",#E0C7D7,Lilac Snow        
+  PQ-13-3802TCX,"rgb(219,210,219)",#DBD2DB,Orchid Tint       
+  PQ-13-4108TCX,"rgb(213,213,216)",#D5D5D8,Nimbus Cloud      
+  PQ-12-0626TCX,"rgb(220,212,148)",#DCD494,Lemon Grass       
+  PQ-13-0333TCX,"rgb(225,213,144)",#E1D590,Lima Bean         
+  PQ-13-0614TCX,"rgb(220,216,168)",#DCD8A8,Garden Glade      
+  PQ-13-0908TCX,"rgb(223,209,190)",#DFD1BE,Parchment         
+  PQ-12-0404TCX,"rgb(218,216,201)",#DAD8C9,Light Gray        
+  PQ-12-6204TCX,"rgb(215,215,199)",#D7D7C7,Silver Green      
+  PQ-13-0905TCX,"rgb(221,213,199)",#DDD5C7,Birch             
+  PQ-13-0002TCX,"rgb(219,213,209)",#DBD5D1,White Sand        
+  PQ-12-4305TCX,"rgb(211,222,223)",#D3DEDF,Spa Blue          
+  PQ-12-4705TCX,"rgb(214,219,217)",#D6DBD9,Blue Blush        
+  PQ-13-3406TCX,"rgb(224,208,219)",#E0D0DB,Orchid Ice        
+  PQ-13-0858TCX,"rgb(255,218,41) ",#FFDA29,Vibrant Yellow    
+  PQ-12-0642TCX,"rgb(237,221,89) ",#EDDD59,Aurora            
+  PQ-12-0646TCX,"rgb(235,223,103)",#EBDF67,Celandine         
+  PQ-13-0720TCX,"rgb(229,214,142)",#E5D68E,Custard           
+  PQ-12-0104TCX,"rgb(225,219,200)",#E1DBC8,White Asparagus   
+  PQ-12-5201TCX,"rgb(218,220,208)",#DADCD0,Icicle            
+  PQ-12-5202TCX,"rgb(222,215,200)",#DED7C8,Turtledove        
+  PQ-11-0304TCX,"rgb(221,227,213)",#DDE3D5,Water Lily        
+  PQ-12-5404TCX,"rgb(224,230,215)",#E0E6D7,Whisper Green     
+  PQ-12-6206TCX,"rgb(216,227,215)",#D8E3D7,Fairest Jade      
+  PQ-12-6207TCX,"rgb(221,226,214)",#DDE2D6,Frost             
+  PQ-12-6208TCX,"rgb(220,228,215)",#DCE4D7,Phantom Green     
+  PQ-12-0740TCX,"rgb(240,232,125)",#F0E87D,Limelight         
+  PQ-11-0622TCX,"rgb(238,231,142)",#EEE78E,Yellow Iris       
+  PQ-11-0620TCX,"rgb(238,234,151)",#EEEA97,Elfin Yellow      
+  PQ-11-0623TCX,"rgb(236,233,155)",#ECE99B,Yellow Pear       
+  PQ-11-0618TCX,"rgb(237,233,173)",#EDE9AD,Wax Yellow        
+  PQ-11-0710TCX,"rgb(237,237,183)",#EDEDB7,Tender Yellow     
+  PQ-11-0410TCX,"rgb(231,234,203)",#E7EACB,Sylvan Green      
+  PQ-12-0607TCX,"rgb(233,234,200)",#E9EAC8,Green Essence     
+  PQ-11-4601TCX,"rgb(226,234,235)",#E2EAEB,Bit of Blue       
+  PQ-11-4001TCX,"rgb(237,241,254)",#EDF1FE,Brilliant White   
+  PQ-14-0760TCX,"rgb(255,212,0)  ",#FFD400,Cyber Yellow      
+  PQ-12-0738TCX,"rgb(239,220,117)",#EFDC75,Yellow Cream      
+  PQ-17-1361TCX,"rgb(244,85,32)  ",#F45520,Scarlet Ibis      
+  PQ-17-1462TCX,"rgb(242,85,44)  ",#F2552C,Flame             
+  PQ-16-1358TCX,"rgb(249,103,20) ",#F96714,Orange Tiger      
+  PQ-17-1656TCX,"rgb(243,91,83)  ",#F35B53,Hot Coral         
+  PQ-17-1744TCX,"rgb(238,92,108) ",#EE5C6C,Calypso Coral     
+  PQ-16-1459TCX,"rgb(236,106,55) ",#EC6A37,Mandarin Orange   
+  PQ-16-1453TCX,"rgb(249,101,49) ",#F96531,Exotic Orange     
+  PQ-16-1462TCX,"rgb(245,103,51) ",#F56733,Golden Poppy      
+  PQ-16-1362TCX,"rgb(249,99,59)  ",#F9633B,Vermillion Orange 
+  PQ-16-1452TCX,"rgb(243,105,68) ",#F36944,Firecracker       
+  PQ-17-1547TCX,"rgb(234,103,89) ",#EA6759,Emberglow         
+  PQ-17-1643TCX,"rgb(234,107,106)",#EA6B6A,Porcelain Rose    
+  PQ-16-1735TCX,"rgb(238,109,138)",#EE6D8A,Pink Lemonade     
+  PQ-17-1928TCX,"rgb(234,115,141)",#EA738D,Bubblegum         
+  PQ-16-1356TCX,"rgb(244,115,39) ",#F47327,Persimmon Orange  
+  PQ-16-1539TCX,"rgb(237,116,100)",#ED7464,Coral             
+  PQ-16-2124TCX,"rgb(237,122,158)",#ED7A9E,Pink Carnation    
+  PQ-15-2216TCX,"rgb(241,138,173)",#F18AAD,Sachet Pink       
+  PQ-15-1335TCX,"rgb(254,126,3)  ",#FE7E03,Tangelo           
+  PQ-16-1349TCX,"rgb(243,119,77) ",#F3774D,Coral Rose        
+  PQ-15-1920TCX,"rgb(238,129,159)",#EE819F,Morning Glory     
+  PQ-16-1257TCX,"rgb(244,128,55) ",#F48037,Sun Orange        
+  PQ-16-1529TCX,"rgb(233,137,126)",#E9897E,Burnt Coral       
+  PQ-16-1720TCX,"rgb(231,139,144)",#E78B90,Strawberry Ice    
+  PQ-15-2215TCX,"rgb(236,154,190)",#EC9ABE,Begonia Pink      
+  PQ-15-1164TCX,"rgb(255,141,0)  ",#FF8D00,Bright Marigold   
+  PQ-15-1153TCX,"rgb(241,144,53) ",#F19035,Apricot           
+  PQ-15-1523TCX,"rgb(226,154,134)",#E29A86,Shrimp            
+  PQ-16-1434TCX,"rgb(226,157,148)",#E29D94,Coral Almond      
+  PQ-15-1151TCX,"rgb(244,150,58) ",#F4963A,Iceland Poppy     
+  PQ-15-1242TCX,"rgb(236,147,94) ",#EC935E,Muskmelon         
+  PQ-15-1334TCX,"rgb(234,149,117)",#EA9575,Shell Coral       
+  PQ-15-1520TCX,"rgb(235,150,135)",#EB9687,Blooming Dahlia   
+  PQ-15-1816TCX,"rgb(237,156,168)",#ED9CA8,Peony             
+  PQ-14-1318TCX,"rgb(232,167,152)",#E8A798,Coral Pink        
+  PQ-15-1717TCX,"rgb(238,160,166)",#EEA0A6,Pink Icing        
+  PQ-14-2311TCX,"rgb(240,161,191)",#F0A1BF,Prism Pink        
+  PQ-13-0752TCX,"rgb(243,191,8)  ",#F3BF08,Lemon             
+  PQ-14-0957TCX,"rgb(247,183,24) ",#F7B718,Spectra Yellow    
+  PQ-14-0955TCX,"rgb(249,172,47) ",#F9AC2F,Citrus            
+  PQ-15-1049TCX,"rgb(242,171,70) ",#F2AB46,Artisan's Gold    
+  PQ-14-1045TCX,"rgb(239,173,85) ",#EFAD55,Amber             
+  PQ-14-1133TCX,"rgb(236,170,121)",#ECAA79,Apricot Nectar    
+  PQ-14-1224TCX,"rgb(237,170,134)",#EDAA86,Coral Sands       
+  PQ-14-1220TCX,"rgb(230,175,145)",#E6AF91,Peach Nougat      
+  PQ-15-1318TCX,"rgb(223,177,155)",#DFB19B,Pink Sand         
+  PQ-14-1909TCX,"rgb(230,178,184)",#E6B2B8,Coral Blush       
+  PQ-14-2710TCX,"rgb(233,173,202)",#E9ADCA,Lilac Sachet      
+  PQ-14-0852TCX,"rgb(243,193,44) ",#F3C12C,Freesia           
+  PQ-13-0759TCX,"rgb(244,191,58) ",#F4BF3A,Solar Power       
+  PQ-13-1018TCX,"rgb(227,188,142)",#E3BC8E,Desert Dust       
+  PQ-15-1319TCX,"rgb(229,179,155)",#E5B39B,Almost Apricot    
+  PQ-14-1511TCX,"rgb(236,178,179)",#ECB2B3,Powder Pink       
+  PQ-14-1905TCX,"rgb(226,193,192)",#E2C1C0,Lotus             
+  PQ-14-2808TCX,"rgb(232,181,206)",#E8B5CE,Sweet Lilac       
+  PQ-13-2805TCX,"rgb(230,188,205)",#E6BCCD,Roseate Spoonbill 
+  PQ-13-0932TCX,"rgb(237,195,115)",#EDC373,Cornsilk          
+  PQ-14-0847TCX,"rgb(241,191,112)",#F1BF70,Buff Yellow       
+  PQ-12-0921TCX,"rgb(230,189,143)",#E6BD8F,Golden Straw      
+  PQ-13-1016TCX,"rgb(222,197,165)",#DEC5A5,Wheat             
+  PQ-14-1217TCX,"rgb(226,190,162)",#E2BEA2,Amberlight        
+  PQ-14-1120TCX,"rgb(226,196,166)",#E2C4A6,Apricot Illusion  
+  PQ-14-1312TCX,"rgb(228,191,179)",#E4BFB3,Pale Blush        
+  PQ-13-2803TCX,"rgb(225,198,204)",#E1C6CC,Pale Lilac        
+  PQ-13-1108TCX,"rgb(228,199,184)",#E4C7B8,Cream Tan         
+  PQ-12-0605TCX,"rgb(223,209,187)",#DFD1BB,Angora            
+  PQ-12-2901TCX,"rgb(223,205,198)",#DFCDC6,Morganite         
+  PQ-13-1405TCX,"rgb(225,207,198)",#E1CFC6,Shell             
+  PQ-13-1504TCX,"rgb(228,204,198)",#E4CCC6,Peach Blush       
+  PQ-13-1904TCX,"rgb(230,197,202)",#E6C5CA,Chalk Pink        
+  PQ-13-2004TCX,"rgb(231,201,202)",#E7C9CA,Potpourri         
+  PQ-13-0755TCX,"rgb(246,209,85) ",#F6D155,Primrose Yellow   
+  PQ-12-0729TCX,"rgb(235,207,137)",#EBCF89,Sundress          
+  PQ-12-0718TCX,"rgb(231,211,145)",#E7D391,Pineapple Slice   
+  PQ-13-0917TCX,"rgb(231,209,161)",#E7D1A1,Italian Straw     
+  PQ-13-0815TCX,"rgb(231,211,173)",#E7D3AD,Banana Crepe      
+  PQ-13-0916TCX,"rgb(232,208,167)",#E8D0A7,Chamomile         
+  PQ-12-0709TCX,"rgb(228,207,182)",#E4CFB6,Macadamia         
+  PQ-12-0910TCX,"rgb(229,208,177)",#E5D0B1,Lamb's Wool       
+  PQ-12-0304TCX,"rgb(224,213,198)",#E0D5C6,Whitecap Gray     
+  PQ-12-1005TCX,"rgb(231,207,189)",#E7CFBD,Novelle Peach     
+  PQ-12-1007TCX,"rgb(233,209,191)",#E9D1BF,Pastel Rose Tan   
+  PQ-12-2902TCX,"rgb(229,208,207)",#E5D0CF,Mauve Chalk       
+  PQ-13-0756TCX,"rgb(249,216,87) ",#F9D857,Lemon Zest        
+  PQ-12-0737TCX,"rgb(248,220,108)",#F8DC6C,Goldfinch         
+  PQ-13-0633TCX,"rgb(231,223,153)",#E7DF99,Chardonnay        
+  PQ-12-0804TCX,"rgb(230,221,197)",#E6DDC5,Cloud Cream       
+  PQ-12-0806TCX,"rgb(236,221,190)",#ECDDBE,Rutabaga          
+  PQ-12-0000TCX,"rgb(228,215,197)",#E4D7C5,White Swan        
+  PQ-12-0703TCX,"rgb(230,218,196)",#E6DAC4,Seedpearl         
+  PQ-11-0603TCX,"rgb(229,217,211)",#E5D9D3,Pastel Parchment  
+  PQ-12-4302TCX,"rgb(223,221,215)",#DFDDD7,Vaporous Gray     
+  PQ-11-4301TCX,"rgb(226,226,218)",#E2E2DA,Lily White        
+  PQ-11-4303TCX,"rgb(225,227,222)",#E1E3DE,Mystic Blue       
+  PQ-11-4803TCX,"rgb(224,228,217)",#E0E4D9,Ice               
+  PQ-12-2103TCX,"rgb(231,220,217)",#E7DCD9,Almost Mauve      
+  PQ-12-4306TCX,"rgb(221,224,223)",#DDE0DF,Barely Blue       
+  PQ-12-0742TCX,"rgb(243,231,121)",#F3E779,Lemon Verbena     
+  PQ-12-0721TCX,"rgb(240,231,157)",#F0E79D,Lemonade          
+  PQ-12-0722TCX,"rgb(239,225,167)",#EFE1A7,French Vanilla    
+  PQ-11-0616TCX,"rgb(242,230,177)",#F2E6B1,Pastel Yellow     
+  PQ-11-4804TCX,"rgb(228,234,223)",#E4EADF,Lightest Sky      
+  PQ-12-4304TCX,"rgb(226,230,224)",#E2E6E0,Bluewash          
+  PQ-11-4800TCX,"rgb(231,233,231)",#E7E9E7,Blanc de Blanc    
+  PQ-11-0609TCX,"rgb(241,236,202)",#F1ECCA,Ethereal Green    
+  PQ-11-0205TCX,"rgb(236,234,208)",#ECEAD0,Glass Green       
+  PQ-11-4802TCX,"rgb(229,235,227)",#E5EBE3,SUMMER Shower
+  PQ-11-0601TCX,"rgb(244,245,240)",#F4F5F0,Bright White      
+  PQ-17-1647TCX,"rgb(242,95,102) ",#F25F66,Dubarry           
+  PQ-16-1364TCX,"rgb(255,116,32) ",#FF7420,Vibrant Orange    
+  PQ-16-1460TCX,"rgb(252,100,45) ",#FC642D,Dragon Fire       
+  PQ-16-1451TCX,"rgb(254,99,71)  ",#FE6347,Nasturtium        
+  PQ-17-1350TCX,"rgb(255,121,19) ",#FF7913,Oriole            
+  PQ-16-1640TCX,"rgb(245,108,115)",#F56C73,Sugar Coral       
+  PQ-15-1262TCX,"rgb(254,140,24) ",#FE8C18,Carrot Curl       
+  PQ-15-1263TCX,"rgb(255,136,18) ",#FF8812,Autumn Glory      
+  PQ-15-1264TCX,"rgb(254,132,14) ",#FE840E,Turmeric          
+  PQ-16-1361TCX,"rgb(253,111,59) ",#FD6F3B,Carrot            
+  PQ-16-1541TCX,"rgb(246,116,95) ",#F6745F,Camellia          
+  PQ-16-1545TCX,"rgb(247,116,100)",#F77464,Coral Quartz      
+  PQ-16-1641TCX,"rgb(249,114,114)",#F97272,Georgia Peach     
+  PQ-16-1359TCX,"rgb(250,122,53) ",#FA7A35,Orange Peel       
+  PQ-16-1343TCX,"rgb(243,133,84) ",#F38554,Autumn Sunset     
+  PQ-16-1544TCX,"rgb(246,120,102)",#F67866,Persimmon         
+  PQ-16-1548TCX,"rgb(247,120,107)",#F7786B,Peach Echo        
+  PQ-16-1731TCX,"rgb(245,127,142)",#F57F8E,Strawberry Pink   
+  PQ-15-1157TCX,"rgb(251,139,35) ",#FB8B23,Flame Orange      
+  PQ-16-1632TCX,"rgb(248,129,128)",#F88180,Shell Pink        
+  PQ-14-1064TCX,"rgb(255,165,0)  ",#FFA500,Saffron           
+  PQ-15-1247TCX,"rgb(248,143,88) ",#F88F58,Tangerine         
+  PQ-15-1922TCX,"rgb(246,144,157)",#F6909D,Geranium Pink     
+  PQ-15-1821TCX,"rgb(247,150,158)",#F7969E,Flamingo Pink     
+  PQ-14-1159TCX,"rgb(255,160,16) ",#FFA010,Zinnia            
+  PQ-15-1062TCX,"rgb(255,176,0)  ",#FFB000,Gold Fusion       
+  PQ-15-1058TCX,"rgb(252,158,33) ",#FC9E21,Radiant Yellow    
+  PQ-15-1340TCX,"rgb(249,148,113)",#F99471,Cadmium Orange    
+  PQ-14-1714TCX,"rgb(239,166,170)",#EFA6AA,Quartz Pink       
+  PQ-14-1139TCX,"rgb(245,162,111)",#F5A26F,Pumpkin           
+  PQ-15-1331TCX,"rgb(250,161,129)",#FAA181,Coral Reef        
+  PQ-13-0859TCX,"rgb(255,195,0)  ",#FFC300,Lemon Chrome      
+  PQ-14-1052TCX,"rgb(251,170,76) ",#FBAA4C,Kumquat           
+  PQ-14-1050TCX,"rgb(253,172,83) ",#FDAC53,Marigold          
+  PQ-15-1160TCX,"rgb(255,166,79) ",#FFA64F,Blazing Orange    
+  PQ-14-1241TCX,"rgb(249,170,125)",#F9AA7D,Orange Chiffon    
+  PQ-14-1227TCX,"rgb(242,169,135)",#F2A987,Peach             
+  PQ-14-1230TCX,"rgb(251,172,130)",#FBAC82,Apricot Wash      
+  PQ-14-1521TCX,"rgb(244,166,163)",#F4A6A3,Peaches N' Cream  
+  PQ-14-1911TCX,"rgb(245,176,189)",#F5B0BD,Candy Pink        
+  PQ-13-0947TCX,"rgb(252,185,83) ",#FCB953,Banana            
+  PQ-13-0942TCX,"rgb(250,183,90) ",#FAB75A,Amber Yellow      
+  PQ-15-1145TCX,"rgb(247,178,106)",#F7B26A,Chamois           
+  PQ-13-1024TCX,"rgb(235,195,150)",#EBC396,Buff              
+  PQ-13-1125TCX,"rgb(245,184,149)",#F5B895,Peach Quartz      
+  PQ-14-1513TCX,"rgb(242,178,174)",#F2B2AE,Blossom           
+  PQ-13-2804TCX,"rgb(233,195,207)",#E9C3CF,Parfait Pink      
+  PQ-12-2905TCX,"rgb(237,208,221)",#EDD0DD,Cradle Pink       
+  PQ-13-0758TCX,"rgb(255,208,46) ",#FFD02E,Dandelion         
+  PQ-14-0850TCX,"rgb(253,192,78) ",#FDC04E,Daffodil          
+  PQ-13-0939TCX,"rgb(247,191,104)",#F7BF68,Golden Cream      
+  PQ-13-0940TCX,"rgb(247,196,108)",#F7C46C,Sunset Gold       
+  PQ-13-1027TCX,"rgb(241,189,137)",#F1BD89,Apricot Cream     
+  PQ-13-1408TCX,"rgb(238,196,190)",#EEC4BE,Chintz Rose       
+  PQ-13-2006TCX,"rgb(245,190,199)",#F5BEC7,Almond Blossom    
+  PQ-13-2802TCX,"rgb(242,193,209)",#F2C1D1,Fairy Tale        
+  PQ-13-2806TCX,"rgb(239,193,214)",#EFC1D6,Pink Lady         
+  PQ-14-0851TCX,"rgb(251,200,95) ",#FBC85F,Samoan Sun        
+  PQ-12-0758TCX,"rgb(250,206,109)",#FACE6D,Yarrow            
+  PQ-13-0945TCX,"rgb(255,198,110)",#FFC66E,Pale Marigold     
+  PQ-13-1010TCX,"rgb(229,204,175)",#E5CCAF,Gray Sand         
+  PQ-13-1109TCX,"rgb(237,202,181)",#EDCAB5,Bisque            
+  PQ-13-1404TCX,"rgb(237,205,194)",#EDCDC2,Pale Dogwood      
+  PQ-12-1206TCX,"rgb(231,207,199)",#E7CFC7,Silver Peony      
+  PQ-13-2808TCX,"rgb(235,206,213)",#EBCED5,Ballet Slipper    
+  PQ-13-0849TCX,"rgb(254,212,80) ",#FED450,Habañero Gold     
+  PQ-13-0851TCX,"rgb(254,213,93) ",#FED55D,Minion Yellow     
+  PQ-13-0850TCX,"rgb(255,214,98) ",#FFD662,Aspen Gold        
+  PQ-13-0822TCX,"rgb(237,213,158)",#EDD59E,Sunlight          
+  PQ-12-0822TCX,"rgb(242,209,160)",#F2D1A0,Golden Fleece     
+  PQ-13-0814TCX,"rgb(234,211,174)",#EAD3AE,SUMMER Melon
+  PQ-12-0811TCX,"rgb(235,210,183)",#EBD2B7,Dawn              
+  PQ-12-0813TCX,"rgb(238,208,174)",#EED0AE,Autumn Blonde     
+  PQ-12-0807TCX,"rgb(235,209,187)",#EBD1BB,Sun Kiss          
+  PQ-12-0913TCX,"rgb(241,206,179)",#F1CEB3,Alesan            
+  PQ-12-0911TCX,"rgb(242,211,188)",#F2D3BC,Nude              
+  PQ-12-1006TCX,"rgb(233,212,195)",#E9D4C3,Mother of Pearl   
+  PQ-12-1008TCX,"rgb(237,210,192)",#EDD2C0,Linen             
+  PQ-12-1605TCX,"rgb(237,208,206)",#EDD0CE,Crystal Pink      
+  PQ-12-2102TCX,"rgb(236,214,214)",#ECD6D6,Mauve Morn        
+  PQ-12-2904TCX,"rgb(238,212,217)",#EED4D9,Primrose Pink     
+  PQ-13-2807TCX,"rgb(242,207,220)",#F2CFDC,Ballerina         
+  PQ-12-0736TCX,"rgb(253,216,120)",#FDD878,Lemon Drop        
+  PQ-12-0727TCX,"rgb(250,222,133)",#FADE85,Sunshine          
+  PQ-12-0825TCX,"rgb(248,222,141)",#F8DE8D,Popcorn           
+  PQ-12-0720TCX,"rgb(240,221,157)",#F0DD9D,Mellow Yellow     
+  PQ-12-0715TCX,"rgb(243,224,172)",#F3E0AC,Double Cream      
+  PQ-12-0710TCX,"rgb(239,220,195)",#EFDCC3,Shortbread        
+  PQ-12-0812TCX,"rgb(240,222,189)",#F0DEBD,Alabaster Gleam   
+  PQ-12-0815TCX,"rgb(243,224,190)",#F3E0BE,Vanilla Custard   
+  PQ-12-0704TCX,"rgb(237,220,201)",#EDDCC9,White Smoke       
+  PQ-11-0105TCX,"rgb(237,227,210)",#EDE3D2,Antique White     
+  PQ-11-4801TCX,"rgb(232,227,217)",#E8E3D9,Tofu              
+  PQ-12-0601TCX,"rgb(236,225,211)",#ECE1D3,Eggnog            
+  PQ-12-1108TCX,"rgb(238,222,209)",#EEDED1,Dew               
+  PQ-11-1005TCX,"rgb(238,226,221)",#EEE2DD,Bridal Blush      
+  PQ-11-0619TCX,"rgb(246,227,180)",#F6E3B4,Flan              
+  PQ-12-0717TCX,"rgb(244,227,181)",#F4E3B5,Anise Flower      
+  PQ-12-0713TCX,"rgb(244,228,193)",#F4E4C1,Almond Oil        
+  PQ-11-0510TCX,"rgb(243,230,201)",#F3E6C9,Afterglow         
+  PQ-11-0701TCX,"rgb(237,230,219)",#EDE6DB,Whisper White     
+  PQ-11-0605TCX,"rgb(237,230,222)",#EDE6DE,Jet Stream        
+  PQ-11-1302TCX,"rgb(241,230,222)",#F1E6DE,Sea Salt          
+  PQ-11-1001TCX,"rgb(239,235,231)",#EFEBE7,White Alyssum     
+  PQ-11-0615TCX,"rgb(243,234,195)",#F3EAC3,Pear Sorbet       
+  PQ-11-0617TCX,"rgb(244,236,194)",#F4ECC2,Transparent Yellow
+  PQ-11-0515TCX,"rgb(246,235,200)",#F6EBC8,Lemon Icing       
+  PQ-11-0106TCX,"rgb(240,234,214)",#F0EAD6,Sweet Corn        
+  PQ-11-0107TCX,"rgb(245,237,214)",#F5EDD6,Papyrus           
+  PQ-11-0507TCX,"rgb(245,236,210)",#F5ECD2,Winter White      
+  PQ-11-0104TCX,"rgb(240,234,218)",#F0EADA,Vanilla Ice       
+  PQ-11-4302TCX,"rgb(240,239,226)",#F0EFE2,Cannoli Cream     
+  PQ-11-0607TCX,"rgb(243,238,231)",#F3EEE7,Sugar Swizzle     
+  PQ-11-0608TCX,"rgb(240,237,229)",#F0EDE5,Coconut Milk      
+  PQ-11-4201TCX,"rgb(240,238,233)",#F0EEE9,Cloud Dancer      
+  PQ-11-4202TCX,"rgb(239,239,232)",#EFEFE8,Star White        
+  PQ-11-4300TCX,"rgb(240,238,228)",#F0EEE4,Marshmallow       
+  PQ-11-0602TCX,"rgb(242,240,235)",#F2F0EB,Snow White        
+  PQ-16-1546TCX,"rgb(255,111,97) ",#FF6F61,Living Coral      
+  PQ-16-1442TCX,"rgb(254,136,99) ",#FE8863,Melon             
+  PQ-16-1542TCX,"rgb(255,127,106)",#FF7F6A,Fresh Salmon      
+  PQ-16-1543TCX,"rgb(255,133,118)",#FF8576,Fusion Coral      
+  PQ-16-1360TCX,"rgb(255,134,86) ",#FF8656,Nectarine         
+  PQ-16-1357TCX,"rgb(255,140,85) ",#FF8C55,Bird of Paradise  
+  PQ-15-1624TCX,"rgb(252,143,155)",#FC8F9B,Conch Shell       
+  PQ-15-1626TCX,"rgb(255,141,148)",#FF8D94,Salmon Rose       
+  PQ-15-1435TCX,"rgb(255,150,135)",#FF9687,Desert Flower     
+  PQ-15-1530TCX,"rgb(250,154,133)",#FA9A85,Peach Pink        
+  PQ-15-1243TCX,"rgb(254,161,102)",#FEA166,Papaya            
+  PQ-15-1239TCX,"rgb(255,161,119)",#FFA177,Cantaloupe        
+  PQ-15-1423TCX,"rgb(251,159,147)",#FB9F93,Peach Amber       
+  PQ-15-1433TCX,"rgb(252,162,137)",#FCA289,Papaya Punch      
+  PQ-15-1621TCX,"rgb(248,163,157)",#F8A39D,Candlelight Peach 
+  PQ-15-1245TCX,"rgb(255,163,104)",#FFA368,Mock Orange       
+  PQ-14-1323TCX,"rgb(250,170,148)",#FAAA94,Salmon            
+  PQ-14-1135TCX,"rgb(254,170,123)",#FEAA7B,Salmon Buff       
+  PQ-14-1231TCX,"rgb(255,177,129)",#FFB181,Peach Cobbler     
+  PQ-13-1022TCX,"rgb(244,186,148)",#F4BA94,Caramel Cream     
+  PQ-14-1420TCX,"rgb(254,174,165)",#FEAEA5,Apricot Blush     
+  PQ-14-1324TCX,"rgb(253,178,168)",#FDB2A8,Peach Bud         
+  PQ-13-2010TCX,"rgb(243,187,202)",#F3BBCA,Orchid Pink       
+  PQ-14-1051TCX,"rgb(255,184,101)",#FFB865,Warm Apricot      
+  PQ-13-1030TCX,"rgb(246,194,137)",#F6C289,Sunburst          
+  PQ-14-1225TCX,"rgb(251,185,149)",#FBB995,Beach Sand        
+  PQ-14-1228TCX,"rgb(255,181,155)",#FFB59B,Peach Nectar      
+  PQ-13-1017TCX,"rgb(244,194,159)",#F4C29F,Almond Cream      
+  PQ-14-1419TCX,"rgb(255,178,165)",#FFB2A5,Peach Pearl       
+  PQ-14-1219TCX,"rgb(248,191,168)",#F8BFA8,Peach Parfait     
+  PQ-13-3207TCX,"rgb(247,206,224)",#F7CEE0,Cherry Blossom    
+  PQ-14-1128TCX,"rgb(255,187,124)",#FFBB7C,Buff Orange       
+  PQ-13-1019TCX,"rgb(248,193,154)",#F8C19A,Cream Blush       
+  PQ-13-1020TCX,"rgb(251,190,153)",#FBBE99,Apricot Ice       
+  PQ-13-1023TCX,"rgb(255,190,152)",#FFBE98,Peach Fuzz        
+  PQ-14-1418TCX,"rgb(251,189,175)",#FBBDAF,Peach Melba       
+  PQ-13-1114TCX,"rgb(244,201,177)",#F4C9B1,Bellini           
+  PQ-13-1310TCX,"rgb(244,198,195)",#F4C6C3,English Rose      
+  PQ-13-2005TCX,"rgb(244,195,196)",#F4C3C4,Strawberry Cream  
+  PQ-13-0941TCX,"rgb(255,207,115)",#FFCF73,Banana Cream      
+  PQ-13-0935TCX,"rgb(255,200,125)",#FFC87D,Flax              
+  PQ-13-1025TCX,"rgb(248,206,151)",#F8CE97,Impala            
+  PQ-13-1031TCX,"rgb(250,205,158)",#FACD9E,Apricot Sherbet   
+  PQ-12-0917TCX,"rgb(252,202,172)",#FCCAAC,Bleached Apricot  
+  PQ-12-1011TCX,"rgb(239,207,186)",#EFCFBA,Peach Purée       
+  PQ-12-1207TCX,"rgb(244,206,197)",#F4CEC5,Pearl Blush       
+  PQ-13-1409TCX,"rgb(247,200,194)",#F7C8C2,Seashell Pink     
+  PQ-13-1513TCX,"rgb(250,200,195)",#FAC8C3,Gossamer Pink     
+  PQ-12-1212TCX,"rgb(248,205,201)",#F8CDC9,Veiled Rose       
+  PQ-13-1406TCX,"rgb(245,209,200)",#F5D1C8,Cloud Pink        
+  PQ-13-1511TCX,"rgb(247,205,199)",#F7CDC7,Pink Salt         
+  PQ-13-1520TCX,"rgb(247,202,201)",#F7CAC9,Rose Quartz       
+  PQ-13-0840TCX,"rgb(254,215,119)",#FED777,Snapdragon        
+  PQ-12-0826TCX,"rgb(251,216,151)",#FBD897,Golden Haze       
+  PQ-12-0714TCX,"rgb(242,214,174)",#F2D6AE,Cornhusk          
+  PQ-12-0817TCX,"rgb(245,215,175)",#F5D7AF,Apricot Gelato    
+  PQ-12-0912TCX,"rgb(248,213,184)",#F8D5B8,Tender Peach      
+  PQ-12-0915TCX,"rgb(254,209,189)",#FED1BD,Pale Peach        
+  PQ-12-1009TCX,"rgb(244,216,198)",#F4D8C6,Vanilla Cream     
+  PQ-12-1107TCX,"rgb(240,216,204)",#F0D8CC,Pink Champagne    
+  PQ-12-1110TCX,"rgb(245,214,198)",#F5D6C6,Crème de Pêche    
+  PQ-12-1209TCX,"rgb(242,216,205)",#F2D8CD,Soft Pink         
+  PQ-13-1407TCX,"rgb(247,213,204)",#F7D5CC,Creole Pink       
+  PQ-12-1706TCX,"rgb(247,209,209)",#F7D1D1,Pink Dogwood      
+  PQ-12-1813TCX,"rgb(247,209,212)",#F7D1D4,Mary's Rose       
+  PQ-12-1310TCX,"rgb(251,211,217)",#FBD3D9,Blushing Bride    
+  PQ-12-2906TCX,"rgb(248,215,221)",#F8D7DD,Barely Pink       
+  PQ-11-2511TCX,"rgb(244,225,230)",#F4E1E6,Shrinking Violet  
+  PQ-12-0711TCX,"rgb(246,225,153)",#F6E199,Lemon Meringue    
+  PQ-12-0824TCX,"rgb(250,225,153)",#FAE199,Pale Banana       
+  PQ-11-0907TCX,"rgb(240,223,204)",#F0DFCC,Pearled Ivory     
+  PQ-12-0712TCX,"rgb(244,225,193)",#F4E1C1,Vanilla           
+  PQ-11-0110TCX,"rgb(239,224,205)",#EFE0CD,Buttercream       
+  PQ-11-0809TCX,"rgb(243,223,202)",#F3DFCA,Ecru              
+  PQ-11-1305TCX,"rgb(243,223,215)",#F3DFD7,Angel Wing        
+  PQ-11-1404TCX,"rgb(243,224,214)",#F3E0D6,Powder Puff       
+  PQ-11-1408TCX,"rgb(246,219,216)",#F6DBD8,Rosewater         
+  PQ-11-2309TCX,"rgb(242,226,224)",#F2E2E0,Petal Pink        
+  PQ-12-1304TCX,"rgb(249,219,216)",#F9DBD8,Pearl             
+  PQ-12-1305TCX,"rgb(244,222,222)",#F4DEDE,Heavenly Pink     
+  PQ-11-2409TCX,"rgb(245,227,226)",#F5E3E2,Delicacy          
+  PQ-12-2907TCX,"rgb(248,224,231)",#F8E0E7,Rose Water        
+  PQ-11-0606TCX,"rgb(242,232,218)",#F2E8DA,Pristine          
+  PQ-11-0103TCX,"rgb(243,236,224)",#F3ECE0,Egret             
+  PQ-11-0604TCX,"rgb(241,232,223)",#F1E8DF,Gardenia          
+  PQ-11-1306TCX,"rgb(246,228,217)",#F6E4D9,Cream Pink        
+  PQ-12-1106TCX,"rgb(246,229,219)",#F6E5DB,Sheer Pink        
+  PQ-13-1021TCX,"rgb(255,187,158)",#FFBB9E,Prairie Sunset    
+  PQ-12-1708TCX,"rgb(253,195,198)",#FDC3C6,Crystal Rose      
+  PQ-13-1906TCX,"rgb(249,194,205)",#F9C2CD,Rose Shadow       
+  PQ-13-1318TCX,"rgb(255,196,178)",#FFC4B2,Tropical Peach    
+  PQ-13-1510TCX,"rgb(255,196,188)",#FFC4BC,Impatiens Pink    
+  PQ-13-1026TCX,"rgb(255,205,168)",#FFCDA8,Creampuff         
+  PQ-12-1010TCX,"rgb(251,216,201)",#FBD8C9,Scallop Shell     

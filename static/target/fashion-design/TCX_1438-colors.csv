@@ -1,0 +1,1439 @@
+  code       ,rgb             ,hex    ,name              
+  19-3909 TCX,"rgb(46,39,42)   ",#2E272A,Black Bean        
+  19-3911 TCX,"rgb(38,38,42)   ",#26262A,Black Beauty      
+  19-3922 TCX,"rgb(38,41,52)   ",#262934,Sky Captain       
+  19-4003 TCX,"rgb(43,39,43)   ",#2B272B,Black Onyx        
+  19-4004 TCX,"rgb(42,43,45)   ",#2A2B2D,Tap Shoe          
+  19-4006 TCX,"rgb(41,42,45)   ",#292A2D,Caviar            
+  19-4007 TCX,"rgb(40,40,45)   ",#28282D,Anthracite        
+  19-4008 TCX,"rgb(43,41,41)   ",#2B2929,Meteorite         
+  19-5350 TCX,"rgb(35,49,45)   ",#23312D,Scarab            
+  19-5708 TCX,"rgb(38,44,42)   ",#262C2A,Jet Set           
+  19-4038 TCX,"rgb(18,56,80)   ",#123850,Gibraltar Sea     
+  19-4034 TCX,"rgb(14,58,83)   ",#0E3A53,Sailor Blue       
+  19-4120 TCX,"rgb(15,59,87)   ",#0F3B57,Blue Opal         
+  19-3952 TCX,"rgb(32,60,127)  ",#203C7F,Surf the Web      
+  19-3864 TCX,"rgb(39,60,118)  ",#273C76,Mazarine Blue     
+  19-3951 TCX,"rgb(54,59,124)  ",#363B7C,Clematis Blue     
+  19-4045 TCX,"rgb(0,75,141)   ",#004B8D,Lapis Blue        
+  19-4052 TCX,"rgb(15,76,129)  ",#0F4C81,Classic Blue      
+  19-4056 TCX,"rgb(26,76,139)  ",#1A4C8B,Blue Iolite       
+  19-4150 TCX,"rgb(0,83,156)   ",#00539C,Princess Blue     
+  19-4151 TCX,"rgb(0,88,155)   ",#00589B,Skydiver          
+  18-4148 TCX,"rgb(8,88,157)   ",#08589D,Victoria Blue     
+  19-4053 TCX,"rgb(25,81,144)  ",#195190,Turkish Sea       
+  18-4244 TCX,"rgb(0,97,163)   ",#0061A3,Directoire Blue   
+  18-4045 TCX,"rgb(15,95,154)  ",#0F5F9A,Daphne            
+  18-4051 TCX,"rgb(31,93,160)  ",#1F5DA0,Strong Blue       
+  18-3945 TCX,"rgb(73,96,168)  ",#4960A8,Amparo Blue       
+  18-4048 TCX,"rgb(45,98,163)  ",#2D62A3,Nebulas Blue      
+  19-4033 TCX,"rgb(18,57,85)   ",#123955,Poseidon          
+  18-4043 TCX,"rgb(52,108,176) ",#346CB0,Palace Blue       
+  19-5220 TCX,"rgb(18,64,60)   ",#12403C,Botanical Garden  
+  19-5232 TCX,"rgb(21,70,62)   ",#15463E,Rain Forest       
+  19-4057 TCX,"rgb(30,68,119)  ",#1E4477,True Blue         
+  18-4140 TCX,"rgb(0,114,181)  ",#0072B5,French Blue       
+  18-4252 TCX,"rgb(0,119,179)  ",#0077B3,Blue Aster        
+  18-4440 TCX,"rgb(0,117,175)  ",#0075AF,Cloisonné         
+  19-5406 TCX,"rgb(33,54,49)   ",#213631,Pine Grove        
+  19-5230 TCX,"rgb(24,74,69)   ",#184A45,Forest Biome      
+  17-4245 TCX,"rgb(0,124,183)  ",#007CB7,Ibiza Blue        
+  17-4247 TCX,"rgb(0,123,178)  ",#007BB2,Diva Blue         
+  18-4330 TCX,"rgb(0,126,177)  ",#007EB1,Swedish Blue      
+  19-5918 TCX,"rgb(46,61,48)   ",#2E3D30,Mountain View     
+  19-5217 TCX,"rgb(3,84,83)    ",#035453,Storm             
+  19-4524 TCX,"rgb(0,88,94)    ",#00585E,Shaded Spruce     
+  19-4540 TCX,"rgb(0,82,101)   ",#005265,Deep Lagoon       
+  19-4241 TCX,"rgb(15,78,103)  ",#0F4E67,Moroccan Blue     
+  19-4340 TCX,"rgb(0,88,113)   ",#005871,Lyons Blue        
+  18-4434 TCX,"rgb(0,87,128)   ",#005780,Mykonos Blue      
+  18-4231 TCX,"rgb(9,87,123)   ",#09577B,Blue Sapphire     
+  19-4048 TCX,"rgb(21,81,135)  ",#155187,Baleine Blue      
+  18-4141 TCX,"rgb(50,114,175) ",#3272AF,Campanula         
+  19-6050 TCX,"rgb(38,78,54)   ",#264E36,Eden              
+  18-5322 TCX,"rgb(0,95,86)    ",#005F56,Alpine Green      
+  19-5226 TCX,"rgb(0,91,93)    ",#005B5D,Everglade         
+  19-4234 TCX,"rgb(11,83,105)  ",#0B5369,Ink Blue          
+  19-4342 TCX,"rgb(0,94,125)   ",#005E7D,Seaport           
+  19-4535 TCX,"rgb(0,97,117)   ",#006175,Ocean Depths      
+  18-4530 TCX,"rgb(0,99,128)   ",#006380,Celestial         
+  19-5420 TCX,"rgb(17,87,74)   ",#11574A,Evergreen         
+  18-5338 TCX,"rgb(0,107,84)   ",#006B54,Ultramarine Green 
+  18-5845 TCX,"rgb(0,110,81)   ",#006E51,Lush Meadow       
+  18-5424 TCX,"rgb(0,103,91)   ",#00675B,Cadmium Green     
+  18-5025 TCX,"rgb(0,104,101)  ",#006865,Quetzal Green     
+  18-4728 TCX,"rgb(0,101,110)  ",#00656E,Harbor Blue       
+  18-4834 TCX,"rgb(0,101,107)  ",#00656B,Deep Lake         
+  19-4536 TCX,"rgb(0,99,124)   ",#00637C,Crystal Teal      
+  18-4432 TCX,"rgb(0,105,139)  ",#00698B,Turkish Tile      
+  17-4336 TCX,"rgb(0,132,189)  ",#0084BD,Blithe            
+  17-4435 TCX,"rgb(0,140,193)  ",#008CC1,Malibu Blue       
+  18-6030 TCX,"rgb(0,120,68)   ",#007844,Jolly Green       
+  18-5624 TCX,"rgb(0,110,91)   ",#006E5B,Shady Glade       
+  18-4936 TCX,"rgb(0,109,112)  ",#006D70,Fanfare           
+  18-4630 TCX,"rgb(0,107,126)  ",#006B7E,Tahitian Tide     
+  18-4538 TCX,"rgb(0,120,167)  ",#0078A7,Hawaiian Surf     
+  19-6026 TCX,"rgb(18,103,74)  ",#12674A,Verdant Green     
+  18-5633 TCX,"rgb(0,117,88)   ",#007558,Bosphorus         
+  18-5020 TCX,"rgb(0,115,108)  ",#00736C,Parasailing       
+  18-4528 TCX,"rgb(0,117,143)  ",#00758F,Mosaic Blue       
+  17-6153 TCX,"rgb(0,140,69)   ",#008C45,Fern Green        
+  18-5841 TCX,"rgb(0,125,96)   ",#007D60,Pepper Green      
+  17-5528 TCX,"rgb(0,125,105)  ",#007D69,Greenlake         
+  17-5024 TCX,"rgb(0,127,124)  ",#007F7C,Teal Blue         
+  18-5128 TCX,"rgb(0,124,122)  ",#007C7A,Blue Grass        
+  18-4733 TCX,"rgb(0,122,142)  ",#007A8E,Enamel Blue       
+  18-4525 TCX,"rgb(0,129,157)  ",#00819D,Caribbean Sea     
+  17-5734 TCX,"rgb(0,132,107)  ",#00846B,Viridis           
+  18-5642 TCX,"rgb(0,135,99)   ",#008763,Golf Green        
+  17-5029 TCX,"rgb(0,131,129)  ",#008381,Deep Peacock Blue 
+  17-5430 TCX,"rgb(0,135,120)  ",#008778,Alhambra          
+  17-5025 TCX,"rgb(0,133,131)  ",#008583,Navigate          
+  17-5034 TCX,"rgb(0,134,132)  ",#008684,Lapis             
+  18-4930 TCX,"rgb(0,135,134)  ",#008786,Tropical Green    
+  18-4735 TCX,"rgb(0,132,145)  ",#008491,Tile Blue         
+  17-4728 TCX,"rgb(0,133,156)  ",#00859C,Algiers Blue      
+  17-4730 TCX,"rgb(0,132,159)  ",#00849F,Caneel Bay        
+  17-4735 TCX,"rgb(0,135,153)  ",#008799,Capri Breeze      
+  17-4928 TCX,"rgb(0,140,150)  ",#008C96,Lake Blue         
+  17-4530 TCX,"rgb(0,132,161)  ",#0084A1,Barrier Reef      
+  17-4432 TCX,"rgb(0,136,176)  ",#0088B0,Vivid Blue        
+  17-4440 TCX,"rgb(0,135,182)  ",#0087B6,Blue Danube       
+  17-5735 TCX,"rgb(0,140,105)  ",#008C69,Parakeet          
+  17-5330 TCX,"rgb(0,142,128)  ",#008E80,Dynasty Green     
+  17-5633 TCX,"rgb(0,146,118)  ",#009276,Deep Green        
+  17-5130 TCX,"rgb(0,146,136)  ",#009288,Columbia          
+  15-5534 TCX,"rgb(0,155,92)   ",#009B5C,Bright Green      
+  16-5938 TCX,"rgb(0,161,112)  ",#00A170,Mint              
+  17-5936 TCX,"rgb(0,155,117)  ",#009B75,Simply Green      
+  17-5937 TCX,"rgb(0,158,109)  ",#009E6D,Deep Mint         
+  17-5638 TCX,"rgb(0,158,130)  ",#009E82,Vivid Green       
+  17-5335 TCX,"rgb(0,155,140)  ",#009B8C,Spectra Green     
+  17-5126 TCX,"rgb(0,148,153)  ",#009499,Viridian Green    
+  16-5942 TCX,"rgb(0,167,118)  ",#00A776,Blarney           
+  16-5431 TCX,"rgb(0,167,139)  ",#00A78B,Peacock Green     
+  16-5533 TCX,"rgb(0,162,138)  ",#00A28A,Arcadia           
+  16-4834 TCX,"rgb(0,157,174)  ",#009DAE,Bluebird          
+  16-4728 TCX,"rgb(0,160,176)  ",#00A0B0,Peacock Blue      
+  16-5127 TCX,"rgb(0,170,169)  ",#00AAA9,Ceramic           
+  16-4535 TCX,"rgb(0,177,210)  ",#00B1D2,Blue Atoll        
+  16-5427 TCX,"rgb(0,170,146)  ",#00AA92,Billiard          
+  15-5425 TCX,"rgb(0,175,159)  ",#00AF9F,Atlantis          
+  16-5425 TCX,"rgb(0,175,157)  ",#00AF9D,Pool Green        
+  16-4725 TCX,"rgb(0,171,192)  ",#00ABC0,Scuba Blue        
+  16-6340 TCX,"rgb(57,168,69)  ",#39A845,Classic Green     
+  15-5728 TCX,"rgb(0,182,148)  ",#00B694,Mint Leaf         
+  15-5421 TCX,"rgb(0,184,159)  ",#00B89F,Aqua Green        
+  16-5930 TCX,"rgb(58,162,120) ",#3AA278,Ming Green        
+  16-4530 TCX,"rgb(60,173,212) ",#3CADD4,Aquarius          
+  16-6444 TCX,"rgb(77,181,96)  ",#4DB560,Poison Green      
+  15-6340 TCX,"rgb(69,190,118) ",#45BE76,Irish Green       
+  19-4011 TCX,"rgb(40,43,52)   ",#282B34,Salute            
+  19-4020 TCX,"rgb(38,43,55)   ",#262B37,Dark Sapphire     
+  19-3831 TCX,"rgb(39,41,61)   ",#27293D,Maritime Blue     
+  18-3963 TCX,"rgb(61,60,124)  ",#3D3C7C,Spectrum Blue     
+  19-3847 TCX,"rgb(68,55,125)  ",#44377D,Deep Blue         
+  19-3955 TCX,"rgb(61,66,139)  ",#3D428B,Royal Blue        
+  19-3923 TCX,"rgb(40,45,60)   ",#282D3C,Navy Blazer       
+  19-4012 TCX,"rgb(39,47,56)   ",#272F38,Carbon            
+  19-3940 TCX,"rgb(38,48,86)   ",#263056,Blue Depths       
+  19-3953 TCX,"rgb(37,54,104)  ",#253668,Sodalite Blue     
+  19-4029 TCX,"rgb(34,58,94)   ",#223A5E,Navy Peony        
+  19-4027 TCX,"rgb(35,54,88)   ",#233658,Estate Blue       
+  19-3964 TCX,"rgb(39,67,116)  ",#274374,Blue Quartz       
+  19-5320 TCX,"rgb(32,59,61)   ",#203B3D,Ponderosa Pine    
+  19-4326 TCX,"rgb(32,62,74)   ",#203E4A,Reflecting Pond   
+  19-5030 TCX,"rgb(37,68,69)   ",#254445,Sea Moss          
+  19-4324 TCX,"rgb(31,73,91)   ",#1F495B,Legion Blue       
+  19-4125 TCX,"rgb(39,67,87)   ",#274357,Majolica Blue     
+  19-4526 TCX,"rgb(27,83,102)  ",#1B5366,Blue Coral        
+  19-4916 TCX,"rgb(31,89,92)   ",#1F595C,Pacific           
+  18-5315 TCX,"rgb(37,89,88)   ",#255958,Bayberry          
+  18-4225 TCX,"rgb(31,102,128) ",#1F6680,Saxony Blue       
+  18-4334 TCX,"rgb(20,120,167) ",#1478A7,Mediterranian Blue
+  18-6024 TCX,"rgb(31,115,73)  ",#1F7349,Amazon            
+  18-5620 TCX,"rgb(34,108,99)  ",#226C63,Ivy               
+  18-5121 TCX,"rgb(32,112,111) ",#20706F,Bayou             
+  17-4427 TCX,"rgb(21,126,160) ",#157EA0,Bluejay           
+  17-5421 TCX,"rgb(16,135,128) ",#108780,Porcelain Green   
+  17-4724 TCX,"rgb(26,127,142) ",#1A7F8E,Pagoda Blue       
+  17-0145 TCX,"rgb(68,136,60)  ",#44883C,Online Lime       
+  15-4722 TCX,"rgb(68,187,202) ",#44BBCA,Capri             
+  19-1018 TCX,"rgb(52,41,42)   ",#34292A,Ganache           
+  19-3713 TCX,"rgb(44,42,51)   ",#2C2A33,Deep Well         
+  19-3924 TCX,"rgb(42,42,53)   ",#2A2A35,Night Sky         
+  19-3815 TCX,"rgb(42,41,62)   ",#2A293E,Evening Blue      
+  19-3850 TCX,"rgb(77,68,138)  ",#4D448A,Liberty           
+  19-0303 TCX,"rgb(45,44,47)   ",#2D2C2F,Jet Black         
+  19-4005 TCX,"rgb(43,44,48)   ",#2B2C30,Stretch Limo      
+  19-4203 TCX,"rgb(47,45,48)   ",#2F2D30,Moonless Night    
+  19-3920 TCX,"rgb(43,46,67)   ",#2B2E43,Peacoat           
+  19-3933 TCX,"rgb(41,48,78)   ",#29304E,Medieval Blue     
+  19-4010 TCX,"rgb(44,49,61)   ",#2C313D,Total Eclipse     
+  19-3939 TCX,"rgb(45,51,89)   ",#2D3359,Blueprint         
+  19-4013 TCX,"rgb(46,47,54)   ",#2E2F36,Dark Navy         
+  19-4218 TCX,"rgb(45,48,54)   ",#2D3036,Vulcan            
+  19-4021 TCX,"rgb(44,51,62)   ",#2C333E,Blueberry         
+  19-4122 TCX,"rgb(41,59,77)   ",#293B4D,Moonlit Ocean     
+  19-5212 TCX,"rgb(48,61,60)   ",#303D3C,Darkest Spruce    
+  19-4028 TCX,"rgb(47,62,85)   ",#2F3E55,Insignia Blue     
+  19-4121 TCX,"rgb(44,64,83)   ",#2C4053,Blue Wing Teal    
+  19-3938 TCX,"rgb(49,61,100)  ",#313D64,Twilight Blue     
+  19-4906 TCX,"rgb(50,66,65)   ",#324241,Green Gables      
+  19-4726 TCX,"rgb(39,78,85)   ",#274E55,Atlantic Deep     
+  19-4126 TCX,"rgb(41,73,92)   ",#29495C,Deep Dive         
+  19-4055 TCX,"rgb(42,75,124)  ",#2A4B7C,Galaxy Blue       
+  18-4039 TCX,"rgb(72,122,183) ",#487AB7,Regatta           
+  19-5513 TCX,"rgb(49,79,64)   ",#314F40,Dark Green        
+  17-4041 TCX,"rgb(79,132,196) ",#4F84C4,Marina            
+  18-5616 TCX,"rgb(50,91,81)   ",#325B51,Posy Green        
+  19-4035 TCX,"rgb(48,86,121)  ",#305679,Dark Blue         
+  18-4032 TCX,"rgb(38,102,145) ",#266691,Deep Water        
+  18-5418 TCX,"rgb(41,103,92)  ",#29675C,Antique Green     
+  18-4522 TCX,"rgb(45,100,113) ",#2D6471,Colonial Blue     
+  18-4034 TCX,"rgb(48,101,142) ",#30658E,Vallarta Blue     
+  18-4232 TCX,"rgb(42,106,139) ",#2A6A8B,Faience           
+  18-5115 TCX,"rgb(49,108,107) ",#316C6B,North Sea         
+  17-4429 TCX,"rgb(49,131,160) ",#3183A0,Navagio Bay       
+  16-5422 TCX,"rgb(48,162,153) ",#30A299,Bright Aqua       
+  19-3731 TCX,"rgb(57,40,82)   ",#392852,Parachute Purple  
+  19-1103 TCX,"rgb(54,48,49)   ",#363031,Espresso          
+  19-1106 TCX,"rgb(57,45,43)   ",#392D2B,Mole'             
+  19-1109 TCX,"rgb(56,46,45)   ",#382E2D,Chocolate Torte   
+  19-1110 TCX,"rgb(60,45,46)   ",#3C2D2E,Chocolate Plum    
+  19-0509 TCX,"rgb(54,54,45)   ",#36362D,Rosin             
+  19-4015 TCX,"rgb(50,49,55)   ",#323137,Blue Graphite     
+  19-4009 TCX,"rgb(47,52,65)   ",#2F3441,Outer Space       
+  19-4022 TCX,"rgb(50,52,65)   ",#323441,Parisian Night    
+  19-3925 TCX,"rgb(54,55,86)   ",#363756,Patriot Blue      
+  19-3950 TCX,"rgb(56,72,131)  ",#384883,Deep Ultramarine  
+  19-4023 TCX,"rgb(54,59,72)   ",#363B48,Blue Nights       
+  19-4025 TCX,"rgb(53,58,76)   ",#353A4C,Mood Indigo       
+  19-4110 TCX,"rgb(52,65,78)   ",#34414E,Midnight Navy     
+  19-4031 TCX,"rgb(53,67,90)   ",#35435A,Sargasso Sea      
+  19-0415 TCX,"rgb(57,64,52)   ",#394034,Duffel Bag        
+  19-5920 TCX,"rgb(51,77,65)   ",#334D41,Pineneedle        
+  19-6110 TCX,"rgb(55,65,58)   ",#37413A,Deep Forest       
+  19-4118 TCX,"rgb(53,70,94)   ",#35465E,Dark Denim        
+  19-5411 TCX,"rgb(53,80,72)   ",#355048,Trekking Green    
+  19-5511 TCX,"rgb(51,87,73)   ",#335749,Hunter Green      
+  19-5914 TCX,"rgb(60,78,71)   ",#3C4E47,Jungle Green      
+  19-4316 TCX,"rgb(57,80,92)   ",#39505C,Stargazer         
+  19-4517 TCX,"rgb(50,87,93)   ",#32575D,Mediterranea      
+  19-4820 TCX,"rgb(51,86,94)   ",#33565E,Balsam            
+  19-4026 TCX,"rgb(56,76,103)  ",#384C67,Ensign Blue       
+  19-4318 TCX,"rgb(58,92,110)  ",#3A5C6E,Mallard Blue      
+  19-4037 TCX,"rgb(56,93,141)  ",#385D8D,Bright Cobalt     
+  18-0330 TCX,"rgb(78,99,44)   ",#4E632C,Twist of Lime     
+  18-4222 TCX,"rgb(53,99,124)  ",#35637C,Bluesteel         
+  18-4041 TCX,"rgb(56,97,146)  ",#386192,Star Sapphire     
+  18-0135 TCX,"rgb(71,106,48)  ",#476A30,Treetop           
+  18-5621 TCX,"rgb(58,114,95)  ",#3A725F,Fir               
+  18-5618 TCX,"rgb(54,113,111) ",#36716F,Deep Jungle       
+  17-5923 TCX,"rgb(58,121,94)  ",#3A795E,Pine Green        
+  17-6229 TCX,"rgb(60,130,78)  ",#3C824E,Medium Green      
+  18-6022 TCX,"rgb(55,134,97)  ",#378661,Leprechaun        
+  17-4328 TCX,"rgb(54,134,160) ",#3686A0,Blue Moon         
+  17-5122 TCX,"rgb(55,145,144) ",#379190,Latigo Bay        
+  14-4816 TCX,"rgb(88,201,212) ",#58C9D4,Blue Radiance     
+  19-3750 TCX,"rgb(62,40,92)   ",#3E285C,Violet Indigo     
+  19-2520 TCX,"rgb(70,38,57)   ",#462639,Potent Purple     
+  19-1111 TCX,"rgb(59,48,47)   ",#3B302F,Black Coffee      
+  19-3520 TCX,"rgb(63,42,71)   ",#3F2A47,Blackberry Cordial
+  19-3628 TCX,"rgb(70,41,90)   ",#46295A,Acai              
+  19-3902 TCX,"rgb(58,54,59)   ",#3A363B,Obsidian          
+  19-3839 TCX,"rgb(58,57,95)   ",#3A395F,Blue Ribbon       
+  19-0508 TCX,"rgb(59,58,54)   ",#3B3A36,Peat              
+  19-3927 TCX,"rgb(59,59,72)   ",#3B3B48,Graphite          
+  19-3832 TCX,"rgb(64,63,111)  ",#403F6F,Navy Blue         
+  19-3842 TCX,"rgb(68,63,111)  ",#443F6F,Deep Wisteria     
+  19-0419 TCX,"rgb(65,72,50)   ",#414832,Rifle Green       
+  19-0712 TCX,"rgb(64,52,43)   ",#40342B,Demitasse         
+  19-3935 TCX,"rgb(64,68,102)  ",#404466,Deep Cobalt       
+  19-0840 TCX,"rgb(63,53,47)   ",#3F352F,Delicioso         
+  19-1016 TCX,"rgb(67,51,49)   ",#433331,Java              
+  19-0315 TCX,"rgb(65,79,60)   ",#414F3C,Black Forest      
+  19-4229 TCX,"rgb(62,79,92)   ",#3E4F5C,Orion Blue        
+  19-4030 TCX,"rgb(63,82,119)  ",#3F5277,True Navy         
+  19-4227 TCX,"rgb(60,88,107)  ",#3C586B,Indian Teal       
+  18-4023 TCX,"rgb(59,95,120)  ",#3B5F78,Blue Ashes        
+  19-0230 TCX,"rgb(73,94,53)   ",#495E35,Garden Green      
+  19-0413 TCX,"rgb(70,72,60)   ",#46483C,Deep Depths       
+  18-5718 TCX,"rgb(62,98,87)   ",#3E6257,Smoke Pine        
+  18-6330 TCX,"rgb(61,114,69)  ",#3D7245,Juniper           
+  17-5722 TCX,"rgb(66,125,109) ",#427D6D,Bottle Green      
+  15-6123 TCX,"rgb(96,184,146) ",#60B892,Jade Cream        
+  19-2620 TCX,"rgb(71,36,59)   ",#47243B,Winter Bloom      
+  19-3519 TCX,"rgb(67,44,71)   ",#432C47,Purple Pennant    
+  19-2420 TCX,"rgb(77,35,61)   ",#4D233D,Pickled Beet      
+  19-3640 TCX,"rgb(72,45,84)   ",#482D54,Crown Jewel       
+  19-3725 TCX,"rgb(65,53,77)   ",#41354D,Purple Velvet     
+  19-3728 TCX,"rgb(67,52,85)   ",#433455,Grape             
+  19-3722 TCX,"rgb(73,60,98)   ",#493C62,Mulberry Purple   
+  19-3947 TCX,"rgb(71,69,122)  ",#47457A,Orient Blue       
+  19-0201 TCX,"rgb(67,68,71)   ",#434447,Asphalt           
+  19-3930 TCX,"rgb(67,68,82)   ",#434452,Odyssey Gray      
+  19-4014 TCX,"rgb(67,72,84)   ",#434854,Ombre Blue        
+  19-3926 TCX,"rgb(70,75,101)  ",#464B65,Crown Blue        
+  17-3934 TCX,"rgb(110,129,190)",#6E81BE,Persian Jewel     
+  19-0323 TCX,"rgb(74,83,53)   ",#4A5335,Chive             
+  19-1419 TCX,"rgb(74,52,46)   ",#4A342E,Chicory Coffee    
+  19-0307 TCX,"rgb(68,73,64)   ",#444940,Climbing Ivy      
+  19-5621 TCX,"rgb(67,84,75)   ",#43544B,Cilantro          
+  19-5004 TCX,"rgb(70,78,77)   ",#464E4D,Urban Chic        
+  19-4220 TCX,"rgb(70,81,90)   ",#46515A,Dark Slate        
+  19-3928 TCX,"rgb(73,81,109)  ",#49516D,Blue Indigo       
+  19-4818 TCX,"rgb(64,94,92)   ",#405E5C,Mallard Green     
+  18-4018 TCX,"rgb(64,93,115)  ",#405D73,Real Teal         
+  18-4718 TCX,"rgb(66,105,114) ",#426972,Hydro             
+  18-3928 TCX,"rgb(74,99,141)  ",#4A638D,Dutch Blue        
+  18-0125 TCX,"rgb(75,109,65)  ",#4B6D41,Artichoke Green   
+  17-6333 TCX,"rgb(72,125,73)  ",#487D49,Mint Green        
+  15-4427 TCX,"rgb(76,165,199) ",#4CA5C7,Norse Blue        
+  16-5924 TCX,"rgb(79,158,129) ",#4F9E81,Winter Green      
+  16-5418 TCX,"rgb(77,158,154) ",#4D9E9A,Lagoon            
+  14-6340 TCX,"rgb(109,206,135)",#6DCE87,Spring Bouquet    
+  14-6330 TCX,"rgb(107,205,156)",#6BCD9C,Spring Bud        
+  15-0545 TCX,"rgb(126,200,69) ",#7EC845,Jasmine Green     
+  16-0235 TCX,"rgb(122,171,85) ",#7AAB55,Kiwi              
+  19-2118 TCX,"rgb(73,42,52)   ",#492A34,Winetasting       
+  19-2524 TCX,"rgb(88,33,71)   ",#582147,Dark Purple       
+  19-1317 TCX,"rgb(80,49,48)   ",#503130,Bitter Chocolate  
+  19-1627 TCX,"rgb(80,43,51)   ",#502B33,Port Royale       
+  19-2816 TCX,"rgb(77,50,70)   ",#4D3246,Blackberry Wine   
+  19-3218 TCX,"rgb(81,48,78)   ",#51304E,Plum Purple       
+  19-3518 TCX,"rgb(79,45,84)   ",#4F2D54,Grape Royale      
+  19-3528 TCX,"rgb(84,44,93)   ",#542C5D,Imperial Purple   
+  19-3316 TCX,"rgb(71,52,66)   ",#473442,Plum Perfect      
+  19-3632 TCX,"rgb(79,52,102)  ",#4F3466,Petunia           
+  19-3638 TCX,"rgb(86,52,116)  ",#563474,Tillandsia Purple 
+  19-3737 TCX,"rgb(79,56,114)  ",#4F3872,Heliotrope        
+  19-0910 TCX,"rgb(67,57,55)   ",#433937,Mulch             
+  19-1619 TCX,"rgb(73,51,56)   ",#493338,Fudge             
+  19-3215 TCX,"rgb(76,57,87)   ",#4C3957,Indigo            
+  18-3839 TCX,"rgb(90,78,143)  ",#5A4E8F,Purple Corallites 
+  19-3619 TCX,"rgb(75,59,79)   ",#4B3B4F,Sweet Grape       
+  19-3936 TCX,"rgb(72,74,114)  ",#484A72,Skipper Blue      
+  19-3907 TCX,"rgb(72,70,74)   ",#48464A,Forged Iron       
+  19-3918 TCX,"rgb(70,68,76)   ",#46444C,Periscope         
+  19-0203 TCX,"rgb(73,73,77)   ",#49494D,Gray Pinstripe    
+  19-3917 TCX,"rgb(77,75,80)   ",#4D4B50,Blackened Pearl   
+  19-3929 TCX,"rgb(74,85,107)  ",#4A556B,Vintage Indigo    
+  19-0815 TCX,"rgb(90,70,50)   ",#5A4632,Desert Palm       
+  18-0228 TCX,"rgb(89,95,52)   ",#595F34,Pesto             
+  18-0322 TCX,"rgb(84,90,62)   ",#545A3E,Cypress           
+  18-4028 TCX,"rgb(75,91,110)  ",#4B5B6E,Bering Sea        
+  18-3917 TCX,"rgb(77,88,122)  ",#4D587A,Gray Blue         
+  18-0317 TCX,"rgb(82,95,72)   ",#525F48,Bronze Green      
+  18-5308 TCX,"rgb(72,107,103) ",#486B67,Blue Spruce       
+  18-3929 TCX,"rgb(78,100,130) ",#4E6482,Blue Horizon      
+  17-4028 TCX,"rgb(76,106,146) ",#4C6A92,Riverside         
+  18-0130 TCX,"rgb(83,113,61)  ",#53713D,Cactus            
+  18-4320 TCX,"rgb(78,110,129) ",#4E6E81,Aegean Blue       
+  18-5610 TCX,"rgb(76,126,134) ",#4C7E86,Brittany Blue     
+  17-4033 TCX,"rgb(84,128,172) ",#5480AC,Pacific Coast     
+  16-5820 TCX,"rgb(88,159,126) ",#589F7E,Green Spruce      
+  16-5412 TCX,"rgb(89,159,153) ",#599F99,Agate Green       
+  19-1528 TCX,"rgb(88,43,54)   ",#582B36,Windsor Wine      
+  19-1625 TCX,"rgb(81,50,53)   ",#513235,Decadent Chocolate
+  19-1718 TCX,"rgb(83,45,59)   ",#532D3B,Fig               
+  19-2429 TCX,"rgb(97,34,74)   ",#61224A,Plum Caspia       
+  19-2514 TCX,"rgb(83,49,70)   ",#533146,Italian Plum      
+  19-3323 TCX,"rgb(80,49,76)   ",#50314C,Deep Purple       
+  19-1724 TCX,"rgb(100,36,46)  ",#64242E,Cabernet          
+  19-1522 TCX,"rgb(92,41,53)   ",#5C2935,Zinfandel         
+  19-1725 TCX,"rgb(92,44,53)   ",#5C2C35,Tawny Port        
+  19-2315 TCX,"rgb(90,47,67)   ",#5A2F43,Grape Wine        
+  19-3220 TCX,"rgb(90,49,93)   ",#5A315D,Plum              
+  19-1624 TCX,"rgb(84,53,59)   ",#54353B,Sassafras         
+  19-3642 TCX,"rgb(96,63,131)  ",#603F83,Royal Purple      
+  19-1218 TCX,"rgb(84,57,45)   ",#54392D,Potting Soil      
+  19-1432 TCX,"rgb(86,53,45)   ",#56352D,Chocolate Fondant 
+  19-1321 TCX,"rgb(88,52,50)   ",#583432,Rum Raisin        
+  19-2009 TCX,"rgb(85,59,80)   ",#553B50,Hortensia         
+  19-3714 TCX,"rgb(80,59,83)   ",#503B53,Navy Cosmos       
+  19-3514 TCX,"rgb(89,55,97)   ",#593761,Majesty           
+  19-3730 TCX,"rgb(84,66,117)  ",#544275,Gentian Violet    
+  19-1215 TCX,"rgb(84,59,53)   ",#543B35,Shaved Chocolate  
+  19-1015 TCX,"rgb(79,63,59)   ",#4F3F3B,Bracken           
+  19-2814 TCX,"rgb(90,57,91)   ",#5A395B,Wineberry         
+  19-3620 TCX,"rgb(86,69,107)  ",#56456B,Purple Reign      
+  19-3901 TCX,"rgb(77,75,79)   ",#4D4B4F,Magnet            
+  19-3622 TCX,"rgb(90,71,105)  ",#5A4769,Loganberry        
+  19-0516 TCX,"rgb(87,77,53)   ",#574D35,Dark Olive        
+  19-0515 TCX,"rgb(83,80,64)   ",#535040,Olive Night       
+  19-0511 TCX,"rgb(84,81,68)   ",#545144,Grape Leaf        
+  19-3900 TCX,"rgb(82,77,80)   ",#524D50,Pavement          
+  19-3910 TCX,"rgb(78,80,85)   ",#4E5055,Iron Gate         
+  19-4215 TCX,"rgb(78,84,91)   ",#4E545B,Turbulence        
+  19-3919 TCX,"rgb(78,83,104)  ",#4E5368,Nightshadow Blue  
+  18-0523 TCX,"rgb(91,90,65)   ",#5B5A41,Winter Moss       
+  19-0312 TCX,"rgb(85,88,76)   ",#55584C,Beetle            
+  18-3950 TCX,"rgb(91,96,158)  ",#5B609E,Iris Bloom        
+  18-0328 TCX,"rgb(94,103,55)  ",#5E6737,Cedar Green       
+  18-6011 TCX,"rgb(83,102,92)  ",#53665C,Duck Green        
+  18-5410 TCX,"rgb(78,104,102) ",#4E6866,Silver Pine       
+  18-5606 TCX,"rgb(87,102,100) ",#576664,Balsam Green      
+  18-4214 TCX,"rgb(88,100,109) ",#58646D,Stormy Weather    
+  18-3918 TCX,"rgb(84,100,119) ",#546477,China Blue        
+  18-4025 TCX,"rgb(81,107,132) ",#516B84,Copen Blue        
+  18-4027 TCX,"rgb(80,104,134) ",#506886,Moonlight Blue    
+  18-0107 TCX,"rgb(90,114,71)  ",#5A7247,Kale              
+  18-0121 TCX,"rgb(84,112,83)  ",#547053,Elm Green         
+  18-4612 TCX,"rgb(83,109,112) ",#536D70,North Atlantic    
+  18-4020 TCX,"rgb(85,112,136) ",#557088,Captain's Blue    
+  18-4217 TCX,"rgb(87,114,132) ",#577284,Bluestone         
+  17-4030 TCX,"rgb(97,139,185) ",#618BB9,Silver Lake Blue  
+  17-5912 TCX,"rgb(91,119,99)  ",#5B7763,Dark Ivy          
+  17-4029 TCX,"rgb(90,120,154) ",#5A789A,Quiet Harbor      
+  16-4127 TCX,"rgb(93,150,188) ",#5D96BC,Heritage Blue     
+  15-4421 TCX,"rgb(92,172,206) ",#5CACCE,Blue Grotto       
+  15-4714 TCX,"rgb(97,170,177) ",#61AAB1,Aquarelle         
+  16-0237 TCX,"rgb(117,161,79) ",#75A14F,Foliage           
+  13-5313 TCX,"rgb(129,215,211)",#81D7D3,Aruba Blue        
+  19-1535 TCX,"rgb(106,40,44)  ",#6A282C,Syrah             
+  19-1623 TCX,"rgb(88,54,61)   ",#58363D,Vineyard Wine     
+  19-1930 TCX,"rgb(108,40,49)  ",#6C2831,Pomegranate       
+  19-2430 TCX,"rgb(105,39,70)  ",#692746,Purple Potion     
+  19-2428 TCX,"rgb(107,38,75)  ",#6B264B,Magenta Purple    
+  19-1337 TCX,"rgb(106,46,42)  ",#6A2E2A,Fired Brick       
+  19-1526 TCX,"rgb(97,46,53)   ",#612E35,Chocolate Truffle 
+  18-3340 TCX,"rgb(99,42,96)   ",#632A60,Charisma          
+  19-3022 TCX,"rgb(98,46,90)   ",#622E5A,Gloxinia          
+  19-3230 TCX,"rgb(104,41,97)  ",#682961,Grape Juice       
+  19-3540 TCX,"rgb(102,50,113) ",#663271,Purple Magic      
+  19-3536 TCX,"rgb(106,57,123) ",#6A397B,Amaranth Purple   
+  19-1716 TCX,"rgb(91,54,68)   ",#5B3644,Mauve Wine        
+  19-1327 TCX,"rgb(96,53,53)   ",#603535,Andorra           
+  19-1606 TCX,"rgb(82,65,68)   ",#524144,Raisin            
+  19-1608 TCX,"rgb(92,58,77)   ",#5C3A4D,Prune Purple      
+  19-1234 TCX,"rgb(90,62,54)   ",#5A3E36,Rocky Road        
+  19-1322 TCX,"rgb(89,60,57)   ",#593C39,Brown Stone       
+  19-1214 TCX,"rgb(92,62,53)   ",#5C3E35,Chocolate Lab     
+  19-1012 TCX,"rgb(88,66,63)   ",#58423F,French Roast      
+  19-1621 TCX,"rgb(93,60,67)   ",#5D3C43,Catawba Grape     
+  18-3521 TCX,"rgb(98,64,118)  ",#624076,Plum Jam          
+  19-3542 TCX,"rgb(101,61,124) ",#653D7C,Pansy             
+  18-3737 TCX,"rgb(109,86,152) ",#6D5698,Passion Flower    
+  19-1224 TCX,"rgb(93,66,54)   ",#5D4236,Fondue Fudge      
+  18-3635 TCX,"rgb(99,72,120)  ",#634878,Picasso Lily      
+  19-0810 TCX,"rgb(91,81,73)   ",#5B5149,Major Brown       
+  18-3620 TCX,"rgb(95,78,114)  ",#5F4E72,Mystical          
+  18-0430 TCX,"rgb(103,98,50)  ",#676232,Avocado           
+  19-0622 TCX,"rgb(99,86,59)   ",#63563B,Military Olive    
+  19-0403 TCX,"rgb(94,87,73)   ",#5E5749,Sea Turtle        
+  18-0306 TCX,"rgb(92,93,91)   ",#5C5D5B,Gunmetal          
+  18-5210 TCX,"rgb(92,86,88)   ",#5C5658,Eiffel Tower      
+  18-3907 TCX,"rgb(94,91,96)   ",#5E5B60,Tornado           
+  18-3912 TCX,"rgb(88,94,111)  ",#585E6F,Grisaille         
+  18-0220 TCX,"rgb(101,102,63) ",#65663F,Mayfly            
+  18-0426 TCX,"rgb(101,99,68)  ",#656344,Capulet Olive     
+  18-3927 TCX,"rgb(96,104,141) ",#60688D,Velvet Morning    
+  18-0435 TCX,"rgb(106,111,52) ",#6A6F34,Calla Green       
+  18-3930 TCX,"rgb(100,111,155)",#646F9B,Bleached Denim    
+  18-6216 TCX,"rgb(91,121,97)  ",#5B7961,Comfrey           
+  18-4220 TCX,"rgb(92,121,142) ",#5C798E,Provincial Blue   
+  18-0110 TCX,"rgb(97,132,91)  ",#61845B,English Ivy       
+  16-5515 TCX,"rgb(97,145,135) ",#619187,Beryl Green       
+  17-5111 TCX,"rgb(101,140,136)",#658C88,Oil Blue          
+  15-4225 TCX,"rgb(109,169,210)",#6DA9D2,Alaskan Blue      
+  16-5114 TCX,"rgb(100,155,158)",#649B9E,Dusty Turquoise   
+  16-6329 TCX,"rgb(105,158,109)",#699E6D,Peppermint        
+  15-4715 TCX,"rgb(107,170,174)",#6BAAAE,Aqua Sea          
+  14-0452 TCX,"rgb(159,193,49) ",#9FC131,Lime Green        
+  16-0230 TCX,"rgb(155,181,62) ",#9BB53E,Macaw Green       
+  14-0127 TCX,"rgb(139,194,140)",#8BC28C,Greengage         
+  19-1435 TCX,"rgb(102,53,43)  ",#66352B,Cherry Mahogany   
+  19-1531 TCX,"rgb(117,35,41)  ",#752329,Sun-Dried Tomato  
+  19-1534 TCX,"rgb(114,38,44)  ",#72262C,Merlot            
+  19-1555 TCX,"rgb(125,32,39)  ",#7D2027,Red Dahlia        
+  19-1650 TCX,"rgb(119,33,46)  ",#77212E,Biking Red        
+  19-1652 TCX,"rgb(119,32,47)  ",#77202F,Rhubarb           
+  19-1521 TCX,"rgb(96,55,61)   ",#60373D,Red Mahogany      
+  19-1617 TCX,"rgb(100,49,62)  ",#64313E,Burgundy          
+  19-2820 TCX,"rgb(105,45,93)  ",#692D5D,Phlox             
+  19-1331 TCX,"rgb(106,51,49)  ",#6A3331,Madder Brown      
+  19-1525 TCX,"rgb(102,51,54)  ",#663336,Port              
+  18-3540 TCX,"rgb(111,70,133) ",#6F4685,Purple Sapphire   
+  19-3438 TCX,"rgb(120,67,132) ",#784384,Bright Violet     
+  18-1048 TCX,"rgb(112,72,34)  ",#704822,Monk's Robe       
+  19-2312 TCX,"rgb(100,58,76)  ",#643A4C,Crushed Violets   
+  18-3531 TCX,"rgb(119,77,142) ",#774D8E,Royal Lilac       
+  19-1220 TCX,"rgb(99,63,51)   ",#633F33,Cappuccino        
+  19-1233 TCX,"rgb(99,66,53)   ",#634235,Tiramisu          
+  19-1325 TCX,"rgb(104,59,57)  ",#683B39,Hot Chocolate     
+  19-1431 TCX,"rgb(99,64,58)   ",#63403A,Fudgesickle       
+  19-3223 TCX,"rgb(104,61,98)  ",#683D62,Purple Passion    
+  18-3633 TCX,"rgb(119,84,150) ",#775496,Deep Lavender     
+  18-1028 TCX,"rgb(104,72,50)  ",#684832,Emperador         
+  19-0916 TCX,"rgb(95,76,64)   ",#5F4C40,Rain Drum         
+  18-1411 TCX,"rgb(103,69,80)  ",#674550,Plum Wine         
+  19-3424 TCX,"rgb(111,69,110) ",#6F456E,Sunset Purple     
+  18-0930 TCX,"rgb(106,81,59)  ",#6A513B,Coffee Liqueúr    
+  19-0617 TCX,"rgb(101,83,65)  ",#655341,Teak              
+  19-0823 TCX,"rgb(93,83,72)   ",#5D5348,Crocodile         
+  18-3518 TCX,"rgb(108,78,121) ",#6C4E79,Patrician Purple  
+  19-0510 TCX,"rgb(95,91,76)   ",#5F5B4C,Kalamata          
+  19-0809 TCX,"rgb(104,90,78)  ",#685A4E,Chocolate Chip    
+  18-3908 TCX,"rgb(97,92,96)   ",#615C60,Volcanic Glass    
+  18-5204 TCX,"rgb(97,94,95)   ",#615E5F,Granite Gray      
+  18-3817 TCX,"rgb(98,97,126)  ",#62617E,Heron             
+  18-3820 TCX,"rgb(102,100,139)",#66648B,Twilight Purple   
+  18-0521 TCX,"rgb(100,96,73)  ",#646049,Burnt Olive       
+  18-0629 TCX,"rgb(113,100,62) ",#71643E,Lizard            
+  18-0527 TCX,"rgb(106,106,69) ",#6A6A45,Olive Branch      
+  18-0515 TCX,"rgb(100,99,86)  ",#646356,Dusty Olive       
+  18-0000 TCX,"rgb(101,100,102)",#656466,Smoked Pearl      
+  18-0510 TCX,"rgb(100,103,98) ",#646762,Castor Gray       
+  18-4006 TCX,"rgb(102,103,109)",#66676D,Quiet Shade       
+  18-3812 TCX,"rgb(106,99,120) ",#6A6378,Cadet             
+  18-3834 TCX,"rgb(109,102,149)",#6D6695,Veronica          
+  17-3940 TCX,"rgb(112,123,180)",#707BB4,Iolite            
+  18-0316 TCX,"rgb(102,107,84) ",#666B54,Olivine           
+  18-3916 TCX,"rgb(103,114,131)",#677283,Flint Stone       
+  18-4510 TCX,"rgb(105,122,126)",#697A7E,Trooper           
+  16-4031 TCX,"rgb(115,145,200)",#7391C8,Cornflower Blue   
+  18-4711 TCX,"rgb(110,128,130)",#6E8082,Stormy Sea        
+  17-4020 TCX,"rgb(102,130,154)",#66829A,Blue Shadow       
+  15-6432 TCX,"rgb(111,162,107)",#6FA26B,Shamrock          
+  16-5919 TCX,"rgb(112,163,141)",#70A38D,Crème de Menthe   
+  16-5112 TCX,"rgb(109,162,158)",#6DA29E,Canton            
+  14-4310 TCX,"rgb(120,189,212)",#78BDD4,Blue Topaz        
+  16-5109 TCX,"rgb(115,168,158)",#73A89E,Wasabi            
+  15-4319 TCX,"rgb(119,172,199)",#77ACC7,Air Blue          
+  13-4720 TCX,"rgb(145,220,232)",#91DCE8,Tanager Turquoise 
+  14-4620 TCX,"rgb(149,222,227)",#95DEE3,Island Paradise   
+  19-1429 TCX,"rgb(110,54,44)  ",#6E362C,Smoked Paprika    
+  19-2024 TCX,"rgb(114,43,63)  ",#722B3F,Rhododendron      
+  19-2030 TCX,"rgb(122,31,61)  ",#7A1F3D,Beet Red          
+  19-1940 TCX,"rgb(124,36,57)  ",#7C2439,Rumba Red         
+  19-1934 TCX,"rgb(120,42,57)  ",#782A39,Tibetan Red       
+  19-2025 TCX,"rgb(124,41,70)  ",#7C2946,Red Plum          
+  19-2924 TCX,"rgb(130,50,112) ",#823270,Hollyhock         
+  18-1541 TCX,"rgb(115,54,42)  ",#73362A,Brandy Brown      
+  19-3336 TCX,"rgb(119,51,118) ",#773376,Sparkling Grape   
+  19-1338 TCX,"rgb(116,51,50)  ",#743332,Russet Brown      
+  19-1524 TCX,"rgb(112,57,63)  ",#70393F,Oxblood Red       
+  19-1629 TCX,"rgb(119,51,59)  ",#77333B,Ruby Wine         
+  19-1436 TCX,"rgb(107,65,57)  ",#6B4139,Cinnamon          
+  19-1320 TCX,"rgb(110,64,60)  ",#6E403C,Sable             
+  19-3325 TCX,"rgb(117,64,106) ",#75406A,Wood Violet       
+  19-3425 TCX,"rgb(109,71,115) ",#6D4773,Spiced Plum       
+  19-1230 TCX,"rgb(110,73,58)  ",#6E493A,Friar Brown       
+  19-1241 TCX,"rgb(117,71,52)  ",#754734,Tortoise Shell    
+  19-1217 TCX,"rgb(104,75,64)  ",#684B40,Mustang           
+  18-1506 TCX,"rgb(103,86,87)  ",#675657,Plum Truffle      
+  18-1033 TCX,"rgb(112,79,55)  ",#704F37,Dachshund         
+  18-0928 TCX,"rgb(107,84,62)  ",#6B543E,Sepia             
+  18-1222 TCX,"rgb(108,80,67)  ",#6C5043,Cocoa Brown       
+  18-1409 TCX,"rgb(108,86,86)  ",#6C5656,Peppercorn        
+  18-1706 TCX,"rgb(108,87,101) ",#6C5765,Black Plum        
+  18-1708 TCX,"rgb(111,89,101) ",#6F5965,Ephemera          
+  18-3415 TCX,"rgb(114,86,113) ",#725671,Grape Jam         
+  18-3513 TCX,"rgb(107,88,118) ",#6B5876,Grape Compote     
+  18-3715 TCX,"rgb(108,89,113) ",#6C5971,Montana Grape     
+  17-3834 TCX,"rgb(126,110,172)",#7E6EAC,Dahlia Purple     
+  18-0840 TCX,"rgb(128,93,36)  ",#805D24,Tapenade          
+  19-0808 TCX,"rgb(104,92,83)  ",#685C53,Morel             
+  18-1705 TCX,"rgb(115,91,106) ",#735B6A,Arctic Dusk       
+  18-0832 TCX,"rgb(122,99,50)  ",#7A6332,Plantation        
+  18-0830 TCX,"rgb(122,100,63) ",#7A643F,Butternut         
+  18-1304 TCX,"rgb(109,98,91)  ",#6D625B,Falcon            
+  18-0625 TCX,"rgb(113,106,77) ",#716A4D,Martini Olive     
+  18-0422 TCX,"rgb(110,113,83) ",#6E7153,Loden Green       
+  18-5806 TCX,"rgb(107,113,105)",#6B7169,Agave Green       
+  18-5102 TCX,"rgb(115,112,111)",#73706F,Brushed Nickel    
+  18-3933 TCX,"rgb(113,115,136)",#717388,Blue Granite      
+  17-0530 TCX,"rgb(121,123,58) ",#797B3A,Guacamole         
+  18-0538 TCX,"rgb(123,127,50) ",#7B7F32,Woodbine          
+  18-0324 TCX,"rgb(117,122,78) ",#757A4E,Calliste Green    
+  17-3922 TCX,"rgb(112,120,155)",#70789B,Blue Ice          
+  17-3917 TCX,"rgb(116,128,154)",#74809A,Stonewash         
+  16-6116 TCX,"rgb(115,144,114)",#739072,Shale Green       
+  17-4111 TCX,"rgb(116,137,149)",#748995,Citadel           
+  16-6318 TCX,"rgb(122,155,120)",#7A9B78,Mineral Green     
+  16-5815 TCX,"rgb(114,155,139)",#729B8B,Feldspar          
+  16-4414 TCX,"rgb(118,157,166)",#769DA6,Cameo Blue        
+  16-4120 TCX,"rgb(123,160,192)",#7BA0C0,Dusk Blue         
+  14-4320 TCX,"rgb(121,181,216)",#79B5D8,Baltic Sea        
+  14-6327 TCX,"rgb(124,176,131)",#7CB083,Zephyr Green      
+  15-5210 TCX,"rgb(118,167,171)",#76A7AB,Nile Blue         
+  15-6120 TCX,"rgb(124,176,138)",#7CB08A,Ming              
+  15-5711 TCX,"rgb(123,181,163)",#7BB5A3,Dusty Jade Green  
+  14-4710 TCX,"rgb(130,194,199)",#82C2C7,Tibetan Stone     
+  14-0244 TCX,"rgb(151,188,98) ",#97BC62,Bright Lime Green 
+  13-4810 TCX,"rgb(152,221,222)",#98DDDE,Limpet Shell      
+  19-1656 TCX,"rgb(138,34,50)  ",#8A2232,Rio Red           
+  19-2432 TCX,"rgb(128,42,80)  ",#802A50,Raspberry Radiance
+  19-3138 TCX,"rgb(133,59,123) ",#853B7B,Byzantium         
+  18-3324 TCX,"rgb(132,62,131) ",#843E83,Dahlia            
+  18-1148 TCX,"rgb(134,76,36)  ",#864C24,Caramel Café      
+  18-1325 TCX,"rgb(120,57,55)  ",#783937,Spiced Apple      
+  19-1536 TCX,"rgb(123,53,57)  ",#7B3539,Red Pear          
+  19-2431 TCX,"rgb(133,50,92)  ",#85325C,Boysenberry       
+  19-1540 TCX,"rgb(126,57,47)  ",#7E392F,Burnt Henna       
+  19-1334 TCX,"rgb(124,66,60)  ",#7C423C,Henna             
+  19-1228 TCX,"rgb(113,74,65)  ",#714A41,Root Beer         
+  18-3014 TCX,"rgb(123,67,104) ",#7B4368,Grape Kiss        
+  18-3533 TCX,"rgb(139,88,151) ",#8B5897,Dewberry          
+  18-1614 TCX,"rgb(122,75,86)  ",#7A4B56,Nocturne          
+  18-1418 TCX,"rgb(128,79,90)  ",#804F5A,Crushed Berry     
+  18-3218 TCX,"rgb(124,83,121) ",#7C5379,Concord Grape     
+  18-3522 TCX,"rgb(122,84,127) ",#7A547F,Crushed Grape     
+  18-0933 TCX,"rgb(129,91,55)  ",#815B37,Rubber            
+  17-1708 TCX,"rgb(114,95,105) ",#725F69,Moonscape         
+  18-3012 TCX,"rgb(122,89,111) ",#7A596F,Purple Gumdrop    
+  18-3634 TCX,"rgb(125,93,153) ",#7D5D99,Chive Blossom     
+  18-0724 TCX,"rgb(124,110,79) ",#7C6E4F,Gothic Olive      
+  17-0517 TCX,"rgb(116,108,87) ",#746C57,Dusky Green       
+  18-1112 TCX,"rgb(119,106,95) ",#776A5F,Walnut            
+  17-1503 TCX,"rgb(120,115,118)",#787376,Storm Front       
+  18-4016 TCX,"rgb(118,114,117)",#767275,December Sky      
+  17-3826 TCX,"rgb(125,116,168)",#7D74A8,Aster Purple      
+  17-0636 TCX,"rgb(133,121,70) ",#857946,Green Moss        
+  17-3911 TCX,"rgb(127,124,129)",#7F7C81,Silver Filigree   
+  17-3930 TCX,"rgb(132,141,197)",#848DC5,Jacaranda         
+  18-0525 TCX,"rgb(129,132,85) ",#818455,Iguana            
+  17-0115 TCX,"rgb(128,133,109)",#80856D,Oil Green         
+  17-0000 TCX,"rgb(132,130,131)",#848283,Frost Gray        
+  17-4016 TCX,"rgb(132,129,130)",#848182,Gray Flannel      
+  16-4030 TCX,"rgb(132,155,204)",#849BCC,Hydrangea         
+  17-0839 TCX,"rgb(170,136,5)  ",#AA8805,Golden Palm       
+  17-4021 TCX,"rgb(121,142,164)",#798EA4,Faded Denim       
+  17-0215 TCX,"rgb(126,155,118)",#7E9B76,Aspen Green       
+  15-3920 TCX,"rgb(140,173,211)",#8CADD3,Placid Blue       
+  14-6319 TCX,"rgb(139,186,148)",#8BBA94,Meadow            
+  14-4516 TCX,"rgb(135,194,212)",#87C2D4,Petit four        
+  14-4511 TCX,"rgb(136,195,208)",#88C3D0,Gulf Stream       
+  14-0232 TCX,"rgb(161,202,123)",#A1CA7B,Jade Lime         
+  19-1757 TCX,"rgb(170,10,39)  ",#AA0A27,Barbados Cherry   
+  19-1758 TCX,"rgb(161,23,41)  ",#A11729,Haute Red         
+  19-1862 TCX,"rgb(158,16,48)  ",#9E1030,Jester Red        
+  19-1863 TCX,"rgb(148,30,50)  ",#941E32,Scooter           
+  19-2033 TCX,"rgb(132,44,72)  ",#842C48,Anemone           
+  19-2630 TCX,"rgb(146,49,111) ",#92316F,Wild Aster        
+  19-1532 TCX,"rgb(129,54,57)  ",#813639,Rosewood          
+  18-2320 TCX,"rgb(138,51,113) ",#8A3371,Clover            
+  18-2929 TCX,"rgb(140,53,115) ",#8C3573,Purple Wine       
+  18-3120 TCX,"rgb(142,68,131) ",#8E4483,Willowherb        
+  18-3331 TCX,"rgb(141,70,135) ",#8D4687,Hyacinth Violet   
+  19-1530 TCX,"rgb(126,57,64)  ",#7E3940,Burnt Russet      
+  19-1245 TCX,"rgb(136,67,50)  ",#884332,Arabian Spice     
+  18-1420 TCX,"rgb(124,76,83)  ",#7C4C53,Wild Ginger       
+  18-1619 TCX,"rgb(131,70,85)  ",#834655,Maroon            
+  18-1246 TCX,"rgb(148,74,31)  ",#944A1F,Umber             
+  19-1333 TCX,"rgb(128,72,57)  ",#804839,Sequoia           
+  18-1242 TCX,"rgb(131,79,61)  ",#834F3D,Brown Patina      
+  18-1425 TCX,"rgb(130,77,70)  ",#824D46,Mahogany          
+  18-1426 TCX,"rgb(132,75,77)  ",#844B4D,Apple Butter      
+  18-1725 TCX,"rgb(140,71,89)  ",#8C4759,Dry Rose          
+  18-1709 TCX,"rgb(128,84,102) ",#805466,Tulipwood         
+  18-1720 TCX,"rgb(139,73,99)  ",#8B4963,Violet Quartz     
+  18-1238 TCX,"rgb(133,81,65)  ",#855141,Rustic Brown      
+  18-1512 TCX,"rgb(128,86,91)  ",#80565B,Rose Brown        
+  18-1616 TCX,"rgb(136,81,87)  ",#885157,Roan Rouge        
+  17-1142 TCX,"rgb(139,89,62)  ",#8B593E,Argan Oil         
+  18-1314 TCX,"rgb(126,94,82)  ",#7E5E52,Acorn             
+  18-1326 TCX,"rgb(126,92,84)  ",#7E5C54,Nutmeg            
+  18-3418 TCX,"rgb(131,94,129) ",#835E81,Chinese Violet    
+  18-3211 TCX,"rgb(133,103,123)",#85677B,Grapeade          
+  17-0909 TCX,"rgb(128,111,99) ",#806F63,Fossil            
+  18-1017 TCX,"rgb(129,109,94) ",#816D5E,Caribou           
+  17-1410 TCX,"rgb(130,112,100)",#827064,Pine Bark         
+  18-1108 TCX,"rgb(128,118,105)",#807669,Fallen Rock       
+  18-1210 TCX,"rgb(132,122,117)",#847A75,Driftwood         
+  17-3907 TCX,"rgb(126,125,136)",#7E7D88,Quicksilver       
+  17-4014 TCX,"rgb(128,125,127)",#807D7F,Titanium          
+  17-0525 TCX,"rgb(133,137,97) ",#858961,Mosstone          
+  17-1500 TCX,"rgb(130,126,124)",#827E7C,Steeple Gray      
+  17-1502 TCX,"rgb(131,127,127)",#837F7F,Cloudburst        
+  17-3914 TCX,"rgb(131,132,135)",#838487,Sharkskin         
+  15-4307 TCX,"rgb(127,135,147)",#7F8793,Tradewinds        
+  17-3933 TCX,"rgb(129,131,154)",#81839A,Silver Bullet     
+  17-3817 TCX,"rgb(137,129,160)",#8981A0,Daybreak          
+  16-3925 TCX,"rgb(145,155,201)",#919BC9,Easter Egg        
+  17-0324 TCX,"rgb(132,145,97) ",#849161,Epsom             
+  17-6206 TCX,"rgb(136,141,130)",#888D82,Shadow            
+  17-3919 TCX,"rgb(133,143,177)",#858FB1,Purple Impression 
+  16-5804 TCX,"rgb(138,150,145)",#8A9691,Slate Gray        
+  16-4109 TCX,"rgb(135,155,163)",#879BA3,Arona             
+  16-4114 TCX,"rgb(130,156,165)",#829CA5,Stone Blue        
+  16-4013 TCX,"rgb(134,153,171)",#8699AB,Ashley Blue       
+  16-0123 TCX,"rgb(137,160,107)",#89A06B,Tendril           
+  16-4408 TCX,"rgb(140,159,161)",#8C9FA1,Slate             
+  16-4411 TCX,"rgb(134,161,169)",#86A1A9,Tourmaline        
+  14-4121 TCX,"rgb(147,180,215)",#93B4D7,Blue Bell         
+  14-5711 TCX,"rgb(142,197,182)",#8EC5B6,Ocean Wave        
+  13-0117 TCX,"rgb(160,218,169)",#A0DAA9,Green Ash         
+  13-0442 TCX,"rgb(176,201,101)",#B0C965,Green Glow        
+  13-0220 TCX,"rgb(178,231,159)",#B2E79F,Paradise Green    
+  19-1559 TCX,"rgb(157,32,47)  ",#9D202F,Scarlet Sage      
+  19-1761 TCX,"rgb(172,14,46)  ",#AC0E2E,Tango Red         
+  19-1860 TCX,"rgb(162,20,65)  ",#A21441,Persian Red       
+  19-1955 TCX,"rgb(164,18,71)  ",#A41247,Cerise            
+  19-2047 TCX,"rgb(152,37,81)  ",#982551,Sangria           
+  19-2434 TCX,"rgb(158,44,106) ",#9E2C6A,Festival Fuchsia  
+  18-3339 TCX,"rgb(153,60,124) ",#993C7C,Vivid Viola       
+  18-1340 TCX,"rgb(158,70,36)  ",#9E4624,Potter's Clay     
+  19-1250 TCX,"rgb(141,63,45)  ",#8D3F2D,Picante           
+  18-1440 TCX,"rgb(142,60,54)  ",#8E3C36,Chili Oil         
+  18-1442 TCX,"rgb(145,56,50)  ",#913832,Red Ochre         
+  19-1533 TCX,"rgb(136,67,68)  ",#884344,Cowhide           
+  18-3022 TCX,"rgb(144,63,117) ",#903F75,Deep Orchid       
+  18-1531 TCX,"rgb(143,66,59)  ",#8F423B,Barn Red          
+  18-1163 TCX,"rgb(160,92,23)  ",#A05C17,Pumpkin Spice     
+  18-1345 TCX,"rgb(155,71,34)  ",#9B4722,Cinnamon Stick    
+  18-1154 TCX,"rgb(145,85,43)  ",#91552B,Glazed Ginger     
+  18-1155 TCX,"rgb(147,85,41)  ",#935529,Sugar Almond      
+  18-1140 TCX,"rgb(140,84,58)  ",#8C543A,Mocha Bisque      
+  18-1229 TCX,"rgb(133,92,76)  ",#855C4C,Carob Brown       
+  17-1052 TCX,"rgb(147,89,43)  ",#93592B,Roasted Pecan     
+  18-1142 TCX,"rgb(151,87,43)  ",#97572B,Leather Brown     
+  18-1235 TCX,"rgb(143,95,80)  ",#8F5F50,Russet            
+  18-1710 TCX,"rgb(141,92,116) ",#8D5C74,Grape Nectar      
+  18-0950 TCX,"rgb(153,100,44) ",#99642C,Cathay Spice      
+  18-1029 TCX,"rgb(139,106,79) ",#8B6A4F,Toasted Coconut   
+  18-3628 TCX,"rgb(148,105,162)",#9469A2,Bellflower        
+  18-1807 TCX,"rgb(139,111,112)",#8B6F70,Twilight Mauve    
+  17-0836 TCX,"rgb(146,123,60) ",#927B3C,Ecru Olive        
+  17-1028 TCX,"rgb(144,121,84) ",#907954,Antique Bronze    
+  17-1115 TCX,"rgb(141,121,96) ",#8D7960,Petrified Oak     
+  17-1314 TCX,"rgb(137,117,96) ",#897560,Sepia Tint        
+  17-1506 TCX,"rgb(138,126,120)",#8A7E78,Cinder            
+  17-3612 TCX,"rgb(145,119,152)",#917798,Orchid Mist       
+  17-3640 TCX,"rgb(148,121,175)",#9479AF,Fairy Wren        
+  17-0840 TCX,"rgb(154,128,58) ",#9A803A,Amber Green       
+  17-0625 TCX,"rgb(142,133,95) ",#8E855F,Boa               
+  17-1311 TCX,"rgb(141,126,113)",#8D7E71,Desert Taupe      
+  16-0632 TCX,"rgb(154,139,79) ",#9A8B4F,Willow            
+  16-0526 TCX,"rgb(146,142,100)",#928E64,Cedar             
+  16-0421 TCX,"rgb(145,148,110)",#91946E,Sage              
+  17-0510 TCX,"rgb(147,139,120)",#938B78,Silver Sage       
+  17-0205 TCX,"rgb(143,137,130)",#8F8982,Elephant Skin     
+  17-3802 TCX,"rgb(145,140,143)",#918C8F,Gull              
+  17-5102 TCX,"rgb(141,143,143)",#8D8F8F,Griffin           
+  16-0543 TCX,"rgb(154,151,56) ",#9A9738,Golden Lime       
+  16-0545 TCX,"rgb(156,154,64) ",#9C9A40,Split Pea         
+  16-3916 TCX,"rgb(146,148,155)",#92949B,Sleet             
+  16-4010 TCX,"rgb(140,157,173)",#8C9DAD,Dusty Blue        
+  16-3921 TCX,"rgb(150,163,199)",#96A3C7,Blue Heron        
+  16-5106 TCX,"rgb(144,168,164)",#90A8A4,Blue Surf         
+  15-4312 TCX,"rgb(143,173,189)",#8FADBD,Forget-Me-Not     
+  14-4122 TCX,"rgb(146,182,213)",#92B6D5,Airy Blue         
+  14-4214 TCX,"rgb(150,179,210)",#96B3D2,Powder Blue       
+  14-6011 TCX,"rgb(155,190,169)",#9BBEA9,Grayed Jade       
+  14-4315 TCX,"rgb(152,191,202)",#98BFCA,Sea Angel         
+  14-0446 TCX,"rgb(181,204,57) ",#B5CC39,Tender Shoots     
+  14-0340 TCX,"rgb(186,223,48) ",#BADF30,Acid Lime         
+  18-1657 TCX,"rgb(170,24,43)  ",#AA182B,Salsa             
+  18-1659 TCX,"rgb(185,18,40)  ",#B91228,Goji Berry        
+  19-1762 TCX,"rgb(174,14,54)  ",#AE0E36,Crimson           
+  18-1654 TCX,"rgb(186,11,50)  ",#BA0B32,Lychee            
+  18-1759 TCX,"rgb(178,16,60)  ",#B2103C,Jalapeño Red      
+  19-1662 TCX,"rgb(162,36,47)  ",#A2242F,Samba             
+  19-2039 TCX,"rgb(165,35,80)  ",#A52350,Granita           
+  19-2045 TCX,"rgb(163,40,87)  ",#A32857,Vivacious         
+  18-1658 TCX,"rgb(164,41,46)  ",#A4292E,Pompeian Red      
+  19-1850 TCX,"rgb(150,45,73)  ",#962D49,Red Bud           
+  18-1355 TCX,"rgb(162,60,38)  ",#A23C26,Rooibos Tea       
+  19-1840 TCX,"rgb(151,52,67)  ",#973443,Deep Claret       
+  18-1631 TCX,"rgb(149,66,78)  ",#95424E,Earth Red         
+  18-1540 TCX,"rgb(156,69,59)  ",#9C453B,Cinnabar          
+  18-2525 TCX,"rgb(157,68,110) ",#9D446E,Magenta Haze      
+  18-1050 TCX,"rgb(168,98,23)  ",#A86217,Honey Ginger      
+  17-1342 TCX,"rgb(161,83,37)  ",#A15325,Autumnal          
+  18-1250 TCX,"rgb(159,81,48)  ",#9F5130,Bombay Brown      
+  17-1723 TCX,"rgb(159,80,105) ",#9F5069,Malaga            
+  18-1239 TCX,"rgb(152,92,65)  ",#985C41,Sierra            
+  18-1433 TCX,"rgb(152,89,75)  ",#98594B,Chutney           
+  17-1614 TCX,"rgb(152,95,104) ",#985F68,Deco Rose         
+  17-1612 TCX,"rgb(153,99,120) ",#996378,Mellow Mauve      
+  17-1710 TCX,"rgb(150,99,123) ",#96637B,Bordeaux          
+  18-3530 TCX,"rgb(147,106,152)",#936A98,Lavender Crystal  
+  17-1511 TCX,"rgb(148,108,116)",#946C74,Wistful Mauve     
+  18-0935 TCX,"rgb(167,111,31) ",#A76F1F,Buckthorn Brown   
+  17-1516 TCX,"rgb(155,113,107)",#9B716B,Burlwood          
+  17-1610 TCX,"rgb(154,113,130)",#9A7182,Dusky Orchid      
+  18-0835 TCX,"rgb(153,123,56) ",#997B38,Dried Tobacco     
+  17-1125 TCX,"rgb(151,117,76) ",#97754C,Dijon             
+  17-1038 TCX,"rgb(151,124,97) ",#977C61,Tiger's Eye       
+  17-1316 TCX,"rgb(147,123,106)",#937B6A,Portabella        
+  17-1418 TCX,"rgb(151,125,112)",#977D70,Ginger Snap       
+  17-1105 TCX,"rgb(145,133,121)",#918579,Roasted Cashew    
+  17-3520 TCX,"rgb(152,121,162)",#9879A2,Diffused Orchid   
+  17-3735 TCX,"rgb(151,135,184)",#9787B8,Sunlit Allium     
+  17-0843 TCX,"rgb(156,126,65) ",#9C7E41,Bronze Mist       
+  17-0929 TCX,"rgb(153,132,86) ",#998456,Fennel Seed       
+  17-1022 TCX,"rgb(152,132,103)",#988467,Kelp              
+  16-1109 TCX,"rgb(146,132,117)",#928475,Greige            
+  17-1108 TCX,"rgb(148,138,122)",#948A7A,Winter Twig       
+  16-1606 TCX,"rgb(152,135,140)",#98878C,Purple Dove       
+  17-1505 TCX,"rgb(152,134,140)",#98868C,Quail             
+  16-0847 TCX,"rgb(169,139,45) ",#A98B2D,Olive Oil         
+  17-0630 TCX,"rgb(152,140,117)",#988C75,Tree House        
+  17-1210 TCX,"rgb(149,139,132)",#958B84,Moon Rock         
+  16-3800 TCX,"rgb(151,141,137)",#978D89,Satellite         
+  16-4400 TCX,"rgb(148,144,139)",#94908B,Mourning Dove     
+  17-3910 TCX,"rgb(152,144,162)",#9890A2,Lavender Gray     
+  16-3915 TCX,"rgb(152,151,154)",#98979A,Alloy             
+  16-4702 TCX,"rgb(152,154,152)",#989A98,Limestone         
+  16-3905 TCX,"rgb(152,150,164)",#9896A4,Lilac Gray        
+  16-3911 TCX,"rgb(159,153,170)",#9F99AA,Lavender Aura     
+  16-3931 TCX,"rgb(154,155,193)",#9A9BC1,Sweet Lavender    
+  16-0213 TCX,"rgb(153,155,133)",#999B85,Tea               
+  15-4305 TCX,"rgb(152,160,165)",#98A0A5,Quarry            
+  15-3912 TCX,"rgb(154,158,179)",#9A9EB3,Aleutian          
+  15-0332 TCX,"rgb(159,175,108)",#9FAF6C,Leaf Green        
+  15-4706 TCX,"rgb(153,174,174)",#99AEAE,Gray Mist         
+  14-3912 TCX,"rgb(159,169,190)",#9FA9BE,Zen Blue          
+  14-4506 TCX,"rgb(158,182,184)",#9EB6B8,Ether             
+  15-4030 TCX,"rgb(158,180,211)",#9EB4D3,Chambray Blue     
+  15-5812 TCX,"rgb(155,194,177)",#9BC2B1,Lichen            
+  14-0121 TCX,"rgb(167,199,150)",#A7C796,Nile Green        
+  13-0443 TCX,"rgb(192,219,58) ",#C0DB3A,Love Bird         
+  13-0535 TCX,"rgb(198,230,122)",#C6E67A,Sharp Green       
+  18-1653 TCX,"rgb(182,16,50)  ",#B61032,Toreador          
+  19-1764 TCX,"rgb(179,26,56)  ",#B31A38,Lipstick Red      
+  18-1551 TCX,"rgb(180,38,42)  ",#B4262A,Aura Orange       
+  18-2328 TCX,"rgb(171,52,117) ",#AB3475,Fuchsia Red       
+  18-2326 TCX,"rgb(168,62,108) ",#A83E6C,Cactus Flower     
+  18-3230 TCX,"rgb(169,86,140) ",#A9568C,Meadow Mauve      
+  18-1350 TCX,"rgb(161,77,58)  ",#A14D3A,Burnt Brick       
+  17-2617 TCX,"rgb(166,79,130) ",#A64F82,Dahlia Mauve      
+  18-1049 TCX,"rgb(171,104,25) ",#AB6819,Thai Curry        
+  18-1441 TCX,"rgb(156,86,66)  ",#9C5642,Baked Clay        
+  18-1343 TCX,"rgb(161,88,67)  ",#A15843,Auburn            
+  17-1623 TCX,"rgb(164,89,109) ",#A4596D,Rose Wine         
+  17-1818 TCX,"rgb(163,87,118) ",#A35776,Red Violet        
+  17-1340 TCX,"rgb(163,98,59)  ",#A3623B,Adobe             
+  18-1346 TCX,"rgb(167,89,73)  ",#A75949,Bruschetta        
+  17-1147 TCX,"rgb(166,102,70) ",#A66646,Amber Brown       
+  17-1525 TCX,"rgb(161,101,91) ",#A1655B,Cedar Wood        
+  18-1435 TCX,"rgb(162,102,102)",#A26666,Withered Rose     
+  18-1160 TCX,"rgb(172,107,41) ",#AC6B29,Sudan Brown       
+  16-1438 TCX,"rgb(164,111,68) ",#A46F44,Meerkat           
+  17-1134 TCX,"rgb(161,114,73) ",#A17249,Brown Sugar       
+  17-1330 TCX,"rgb(160,113,79) ",#A0714F,Lion              
+  17-1430 TCX,"rgb(163,110,81) ",#A36E51,Pecan Brown       
+  17-1609 TCX,"rgb(166,110,122)",#A66E7A,Mesa Rose         
+  17-3014 TCX,"rgb(167,108,151)",#A76C97,Mulberry          
+  17-1230 TCX,"rgb(164,120,100)",#A47864,Mocha Mousse      
+  17-1322 TCX,"rgb(158,126,103)",#9E7E67,Burro             
+  17-1512 TCX,"rgb(164,119,126)",#A4777E,Nostalgia Rose    
+  17-1605 TCX,"rgb(157,132,142)",#9D848E,Elderberry        
+  16-3817 TCX,"rgb(159,134,170)",#9F86AA,Rhapsody          
+  16-3720 TCX,"rgb(159,144,193)",#9F90C1,Sand Verbena      
+  17-0949 TCX,"rgb(177,131,47) ",#B1832F,Chai Tea          
+  15-3716 TCX,"rgb(176,159,202)",#B09FCA,Purple Rose       
+  15-3720 TCX,"rgb(179,160,201)",#B3A0C9,Lilac Breeze      
+  16-0742 TCX,"rgb(174,142,44) ",#AE8E2C,Green Sulphur     
+  17-1320 TCX,"rgb(166,138,109)",#A68A6D,Tannin            
+  16-0205 TCX,"rgb(154,145,134)",#9A9186,Vintage Khaki     
+  16-0639 TCX,"rgb(175,152,65) ",#AF9841,Golden Olive      
+  16-1118 TCX,"rgb(164,151,117)",#A49775,Sponge            
+  16-0518 TCX,"rgb(164,154,121)",#A49A79,Gray Green        
+  16-1107 TCX,"rgb(159,149,134)",#9F9586,Aluminum          
+  16-3802 TCX,"rgb(160,153,152)",#A09998,Ash               
+  16-3810 TCX,"rgb(161,152,175)",#A198AF,Wisteria          
+  15-0531 TCX,"rgb(163,169,105)",#A3A969,Sweet Pea         
+  16-0613 TCX,"rgb(163,159,134)",#A39F86,Elm               
+  16-1108 TCX,"rgb(167,155,130)",#A79B82,Twill             
+  16-0207 TCX,"rgb(162,158,146)",#A29E92,London Fog        
+  16-3801 TCX,"rgb(164,158,158)",#A49E9E,Opal Gray         
+  16-3803 TCX,"rgb(164,156,160)",#A49CA0,Gull Gray         
+  15-3910 TCX,"rgb(162,161,186)",#A2A1BA,Languid Lavender  
+  16-0550 TCX,"rgb(171,164,77) ",#ABA44D,Lentil Sprout     
+  15-6414 TCX,"rgb(161,173,146)",#A1AD92,Reseda            
+  15-4306 TCX,"rgb(163,169,166)",#A3A9A6,Belgian Block     
+  15-6310 TCX,"rgb(168,177,151)",#A8B197,Swamp             
+  14-4210 TCX,"rgb(163,180,196)",#A3B4C4,Celestial Blue    
+  15-6315 TCX,"rgb(168,187,162)",#A8BBA2,Smoke Green       
+  14-6312 TCX,"rgb(170,192,173)",#AAC0AD,Cameo Green       
+  14-5706 TCX,"rgb(169,189,177)",#A9BDB1,Silt Green        
+  13-0331 TCX,"rgb(175,203,128)",#AFCB80,Sap Green         
+  14-4311 TCX,"rgb(169,202,218)",#A9CADA,Corydalis Blue    
+  13-0651 TCX,"rgb(204,219,30) ",#CCDB1E,Evening Primrose  
+  13-5410 TCX,"rgb(171,211,219)",#ABD3DB,Iced Aqua         
+  13-0540 TCX,"rgb(195,211,99) ",#C3D363,Wild Lime         
+  18-1663 TCX,"rgb(190,19,45)  ",#BE132D,Chinese Red       
+  19-1763 TCX,"rgb(189,22,44)  ",#BD162C,Racing Red        
+  18-1761 TCX,"rgb(187,18,55)  ",#BB1237,Ski Patrol        
+  18-1950 TCX,"rgb(182,28,80)  ",#B61C50,Jazzy             
+  18-1655 TCX,"rgb(188,39,49)  ",#BC2731,Mars Red          
+  19-1663 TCX,"rgb(185,38,54)  ",#B92636,Ribbon Red        
+  18-1549 TCX,"rgb(188,50,44)  ",#BC322C,Valiant Poppy     
+  18-2336 TCX,"rgb(183,50,117) ",#B73275,Very Berry        
+  18-1550 TCX,"rgb(185,58,50)  ",#B93A32,Aurora Red        
+  18-1249 TCX,"rgb(187,92,20)  ",#BB5C14,Hawaiian Sunset   
+  18-1536 TCX,"rgb(171,79,65)  ",#AB4F41,Hot Sauce         
+  18-1633 TCX,"rgb(172,75,85)  ",#AC4B55,Garnet Rose       
+  16-1449 TCX,"rgb(180,84,34)  ",#B45422,Gold Flame        
+  17-1522 TCX,"rgb(167,93,103) ",#A75D67,Mauvewood         
+  17-3020 TCX,"rgb(186,105,161)",#BA69A1,Spring Crocus     
+  17-3240 TCX,"rgb(183,107,163)",#B76BA3,Bodacious         
+  18-1248 TCX,"rgb(181,90,48)  ",#B55A30,Rust              
+  18-1630 TCX,"rgb(173,93,93)  ",#AD5D5D,Dusty Cedar       
+  17-1336 TCX,"rgb(166,110,74) ",#A66E4A,Bran              
+  17-1608 TCX,"rgb(173,109,127)",#AD6D7F,Heather Rose      
+  16-1432 TCX,"rgb(167,117,77) ",#A7754D,Almond            
+  17-1143 TCX,"rgb(174,114,80) ",#AE7250,Hazel             
+  17-1520 TCX,"rgb(175,108,103)",#AF6C67,Canyon Rose       
+  18-1436 TCX,"rgb(173,109,104)",#AD6D68,Light Mahogany    
+  17-1328 TCX,"rgb(173,133,103)",#AD8567,Indian Tan        
+  17-1225 TCX,"rgb(174,133,108)",#AE856C,Tawny Birch       
+  16-1415 TCX,"rgb(167,140,123)",#A78C7B,Almondine         
+  16-3525 TCX,"rgb(169,139,175)",#A98BAF,Regal Orchid      
+  16-0954 TCX,"rgb(188,141,31) ",#BC8D1F,Arrowwood         
+  16-1133 TCX,"rgb(176,142,81) ",#B08E51,Mustard Gold      
+  17-1045 TCX,"rgb(176,136,90) ",#B0885A,Apple Cinnamon    
+  15-1506 TCX,"rgb(165,149,143)",#A5958F,Etherea           
+  16-1806 TCX,"rgb(174,140,142)",#AE8C8E,Woodrose          
+  16-3310 TCX,"rgb(177,142,170)",#B18EAA,Lavender Herb     
+  16-1318 TCX,"rgb(175,148,131)",#AF9483,Warm Taupe        
+  16-1703 TCX,"rgb(171,152,149)",#AB9895,Sphinx            
+  16-1120 TCX,"rgb(176,154,119)",#B09A77,Starfish          
+  15-3800 TCX,"rgb(167,161,158)",#A7A19E,Porpoise          
+  16-1103 TCX,"rgb(173,163,150)",#ADA396,Pure Cashmere     
+  16-1305 TCX,"rgb(170,159,150)",#AA9F96,String            
+  15-6304 TCX,"rgb(174,172,161)",#AEACA1,Pussywillow Gray  
+  14-3906 TCX,"rgb(177,170,179)",#B1AAB3,Raindrops         
+  15-3908 TCX,"rgb(169,173,194)",#A9ADC2,Icelandic Blue    
+  13-3920 TCX,"rgb(189,198,220)",#BDC6DC,Halogen Blue      
+  14-4202 TCX,"rgb(175,177,180)",#AFB1B4,Harbor Mist       
+  14-4206 TCX,"rgb(176,183,190)",#B0B7BE,Pearl Blue        
+  14-0223 TCX,"rgb(180,187,133)",#B4BB85,Nile              
+  14-5707 TCX,"rgb(173,195,180)",#ADC3B4,Aqua Foam         
+  14-4112 TCX,"rgb(173,190,211)",#ADBED3,Skyway            
+  14-0115 TCX,"rgb(180,199,156)",#B4C79C,Foam Green        
+  13-0324 TCX,"rgb(190,211,142)",#BED38E,Lettuce Green     
+  12-5507 TCX,"rgb(186,229,214)",#BAE5D6,Bay               
+  12-5409 TCX,"rgb(184,226,220)",#B8E2DC,Fair Aqua         
+  13-6008 TCX,"rgb(188,217,200)",#BCD9C8,Misty Jade        
+  18-1856 TCX,"rgb(198,23,78)  ",#C6174E,Virtual Pink      
+  18-1951 TCX,"rgb(192,19,82)  ",#C01352,Love Potion       
+  18-1664 TCX,"rgb(208,28,31)  ",#D01C1F,Fiery Red         
+  18-2045 TCX,"rgb(198,33,104) ",#C62168,Pink Peacock      
+  17-2624 TCX,"rgb(192,66,138) ",#C0428A,Rose Violet       
+  17-1449 TCX,"rgb(195,65,33)  ",#C34121,Pureed Pumpkin    
+  18-1652 TCX,"rgb(187,54,63)  ",#BB363F,Rococco Red       
+  18-1661 TCX,"rgb(197,51,70)  ",#C53346,Tomato Puree      
+  17-1641 TCX,"rgb(190,69,79)  ",#BE454F,Chrysanthemum     
+  17-1145 TCX,"rgb(196,98,21)  ",#C46215,Autumn Maple      
+  18-1454 TCX,"rgb(194,69,45)  ",#C2452D,Red Clay          
+  17-1450 TCX,"rgb(190,75,59)  ",#BE4B3B,SUMMER Fig
+  17-1140 TCX,"rgb(193,101,18) ",#C16512,Marmalade         
+  18-1448 TCX,"rgb(190,81,65)  ",#BE5141,Chili             
+  18-1635 TCX,"rgb(180,88,101) ",#B45865,Slate Rose        
+  17-1345 TCX,"rgb(185,91,63)  ",#B95B3F,Spice Route       
+  17-1446 TCX,"rgb(183,94,65)  ",#B75E41,Mango             
+  18-1447 TCX,"rgb(194,90,60)  ",#C25A3C,Orange Rust       
+  18-1535 TCX,"rgb(182,93,75)  ",#B65D4B,Ginger Spice      
+  17-1424 TCX,"rgb(176,112,105)",#B07069,Brick Dust        
+  17-1436 TCX,"rgb(185,113,79) ",#B9714F,Raw Sienna        
+  17-1048 TCX,"rgb(187,122,44) ",#BB7A2C,Inca Gold         
+  17-1046 TCX,"rgb(190,117,45) ",#BE752D,Golden Oak        
+  17-1718 TCX,"rgb(186,121,125)",#BA797D,Dusty Rose        
+  16-2111 TCX,"rgb(181,130,153)",#B58299,Mauve Orchid      
+  16-3416 TCX,"rgb(193,147,192)",#C193C0,Violet Tulle      
+  16-1336 TCX,"rgb(180,131,91) ",#B4835B,Biscuit           
+  16-1310 TCX,"rgb(170,144,125)",#AA907D,Natural           
+  16-1221 TCX,"rgb(176,144,128)",#B09080,Roebuck           
+  16-1710 TCX,"rgb(185,131,145)",#B98391,Foxglove          
+  16-1708 TCX,"rgb(184,137,149)",#B88995,Lilas             
+  16-3307 TCX,"rgb(174,144,167)",#AE90A7,Lavender Mist     
+  16-0946 TCX,"rgb(186,146,56) ",#BA9238,Honey             
+  17-1040 TCX,"rgb(190,138,74) ",#BE8A4A,Spruce Yellow     
+  17-1047 TCX,"rgb(182,143,82) ",#B68F52,Honey Mustard     
+  15-1040 TCX,"rgb(177,143,106)",#B18F6A,Iced Coffee       
+  16-1510 TCX,"rgb(174,148,144)",#AE9490,Fawn              
+  16-0952 TCX,"rgb(200,151,32) ",#C89720,Nugget Gold       
+  16-1326 TCX,"rgb(181,154,106)",#B59A6A,Prairie Sand      
+  16-1334 TCX,"rgb(182,149,116)",#B69574,Tan               
+  16-1320 TCX,"rgb(182,152,133)",#B69885,Nougat            
+  16-3205 TCX,"rgb(181,152,163)",#B598A3,Mauve Shadows     
+  16-0928 TCX,"rgb(190,158,111)",#BE9E6F,Curry             
+  16-1212 TCX,"rgb(180,159,137)",#B49F89,Nomad             
+  15-0719 TCX,"rgb(187,170,126)",#BBAA7E,Silver Fern       
+  15-0522 TCX,"rgb(181,173,136)",#B5AD88,Pale Olive Green  
+  15-1116 TCX,"rgb(186,170,145)",#BAAA91,Safari            
+  15-1307 TCX,"rgb(182,168,147)",#B6A893,White Pepper      
+  15-6307 TCX,"rgb(177,176,159)",#B1B09F,Agate Gray        
+  14-0216 TCX,"rgb(182,186,153)",#B6BA99,Lint              
+  14-0418 TCX,"rgb(186,182,150)",#BAB696,Bog               
+  14-6308 TCX,"rgb(183,181,159)",#B7B59F,Alfalfa           
+  14-3907 TCX,"rgb(185,179,197)",#B9B3C5,Thistle           
+  15-0533 TCX,"rgb(196,191,113)",#C4BF71,Linden Green      
+  14-0116 TCX,"rgb(181,195,142)",#B5C38E,Margarita         
+  14-4804 TCX,"rgb(185,188,182)",#B9BCB6,Blue Fox          
+  14-6007 TCX,"rgb(183,194,178)",#B7C2B2,Sea Foam          
+  14-4105 TCX,"rgb(186,188,192)",#BABCC0,Micro Chip        
+  14-4107 TCX,"rgb(185,186,189)",#B9BABD,Quiet Gray        
+  14-4110 TCX,"rgb(183,192,214)",#B7C0D6,Heather           
+  14-4504 TCX,"rgb(188,200,198)",#BCC8C6,Sky Gray          
+  13-4308 TCX,"rgb(181,199,211)",#B5C7D3,Baby Blue         
+  12-0317 TCX,"rgb(191,209,173)",#BFD1AD,Gleam             
+  13-0111 TCX,"rgb(191,209,179)",#BFD1B3,Seacrest          
+  12-5209 TCX,"rgb(195,233,228)",#C3E9E4,Soothing Sea      
+  12-5506 TCX,"rgb(192,220,205)",#C0DCCD,Dusty Aqua        
+  12-5406 TCX,"rgb(195,221,214)",#C3DDD6,Opal Blue         
+  12-5206 TCX,"rgb(198,227,225)",#C6E3E1,Blue Glass        
+  12-4604 TCX,"rgb(200,224,224)",#C8E0E0,Skylight          
+  18-1764 TCX,"rgb(204,28,59)  ",#CC1C3B,Lollipop          
+  18-1662 TCX,"rgb(205,33,42)  ",#CD212A,Flame Scarlet     
+  18-2143 TCX,"rgb(207,45,113) ",#CF2D71,Beetroot Purple   
+  17-2034 TCX,"rgb(206,49,117) ",#CE3175,Pink Yarrow       
+  18-1564 TCX,"rgb(202,52,34)  ",#CA3422,Poinciana         
+  18-2140 TCX,"rgb(203,51,115) ",#CB3373,Cabaret           
+  17-2036 TCX,"rgb(210,60,119) ",#D23C77,Magenta           
+  18-1660 TCX,"rgb(206,41,57)  ",#CE2939,Tomato            
+  18-1561 TCX,"rgb(218,50,28)  ",#DA321C,Orange.com        
+  17-1654 TCX,"rgb(203,52,65)  ",#CB3441,Poinsettia        
+  17-2625 TCX,"rgb(206,107,164)",#CE6BA4,Super Pink        
+  17-1926 TCX,"rgb(206,91,120) ",#CE5B78,Fruit Dove        
+  17-1540 TCX,"rgb(194,106,90) ",#C26A5A,Apricot Brandy    
+  16-3115 TCX,"rgb(198,127,174)",#C67FAE,Crocus            
+  16-3116 TCX,"rgb(202,128,177)",#CA80B1,Opera Mauve       
+  16-1149 TCX,"rgb(200,118,41) ",#C87629,Desert Sun        
+  16-1347 TCX,"rgb(197,115,61) ",#C5733D,Peach Caramel     
+  16-1346 TCX,"rgb(199,121,67) ",#C77943,Golden Ochre      
+  16-1348 TCX,"rgb(197,118,68) ",#C57644,Tomato Cream      
+  15-0953 TCX,"rgb(203,142,22) ",#CB8E16,Golden Yellow     
+  16-1422 TCX,"rgb(186,134,113)",#BA8671,Cork              
+  16-1516 TCX,"rgb(192,138,128)",#C08A80,Cameo Brown       
+  16-1712 TCX,"rgb(194,135,153)",#C28799,Polignac          
+  15-1430 TCX,"rgb(189,140,102)",#BD8C66,Pastry Shell      
+  16-1333 TCX,"rgb(185,142,104)",#B98E68,Doe               
+  16-1317 TCX,"rgb(185,153,132)",#B99984,Brush             
+  16-0945 TCX,"rgb(195,150,77) ",#C3964D,Tinsel            
+  15-1425 TCX,"rgb(192,145,108)",#C0916C,Fenugreek         
+  16-1219 TCX,"rgb(190,151,133)",#BE9785,Tuscany           
+  16-1509 TCX,"rgb(187,165,160)",#BBA5A0,Shadow Gray       
+  15-3207 TCX,"rgb(196,157,180)",#C49DB4,Mauve Mist        
+  15-0743 TCX,"rgb(196,166,71) ",#C4A647,Oil Yellow        
+  15-0732 TCX,"rgb(193,166,92) ",#C1A65C,Olivenite         
+  16-0920 TCX,"rgb(188,164,131)",#BCA483,Curds & Whey      
+  15-1020 TCX,"rgb(191,165,138)",#BFA58A,Ginger Root       
+  15-2205 TCX,"rgb(191,163,175)",#BFA3AF,Dawn Pink         
+  15-2705 TCX,"rgb(192,165,174)",#C0A5AE,Keepsake Lilac    
+  14-0721 TCX,"rgb(192,173,124)",#C0AD7C,Hemp              
+  15-1314 TCX,"rgb(193,166,141)",#C1A68D,Cuban Sand        
+  14-1208 TCX,"rgb(192,172,146)",#C0AC92,Irish Cream       
+  15-1308 TCX,"rgb(189,171,155)",#BDAB9B,Doeskin           
+  15-2706 TCX,"rgb(194,172,177)",#C2ACB1,Violet Ice        
+  15-3508 TCX,"rgb(192,170,192)",#C0AAC0,Fair Orchid       
+  15-1216 TCX,"rgb(191,175,146)",#BFAF92,Pale Khaki        
+  15-1217 TCX,"rgb(199,181,149)",#C7B595,Mojave Desert     
+  14-4501 TCX,"rgb(189,182,171)",#BDB6AB,Silver Lining     
+  14-4103 TCX,"rgb(187,188,188)",#BBBCBC,Gray Violet       
+  15-3807 TCX,"rgb(188,180,196)",#BCB4C4,Misty Lilac       
+  14-3904 TCX,"rgb(189,184,199)",#BDB8C7,Evening Haze      
+  14-0647 TCX,"rgb(206,193,83) ",#CEC153,Celery            
+  14-0105 TCX,"rgb(195,189,171)",#C3BDAB,Overcast          
+  14-4500 TCX,"rgb(194,190,182)",#C2BEB6,Moonstruck        
+  14-4502 TCX,"rgb(186,194,186)",#BAC2BA,Mercury           
+  13-4201 TCX,"rgb(195,198,200)",#C3C6C8,Oyster Mushroom   
+  13-4405 TCX,"rgb(191,205,204)",#BFCDCC,Misty Blue        
+  14-4102 TCX,"rgb(197,198,199)",#C5C6C7,Glacier Gray      
+  13-4110 TCX,"rgb(191,199,214)",#BFC7D6,Arctic Ice        
+  13-4111 TCX,"rgb(191,202,214)",#BFCAD6,Plein Air         
+  12-0435 TCX,"rgb(201,215,126)",#C9D77E,Daiquiri Green    
+  12-4607 TCX,"rgb(188,211,213)",#BCD3D5,Pastel Blue       
+  13-4404 TCX,"rgb(198,210,210)",#C6D2D2,Ice Flow          
+  13-0319 TCX,"rgb(207,224,157)",#CFE09D,Shadow Lime       
+  12-0109 TCX,"rgb(210,231,202)",#D2E7CA,Ambrosia          
+  12-5504 TCX,"rgb(206,225,212)",#CEE1D4,Clearly Aqua      
+  17-1842 TCX,"rgb(212,46,91)  ",#D42E5B,Azalea            
+  18-1754 TCX,"rgb(211,46,94)  ",#D32E5E,Raspberry         
+  18-1445 TCX,"rgb(215,60,38)  ",#D73C26,Spicy Orange      
+  17-1753 TCX,"rgb(218,61,88)  ",#DA3D58,Geranium          
+  17-1452 TCX,"rgb(209,88,55)  ",#D15837,Koi               
+  17-1929 TCX,"rgb(209,98,119) ",#D16277,Rapture Rose      
+  17-1349 TCX,"rgb(232,104,0)  ",#E86800,Exuberance        
+  16-1260 TCX,"rgb(213,98,49)  ",#D56231,Harvest Pumpkin   
+  17-1927 TCX,"rgb(207,105,119)",#CF6977,Desert Rose       
+  16-1441 TCX,"rgb(209,111,82) ",#D16F52,Arabesque         
+  17-2120 TCX,"rgb(210,115,143)",#D2738F,Chateau Rose      
+  16-1340 TCX,"rgb(206,123,91) ",#CE7B5B,Brandied Melon    
+  16-1435 TCX,"rgb(206,120,93) ",#CE785D,Carnelian         
+  16-1332 TCX,"rgb(198,132,99) ",#C68463,Pheasant          
+  16-1610 TCX,"rgb(202,132,138)",#CA848A,Brandied Apricot  
+  16-1140 TCX,"rgb(208,137,63) ",#D0893F,Yam               
+  16-1150 TCX,"rgb(208,131,68) ",#D08344,Topaz             
+  16-1148 TCX,"rgb(207,136,72) ",#CF8848,Nugget            
+  16-1328 TCX,"rgb(196,138,105)",#C48A69,Sandstone         
+  16-1431 TCX,"rgb(206,132,119)",#CE8477,Canyon Clay       
+  16-1617 TCX,"rgb(209,132,137)",#D18489,Mauveglow         
+  16-1715 TCX,"rgb(206,132,152)",#CE8498,Wild Rose         
+  16-2215 TCX,"rgb(206,135,159)",#CE879F,Cashmere Rose     
+  16-1331 TCX,"rgb(202,153,120)",#CA9978,Toast             
+  15-1315 TCX,"rgb(194,165,148)",#C2A594,Rugby Tan         
+  15-1511 TCX,"rgb(197,161,147)",#C5A193,Mahogany Rose     
+  15-1906 TCX,"rgb(200,159,165)",#C89FA5,Zephyr            
+  15-2210 TCX,"rgb(210,148,170)",#D294AA,Orchid Smoke      
+  15-0960 TCX,"rgb(214,156,47) ",#D69C2F,Mango Mojito      
+  15-1046 TCX,"rgb(211,156,67) ",#D39C43,Mineral Yellow    
+  15-1316 TCX,"rgb(201,163,141)",#C9A38D,Maple Sugar       
+  15-1512 TCX,"rgb(202,163,154)",#CAA39A,Misty Rose        
+  14-0740 TCX,"rgb(210,176,76) ",#D2B04C,Bamboo            
+  14-0952 TCX,"rgb(216,174,71) ",#D8AE47,Spicy Mustard     
+  14-0000 TCX,"rgb(193,183,176)",#C1B7B0,Silver Gray       
+  14-3204 TCX,"rgb(206,173,190)",#CEADBE,Fragrant Lilac    
+  14-1031 TCX,"rgb(209,178,114)",#D1B272,Rattan            
+  14-1025 TCX,"rgb(201,178,124)",#C9B27C,Cocoon            
+  14-1116 TCX,"rgb(204,179,144)",#CCB390,Almond Buff       
+  14-1112 TCX,"rgb(202,182,152)",#CAB698,Pebble            
+  14-0626 TCX,"rgb(204,185,126)",#CCB97E,Dried Moss        
+  14-0826 TCX,"rgb(207,187,123)",#CFBB7B,Pampas            
+  13-1105 TCX,"rgb(199,187,164)",#C7BBA4,Brown Rice        
+  14-0108 TCX,"rgb(200,193,171)",#C8C1AB,Castle Wall       
+  13-4104 TCX,"rgb(198,197,198)",#C6C5C6,Antarctica        
+  13-0648 TCX,"rgb(217,206,82) ",#D9CE52,Green Sheen       
+  13-0640 TCX,"rgb(218,205,101)",#DACD65,Acacia            
+  14-0636 TCX,"rgb(209,200,124)",#D1C87C,Muted Lime        
+  13-0632 TCX,"rgb(210,204,129)",#D2CC81,Endive            
+  13-0522 TCX,"rgb(203,206,145)",#CBCE91,Pale Green        
+  14-0615 TCX,"rgb(202,196,164)",#CAC4A4,Green Haze        
+  13-0401 TCX,"rgb(203,195,180)",#CBC3B4,Oatmeal           
+  13-6106 TCX,"rgb(197,204,192)",#C5CCC0,Green Tint        
+  13-6006 TCX,"rgb(202,211,193)",#CAD3C1,Almost Aqua       
+  13-6105 TCX,"rgb(203,206,190)",#CBCEBE,Celadon Tint      
+  12-5303 TCX,"rgb(203,215,210)",#CBD7D2,Sprout Green      
+  13-4804 TCX,"rgb(196,214,211)",#C4D6D3,Pale Blue         
+  13-4103 TCX,"rgb(201,211,220)",#C9D3DC,Illusion Blue     
+  12-0315 TCX,"rgb(212,219,178)",#D4DBB2,White Jade        
+  12-6205 TCX,"rgb(207,219,209)",#CFDBD1,Milky Green       
+  12-4805 TCX,"rgb(203,220,223)",#CBDCDF,Wan Blue          
+  12-0312 TCX,"rgb(215,232,188)",#D7E8BC,Lime Cream        
+  11-4805 TCX,"rgb(216,235,230)",#D8EBE6,Hint of Mint      
+  12-0741 TCX,"rgb(223,239,135)",#DFEF87,Sunny Lime        
+  12-0106 TCX,"rgb(211,222,196)",#D3DEC4,Meadow Mist       
+  12-0108 TCX,"rgb(214,222,201)",#D6DEC9,Canary Green      
+  17-1664 TCX,"rgb(220,52,59)  ",#DC343B,Poppy Red         
+  17-1558 TCX,"rgb(223,63,50)  ",#DF3F32,Grenadine         
+  17-1564 TCX,"rgb(221,65,50)  ",#DD4132,Fiesta            
+  18-1651 TCX,"rgb(224,73,81)  ",#E04951,Cayenne           
+  17-1461 TCX,"rgb(226,85,44)  ",#E2552C,Orangeade         
+  16-1164 TCX,"rgb(223,117,0)  ",#DF7500,Orange Pepper     
+  17-1644 TCX,"rgb(215,92,93)  ",#D75C5D,Spiced Coral      
+  18-1649 TCX,"rgb(217,97,91)  ",#D9615B,Deep Sea Coral    
+  17-1937 TCX,"rgb(229,89,130) ",#E55982,Hot Pink          
+  15-1150 TCX,"rgb(224,129,25) ",#E08119,Dark Cheddar      
+  16-1454 TCX,"rgb(216,109,57) ",#D86D39,Jaffa Orange      
+  15-2718 TCX,"rgb(223,136,183)",#DF88B7,Fuchsia Pink      
+  16-1253 TCX,"rgb(220,121,58) ",#DC793A,Orange Ochre      
+  16-1337 TCX,"rgb(210,125,86) ",#D27D56,Coral Gold        
+  16-1345 TCX,"rgb(210,127,99) ",#D27F63,Sun Baked         
+  16-1624 TCX,"rgb(218,126,122)",#DA7E7A,Lantana           
+  16-1330 TCX,"rgb(210,147,128)",#D29380,Muted Clay        
+  15-1050 TCX,"rgb(217,153,56) ",#D99938,Golden Glow       
+  15-1147 TCX,"rgb(225,150,64) ",#E19640,Butterscotch      
+  15-1611 TCX,"rgb(214,159,162)",#D69FA2,Bridal Rose       
+  15-1912 TCX,"rgb(222,152,171)",#DE98AB,Sea Pink          
+  14-0755 TCX,"rgb(221,182,20) ",#DDB614,Sulphur           
+  14-0951 TCX,"rgb(226,168,41) ",#E2A829,Golden Rod        
+  16-1142 TCX,"rgb(219,155,89) ",#DB9B59,Golden Nugget     
+  15-1231 TCX,"rgb(210,161,114)",#D2A172,Clay              
+  15-1125 TCX,"rgb(204,165,128)",#CCA580,Porcini           
+  15-1516 TCX,"rgb(211,162,151)",#D3A297,Peach Beige       
+  14-1041 TCX,"rgb(221,167,88) ",#DDA758,Golden Apricot    
+  14-1315 TCX,"rgb(207,176,149)",#CFB095,Hazelnut          
+  14-1038 TCX,"rgb(215,181,127)",#D7B57F,New Wheat         
+  15-1218 TCX,"rgb(206,184,153)",#CEB899,Semolina          
+  14-1212 TCX,"rgb(209,183,160)",#D1B7A0,Frappé            
+  14-1506 TCX,"rgb(211,180,173)",#D3B4AD,Rose Smoke        
+  14-1803 TCX,"rgb(212,186,182)",#D4BAB6,Sepia Rose        
+  14-3206 TCX,"rgb(212,185,203)",#D4B9CB,Winsome Orchid    
+  14-0754 TCX,"rgb(228,191,69) ",#E4BF45,Super Lemon       
+  13-0739 TCX,"rgb(222,192,95) ",#DEC05F,Cream Gold        
+  14-0935 TCX,"rgb(218,190,129)",#DABE81,Jojoba            
+  13-0919 TCX,"rgb(210,194,157)",#D2C29D,Soybean           
+  13-0607 TCX,"rgb(208,197,177)",#D0C5B1,Fog               
+  13-0000 TCX,"rgb(205,198,189)",#CDC6BD,Moonbeam          
+  14-3803 TCX,"rgb(209,192,191)",#D1C0BF,Hushed Violet     
+  13-3820 TCX,"rgb(210,196,214)",#D2C4D6,Lavender Fog      
+  13-0725 TCX,"rgb(218,196,131)",#DAC483,Raffia            
+  12-0619 TCX,"rgb(212,204,154)",#D4CC9A,Dusty Yellow      
+  13-0624 TCX,"rgb(213,205,148)",#D5CD94,Golden Mist       
+  12-0418 TCX,"rgb(211,204,163)",#D3CCA3,Hay               
+  13-0715 TCX,"rgb(216,201,163)",#D8C9A3,Sea Mist          
+  13-0611 TCX,"rgb(210,203,175)",#D2CBAF,Moth              
+  13-0711 TCX,"rgb(212,202,176)",#D4CAB0,Putty             
+  13-1007 TCX,"rgb(210,202,175)",#D2CAAF,Oyster White      
+  13-1009 TCX,"rgb(218,199,171)",#DAC7AB,Biscotti          
+  12-0311 TCX,"rgb(210,205,180)",#D2CDB4,Asparagus Green   
+  13-4105 TCX,"rgb(208,208,218)",#D0D0DA,Lilac Hint        
+  12-4301 TCX,"rgb(214,206,190)",#D6CEBE,Almond Milk       
+  12-5203 TCX,"rgb(210,216,210)",#D2D8D2,Murmur            
+  12-5403 TCX,"rgb(208,217,212)",#D0D9D4,Blue Flower       
+  12-0633 TCX,"rgb(223,216,126)",#DFD87E,Canary Yellow     
+  13-0614 TCX,"rgb(220,216,168)",#DCD8A8,Garden Glade      
+  12-5603 TCX,"rgb(211,217,209)",#D3D9D1,Zephyr Blue       
+  12-4305 TCX,"rgb(211,222,223)",#D3DEDF,Spa Blue          
+  13-0644 TCX,"rgb(243,221,62) ",#F3DD3E,Golden Kiwi       
+  12-0530 TCX,"rgb(229,231,144)",#E5E790,Charlock          
+  12-0520 TCX,"rgb(223,230,159)",#DFE69F,Pale Lime Yellow  
+  12-0521 TCX,"rgb(225,227,169)",#E1E3A9,Young Wheat       
+  11-4604 TCX,"rgb(216,231,231)",#D8E7E7,Billowing Sail    
+  12-5508 TCX,"rgb(216,233,229)",#D8E9E5,Hushed Green      
+  12-0525 TCX,"rgb(227,234,165)",#E3EAA5,Luminary Green    
+  13-0646 TCX,"rgb(234,217,78) ",#EAD94E,Meadowlark        
+  12-0524 TCX,"rgb(223,222,155)",#DFDE9B,Citron            
+  17-1464 TCX,"rgb(240,86,39)  ",#F05627,Red Orange        
+  16-1363 TCX,"rgb(233,92,32)  ",#E95C20,Puffin's Bill     
+  17-1562 TCX,"rgb(231,74,51)  ",#E74A33,Mandarin Red      
+  17-1736 TCX,"rgb(234,102,118)",#EA6676,Sun Kissed Coral  
+  17-1930 TCX,"rgb(235,96,129) ",#EB6081,Camellia Rose     
+  17-1360 TCX,"rgb(232,112,58) ",#E8703A,Celosia Orange    
+  17-1928 TCX,"rgb(234,115,141)",#EA738D,Bubblegum         
+  16-1344 TCX,"rgb(226,122,83) ",#E27A53,Dusty Orange      
+  16-1626 TCX,"rgb(222,130,134)",#DE8286,Peach Blossom     
+  16-1723 TCX,"rgb(230,121,142)",#E6798E,Confetti          
+  16-1338 TCX,"rgb(222,142,101)",#DE8E65,Copper Tan        
+  15-1333 TCX,"rgb(225,146,122)",#E1927A,Canyon Sunset     
+  16-1329 TCX,"rgb(227,142,132)",#E38E84,Coral Haze        
+  16-1520 TCX,"rgb(221,146,137)",#DD9289,Lobster Bisque    
+  15-1054 TCX,"rgb(238,150,38) ",#EE9626,Cadmium Yellow    
+  15-1234 TCX,"rgb(221,156,107)",#DD9C6B,Gold Earth        
+  15-1327 TCX,"rgb(217,155,124)",#D99B7C,Peach Bloom       
+  15-1515 TCX,"rgb(217,166,161)",#D9A6A1,Mellow Rose       
+  14-2307 TCX,"rgb(219,169,184)",#DBA9B8,Cameo Pink        
+  13-0946 TCX,"rgb(231,170,86) ",#E7AA56,Jurassic Gold     
+  14-1316 TCX,"rgb(222,170,155)",#DEAA9B,Dusty Pink        
+  14-1313 TCX,"rgb(219,176,162)",#DBB0A2,Rose Cloud        
+  15-1415 TCX,"rgb(226,169,161)",#E2A9A1,Coral Cloud       
+  14-1508 TCX,"rgb(220,177,175)",#DCB1AF,Silver Pink       
+  14-1122 TCX,"rgb(218,181,143)",#DAB58F,Sheepskin         
+  14-1127 TCX,"rgb(224,181,137)",#E0B589,Desert Mist       
+  13-1014 TCX,"rgb(216,185,152)",#D8B998,Mellow Buff       
+  14-1311 TCX,"rgb(221,182,171)",#DDB6AB,Evening Sand      
+  14-1314 TCX,"rgb(223,186,169)",#DFBAA9,Spanish Villa     
+  14-1907 TCX,"rgb(223,184,182)",#DFB8B6,Peachskin         
+  13-0746 TCX,"rgb(238,200,67) ",#EEC843,Maize             
+  14-0936 TCX,"rgb(223,192,138)",#DFC08A,Sahara Sun        
+  14-1113 TCX,"rgb(216,192,157)",#D8C09D,Marzipan          
+  13-1011 TCX,"rgb(218,192,167)",#DAC0A7,Ivory Cream       
+  13-1013 TCX,"rgb(221,188,160)",#DDBCA0,Appleblossom      
+  13-1015 TCX,"rgb(220,189,158)",#DCBD9E,Honey Peach       
+  14-1119 TCX,"rgb(223,192,159)",#DFC09F,Winter Wheat      
+  14-1210 TCX,"rgb(216,192,173)",#D8C0AD,Shifting Sand     
+  13-1208 TCX,"rgb(226,189,179)",#E2BDB3,Peachy Keen       
+  14-1309 TCX,"rgb(219,190,183)",#DBBEB7,Peach Whip        
+  13-1107 TCX,"rgb(218,203,190)",#DACBBE,Whisper Pink      
+  14-1905 TCX,"rgb(226,193,192)",#E2C1C0,Lotus             
+  14-0827 TCX,"rgb(227,204,129)",#E3CC81,Dusky Citron      
+  13-0922 TCX,"rgb(224,201,146)",#E0C992,Straw             
+  13-0915 TCX,"rgb(220,201,158)",#DCC99E,Reed Yellow       
+  13-0613 TCX,"rgb(217,202,165)",#D9CAA5,Chino Green       
+  13-0513 TCX,"rgb(216,207,178)",#D8CFB2,Frozen Dew        
+  13-0907 TCX,"rgb(216,204,187)",#D8CCBB,Sandshell         
+  13-1008 TCX,"rgb(218,204,180)",#DACCB4,Bleached Sand     
+  13-1308 TCX,"rgb(218,202,183)",#DACAB7,Brazilian Sand    
+  12-0110 TCX,"rgb(215,207,187)",#D7CFBB,Pistachio Shell   
+  12-1403 TCX,"rgb(220,205,188)",#DCCDBC,Tapioca           
+  12-1404 TCX,"rgb(219,203,189)",#DBCBBD,Pink Tint         
+  13-3801 TCX,"rgb(215,203,196)",#D7CBC4,Crystal Gray      
+  12-2903 TCX,"rgb(222,198,211)",#DEC6D3,Light Lilac       
+  13-3405 TCX,"rgb(224,199,215)",#E0C7D7,Lilac Snow        
+  13-3802 TCX,"rgb(219,210,219)",#DBD2DB,Orchid Tint       
+  13-4108 TCX,"rgb(213,213,216)",#D5D5D8,Nimbus Cloud      
+  12-0605 TCX,"rgb(223,209,187)",#DFD1BB,Angora            
+  13-0908 TCX,"rgb(223,209,190)",#DFD1BE,Parchment         
+  12-0404 TCX,"rgb(218,216,201)",#DAD8C9,Light Gray        
+  13-0905 TCX,"rgb(221,213,199)",#DDD5C7,Birch             
+  13-0002 TCX,"rgb(219,213,209)",#DBD5D1,White Sand        
+  12-4705 TCX,"rgb(214,219,217)",#D6DBD9,Blue Blush        
+  12-0642 TCX,"rgb(237,221,89) ",#EDDD59,Aurora            
+  12-0646 TCX,"rgb(235,223,103)",#EBDF67,Celandine         
+  13-0720 TCX,"rgb(229,214,142)",#E5D68E,Custard           
+  12-0104 TCX,"rgb(225,219,200)",#E1DBC8,White Asparagus   
+  12-5201 TCX,"rgb(218,220,208)",#DADCD0,Icicle            
+  12-5202 TCX,"rgb(222,215,200)",#DED7C8,Turtledove        
+  11-0622 TCX,"rgb(238,231,142)",#EEE78E,Yellow Iris       
+  12-6206 TCX,"rgb(216,227,215)",#D8E3D7,Fairest Jade      
+  11-0304 TCX,"rgb(221,227,213)",#DDE3D5,Water Lily        
+  12-5404 TCX,"rgb(224,230,215)",#E0E6D7,Whisper Green     
+  12-6207 TCX,"rgb(221,226,214)",#DDE2D6,Frost             
+  12-6208 TCX,"rgb(220,228,215)",#DCE4D7,Phantom Green     
+  12-0740 TCX,"rgb(240,232,125)",#F0E87D,Limelight         
+  11-0620 TCX,"rgb(238,234,151)",#EEEA97,Elfin Yellow      
+  11-0623 TCX,"rgb(236,233,155)",#ECE99B,Yellow Pear       
+  11-0618 TCX,"rgb(237,233,173)",#EDE9AD,Wax Yellow        
+  11-0710 TCX,"rgb(237,237,183)",#EDEDB7,Tender Yellow     
+  11-4601 TCX,"rgb(226,234,235)",#E2EAEB,Bit of Blue       
+  11-4001 TCX,"rgb(237,241,254)",#EDF1FE,Brilliant White   
+  12-0738 TCX,"rgb(239,220,117)",#EFDC75,Yellow Cream      
+  12-0721 TCX,"rgb(240,231,157)",#F0E79D,Lemonade          
+  17-1361 TCX,"rgb(244,85,32)  ",#F45520,Scarlet Ibis      
+  17-1462 TCX,"rgb(242,85,44)  ",#F2552C,Flame             
+  16-1358 TCX,"rgb(249,103,20) ",#F96714,Orange Tiger      
+  17-1744 TCX,"rgb(238,92,108) ",#EE5C6C,Calypso Coral     
+  16-1453 TCX,"rgb(249,101,49) ",#F96531,Exotic Orange     
+  16-1362 TCX,"rgb(249,99,59)  ",#F9633B,Vermillion Orange 
+  16-1452 TCX,"rgb(243,105,68) ",#F36944,Firecracker       
+  16-1735 TCX,"rgb(238,109,138)",#EE6D8A,Pink Lemonade     
+  16-1539 TCX,"rgb(237,116,100)",#ED7464,Coral             
+  15-2216 TCX,"rgb(241,138,173)",#F18AAD,Sachet Pink       
+  15-1335 TCX,"rgb(254,126,3)  ",#FE7E03,Tangelo           
+  15-1164 TCX,"rgb(255,141,0)  ",#FF8D00,Bright Marigold   
+  16-1257 TCX,"rgb(244,128,55) ",#F48037,Sun Orange        
+  16-1529 TCX,"rgb(233,137,126)",#E9897E,Burnt Coral       
+  15-1242 TCX,"rgb(236,147,94) ",#EC935E,Muskmelon         
+  15-1151 TCX,"rgb(244,150,58) ",#F4963A,Iceland Poppy     
+  15-1334 TCX,"rgb(234,149,117)",#EA9575,Shell Coral       
+  15-1520 TCX,"rgb(235,150,135)",#EB9687,Blooming Dahlia   
+  15-1816 TCX,"rgb(237,156,168)",#ED9CA8,Peony             
+  14-1318 TCX,"rgb(232,167,152)",#E8A798,Coral Pink        
+  14-0957 TCX,"rgb(247,183,24) ",#F7B718,Spectra Yellow    
+  14-0955 TCX,"rgb(249,172,47) ",#F9AC2F,Citrus            
+  14-1045 TCX,"rgb(239,173,85) ",#EFAD55,Amber             
+  14-1224 TCX,"rgb(237,170,134)",#EDAA86,Coral Sands       
+  14-1220 TCX,"rgb(230,175,145)",#E6AF91,Peach Nougat      
+  14-1909 TCX,"rgb(230,178,184)",#E6B2B8,Coral Blush       
+  13-0759 TCX,"rgb(244,191,58) ",#F4BF3A,Solar Power       
+  13-1018 TCX,"rgb(227,188,142)",#E3BC8E,Desert Dust       
+  15-1319 TCX,"rgb(229,179,155)",#E5B39B,Almost Apricot    
+  14-1312 TCX,"rgb(228,191,179)",#E4BFB3,Pale Blush        
+  14-1511 TCX,"rgb(236,178,179)",#ECB2B3,Powder Pink       
+  13-2805 TCX,"rgb(230,188,205)",#E6BCCD,Roseate Spoonbill 
+  13-0932 TCX,"rgb(237,195,115)",#EDC373,Cornsilk          
+  14-0847 TCX,"rgb(241,191,112)",#F1BF70,Buff Yellow       
+  13-1016 TCX,"rgb(222,197,165)",#DEC5A5,Wheat             
+  14-1120 TCX,"rgb(226,196,166)",#E2C4A6,Apricot Illusion  
+  13-1904 TCX,"rgb(230,197,202)",#E6C5CA,Chalk Pink        
+  13-2803 TCX,"rgb(225,198,204)",#E1C6CC,Pale Lilac        
+  12-2901 TCX,"rgb(223,205,198)",#DFCDC6,Morganite         
+  13-1405 TCX,"rgb(225,207,198)",#E1CFC6,Shell             
+  13-1504 TCX,"rgb(228,204,198)",#E4CCC6,Peach Blush       
+  13-2004 TCX,"rgb(231,201,202)",#E7C9CA,Potpourri         
+  12-0718 TCX,"rgb(231,211,145)",#E7D391,Pineapple Slice   
+  13-0917 TCX,"rgb(231,209,161)",#E7D1A1,Italian Straw     
+  12-0910 TCX,"rgb(229,208,177)",#E5D0B1,Lamb's Wool       
+  13-0916 TCX,"rgb(232,208,167)",#E8D0A7,Chamomile         
+  12-0709 TCX,"rgb(228,207,182)",#E4CFB6,Macadamia         
+  12-0304 TCX,"rgb(224,213,198)",#E0D5C6,Whitecap Gray     
+  12-1005 TCX,"rgb(231,207,189)",#E7CFBD,Novelle Peach     
+  12-1007 TCX,"rgb(233,209,191)",#E9D1BF,Pastel Rose Tan   
+  12-1206 TCX,"rgb(231,207,199)",#E7CFC7,Silver Peony      
+  12-0737 TCX,"rgb(248,220,108)",#F8DC6C,Goldfinch         
+  12-0703 TCX,"rgb(230,218,196)",#E6DAC4,Seedpearl         
+  12-0804 TCX,"rgb(230,221,197)",#E6DDC5,Cloud Cream       
+  12-0806 TCX,"rgb(236,221,190)",#ECDDBE,Rutabaga          
+  11-0603 TCX,"rgb(229,217,211)",#E5D9D3,Pastel Parchment  
+  12-4302 TCX,"rgb(223,221,215)",#DFDDD7,Vaporous Gray     
+  11-4301 TCX,"rgb(226,226,218)",#E2E2DA,Lily White        
+  11-4303 TCX,"rgb(225,227,222)",#E1E3DE,Mystic Blue       
+  12-2103 TCX,"rgb(231,220,217)",#E7DCD9,Almost Mauve      
+  12-0742 TCX,"rgb(243,231,121)",#F3E779,Lemon Verbena     
+  11-4804 TCX,"rgb(228,234,223)",#E4EADF,Lightest Sky      
+  11-4800 TCX,"rgb(231,233,231)",#E7E9E7,Blanc de Blanc    
+  11-0609 TCX,"rgb(241,236,202)",#F1ECCA,Ethereal Green    
+  11-0205 TCX,"rgb(236,234,208)",#ECEAD0,Glass Green       
+  11-0617 TCX,"rgb(244,236,194)",#F4ECC2,Transparent Yellow
+  16-1364 TCX,"rgb(255,116,32) ",#FF7420,Vibrant Orange    
+  16-1460 TCX,"rgb(252,100,45) ",#FC642D,Dragon Fire       
+  16-1451 TCX,"rgb(254,99,71)  ",#FE6347,Nasturtium        
+  15-1262 TCX,"rgb(254,140,24) ",#FE8C18,Carrot Curl       
+  15-1264 TCX,"rgb(254,132,14) ",#FE840E,Turmeric          
+  16-1359 TCX,"rgb(250,122,53) ",#FA7A35,Orange Peel       
+  16-1541 TCX,"rgb(246,116,95) ",#F6745F,Camellia          
+  16-1545 TCX,"rgb(247,116,100)",#F77464,Coral Quartz      
+  16-1548 TCX,"rgb(247,120,107)",#F7786B,Peach Echo        
+  16-1731 TCX,"rgb(245,127,142)",#F57F8E,Strawberry Pink   
+  14-1064 TCX,"rgb(255,165,0)  ",#FFA500,Saffron           
+  14-1159 TCX,"rgb(255,160,16) ",#FFA010,Zinnia            
+  15-1247 TCX,"rgb(248,143,88) ",#F88F58,Tangerine         
+  16-1357 TCX,"rgb(255,140,85) ",#FF8C55,Bird of Paradise  
+  15-1626 TCX,"rgb(255,141,148)",#FF8D94,Salmon Rose       
+  15-1062 TCX,"rgb(255,176,0)  ",#FFB000,Gold Fusion       
+  14-1714 TCX,"rgb(239,166,170)",#EFA6AA,Quartz Pink       
+  15-1243 TCX,"rgb(254,161,102)",#FEA166,Papaya            
+  14-1139 TCX,"rgb(245,162,111)",#F5A26F,Pumpkin           
+  15-1331 TCX,"rgb(250,161,129)",#FAA181,Coral Reef        
+  13-0859 TCX,"rgb(255,195,0)  ",#FFC300,Lemon Chrome      
+  14-1052 TCX,"rgb(251,170,76) ",#FBAA4C,Kumquat           
+  14-1241 TCX,"rgb(249,170,125)",#F9AA7D,Orange Chiffon    
+  14-1227 TCX,"rgb(242,169,135)",#F2A987,Peach             
+  14-1230 TCX,"rgb(251,172,130)",#FBAC82,Apricot Wash      
+  14-1323 TCX,"rgb(250,170,148)",#FAAA94,Salmon            
+  14-1911 TCX,"rgb(245,176,189)",#F5B0BD,Candy Pink        
+  13-0947 TCX,"rgb(252,185,83) ",#FCB953,Banana            
+  13-1024 TCX,"rgb(235,195,150)",#EBC396,Buff              
+  13-1125 TCX,"rgb(245,184,149)",#F5B895,Peach Quartz      
+  13-2804 TCX,"rgb(233,195,207)",#E9C3CF,Parfait Pink      
+  12-2905 TCX,"rgb(237,208,221)",#EDD0DD,Cradle Pink       
+  14-0850 TCX,"rgb(253,192,78) ",#FDC04E,Daffodil          
+  13-0940 TCX,"rgb(247,196,108)",#F7C46C,Sunset Gold       
+  13-1022 TCX,"rgb(244,186,148)",#F4BA94,Caramel Cream     
+  13-1408 TCX,"rgb(238,196,190)",#EEC4BE,Chintz Rose       
+  13-2006 TCX,"rgb(245,190,199)",#F5BEC7,Almond Blossom    
+  13-2802 TCX,"rgb(242,193,209)",#F2C1D1,Fairy Tale        
+  14-0851 TCX,"rgb(251,200,95) ",#FBC85F,Samoan Sun        
+  13-1010 TCX,"rgb(229,204,175)",#E5CCAF,Gray Sand         
+  12-0807 TCX,"rgb(235,209,187)",#EBD1BB,Sun Kiss          
+  13-1404 TCX,"rgb(237,205,194)",#EDCDC2,Pale Dogwood      
+  13-2808 TCX,"rgb(235,206,213)",#EBCED5,Ballet Slipper    
+  13-0849 TCX,"rgb(254,212,80) ",#FED450,Habañero Gold     
+  13-0851 TCX,"rgb(254,213,93) ",#FED55D,Minion Yellow     
+  13-0822 TCX,"rgb(237,213,158)",#EDD59E,Sunlight          
+  12-0822 TCX,"rgb(242,209,160)",#F2D1A0,Golden Fleece     
+  13-0814 TCX,"rgb(234,211,174)",#EAD3AE,SUMMER Melon
+  12-0811 TCX,"rgb(235,210,183)",#EBD2B7,Dawn              
+  12-0813 TCX,"rgb(238,208,174)",#EED0AE,Autumn Blonde     
+  12-0913 TCX,"rgb(241,206,179)",#F1CEB3,Alesan            
+  12-1006 TCX,"rgb(233,212,195)",#E9D4C3,Mother of Pearl   
+  12-1008 TCX,"rgb(237,210,192)",#EDD2C0,Linen             
+  12-1605 TCX,"rgb(237,208,206)",#EDD0CE,Crystal Pink      
+  12-2102 TCX,"rgb(236,214,214)",#ECD6D6,Mauve Morn        
+  12-2904 TCX,"rgb(238,212,217)",#EED4D9,Primrose Pink     
+  12-0727 TCX,"rgb(250,222,133)",#FADE85,Sunshine          
+  12-0825 TCX,"rgb(248,222,141)",#F8DE8D,Popcorn           
+  12-0720 TCX,"rgb(240,221,157)",#F0DD9D,Mellow Yellow     
+  12-0715 TCX,"rgb(243,224,172)",#F3E0AC,Double Cream      
+  12-0710 TCX,"rgb(239,220,195)",#EFDCC3,Shortbread        
+  11-4801 TCX,"rgb(232,227,217)",#E8E3D9,Tofu              
+  12-0601 TCX,"rgb(236,225,211)",#ECE1D3,Eggnog            
+  12-1108 TCX,"rgb(238,222,209)",#EEDED1,Dew               
+  11-1005 TCX,"rgb(238,226,221)",#EEE2DD,Bridal Blush      
+  11-0510 TCX,"rgb(243,230,201)",#F3E6C9,Afterglow         
+  11-0701 TCX,"rgb(237,230,219)",#EDE6DB,Whisper White     
+  11-1302 TCX,"rgb(241,230,222)",#F1E6DE,Sea Salt          
+  11-0106 TCX,"rgb(240,234,214)",#F0EAD6,Sweet Corn        
+  11-0107 TCX,"rgb(245,237,214)",#F5EDD6,Papyrus           
+  11-4302 TCX,"rgb(240,239,226)",#F0EFE2,Cannoli Cream     
+  11-0607 TCX,"rgb(243,238,231)",#F3EEE7,Sugar Swizzle     
+  11-0608 TCX,"rgb(240,237,229)",#F0EDE5,Coconut Milk      
+  16-1542 TCX,"rgb(255,127,106)",#FF7F6A,Fresh Salmon      
+  15-1435 TCX,"rgb(255,150,135)",#FF9687,Desert Flower     
+  15-1239 TCX,"rgb(255,161,119)",#FFA177,Cantaloupe        
+  15-1433 TCX,"rgb(252,162,137)",#FCA289,Papaya Punch      
+  15-1245 TCX,"rgb(255,163,104)",#FFA368,Mock Orange       
+  14-1135 TCX,"rgb(254,170,123)",#FEAA7B,Salmon Buff       
+  14-1231 TCX,"rgb(255,177,129)",#FFB181,Peach Cobbler     
+  14-1324 TCX,"rgb(253,178,168)",#FDB2A8,Peach Bud         
+  13-1030 TCX,"rgb(246,194,137)",#F6C289,Sunburst          
+  14-1225 TCX,"rgb(251,185,149)",#FBB995,Beach Sand        
+  14-1228 TCX,"rgb(255,181,155)",#FFB59B,Peach Nectar      
+  14-1219 TCX,"rgb(248,191,168)",#F8BFA8,Peach Parfait     
+  13-3207 TCX,"rgb(247,206,224)",#F7CEE0,Cherry Blossom    
+  13-1019 TCX,"rgb(248,193,154)",#F8C19A,Cream Blush       
+  13-1020 TCX,"rgb(251,190,153)",#FBBE99,Apricot Ice       
+  13-1023 TCX,"rgb(255,190,152)",#FFBE98,Peach Fuzz        
+  13-1021 TCX,"rgb(255,187,158)",#FFBB9E,Prairie Sunset    
+  13-2005 TCX,"rgb(244,195,196)",#F4C3C4,Strawberry Cream  
+  13-0941 TCX,"rgb(255,207,115)",#FFCF73,Banana Cream      
+  13-0935 TCX,"rgb(255,200,125)",#FFC87D,Flax              
+  13-1025 TCX,"rgb(248,206,151)",#F8CE97,Impala            
+  13-1031 TCX,"rgb(250,205,158)",#FACD9E,Apricot Sherbet   
+  12-0917 TCX,"rgb(252,202,172)",#FCCAAC,Bleached Apricot  
+  12-1011 TCX,"rgb(239,207,186)",#EFCFBA,Peach Purée       
+  12-1212 TCX,"rgb(248,205,201)",#F8CDC9,Veiled Rose       
+  13-1511 TCX,"rgb(247,205,199)",#F7CDC7,Pink Salt         
+  12-0826 TCX,"rgb(251,216,151)",#FBD897,Golden Haze       
+  12-0915 TCX,"rgb(254,209,189)",#FED1BD,Pale Peach        
+  12-1009 TCX,"rgb(244,216,198)",#F4D8C6,Vanilla Cream     
+  12-1110 TCX,"rgb(245,214,198)",#F5D6C6,Crème de Pêche    
+  13-1407 TCX,"rgb(247,213,204)",#F7D5CC,Creole Pink       
+  12-1813 TCX,"rgb(247,209,212)",#F7D1D4,Mary's Rose       
+  11-2309 TCX,"rgb(242,226,224)",#F2E2E0,Petal Pink        
+  12-2907 TCX,"rgb(248,224,231)",#F8E0E7,Rose Water        
+  13-1026 TCX,"rgb(255,205,168)",#FFCDA8,Creampuff         
