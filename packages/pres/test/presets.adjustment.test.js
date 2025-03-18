@@ -5,8 +5,8 @@ import { Dye }                from '@palett/dye'
 import { hexToStr }           from '@palett/stringify'
 import { logger }             from '@spare/logger'
 import { init, Trizipper }    from '@vect/vector'
-import { Presets }            from '../index'
-import { sequenceLogger }     from './sequenceLogger'
+import { Presets }            from '../index.js'
+import { sequenceLogger }     from './sequenceLogger.js'
 
 const trizipper = Trizipper((a, b, c) => new HSL(a, b, c))
 

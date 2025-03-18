@@ -1,6 +1,6 @@
 import { DeepPurple, Green, Grey, Orange, Purple, Teal } from '@palett/cards'
 import { xr }                                            from '@spare/logger'
-import { BLINK, BOLD, INVERSE, INVISIBLE, UNDERLINE }    from '../lib/styles'
+import { BLINK, BOLD, INVERSE, INVISIBLE, UNDERLINE }    from '../lib/styles.js'
 
 const candidates = {
   alpha: { mode: [ BOLD, UNDERLINE ], fore: Green.accent_2, back: Orange.darken_3 },

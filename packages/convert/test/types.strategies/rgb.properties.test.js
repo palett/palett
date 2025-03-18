@@ -1,7 +1,7 @@
 import { Deco, logger, says, Xr } from '@spare/logger'
 import { mapEntries }             from '@vect/object'
-import { hexToRgb }               from '../../src/hexToRgb'
-import { RGB }                    from './RGB'
+import { hexToRgb }               from '../../src/hexToRgb.js'
+import { RGB }                    from './RGB.js'
 
 const candidates = {
   '#C3964D': 'Tinsel',

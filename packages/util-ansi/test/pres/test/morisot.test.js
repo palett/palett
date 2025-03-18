@@ -1,9 +1,9 @@
 import { Amber, Cyan, Grey, Teal }             from '@palett/cards'
 import { deco }                                from '@spare/deco'
 import { says, xr }                            from '@spare/logger'
-import { Morisot }                             from '../lib/morisot'
-import { BOLD, INVERSE, INVISIBLE, UNDERLINE } from '../lib/styles'
-import { ofStyle }                             from '../lib/toStyle'
+import { Morisot }                             from '../lib/morisot.js'
+import { BOLD, INVERSE, INVISIBLE, UNDERLINE } from '../lib/styles.js'
+import { ofStyle }                             from '../lib/toStyle.js'
 
 
 const candidates = {

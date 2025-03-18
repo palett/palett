@@ -1,10 +1,10 @@
 import { decoCrostab, says } from '@spare/logger'
 import { strategies }        from '@valjoux/strategies'
-import { CSI, SGR }          from '../lib/constants'
-import { Morisot }           from '../lib/morisot'
-import { BOLD, UNDERLINE }   from '../lib/styles'
-import { ofStyle }           from '../lib/toStyle'
-import { Vonnoh }            from '../lib/vonnoh'
+import { CSI, SGR }          from '../lib/constants.js'
+import { Morisot }           from '../lib/morisot.js'
+import { BOLD, UNDERLINE }   from '../lib/styles.js'
+import { ofStyle }           from '../lib/toStyle.js'
+import { Vonnoh }            from '../lib/vonnoh.js'
 
 const Global = {
   source: Morisot.presetToCode({ fore: null, back: null, style: ofStyle(BOLD) }),

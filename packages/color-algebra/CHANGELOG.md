@@ -1,5 +1,15 @@
 # @palett/color-algebra
 
+## 0.12.22
+
+### Patch Changes
+
+- minor fix
+- minor fix
+- Updated dependencies
+- Updated dependencies
+  - @palett/convert@0.12.22
+
 ## 0.12.21
 
 ### Patch Changes

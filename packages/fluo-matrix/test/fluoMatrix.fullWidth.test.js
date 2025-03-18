@@ -3,7 +3,7 @@ import { COLUMNWISE }          from '@palett/fluo'
 import { FRESH, PLANET }       from '@palett/presets'
 import { DecoMatrix, logger }  from '@spare/logger'
 import { isNumeric, parseNum } from '@texting/charset-fullwidth'
-import { fluoMatrix }          from '../src/fluoMatrix'
+import { fluoMatrix }          from '../src/fluoMatrix.js'
 
 const candidates = {
   matrix: [

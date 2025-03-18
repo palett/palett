@@ -1,6 +1,6 @@
 import { decoCrostab, says } from '@spare/logger'
 import { strategies }        from '@valjoux/strategies'
-import { RGB }               from './RGB'
+import { RGB }               from './RGB.js'
 
 const { lapse, result } = strategies({
   repeat: 1E+7,

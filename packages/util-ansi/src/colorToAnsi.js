@@ -1,6 +1,6 @@
 import { hexToInt, hslToRgb } from '@palett/convert'
-import { FORE }               from '../resources/colorModes'
-import { SC }                 from '../resources/controlCodes'
+import { FORE }               from '../resources/colorModes.js'
+import { SC }                 from '../resources/controlCodes.js'
 
 /**
  *

@@ -17,9 +17,9 @@ for await(const base of [ 'constants', 'packages' ]) {
     const path = resolve(BASE, project)
     const { dependencies } = JSON.parse(await readFile(resolve(path, 'package.json'), 'utf8'))
     tasks[project] = {
-      input: resolve(path, 'index.js'),
+      input: resolve(path, 'src', 'index.js'),
       output: {
-        file: resolve(path, 'dist', 'index.js'),
+        file: resolve(path, 'index.js'),
         format: 'esm'
       },
       external: Object.keys(dependencies ?? {}),

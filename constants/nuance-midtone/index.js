@@ -1,5 +1,5 @@
 // plus cmyk coated
-export const MIDTONE = {
+const MIDTONE = {
   '#C6A4A4': 'Pale Mauve',
   '#A26666': 'Withered Rose',
   '#AD5D5D': 'Dusty Cedar',
@@ -1456,6 +1456,6 @@ export const MIDTONE = {
   '#F4C3C4': 'Strawberry Cream',
   '#D01C1F': 'Fiery Red',
   '#D75C5D': 'Spiced Coral',
-}
+};
 
-
+export { MIDTONE };

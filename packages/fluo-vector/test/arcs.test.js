@@ -1,6 +1,6 @@
 import { indexed } from '@vect/object-mapper'
 import { mapper }  from '@vect/vector-mapper'
-import { Arcs }    from '../src/Arcs'
+import { Arcs }    from '../src/Arcs.js'
 
 const candidates = {
   empty: [],

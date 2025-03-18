@@ -1,0 +1,5 @@
+export { shiftFlopper, shiftFlopper as presShifter } from './shiftFlopper.js'
+export { presFlopper }                               from './presFlopper.js'
+export { fadeFlopper }                               from './fadeFlopper.js'
+export { rhodFlopper }                               from './rhodFlopper.js'
+export { primHSI, neonHSI, randHSI }                 from './utils/randHSI.js'

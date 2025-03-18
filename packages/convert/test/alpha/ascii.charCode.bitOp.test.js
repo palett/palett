@@ -1,6 +1,6 @@
 import { logger, xr } from '@spare/logger'
 import { range }      from '@vect/vector'
-import { AND }        from './constants'
+import { AND }        from './constants.js'
 
 
 export const DECIMALS = range(48, 57)

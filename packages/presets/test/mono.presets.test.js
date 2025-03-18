@@ -1,7 +1,7 @@
 import { logger }  from '@spare/logger'
 import { indexed } from '@vect/object-mapper'
 import { demo }    from '../src/demo.js'
-import { Preset }  from '../src/Preset'
+import { Preset }  from '../src/Preset.js'
 
 const presetCollection = {
   bleu: Preset.build('#2E4DA7', '#9299ff'),

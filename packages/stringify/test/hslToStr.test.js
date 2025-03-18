@@ -1,7 +1,7 @@
 import { rgbToHsl }           from '@palett/convert'
 import { indexed }            from '@vect/object-mapper'
 import { hslToStr, rgbToStr } from '../index.js'
-import { XTERM }              from './presets/xterm'
+import { XTERM }              from './presets/xterm.js'
 
 for (const [ key, rgb ] of indexed(XTERM)) {
   const hsl = rgbToHsl(rgb);

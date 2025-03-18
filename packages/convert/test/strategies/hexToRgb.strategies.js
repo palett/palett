@@ -2,9 +2,9 @@ import { makeEmbedded }      from '@foba/util'
 import { decoCrostab, says } from '@spare/logger'
 import { strategies }        from '@valjoux/strategies'
 import { mapKeys }           from '@vect/object'
-import { diluteHex }         from '../../utils/hex'
-import { NameMapper }        from '../resources/NAME_MAPPING'
-import { NORMAL, PRIMARY }   from '../resources/NORD'
+import { diluteHex }         from '../../utils/hex.js'
+import { NameMapper }        from '../resources/NAME_MAPPING.js'
+import { NORMAL, PRIMARY }   from '../resources/NORD.js'
 
 const { lapse, result } = strategies({
   repeat: 5E+6,

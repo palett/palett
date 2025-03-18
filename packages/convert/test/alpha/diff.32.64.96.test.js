@@ -1,6 +1,6 @@
 import { logger }                 from '@spare/logger'
 import { xr }                     from '@spare/xr'
-import { AND, NOT, OR, SHR, XOR } from './constants'
+import { AND, NOT, OR, SHR, XOR } from './constants.js'
 
 const candidates = [
   0,

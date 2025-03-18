@@ -6,7 +6,7 @@ import { FRESH, LAVA, METRO }             from '@palett/presets'
 import { decoPale, logger }               from '@spare/logger'
 import { COLUMNWISE, POINTWISE, ROWWISE } from '@vect/enum-matrix-directions'
 import { init }                           from '@vect/matrix'
-import { fluoMatrix }                     from '../src/fluoMatrix'
+import { fluoMatrix }                     from '../src/fluoMatrix.js'
 
 // const SimpleMatrices = {}
 const SimpleMatrices = simpleMatrixCollection({ h: 6, w: 12 })

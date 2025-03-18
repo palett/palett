@@ -1,8 +1,8 @@
 import { hexToStr }   from '@palett/stringify'
 import { logger }     from '@spare/logger'
 import { xr }         from '@spare/xr'
-import { hexToShort } from '../dist/index'
-import { HTML_BASIC } from './resources/HTML_BASIC'
+import { hexToShort } from '../dist/index.js'
+import { HTML_BASIC } from './resources/HTML_BASIC.js'
 
 for (const [ key, hex ] of Object.entries(HTML_BASIC)) {
   const short = hex|> hexToShort

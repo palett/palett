@@ -3,9 +3,9 @@ import { Amber, DeepOrange, Green, Grey, Teal } from '@palett/cards'
 import { hexToInt }                             from '@palett/convert'
 import { decoCrostab, says }                    from '@spare/logger'
 import { strategies }                           from '@valjoux/strategies'
-import { convColor }                            from '../lib/convColor'
-import { Morisot }                              from '../lib/morisot'
-import { parseStyle }                           from '../lib/toStyle'
+import { convColor }                            from '../lib/convColor.js'
+import { Morisot }                              from '../lib/morisot.js'
+import { parseStyle }                           from '../lib/toStyle.js'
 
 const { lapse, result } = strategies({
   repeat: 1E+6,

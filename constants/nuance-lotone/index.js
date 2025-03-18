@@ -1,4 +1,4 @@
-export const LOTONE = {
+const LOTONE = {
   '#E0D5C6': 'Whitecap Gray',
   '#DAD8C9': 'Light Gray',
   '#DFDDD7': 'Vaporous Gray',
@@ -319,4 +319,6 @@ export const LOTONE = {
   '#474647': 'P 179-14 C',
   '#363434': 'P 179-15 C',
   '#2D2A29': 'P 179-16 C'
-}
+};
+
+export { LOTONE };

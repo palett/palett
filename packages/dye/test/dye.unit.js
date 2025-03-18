@@ -1,6 +1,6 @@
 import { BlueGrey, Brown, LightGreen, Purple } from '@palett/cards'
-import { hexToHsl, hexToInt, hexToRgb }        from '@palett/convert'
-import { Dye }                                 from '../index.js'
+import { hexToHsl, hexToInt, hexToRgb } from '@palett/convert'
+import { Dye }                          from '../src/index.js'
 
 
 const hex = BlueGrey.accent_2

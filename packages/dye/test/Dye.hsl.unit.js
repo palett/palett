@@ -1,6 +1,6 @@
 import { oneself }                      from '@ject/oneself'
 import { hslToHex, hslToInt, hslToRgb } from '@palett/convert'
-import { Dye }                          from '../index.js'
+import { Dye }                          from '../src/index.js'
 
 const hsl = [ 345, 60, 55 ]
 {

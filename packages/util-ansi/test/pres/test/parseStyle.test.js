@@ -2,8 +2,8 @@ import { combinator }                                 from '@aryth/subset'
 import { makeReplaceable }                            from '@glossa/translator'
 import { logger, ros, xr }                            from '@spare/logger'
 import { iso }                                        from '@vect/object'
-import { BLINK, BOLD, INVERSE, INVISIBLE, UNDERLINE } from '../lib/styles'
-import { parseStyle }                                 from '../lib/toStyle'
+import { BLINK, BOLD, INVERSE, INVISIBLE, UNDERLINE } from '../lib/styles.js'
+import { parseStyle }                                 from '../lib/toStyle.js'
 
 const EFFECTS = [ BOLD, UNDERLINE, BLINK, INVERSE, INVISIBLE ]
 const candidates = {}

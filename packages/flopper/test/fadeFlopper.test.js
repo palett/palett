@@ -1,7 +1,7 @@
 import { MIDTONE }     from '@palett/nuance-midtone'
 import { demoTapeHSL } from '@palett/pres'
 import { test }        from 'node:test'
-import { fadeFlopper } from '../src/fadeFlopper.js'
+import { fadeFlopper } from '../src/index.js'
 
 test('fadeFlopper', () => {
   const flopper = fadeFlopper.call(MIDTONE, 24)
@@ -13,6 +13,5 @@ test('fadeFlopper', () => {
     } else {
       console.log(i, pres)
     }
-
   }
 })

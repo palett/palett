@@ -1,5 +1,5 @@
 import { logger, xr } from '@spare/logger'
-import { rgbToRgi }   from '../index'
+import { rgbToRgi }   from '../src/index.js'
 
 const candidates = [
   [ 0, 0, 0 ]|> rgbToRgi,

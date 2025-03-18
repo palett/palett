@@ -4,7 +4,7 @@ import { PresetCollection }               from '@palett/fluo'
 import { FRESH, LAVA, METRO }             from '@palett/presets'
 import { decoPale, logger }               from '@spare/logger'
 import { COLUMNWISE, POINTWISE, ROWWISE } from '@vect/enum-matrix-directions'
-import { fluoMatrix }                     from '../src/fluoMatrix'
+import { fluoMatrix }                     from '../src/fluoMatrix.js'
 
 const matrix = [
   [ 1, 2, 3 ],

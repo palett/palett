@@ -3,7 +3,7 @@ import { makeEmbedded }                               from '@foba/util'
 import { decoCrostab, says }                          from '@spare/logger'
 import { strategies }                                 from '@valjoux/strategies'
 import { iso }                                        from '@vect/object'
-import { BLINK, BOLD, INVERSE, INVISIBLE, UNDERLINE } from '../lib/styles'
+import { BLINK, BOLD, INVERSE, INVISIBLE, UNDERLINE } from '../lib/styles.js'
 
 
 const effects = [ BOLD, UNDERLINE, BLINK, INVERSE, INVISIBLE ]

@@ -2,7 +2,7 @@ import { Blue, Lime, Orange }    from '@palett/cards'
 import { BOLD, ITALIC }          from '@palett/enum-font-effects'
 import { decoCrostab, says }     from '@spare/logger'
 import { strategies }            from '@valjoux/strategies'
-import { HexDye }                from '../../index.js'
+import { HexDye }                from '../../src/index.js'
 import { HexDye as HexDyeAlpha } from './alpha.js'
 // enzo: [ 'enzo' ],
 // urus: [ 'urus' ],

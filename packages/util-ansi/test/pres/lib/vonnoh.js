@@ -1,9 +1,9 @@
 import * as colors      from '@pres/util-colors'
 import { FUN, NUM }     from '@typen/enum-data-types'
-import { CSI, SC, SGR } from './constants'
-import { convColor }    from './convColor'
-import { Morisot }      from './morisot'
-import { parseStyle }   from './toStyle'
+import { CSI, SC, SGR } from './constants.js'
+import { convColor }    from './convColor.js'
+import { Morisot }      from './morisot.js'
+import { parseStyle }   from './toStyle.js'
 
 class TputDes {
   static colors = 0

@@ -1,8 +1,8 @@
 import { logger, xr }                     from '@spare/logger'
-import { BACK, CLR_BACK, CLR_FORE, FORE } from '../resources/colorModes'
-import { ConsoleColors }                  from '../resources/consoleColors'
-import { SC }                             from '../resources/controlCodes'
-import { enclose }                        from '../src/enclose'
+import { BACK, CLR_BACK, CLR_FORE, FORE } from '../resources/colorModes.js'
+import { ConsoleColors }                  from '../resources/consoleColors.js'
+import { SC }                             from '../resources/controlCodes.js'
+import { enclose }                        from '../src/enclose.js'
 
 
 export function renderFore(color, text) {

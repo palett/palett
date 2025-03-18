@@ -1,11 +1,11 @@
 {
   "name": "@palett/nuance-ubitone",
-  "version": "0.12.21",
+  "version": "0.12.22",
   "description": "@palett color chart - ubitone",
   "type": "module",
-  "exports": "./dist/index.js",
+  "exports": "./index.js",
   "files": [
-    "dist"
+    "index.js"
   ],
   "engines": {
     "node": ">=22.0.0"

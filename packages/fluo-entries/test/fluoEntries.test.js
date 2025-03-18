@@ -3,7 +3,7 @@ import { UNDERLINE }               from '@palett/enum-font-effects'
 import { PresetCollection }        from '@palett/fluo'
 import { FRESH, PLANET }           from '@palett/presets'
 import { logger }                  from '@spare/logger'
-import { fluoEntries }             from '../src/fluoEntries'
+import { fluoEntries }             from '../src/fluoEntries.js'
 
 const SimpleEntries = simpleEntriesCollection({ h: 15 })
 

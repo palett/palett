@@ -2,9 +2,9 @@ import { makeEmbedded }                                                        f
 import { AFRO, BESQUE, BRANDY, KELLY, PERSIAN, PINE, PLANET, ROCOCCO, SUBTLE } from '@palett/presets'
 import { hexToStr, intToStr, rgbToStr }                                        from '@palett/stringify'
 import { NUM, STR }                                                            from '@typen/enum-data-types'
-import { strategies }                                                          from '@valjoux/strategies'
-import { hexToHsl, hexToRgi, hslToRgb }                                        from '../../index.js'
-import { Beta }                                                                from './beta.js'
+import { strategies }                   from '@valjoux/strategies'
+import { hexToHsl, hexToRgi, hslToRgb } from '../../src/index.js'
+import { Beta }                         from './beta.js'
 import { UCA }                                                                 from './pres.js'
 
 const { lapse, result } = strategies({

@@ -2,7 +2,7 @@ import { DyeFactory }         from '@palett/dye'
 import { RGB }                from '@palett/enum-color-space'
 import { INVERSE }            from '@palett/enum-font-effects'
 import { logger, xr }         from '@spare/logger'
-import { rgbToRgi, rgiToRgb } from '../index.js'
+import { rgbToRgi, rgiToRgb } from '../src/index.js'
 
 export const XTERM = {
   noir: [ 0, 0, 0 ],

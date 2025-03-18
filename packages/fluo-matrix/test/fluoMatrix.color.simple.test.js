@@ -7,7 +7,7 @@ import { COLUMNWISE, POINTWISE, ROWWISE } from '@vect/enum-matrix-directions'
 import { init }                           from '@vect/matrix'
 import { indexed }                        from '@vect/object-mapper'
 import { METRO }                          from 'palett-presets'
-import { fluoMatrix }                     from '../src/fluoMatrix'
+import { fluoMatrix }                     from '../src/fluoMatrix.js'
 
 // const SimpleMatrices = {}
 const SimpleMatrices = simpleMatrixCollection({ h: 6, w: 12 })

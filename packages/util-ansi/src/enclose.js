@@ -1,4 +1,4 @@
-import { CSI, SC, SGR } from '../resources/controlCodes'
+import { CSI, SC, SGR } from '../resources/controlCodes.js'
 
 /**
  *

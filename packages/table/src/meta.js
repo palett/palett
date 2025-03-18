@@ -1,5 +1,5 @@
-import { ColorGroups } from '../resources/ColorGroups'
-import { Degrees }     from '../resources/Degrees'
+import { ColorGroups } from '../resources/ColorGroups.js'
+import { Degrees }     from '../resources/Degrees.js'
 
 export const meta = () => ({
   colors: ColorGroups.entire,

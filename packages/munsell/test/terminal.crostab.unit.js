@@ -6,7 +6,7 @@ import { indexedTo }           from '@vect/object-mapper'
 import { HSL }                 from '../archive/extends/HSL.js'
 import { RGB }                 from '../archive/extends/RGB.js'
 import { Gradient }            from '../archive/Gradient.js'
-import { H, S }                from '../resources/attr'
+import { H, S }                from '../resources/attr.js'
 
 // XTerm's default colors
 

@@ -1,6 +1,6 @@
 import { HEX }                 from '@palett/enum-color-space'
 import { decoCrostab, logger } from '@spare/logger'
-import { palettCrostab }       from '../src/palettCrostab'
+import { palettCrostab }       from '../src/palettCrostab.js'
 
 const test = () => {
   const crostab = palettCrostab({

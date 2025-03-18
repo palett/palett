@@ -1,1 +1,6 @@
-export { RGB, HSL, HEX, INT } from './resources/colorSpace'
+const RGB = 'rgb',
+  HSL = 'hsl',
+  HEX = 'hex',
+  INT = 'int';
+
+export { HEX, HSL, INT, RGB };

@@ -1,7 +1,7 @@
 import { makeEmbedded }       from '@foba/util'
 import { intToStr, rgbToStr } from '@palett/stringify'
 import { strategies }         from '@valjoux/strategies'
-import { hslToRgb, rgbToHsl } from '../../index.js'
+import { hslToRgb, rgbToHsl } from '../../src/index.js'
 import { Beta }               from './beta.js'
 import { Gamma }              from './gamma.js'
 

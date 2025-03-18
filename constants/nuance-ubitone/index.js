@@ -1,4 +1,4 @@
-export const UBITONE = {
+const UBITONE = {
   '#C5C5C5': 'Lunar Rock',
   '#686767': 'Gargoyle',
   '#2B2929': 'Meteorite',
@@ -2313,4 +2313,6 @@ export const UBITONE = {
   '#884344': 'Cowhide',
   '#D01C1F': 'Fiery Red',
   '#D75C5D': 'Spiced Coral'
-}
+};
+
+export { UBITONE };

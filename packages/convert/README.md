@@ -22,4 +22,4 @@
 
 [MIT](http://opensource.org/licenses/MIT)
 
-Copyright (c) 2019-present, Haoyang (Vincent) Wang
+Copyright (c) 2019-present, Haoyang Wang

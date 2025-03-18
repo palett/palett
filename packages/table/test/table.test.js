@@ -1,8 +1,8 @@
 import { HEX }                 from '@palett/enum-color-space'
 import { decoCrostab, logger } from '@spare/logger'
-import { ColorGroups }         from '../resources/ColorGroups'
-import { Degrees }             from '../resources/Degrees'
-import { palettCrostab }       from '../src/palettCrostab'
+import { ColorGroups }         from '../resources/ColorGroups.js'
+import { Degrees }             from '../resources/Degrees.js'
+import { palettCrostab }       from '../src/palettCrostab.js'
 
 // PalettTable.meta() |> deco |> console.log
 

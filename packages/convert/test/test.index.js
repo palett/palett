@@ -1,3 +1,3 @@
-import { FarbeTest } from './FarbeTest'
+import { FarbeTest } from './FarbeTest.js'
 
 FarbeTest.cycleTransform()

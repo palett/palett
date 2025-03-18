@@ -7,8 +7,8 @@ import { DyeFactory }         from '@palett/dye'
 import { HEX, HSL, RGB }      from '@palett/enum-color-space'
 import { INVERSE }            from '@palett/enum-font-effects'
 import { mapper }             from '@vect/vector-mapper'
-import { ColorGroups }        from '../resources/ColorGroups'
-import { Degrees }            from '../resources/Degrees'
+import { ColorGroups }        from '../resources/ColorGroups.js'
+import { Degrees }            from '../resources/Degrees.js'
 
 // const lexicon = [
 //   [/light/gi, 'l'],

@@ -1,7 +1,7 @@
 import * as colors    from '@pres/util-colors'
 import { FUN }        from '@typen/enum-data-types'
-import { CSI, SGR }   from './constants'
-import { parseStyle } from './toStyle'
+import { CSI, SGR }   from './constants.js'
+import { parseStyle } from './toStyle.js'
 
 
 class TputDes {

@@ -2,7 +2,7 @@ import { hexToRgb }       from '@palett/convert'
 import { Dye }            from '@palett/dye'
 import { palettFlopper }  from '@palett/flopper'
 import { decoPale, says } from '@spare/logger'
-import { toneHex }        from '../index.js'
+import { toneHex }        from '../src/index.js'
 
 const flopper = palettFlopper()
 
