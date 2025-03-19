@@ -1,6 +1,6 @@
 {
   "name": "@palett/table",
-  "version": "0.12.24",
+  "version": "0.12.25",
   "description": "A color converter",
   "type": "module",
   "exports": "./index.js",
@@ -29,15 +29,15 @@
     "@palett/enum-color-space": "workspace:^",
     "@palett/enum-font-effects": "workspace:^",
     "@texting/translator": "^0.2.3",
-    "@vect/columns-mapper": "^0.8.0",
-    "@vect/matrix-mapper": "^0.8.0",
+    "@vect/columns-mapper": "^0.8.2",
+    "@vect/matrix-mapper": "^0.8.2",
     "@vect/matrix-transpose": "^0.6.13",
-    "@vect/object-select": "^0.8.0",
+    "@vect/object-select": "^0.8.2",
     "@vect/vector-indicator": "^0.6.13",
-    "@vect/vector-init": "^0.8.0",
-    "@vect/vector-mapper": "^0.8.0",
-    "@vect/vector-stat": "^0.8.0",
-    "@vect/vector-zipper": "^0.8.0"
+    "@vect/vector-init": "^0.8.2",
+    "@vect/vector-mapper": "^0.8.2",
+    "@vect/vector-stat": "^0.8.2",
+    "@vect/vector-zipper": "^0.8.2"
   },
   "repository": {
     "type": "git",

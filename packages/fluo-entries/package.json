@@ -1,6 +1,6 @@
 {
   "name": "@palett/fluo-entries",
-  "version": "0.12.24",
+  "version": "0.12.25",
   "description": "A colorant to string",
   "type": "module",
   "exports": "./index.js",
@@ -18,12 +18,12 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@spare/serial": "^0.16.22"
+    "@spare/serial": "^0.16.23"
   },
   "devDependencies": {
     "@palett/fluo": "workspace:^",
-    "@vect/entries-init": "^0.8.0",
-    "@vect/entries-zipper": "^0.8.0"
+    "@vect/entries-init": "^0.8.2",
+    "@vect/entries-zipper": "^0.8.2"
   },
   "repository": {
     "type": "git",

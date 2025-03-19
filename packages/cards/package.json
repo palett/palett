@@ -1,6 +1,6 @@
 {
   "name": "@palett/cards",
-  "version": "0.12.24",
+  "version": "0.12.25",
   "description": "A color converter",
   "type": "module",
   "exports": "./index.js",

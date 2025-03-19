@@ -1,6 +1,6 @@
 {
   "name": "@palett/munsell",
-  "version": "0.12.24",
+  "version": "0.12.25",
   "description": "A color converter",
   "type": "module",
   "exports": "./index.js",
@@ -30,7 +30,7 @@
     "@palett/nuance-ubitone": "workspace:^",
     "@palett/presets": "workspace:^",
     "@palett/stringify": "workspace:^",
-    "@valjoux/timestamp-pretty": "^0.4.1"
+    "@valjoux/timestamp-pretty": "^0.4.3"
   },
   "repository": {
     "type": "git",

@@ -1,6 +1,6 @@
 {
   "name": "@palett/pres",
-  "version": "0.12.24",
+  "version": "0.12.25",
   "description": "",
   "type": "module",
   "exports": "./index.js",
@@ -24,13 +24,13 @@
     "@palett/convert": "workspace:^",
     "@palett/stringify": "workspace:^",
     "@typen/enum-data-types": "^0.2.0",
-    "@vect/vector-init": "^0.8.0"
+    "@vect/vector-init": "^0.8.2"
   },
   "devDependencies": {
     "@aryth/math": "^0.7.7",
     "@aryth/polar": "^0.7.5",
     "@palett/presets": "workspace:^",
-    "@vect/object-init": "^0.8.0"
+    "@vect/object-init": "^0.8.2"
   },
   "repository": {
     "type": "git",
