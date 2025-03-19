@@ -1,6 +1,6 @@
 {
   "name": "@palett/color-space",
-  "version": "0.12.23",
+  "version": "0.12.24",
   "description": "A color space consists of RGB and HSL",
   "type": "module",
   "exports": "./index.js",
@@ -19,11 +19,11 @@
   },
   "dependencies": {
     "@analyz/crostab": "^0.1.0",
-    "@aryth/bound": "^0.7.6",
-    "@aryth/distinct-column": "^0.7.6",
-    "@aryth/flopper": "^0.7.6",
-    "@aryth/math": "^0.7.6",
-    "@aryth/polar": "^0.7.6",
+    "@aryth/bound": "^0.7.7",
+    "@aryth/distinct-column": "^0.7.7",
+    "@aryth/flopper": "^0.7.7",
+    "@aryth/math": "^0.7.7",
+    "@aryth/polar": "^0.7.7",
     "@palett/convert": "workspace:^",
     "@vect/columns-indicator": "^0.6.13",
     "@vect/matrix-init": "^0.8.0",
@@ -34,7 +34,7 @@
     "@palett/dye": "workspace:^",
     "@palett/fluo": "workspace:^",
     "@palett/stringify": "workspace:^",
-    "@spare/logger": "^0.16.19",
+    "@spare/logger": "^0.16.22",
     "@valjoux/timestamp-pretty": "^0.4.1"
   },
   "repository": {

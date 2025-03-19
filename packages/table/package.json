@@ -1,6 +1,6 @@
 {
   "name": "@palett/table",
-  "version": "0.12.23",
+  "version": "0.12.24",
   "description": "A color converter",
   "type": "module",
   "exports": "./index.js",
@@ -20,7 +20,7 @@
   "dependencies": {
     "@analys/convert": "^0.7.2",
     "@analyz/crostab": "^0.1.0",
-    "@aryth/math": "^0.7.6",
+    "@aryth/math": "^0.7.7",
     "@ject/oneself": "^0.1.2",
     "@palett/cards": "workspace:^",
     "@palett/convert": "workspace:^",

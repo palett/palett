@@ -1,4 +1,4 @@
-import { rand, randBetw } from '@aryth/rand'
+import { rand, betw } from '@aryth/rand'
 import { NUM }            from '@typen/enum-data-types'
 import { init }           from '@vect/vector-init'
 import { test }           from 'node:test'
@@ -25,7 +25,7 @@ export function* shiftFlopperCamp(vec, shl, shr) {
   while (--hi > 0) {
     if (shl > hi) shl = hi - 1
     if (shr > hi) shr = hi - 1
-    i = randBetw(i - shl, i + shr)
+    i = betw(i - shl, i + shr)
     while (i > hi) i -= hi
     while (i < 0) i += hi
     const [ x ] = vec.splice(i, 1)
@@ -53,7 +53,7 @@ export function* shiftFlopperFuse(arr, shl, shr) {
 // Helper function for random integer
   function rand(max) { return ~~(Math.random() * max) }
 // Helper function for random integer between min and max
-  function randBetw(min, max) { return min + rand(max - min + 1) }
+  function betw(min, max) { return min + rand(max - min + 1) }
   let hi = arr.length
   let i = rand(hi)
   // First element
@@ -67,7 +67,7 @@ export function* shiftFlopperFuse(arr, shl, shr) {
     shl = Math.min(shl, hi - 1)
     shr = Math.min(shr, hi - 1)
     // Calculate new index within bounds
-    let newI = randBetw(i - shl, i + shr)
+    let newI = betw(i - shl, i + shr)
     // Wrap around if outside valid range
     while (newI >= arr.length) newI -= arr.length
     while (newI < 0) newI += arr.length

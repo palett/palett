@@ -1,4 +1,4 @@
-import { flop, randBetw } from '@aryth/rand'
+import { flop, betw } from '@aryth/rand'
 import { dslHex }         from '@palett/color-algebra'
 import { Pres }           from './Pres.js'
 
@@ -10,7 +10,7 @@ export const LOTONE_LIST = [ '#847F7F', '#B0A29F', '#9A8E88', '#A79B8F', '#C0B7A
  * @returns Pres
  */
 export function randPres(hex, name) {
-  const next = dslHex(hex, randBetw(-12, -3), randBetw(12, 27))
+  const next = dslHex(hex, betw(-12, -3), betw(12, 27))
   const gray = flop(LOTONE_LIST)
   return Pres.build(hex, next, gray, null, name)
 }

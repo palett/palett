@@ -1,6 +1,6 @@
 import { demoTapeHSL } from '@palett/pres'
 import { test }         from 'node:test'
-import { shiftFlopper } from '../src/shiftFlopper.js'
+import { shiftFlopper } from '../src/index.js'
 
 test('presShifter', () => {
   const flopper = shiftFlopper(false)

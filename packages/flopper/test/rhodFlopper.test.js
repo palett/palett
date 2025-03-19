@@ -2,7 +2,6 @@ import { hexToHsi }    from '@palett/convert'
 import { Munsell }     from '@palett/munsell'
 import { MIDTONE }     from '@palett/nuance-midtone'
 import { demoTapeHSL } from '@palett/pres'
-import { logger }      from '@spare/logger'
 import { test }        from 'node:test'
 import { rhodFlopper } from '../src/rhodFlopper.js'
 // '#AE5459': 'Mineral Red',
@@ -33,6 +32,6 @@ test('rhodFlopper test', () => {
     // const name = munsell.name(value)
     // console.log(hexToStr(hex) + ' > ' + hslToStr(hexToHsl(hex)) + ' > ' + dhex.call(hex, name))
   }
-  logger('rendered')
+  console.log('rendered')
 
 })

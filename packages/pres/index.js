@@ -1,7 +1,7 @@
 import { hexToHsi, hexToRgi, modHsi, rgiToHsl, hsiToHsl, rgiToRgb, hsiToRgb, rgiToHex, hsiToHex, deltaHsi } from '@palett/convert';
 export { deltaHsi, hexToHsi, hsaToInt, hsaToRgi, hsiToHsl, hsiToInt, hsiToRgi, modHsi, modHsiTo, modRgi, rgaToHsi } from '@palett/convert';
 import { NUM, STR, OBJ } from '@typen/enum-data-types';
-import { randBetw, flop } from '@aryth/rand';
+import { betw, flop } from '@aryth/rand';
 import { dslHex } from '@palett/color-algebra';
 import { minus } from '@aryth/polar';
 import { rgbToStr, hslToStr } from '@palett/stringify';
@@ -88,7 +88,7 @@ const LOTONE_LIST = [ '#847F7F', '#B0A29F', '#9A8E88', '#A79B8F', '#C0B7A4', '#A
  * @returns Pres
  */
 function randPres(hex, name) {
-  const next = dslHex(hex, randBetw(-12, -3), randBetw(12, 27));
+  const next = dslHex(hex, betw(-12, -3), betw(12, 27));
   const gray = flop(LOTONE_LIST);
   return Pres.build(hex, next, gray, null, name)
 }

@@ -1,4 +1,4 @@
-import { randBetw }            from '@aryth/rand'
+import { betw }            from '@aryth/rand'
 import { hslToHex, rgbToHsl }  from '@palett/convert'
 import { Fluo }                from '@palett/fluo'
 import { demo, Preset }        from '@palett/presets'
@@ -11,8 +11,8 @@ import { H, L }                from '../resources/attr.js'
 const a = Preset.build('#E46C9A', '#6ED1B4') // Azalea Opal
 const b = Preset.build('#B284BE', '#C6E67A') // African Violet - Sharp Green
 const c = Preset.build('#CB8986', '#79D381')  // Rosette - SUMMER Green
-const MIN = hslToHex(rgbToHsl([ randBetw(160, 255), randBetw(0, 196), randBetw(0, 196) ]))
-const MAX = hslToHex(rgbToHsl([ randBetw(0, 196), randBetw(160, 255), randBetw(0, 196) ]))
+const MIN = hslToHex(rgbToHsl([ betw(160, 255), betw(0, 196), betw(0, 196) ]))
+const MAX = hslToHex(rgbToHsl([ betw(0, 196), betw(160, 255), betw(0, 196) ]))
 const conf = {
   preset: a, //Preset.build(MIN, MAX),
   axis: { x: L, y: H },

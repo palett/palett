@@ -1,6 +1,6 @@
 {
   "name": "@palett/nuance-lotone",
-  "version": "0.12.23",
+  "version": "0.12.24",
   "description": "@palett color chart - lotone",
   "type": "module",
   "exports": "./index.js",

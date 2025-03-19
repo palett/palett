@@ -7,7 +7,7 @@ import { NUM, STR }         from '@typen/enum-data-types'
 import { init }             from '@vect/vector-init'
 import { MIDTONE }          from './asset/MIDTONE.js'
 import { circSlice }        from './utils/iter-utils.js'
-import { primHSI }          from './utils/randHSI.js'
+import { neonHSI }          from './utils/randHSI.js'
 import { hsiToPres }        from './utils/randPres.js'
 
 const { PI, round } = Math
@@ -16,7 +16,7 @@ const { PI, round } = Math
 export function* rhodFlopper(exhausted = true) {
   const { seed, petals = 3, density = 0.1, minL = 0, devS = 50, munsell: m } = this ?? {}
   const munsell = m instanceof Munsell ? m : Munsell.build(m ?? MIDTONE, 48, 48)
-  const hsi = typeof seed === STR ? hexToHsi(seed) : typeof seed === NUM ? seed : primHSI(rand(360))//seed is hsi
+  const hsi = typeof seed === STR ? hexToHsi(seed) : typeof seed === NUM ? seed : neonHSI(rand(360))//seed is hsi
   const h0 = (hsi >> 16) & 0x1FF, s0 = (hsi >> 8) & 0xFF / 2, l0 = (hsi & 0xFF) / 2
   const polar = new Polar(l0, h0) // Create a Polar object
   const minS = s0 - devS, maxS = s0 + devS // Create a Bound object for saturation range

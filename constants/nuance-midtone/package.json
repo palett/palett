@@ -1,6 +1,6 @@
 {
   "name": "@palett/nuance-midtone",
-  "version": "0.12.23",
+  "version": "0.12.24",
   "description": "@palett color chart - midtone",
   "type": "module",
   "exports": "./index.js",

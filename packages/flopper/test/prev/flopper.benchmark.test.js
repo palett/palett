@@ -1,4 +1,4 @@
-import { flop, randBetw }                           from '@aryth/rand'
+import { flop, betw }                           from '@aryth/rand'
 import { ff, hexToHsi, hexToHsl, hsiToHex, modHsi } from '@palett/convert'
 import { HSL, Munsell, PRODUCTS }                   from '@palett/munsell'
 import { Pres }                                     from '@palett/pres'
@@ -33,7 +33,7 @@ function validSL(hex) {
 export const randPres_epic = (hex, name) => {
   const [ h, s, l ] = hexToHsl(hex)
   const [ max, _ ] = HSL
-    .of(h + randBetw(-12, 12), s + randBetw(-12, -4), l + randBetw(8, 24))
+    .of(h + betw(-12, 12), s + betw(-12, -4), l + betw(8, 24))
     .restrict()
     .nearest()
   const gray = flop(GRAYS)
@@ -44,7 +44,7 @@ export const randPres_epic = (hex, name) => {
 
 export const randPres_edge = (hex, name) => {
   const hsi0 = hexToHsi(hex)
-  const temp = modHsi(hsi0, randBetw(-12, 12), randBetw(-12, -4), randBetw(8, 24))
+  const temp = modHsi(hsi0, betw(-12, 12), betw(-12, -4), betw(8, 24))
   const hsi1 = Munsell.nearest(temp)
   const gray = flop(GRAYS)
   const preset = Pres.build(hex, hsiToHex(hsi1), gray)

@@ -1,6 +1,6 @@
 {
   "name": "@palett/util-ansi",
-  "version": "0.12.23",
+  "version": "0.12.24",
   "description": "A color converter",
   "type": "module",
   "exports": "./index.js",

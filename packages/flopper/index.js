@@ -1,12 +1,13 @@
-import { norm as norm$1, betw, flop, rand } from '@aryth/rand';
+import { betw, flop, rand } from '@aryth/rand';
 import { Munsell } from '@palett/munsell';
 import { seq, init } from '@vect/vector-init';
 import { NUM, STR } from '@typen/enum-data-types';
+import { n } from '@aryth/norm';
 import { dslHex } from '@palett/color-algebra';
 import { modHsi, hsiToHsl, hexToHsi } from '@palett/convert';
 import { Pres } from '@palett/pres';
 import { finiteFlopper } from '@aryth/flopper';
-import { round as round$1 } from '@aryth/math';
+import { round as round$1, abs } from '@aryth/math';
 import { Polar, PetalNote } from '@aryth/polar';
 
 const LOTONE = {
@@ -178,10 +179,6 @@ function* finiteShifter(vec, shl, shr) {
   return void 0
 }
 
-const normGen = norm$1();
-
-const norm = (val = 0, std = 1) => val + (normGen.next().value) * std;
-
 const LOTONE_LIST = Object.keys(LOTONE);
 
 /**
@@ -199,7 +196,7 @@ function randPres(hex, name) {
 function hsiToPres(hsiA) {
   const munsell = this;
   hsiA = munsell.nearest(hsiA) ?? hsiA;
-  let hsiB = modHsi(hsiA, norm(0, 3), norm(-3, 3), norm(15, 3));
+  let hsiB = modHsi(hsiA, n(3), -3 + n(3), 15 + n(3));
   const gray = flop(LOTONE_LIST);
   const name = munsell.name(hsiA) ?? hsiToHsl(hsiA).toString();
   return Pres.build(hsiA, hsiB, gray, null, name) // munsell.name(hsiA)
@@ -260,11 +257,11 @@ const neonS = (h) => {
   if (110 < h && h < 290) s = (s - 30) * 0.5 + 30;
   return s
 };
-const neonL = (h) => norm(72, 6);
+const neonL = (h) => 72 + n(6);
 const neonHSI = h => {
   let s = neonS(h), l = neonL();
-  s += norm(0, 6);
-  l += norm(0, 6);
+  s += n(6);
+  l += n(6);
   if ((h %= 360) < 0) h += 360;
   return (round$1(h) & 0x1FF) << 16 | (round$1(s * 2) & 0xFF) << 8 | round$1(l * 2) & 0xFF
 };
@@ -273,14 +270,14 @@ const primS = (h) => 45 + 15 * cos(2 * PI$1 * h / 180); // 24 - 54
 const primL = (h) => 54 + 12 * cos(PI$1 * (h - 60) / 180); // 42 - 66
 const primHSI = h => {
   let s = primS(h), l = primL(h);
-  // h += abs(norm(0, 10))
-  s += norm(-1, 3);
-  l += norm(6, 6);
+  // h += abs(n(0, 10))
+  s += -1 + n(3);
+  l += 6 + n(6);
   if ((h %= 360) < 0) h += 360;
   return (round$1(h) & 0x1FF) << 16 | (round$1(s * 2) & 0xFF) << 8 | round$1(l * 2) & 0xFF
 };
 
-const randHSI = h => norm() > 0 ? primHSI(h) : neonHSI(h);
+const randHSI = h => n() > 0 ? primHSI(h) : neonHSI(h);
 
 const { log10 } = Math;
 
@@ -291,9 +288,9 @@ function* fadeFlopper(count) {
   let i = 0, prev = rand(360);
   const stdev = step < 1 ? 0.5 : 2 * log10(step) + 0.5;
   while (i++ < count) {
-    const curr = prev + norm(step, stdev);
+    const curr = prev + n(stdev);
     yield hsiToPres.call(munsell, randHSI(curr));
-    prev = curr;
+    prev = curr + step;
   }
 }
 
@@ -317,7 +314,7 @@ const { PI, round } = Math;
 function* rhodFlopper(exhausted = true) {
   const { seed, petals = 3, density = 0.1, minL = 0, devS = 50, munsell: m } = this ?? {};
   const munsell = m instanceof Munsell ? m : Munsell.build(m ?? MIDTONE, 48, 48);
-  const hsi = typeof seed === STR ? hexToHsi(seed) : typeof seed === NUM ? seed : primHSI(rand(360));//seed is hsi
+  const hsi = typeof seed === STR ? hexToHsi(seed) : typeof seed === NUM ? seed : neonHSI(rand(360));//seed is hsi
   const h0 = (hsi >> 16) & 0x1FF, s0 = (hsi >> 8) & 0xFF / 2, l0 = (hsi & 0xFF) / 2;
   const polar = new Polar(l0, h0); // Create a Polar object
   const minS = s0 - devS, maxS = s0 + devS; // Create a Bound object for saturation range
@@ -360,4 +357,19 @@ function* rhodFlopper(exhausted = true) {
   }
 }
 
-export { fadeFlopper, neonHSI, presFlopper, shiftFlopper as presShifter, primHSI, randHSI, rhodFlopper, shiftFlopper };
+function* stageFlopper(stage = 24, stdev = 3) {
+  function nextStage(stage) {
+    let next = stage;
+    while (abs(stage - next) < (stage >> 1)) next += n(stage);
+    return next
+  }
+  const munsell = this instanceof Munsell ? this : Munsell.build(this ?? MIDTONE, 48, 48);
+  let prev = rand(360);
+  while (true) {
+    const curr = prev + n(stdev);
+    yield hsiToPres.call(munsell, randHSI(curr));
+    prev = curr + nextStage(stage);
+  }
+}
+
+export { fadeFlopper, neonHSI, presFlopper, shiftFlopper as presShifter, primHSI, randHSI, rhodFlopper, shiftFlopper, stageFlopper };

@@ -1,6 +1,6 @@
 {
   "name": "@palett/color-algebra",
-  "version": "0.12.23",
+  "version": "0.12.24",
   "description": "A color converter among RGB, HEX and HSL.",
   "type": "module",
   "exports": "./index.js",
@@ -18,7 +18,7 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/math": "^0.7.6",
+    "@aryth/math": "^0.7.7",
     "@palett/convert": "workspace:^"
   },
   "devDependencies": {

@@ -1,4 +1,4 @@
-import { randBetw }           from '@aryth/rand'
+import { betw }           from '@aryth/rand'
 import { hslToInt, intToRgb } from '@palett/convert'
 import { test }               from 'node:test'
 
@@ -78,9 +78,9 @@ export function hsiToInt_epic(int) {
 }
 
 test('hsl to rgb 25bit', () => {
-  const h = randBetw(0, 360)
-  const s = randBetw(0, 200)
-  const l = randBetw(0, 200)
+  const h = betw(0, 360)
+  const s = betw(0, 200)
+  const l = betw(0, 200)
   const hsl = [ h, s, l ]
   const hslVal = (h & 0x1FF) << 16 | (s & 0xFF) << 8 | l & 0xFF
   console.log('hsl', h, s, l)
