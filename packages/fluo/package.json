@@ -1,6 +1,6 @@
 {
   "name": "@palett/fluo",
-  "version": "0.12.25",
+  "version": "0.12.26",
   "description": "A color converter",
   "type": "module",
   "exports": "./index.js",
@@ -21,8 +21,8 @@
   "dependencies": {
     "@palett/enum-ansi-codes": "workspace:^",
     "@palett/util-ansi": "workspace:^",
-    "@spare/serial": "^0.16.23",
-    "@vect/matrix-index": "^0.8.2"
+    "@spare/serial": "^0.16.24",
+    "@vect/matrix-index": "^0.8.5"
   },
   "devDependencies": {
     "@palett/dye": "workspace:^",
@@ -37,8 +37,8 @@
     "@typen/nullish": "^0.2.0",
     "@typen/num-strict": "^0.2.0",
     "@vect/matrix-index": "^0.8.0",
-    "@vect/matrix-init": "^0.8.2",
-    "@vect/object-update": "^0.8.2"
+    "@vect/matrix-init": "^0.8.5",
+    "@vect/object-update": "^0.8.5"
   },
   "repository": {
     "type": "git",

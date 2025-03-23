@@ -1,6 +1,6 @@
 {
   "name": "@palett/nuance-ubitone",
-  "version": "0.12.25",
+  "version": "0.12.26",
   "description": "@palett color chart - ubitone",
   "type": "module",
   "exports": "./index.js",

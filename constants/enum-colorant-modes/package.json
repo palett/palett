@@ -1,6 +1,6 @@
 {
   "name": "@palett/enum-colorant-modes",
-  "version": "0.12.25",
+  "version": "0.12.26",
   "description": "A colorant to string",
   "type": "module",
   "exports": "./index.js",

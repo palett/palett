@@ -38,5 +38,6 @@ export function blendPres(hsi) {
   const next = modHsi(hsiA, betw(-15, 15), betw(-12, -3), betw(9, 24))
   const hsiB = munsell.nearest(next) ?? next
   const gray = flop(LOTONE_LIST)
-  return Pres.build(hsiA, hsiB, gray, null, munsell.name(hsiA))
+  const name = munsell.name(hsiA)
+  return Pres.build(hsiA, hsiB, gray, null, name)
 }

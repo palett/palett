@@ -1,4 +1,4 @@
-import { betw, flop, rand } from '@aryth/rand';
+import { rand, betw, flop } from '@aryth/rand';
 import { Munsell } from '@palett/munsell';
 import { seq, init } from '@vect/vector-init';
 import { NUM, STR } from '@typen/enum-data-types';
@@ -7,7 +7,7 @@ import { dslHex } from '@palett/color-algebra';
 import { modHsi, hsiToHsl, hexToHsi } from '@palett/convert';
 import { Pres } from '@palett/pres';
 import { finiteFlopper } from '@aryth/flopper';
-import { round as round$1, abs } from '@aryth/math';
+import { round as round$1, almostEqual } from '@aryth/math';
 import { Polar, PetalNote } from '@aryth/polar';
 
 const LOTONE = {
@@ -139,10 +139,6 @@ function* finiteShifter(vec, shl, shr) {
   // Create a copy of the array and track available indices
   const bin = Array(hi).fill(true);
   if (typeof shr !== NUM) { shr = shl; }
-// Helper function for random integer
-  function rand(max) { return ~~(Math.random() * max) }
-// Helper function for random integer between min and max
-  function betw(min, max) { return min + rand(max - min + 1) }
   let i = rand(hi);
   // First element
   if (hi > 0) {
@@ -212,7 +208,8 @@ function blendPres(hsi) {
   const next = modHsi(hsiA, betw(-15, 15), betw(-12, -3), betw(9, 24));
   const hsiB = munsell.nearest(next) ?? next;
   const gray = flop(LOTONE_LIST);
-  return Pres.build(hsiA, hsiB, gray, null, munsell.name(hsiA))
+  const name = munsell.name(hsiA);
+  return Pres.build(hsiA, hsiB, gray, null, name)
 }
 
 const HUES = seq(60, i => i * 6, 0);
@@ -360,7 +357,7 @@ function* rhodFlopper(exhausted = true) {
 function* stageFlopper(stage = 24, stdev = 3) {
   function nextStage(stage) {
     let next = stage;
-    while (abs(stage - next) < (stage >> 1)) next += n(stage);
+    while (almostEqual(stage, next, stage >> 1)) next += n(stage);
     return next
   }
   const munsell = this instanceof Munsell ? this : Munsell.build(this ?? MIDTONE, 48, 48);

@@ -1,6 +1,6 @@
 {
   "name": "@palett/fluo-vector",
-  "version": "0.12.25",
+  "version": "0.12.26",
   "description": "A colorant to string",
   "type": "module",
   "exports": "./index.js",
@@ -19,7 +19,7 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@spare/serial": "^0.16.23"
+    "@spare/serial": "^0.16.24"
   },
   "devDependencies": {
     "@aryth/bound-vector": "^0.7.7",
@@ -34,7 +34,7 @@
     "@typen/literal": "^0.2.0",
     "@typen/nullish": "^0.2.0",
     "@typen/num-strict": "^0.2.0",
-    "@vect/vector-mapper": "^0.8.2"
+    "@vect/vector-mapper": "^0.8.5"
   },
   "repository": {
     "type": "git",

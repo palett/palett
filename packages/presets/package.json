@@ -1,6 +1,6 @@
 {
   "name": "@palett/presets",
-  "version": "0.12.25",
+  "version": "0.12.26",
   "description": "A color converter",
   "type": "module",
   "exports": "./index.js",
@@ -22,7 +22,7 @@
     "@palett/pres": "workspace:^"
   },
   "devDependencies": {
-    "@vect/object-init": "^0.8.2"
+    "@vect/object-init": "^0.8.5"
   },
   "repository": {
     "type": "git",

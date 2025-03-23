@@ -1,16 +1,16 @@
-import { abs }       from '@aryth/math'
-import { n }         from '@aryth/norm'
-import { rand }      from '@aryth/rand'
-import { Munsell }   from '@palett/munsell'
-import { MIDTONE }   from './asset/MIDTONE.js'
-import { randHSI }   from './utils/randHSI.js'
-import { hsiToPres } from './utils/randPres.js'
+import { almostEqual } from '@aryth/math'
+import { n }           from '@aryth/norm'
+import { rand }        from '@aryth/rand'
+import { Munsell }     from '@palett/munsell'
+import { MIDTONE }     from './asset/MIDTONE.js'
+import { randHSI }     from './utils/randHSI.js'
+import { hsiToPres }   from './utils/randPres.js'
 
 
 export function* stageFlopper(stage = 24, stdev = 3) {
   function nextStage(stage) {
     let next = stage
-    while (abs(stage - next) < (stage >> 1)) next += n(stage)
+    while (almostEqual(stage, next, stage >> 1)) next += n(stage)
     return next
   }
   const munsell = this instanceof Munsell ? this : Munsell.build(this ?? MIDTONE, 48, 48)

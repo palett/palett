@@ -1,4 +1,5 @@
-import { NUM } from '@typen/enum-data-types'
+import { betw, rand } from '@aryth/rand'
+import { NUM }        from '@typen/enum-data-types'
 
 /**
  * Generator function that shuffles an array by shifting elements randomly.
@@ -14,10 +15,6 @@ export function* finiteShifter(vec, shl, shr) {
   // Create a copy of the array and track available indices
   const bin = Array(hi).fill(true)
   if (typeof shr !== NUM) { shr = shl }
-// Helper function for random integer
-  function rand(max) { return ~~(Math.random() * max) }
-// Helper function for random integer between min and max
-  function betw(min, max) { return min + rand(max - min + 1) }
   let i = rand(hi)
   // First element
   if (hi > 0) {
