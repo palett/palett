@@ -1,6 +1,6 @@
 {
   "name": "@palett/pres",
-  "version": "0.12.26",
+  "version": "0.12.27",
   "description": "",
   "type": "module",
   "exports": "./index.js",
@@ -18,8 +18,8 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/polar": "^0.7.7",
-    "@aryth/rand": "^0.7.7",
+    "@aryth/polar": "^0.7.8",
+    "@aryth/rand": "^0.7.8",
     "@palett/color-algebra": "workspace:^",
     "@palett/convert": "workspace:^",
     "@palett/stringify": "workspace:^",
@@ -27,7 +27,7 @@
     "@vect/vector-init": "^0.8.5"
   },
   "devDependencies": {
-    "@aryth/math": "^0.7.7",
+    "@aryth/math": "^0.7.8",
     "@aryth/polar": "^0.7.5",
     "@palett/presets": "workspace:^",
     "@vect/object-init": "^0.8.5"

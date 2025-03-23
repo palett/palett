@@ -1,6 +1,6 @@
 {
   "name": "@palett/cards",
-  "version": "0.12.26",
+  "version": "0.12.27",
   "description": "A color converter",
   "type": "module",
   "exports": "./index.js",
@@ -16,6 +16,12 @@
   "scripts": {
     "pub": "npm publish",
     "test": "node -r @babel/register test/test.index.js"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@palett/convert": "workspace:^",
+    "@palett/dye": "workspace:^"
   },
   "repository": {
     "type": "git",
@@ -38,12 +44,5 @@
     "url": "https://github.com/hoyeungw/@palett"
   },
   "homepage": "https://github.com/hoyeungw/@palett#readme",
-  "gitHead": "fa43c4eb4429e3c75cc8a2ae9093163359e8afb1",
-  "dependencies": {
-    "palett-presets": "^0.1.1"
-  },
-  "devDependencies": {
-    "@palett/convert": "workspace:^",
-    "@palett/dye": "workspace:^"
-  }
+  "gitHead": "fa43c4eb4429e3c75cc8a2ae9093163359e8afb1"
 }

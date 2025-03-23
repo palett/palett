@@ -1,6 +1,6 @@
 {
   "name": "@palett/projector",
-  "version": "0.12.26",
+  "version": "0.12.27",
   "description": "Projector projects input number to color within pre-defined bound",
   "type": "module",
   "exports": "./index.js",

@@ -1,6 +1,6 @@
 {
   "name": "@palett/fluo-entries",
-  "version": "0.12.26",
+  "version": "0.12.27",
   "description": "A colorant to string",
   "type": "module",
   "exports": "./index.js",
@@ -18,7 +18,7 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@spare/serial": "^0.16.24"
+    "@spare/serial": "^0.16.25"
   },
   "devDependencies": {
     "@palett/fluo": "workspace:^",

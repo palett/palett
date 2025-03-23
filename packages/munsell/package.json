@@ -1,6 +1,6 @@
 {
   "name": "@palett/munsell",
-  "version": "0.12.26",
+  "version": "0.12.27",
   "description": "A color converter",
   "type": "module",
   "exports": "./index.js",
@@ -18,8 +18,8 @@
     "test": "node -r @babel/register test/test.index.js"
   },
   "dependencies": {
-    "@aryth/math": "^0.7.7",
-    "@aryth/polar": "^0.7.7",
+    "@aryth/math": "^0.7.8",
+    "@aryth/polar": "^0.7.8",
     "@palett/convert": "workspace:^"
   },
   "devDependencies": {

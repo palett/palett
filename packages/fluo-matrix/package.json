@@ -1,6 +1,6 @@
 {
   "name": "@palett/fluo-matrix",
-  "version": "0.12.26",
+  "version": "0.12.27",
   "description": "A colorant to string",
   "type": "module",
   "exports": "./index.js",
@@ -19,11 +19,11 @@
     "test-jest": "jest"
   },
   "dependencies": {
-    "@spare/serial": "^0.16.24",
+    "@spare/serial": "^0.16.25",
     "@vect/matrix-index": "^0.8.5"
   },
   "devDependencies": {
-    "@aryth/bound-matrix": "^0.7.7",
+    "@aryth/bound-matrix": "^0.7.8",
     "@ject/oneself": "^0.1.2",
     "@palett/convert": "workspace:^",
     "@palett/enum-colorant-modes": "workspace:^",
@@ -39,7 +39,6 @@
     "@typen/num-strict": "^0.2.0",
     "@vect/columns-mapper": "^0.8.5",
     "@vect/enum-matrix-directions": "^0.6.13",
-    "@vect/matrix": "^0.8.5",
     "@vect/matrix-algebra": "^0.8.5",
     "@vect/matrix-index": "^0.8.0",
     "@vect/matrix-mapper": "^0.8.5",

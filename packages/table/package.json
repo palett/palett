@@ -1,6 +1,6 @@
 {
   "name": "@palett/table",
-  "version": "0.12.26",
+  "version": "0.12.27",
   "description": "A color converter",
   "type": "module",
   "exports": "./index.js",
@@ -18,9 +18,9 @@
     "test": "node -r @babel/register test/table.test.js"
   },
   "dependencies": {
-    "@analys/convert": "^0.7.2",
+    "@analys/convert": "^0.7.4",
     "@analyz/crostab": "^0.1.0",
-    "@aryth/math": "^0.7.7",
+    "@aryth/math": "^0.7.8",
     "@ject/oneself": "^0.1.2",
     "@palett/cards": "workspace:^",
     "@palett/convert": "workspace:^",
@@ -28,16 +28,9 @@
     "@palett/enum-color-cards": "workspace:^",
     "@palett/enum-color-space": "workspace:^",
     "@palett/enum-font-effects": "workspace:^",
-    "@texting/translator": "^0.2.3",
-    "@vect/columns-mapper": "^0.8.5",
-    "@vect/matrix-mapper": "^0.8.5",
-    "@vect/matrix-transpose": "^0.6.13",
-    "@vect/object-select": "^0.8.5",
     "@vect/vector-indicator": "^0.6.13",
     "@vect/vector-init": "^0.8.5",
-    "@vect/vector-mapper": "^0.8.5",
-    "@vect/vector-stat": "^0.8.5",
-    "@vect/vector-zipper": "^0.8.5"
+    "@vect/vector-mapper": "^0.8.5"
   },
   "repository": {
     "type": "git",
